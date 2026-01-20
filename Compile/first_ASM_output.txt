@@ -1,0 +1,42 @@
+def     0x0048  0x0a    #       x       
+def     0x0049  0x11    #       y       
+def     0x004a  0x00    #       z       
+#       z       =       x       +       y       
+load    a       0x0048  #       x       
+load    b       0x0049  #       y       
+add     b       a       
+store   a       0x004a  #       z       
+#       z       +=      y       
+load    a       0x004a  #       z       
+load    b       0x0049  #       y       
+add     b       a       
+store   a       0x004a  #       z       
+#       x       =       y       -       z       
+load    a       0x0049  #       y       
+load    b       0x004a  #       z       
+not     b       
+inc     b       
+add     b       a       
+store   a       0x0048  #       x       
+#       x       -=      z       
+load    a       0x0048  #       x       
+load    b       0x004a  #       z       
+not     b       
+inc     b       
+add     b       a       
+store   a       0x0048  #       x       
+#       y       ++      
+load    a       0x0049  #       y       
+inc     a       
+store   a       0x0049  #       y       
+#       x       --      
+load    a       0x0048  #       x       
+dec     a       
+store   a       0x0048  #       x       
+#       z       --      
+load    a       0x004a  #       z       
+dec     a       
+store   a       0x004a  #       z     
+
+@ferdig
+jump	ferdig	

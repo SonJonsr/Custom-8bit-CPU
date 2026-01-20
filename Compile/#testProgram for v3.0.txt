@@ -1,0 +1,18 @@
+#testProgram for v3.0
+nop
+@reset
+
+def	0x000F	0xFF
+load	a	0x000F
+store	a	0x6002
+
+def	0x0010	0x50
+load	a	0x0010
+store	a	0x6000
+
+@loop
+
+Lshift	a
+store	a	0x6000
+jump	@loop
+

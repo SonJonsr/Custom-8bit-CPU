@@ -1,0 +1,21 @@
+
+def	0x1000	0x0a
+def	0x1001	0x0f
+def	0x1002	0x00
+
+jump home
+
+@main
+
+load	a	0x1000
+load	b	0x1001
+add	b	a
+store	a	0x1002
+
+@home
+jump	home 
+
+
+
+
+# done

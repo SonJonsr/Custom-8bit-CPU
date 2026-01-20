@@ -1,0 +1,19 @@
+#testProgram for v3.0
+
+nop
+@reset
+
+def	0x0040	0xff
+load	a	0x0040
+store	a	0x6002
+
+def	0x0041	0x50
+load	a	0x0041
+store	a	0x6000
+
+@loop
+
+add	a	a	#samme som left shift
+store	a	0x6000
+jump	loop
+

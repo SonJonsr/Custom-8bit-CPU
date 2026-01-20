@@ -1,0 +1,45 @@
+#denne løkken tar  klokkepulser perr løkke (0x716c = 29036 for lengde = 1000)
+#bruker 65 bytes
+
+int16	len 	=	1000	#antall ganger løkken skal gå
+int16	i 	=	0
+
+#gjør først at len2 = - len
+load	a	len.h
+load	b	len.l
+not	a
+not	b
+inc	b		#ok
+addc	d	a	#ok
+store	a	i.h	#not ok
+store	b	i.l	#not ok
+Clear	r
+
+@startavløkke
+
+
+load	a	i.h
+load	b	i.l
+load	c	len.h
+load	d	len.l
+
+add	b	d
+addc	a	c
+
+bop	ferdig
+Clear 	d
+
+inc	b
+addc	d	a
+
+store	a	i.h
+store	b	i.l
+
+Clear	r
+
+#her kan man lage kode som går i løkken
+
+jump	startavløkke
+
+@ferdig
+jump	ferdig	#endless while true

@@ -1,0 +1,14 @@
+#testProgram for v3.0
+
+def	0x0010	0x50
+
+load	a	0x0010 
+inc	a
+store	a	0x0011
+load	b	0x0011
+not	b
+
+@ferdig
+jump	ferdig	
+
+

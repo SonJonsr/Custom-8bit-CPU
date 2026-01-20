@@ -1,0 +1,18 @@
+
+def	0x1002	0x10
+jump end
+
+store	a	0x1002
+
+@home
+
+add	a	a
+store	a	0x0100
+
+jump home
+
+store	a	0x1002
+
+@end
+
+# stoop
