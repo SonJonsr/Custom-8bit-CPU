@@ -4,18 +4,24 @@ Created on Sun Jan 18 22:51:05 2026
 
 @author: sonog
 """
-#pulls out text from file:
-import os
 
-filename = "test"
+#Change these variables to change input / output files
+C_Filename = "test"
+
+ASM_Filename = "ASM_output"
+
 Enable_Halt_At_End = True
 
+#------------------------------------------------------------------------
+#pulls out text from file:
 
-filename += ".c"
+import os
+ASM_Filename += ".txt"
+C_Filename += ".c"
 script_dir = os.path.dirname(os.path.abspath(__file__))
-filename = os.path.join(script_dir, filename)
+C_Filename = os.path.join(script_dir, C_Filename)
 
-file = open(filename,'r')
+file = open(C_Filename,'r')
 
 load_lines = [] 
 for line in file:
@@ -203,11 +209,14 @@ def intTo4hex(t):
     elif len(ttemp) < 6:
         ttemp = "0x0" + ttemp[2] + ttemp[3] + ttemp[4]
     return ttemp
-    
+
+
 temp = []
+Lines_Missed = []
 for line in Program_Code:
+    Line_Found = False
     temp = []
-    print("looking : " , line)
+    #print("looking : " , line)
     if len(line) > 4:
         if line[1] == "=" and line[3] == "+":   #finds x = y + z"
             temp.append(line[0])                #finds the variables used
@@ -221,7 +230,8 @@ for line in Program_Code:
                 Assembely_code.append(["add","b","a"])
                 Assembely_code.append(["store","a","0x0000","#", temp[0]])
                 RunProgramLength = RunProgramLength + 10
-            
+                Line_Found = True
+
             #elif Is16Bit(temp[0]) and Is16Bit(temp[1]) and Is16Bit(temp[2]):
                 
                 
@@ -240,7 +250,8 @@ for line in Program_Code:
                 Assembely_code.append(["add","b","a"])
                 Assembely_code.append(["store","a","0x0000","#", temp[0]])
                 RunProgramLength = RunProgramLength + 12
-            
+                Line_Found = True
+
     if len(line) > 2:           
         if line[1] == "+=":             #finds x += y
             temp.append(line[0]) 
@@ -253,6 +264,7 @@ for line in Program_Code:
                 Assembely_code.append(["add","b","a "])
                 Assembely_code.append(["store","a","0x0000","#" , temp[0]])
                 RunProgramLength = RunProgramLength + 10
+                Line_Found = True
         
         elif line[1] == "-=":           #finds x -= y
             temp.append(line[0]) 
@@ -267,6 +279,7 @@ for line in Program_Code:
                 Assembely_code.append(["add","b","a"])
                 Assembely_code.append(["store","a","0x0000","#" , temp[0]])
                 RunProgramLength = RunProgramLength + 12
+                Line_Found = True
 
     if len(line) > 1:
         if RemSemCol(line[1]) == "++":
@@ -277,6 +290,7 @@ for line in Program_Code:
                 Assembely_code.append(["inc","a"])
                 Assembely_code.append(["store","a","0x0000","#" , temp[0]])
                 RunProgramLength = RunProgramLength + 7
+                Line_Found = True
                 
         elif RemSemCol(line[1]) == "--":
             temp.append(line[0])
@@ -286,11 +300,16 @@ for line in Program_Code:
                 Assembely_code.append(["dec","a"])
                 Assembely_code.append(["store","a","0x0000","#" , temp[0]])
                 RunProgramLength = RunProgramLength + 7
+                Line_Found = True
+    if Line_Found == False:
+        Lines_Missed.append(line)
+        print("Line missed : " , line)
 
 if Enable_Halt_At_End == True:
     Assembely_code.append(["@at_HALT_end"])
     Assembely_code.append(["jump at_HALT_end"])
     RunProgramLength = RunProgramLength + 4
+    
 
 
 print(" ")
