@@ -12,6 +12,7 @@ ASM_Filename = "ASM_output"
 
 Enable_Halt_At_End = True
 
+SpaceCode_var = 5  #space between code and variables in memory
 #------------------------------------------------------------------------
 #pulls out text from file:
 
@@ -20,6 +21,8 @@ ASM_Filename += ".txt"
 C_Filename += ".c"
 script_dir = os.path.dirname(os.path.abspath(__file__))
 C_Filename = os.path.join(script_dir, C_Filename)
+ASM_Filename = os.path.join(script_dir, ASM_Filename)
+
 
 file = open(C_Filename,'r')
 
@@ -32,7 +35,7 @@ file.close()
 
 
 
-SpaceCode_var = 5
+
 
 HighByte_Sufix = "_HH"
 LowByte_Sufix = "_LL"
@@ -367,3 +370,13 @@ for line in Assembely_code:
     print(ASM_line)
 print(" ")
 
+#creates the ASM file
+file = open(ASM_Filename,'w')
+for line in Assembely_code:
+    ASM_line = ""
+    for element in line:
+        ASM_line = ASM_line + element
+        for i in range(len(element),8):
+            ASM_line = ASM_line + " "
+    file.write(ASM_line + "\n")
+file.close() 

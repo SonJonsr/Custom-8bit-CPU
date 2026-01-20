@@ -1,0 +1,41 @@
+def     0x004c  0x3e8   #       x       
+def     0x004d  0xbb8   #       y       
+def     0x004e  0x00    #       z       
+#       z       =       x       +       y       
+load    a       0x004c  #       x       
+load    b       0x004d  #       y       
+add     b       a       
+store   a       0x004e  #       z       
+#       z       +=      y       
+load    a       0x004e  #       z       
+load    b       0x004d  #       y       
+add     b       a       
+store   a       0x004e  #       z       
+#       x       =       y       -       z       
+load    a       0x004d  #       y       
+load    b       0x004e  #       z       
+not     b       
+inc     b       
+add     b       a       
+store   a       0x004c  #       x       
+#       x       -=      z       
+load    a       0x004c  #       x       
+load    b       0x004e  #       z       
+not     b       
+inc     b       
+add     b       a       
+store   a       0x004c  #       x       
+#       y       ++      
+load    a       0x004d  #       y       
+inc     a       
+store   a       0x004d  #       y       
+#       x       --      
+load    a       0x004c  #       x       
+dec     a       
+store   a       0x004c  #       x       
+#       z       --      
+load    a       0x004e  #       z       
+dec     a       
+store   a       0x004e  #       z       
+@at_HALT_end
+jump at_HALT_end

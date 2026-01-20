@@ -8,8 +8,7 @@ Created on Sun Dec 21 16:26:39 2025
 # -*- coding: utf-8 -*-
 import os
 
-filename = "first_ASM_output"
-
+filename = "ASM_output"
 
 def intTo4hex(t):
     ttemp = hex(t)
@@ -743,7 +742,11 @@ for line in program:
     rom[line[0]]  = int(byte,16)
 
 
-with open("rom.bin", "wb") as out_file:
+script_dir = os.path.dirname(os.path.abspath(__file__))
+ROM_Filename = os.path.join(script_dir, "rom.bin")
+
+
+with open(ROM_Filename, "wb") as out_file:
     out_file.write(rom)
 
 
