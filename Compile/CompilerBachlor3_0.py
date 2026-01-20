@@ -6,7 +6,7 @@ Created on Sun Dec 21 16:26:39 2025
 """
 
 # -*- coding: utf-8 -*-
-
+import os
 
 filename = "first_ASM_output"
 
@@ -42,6 +42,9 @@ errorList = []
 
 lengde = 0
 StoppAALese = False
+
+script_dir = os.path.dirname(os.path.abspath(__file__))
+filename = os.path.join(script_dir, filename)
 
 filename += ".txt"
 file = open(filename,'r')
@@ -741,7 +744,7 @@ for line in program:
 
 
 with open("rom.bin", "wb") as out_file:
-    out_file.write(rom);
+    out_file.write(rom)
 
 
 

@@ -9,9 +9,9 @@
 //int8_t listen[l_l];
 
 //8bit values:
-int16_t x = 1000; // some text
-int16_t y = 3000;
-int16_t z = 0;
+int8_t x = 1000; // some text
+int8_t y = 3000;
+int8_t z = 0;
 
 //int16_t lang = 8000;
 

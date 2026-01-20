@@ -4,20 +4,27 @@ Created on Sun Jan 18 22:51:05 2026
 
 @author: sonog
 """
+#pulls out text from file:
+import os
 
 filename = "test"
+Enable_Halt_At_End = True
 
 
-
-#pulls out text from file:
-load_lines = []
 filename += ".c"
+script_dir = os.path.dirname(os.path.abspath(__file__))
+filename = os.path.join(script_dir, filename)
+
 file = open(filename,'r')
- 
+
+load_lines = [] 
 for line in file:
     load_lines.append(line)
     
 file.close() 
+
+
+
 
 SpaceCode_var = 5
 
@@ -279,6 +286,12 @@ for line in Program_Code:
                 Assembely_code.append(["dec","a"])
                 Assembely_code.append(["store","a","0x0000","#" , temp[0]])
                 RunProgramLength = RunProgramLength + 7
+
+if Enable_Halt_At_End == True:
+    Assembely_code.append(["@at_HALT_end"])
+    Assembely_code.append(["jump at_HALT_end"])
+    RunProgramLength = RunProgramLength + 4
+
 
 print(" ")
 print("asm : "+ str(RunProgramLength))
