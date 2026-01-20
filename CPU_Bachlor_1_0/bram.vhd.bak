@@ -1,0 +1,61 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+USE ieee.numeric_std.ALL;
+
+entity bRAM is
+    Port ( 
+        clk         : in std_logic;
+        slow_clk    : in std_logic;
+        reset_n     : in std_logic;
+        RW          : in std_logic; -- 1 = Write, 0 = Read
+        ready       : out std_logic;
+        address     : in std_logic_vector(15 downto 0);
+        data_in     : in std_logic_vector(7 downto 0);
+        data_out    : out std_logic_vector(7 downto 0) := "00000000"
+         );
+end bRAM;
+
+architecture Behavioral of bRAM is
+
+    type ram_type is array (0 to 255) of std_logic_vector(7 downto 0);
+    --signal sReady : std_logic := '0';
+
+    signal RAM : ram_type := (
+        "10000000", --0
+        "10000000", --1
+        "10000011", --2 jump start
+        "10000000", --3 HH
+        "10000000"  --4 LL
+        others => (others => '0'));   
+
+    signal address_int : integer range 0 to 255;
+
+    signal prev_clk : std_logic := '0';
+    signal rise_edge : std_logic := '0';
+
+    signal skallese : std_logic := '0';
+
+begin
+    address_int <= to_integer(unsigned(address(15 downto 0)));
+
+    process(reset_n, RAM, RW, address_int, data_in)
+    begin
+        if reset_n = '1' then
+            if RW = '1' then
+                data_out <= RAM(address_int);
+                skallese <= '1';
+            else
+                skallese <= '0';
+                data_out <= "00000000";
+                RAM(address_int) <= data_in;
+            end if;
+        else
+            skallese <= '0';
+            data_out <= "00000000";
+        end if;
+    end process;
+
+    ready <= '1';
+
+
+end Behavioral;
