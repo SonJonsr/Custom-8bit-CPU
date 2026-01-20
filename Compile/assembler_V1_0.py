@@ -40,6 +40,41 @@ file.close()
 HighByte_Sufix = "_HH"
 LowByte_Sufix = "_LL"
 
+errors = []
+Warnings = []
+
+def intTo4hex(t):
+    ttemp = hex(t)
+    
+    while len(ttemp) < 6:
+        ttemp = ttemp[:2] + "0" + ttemp[2:]
+    while len(ttemp) > 6:
+        errors.append("Error (0) : intTo4hex overflow with value : " + str(t))
+        ttemp = ttemp[:len(ttemp)-1]
+    {
+        #if len(ttemp) < 3:
+        #    ttemp += "0000"
+        #elif len(ttemp) < 4:
+        #    ttemp = "0x000" + ttemp[2]
+        #elif len(ttemp) < 5:
+        #    ttemp = "0x00" + ttemp[2] + ttemp[3]
+        #elif len(ttemp) < 6:
+        #    ttemp = "0x0" + ttemp[2] + ttemp[3] + ttemp[4]
+    }
+    
+    return ttemp
+
+def intTo2hex(t):
+    ttemp = hex(t)
+    
+    while len(ttemp) < 4:
+        ttemp = ttemp[:2] + "0" + ttemp[2:]
+    while len(ttemp) > 4:
+        ttemp = ttemp[:len(ttemp)-1]
+        errors.append("Error (1) : intTo2hex overflow with value : " + str(t))
+    return ttemp
+
+
 #shorten the lines of code in the file:
 lines = []
 for i in range(0, len(load_lines)):
@@ -161,19 +196,11 @@ Assembely_code = []
 
 RunProgramLength = 1
 
-
-
 for line in List_8_bit:
-    temp =  hex(int(line[1]))
-    if len(temp) < 4:
-        temp = "0x0" + temp[2]
-    
+    temp =  intTo2hex(int(line[1]))
+    print(temp)
     Assembely_code.append(["def","0x0000", temp, "#", line[0]])
     print("def" + " 0x0000 : " + temp)
-
-
-
-
 
 
 def Is8Bit(test_variable):    #cheks if the varible is 8-bit
@@ -192,7 +219,6 @@ def Is16Bit(test_variable):
 
 def RemSemCol(test_variable):   #removes ";" if there is one
     withoutSemCol = ""
-    
     if test_variable[len(test_variable)-1] == ";":
         for i in range(0,len(test_variable)-1):
             withoutSemCol = withoutSemCol + test_variable[i]
@@ -200,22 +226,20 @@ def RemSemCol(test_variable):   #removes ";" if there is one
         withoutSemCol = test_variable  
     return withoutSemCol
 
-def intTo4hex(t):
-    ttemp = hex(t)
+
     
-    if len(ttemp) < 3:
-        ttemp += "0000"
-    elif len(ttemp) < 4:
-        ttemp = "0x000" + ttemp[2]
-    elif len(ttemp) < 5:
-        ttemp = "0x00" + ttemp[2] + ttemp[3]
-    elif len(ttemp) < 6:
-        ttemp = "0x0" + ttemp[2] + ttemp[3] + ttemp[4]
+    #if len(ttemp) < 3:
+    #    ttemp += "0000"
+    #elif len(ttemp) < 4:
+    #    ttemp = "0x000" + ttemp[2]
+    #elif len(ttemp) < 5:
+    #    ttemp = "0x00" + ttemp[2] + ttemp[3]
+    #elif len(ttemp) < 6:
+    #    ttemp = "0x0" + ttemp[2] + ttemp[3] + ttemp[4]
     return ttemp
 
 
 temp = []
-Lines_Missed = []
 for line in Program_Code:
     Line_Found = False
     temp = []
@@ -227,7 +251,7 @@ for line in Program_Code:
             temp.append(RemSemCol(line[4]))
             
             if Is8Bit(temp[0]) and Is8Bit(temp[1]) and Is8Bit(temp[2]):
-                Assembely_code.append(["#", temp[0] ,"=", temp[1], "+" , temp[2]])
+                Assembely_code.append(["# " + temp[0] +" = "+ temp[1] +" + "+ temp[2]])
                 Assembely_code.append(["load","a","0x0000","#", temp[1]])
                 Assembely_code.append(["load","b","0x0000","#", temp[2]])
                 Assembely_code.append(["add","b","a"])
@@ -245,7 +269,7 @@ for line in Program_Code:
             temp.append(RemSemCol(line[4]))
             
             if Is8Bit(temp[0]) and Is8Bit(temp[1]) and Is8Bit(temp[2]):
-                Assembely_code.append(["#",temp[0],"=", temp[1],"-", temp[2]])
+                Assembely_code.append(["# "+temp[0]+" = "+ temp[1]+" - "+ temp[2]])
                 Assembely_code.append(["load","a","0x0000","#", temp[1]])
                 Assembely_code.append(["load","b","0x0000","#", temp[2]])
                 Assembely_code.append(["not","b"])
@@ -255,13 +279,13 @@ for line in Program_Code:
                 RunProgramLength = RunProgramLength + 12
                 Line_Found = True
 
-    if len(line) > 2:           
+    if len(line) > 2 and Line_Found == False:           
         if line[1] == "+=":             #finds x += y
             temp.append(line[0]) 
             temp.append(RemSemCol(line[2]))
             
             if Is8Bit(temp[0]) and Is8Bit(temp[1]):
-                Assembely_code.append(["#" , temp[0] ,"+=", temp[1]])
+                Assembely_code.append(["# " + temp[0] + " += " + temp[1]])
                 Assembely_code.append(["load","a","0x0000","#" , temp[0]])
                 Assembely_code.append(["load","b","0x0000","#" , temp[1]])
                 Assembely_code.append(["add","b","a "])
@@ -274,7 +298,7 @@ for line in Program_Code:
             temp.append(RemSemCol(line[2]))
             
             if Is8Bit(temp[0]) and Is8Bit(temp[1]):
-                Assembely_code.append(["#" , temp[0] ,"-=", temp[1]])
+                Assembely_code.append(["# " + temp[0] + " -= " + temp[1]])
                 Assembely_code.append(["load","a","0x0000","#" , temp[0]])
                 Assembely_code.append(["load","b","0x0000","#" , temp[1]])
                 Assembely_code.append(["not","b"])
@@ -284,11 +308,22 @@ for line in Program_Code:
                 RunProgramLength = RunProgramLength + 12
                 Line_Found = True
 
-    if len(line) > 1:
+        elif line[1] == "=":           #finds x = y                                 MUST BE AFTER X = Y + Z and X = Y - Z!!!!!!
+            temp.append(line[0]) 
+            temp.append(RemSemCol(line[2]))
+            
+            if Is8Bit(temp[0]) and Is8Bit(temp[1]):
+                Assembely_code.append(["# " + temp[0] + " = " + temp[1]])
+                Assembely_code.append(["load","a","0x0000","#" , temp[1]])
+                Assembely_code.append(["store","a","0x0000","#" , temp[0]])
+                RunProgramLength = RunProgramLength + 6
+                Line_Found = True
+
+    if len(line) > 1 and Line_Found == False:
         if RemSemCol(line[1]) == "++":
             temp.append(line[0])
             if Is8Bit(temp[0]) == True:
-                Assembely_code.append(["#" , temp[0] ,"++"])
+                Assembely_code.append(["# " + temp[0] +" ++"])
                 Assembely_code.append(["load","a","0x0000","#" , temp[0]])
                 Assembely_code.append(["inc","a"])
                 Assembely_code.append(["store","a","0x0000","#" , temp[0]])
@@ -298,15 +333,14 @@ for line in Program_Code:
         elif RemSemCol(line[1]) == "--":
             temp.append(line[0])
             if Is8Bit(temp[0]) == True:
-                Assembely_code.append(["#" , temp[0] ,"--"])
+                Assembely_code.append(["# " + temp[0] + " --"])
                 Assembely_code.append(["load","a","0x0000","#" , temp[0]])
                 Assembely_code.append(["dec","a"])
                 Assembely_code.append(["store","a","0x0000","#" , temp[0]])
                 RunProgramLength = RunProgramLength + 7
                 Line_Found = True
     if Line_Found == False:
-        Lines_Missed.append(line)
-        print("Line missed : " , line)
+        Warnings.append("Warning (0): could not parse line : " + str(line))
 
 if Enable_Halt_At_End == True:
     Assembely_code.append(["@at_HALT_end"])
@@ -316,10 +350,10 @@ if Enable_Halt_At_End == True:
 
 
 print(" ")
-print("asm : "+ str(RunProgramLength))
-for line in Assembely_code:
-    print(line)
-print(" ")
+print("asm length : "+ str(RunProgramLength))
+#for line in Assembely_code:
+#    print(line)
+#print(" ")
 
 
 
@@ -347,15 +381,15 @@ for line in Assembely_code:
     if len(line) > 0:
         if line[0] == "store" or line[0] == "load" or line[0] == "def":
             if Is8Bit(line[len(line)-1]) == True:
-                print("8bit ja")
+                #print("8bit ja")
                 for variable in List_8_bit:
                     if variable[0] == line[len(line)-1]:
                         if line[1] == "0x0000":
                             line[1] = (intTo4hex(int(variable[2])))
-                            print(line, str(intTo4hex(int(variable[2]))))
+                            #print(line, str(intTo4hex(int(variable[2]))))
                         elif line[2] == "0x0000":
                             line[2] = (intTo4hex(int(variable[2])))
-                            print(line, (intTo4hex(int(variable[2]))))
+                            #print(line, (intTo4hex(int(variable[2]))))
                             
                             
                             
@@ -380,3 +414,12 @@ for line in Assembely_code:
             ASM_line = ASM_line + " "
     file.write(ASM_line + "\n")
 file.close() 
+
+print("\nwarnings: " + str(len(Warnings)))
+for warn in Warnings:
+    print(warn)
+
+print("\nerrors: " + str(len(errors)))
+for error in errors:
+    print(error)
+print("")

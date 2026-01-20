@@ -1,41 +1,45 @@
-def     0x004c  0x3e8   #       x       
-def     0x004d  0xbb8   #       y       
-def     0x004e  0x00    #       z       
-#       z       =       x       +       y       
-load    a       0x004c  #       x       
-load    b       0x004d  #       y       
+def     0x0052  0x64    #       x       
+def     0x0053  0xc8    #       y       
+def     0x0054  0x00    #       z       
+def     0x0055  0x04    #       g       
+# z = x + y
+load    a       0x0052  #       x       
+load    b       0x0053  #       y       
 add     b       a       
-store   a       0x004e  #       z       
-#       z       +=      y       
-load    a       0x004e  #       z       
-load    b       0x004d  #       y       
+store   a       0x0054  #       z       
+# z += y
+load    a       0x0054  #       z       
+load    b       0x0053  #       y       
 add     b       a       
-store   a       0x004e  #       z       
-#       x       =       y       -       z       
-load    a       0x004d  #       y       
-load    b       0x004e  #       z       
+store   a       0x0054  #       z       
+# x = y - z
+load    a       0x0053  #       y       
+load    b       0x0054  #       z       
 not     b       
 inc     b       
 add     b       a       
-store   a       0x004c  #       x       
-#       x       -=      z       
-load    a       0x004c  #       x       
-load    b       0x004e  #       z       
+store   a       0x0052  #       x       
+# x -= z
+load    a       0x0052  #       x       
+load    b       0x0054  #       z       
 not     b       
 inc     b       
 add     b       a       
-store   a       0x004c  #       x       
-#       y       ++      
-load    a       0x004d  #       y       
+store   a       0x0052  #       x       
+# y ++  
+load    a       0x0053  #       y       
 inc     a       
-store   a       0x004d  #       y       
-#       x       --      
-load    a       0x004c  #       x       
+store   a       0x0053  #       y       
+# x --  
+load    a       0x0052  #       x       
 dec     a       
-store   a       0x004c  #       x       
-#       z       --      
-load    a       0x004e  #       z       
+store   a       0x0052  #       x       
+# z --  
+load    a       0x0054  #       z       
 dec     a       
-store   a       0x004e  #       z       
+store   a       0x0054  #       z       
+# z = g 
+load    a       0x0055  #       g       
+store   a       0x0054  #       z       
 @at_HALT_end
 jump at_HALT_end

@@ -2,15 +2,15 @@
 #include <stdio.h>
 
 //#define l_l 5
-//#define g 4
+#define g 4
 //#define s 2000
 //int8_t l[5];
 //int8_t l2[10] ;
 //int8_t listen[l_l];
 
 //8bit values:
-int8_t x = 1000; // some text
-int8_t y = 3000;
+int8_t x = 100; // some text
+int8_t y = 200;
 int8_t z = 0;
 
 //int16_t lang = 8000;
@@ -30,5 +30,6 @@ void main() {
   printf("%d = %x , %d = %x , %d = %x\n", x, x, y, y, z, z);
   z --;
   printf("%d = %x , %d = %x , %d = %x\n", x, x, y, y, z, z);
-  //z += g;
+  z = g;
+  printf("%d = %x , %d = %x , %d = %x\n", x, x, y, y, z, z);
 }
