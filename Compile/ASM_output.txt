@@ -1,35 +1,46 @@
-def     0x0035  0x64    #       l       
-def     0x0036  0x9c    #       m       
-def     0x0037  0x00    #       n       
-def     0x0038  0xfc    #       g       
-def     0x0039  0x00    #       x_HH    
-def     0x003a  0x64    #       x_LL    
-def     0x003b  0x00    #       y_HH    
-def     0x003c  0x19    #       y_LL    
-def     0x003d  0xff    #       z_HH    
-def     0x003e  0xf6    #       z_LL    
+def     0x0045  0x02    #       l       
+def     0x0046  0x1e    #       m       
+def     0x0047  0x00    #       n       
+def     0x0048  0xfc    #       g       
+def     0x0049  0x02    #       r       
+def     0x004a  0x1e    #       h       
+def     0x004b  0x00    #       x_HH    
+def     0x004c  0x64    #       x_LL    
+def     0x004d  0x00    #       y_HH    
+def     0x004e  0x19    #       y_LL    
+def     0x004f  0xff    #       z_HH    
+def     0x0050  0xf6    #       z_LL    
 # z(16) = x(16) + y(16)
-load    a       0x0039  #       x_HH    
-load    b       0x003a  #       x_LL    
-load    c       0x003b  #       y_HH    
-load    d       0x003c  #       y_LL    
+load    a       0x004b  #       x_HH    
+load    b       0x004c  #       x_LL    
+load    c       0x004d  #       y_HH    
+load    d       0x004e  #       y_LL    
 add     d       b       
 addc    c       a       
-store   a       0x003d  #       z_HH    
-store   b       0x003e  #       z_LL    
+store   a       0x004f  #       z_HH    
+store   b       0x0050  #       z_LL    
 # x(16) = y(16) - z(16)
-load    b       0x003c  #       y_LL    
-load    c       0x003d  #       z_HH    
-load    d       0x003e  #       z_LL    
+load    b       0x004e  #       y_LL    
+load    c       0x004f  #       z_HH    
+load    d       0x0050  #       z_LL    
 clear   a       
 not     c       
 not     d       
 inc     d       
 addc    a       c       
-load    a       0x003b  #       y_HH    
+load    a       0x004d  #       y_HH    
 add     d       b       
 addc    c       a       
-store   a       0x003a  #       x_LL    
-store   c       0x0039  #       x_HH    
+store   a       0x004c  #       x_LL    
+store   c       0x004b  #       x_HH    
+# y(16) = y(16) << r[2](x)
+load    a       0x004d  #       y_HH    
+load    b       0x004e  #       y_LL    
+add     b       b        #shift left by 1
+addc    a       a        #shift left by 1
+add     b       b        #shift left by 1
+addc    a       a        #shift left by 1
+store   a       0x004d  #       y_HH    
+store   b       0x004e  #       y_LL    
 @at_HALT_end
 jump at_HALT_end
