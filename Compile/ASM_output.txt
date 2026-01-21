@@ -1,45 +1,35 @@
-def     0x0052  0x64    #       x       
-def     0x0053  0xc8    #       y       
-def     0x0054  0x00    #       z       
-def     0x0055  0x04    #       g       
-# z = x + y
-load    a       0x0052  #       x       
-load    b       0x0053  #       y       
-add     b       a       
-store   a       0x0054  #       z       
-# z += y
-load    a       0x0054  #       z       
-load    b       0x0053  #       y       
-add     b       a       
-store   a       0x0054  #       z       
-# x = y - z
-load    a       0x0053  #       y       
-load    b       0x0054  #       z       
-not     b       
-inc     b       
-add     b       a       
-store   a       0x0052  #       x       
-# x -= z
-load    a       0x0052  #       x       
-load    b       0x0054  #       z       
-not     b       
-inc     b       
-add     b       a       
-store   a       0x0052  #       x       
-# y ++  
-load    a       0x0053  #       y       
-inc     a       
-store   a       0x0053  #       y       
-# x --  
-load    a       0x0052  #       x       
-dec     a       
-store   a       0x0052  #       x       
-# z --  
-load    a       0x0054  #       z       
-dec     a       
-store   a       0x0054  #       z       
-# z = g 
-load    a       0x0055  #       g       
-store   a       0x0054  #       z       
+def     0x0035  0x64    #       l       
+def     0x0036  0x9c    #       m       
+def     0x0037  0x00    #       n       
+def     0x0038  0xfc    #       g       
+def     0x0039  0x00    #       x_HH    
+def     0x003a  0x64    #       x_LL    
+def     0x003b  0x00    #       y_HH    
+def     0x003c  0x19    #       y_LL    
+def     0x003d  0xff    #       z_HH    
+def     0x003e  0xf6    #       z_LL    
+# z(16) = x(16) + y(16)
+load    a       0x0039  #       x_HH    
+load    b       0x003a  #       x_LL    
+load    c       0x003b  #       y_HH    
+load    d       0x003c  #       y_LL    
+add     d       b       
+addc    c       a       
+store   a       0x003d  #       z_HH    
+store   b       0x003e  #       z_LL    
+# x(16) = y(16) - z(16)
+load    b       0x003c  #       y_LL    
+load    c       0x003d  #       z_HH    
+load    d       0x003e  #       z_LL    
+clear   a       
+not     c       
+not     d       
+inc     d       
+addc    a       c       
+load    a       0x003b  #       y_HH    
+add     d       b       
+addc    c       a       
+store   a       0x003a  #       x_LL    
+store   c       0x0039  #       x_HH    
 @at_HALT_end
 jump at_HALT_end

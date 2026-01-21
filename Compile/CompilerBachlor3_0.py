@@ -10,24 +10,31 @@ import os
 
 filename = "ASM_output"
 
+startkode  = 0x0001
+Write_binary_to = 0x0050
+
 def intTo4hex(t):
     ttemp = hex(t)
     
-    if len(ttemp) < 3:
-        ttemp += "0000"
-    elif len(ttemp) < 4:
-        ttemp = "0x000" + ttemp[2]
-    elif len(ttemp) < 5:
-        ttemp = "0x00" + ttemp[2] + ttemp[3]
-    elif len(ttemp) < 6:
-        ttemp = "0x0" + ttemp[2] + ttemp[3] + ttemp[4]
+    while len(ttemp) < 6:
+        ttemp = ttemp[:2] + "0" + ttemp[2:]
+    while len(ttemp) > 6:
+        errorList.append("Error (0) : intTo4hex overflow with value : " + str(t))
+        ttemp = ttemp[:len(ttemp)-1]
     return ttemp
 
 
+def intTo2hex(t):
+    ttemp = hex(t)
+    
+    while len(ttemp) < 4:
+        ttemp = ttemp[:2] + "0" + ttemp[2:]
+    while len(ttemp) > 4:
+        ttemp = ttemp[:len(ttemp)-1]
+        errorList.append("Error (1) : intTo2hex overflow with value : " + str(t))
+    return ttemp
 
-startkode  = 0x0001
 
-Write_binary_to = 0x0050
 program = []
 
 Used_Addresses = []
@@ -90,7 +97,7 @@ for linje in komandoer:
     if linje[0] == "jump" or linje[0] == "bop" or linje[0] == "bon" or linje[0] == "boz" or linje[0] == "bnz" or linje[0] == "boo" or linje[0] == "bno" or linje[0] == "bou" or linje[0] == "bnu" or linje[0] == "boc" or linje[0] == "bnc":
         kode.append(linje)
         programlengde += 3
-    elif linje[0] == "nop" or linje[0] == "Clear" or linje[0] == "inc" or linje[0] == "dec" or linje[0] == "rs" or linje[0] == "not" or linje[0] == "and" or linje[0] == "or" or linje[0] == "add" or linje[0] == "addc" or linje[0] == "mov":
+    elif linje[0] == "nop" or linje[0] == "Clear" or linje[0] == "clear"or linje[0] == "inc" or linje[0] == "dec" or linje[0] == "rs" or linje[0] == "not" or linje[0] == "and" or linje[0] == "or" or linje[0] == "add" or linje[0] == "addc" or linje[0] == "mov":
         kode.append(linje)
         programlengde += 1
     elif linje[0] == "def":
@@ -229,7 +236,7 @@ for linje in kode:
         program.append(temp)
         branching = True
         
-    elif linje[0] == "Clear":
+    elif linje[0] == "Clear" or linje[0] == "clear":
         temp.append(index)
         if linje[1] == "f":
             temp.append("0x0e #clear flags")
