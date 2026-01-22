@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE115F29) Path("C:/CPU_Bachlor_1_0/output_files/") File("bCPU_top.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE115F29) Path("C:/Bachlor/CPU_Bachlor_1_0/output_files/") File("bCPU_top.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

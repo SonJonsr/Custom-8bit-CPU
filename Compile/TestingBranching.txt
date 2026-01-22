@@ -1,0 +1,180 @@
+#TestingBranching
+#Assuming that (nop, clear, jump, load, store, add) Works and testing all "branc if"
+
+
+def	0x00ba 	0x22	# x = 34
+def	0x00bb 	0xf3	# y = -4
+
+
+#testing carry: ------------------------------------------------------------------
+
+load	a	0x00ba
+load	b	0x00bb
+add	b	a
+
+bnc	Fail	#branch not carry	(False)
+
+boc	NR1	#branch on carry	(True)
+jump	Fail
+@NR1
+
+Clear	f	#clears carry
+
+boc	Fail	#branch on carry	(False)
+
+bnc	NR2	#branch not carry	(True)
+jump	Fail
+@NR2
+
+
+#testing negative and positive branching: -----------------------------------------------------
+
+Clear	r
+Clear	f
+
+load	a	0x00bb
+add	a	b
+
+bop	Fail	#branch on positive 	(False)
+
+bon	NR3	#branch on Negative 	(True)
+jump	Fail
+@NR3
+
+Clear	r
+Clear	f
+
+load	a	0x00ba
+load	b	0x00bb
+add	b	a
+
+bon	Fail	#branch on Negative 	(False)
+
+bop	NR4	#branch on Positive 	(True)
+jump	Fail
+@NR4
+
+
+
+#testing zero branching: --------------------------
+
+Clear	r
+Clear	f
+
+
+add	a	b
+			#flag is zero
+bnz	Fail
+
+boz	NR5
+jump	Fail
+@NR5
+
+Clear	r
+Clear	f
+
+load	a	0x00ba
+load	b	0x00bb
+add	b	a	#flag is positive
+
+boz	Fail
+
+bnz	NR6
+jump	Fail
+@NR6
+
+inc	b
+inc	b
+inc	b
+inc	b
+
+			#flag is zero
+bnz	Fail
+
+boz	NR7
+jump	Fail
+@NR7
+
+
+
+Clear	r
+Clear	f
+
+inc	a
+inc	a
+inc	a
+dec	b
+add	b	a	#flag positive
+
+boz	Fail
+
+bnz	NR8
+
+jump	Fail
+@NR8
+
+
+#testing OverFlow branching: ------------------------------------------------------------------------------
+
+Clear	f
+Clear	r
+
+load	a	0x00bb
+
+boo	Fail
+
+bno	NR9
+jump	Fail
+@NR9
+
+add	a	a
+bno	Fail
+
+boo	NR10
+jump	Fail
+@NR10
+
+#testing UnderFlow branching: ------------------------------------------------------------------------------
+
+
+load	a	0x00ba
+dec	a
+
+
+bou	Fail
+
+bnu	NR11
+jump	Fail
+@NR11
+
+
+rs	a
+
+bnu	Fail
+
+bou	NR12
+jump	Fail
+@NR12
+
+
+
+
+
+jump	OverFail
+
+nop
+
+@Fail		#halt in a fail if any of the instructions fails
+jump	Fail
+
+nop
+nop
+nop
+nop
+nop
+nop
+nop
+nop
+nop
+@OverFail
+jump	OverFail

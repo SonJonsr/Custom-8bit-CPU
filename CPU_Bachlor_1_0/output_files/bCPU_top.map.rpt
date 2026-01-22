@@ -1,5 +1,5 @@
 Analysis & Synthesis report for bCPU_top
-Mon Jan 19 21:38:46 2026
+Thu Jan 22 17:55:12 2026
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -73,13 +73,13 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Jan 19 21:38:46 2026          ;
+; Analysis & Synthesis Status        ; Successful - Thu Jan 22 17:55:12 2026          ;
 ; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                      ; bCPU_top                                       ;
 ; Top-level Entity Name              ; bCPU_top                                       ;
 ; Family                             ; Cyclone IV E                                   ;
 ; Total logic elements               ; 8,430                                          ;
-;     Total combinational functions  ; 4,060                                          ;
+;     Total combinational functions  ; 4,331                                          ;
 ;     Dedicated logic registers      ; 5,532                                          ;
 ; Total registers                    ; 5532                                           ;
 ; Total pins                         ; 118                                            ;
@@ -184,7 +184,7 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 16          ;
 ;                            ;             ;
-; Average used               ; 1.00        ;
+; Average used               ; 1.01        ;
 ; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
@@ -200,107 +200,107 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                          ;
-+--------------------------------------------------------------------+-----------------+----------------------------------------------+---------------------------------------------------------------------------------------------+-------------+
-; File Name with User-Entered Path                                   ; Used in Netlist ; File Type                                    ; File Name with Absolute Path                                                                ; Library     ;
-+--------------------------------------------------------------------+-----------------+----------------------------------------------+---------------------------------------------------------------------------------------------+-------------+
-; bCPU_top.vhd                                                       ; yes             ; User VHDL File                               ; C:/CPU_Bachlor_1_0/bCPU_top.vhd                                                             ;             ;
-; clockgen.vhd                                                       ; yes             ; Auto-Found VHDL File                         ; C:/CPU_Bachlor_1_0/clockgen.vhd                                                             ;             ;
-; bram.vhd                                                           ; yes             ; Auto-Found VHDL File                         ; C:/CPU_Bachlor_1_0/bram.vhd                                                                 ;             ;
-; bcpu.vhd                                                           ; yes             ; Auto-Found VHDL File                         ; C:/CPU_Bachlor_1_0/bcpu.vhd                                                                 ;             ;
-; ram8bit.vhd                                                        ; yes             ; Auto-Found VHDL File                         ; C:/CPU_Bachlor_1_0/ram8bit.vhd                                                              ;             ;
-; balu.vhd                                                           ; yes             ; Auto-Found VHDL File                         ; C:/CPU_Bachlor_1_0/balu.vhd                                                                 ;             ;
-; adder_8bit.vhd                                                     ; yes             ; Auto-Found VHDL File                         ; C:/CPU_Bachlor_1_0/adder_8bit.vhd                                                           ;             ;
-; fulladder.vhd                                                      ; yes             ; Auto-Found VHDL File                         ; C:/CPU_Bachlor_1_0/fulladder.vhd                                                            ;             ;
-; ins_decoder.vhd                                                    ; yes             ; Auto-Found VHDL File                         ; C:/CPU_Bachlor_1_0/ins_decoder.vhd                                                          ;             ;
-; bcontroller.vhd                                                    ; yes             ; Auto-Found VHDL File                         ; C:/CPU_Bachlor_1_0/bcontroller.vhd                                                          ;             ;
-; baddress.vhd                                                       ; yes             ; Auto-Found VHDL File                         ; C:/CPU_Bachlor_1_0/baddress.vhd                                                             ;             ;
-; rom_7_seg.vhd                                                      ; yes             ; Auto-Found VHDL File                         ; C:/CPU_Bachlor_1_0/rom_7_seg.vhd                                                            ;             ;
-; lcd_display.vhd                                                    ; yes             ; Auto-Found VHDL File                         ; C:/CPU_Bachlor_1_0/lcd_display.vhd                                                          ;             ;
-; bin2bcd.vhd                                                        ; yes             ; Auto-Found VHDL File                         ; C:/CPU_Bachlor_1_0/bin2bcd.vhd                                                              ;             ;
-; reset_synchronizer.vhd                                             ; yes             ; Auto-Found VHDL File                         ; C:/CPU_Bachlor_1_0/reset_synchronizer.vhd                                                   ;             ;
-; sld_signaltap.vhd                                                  ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/sld_signaltap.vhd                 ;             ;
-; sld_signaltap_impl.vhd                                             ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/sld_signaltap_impl.vhd            ;             ;
-; sld_ela_control.vhd                                                ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/sld_ela_control.vhd               ;             ;
-; lpm_shiftreg.tdf                                                   ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/lpm_shiftreg.tdf                  ;             ;
-; lpm_constant.inc                                                   ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/lpm_constant.inc                  ;             ;
-; dffeea.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/dffeea.inc                        ;             ;
-; aglobal231.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/aglobal231.inc                    ;             ;
-; sld_mbpmg.vhd                                                      ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/sld_mbpmg.vhd                     ;             ;
-; sld_ela_trigger_flow_mgr.vhd                                       ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/sld_ela_trigger_flow_mgr.vhd      ;             ;
-; sld_buffer_manager.vhd                                             ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/sld_buffer_manager.vhd            ;             ;
-; altsyncram.tdf                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/altsyncram.tdf                    ;             ;
-; stratix_ram_block.inc                                              ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/stratix_ram_block.inc             ;             ;
-; lpm_mux.inc                                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/lpm_mux.inc                       ;             ;
-; lpm_decode.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/lpm_decode.inc                    ;             ;
-; a_rdenreg.inc                                                      ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/a_rdenreg.inc                     ;             ;
-; altrom.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/altrom.inc                        ;             ;
-; altram.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/altram.inc                        ;             ;
-; altdpram.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/altdpram.inc                      ;             ;
-; db/altsyncram_ie24.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; C:/CPU_Bachlor_1_0/db/altsyncram_ie24.tdf                                                   ;             ;
-; altdpram.tdf                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/altdpram.tdf                      ;             ;
-; memmodes.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/others/maxplus2/memmodes.inc                    ;             ;
-; a_hdffe.inc                                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/a_hdffe.inc                       ;             ;
-; alt_le_rden_reg.inc                                                ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/alt_le_rden_reg.inc               ;             ;
-; altsyncram.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/altsyncram.inc                    ;             ;
-; lpm_mux.tdf                                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/lpm_mux.tdf                       ;             ;
-; muxlut.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/muxlut.inc                        ;             ;
-; bypassff.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/bypassff.inc                      ;             ;
-; altshift.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/altshift.inc                      ;             ;
-; db/mux_vsc.tdf                                                     ; yes             ; Auto-Generated Megafunction                  ; C:/CPU_Bachlor_1_0/db/mux_vsc.tdf                                                           ;             ;
-; lpm_decode.tdf                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/lpm_decode.tdf                    ;             ;
-; declut.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/declut.inc                        ;             ;
-; lpm_compare.inc                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/lpm_compare.inc                   ;             ;
-; db/decode_dvf.tdf                                                  ; yes             ; Auto-Generated Megafunction                  ; C:/CPU_Bachlor_1_0/db/decode_dvf.tdf                                                        ;             ;
-; lpm_counter.tdf                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/lpm_counter.tdf                   ;             ;
-; lpm_add_sub.inc                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/lpm_add_sub.inc                   ;             ;
-; cmpconst.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/cmpconst.inc                      ;             ;
-; lpm_counter.inc                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/lpm_counter.inc                   ;             ;
-; alt_counter_stratix.inc                                            ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/alt_counter_stratix.inc           ;             ;
-; db/cntr_9ii.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/CPU_Bachlor_1_0/db/cntr_9ii.tdf                                                          ;             ;
-; db/cmpr_ugc.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/CPU_Bachlor_1_0/db/cmpr_ugc.tdf                                                          ;             ;
-; db/cntr_o9j.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/CPU_Bachlor_1_0/db/cntr_o9j.tdf                                                          ;             ;
-; db/cntr_igi.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/CPU_Bachlor_1_0/db/cntr_igi.tdf                                                          ;             ;
-; db/cmpr_rgc.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/CPU_Bachlor_1_0/db/cmpr_rgc.tdf                                                          ;             ;
-; db/cntr_23j.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/CPU_Bachlor_1_0/db/cntr_23j.tdf                                                          ;             ;
-; db/cmpr_ngc.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/CPU_Bachlor_1_0/db/cmpr_ngc.tdf                                                          ;             ;
-; sld_rom_sr.vhd                                                     ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/sld_rom_sr.vhd                    ;             ;
-; sld_jtag_endpoint_adapter.vhd                                      ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd     ;             ;
-; sld_jtag_endpoint_adapter_impl.sv                                  ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter_impl.sv ;             ;
-; sld_hub.vhd                                                        ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/sld_hub.vhd                       ; altera_sld  ;
-; db/ip/sld46f59f01/alt_sld_fab.v                                    ; yes             ; Encrypted Auto-Found Verilog HDL File        ; C:/CPU_Bachlor_1_0/db/ip/sld46f59f01/alt_sld_fab.v                                          ; alt_sld_fab ;
-; db/ip/sld46f59f01/submodules/alt_sld_fab_alt_sld_fab.v             ; yes             ; Encrypted Auto-Found Verilog HDL File        ; C:/CPU_Bachlor_1_0/db/ip/sld46f59f01/submodules/alt_sld_fab_alt_sld_fab.v                   ; alt_sld_fab ;
-; db/ip/sld46f59f01/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; yes             ; Auto-Found SystemVerilog HDL File            ; C:/CPU_Bachlor_1_0/db/ip/sld46f59f01/submodules/alt_sld_fab_alt_sld_fab_ident.sv            ; alt_sld_fab ;
-; db/ip/sld46f59f01/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/CPU_Bachlor_1_0/db/ip/sld46f59f01/submodules/alt_sld_fab_alt_sld_fab_presplit.sv         ; alt_sld_fab ;
-; db/ip/sld46f59f01/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; yes             ; Encrypted Auto-Found VHDL File               ; C:/CPU_Bachlor_1_0/db/ip/sld46f59f01/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd       ; alt_sld_fab ;
-; db/ip/sld46f59f01/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/CPU_Bachlor_1_0/db/ip/sld46f59f01/submodules/alt_sld_fab_alt_sld_fab_splitter.sv         ; alt_sld_fab ;
-; sld_jtag_hub.vhd                                                   ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/sld_jtag_hub.vhd                  ;             ;
-; lpm_divide.tdf                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/lpm_divide.tdf                    ;             ;
-; abs_divider.inc                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/abs_divider.inc                   ;             ;
-; sign_div_unsign.inc                                                ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/sign_div_unsign.inc               ;             ;
-; db/lpm_divide_mhm.tdf                                              ; yes             ; Auto-Generated Megafunction                  ; C:/CPU_Bachlor_1_0/db/lpm_divide_mhm.tdf                                                    ;             ;
-; db/sign_div_unsign_ekh.tdf                                         ; yes             ; Auto-Generated Megafunction                  ; C:/CPU_Bachlor_1_0/db/sign_div_unsign_ekh.tdf                                               ;             ;
-; db/alt_u_div_g4f.tdf                                               ; yes             ; Auto-Generated Megafunction                  ; C:/CPU_Bachlor_1_0/db/alt_u_div_g4f.tdf                                                     ;             ;
-; db/add_sub_7pc.tdf                                                 ; yes             ; Auto-Generated Megafunction                  ; C:/CPU_Bachlor_1_0/db/add_sub_7pc.tdf                                                       ;             ;
-; db/add_sub_8pc.tdf                                                 ; yes             ; Auto-Generated Megafunction                  ; C:/CPU_Bachlor_1_0/db/add_sub_8pc.tdf                                                       ;             ;
-; db/lpm_divide_jhm.tdf                                              ; yes             ; Auto-Generated Megafunction                  ; C:/CPU_Bachlor_1_0/db/lpm_divide_jhm.tdf                                                    ;             ;
-; db/sign_div_unsign_bkh.tdf                                         ; yes             ; Auto-Generated Megafunction                  ; C:/CPU_Bachlor_1_0/db/sign_div_unsign_bkh.tdf                                               ;             ;
-; db/alt_u_div_a4f.tdf                                               ; yes             ; Auto-Generated Megafunction                  ; C:/CPU_Bachlor_1_0/db/alt_u_div_a4f.tdf                                                     ;             ;
-; lpm_mult.tdf                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/lpm_mult.tdf                      ;             ;
-; multcore.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/multcore.inc                      ;             ;
-; multcore.tdf                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/multcore.tdf                      ;             ;
-; csa_add.inc                                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/csa_add.inc                       ;             ;
-; mpar_add.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/mpar_add.inc                      ;             ;
-; muleabz.inc                                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/muleabz.inc                       ;             ;
-; mul_lfrg.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/mul_lfrg.inc                      ;             ;
-; mul_boothc.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/mul_boothc.inc                    ;             ;
-; alt_ded_mult.inc                                                   ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/alt_ded_mult.inc                  ;             ;
-; alt_ded_mult_y.inc                                                 ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/alt_ded_mult_y.inc                ;             ;
-; dffpipe.inc                                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/dffpipe.inc                       ;             ;
-; mpar_add.tdf                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/mpar_add.tdf                      ;             ;
-; altshift.tdf                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/altshift.tdf                      ;             ;
-+--------------------------------------------------------------------+-----------------+----------------------------------------------+---------------------------------------------------------------------------------------------+-------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                            ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+-----------------------------------------------------------------------------------------------+-------------+
+; File Name with User-Entered Path                                   ; Used in Netlist ; File Type                                    ; File Name with Absolute Path                                                                  ; Library     ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+-----------------------------------------------------------------------------------------------+-------------+
+; bCPU_top.vhd                                                       ; yes             ; User VHDL File                               ; C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd                                                       ;             ;
+; clockgen.vhd                                                       ; yes             ; Auto-Found VHDL File                         ; C:/Bachlor/CPU_Bachlor_1_0/clockgen.vhd                                                       ;             ;
+; bram.vhd                                                           ; yes             ; Auto-Found VHDL File                         ; C:/Bachlor/CPU_Bachlor_1_0/bram.vhd                                                           ;             ;
+; bcpu.vhd                                                           ; yes             ; Auto-Found VHDL File                         ; C:/Bachlor/CPU_Bachlor_1_0/bcpu.vhd                                                           ;             ;
+; ram8bit.vhd                                                        ; yes             ; Auto-Found VHDL File                         ; C:/Bachlor/CPU_Bachlor_1_0/ram8bit.vhd                                                        ;             ;
+; balu.vhd                                                           ; yes             ; Auto-Found VHDL File                         ; C:/Bachlor/CPU_Bachlor_1_0/balu.vhd                                                           ;             ;
+; adder_8bit.vhd                                                     ; yes             ; Auto-Found VHDL File                         ; C:/Bachlor/CPU_Bachlor_1_0/adder_8bit.vhd                                                     ;             ;
+; fulladder.vhd                                                      ; yes             ; Auto-Found VHDL File                         ; C:/Bachlor/CPU_Bachlor_1_0/fulladder.vhd                                                      ;             ;
+; ins_decoder.vhd                                                    ; yes             ; Auto-Found VHDL File                         ; C:/Bachlor/CPU_Bachlor_1_0/ins_decoder.vhd                                                    ;             ;
+; bcontroller.vhd                                                    ; yes             ; Auto-Found VHDL File                         ; C:/Bachlor/CPU_Bachlor_1_0/bcontroller.vhd                                                    ;             ;
+; baddress.vhd                                                       ; yes             ; Auto-Found VHDL File                         ; C:/Bachlor/CPU_Bachlor_1_0/baddress.vhd                                                       ;             ;
+; rom_7_seg.vhd                                                      ; yes             ; Auto-Found VHDL File                         ; C:/Bachlor/CPU_Bachlor_1_0/rom_7_seg.vhd                                                      ;             ;
+; lcd_display.vhd                                                    ; yes             ; Auto-Found VHDL File                         ; C:/Bachlor/CPU_Bachlor_1_0/lcd_display.vhd                                                    ;             ;
+; bin2bcd.vhd                                                        ; yes             ; Auto-Found VHDL File                         ; C:/Bachlor/CPU_Bachlor_1_0/bin2bcd.vhd                                                        ;             ;
+; reset_synchronizer.vhd                                             ; yes             ; Auto-Found VHDL File                         ; C:/Bachlor/CPU_Bachlor_1_0/reset_synchronizer.vhd                                             ;             ;
+; sld_signaltap.vhd                                                  ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/sld_signaltap.vhd                   ;             ;
+; sld_signaltap_impl.vhd                                             ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/sld_signaltap_impl.vhd              ;             ;
+; sld_ela_control.vhd                                                ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/sld_ela_control.vhd                 ;             ;
+; lpm_shiftreg.tdf                                                   ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/lpm_shiftreg.tdf                    ;             ;
+; lpm_constant.inc                                                   ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/lpm_constant.inc                    ;             ;
+; dffeea.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/dffeea.inc                          ;             ;
+; aglobal231.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/aglobal231.inc                      ;             ;
+; sld_mbpmg.vhd                                                      ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/sld_mbpmg.vhd                       ;             ;
+; sld_ela_trigger_flow_mgr.vhd                                       ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/sld_ela_trigger_flow_mgr.vhd        ;             ;
+; sld_buffer_manager.vhd                                             ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/sld_buffer_manager.vhd              ;             ;
+; altsyncram.tdf                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/altsyncram.tdf                      ;             ;
+; stratix_ram_block.inc                                              ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/stratix_ram_block.inc               ;             ;
+; lpm_mux.inc                                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/lpm_mux.inc                         ;             ;
+; lpm_decode.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/lpm_decode.inc                      ;             ;
+; a_rdenreg.inc                                                      ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/a_rdenreg.inc                       ;             ;
+; altrom.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/altrom.inc                          ;             ;
+; altram.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/altram.inc                          ;             ;
+; altdpram.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/altdpram.inc                        ;             ;
+; db/altsyncram_ie24.tdf                                             ; yes             ; Auto-Generated Megafunction                  ; C:/Bachlor/CPU_Bachlor_1_0/db/altsyncram_ie24.tdf                                             ;             ;
+; altdpram.tdf                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/altdpram.tdf                        ;             ;
+; memmodes.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/others/maxplus2/memmodes.inc                      ;             ;
+; a_hdffe.inc                                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/a_hdffe.inc                         ;             ;
+; alt_le_rden_reg.inc                                                ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/alt_le_rden_reg.inc                 ;             ;
+; altsyncram.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/altsyncram.inc                      ;             ;
+; lpm_mux.tdf                                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/lpm_mux.tdf                         ;             ;
+; muxlut.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/muxlut.inc                          ;             ;
+; bypassff.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/bypassff.inc                        ;             ;
+; altshift.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/altshift.inc                        ;             ;
+; db/mux_vsc.tdf                                                     ; yes             ; Auto-Generated Megafunction                  ; C:/Bachlor/CPU_Bachlor_1_0/db/mux_vsc.tdf                                                     ;             ;
+; lpm_decode.tdf                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/lpm_decode.tdf                      ;             ;
+; declut.inc                                                         ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/declut.inc                          ;             ;
+; lpm_compare.inc                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/lpm_compare.inc                     ;             ;
+; db/decode_dvf.tdf                                                  ; yes             ; Auto-Generated Megafunction                  ; C:/Bachlor/CPU_Bachlor_1_0/db/decode_dvf.tdf                                                  ;             ;
+; lpm_counter.tdf                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/lpm_counter.tdf                     ;             ;
+; lpm_add_sub.inc                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/lpm_add_sub.inc                     ;             ;
+; cmpconst.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/cmpconst.inc                        ;             ;
+; lpm_counter.inc                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/lpm_counter.inc                     ;             ;
+; alt_counter_stratix.inc                                            ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/alt_counter_stratix.inc             ;             ;
+; db/cntr_9ii.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Bachlor/CPU_Bachlor_1_0/db/cntr_9ii.tdf                                                    ;             ;
+; db/cmpr_ugc.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Bachlor/CPU_Bachlor_1_0/db/cmpr_ugc.tdf                                                    ;             ;
+; db/cntr_o9j.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Bachlor/CPU_Bachlor_1_0/db/cntr_o9j.tdf                                                    ;             ;
+; db/cntr_igi.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Bachlor/CPU_Bachlor_1_0/db/cntr_igi.tdf                                                    ;             ;
+; db/cmpr_rgc.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Bachlor/CPU_Bachlor_1_0/db/cmpr_rgc.tdf                                                    ;             ;
+; db/cntr_23j.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Bachlor/CPU_Bachlor_1_0/db/cntr_23j.tdf                                                    ;             ;
+; db/cmpr_ngc.tdf                                                    ; yes             ; Auto-Generated Megafunction                  ; C:/Bachlor/CPU_Bachlor_1_0/db/cmpr_ngc.tdf                                                    ;             ;
+; sld_rom_sr.vhd                                                     ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/sld_rom_sr.vhd                      ;             ;
+; sld_jtag_endpoint_adapter.vhd                                      ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter.vhd       ;             ;
+; sld_jtag_endpoint_adapter_impl.sv                                  ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/sld_jtag_endpoint_adapter_impl.sv   ;             ;
+; sld_hub.vhd                                                        ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/sld_hub.vhd                         ; altera_sld  ;
+; db/ip/sld46f59f01/alt_sld_fab.v                                    ; yes             ; Encrypted Auto-Found Verilog HDL File        ; C:/Bachlor/CPU_Bachlor_1_0/db/ip/sld46f59f01/alt_sld_fab.v                                    ; alt_sld_fab ;
+; db/ip/sld46f59f01/submodules/alt_sld_fab_alt_sld_fab.v             ; yes             ; Encrypted Auto-Found Verilog HDL File        ; C:/Bachlor/CPU_Bachlor_1_0/db/ip/sld46f59f01/submodules/alt_sld_fab_alt_sld_fab.v             ; alt_sld_fab ;
+; db/ip/sld46f59f01/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; yes             ; Auto-Found SystemVerilog HDL File            ; C:/Bachlor/CPU_Bachlor_1_0/db/ip/sld46f59f01/submodules/alt_sld_fab_alt_sld_fab_ident.sv      ; alt_sld_fab ;
+; db/ip/sld46f59f01/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/Bachlor/CPU_Bachlor_1_0/db/ip/sld46f59f01/submodules/alt_sld_fab_alt_sld_fab_presplit.sv   ; alt_sld_fab ;
+; db/ip/sld46f59f01/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; yes             ; Encrypted Auto-Found VHDL File               ; C:/Bachlor/CPU_Bachlor_1_0/db/ip/sld46f59f01/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd ; alt_sld_fab ;
+; db/ip/sld46f59f01/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; yes             ; Encrypted Auto-Found SystemVerilog HDL File  ; C:/Bachlor/CPU_Bachlor_1_0/db/ip/sld46f59f01/submodules/alt_sld_fab_alt_sld_fab_splitter.sv   ; alt_sld_fab ;
+; sld_jtag_hub.vhd                                                   ; yes             ; Encrypted Megafunction                       ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/sld_jtag_hub.vhd                    ;             ;
+; lpm_divide.tdf                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/lpm_divide.tdf                      ;             ;
+; abs_divider.inc                                                    ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/abs_divider.inc                     ;             ;
+; sign_div_unsign.inc                                                ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/sign_div_unsign.inc                 ;             ;
+; db/lpm_divide_mhm.tdf                                              ; yes             ; Auto-Generated Megafunction                  ; C:/Bachlor/CPU_Bachlor_1_0/db/lpm_divide_mhm.tdf                                              ;             ;
+; db/sign_div_unsign_ekh.tdf                                         ; yes             ; Auto-Generated Megafunction                  ; C:/Bachlor/CPU_Bachlor_1_0/db/sign_div_unsign_ekh.tdf                                         ;             ;
+; db/alt_u_div_g4f.tdf                                               ; yes             ; Auto-Generated Megafunction                  ; C:/Bachlor/CPU_Bachlor_1_0/db/alt_u_div_g4f.tdf                                               ;             ;
+; db/add_sub_7pc.tdf                                                 ; yes             ; Auto-Generated Megafunction                  ; C:/Bachlor/CPU_Bachlor_1_0/db/add_sub_7pc.tdf                                                 ;             ;
+; db/add_sub_8pc.tdf                                                 ; yes             ; Auto-Generated Megafunction                  ; C:/Bachlor/CPU_Bachlor_1_0/db/add_sub_8pc.tdf                                                 ;             ;
+; db/lpm_divide_jhm.tdf                                              ; yes             ; Auto-Generated Megafunction                  ; C:/Bachlor/CPU_Bachlor_1_0/db/lpm_divide_jhm.tdf                                              ;             ;
+; db/sign_div_unsign_bkh.tdf                                         ; yes             ; Auto-Generated Megafunction                  ; C:/Bachlor/CPU_Bachlor_1_0/db/sign_div_unsign_bkh.tdf                                         ;             ;
+; db/alt_u_div_a4f.tdf                                               ; yes             ; Auto-Generated Megafunction                  ; C:/Bachlor/CPU_Bachlor_1_0/db/alt_u_div_a4f.tdf                                               ;             ;
+; lpm_mult.tdf                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/lpm_mult.tdf                        ;             ;
+; multcore.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/multcore.inc                        ;             ;
+; multcore.tdf                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/multcore.tdf                        ;             ;
+; csa_add.inc                                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/csa_add.inc                         ;             ;
+; mpar_add.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/mpar_add.inc                        ;             ;
+; muleabz.inc                                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/muleabz.inc                         ;             ;
+; mul_lfrg.inc                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/mul_lfrg.inc                        ;             ;
+; mul_boothc.inc                                                     ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/mul_boothc.inc                      ;             ;
+; alt_ded_mult.inc                                                   ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/alt_ded_mult.inc                    ;             ;
+; alt_ded_mult_y.inc                                                 ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/alt_ded_mult_y.inc                  ;             ;
+; dffpipe.inc                                                        ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/dffpipe.inc                         ;             ;
+; mpar_add.tdf                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/mpar_add.tdf                        ;             ;
+; altshift.tdf                                                       ; yes             ; Megafunction                                 ; c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/altshift.tdf                        ;             ;
++--------------------------------------------------------------------+-----------------+----------------------------------------------+-----------------------------------------------------------------------------------------------+-------------+
 
 
 +--------------------------------------------------------------+
@@ -310,14 +310,14 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------+
 ; Estimated Total logic elements              ; 8,430          ;
 ;                                             ;                ;
-; Total combinational functions               ; 4060           ;
+; Total combinational functions               ; 4331           ;
 ; Logic element usage by number of LUT inputs ;                ;
 ;     -- 4 input functions                    ; 2739           ;
 ;     -- 3 input functions                    ; 625            ;
-;     -- <=2 input functions                  ; 696            ;
+;     -- <=2 input functions                  ; 967            ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 3731           ;
+;     -- normal mode                          ; 4002           ;
 ;     -- arithmetic mode                      ; 329            ;
 ;                                             ;                ;
 ; Total registers                             ; 5532           ;
@@ -331,8 +331,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
 ; Maximum fan-out                             ; 4519           ;
-; Total fan-out                               ; 37112          ;
-; Average fan-out                             ; 3.68           ;
+; Total fan-out                               ; 37383          ;
+; Average fan-out                             ; 3.61           ;
 +---------------------------------------------+----------------+
 
 
@@ -341,7 +341,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
 ; Compilation Hierarchy Node                                                                                                              ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                                                                                                                                                  ; Entity Name                       ; Library Name ;
 +-----------------------------------------------------------------------------------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------+--------------+
-; |bCPU_top                                                                                                                               ; 4060 (0)            ; 5532 (0)                  ; 1908736     ; 0            ; 0       ; 0         ; 118  ; 0            ; |bCPU_top                                                                                                                                                                                                                                                                                                                                            ; bCPU_top                          ; work         ;
+; |bCPU_top                                                                                                                               ; 4331 (0)            ; 5532 (0)                  ; 1908736     ; 0            ; 0       ; 0         ; 118  ; 0            ; |bCPU_top                                                                                                                                                                                                                                                                                                                                            ; bCPU_top                          ; work         ;
 ;    |ClockGen:U_ClockGen|                                                                                                                ; 159 (159)           ; 60 (60)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bCPU_top|ClockGen:U_ClockGen                                                                                                                                                                                                                                                                                                                        ; ClockGen                          ; work         ;
 ;    |LCD_Display:LCD_Display_inst|                                                                                                       ; 479 (107)           ; 60 (60)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bCPU_top|LCD_Display:LCD_Display_inst                                                                                                                                                                                                                                                                                                               ; LCD_Display                       ; work         ;
 ;       |bin2bcd:bin2bcd_instA|                                                                                                           ; 86 (5)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bCPU_top|LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_instA                                                                                                                                                                                                                                                                                         ; bin2bcd                           ; work         ;
@@ -406,7 +406,7 @@ https://fpgasoftware.intel.com/eula.
 ;       |ram8bit:B|                                                                                                                       ; 1 (1)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bCPU_top|bCPU:bCPU_inst|ram8bit:B                                                                                                                                                                                                                                                                                                                   ; ram8bit                           ; work         ;
 ;       |ram8bit:C|                                                                                                                       ; 1 (1)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bCPU_top|bCPU:bCPU_inst|ram8bit:C                                                                                                                                                                                                                                                                                                                   ; ram8bit                           ; work         ;
 ;       |ram8bit:D|                                                                                                                       ; 1 (1)               ; 8 (8)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bCPU_top|bCPU:bCPU_inst|ram8bit:D                                                                                                                                                                                                                                                                                                                   ; ram8bit                           ; work         ;
-;    |bRAM:bRAM_inst|                                                                                                                     ; 1798 (1798)         ; 2056 (2056)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bCPU_top|bRAM:bRAM_inst                                                                                                                                                                                                                                                                                                                             ; bRAM                              ; work         ;
+;    |bRAM:bRAM_inst|                                                                                                                     ; 2069 (2069)         ; 2056 (2056)               ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bCPU_top|bRAM:bRAM_inst                                                                                                                                                                                                                                                                                                                             ; bRAM                              ; work         ;
 ;    |sld_hub:auto_hub|                                                                                                                   ; 123 (1)             ; 90 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bCPU_top|sld_hub:auto_hub                                                                                                                                                                                                                                                                                                                           ; sld_hub                           ; altera_sld   ;
 ;       |alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric| ; 122 (0)             ; 90 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bCPU_top|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric                                                                                                                                                                                           ; alt_sld_fab_with_jtag_input       ; altera_sld   ;
 ;          |alt_sld_fab:instrumentation_fabric|                                                                                           ; 122 (0)             ; 90 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |bCPU_top|sld_hub:auto_hub|alt_sld_fab_with_jtag_input:\instrumentation_fabric_with_node_gen:fabric_gen_new_way:with_jtag_input_gen:instrumentation_fabric|alt_sld_fab:instrumentation_fabric                                                                                                                                                        ; alt_sld_fab                       ; alt_sld_fab  ;
@@ -6379,20 +6379,20 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     SCLR              ; 22                          ;
 ;     plain             ; 38                          ;
 ; cycloneiii_io_obuf    ; 8                           ;
-; cycloneiii_lcell_comb ; 2792                        ;
+; cycloneiii_lcell_comb ; 3063                        ;
 ;     arith             ; 227                         ;
 ;         1 data inputs ; 1                           ;
 ;         2 data inputs ; 109                         ;
 ;         3 data inputs ; 117                         ;
-;     normal            ; 2565                        ;
+;     normal            ; 2836                        ;
 ;         0 data inputs ; 32                          ;
-;         1 data inputs ; 154                         ;
+;         1 data inputs ; 425                         ;
 ;         2 data inputs ; 236                         ;
 ;         3 data inputs ; 125                         ;
 ;         4 data inputs ; 2018                        ;
 ;                       ;                             ;
 ; Max LUT depth         ; 24.00                       ;
-; Average LUT depth     ; 11.52                       ;
+; Average LUT depth     ; 11.40                       ;
 +-----------------------+-----------------------------+
 
 
@@ -6918,98 +6918,98 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
-    Info: Processing started: Mon Jan 19 21:38:23 2026
+    Info: Processing started: Thu Jan 22 17:54:48 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off bCPU -c bCPU_top
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file bcpu_top.vhd
-    Info (12022): Found design unit 1: bCPU_top-Behavioral File: C:/CPU_Bachlor_1_0/bCPU_top.vhd Line: 20
-    Info (12023): Found entity 1: bCPU_top File: C:/CPU_Bachlor_1_0/bCPU_top.vhd Line: 5
+    Info (12022): Found design unit 1: bCPU_top-Behavioral File: C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd Line: 20
+    Info (12023): Found entity 1: bCPU_top File: C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd Line: 5
 Info (12127): Elaborating entity "bCPU_top" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at bCPU_top.vhd(106): object "bcd" assigned a value but never read File: C:/CPU_Bachlor_1_0/bCPU_top.vhd Line: 106
-Warning (10873): Using initial value X (don't care) for net "LEDR[17..7]" at bCPU_top.vhd(10) File: C:/CPU_Bachlor_1_0/bCPU_top.vhd Line: 10
-Warning (10873): Using initial value X (don't care) for net "LEDG[8..3]" at bCPU_top.vhd(11) File: C:/CPU_Bachlor_1_0/bCPU_top.vhd Line: 11
+Warning (10036): Verilog HDL or VHDL warning at bCPU_top.vhd(106): object "bcd" assigned a value but never read File: C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd Line: 106
+Warning (10873): Using initial value X (don't care) for net "LEDR[17..7]" at bCPU_top.vhd(10) File: C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd Line: 10
+Warning (10873): Using initial value X (don't care) for net "LEDG[8..3]" at bCPU_top.vhd(11) File: C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd Line: 11
 Warning (12125): Using design file clockgen.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: ClockGen-Behavioral File: C:/CPU_Bachlor_1_0/clockgen.vhd Line: 20
-    Info (12023): Found entity 1: ClockGen File: C:/CPU_Bachlor_1_0/clockgen.vhd Line: 8
-Info (12128): Elaborating entity "ClockGen" for hierarchy "ClockGen:U_ClockGen" File: C:/CPU_Bachlor_1_0/bCPU_top.vhd Line: 114
+    Info (12022): Found design unit 1: ClockGen-Behavioral File: C:/Bachlor/CPU_Bachlor_1_0/clockgen.vhd Line: 20
+    Info (12023): Found entity 1: ClockGen File: C:/Bachlor/CPU_Bachlor_1_0/clockgen.vhd Line: 8
+Info (12128): Elaborating entity "ClockGen" for hierarchy "ClockGen:U_ClockGen" File: C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd Line: 114
 Warning (12125): Using design file bram.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: bRAM-Behavioral File: C:/CPU_Bachlor_1_0/bram.vhd Line: 18
-    Info (12023): Found entity 1: bRAM File: C:/CPU_Bachlor_1_0/bram.vhd Line: 5
-Info (12128): Elaborating entity "bRAM" for hierarchy "bRAM:bRAM_inst" File: C:/CPU_Bachlor_1_0/bCPU_top.vhd Line: 126
+    Info (12022): Found design unit 1: bRAM-Behavioral File: C:/Bachlor/CPU_Bachlor_1_0/bram.vhd Line: 18
+    Info (12023): Found entity 1: bRAM File: C:/Bachlor/CPU_Bachlor_1_0/bram.vhd Line: 5
+Info (12128): Elaborating entity "bRAM" for hierarchy "bRAM:bRAM_inst" File: C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd Line: 126
 Warning (12125): Using design file bcpu.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: bCPU-Behavioral File: C:/CPU_Bachlor_1_0/bcpu.vhd Line: 29
-    Info (12023): Found entity 1: bCPU File: C:/CPU_Bachlor_1_0/bcpu.vhd Line: 8
-Info (12128): Elaborating entity "bCPU" for hierarchy "bCPU:bCPU_inst" File: C:/CPU_Bachlor_1_0/bCPU_top.vhd Line: 139
+    Info (12022): Found design unit 1: bCPU-Behavioral File: C:/Bachlor/CPU_Bachlor_1_0/bcpu.vhd Line: 29
+    Info (12023): Found entity 1: bCPU File: C:/Bachlor/CPU_Bachlor_1_0/bcpu.vhd Line: 8
+Info (12128): Elaborating entity "bCPU" for hierarchy "bCPU:bCPU_inst" File: C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd Line: 139
 Warning (12125): Using design file ram8bit.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: ram8bit-RTL File: C:/CPU_Bachlor_1_0/ram8bit.vhd Line: 16
-    Info (12023): Found entity 1: ram8bit File: C:/CPU_Bachlor_1_0/ram8bit.vhd Line: 5
-Info (12128): Elaborating entity "ram8bit" for hierarchy "bCPU:bCPU_inst|ram8bit:A" File: C:/CPU_Bachlor_1_0/bcpu.vhd Line: 159
+    Info (12022): Found design unit 1: ram8bit-RTL File: C:/Bachlor/CPU_Bachlor_1_0/ram8bit.vhd Line: 16
+    Info (12023): Found entity 1: ram8bit File: C:/Bachlor/CPU_Bachlor_1_0/ram8bit.vhd Line: 5
+Info (12128): Elaborating entity "ram8bit" for hierarchy "bCPU:bCPU_inst|ram8bit:A" File: C:/Bachlor/CPU_Bachlor_1_0/bcpu.vhd Line: 159
 Warning (12125): Using design file balu.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: bALU-Behavioral File: C:/CPU_Bachlor_1_0/balu.vhd Line: 24
-    Info (12023): Found entity 1: bALU File: C:/CPU_Bachlor_1_0/balu.vhd Line: 7
-Info (12128): Elaborating entity "bALU" for hierarchy "bCPU:bCPU_inst|bALU:ALU_inst" File: C:/CPU_Bachlor_1_0/bcpu.vhd Line: 210
-Warning (10812): VHDL warning at balu.vhd(77): sensitivity list already contains sA File: C:/CPU_Bachlor_1_0/balu.vhd Line: 77
+    Info (12022): Found design unit 1: bALU-Behavioral File: C:/Bachlor/CPU_Bachlor_1_0/balu.vhd Line: 24
+    Info (12023): Found entity 1: bALU File: C:/Bachlor/CPU_Bachlor_1_0/balu.vhd Line: 7
+Info (12128): Elaborating entity "bALU" for hierarchy "bCPU:bCPU_inst|bALU:ALU_inst" File: C:/Bachlor/CPU_Bachlor_1_0/bcpu.vhd Line: 210
+Warning (10812): VHDL warning at balu.vhd(77): sensitivity list already contains sA File: C:/Bachlor/CPU_Bachlor_1_0/balu.vhd Line: 77
 Warning (12125): Using design file adder_8bit.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: adder_8bit-RTL File: C:/CPU_Bachlor_1_0/adder_8bit.vhd Line: 15
-    Info (12023): Found entity 1: adder_8bit File: C:/CPU_Bachlor_1_0/adder_8bit.vhd Line: 5
-Info (12128): Elaborating entity "adder_8bit" for hierarchy "bCPU:bCPU_inst|bALU:ALU_inst|adder_8bit:adder_8bit_inst" File: C:/CPU_Bachlor_1_0/balu.vhd Line: 59
+    Info (12022): Found design unit 1: adder_8bit-RTL File: C:/Bachlor/CPU_Bachlor_1_0/adder_8bit.vhd Line: 15
+    Info (12023): Found entity 1: adder_8bit File: C:/Bachlor/CPU_Bachlor_1_0/adder_8bit.vhd Line: 5
+Info (12128): Elaborating entity "adder_8bit" for hierarchy "bCPU:bCPU_inst|bALU:ALU_inst|adder_8bit:adder_8bit_inst" File: C:/Bachlor/CPU_Bachlor_1_0/balu.vhd Line: 59
 Warning (12125): Using design file fulladder.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: FULLADDER-RTL File: C:/CPU_Bachlor_1_0/fulladder.vhd Line: 12
-    Info (12023): Found entity 1: FULLADDER File: C:/CPU_Bachlor_1_0/fulladder.vhd Line: 5
-Info (12128): Elaborating entity "FULLADDER" for hierarchy "bCPU:bCPU_inst|bALU:ALU_inst|adder_8bit:adder_8bit_inst|FULLADDER:FULLADDER_0" File: C:/CPU_Bachlor_1_0/adder_8bit.vhd Line: 26
+    Info (12022): Found design unit 1: FULLADDER-RTL File: C:/Bachlor/CPU_Bachlor_1_0/fulladder.vhd Line: 12
+    Info (12023): Found entity 1: FULLADDER File: C:/Bachlor/CPU_Bachlor_1_0/fulladder.vhd Line: 5
+Info (12128): Elaborating entity "FULLADDER" for hierarchy "bCPU:bCPU_inst|bALU:ALU_inst|adder_8bit:adder_8bit_inst|FULLADDER:FULLADDER_0" File: C:/Bachlor/CPU_Bachlor_1_0/adder_8bit.vhd Line: 26
 Warning (12125): Using design file ins_decoder.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: Ins_Decoder-Behavioral File: C:/CPU_Bachlor_1_0/ins_decoder.vhd Line: 19
-    Info (12023): Found entity 1: Ins_Decoder File: C:/CPU_Bachlor_1_0/ins_decoder.vhd Line: 7
-Info (12128): Elaborating entity "Ins_Decoder" for hierarchy "bCPU:bCPU_inst|Ins_Decoder:Ins_Decoder_inst" File: C:/CPU_Bachlor_1_0/bcpu.vhd Line: 224
+    Info (12022): Found design unit 1: Ins_Decoder-Behavioral File: C:/Bachlor/CPU_Bachlor_1_0/ins_decoder.vhd Line: 19
+    Info (12023): Found entity 1: Ins_Decoder File: C:/Bachlor/CPU_Bachlor_1_0/ins_decoder.vhd Line: 7
+Info (12128): Elaborating entity "Ins_Decoder" for hierarchy "bCPU:bCPU_inst|Ins_Decoder:Ins_Decoder_inst" File: C:/Bachlor/CPU_Bachlor_1_0/bcpu.vhd Line: 224
 Warning (12125): Using design file bcontroller.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: bController-Behavioral File: C:/CPU_Bachlor_1_0/bcontroller.vhd Line: 45
-    Info (12023): Found entity 1: bController File: C:/CPU_Bachlor_1_0/bcontroller.vhd Line: 6
-Info (12128): Elaborating entity "bController" for hierarchy "bCPU:bCPU_inst|bController:bController_inst" File: C:/CPU_Bachlor_1_0/bcpu.vhd Line: 235
+    Info (12022): Found design unit 1: bController-Behavioral File: C:/Bachlor/CPU_Bachlor_1_0/bcontroller.vhd Line: 45
+    Info (12023): Found entity 1: bController File: C:/Bachlor/CPU_Bachlor_1_0/bcontroller.vhd Line: 6
+Info (12128): Elaborating entity "bController" for hierarchy "bCPU:bCPU_inst|bController:bController_inst" File: C:/Bachlor/CPU_Bachlor_1_0/bcpu.vhd Line: 235
 Warning (12125): Using design file baddress.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: bAddress-Behavioral File: C:/CPU_Bachlor_1_0/baddress.vhd Line: 21
-    Info (12023): Found entity 1: bAddress File: C:/CPU_Bachlor_1_0/baddress.vhd Line: 5
-Info (12128): Elaborating entity "bAddress" for hierarchy "bCPU:bCPU_inst|bAddress:bAddress_inst" File: C:/CPU_Bachlor_1_0/bcpu.vhd Line: 261
+    Info (12022): Found design unit 1: bAddress-Behavioral File: C:/Bachlor/CPU_Bachlor_1_0/baddress.vhd Line: 21
+    Info (12023): Found entity 1: bAddress File: C:/Bachlor/CPU_Bachlor_1_0/baddress.vhd Line: 5
+Info (12128): Elaborating entity "bAddress" for hierarchy "bCPU:bCPU_inst|bAddress:bAddress_inst" File: C:/Bachlor/CPU_Bachlor_1_0/bcpu.vhd Line: 261
 Warning (12125): Using design file rom_7_seg.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: ROM_7_SEG-behavior File: C:/CPU_Bachlor_1_0/rom_7_seg.vhd Line: 12
-    Info (12023): Found entity 1: ROM_7_SEG File: C:/CPU_Bachlor_1_0/rom_7_seg.vhd Line: 5
-Info (12128): Elaborating entity "ROM_7_SEG" for hierarchy "ROM_7_SEG:ROM_7_SEG_inst" File: C:/CPU_Bachlor_1_0/bCPU_top.vhd Line: 159
+    Info (12022): Found design unit 1: ROM_7_SEG-behavior File: C:/Bachlor/CPU_Bachlor_1_0/rom_7_seg.vhd Line: 12
+    Info (12023): Found entity 1: ROM_7_SEG File: C:/Bachlor/CPU_Bachlor_1_0/rom_7_seg.vhd Line: 5
+Info (12128): Elaborating entity "ROM_7_SEG" for hierarchy "ROM_7_SEG:ROM_7_SEG_inst" File: C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd Line: 159
 Warning (12125): Using design file lcd_display.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: LCD_Display-a File: C:/CPU_Bachlor_1_0/lcd_display.vhd Line: 55
-    Info (12023): Found entity 1: LCD_Display File: C:/CPU_Bachlor_1_0/lcd_display.vhd Line: 6
-Info (12128): Elaborating entity "LCD_Display" for hierarchy "LCD_Display:LCD_Display_inst" File: C:/CPU_Bachlor_1_0/bCPU_top.vhd Line: 207
-Warning (10036): Verilog HDL or VHDL warning at lcd_display.vhd(79): object "bcd" assigned a value but never read File: C:/CPU_Bachlor_1_0/lcd_display.vhd Line: 79
+    Info (12022): Found design unit 1: LCD_Display-a File: C:/Bachlor/CPU_Bachlor_1_0/lcd_display.vhd Line: 55
+    Info (12023): Found entity 1: LCD_Display File: C:/Bachlor/CPU_Bachlor_1_0/lcd_display.vhd Line: 6
+Info (12128): Elaborating entity "LCD_Display" for hierarchy "LCD_Display:LCD_Display_inst" File: C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd Line: 207
+Warning (10036): Verilog HDL or VHDL warning at lcd_display.vhd(79): object "bcd" assigned a value but never read File: C:/Bachlor/CPU_Bachlor_1_0/lcd_display.vhd Line: 79
 Warning (12125): Using design file bin2bcd.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: bin2bcd-behavior File: C:/CPU_Bachlor_1_0/bin2bcd.vhd Line: 12
-    Info (12023): Found entity 1: bin2bcd File: C:/CPU_Bachlor_1_0/bin2bcd.vhd Line: 5
-Info (12128): Elaborating entity "bin2bcd" for hierarchy "LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_inst1" File: C:/CPU_Bachlor_1_0/lcd_display.vhd Line: 89
+    Info (12022): Found design unit 1: bin2bcd-behavior File: C:/Bachlor/CPU_Bachlor_1_0/bin2bcd.vhd Line: 12
+    Info (12023): Found entity 1: bin2bcd File: C:/Bachlor/CPU_Bachlor_1_0/bin2bcd.vhd Line: 5
+Info (12128): Elaborating entity "bin2bcd" for hierarchy "LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_inst1" File: C:/Bachlor/CPU_Bachlor_1_0/lcd_display.vhd Line: 89
 Warning (12125): Using design file reset_synchronizer.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: Reset_synchronizer-RTL File: C:/CPU_Bachlor_1_0/reset_synchronizer.vhd Line: 10
-    Info (12023): Found entity 1: Reset_synchronizer File: C:/CPU_Bachlor_1_0/reset_synchronizer.vhd Line: 4
-Info (12128): Elaborating entity "Reset_synchronizer" for hierarchy "Reset_synchronizer:reset_synkroniseres" File: C:/CPU_Bachlor_1_0/bCPU_top.vhd Line: 228
+    Info (12022): Found design unit 1: Reset_synchronizer-RTL File: C:/Bachlor/CPU_Bachlor_1_0/reset_synchronizer.vhd Line: 10
+    Info (12023): Found entity 1: Reset_synchronizer File: C:/Bachlor/CPU_Bachlor_1_0/reset_synchronizer.vhd Line: 4
+Info (12128): Elaborating entity "Reset_synchronizer" for hierarchy "Reset_synchronizer:reset_synkroniseres" File: C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd Line: 228
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_ie24.tdf
-    Info (12023): Found entity 1: altsyncram_ie24 File: C:/CPU_Bachlor_1_0/db/altsyncram_ie24.tdf Line: 28
+    Info (12023): Found entity 1: altsyncram_ie24 File: C:/Bachlor/CPU_Bachlor_1_0/db/altsyncram_ie24.tdf Line: 28
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_vsc.tdf
-    Info (12023): Found entity 1: mux_vsc File: C:/CPU_Bachlor_1_0/db/mux_vsc.tdf Line: 23
+    Info (12023): Found entity 1: mux_vsc File: C:/Bachlor/CPU_Bachlor_1_0/db/mux_vsc.tdf Line: 23
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_dvf.tdf
-    Info (12023): Found entity 1: decode_dvf File: C:/CPU_Bachlor_1_0/db/decode_dvf.tdf Line: 23
+    Info (12023): Found entity 1: decode_dvf File: C:/Bachlor/CPU_Bachlor_1_0/db/decode_dvf.tdf Line: 23
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_9ii.tdf
-    Info (12023): Found entity 1: cntr_9ii File: C:/CPU_Bachlor_1_0/db/cntr_9ii.tdf Line: 28
+    Info (12023): Found entity 1: cntr_9ii File: C:/Bachlor/CPU_Bachlor_1_0/db/cntr_9ii.tdf Line: 28
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_ugc.tdf
-    Info (12023): Found entity 1: cmpr_ugc File: C:/CPU_Bachlor_1_0/db/cmpr_ugc.tdf Line: 23
+    Info (12023): Found entity 1: cmpr_ugc File: C:/Bachlor/CPU_Bachlor_1_0/db/cmpr_ugc.tdf Line: 23
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_o9j.tdf
-    Info (12023): Found entity 1: cntr_o9j File: C:/CPU_Bachlor_1_0/db/cntr_o9j.tdf Line: 26
+    Info (12023): Found entity 1: cntr_o9j File: C:/Bachlor/CPU_Bachlor_1_0/db/cntr_o9j.tdf Line: 26
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_igi.tdf
-    Info (12023): Found entity 1: cntr_igi File: C:/CPU_Bachlor_1_0/db/cntr_igi.tdf Line: 28
+    Info (12023): Found entity 1: cntr_igi File: C:/Bachlor/CPU_Bachlor_1_0/db/cntr_igi.tdf Line: 28
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_rgc.tdf
-    Info (12023): Found entity 1: cmpr_rgc File: C:/CPU_Bachlor_1_0/db/cmpr_rgc.tdf Line: 23
+    Info (12023): Found entity 1: cmpr_rgc File: C:/Bachlor/CPU_Bachlor_1_0/db/cmpr_rgc.tdf Line: 23
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_23j.tdf
-    Info (12023): Found entity 1: cntr_23j File: C:/CPU_Bachlor_1_0/db/cntr_23j.tdf Line: 28
+    Info (12023): Found entity 1: cntr_23j File: C:/Bachlor/CPU_Bachlor_1_0/db/cntr_23j.tdf Line: 28
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_ngc.tdf
-    Info (12023): Found entity 1: cmpr_ngc File: C:/CPU_Bachlor_1_0/db/cmpr_ngc.tdf Line: 23
+    Info (12023): Found entity 1: cmpr_ngc File: C:/Bachlor/CPU_Bachlor_1_0/db/cmpr_ngc.tdf Line: 23
 Info (12033): Analysis and Synthesis generated Signal Tap or debug node instance "auto_signaltap_0"
 Info (11170): Starting IP generation for the debug fabric: alt_sld_fab.
-Info (11172): 2026.01.19.21:38:33 Progress: Loading sld46f59f01/alt_sld_fab_wrapper_hw.tcl
+Info (11172): 2026.01.22.17:54:58 Progress: Loading sld46f59f01/alt_sld_fab_wrapper_hw.tcl
 Info (11172): Alt_sld_fab.alt_sld_fab: SLD fabric agents which did not specify prefer_host were connected to JTAG
 Info (11172): Alt_sld_fab: Generating alt_sld_fab "alt_sld_fab" for QUARTUS_SYNTH
 Info (11172): Alt_sld_fab: "alt_sld_fab" instantiated alt_sld_fab "alt_sld_fab"
@@ -7020,66 +7020,66 @@ Info (11172): Ident: "alt_sld_fab" instantiated altera_connection_identification
 Info (11172): Alt_sld_fab: Done "alt_sld_fab" with 6 modules, 6 files
 Info (11171): Finished IP generation for the debug fabric: alt_sld_fab.
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld46f59f01/alt_sld_fab.v
-    Info (12023): Found entity 1: alt_sld_fab File: C:/CPU_Bachlor_1_0/db/ip/sld46f59f01/alt_sld_fab.v Line: 9
+    Info (12023): Found entity 1: alt_sld_fab File: C:/Bachlor/CPU_Bachlor_1_0/db/ip/sld46f59f01/alt_sld_fab.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld46f59f01/submodules/alt_sld_fab_alt_sld_fab.v
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab File: C:/CPU_Bachlor_1_0/db/ip/sld46f59f01/submodules/alt_sld_fab_alt_sld_fab.v Line: 9
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab File: C:/Bachlor/CPU_Bachlor_1_0/db/ip/sld46f59f01/submodules/alt_sld_fab_alt_sld_fab.v Line: 9
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld46f59f01/submodules/alt_sld_fab_alt_sld_fab_ident.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_ident File: C:/CPU_Bachlor_1_0/db/ip/sld46f59f01/submodules/alt_sld_fab_alt_sld_fab_ident.sv Line: 33
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_ident File: C:/Bachlor/CPU_Bachlor_1_0/db/ip/sld46f59f01/submodules/alt_sld_fab_alt_sld_fab_ident.sv Line: 33
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld46f59f01/submodules/alt_sld_fab_alt_sld_fab_presplit.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_presplit File: C:/CPU_Bachlor_1_0/db/ip/sld46f59f01/submodules/alt_sld_fab_alt_sld_fab_presplit.sv Line: 3
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_presplit File: C:/Bachlor/CPU_Bachlor_1_0/db/ip/sld46f59f01/submodules/alt_sld_fab_alt_sld_fab_presplit.sv Line: 3
 Info (12021): Found 2 design units, including 1 entities, in source file db/ip/sld46f59f01/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd
-    Info (12022): Found design unit 1: alt_sld_fab_alt_sld_fab_sldfabric-rtl File: C:/CPU_Bachlor_1_0/db/ip/sld46f59f01/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 102
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: C:/CPU_Bachlor_1_0/db/ip/sld46f59f01/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
+    Info (12022): Found design unit 1: alt_sld_fab_alt_sld_fab_sldfabric-rtl File: C:/Bachlor/CPU_Bachlor_1_0/db/ip/sld46f59f01/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 102
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_sldfabric File: C:/Bachlor/CPU_Bachlor_1_0/db/ip/sld46f59f01/submodules/alt_sld_fab_alt_sld_fab_sldfabric.vhd Line: 11
 Info (12021): Found 1 design units, including 1 entities, in source file db/ip/sld46f59f01/submodules/alt_sld_fab_alt_sld_fab_splitter.sv
-    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: C:/CPU_Bachlor_1_0/db/ip/sld46f59f01/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
+    Info (12023): Found entity 1: alt_sld_fab_alt_sld_fab_splitter File: C:/Bachlor/CPU_Bachlor_1_0/db/ip/sld46f59f01/submodules/alt_sld_fab_alt_sld_fab_splitter.sv Line: 3
 Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276007): RAM logic "bRAM:bRAM_inst|RAM" is uninferred due to asynchronous read logic File: C:/CPU_Bachlor_1_0/bram.vhd Line: 23
+    Info (276007): RAM logic "bRAM:bRAM_inst|RAM" is uninferred due to asynchronous read logic File: C:/Bachlor/CPU_Bachlor_1_0/bram.vhd Line: 23
 Warning (276002): Cannot convert all sets of registers into RAM megafunctions when creating nodes; therefore, the resulting number of registers remaining in design can cause longer compilation time or result in insufficient memory to complete Analysis and Synthesis
-Warning (113028): 8191 out of 16384 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported. File: C:/CPU_Bachlor_1_0/db/bCPU_top.ram0_bRAM_33eb60.hdl.mif Line: 1
-    Warning (113027): Addresses ranging from 8193 to 16383 are not initialized File: C:/CPU_Bachlor_1_0/db/bCPU_top.ram0_bRAM_33eb60.hdl.mif Line: 1
+Warning (113028): 8191 out of 16384 addresses are uninitialized. The Quartus Prime software will initialize them to "0". There are 1 warnings found, and 1 warnings are reported. File: C:/Bachlor/CPU_Bachlor_1_0/db/bCPU_top.ram0_bRAM_33eb60.hdl.mif Line: 1
+    Warning (113027): Addresses ranging from 8193 to 16383 are not initialized File: C:/Bachlor/CPU_Bachlor_1_0/db/bCPU_top.ram0_bRAM_33eb60.hdl.mif Line: 1
 Info (278001): Inferred 12 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_instA|Div0" File: C:/CPU_Bachlor_1_0/bin2bcd.vhd Line: 23
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_instA|Div1" File: C:/CPU_Bachlor_1_0/bin2bcd.vhd Line: 25
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_instB|Div0" File: C:/CPU_Bachlor_1_0/bin2bcd.vhd Line: 23
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_instB|Div1" File: C:/CPU_Bachlor_1_0/bin2bcd.vhd Line: 25
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_instC|Div0" File: C:/CPU_Bachlor_1_0/bin2bcd.vhd Line: 23
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_instC|Div1" File: C:/CPU_Bachlor_1_0/bin2bcd.vhd Line: 25
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_instD|Div0" File: C:/CPU_Bachlor_1_0/bin2bcd.vhd Line: 23
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_instD|Div1" File: C:/CPU_Bachlor_1_0/bin2bcd.vhd Line: 25
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_instC|Mult0" File: C:/CPU_Bachlor_1_0/bin2bcd.vhd Line: 27
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_instB|Mult0" File: C:/CPU_Bachlor_1_0/bin2bcd.vhd Line: 27
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_instA|Mult0" File: C:/CPU_Bachlor_1_0/bin2bcd.vhd Line: 27
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_instD|Mult0" File: C:/CPU_Bachlor_1_0/bin2bcd.vhd Line: 27
-Info (12130): Elaborated megafunction instantiation "LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_instA|lpm_divide:Div0" File: C:/CPU_Bachlor_1_0/bin2bcd.vhd Line: 23
-Info (12133): Instantiated megafunction "LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_instA|lpm_divide:Div0" with the following parameter: File: C:/CPU_Bachlor_1_0/bin2bcd.vhd Line: 23
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_instA|Div0" File: C:/Bachlor/CPU_Bachlor_1_0/bin2bcd.vhd Line: 23
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_instA|Div1" File: C:/Bachlor/CPU_Bachlor_1_0/bin2bcd.vhd Line: 25
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_instB|Div0" File: C:/Bachlor/CPU_Bachlor_1_0/bin2bcd.vhd Line: 23
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_instB|Div1" File: C:/Bachlor/CPU_Bachlor_1_0/bin2bcd.vhd Line: 25
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_instC|Div0" File: C:/Bachlor/CPU_Bachlor_1_0/bin2bcd.vhd Line: 23
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_instC|Div1" File: C:/Bachlor/CPU_Bachlor_1_0/bin2bcd.vhd Line: 25
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_instD|Div0" File: C:/Bachlor/CPU_Bachlor_1_0/bin2bcd.vhd Line: 23
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_instD|Div1" File: C:/Bachlor/CPU_Bachlor_1_0/bin2bcd.vhd Line: 25
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_instC|Mult0" File: C:/Bachlor/CPU_Bachlor_1_0/bin2bcd.vhd Line: 27
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_instB|Mult0" File: C:/Bachlor/CPU_Bachlor_1_0/bin2bcd.vhd Line: 27
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_instA|Mult0" File: C:/Bachlor/CPU_Bachlor_1_0/bin2bcd.vhd Line: 27
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_instD|Mult0" File: C:/Bachlor/CPU_Bachlor_1_0/bin2bcd.vhd Line: 27
+Info (12130): Elaborated megafunction instantiation "LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_instA|lpm_divide:Div0" File: C:/Bachlor/CPU_Bachlor_1_0/bin2bcd.vhd Line: 23
+Info (12133): Instantiated megafunction "LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_instA|lpm_divide:Div0" with the following parameter: File: C:/Bachlor/CPU_Bachlor_1_0/bin2bcd.vhd Line: 23
     Info (12134): Parameter "LPM_WIDTHN" = "8"
     Info (12134): Parameter "LPM_WIDTHD" = "7"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_mhm.tdf
-    Info (12023): Found entity 1: lpm_divide_mhm File: C:/CPU_Bachlor_1_0/db/lpm_divide_mhm.tdf Line: 25
+    Info (12023): Found entity 1: lpm_divide_mhm File: C:/Bachlor/CPU_Bachlor_1_0/db/lpm_divide_mhm.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_ekh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_ekh File: C:/CPU_Bachlor_1_0/db/sign_div_unsign_ekh.tdf Line: 25
+    Info (12023): Found entity 1: sign_div_unsign_ekh File: C:/Bachlor/CPU_Bachlor_1_0/db/sign_div_unsign_ekh.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_g4f.tdf
-    Info (12023): Found entity 1: alt_u_div_g4f File: C:/CPU_Bachlor_1_0/db/alt_u_div_g4f.tdf Line: 27
+    Info (12023): Found entity 1: alt_u_div_g4f File: C:/Bachlor/CPU_Bachlor_1_0/db/alt_u_div_g4f.tdf Line: 27
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_7pc.tdf
-    Info (12023): Found entity 1: add_sub_7pc File: C:/CPU_Bachlor_1_0/db/add_sub_7pc.tdf Line: 23
+    Info (12023): Found entity 1: add_sub_7pc File: C:/Bachlor/CPU_Bachlor_1_0/db/add_sub_7pc.tdf Line: 23
 Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_8pc.tdf
-    Info (12023): Found entity 1: add_sub_8pc File: C:/CPU_Bachlor_1_0/db/add_sub_8pc.tdf Line: 23
-Info (12130): Elaborated megafunction instantiation "LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_instA|lpm_divide:Div1" File: C:/CPU_Bachlor_1_0/bin2bcd.vhd Line: 25
-Info (12133): Instantiated megafunction "LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_instA|lpm_divide:Div1" with the following parameter: File: C:/CPU_Bachlor_1_0/bin2bcd.vhd Line: 25
+    Info (12023): Found entity 1: add_sub_8pc File: C:/Bachlor/CPU_Bachlor_1_0/db/add_sub_8pc.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_instA|lpm_divide:Div1" File: C:/Bachlor/CPU_Bachlor_1_0/bin2bcd.vhd Line: 25
+Info (12133): Instantiated megafunction "LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_instA|lpm_divide:Div1" with the following parameter: File: C:/Bachlor/CPU_Bachlor_1_0/bin2bcd.vhd Line: 25
     Info (12134): Parameter "LPM_WIDTHN" = "8"
     Info (12134): Parameter "LPM_WIDTHD" = "4"
     Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
     Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
 Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_jhm.tdf
-    Info (12023): Found entity 1: lpm_divide_jhm File: C:/CPU_Bachlor_1_0/db/lpm_divide_jhm.tdf Line: 25
+    Info (12023): Found entity 1: lpm_divide_jhm File: C:/Bachlor/CPU_Bachlor_1_0/db/lpm_divide_jhm.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_bkh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_bkh File: C:/CPU_Bachlor_1_0/db/sign_div_unsign_bkh.tdf Line: 25
+    Info (12023): Found entity 1: sign_div_unsign_bkh File: C:/Bachlor/CPU_Bachlor_1_0/db/sign_div_unsign_bkh.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_a4f.tdf
-    Info (12023): Found entity 1: alt_u_div_a4f File: C:/CPU_Bachlor_1_0/db/alt_u_div_a4f.tdf Line: 27
-Info (12130): Elaborated megafunction instantiation "LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_instC|lpm_mult:Mult0" File: C:/CPU_Bachlor_1_0/bin2bcd.vhd Line: 27
-Info (12133): Instantiated megafunction "LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_instC|lpm_mult:Mult0" with the following parameter: File: C:/CPU_Bachlor_1_0/bin2bcd.vhd Line: 27
+    Info (12023): Found entity 1: alt_u_div_a4f File: C:/Bachlor/CPU_Bachlor_1_0/db/alt_u_div_a4f.tdf Line: 27
+Info (12130): Elaborated megafunction instantiation "LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_instC|lpm_mult:Mult0" File: C:/Bachlor/CPU_Bachlor_1_0/bin2bcd.vhd Line: 27
+Info (12133): Instantiated megafunction "LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_instC|lpm_mult:Mult0" with the following parameter: File: C:/Bachlor/CPU_Bachlor_1_0/bin2bcd.vhd Line: 27
     Info (12134): Parameter "LPM_WIDTHA" = "4"
     Info (12134): Parameter "LPM_WIDTHB" = "4"
     Info (12134): Parameter "LPM_WIDTHP" = "8"
@@ -7092,47 +7092,47 @@ Info (12133): Instantiated megafunction "LCD_Display:LCD_Display_inst|bin2bcd:bi
 Info (12131): Elaborated megafunction instantiation "LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_instC|lpm_mult:Mult0|multcore:mult_core", which is child of megafunction instantiation "LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_instC|lpm_mult:Mult0" File: c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/lpm_mult.tdf Line: 309
 Info (12131): Elaborated megafunction instantiation "LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_instC|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder", which is child of megafunction instantiation "LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_instC|lpm_mult:Mult0" File: c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/multcore.tdf Line: 229
 Info (12131): Elaborated megafunction instantiation "LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_instC|lpm_mult:Mult0|altshift:external_latency_ffs", which is child of megafunction instantiation "LCD_Display:LCD_Display_inst|bin2bcd:bin2bcd_instC|lpm_mult:Mult0" File: c:/intelfpga_lite/23.1std/quartus/libraries/megafunctions/lpm_mult.tdf Line: 352
-Info (13000): Registers with preset signals will power-up high File: C:/CPU_Bachlor_1_0/lcd_display.vhd Line: 48
+Info (13000): Registers with preset signals will power-up high File: C:/Bachlor/CPU_Bachlor_1_0/lcd_display.vhd Line: 48
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "LEDR[3]" is stuck at VCC File: C:/CPU_Bachlor_1_0/bCPU_top.vhd Line: 10
-    Warning (13410): Pin "LEDR[7]" is stuck at GND File: C:/CPU_Bachlor_1_0/bCPU_top.vhd Line: 10
-    Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/CPU_Bachlor_1_0/bCPU_top.vhd Line: 10
-    Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/CPU_Bachlor_1_0/bCPU_top.vhd Line: 10
-    Warning (13410): Pin "LEDR[10]" is stuck at GND File: C:/CPU_Bachlor_1_0/bCPU_top.vhd Line: 10
-    Warning (13410): Pin "LEDR[11]" is stuck at GND File: C:/CPU_Bachlor_1_0/bCPU_top.vhd Line: 10
-    Warning (13410): Pin "LEDR[12]" is stuck at GND File: C:/CPU_Bachlor_1_0/bCPU_top.vhd Line: 10
-    Warning (13410): Pin "LEDR[13]" is stuck at GND File: C:/CPU_Bachlor_1_0/bCPU_top.vhd Line: 10
-    Warning (13410): Pin "LEDR[14]" is stuck at GND File: C:/CPU_Bachlor_1_0/bCPU_top.vhd Line: 10
-    Warning (13410): Pin "LEDR[15]" is stuck at GND File: C:/CPU_Bachlor_1_0/bCPU_top.vhd Line: 10
-    Warning (13410): Pin "LEDR[16]" is stuck at GND File: C:/CPU_Bachlor_1_0/bCPU_top.vhd Line: 10
-    Warning (13410): Pin "LEDR[17]" is stuck at GND File: C:/CPU_Bachlor_1_0/bCPU_top.vhd Line: 10
-    Warning (13410): Pin "LEDG[3]" is stuck at GND File: C:/CPU_Bachlor_1_0/bCPU_top.vhd Line: 11
-    Warning (13410): Pin "LEDG[4]" is stuck at GND File: C:/CPU_Bachlor_1_0/bCPU_top.vhd Line: 11
-    Warning (13410): Pin "LEDG[5]" is stuck at GND File: C:/CPU_Bachlor_1_0/bCPU_top.vhd Line: 11
-    Warning (13410): Pin "LEDG[6]" is stuck at GND File: C:/CPU_Bachlor_1_0/bCPU_top.vhd Line: 11
-    Warning (13410): Pin "LEDG[7]" is stuck at GND File: C:/CPU_Bachlor_1_0/bCPU_top.vhd Line: 11
-    Warning (13410): Pin "LEDG[8]" is stuck at GND File: C:/CPU_Bachlor_1_0/bCPU_top.vhd Line: 11
-    Warning (13410): Pin "LCD_ON" is stuck at VCC File: C:/CPU_Bachlor_1_0/bCPU_top.vhd Line: 15
+    Warning (13410): Pin "LEDR[3]" is stuck at VCC File: C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd Line: 10
+    Warning (13410): Pin "LEDR[7]" is stuck at GND File: C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd Line: 10
+    Warning (13410): Pin "LEDR[8]" is stuck at GND File: C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd Line: 10
+    Warning (13410): Pin "LEDR[9]" is stuck at GND File: C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd Line: 10
+    Warning (13410): Pin "LEDR[10]" is stuck at GND File: C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd Line: 10
+    Warning (13410): Pin "LEDR[11]" is stuck at GND File: C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd Line: 10
+    Warning (13410): Pin "LEDR[12]" is stuck at GND File: C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd Line: 10
+    Warning (13410): Pin "LEDR[13]" is stuck at GND File: C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd Line: 10
+    Warning (13410): Pin "LEDR[14]" is stuck at GND File: C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd Line: 10
+    Warning (13410): Pin "LEDR[15]" is stuck at GND File: C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd Line: 10
+    Warning (13410): Pin "LEDR[16]" is stuck at GND File: C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd Line: 10
+    Warning (13410): Pin "LEDR[17]" is stuck at GND File: C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd Line: 10
+    Warning (13410): Pin "LEDG[3]" is stuck at GND File: C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd Line: 11
+    Warning (13410): Pin "LEDG[4]" is stuck at GND File: C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd Line: 11
+    Warning (13410): Pin "LEDG[5]" is stuck at GND File: C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd Line: 11
+    Warning (13410): Pin "LEDG[6]" is stuck at GND File: C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd Line: 11
+    Warning (13410): Pin "LEDG[7]" is stuck at GND File: C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd Line: 11
+    Warning (13410): Pin "LEDG[8]" is stuck at GND File: C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd Line: 11
+    Warning (13410): Pin "LCD_ON" is stuck at VCC File: C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd Line: 15
 Info (286031): Timing-Driven Synthesis is running on partition "Top"
 Info (17049): 63496 registers lost all their fanouts during netlist optimizations.
 Info (35024): Successfully connected in-system debug instance "auto_signaltap_0" to all 499 required data inputs, trigger inputs, acquisition clocks, and dynamic pins
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 13 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "SW[7]" File: C:/CPU_Bachlor_1_0/bCPU_top.vhd Line: 8
-    Warning (15610): No output dependent on input pin "SW[8]" File: C:/CPU_Bachlor_1_0/bCPU_top.vhd Line: 8
-    Warning (15610): No output dependent on input pin "SW[9]" File: C:/CPU_Bachlor_1_0/bCPU_top.vhd Line: 8
-    Warning (15610): No output dependent on input pin "SW[10]" File: C:/CPU_Bachlor_1_0/bCPU_top.vhd Line: 8
-    Warning (15610): No output dependent on input pin "SW[11]" File: C:/CPU_Bachlor_1_0/bCPU_top.vhd Line: 8
-    Warning (15610): No output dependent on input pin "SW[12]" File: C:/CPU_Bachlor_1_0/bCPU_top.vhd Line: 8
-    Warning (15610): No output dependent on input pin "SW[13]" File: C:/CPU_Bachlor_1_0/bCPU_top.vhd Line: 8
-    Warning (15610): No output dependent on input pin "SW[14]" File: C:/CPU_Bachlor_1_0/bCPU_top.vhd Line: 8
-    Warning (15610): No output dependent on input pin "SW[15]" File: C:/CPU_Bachlor_1_0/bCPU_top.vhd Line: 8
-    Warning (15610): No output dependent on input pin "SW[16]" File: C:/CPU_Bachlor_1_0/bCPU_top.vhd Line: 8
-    Warning (15610): No output dependent on input pin "SW[17]" File: C:/CPU_Bachlor_1_0/bCPU_top.vhd Line: 8
-    Warning (15610): No output dependent on input pin "key[1]" File: C:/CPU_Bachlor_1_0/bCPU_top.vhd Line: 9
-    Warning (15610): No output dependent on input pin "key[2]" File: C:/CPU_Bachlor_1_0/bCPU_top.vhd Line: 9
+    Warning (15610): No output dependent on input pin "SW[7]" File: C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd Line: 8
+    Warning (15610): No output dependent on input pin "SW[8]" File: C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd Line: 8
+    Warning (15610): No output dependent on input pin "SW[9]" File: C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd Line: 8
+    Warning (15610): No output dependent on input pin "SW[10]" File: C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd Line: 8
+    Warning (15610): No output dependent on input pin "SW[11]" File: C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd Line: 8
+    Warning (15610): No output dependent on input pin "SW[12]" File: C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd Line: 8
+    Warning (15610): No output dependent on input pin "SW[13]" File: C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd Line: 8
+    Warning (15610): No output dependent on input pin "SW[14]" File: C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd Line: 8
+    Warning (15610): No output dependent on input pin "SW[15]" File: C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd Line: 8
+    Warning (15610): No output dependent on input pin "SW[16]" File: C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd Line: 8
+    Warning (15610): No output dependent on input pin "SW[17]" File: C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd Line: 8
+    Warning (15610): No output dependent on input pin "key[1]" File: C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd Line: 9
+    Warning (15610): No output dependent on input pin "key[2]" File: C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd Line: 9
 Info (21057): Implemented 8927 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 26 input pins
     Info (21059): Implemented 88 output pins
@@ -7141,8 +7141,8 @@ Info (21057): Implemented 8927 device resources after synthesis - the final reso
     Info (21064): Implemented 233 RAM segments
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 57 warnings
     Info: Peak virtual memory: 5160 megabytes
-    Info: Processing ended: Mon Jan 19 21:38:46 2026
-    Info: Elapsed time: 00:00:23
-    Info: Total CPU time (on all processors): 00:00:36
+    Info: Processing ended: Thu Jan 22 17:55:12 2026
+    Info: Elapsed time: 00:00:24
+    Info: Total CPU time (on all processors): 00:00:40
 
 

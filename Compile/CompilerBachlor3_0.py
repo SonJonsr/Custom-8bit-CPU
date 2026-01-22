@@ -8,10 +8,10 @@ Created on Sun Dec 21 16:26:39 2025
 # -*- coding: utf-8 -*-
 import os
 
-filename = "ASM_output"
+filename = "TestingBranching"
 
 startkode  = 0x0001
-Write_binary_to = 0x0050
+Write_binary_to = 0x00c0
 
 def intTo4hex(t):
     ttemp = hex(t)
@@ -56,6 +56,7 @@ filename += ".txt"
 file = open(filename,'r')
 
 for line in file:
+    line = line + " "
     komando     = ""
     tempkomando = []
     
@@ -77,6 +78,7 @@ for line in file:
                 komando     = ""
                 lengde = 0
     if len(tempkomando) > 0:
+
         komandoer.append(tempkomando)
 file.close()     
 #for linje in komandoer:
@@ -136,7 +138,7 @@ for linje in komandoer:
         
 
 
-
+    print(linje)
 startminne = startkode + programlengde
 
 
@@ -670,6 +672,7 @@ for linje in kode:
         index += 1
         program.append(temp)
     elif linje[0] == "def":
+        print("defin " + linje[0] + " som " + linje[1])
         temp.append(int(linje[1],16))
         temp.append(linje[2] + " #def")
     
@@ -680,6 +683,8 @@ for linje in kode:
         
         #print(pointere, len(pointere), index)
         fant = False
+        print(linje)
+        print(str(len(pointere)) + " ---------")
         for i in range(0,len(pointere)):
             #print(linje[1],i)
             #print(pointere[i][2])
