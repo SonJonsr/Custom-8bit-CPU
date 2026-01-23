@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Successful - Thu Jan 22 17:55:12 2026
+Analysis & Synthesis Status : Successful - Fri Jan 23 18:05:22 2026
 Quartus Prime Version : 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 Revision Name : bCPU_top
 Top-level Entity Name : bCPU_top
 Family : Cyclone IV E
-Total logic elements : 8,430
-    Total combinational functions : 4,331
-    Dedicated logic registers : 5,532
-Total registers : 5532
+Total logic elements : 8,706
+    Total combinational functions : 4,463
+    Dedicated logic registers : 5,776
+Total registers : 5776
 Total pins : 118
 Total virtual pins : 0
-Total memory bits : 1,908,736
+Total memory bits : 2,072,576
 Embedded Multiplier 9-bit elements : 0
 Total PLLs : 0

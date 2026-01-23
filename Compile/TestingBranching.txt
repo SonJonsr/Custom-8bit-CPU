@@ -2,14 +2,15 @@
 #Assuming that (nop, clear, jump, load, store, add) Works and testing all "branc if"
 
 
-def	0x00ba 	0x22	# x = 34
-def	0x00bb 	0xf3	# y = -4
+def	0x00fa 	0x22	# x = 34
+def	0x00fb 	0xfc	# y = -4
+def	0x00fc 	0x78	# y = 120
 
 
 #testing carry: ------------------------------------------------------------------
 
-load	a	0x00ba
-load	b	0x00bb
+load	a	0x00fa
+load	b	0x00fb
 add	b	a
 
 bnc	Fail	#branch not carry	(False)
@@ -32,7 +33,7 @@ jump	Fail
 Clear	r
 Clear	f
 
-load	a	0x00bb
+load	a	0x00fb
 add	a	b
 
 bop	Fail	#branch on positive 	(False)
@@ -44,8 +45,8 @@ jump	Fail
 Clear	r
 Clear	f
 
-load	a	0x00ba
-load	b	0x00bb
+load	a	0x00fa
+load	b	0x00fb
 add	b	a
 
 bon	Fail	#branch on Negative 	(False)
@@ -73,8 +74,8 @@ jump	Fail
 Clear	r
 Clear	f
 
-load	a	0x00ba
-load	b	0x00bb
+load	a	0x00fa
+load	b	0x00fb
 add	b	a	#flag is positive
 
 boz	Fail
@@ -119,7 +120,7 @@ jump	Fail
 Clear	f
 Clear	r
 
-load	a	0x00bb
+load	a	0x00fb
 
 boo	Fail
 
@@ -127,8 +128,12 @@ bno	NR9
 jump	Fail
 @NR9
 
-add	a	a
-bno	Fail
+
+load	a	0x00fc
+
+
+add	a	a		
+bno	Fail 			#-fails here
 
 boo	NR10
 jump	Fail
@@ -137,7 +142,7 @@ jump	Fail
 #testing UnderFlow branching: ------------------------------------------------------------------------------
 
 
-load	a	0x00ba
+load	a	0x00fa
 dec	a
 
 

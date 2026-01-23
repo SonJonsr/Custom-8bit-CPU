@@ -109,6 +109,9 @@ architecture Behavioral of bCPU is
             FlagO             : in  std_logic;
             FlagU             : in  std_logic;
             FlagC             : in  std_logic;
+            tempFlagSet       : out   std_logic_vector(4 downto 0); -- temporary flags storage (N,Z,O,U,C)                  bALU
+            tempFlagOut       : out   std_logic_vector(4 downto 0); -- temporary flags output (N,Z,O,U,C)                   bALU
+
             FlagC_out         : out std_logic
         );
     end component bController;
@@ -255,6 +258,8 @@ begin
         FlagO             => FlagO,
         FlagU             => FlagU,
         FlagC             => FlagC,
+        tempFlagSet       => open,
+        tempFlagOut       => open,
         FlagC_out         => falg_carry_in
     );
     

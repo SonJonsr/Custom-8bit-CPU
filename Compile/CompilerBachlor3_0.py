@@ -11,7 +11,7 @@ import os
 filename = "TestingBranching"
 
 startkode  = 0x0001
-Write_binary_to = 0x00c0
+Write_binary_to = 0x0100
 
 def intTo4hex(t):
     ttemp = hex(t)
