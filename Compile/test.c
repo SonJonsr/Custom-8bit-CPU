@@ -51,5 +51,7 @@ void main() {
   printf("%d = %x , %d = %x , %d = %x\n", x, x, y, y, z, z);
   z /= g;
   printf("%d = %x , %d = %x , %d = %x\n", x, x, y, y, z, z);
-  
+  if z> x {
+    z += x;
+  }
 }
