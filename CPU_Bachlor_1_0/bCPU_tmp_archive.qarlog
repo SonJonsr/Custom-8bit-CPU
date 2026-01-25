@@ -1,0 +1,37 @@
+Quartus Prime Archive log --	C:/Bachlor/CPU_Bachlor_1_0/bCPU_tmp_archive.qarlog
+
+Archive:	C:/Bachlor/CPU_Bachlor_1_0/bCPU_tmp_archive.qar
+Date:		Sun Jan 25 15:45:21 2026
+Quartus Prime		23.1std.1 Build 993 05/14/2024 SC Lite Edition
+
+	=========== Files Selected: ===========
+C:/Bachlor/CPU_Bachlor_1_0/adder_8bit.vhd
+C:/Bachlor/CPU_Bachlor_1_0/bCPU.qpf
+C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.qsf
+C:/Bachlor/CPU_Bachlor_1_0/bCPU_top.vhd
+C:/Bachlor/CPU_Bachlor_1_0/baddress.vhd
+C:/Bachlor/CPU_Bachlor_1_0/balu.vhd
+C:/Bachlor/CPU_Bachlor_1_0/bcontroller.vhd
+C:/Bachlor/CPU_Bachlor_1_0/bcpu.vhd
+C:/Bachlor/CPU_Bachlor_1_0/bin2bcd.vhd
+C:/Bachlor/CPU_Bachlor_1_0/bram.vhd
+C:/Bachlor/CPU_Bachlor_1_0/clockgen.vhd
+C:/Bachlor/CPU_Bachlor_1_0/db/stp1_auto_stripped.stp
+C:/Bachlor/CPU_Bachlor_1_0/fulladder.vhd
+C:/Bachlor/CPU_Bachlor_1_0/ins_decoder.vhd
+C:/Bachlor/CPU_Bachlor_1_0/lcd_display.vhd
+C:/Bachlor/CPU_Bachlor_1_0/ram8bit.vhd
+C:/Bachlor/CPU_Bachlor_1_0/reset_synchronizer.vhd
+C:/Bachlor/CPU_Bachlor_1_0/rom_7_seg.vhd
+C:/Bachlor/CPU_Bachlor_1_0/stp1.stp
+c:/intelfpga_lite/23.1std/quartus/bin64/assignment_defaults.qdf
+	======= Total: 20 files to archive =======
+
+	================ Status: ===============
+All files archived successfully.
+
+
+******* Archived project restoration attempt on Sun Jan 25 15:45:22 2026
+Source archive file:	C:/Bachlor/CPU_Bachlor_1_0/bCPU_tmp_archive.qar
+Archive was extracted into	C:/Bachlor/CPU_Bachelor_2_0/
+		 - successfully.
