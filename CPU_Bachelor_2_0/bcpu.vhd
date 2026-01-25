@@ -152,6 +152,8 @@ architecture Behavioral of bCPU is
     signal sTimeStep : std_logic_vector(2 downto 0);
     signal operation : std_logic_vector(7 downto 0);
 
+    signal sRW : std_logic;
+
 begin
     sycle_In <= s_sycle_In;
     sycle_out <= s_sycle_out;
@@ -293,17 +295,21 @@ begin
         end if;
     end process;
 
-    RW <= not ((not opcode(16)) and not(sTimeStep(0)) and sTimeStep(2));
+    sRW <= not ((not opcode(16)) and not(sTimeStep(0)) and sTimeStep(2));
     --     not      store       and not (timestep 0    and timestep 2)
-
     --RW 1 = read, 0 = write
+    RW <= sRW;
+
     data_out <= main_buss;
 
-    if RW = '1' then
-        data <= (others => 'Z');
-    else
-        data <= main_buss;
-    end if;
+    process(sRW, main_buss) is
+    begin
+        if sRW = '1' then
+            data <= (others => 'Z');
+        else
+            data <= main_buss;
+        end if;
+    end process;
 
     main_buss <=    ALU_result when (aluOpcode(10) and aluOpcode(9) and aluOpcode(8) and aluOpcode(7) and aluOpcode(6) and aluOpcode(5) and aluOpcode(4) and aluOpcode(3) and aluOpcode(2) and aluOpcode(1) and aluOpcode(0)) = '0' else
                     data when opcode(15) = '0' else

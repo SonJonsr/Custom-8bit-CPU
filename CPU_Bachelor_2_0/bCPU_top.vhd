@@ -13,7 +13,7 @@ entity bCPU_top is
         LCD_RS,LCD_EN   : out std_logic;
         LCD_RW          : out std_logic;
         LCD_ON          : out std_logic;
-        LCD_DATA        : INOUT std_logic_vector(7 downto 0);
+        LCD_DATA        : INOUT std_logic_vector(7 downto 0)
         
          );
 end bCPU_top;
