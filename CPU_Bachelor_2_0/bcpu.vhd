@@ -13,8 +13,12 @@ entity bCPU is
         Run             : in std_logic;
         RW              : out std_logic;    -- '1' for read, '0' for write, CPU perspective
         address         : out std_logic_vector(15 downto 0);
+
         data_in         : in std_logic_vector(7 downto 0);
         data_out        : out std_logic_vector(7 downto 0);
+
+        data            : inout std_logic_vector(7 downto 0);
+
         comJumo         : out std_logic;
         sycle_out       : out std_logic_vector(2 downto 0);
         sycle_In        : out std_logic_vector(2 downto 0);
@@ -47,7 +51,7 @@ architecture Behavioral of bCPU is
         port(
             A             : in  std_logic_vector(7 downto 0);
             B             : in  std_logic_vector(7 downto 0);
-            ALU_Sel       : in  std_logic_vector(9 downto 0);
+            ALU_Sel       : in  std_logic_vector(10 downto 0);
             Result        : out std_logic_vector(7 downto 0);
             falg_carry_in : in  std_logic;
             FlagN         : out std_logic;
@@ -82,7 +86,7 @@ architecture Behavioral of bCPU is
             read_new_opcode : in  std_logic;
             Data_buss       : in  std_logic_vector(7 downto 0);
             operation       : out std_logic_vector(7 downto 0);
-            opcode          : out std_logic_vector(25 downto 0)
+            opcode          : out std_logic_vector(26 downto 0)
         );
     end component Ins_Decoder;
 
@@ -91,7 +95,7 @@ architecture Behavioral of bCPU is
             clk               : in  std_logic;
             rise_edge         : in  std_logic;
             rst_n             : in  std_logic;
-            opcode            : in  std_logic_vector(25 downto 0);
+            opcode            : in  std_logic_vector(26 downto 0);
             readHH            : out std_logic;
             readLL            : out std_logic;
             comit_jump        : out std_logic;
@@ -129,8 +133,8 @@ architecture Behavioral of bCPU is
     signal s_RegA : std_logic_vector(3 downto 0); -- alu input A select
     signal s_RegB : std_logic_vector(3 downto 0); -- alu input B select
 
-    signal opcode : std_logic_vector(25 downto 0);
-    signal aluOpcode : std_logic_vector(9 downto 0);
+    signal opcode : std_logic_vector(26 downto 0);
+    signal aluOpcode : std_logic_vector(10 downto 0);
 
     signal FlagN : std_logic;
     signal FlagZ : std_logic;
@@ -209,7 +213,7 @@ begin
             D_out when s_RegB = "1000" else
             (others => '0');
 
-    aluOpcode <= opcode(18) & opcode(25 downto 20) & opcode(17 downto 15);
+    aluOpcode <= opcode(26 downto 16);
     ALU_inst : component bALU
     port map(
         A             => ALUA,
@@ -230,7 +234,7 @@ begin
         slow_clk        => slow_clk,
         rst_n           => rst_n,
         read_new_opcode => read_new_opcode,
-        Data_buss       => data_in,
+        Data_buss       => data,
         operation       => operation,
         opcode          => opcode
     );
@@ -273,7 +277,7 @@ begin
         comit_jump     => comit_jump,
         change_address => change_address,
         address_out    => address,
-        data_Buss      => data_in
+        data_Buss      => data
     );
     
 
@@ -289,11 +293,20 @@ begin
         end if;
     end process;
 
-    RW <= not ((not opcode(18)) and not(sTimeStep(0)) and sTimeStep(2));
+    RW <= not ((not opcode(16)) and not(sTimeStep(0)) and sTimeStep(2));
+    --     not      store       and not (timestep 0    and timestep 2)
+
+    --RW 1 = read, 0 = write
     data_out <= main_buss;
 
-    main_buss <=    ALU_result when (aluOpcode(9) and aluOpcode(8) and aluOpcode(7) and aluOpcode(6) and aluOpcode(5) and aluOpcode(4) and aluOpcode(3) and aluOpcode(2) and aluOpcode(1) and aluOpcode(0)) = '0' else
-                    data_in when opcode(19) = '0' else
+    if RW = '1' then
+        data <= (others => 'Z');
+    else
+        data <= main_buss;
+    end if;
+
+    main_buss <=    ALU_result when (aluOpcode(10) and aluOpcode(9) and aluOpcode(8) and aluOpcode(7) and aluOpcode(6) and aluOpcode(5) and aluOpcode(4) and aluOpcode(3) and aluOpcode(2) and aluOpcode(1) and aluOpcode(0)) = '0' else
+                    data when opcode(15) = '0' else
                     (others => '0');
 
 end Behavioral;

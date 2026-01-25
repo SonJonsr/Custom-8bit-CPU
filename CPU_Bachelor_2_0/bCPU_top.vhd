@@ -13,7 +13,8 @@ entity bCPU_top is
         LCD_RS,LCD_EN   : out std_logic;
         LCD_RW          : out std_logic;
         LCD_ON          : out std_logic;
-        LCD_DATA        : INOUT std_logic_vector(7 downto 0)
+        LCD_DATA        : INOUT std_logic_vector(7 downto 0);
+        
          );
 end bCPU_top;
 
@@ -42,6 +43,7 @@ architecture Behavioral of bCPU_top is
             address  : out std_logic_vector(15 downto 0);
             data_in  : in  std_logic_vector(7 downto 0);
             data_out : out std_logic_vector(7 downto 0);
+            data     : inout std_logic_vector(7 downto 0);
             comJumo  : out std_logic;
             sycle_out       : out std_logic_vector(2 downto 0);
             sycle_In        : out std_logic_vector(2 downto 0);
@@ -60,6 +62,7 @@ architecture Behavioral of bCPU_top is
     		RW       : in  std_logic;
     		ready    : out std_logic;
     		address  : in  std_logic_vector(15 downto 0);
+            data     : inout std_logic_vector(7 downto 0);
     		data_in  : in  std_logic_vector(7 downto 0);
     		data_out : out std_logic_vector(7 downto 0) := "00000000"
     	);
@@ -106,6 +109,8 @@ architecture Behavioral of bCPU_top is
     Signal bcd : STD_LOGIC_VECTOR(23 DOWNTO 0);
 	Signal reset_key3,reset: std_LOGIC;
 
+    signal data : std_logic_vector(7 downto 0);
+
 begin
     s_reset_n <= key(0);
     LEDG(0) <= slow_clk;
@@ -131,6 +136,7 @@ begin
             RW       => RW,
             ready    => ready,
             address  => s_address,
+            data     => data,
             data_in  => CPU_data_out,
             data_out => CPU_data_in
         );
@@ -146,6 +152,7 @@ begin
             address  => s_address,
             data_in  => CPU_data_in,
             data_out => CPU_data_out,
+            data     => data,
             comJumo  => LEDG(2),
             sycle_In => LEDR(6 downto 4),
             sycle_out => LEDR(2 downto 0),
@@ -182,27 +189,16 @@ begin
         );
     DAT_IN_H : component ROM_7_SEG
         port map(
-            adresse => CPU_data_in(7 downto 4),
+            adresse => data(7 downto 4),
             HEX     => HEX5
         );
     
     DAT_IN_L : component ROM_7_SEG
         port map(
-            adresse => CPU_data_in(3 downto 0),
+            adresse => data(3 downto 0),
             HEX     => HEX4
         );
     
-    DAT_OUT_H : component ROM_7_SEG
-        port map(
-            adresse => CPU_data_out(7 downto 4),
-            HEX     => HEX7
-        );
-    
-    DAT_OUT_L : component ROM_7_SEG
-        port map(
-            adresse => CPU_data_out(3 downto 0),
-            HEX     => HEX6
-        );
 
     LCD_Display_inst : component LCD_Display
         port map(

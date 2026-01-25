@@ -183,7 +183,7 @@ begin
             sA <= A; -- A is don't care
             sB <= B; -- B is source
             adder_carry_in <= '0';
-            sResult <= AND_result; 
+            sResult <= OR_result; 
 
             sFlagO <= '0';
             sFlagC <= '0';
