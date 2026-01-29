@@ -1,0 +1,14 @@
+
+State Machine - |vga_adapter|v_state
+Name v_state.BACK_PORCH v_state.SYNC_PULSE v_state.FRONT_PORCH v_state.DISPLAY 
+v_state.DISPLAY 0 0 0 0 
+v_state.FRONT_PORCH 0 0 1 1 
+v_state.SYNC_PULSE 0 1 0 1 
+v_state.BACK_PORCH 1 0 0 1 
+
+State Machine - |vga_adapter|h_state
+Name h_state.BACK_PORCH h_state.SYNC_PULSE h_state.FRONT_PORCH h_state.DISPLAY 
+h_state.DISPLAY 0 0 0 0 
+h_state.FRONT_PORCH 0 0 1 1 
+h_state.SYNC_PULSE 0 1 0 1 
+h_state.BACK_PORCH 1 0 0 1 

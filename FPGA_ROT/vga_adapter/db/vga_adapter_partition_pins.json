@@ -1,0 +1,113 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "h_sync",
+					"strict" : false
+				},
+				{
+					"name" : "v_sync",
+					"strict" : false
+				},
+				{
+					"name" : "column[0]",
+					"strict" : false
+				},
+				{
+					"name" : "column[1]",
+					"strict" : false
+				},
+				{
+					"name" : "column[2]",
+					"strict" : false
+				},
+				{
+					"name" : "column[3]",
+					"strict" : false
+				},
+				{
+					"name" : "column[4]",
+					"strict" : false
+				},
+				{
+					"name" : "column[5]",
+					"strict" : false
+				},
+				{
+					"name" : "column[6]",
+					"strict" : false
+				},
+				{
+					"name" : "column[7]",
+					"strict" : false
+				},
+				{
+					"name" : "column[8]",
+					"strict" : false
+				},
+				{
+					"name" : "column[9]",
+					"strict" : false
+				},
+				{
+					"name" : "column[31]",
+					"strict" : false
+				},
+				{
+					"name" : "row[0]",
+					"strict" : false
+				},
+				{
+					"name" : "row[1]",
+					"strict" : false
+				},
+				{
+					"name" : "row[2]",
+					"strict" : false
+				},
+				{
+					"name" : "row[3]",
+					"strict" : false
+				},
+				{
+					"name" : "row[4]",
+					"strict" : false
+				},
+				{
+					"name" : "row[5]",
+					"strict" : false
+				},
+				{
+					"name" : "row[6]",
+					"strict" : false
+				},
+				{
+					"name" : "row[7]",
+					"strict" : false
+				},
+				{
+					"name" : "row[8]",
+					"strict" : false
+				},
+				{
+					"name" : "row[9]",
+					"strict" : false
+				},
+				{
+					"name" : "row[31]",
+					"strict" : false
+				},
+				{
+					"name" : "pixel_clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset_n",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

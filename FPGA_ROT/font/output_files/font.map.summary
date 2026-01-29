@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sat Jan 24 16:44:06 2026
+Quartus Prime Version : 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+Revision Name : font
+Top-level Entity Name : font
+Family : Cyclone IV E
+Total logic elements : 1,378
+    Total combinational functions : 1,378
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 20
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

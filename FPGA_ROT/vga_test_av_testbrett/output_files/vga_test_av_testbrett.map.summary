@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Jan 23 17:45:31 2026
+Quartus Prime Version : 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+Revision Name : vga_test_av_testbrett
+Top-level Entity Name : vga_test_av_testbrett
+Family : Cyclone IV E
+Total logic elements : 4,929
+    Total combinational functions : 4,386
+    Dedicated logic registers : 979
+Total registers : 979
+Total pins : 34
+Total virtual pins : 0
+Total memory bits : 1,114,112
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1

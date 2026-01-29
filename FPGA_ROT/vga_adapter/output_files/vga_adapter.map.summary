@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Jan 22 14:50:45 2026
+Quartus Prime Version : 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+Revision Name : vga_adapter
+Top-level Entity Name : vga_adapter
+Family : Cyclone IV E
+Total logic elements : 101
+    Total combinational functions : 101
+    Dedicated logic registers : 52
+Total registers : 52
+Total pins : 70
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

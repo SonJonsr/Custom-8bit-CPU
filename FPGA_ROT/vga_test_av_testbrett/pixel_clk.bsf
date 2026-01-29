@@ -1,0 +1,77 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2025  Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Altera and sold by Altera or its authorized distributors.  Please
+refer to the Altera Software License Subscription Agreements 
+on the Quartus Prime software download page.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 0 0 256 144)
+	(text "pixel_clk" (rect 103 0 162 15)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 129 24 140)(font "Arial" ))
+	(port
+		(pt 0 64)
+		(input)
+		(text "inclk0" (rect 0 0 34 13)(font "Arial" (font_size 8)))
+		(text "inclk0" (rect 4 52 31 63)(font "Arial" (font_size 8)))
+		(line (pt 0 64)(pt 48 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "areset" (rect 0 0 36 13)(font "Arial" (font_size 8)))
+		(text "areset" (rect 4 68 34 79)(font "Arial" (font_size 8)))
+		(line (pt 0 80)(pt 48 80))
+	)
+	(port
+		(pt 256 64)
+		(output)
+		(text "c0" (rect 0 0 14 13)(font "Arial" (font_size 8)))
+		(text "c0" (rect 240 52 251 63)(font "Arial" (font_size 8)))
+	)
+	(drawing
+		(text "Cyclone IV E" (rect 186 131 423 271)(font "Arial" ))
+		(text "inclk0 frequency: 50.000 MHz" (rect 58 60 234 129)(font "Arial" ))
+		(text "Operation Mode: Normal" (rect 58 71 214 151)(font "Arial" ))
+		(text "Clk " (rect 59 89 131 187)(font "Arial" ))
+		(text "Ratio" (rect 89 89 198 187)(font "Arial" ))
+		(text "Ph (dg)" (rect 125 89 279 187)(font "Arial" ))
+		(text "DC (%)" (rect 158 89 345 187)(font "Arial" ))
+		(text "c0" (rect 61 101 131 211)(font "Arial" ))
+		(text "1007/2000" (rect 78 101 198 211)(font "Arial" ))
+		(text "0.00" (rect 130 101 277 211)(font "Arial" ))
+		(text "50.00" (rect 161 101 344 211)(font "Arial" ))
+		(line (pt 0 0)(pt 257 0))
+		(line (pt 257 0)(pt 257 145))
+		(line (pt 0 145)(pt 257 145))
+		(line (pt 0 0)(pt 0 145))
+		(line (pt 56 87)(pt 188 87))
+		(line (pt 56 98)(pt 188 98))
+		(line (pt 56 110)(pt 188 110))
+		(line (pt 56 87)(pt 56 110))
+		(line (pt 75 87)(pt 75 110)(line_width 3))
+		(line (pt 122 87)(pt 122 110)(line_width 3))
+		(line (pt 155 87)(pt 155 110)(line_width 3))
+		(line (pt 187 87)(pt 187 110))
+		(line (pt 48 48)(pt 223 48))
+		(line (pt 223 48)(pt 223 127))
+		(line (pt 48 127)(pt 223 127))
+		(line (pt 48 48)(pt 48 127))
+		(line (pt 255 64)(pt 223 64))
+	)
+)
