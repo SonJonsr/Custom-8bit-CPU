@@ -1,0 +1,48 @@
+def	0x22	0x1000	# x = 34
+def	0xf3	0x1001	# y = -4
+def	0x0c	0x1002	# z = 12
+def	0x6e	0x1003	# v = 110
+def	0x00	0x1004	# t = 0
+def	0x00	0x1005 	# errors = 0
+def	0x01	0x1006	# one = 0
+
+0x0000 (1)	nop
+0x0001 (3)	load	a	0x1000	# r[a]      = x(34)
+0x0004 (3)	load	b	0x1001	# r[b]      = y(-4)
+0x0007 (1)	add	b	a	# r[a](34) += r[b](-4) 	= 30
+0x0008 (3)	store	a	0x1004	# v         = 30
+
+0x000b (3)	load	c	0x1004	# r[c]      = v(30)
+0x000e (1)	Clear	a		# r[a] 	    = 0
+0x000f (1)	add	b	c	# r[c](30) += r[b](-4)	= 26  (carry = 1)
+
+
+
+
+0x0010 (3)	boc	branchOnCarryWorks
+
+@CarryJumpError
+jump	CarryJumpError
+
+
+@branchOnCarryWorks
+
+add	b	c	# r[c](26) += r[b](-4)	= 22  (carry = 1)
+
+Clear	f
+
+
+@Clear_F_dontWork
+
+boc	@error2
+
+add	b	c	# r[c](26) += r[b](-4)	= 22  (carry = 1)
+
+@error2
+jump	error2
+
+
+
+
+@FAIL
+jump	FAIL

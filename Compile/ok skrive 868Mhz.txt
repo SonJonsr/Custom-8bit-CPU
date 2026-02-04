@@ -1,0 +1,21 @@
+ok skrive 868Mhz
+ok sitere fra 2.3.10 (prototype) til...
+
+
+
+ok 3.4 i produksjonsfeil er feil "mast" må byttes med strømledning
+ok 3.6.1 krav f5 rettskrive "snsordata"
+ok 3.9.6 bytte "husdyrene" og "husdyrholdere" til gårdsdyr
+ok 3.11.1 fjerne 30% delen
+ok SWOT analyse i trusler "kraftnettet går ned eller solcelle blir dekket" endret "eller" til "og" (and)
+ok 3.12.2 2 x årsavslutning til årsavsluttning
+ok 4.1.1 punktum til slutt
+
+
+endringer i planer:
+ok kunne brukt en mer robust embalasje (deksel/ramme) av metall med RF sendings mulighet.
+
+
+
+
+Power nuron er avhengig av IRIDIUM (samme som skatteetatten og azure) (de er helt avhengig av IRIDIUM sattelitnettverk og må tilhøre seg alt av ) (i konkurentanalysen)

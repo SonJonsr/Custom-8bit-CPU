@@ -1,0 +1,4 @@
+Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
+D1,Red,D_0805,135.81,-133.36,0.0,top
+J1,Conn_01x02_Pin,AMASS_XT30PW-F_1x02_P2.50mm_Horizontal,137.4,-117.725,0.0,top
+Q1,2N7002,SOT-23,136.0,-129.6,0.0,top

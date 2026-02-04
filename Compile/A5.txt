@@ -1,0 +1,34 @@
+A5
+60
+65
+61
+85
+62
+
+
+LDA   $60 	-- last xx60 til acumalator	        ,  A =  $xx60			3
+ADC   $61	-- Add Memory to Accumulator with Carry ,  A =  A + $xx61 + C		3
+STA   $62	-- Store Accumulator in Memory		,  A -> $xx62			3	
+
+
+AA
+00
+66
+AB
+00
+61
+AAB
+LA
+00
+62
+
+LDA   $0060 	-- last xx60 til acumalator	        ,  A <=  $0060			3
+LDB   $0061	-- Add Memory to Accumulator with Carry ,  B <=  $0061			3
+ADD   A A B	-- Adds B to A				,  A <= A+B 			1
+STA   $0062	-- Store Accumulator in Memory		,  A => $0062			3	
+
+
+
+Load setter flag til 0
+
+
