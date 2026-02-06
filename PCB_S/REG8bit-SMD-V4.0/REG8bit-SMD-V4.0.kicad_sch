@@ -4596,6 +4596,17 @@
 	)
 	(wire
 		(pts
+			(xy 44.45 128.27) (xy 59.69 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 109 106 255 1)
+		)
+		(uuid "39280716-8de1-4a0c-94db-d5b69f86637a")
+	)
+	(wire
+		(pts
 			(xy 238.76 31.75) (xy 238.76 38.1)
 		)
 		(stroke
@@ -6010,6 +6021,17 @@
 	)
 	(wire
 		(pts
+			(xy 36.83 133.35) (xy 55.88 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(uuid "7c241514-c8fd-45ae-ad80-25cd1125a723")
+	)
+	(wire
+		(pts
 			(xy 260.35 182.88) (xy 132.08 182.88)
 		)
 		(stroke
@@ -7371,6 +7393,16 @@
 	)
 	(wire
 		(pts
+			(xy 36.83 113.03) (xy 36.83 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc2bad6c-10b9-40e6-a6e0-fd082840dac5")
+	)
+	(wire
+		(pts
 			(xy 289.56 101.6) (xy 341.63 101.6)
 		)
 		(stroke
@@ -8028,6 +8060,16 @@
 	)
 	(wire
 		(pts
+			(xy 36.83 121.92) (xy 36.83 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d72b35d7-3528-433b-83a6-dba34f3dd691")
+	)
+	(wire
+		(pts
 			(xy 336.55 71.12) (xy 336.55 73.66)
 		)
 		(stroke
@@ -8564,6 +8606,16 @@
 			(color 0 0 0 1)
 		)
 		(uuid "ef543952-18b0-4183-a215-c9a581c2c283")
+	)
+	(wire
+		(pts
+			(xy 36.83 104.14) (xy 36.83 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef7adf8b-0ba9-4c7a-a72a-31b3ac433cac")
 	)
 	(wire
 		(pts
@@ -9906,7 +9958,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "470Ω"
+		(property "Value" "2.2kΩ"
 			(at 267.97 199.39 90)
 			(do_not_autoplace yes)
 			(effects
@@ -10129,7 +10181,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "470Ω"
+		(property "Value" "2.2kΩ"
 			(at 214.63 199.39 90)
 			(do_not_autoplace yes)
 			(effects
@@ -11912,6 +11964,166 @@
 		)
 	)
 	(symbol
+		(lib_id "PCM_JLCPCB-Diodes:LED,0603,Red")
+		(at 36.83 118.11 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2ad89fea-78a6-4cbe-887d-62cb385da350")
+		(property "Reference" "D10"
+			(at 39.37 116.7446 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Red"
+			(at 39.37 119.2847 0)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:D_0603"
+			(at 35.052 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_1810231112_Hubei-KENTO-Elec-KT-0603R_C2286.pdf"
+			(at 36.83 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "-40°C~+85°C Red 0603 LED Indication - Discrete ROHS"
+			(at 36.83 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2286"
+			(at 36.83 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Stock" "5373336"
+			(at 36.83 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0.009USD"
+			(at 36.83 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Process" "SMT"
+			(at 36.83 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Minimum Qty" "20"
+			(at 36.83 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Attrition Qty" "10"
+			(at 36.83 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Class" "Basic Component"
+			(at 36.83 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" "Optocouplers & LEDs & Infrared,Light Emitting Diodes (LED)"
+			(at 36.83 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Hubei KENTO Elec"
+			(at 36.83 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "KT-0603R"
+			(at 36.83 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "dbce287d-1b38-41e4-b085-ccdaba5e51b7")
+		)
+		(pin "1"
+			(uuid "2dfdf588-033d-4faa-b7d7-54c5b1485d3e")
+		)
+		(instances
+			(project "REG8bit-SMD-V4.0"
+				(path "/bfdcafe9-0b12-4712-84e2-fa6bbc42dffc"
+					(reference "D10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VCC")
 		(at 303.53 194.31 0)
 		(unit 1)
@@ -12049,6 +12261,83 @@
 			(project ""
 				(path "/bfdcafe9-0b12-4712-84e2-fa6bbc42dffc"
 					(reference "Q1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:2N7002")
+		(at 39.37 128.27 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "30f45c82-0252-4016-9139-86bdcd340d17")
+		(property "Reference" "Q7"
+			(at 33.02 126.9999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2N7002"
+			(at 33.02 129.5399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 34.29 130.175 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+			(at 34.29 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
+			(at 39.37 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "de26ce04-2921-48de-be4a-b50d44acc798")
+		)
+		(pin "3"
+			(uuid "801c3005-8eb6-4612-bde3-25551b92275e")
+		)
+		(pin "2"
+			(uuid "cf6fe7e4-3360-4c33-a116-1f964702dc9b")
+		)
+		(instances
+			(project "REG8bit-SMD-V4.0"
+				(path "/bfdcafe9-0b12-4712-84e2-fa6bbc42dffc"
+					(reference "Q7")
 					(unit 1)
 				)
 			)
@@ -13716,7 +14005,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "470Ω"
+		(property "Value" "2.2kΩ"
 			(at 152.4 198.12 90)
 			(do_not_autoplace yes)
 			(effects
@@ -14005,7 +14294,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "470Ω"
+		(property "Value" "2.2kΩ"
 			(at 303.53 199.39 90)
 			(do_not_autoplace yes)
 			(effects
@@ -16697,6 +16986,229 @@
 			(project "REG8bit-SMD"
 				(path "/bfdcafe9-0b12-4712-84e2-fa6bbc42dffc"
 					(reference "Q62")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "PCM_JLCPCB-Resistors:0603,470Ω")
+		(at 36.83 109.22 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "72523610-aac7-4d66-b0a9-26c211fec4c1")
+		(property "Reference" "R26"
+			(at 39.37 109.2199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2.2kΩ"
+			(at 36.83 109.22 90)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:R_0603"
+			(at 35.052 109.22 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010116_UNI-ROYAL-Uniroyal-Elec-0603WAF4700T5E_C23179.pdf"
+			(at 36.83 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "100mW Thick Film Resistors 75V ±100ppm/°C ±1% 470Ω 0603 Chip Resistor - Surface Mount ROHS"
+			(at 36.83 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C23179"
+			(at 36.83 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Stock" "3910258"
+			(at 36.83 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0.004USD"
+			(at 36.83 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Process" "SMT"
+			(at 36.83 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Minimum Qty" "20"
+			(at 36.83 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Attrition Qty" "10"
+			(at 36.83 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Class" "Basic Component"
+			(at 36.83 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" "Resistors,Chip Resistor - Surface Mount"
+			(at 36.83 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 36.83 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "0603WAF4700T5E"
+			(at 36.83 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Resistance" "470Ω"
+			(at 36.83 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power(Watts)" "100mW"
+			(at 36.83 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "Thick Film Resistors"
+			(at 36.83 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Overload Voltage (Max)" "75V"
+			(at 36.83 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Operating Temperature Range" "-55°C~+155°C"
+			(at 36.83 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "±1%"
+			(at 36.83 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Temperature Coefficient" "±100ppm/°C"
+			(at 36.83 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e72b6c5a-5e04-4c41-8503-6de0860dd959")
+		)
+		(pin "1"
+			(uuid "519ddb7e-bbce-4c9e-bd58-50b78fbe4c57")
+		)
+		(instances
+			(project "REG8bit-SMD-V4.0"
+				(path "/bfdcafe9-0b12-4712-84e2-fa6bbc42dffc"
+					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -19821,6 +20333,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VCC")
+		(at 36.83 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "acd69890-04d2-42c0-812f-27b7dc9dddde")
+		(property "Reference" "#PWR023"
+			(at 36.83 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 36.83 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 36.83 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.83 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 36.83 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f6ba2bd4-5121-4b08-b67c-493a6696e74d")
+		)
+		(instances
+			(project "REG8bit-SMD-V4.0"
+				(path "/bfdcafe9-0b12-4712-84e2-fa6bbc42dffc"
+					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Transistor_FET:2N7002")
 		(at 388.62 128.27 0)
 		(unit 1)
@@ -19915,7 +20493,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "470Ω"
+		(property "Value" "2.2kΩ"
 			(at 196.85 199.39 90)
 			(do_not_autoplace yes)
 			(effects
@@ -20432,7 +21010,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "470Ω"
+		(property "Value" "2.2kΩ"
 			(at 250.19 199.39 90)
 			(do_not_autoplace yes)
 			(effects
@@ -21038,7 +21616,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "470Ω"
+		(property "Value" "2.2kΩ"
 			(at 232.41 199.39 90)
 			(do_not_autoplace yes)
 			(effects
@@ -21945,7 +22523,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "470Ω"
+		(property "Value" "2.2kΩ"
 			(at 285.75 199.39 90)
 			(do_not_autoplace yes)
 			(effects
@@ -25093,7 +25671,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "470Ω"
+		(property "Value" "2.2kΩ"
 			(at 179.07 199.39 90)
 			(do_not_autoplace yes)
 			(effects

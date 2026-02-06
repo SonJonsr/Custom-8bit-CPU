@@ -18,7 +18,7 @@ with open('C:\Bachlor\PCB_S\REG8bit-SMD-V3.0\jlcpcb\production_files\CPL-REG8bit
                     #Ny_File += element.replace(prev_angle, to_angle) + "'"
                     #print(Ny_File)
                     #print(element.replace(prev_angle, to_angle))
-          #  whole_File.append(nElements.replace(prev_angle, to_angle))
+        whole_File.append(nElements.replace(prev_angle, to_angle))
 csvfile.close()
 
 
