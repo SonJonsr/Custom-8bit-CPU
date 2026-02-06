@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "HVL_L")(type "KiCad")(uri "C:/Bachelor/Custom-8bit-CPU/PCB_S/HVL_L")(options "")(descr ""))
+)
