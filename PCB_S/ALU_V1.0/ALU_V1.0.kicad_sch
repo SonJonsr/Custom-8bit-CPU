@@ -128,6 +128,169 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:Conn_01x02_Pin"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02_Pin"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x02_Pin_1_1"
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:Conn_01x05_Pin"
 			(pin_names
 				(offset 1.016)
@@ -3346,6 +3509,16 @@
 			)
 		)
 		(uuid "2c063f19-2b16-4a07-b20b-510056035d0e")
+	)
+	(text "Pin 1 is Most Significant Bit"
+		(exclude_from_sim no)
+		(at -12.446 249.428 0)
+		(effects
+			(font
+				(size 5.08 5.08)
+			)
+		)
+		(uuid "394bf925-008d-4742-a351-2d2602c673bd")
 	)
 	(text "C"
 		(exclude_from_sim no)
@@ -21341,7 +21514,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 602.742 480.06 90)
 			(effects
 				(font
@@ -21585,7 +21758,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 715.772 107.95 90)
 			(effects
 				(font
@@ -22120,7 +22293,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 367.538 353.06 90)
 			(effects
 				(font
@@ -22524,7 +22697,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 559.562 480.06 90)
 			(effects
 				(font
@@ -22768,7 +22941,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 484.378 367.03 90)
 			(effects
 				(font
@@ -23144,7 +23317,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 376.682 554.99 90)
 			(effects
 				(font
@@ -23399,7 +23572,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--2N7002_C8545.pdf"
 			(at 156.21 50.8 0)
 			(effects
 				(font
@@ -23687,7 +23860,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 309.118 422.91 90)
 			(effects
 				(font
@@ -23996,7 +24169,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 670.052 97.79 90)
 			(effects
 				(font
@@ -24914,7 +25087,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 66.04 485.902 90)
 			(effects
 				(font
@@ -25158,7 +25331,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 692.912 424.18 90)
 			(effects
 				(font
@@ -25402,7 +25575,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 681.482 304.8 90)
 			(effects
 				(font
@@ -25646,7 +25819,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 727.202 172.72 90)
 			(effects
 				(font
@@ -26113,7 +26286,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 367.538 367.03 90)
 			(effects
 				(font
@@ -26423,7 +26596,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 727.202 97.79 90)
 			(effects
 				(font
@@ -26864,7 +27037,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 681.482 107.95 90)
 			(effects
 				(font
@@ -27173,7 +27346,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 738.632 434.34 90)
 			(effects
 				(font
@@ -27417,7 +27590,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 625.602 480.06 90)
 			(effects
 				(font
@@ -28014,7 +28187,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 353.822 139.7 90)
 			(effects
 				(font
@@ -28258,7 +28431,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 250.698 340.36 90)
 			(effects
 				(font
@@ -28700,7 +28873,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 250.698 410.21 90)
 			(effects
 				(font
@@ -28944,7 +29117,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 446.278 365.76 90)
 			(effects
 				(font
@@ -29188,7 +29361,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 133.858 410.21 90)
 			(effects
 				(font
@@ -29432,7 +29605,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 238.252 527.05 90)
 			(effects
 				(font
@@ -30094,7 +30267,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 95.758 396.24 90)
 			(effects
 				(font
@@ -30338,7 +30511,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 727.202 361.95 90)
 			(effects
 				(font
@@ -30582,7 +30755,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 727.202 294.64 90)
 			(effects
 				(font
@@ -30826,7 +30999,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 425.958 353.06 90)
 			(effects
 				(font
@@ -31266,7 +31439,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 306.832 527.05 90)
 			(effects
 				(font
@@ -31510,7 +31683,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 271.018 365.76 90)
 			(effects
 				(font
@@ -31754,7 +31927,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 658.622 294.64 90)
 			(effects
 				(font
@@ -32037,8 +32210,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x08_Socket")
-		(at 26.67 505.46 0)
-		(mirror y)
+		(at 26.67 508 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -32046,7 +32218,7 @@
 		(dnp no)
 		(uuid "15d53d00-d04c-4d47-9cf2-ce8c6e0741bf")
 		(property "Reference" "J3"
-			(at 27.305 520.7 0)
+			(at 27.305 492.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32054,7 +32226,7 @@
 			)
 		)
 		(property "Value" "Conn_01x08_Socket"
-			(at 27.305 518.16 0)
+			(at 27.305 495.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32062,7 +32234,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Hirose:Hirose_DF13-08P-1.25DSA_1x08_P1.25mm_Vertical"
-			(at 26.67 505.46 0)
+			(at 26.67 508 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32071,7 +32243,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 26.67 505.46 0)
+			(at 26.67 508 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32080,7 +32252,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x08, script generated"
-			(at 26.67 505.46 0)
+			(at 26.67 508 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32113,7 +32285,7 @@
 			(uuid "74da0209-406a-448b-a043-578459e6ce1b")
 		)
 		(instances
-			(project "ALU"
+			(project "ALU_V1.0"
 				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
 					(reference "J3")
 					(unit 1)
@@ -32727,7 +32899,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 390.652 139.7 90)
 			(effects
 				(font
@@ -32971,7 +33143,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 658.622 172.72 90)
 			(effects
 				(font
@@ -33215,7 +33387,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 75.438 410.21 90)
 			(effects
 				(font
@@ -33426,6 +33598,74 @@
 			(project "ALU"
 				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
 					(reference "Q31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x02_Pin")
+		(at 22.86 276.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1a8450bc-751f-4069-84a7-d88db1047d44")
+		(property "Reference" "J7"
+			(at 23.495 271.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x02_Pin"
+			(at 23.495 274.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_EH_B2B-EH-A_1x02_P2.50mm_Vertical"
+			(at 22.86 276.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 22.86 276.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 22.86 276.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6c72ae44-648a-4a80-8382-06f3c724a29c")
+		)
+		(pin "1"
+			(uuid "5d966e71-020b-4de4-94b0-8b3633184522")
+		)
+		(instances
+			(project ""
+				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -33681,7 +33921,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 387.858 365.76 90)
 			(effects
 				(font
@@ -33925,7 +34165,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 330.962 139.7 90)
 			(effects
 				(font
@@ -34235,7 +34475,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 504.698 408.94 90)
 			(effects
 				(font
@@ -34990,7 +35230,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 715.772 372.11 90)
 			(effects
 				(font
@@ -35534,7 +35774,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--2N7002_C8545.pdf"
 			(at 607.06 59.69 0)
 			(effects
 				(font
@@ -36711,7 +36951,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 446.278 353.06 90)
 			(effects
 				(font
@@ -36955,7 +37195,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 425.958 410.21 90)
 			(effects
 				(font
@@ -37421,7 +37661,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 704.342 231.14 90)
 			(effects
 				(font
@@ -38465,7 +38705,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 681.482 162.56 90)
 			(effects
 				(font
@@ -38709,7 +38949,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 95.758 408.94 90)
 			(effects
 				(font
@@ -38964,7 +39204,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--2N7002_C8545.pdf"
 			(at 144.78 50.8 0)
 			(effects
 				(font
@@ -39040,7 +39280,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--2N7002_C8545.pdf"
 			(at 267.97 571.5 0)
 			(effects
 				(font
@@ -39105,7 +39345,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 75.438 325.12 90)
 			(effects
 				(font
@@ -39509,7 +39749,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 250.698 325.12 90)
 			(effects
 				(font
@@ -39949,7 +40189,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 422.402 565.15 90)
 			(effects
 				(font
@@ -40547,7 +40787,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 484.378 393.7 90)
 			(effects
 				(font
@@ -40791,7 +41031,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 233.172 139.7 90)
 			(effects
 				(font
@@ -41326,7 +41566,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 738.632 304.8 90)
 			(effects
 				(font
@@ -41858,7 +42098,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 280.162 139.7 90)
 			(effects
 				(font
@@ -43426,7 +43666,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 658.622 372.11 90)
 			(effects
 				(font
@@ -43670,7 +43910,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 704.342 107.95 90)
 			(effects
 				(font
@@ -44136,7 +44376,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 367.538 393.7 90)
 			(effects
 				(font
@@ -44829,7 +45069,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 715.772 231.14 90)
 			(effects
 				(font
@@ -45456,7 +45696,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 446.278 379.73 90)
 			(effects
 				(font
@@ -45700,7 +45940,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 75.438 393.7 90)
 			(effects
 				(font
@@ -45944,7 +46184,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 206.502 139.7 90)
 			(effects
 				(font
@@ -46348,7 +46588,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 484.378 340.36 90)
 			(effects
 				(font
@@ -46592,7 +46832,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 309.118 353.06 90)
 			(effects
 				(font
@@ -47285,7 +47525,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 133.858 379.73 90)
 			(effects
 				(font
@@ -47529,7 +47769,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 192.278 340.36 90)
 			(effects
 				(font
@@ -47773,7 +48013,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 306.832 139.7 90)
 			(effects
 				(font
@@ -49135,7 +49375,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 257.302 139.7 90)
 			(effects
 				(font
@@ -49445,7 +49685,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 83.82 489.712 90)
 			(effects
 				(font
@@ -49977,7 +50217,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 388.112 565.15 90)
 			(effects
 				(font
@@ -50667,7 +50907,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 704.342 372.11 90)
 			(effects
 				(font
@@ -51133,7 +51373,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 727.202 231.14 90)
 			(effects
 				(font
@@ -51377,7 +51617,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 681.482 372.11 90)
 			(effects
 				(font
@@ -52041,7 +52281,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 329.438 408.94 90)
 			(effects
 				(font
@@ -52285,7 +52525,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 410.972 565.15 90)
 			(effects
 				(font
@@ -52974,7 +53214,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 367.538 379.73 90)
 			(effects
 				(font
@@ -53284,7 +53524,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 670.052 241.3 90)
 			(effects
 				(font
@@ -53594,7 +53834,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 309.118 340.36 90)
 			(effects
 				(font
@@ -53838,7 +54078,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 670.052 172.72 90)
 			(effects
 				(font
@@ -54082,7 +54322,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 727.202 372.11 90)
 			(effects
 				(font
@@ -54403,7 +54643,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--2N7002_C8545.pdf"
 			(at 133.35 50.8 0)
 			(effects
 				(font
@@ -55110,7 +55350,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 692.912 294.64 90)
 			(effects
 				(font
@@ -55354,7 +55594,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 309.118 325.12 90)
 			(effects
 				(font
@@ -56043,7 +56283,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 727.202 241.3 90)
 			(effects
 				(font
@@ -56799,7 +57039,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 658.622 231.14 90)
 			(effects
 				(font
@@ -57054,7 +57294,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--2N7002_C8545.pdf"
 			(at 463.55 142.24 0)
 			(effects
 				(font
@@ -57119,7 +57359,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 425.958 325.12 90)
 			(effects
 				(font
@@ -57363,7 +57603,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 367.538 422.91 90)
 			(effects
 				(font
@@ -58119,7 +58359,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 715.772 434.34 90)
 			(effects
 				(font
@@ -58363,7 +58603,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 504.698 379.73 90)
 			(effects
 				(font
@@ -58673,7 +58913,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 192.278 422.91 90)
 			(effects
 				(font
@@ -59205,7 +59445,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 611.632 393.7 90)
 			(effects
 				(font
@@ -59449,7 +59689,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 704.342 241.3 90)
 			(effects
 				(font
@@ -59758,7 +59998,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 367.792 139.7 90)
 			(effects
 				(font
@@ -60068,7 +60308,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 670.052 162.56 90)
 			(effects
 				(font
@@ -60444,7 +60684,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 738.632 97.79 90)
 			(effects
 				(font
@@ -60754,7 +60994,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 692.912 434.34 90)
 			(effects
 				(font
@@ -61063,7 +61303,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 704.342 434.34 90)
 			(effects
 				(font
@@ -61372,7 +61612,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 704.342 304.8 90)
 			(effects
 				(font
@@ -62062,7 +62302,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 329.438 396.24 90)
 			(effects
 				(font
@@ -63038,7 +63278,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 133.858 340.36 90)
 			(effects
 				(font
@@ -63282,7 +63522,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 670.052 294.64 90)
 			(effects
 				(font
@@ -63668,7 +63908,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--2N7002_C8545.pdf"
 			(at 572.77 59.69 0)
 			(effects
 				(font
@@ -63734,7 +63974,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 100.33 478.282 90)
 			(effects
 				(font
@@ -64554,7 +64794,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 692.912 107.95 90)
 			(effects
 				(font
@@ -64798,7 +65038,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 154.178 379.73 90)
 			(effects
 				(font
@@ -65840,7 +66080,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 727.202 424.18 90)
 			(effects
 				(font
@@ -66373,7 +66613,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 192.278 325.12 90)
 			(effects
 				(font
@@ -66617,7 +66857,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 692.912 304.8 90)
 			(effects
 				(font
@@ -67087,7 +67327,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 727.202 107.95 90)
 			(effects
 				(font
@@ -67331,7 +67571,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 681.482 424.18 90)
 			(effects
 				(font
@@ -68350,7 +68590,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 503.428 337.82 90)
 			(effects
 				(font
@@ -68894,7 +69134,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--2N7002_C8545.pdf"
 			(at 290.83 571.5 0)
 			(effects
 				(font
@@ -69248,7 +69488,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 614.172 480.06 90)
 			(effects
 				(font
@@ -69503,7 +69743,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--2N7002_C8545.pdf"
 			(at 167.64 50.8 0)
 			(effects
 				(font
@@ -70276,7 +70516,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 271.018 353.06 90)
 			(effects
 				(font
@@ -70596,7 +70836,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--2N7002_C8545.pdf"
 			(at 440.69 142.24 0)
 			(effects
 				(font
@@ -70856,7 +71096,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 226.822 527.05 90)
 			(effects
 				(font
@@ -71100,7 +71340,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 591.312 480.06 90)
 			(effects
 				(font
@@ -71475,7 +71715,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 658.622 424.18 90)
 			(effects
 				(font
@@ -71730,7 +71970,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--2N7002_C8545.pdf"
 			(at 110.49 50.8 0)
 			(effects
 				(font
@@ -71861,7 +72101,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 250.698 379.73 90)
 			(effects
 				(font
@@ -72615,7 +72855,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 386.588 337.82 90)
 			(effects
 				(font
@@ -72924,7 +73164,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 169.672 139.7 90)
 			(effects
 				(font
@@ -73168,7 +73408,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 399.542 565.15 90)
 			(effects
 				(font
@@ -73767,7 +74007,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 75.438 422.91 90)
 			(effects
 				(font
@@ -74011,7 +74251,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 503.428 325.12 90)
 			(effects
 				(font
@@ -74255,7 +74495,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 456.692 554.99 90)
 			(effects
 				(font
@@ -74630,7 +74870,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 715.772 294.64 90)
 			(effects
 				(font
@@ -75097,7 +75337,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 637.032 480.06 90)
 			(effects
 				(font
@@ -75341,7 +75581,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 192.278 410.21 90)
 			(effects
 				(font
@@ -75808,7 +76048,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 456.692 565.15 90)
 			(effects
 				(font
@@ -76341,7 +76581,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 681.482 172.72 90)
 			(effects
 				(font
@@ -76585,7 +76825,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 367.538 340.36 90)
 			(effects
 				(font
@@ -76829,7 +77069,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 212.598 365.76 90)
 			(effects
 				(font
@@ -77587,7 +77827,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 93.98 489.712 90)
 			(effects
 				(font
@@ -77991,7 +78231,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 504.698 396.24 90)
 			(effects
 				(font
@@ -78235,7 +78475,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 183.642 139.7 90)
 			(effects
 				(font
@@ -78768,7 +79008,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 329.438 365.76 90)
 			(effects
 				(font
@@ -79944,7 +80184,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 658.622 107.95 90)
 			(effects
 				(font
@@ -80188,7 +80428,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 445.262 554.99 90)
 			(effects
 				(font
@@ -80878,7 +81118,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 249.682 527.05 90)
 			(effects
 				(font
@@ -81122,7 +81362,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 738.632 372.11 90)
 			(effects
 				(font
@@ -81721,7 +81961,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 329.438 353.06 90)
 			(effects
 				(font
@@ -82097,7 +82337,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 658.622 361.95 90)
 			(effects
 				(font
@@ -82473,7 +82713,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 433.832 565.15 90)
 			(effects
 				(font
@@ -82940,7 +83180,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 328.168 325.12 90)
 			(effects
 				(font
@@ -83250,7 +83490,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 75.438 340.36 90)
 			(effects
 				(font
@@ -83494,7 +83734,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 132.842 139.7 90)
 			(effects
 				(font
@@ -83961,7 +84201,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 309.118 393.7 90)
 			(effects
 				(font
@@ -84427,7 +84667,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 95.758 353.06 90)
 			(effects
 				(font
@@ -84737,7 +84977,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 692.912 162.56 90)
 			(effects
 				(font
@@ -84981,7 +85221,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 727.202 434.34 90)
 			(effects
 				(font
@@ -85236,7 +85476,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--2N7002_C8545.pdf"
 			(at 509.27 142.24 0)
 			(effects
 				(font
@@ -85368,7 +85608,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 80.01 478.282 90)
 			(effects
 				(font
@@ -86520,7 +86760,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--2N7002_C8545.pdf"
 			(at -20.32 496.57 0)
 			(effects
 				(font
@@ -86585,7 +86825,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 704.342 294.64 90)
 			(effects
 				(font
@@ -87129,7 +87369,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--2N7002_C8545.pdf"
 			(at 256.54 571.5 0)
 			(effects
 				(font
@@ -87205,7 +87445,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--2N7002_C8545.pdf"
 			(at -31.75 496.57 0)
 			(effects
 				(font
@@ -87270,7 +87510,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 146.812 139.7 90)
 			(effects
 				(font
@@ -87514,7 +87754,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 727.202 304.8 90)
 			(effects
 				(font
@@ -88123,7 +88363,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--2N7002_C8545.pdf"
 			(at 245.11 571.5 0)
 			(effects
 				(font
@@ -88411,7 +88651,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 367.538 325.12 90)
 			(effects
 				(font
@@ -88655,7 +88895,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 192.278 367.03 90)
 			(effects
 				(font
@@ -88899,7 +89139,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 95.758 379.73 90)
 			(effects
 				(font
@@ -89144,7 +89384,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 601.218 251.46 90)
 			(effects
 				(font
@@ -89963,7 +90203,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 692.912 97.79 90)
 			(effects
 				(font
@@ -90207,7 +90447,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 309.118 410.21 90)
 			(effects
 				(font
@@ -90973,7 +91213,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--2N7002_C8545.pdf"
 			(at 233.68 571.5 0)
 			(effects
 				(font
@@ -91327,7 +91567,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 380.492 139.7 90)
 			(effects
 				(font
@@ -91571,7 +91811,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 95.758 365.76 90)
 			(effects
 				(font
@@ -92337,7 +92577,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--2N7002_C8545.pdf"
 			(at 595.63 59.69 0)
 			(effects
 				(font
@@ -93138,7 +93378,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 250.698 367.03 90)
 			(effects
 				(font
@@ -93382,7 +93622,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 376.682 565.15 90)
 			(effects
 				(font
@@ -94220,7 +94460,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--2N7002_C8545.pdf"
 			(at 584.2 59.69 0)
 			(effects
 				(font
@@ -94285,7 +94525,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 387.858 408.94 90)
 			(effects
 				(font
@@ -94818,7 +95058,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 94.488 337.82 90)
 			(effects
 				(font
@@ -95062,7 +95302,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 670.052 424.18 90)
 			(effects
 				(font
@@ -95306,7 +95546,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 271.018 408.94 90)
 			(effects
 				(font
@@ -95681,7 +95921,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 271.018 379.73 90)
 			(effects
 				(font
@@ -95926,7 +96166,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 90.678 552.45 90)
 			(effects
 				(font
@@ -96459,7 +96699,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 211.328 337.82 90)
 			(effects
 				(font
@@ -96769,7 +97009,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 212.598 379.73 90)
 			(effects
 				(font
@@ -97013,7 +97253,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 681.482 241.3 90)
 			(effects
 				(font
@@ -97323,7 +97563,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 386.588 325.12 90)
 			(effects
 				(font
@@ -97633,7 +97873,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 367.538 410.21 90)
 			(effects
 				(font
@@ -98334,7 +98574,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--2N7002_C8545.pdf"
 			(at -43.18 496.57 0)
 			(effects
 				(font
@@ -98399,7 +98639,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 243.332 139.7 90)
 			(effects
 				(font
@@ -98866,7 +99106,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 738.632 361.95 90)
 			(effects
 				(font
@@ -99176,7 +99416,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 692.912 172.72 90)
 			(effects
 				(font
@@ -99431,7 +99671,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--2N7002_C8545.pdf"
 			(at 190.5 50.8 0)
 			(effects
 				(font
@@ -99718,7 +99958,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 727.202 162.56 90)
 			(effects
 				(font
@@ -100094,7 +100334,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 410.972 554.99 90)
 			(effects
 				(font
@@ -100850,7 +101090,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 94.488 325.12 90)
 			(effects
 				(font
@@ -101681,7 +101921,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--2N7002_C8545.pdf"
 			(at 618.49 59.69 0)
 			(effects
 				(font
@@ -101746,7 +101986,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 271.018 396.24 90)
 			(effects
 				(font
@@ -102055,7 +102295,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 425.958 340.36 90)
 			(effects
 				(font
@@ -102310,7 +102550,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--2N7002_C8545.pdf"
 			(at 452.12 142.24 0)
 			(effects
 				(font
@@ -102598,7 +102838,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 670.052 372.11 90)
 			(effects
 				(font
@@ -102842,7 +103082,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 681.482 434.34 90)
 			(effects
 				(font
@@ -103086,7 +103326,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 159.512 139.7 90)
 			(effects
 				(font
@@ -103395,7 +103635,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 269.748 325.12 90)
 			(effects
 				(font
@@ -104088,7 +104328,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 152.908 325.12 90)
 			(effects
 				(font
@@ -105133,7 +105373,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 704.342 97.79 90)
 			(effects
 				(font
@@ -105732,7 +105972,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 596.138 383.54 90)
 			(effects
 				(font
@@ -105976,7 +106216,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 75.438 379.73 90)
 			(effects
 				(font
@@ -106220,7 +106460,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 738.632 162.56 90)
 			(effects
 				(font
@@ -106751,7 +106991,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 154.178 408.94 90)
 			(effects
 				(font
@@ -107572,7 +107812,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 316.992 139.7 90)
 			(effects
 				(font
@@ -107816,7 +108056,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 133.858 325.12 90)
 			(effects
 				(font
@@ -108505,7 +108745,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 154.178 365.76 90)
 			(effects
 				(font
@@ -108972,7 +109212,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 425.958 367.03 90)
 			(effects
 				(font
@@ -109439,7 +109679,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 658.622 97.79 90)
 			(effects
 				(font
@@ -109759,7 +109999,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--2N7002_C8545.pdf"
 			(at 179.07 50.8 0)
 			(effects
 				(font
@@ -109824,7 +110064,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 446.278 396.24 90)
 			(effects
 				(font
@@ -110356,7 +110596,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 445.008 325.12 90)
 			(effects
 				(font
@@ -110600,7 +110840,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 692.912 241.3 90)
 			(effects
 				(font
@@ -111041,7 +111281,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 261.112 527.05 90)
 			(effects
 				(font
@@ -111572,7 +111812,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 192.278 353.06 90)
 			(effects
 				(font
@@ -111816,7 +112056,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 133.858 367.03 90)
 			(effects
 				(font
@@ -112348,7 +112588,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 670.052 107.95 90)
 			(effects
 				(font
@@ -112603,7 +112843,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--2N7002_C8545.pdf"
 			(at 121.92 50.8 0)
 			(effects
 				(font
@@ -112700,6 +112940,71 @@
 			(project "ALU"
 				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 27.94 276.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b7003ccd-d0c8-4558-98d7-192e71a23aff")
+		(property "Reference" "#PWR0246"
+			(at 27.94 280.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 27.94 273.304 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 27.94 276.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 276.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 27.94 276.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6dd87a0e-f243-4a22-97eb-0083fa0d753c")
+		)
+		(instances
+			(project "ALU_V1.0"
+				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
+					(reference "#PWR0246")
 					(unit 1)
 				)
 			)
@@ -113086,7 +113391,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 658.622 434.34 90)
 			(effects
 				(font
@@ -113341,7 +113646,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--2N7002_C8545.pdf"
 			(at 497.84 142.24 0)
 			(effects
 				(font
@@ -113697,7 +114002,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 109.982 139.7 90)
 			(effects
 				(font
@@ -114101,7 +114406,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 269.748 337.82 90)
 			(effects
 				(font
@@ -114540,17 +114845,83 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Conn_01x05_Pin")
-		(at -80.01 462.28 0)
+		(lib_id "power:GND")
+		(at 27.94 279.4 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(uuid "b9af5d3f-1c84-426a-84e4-6a1e7330cc5f")
+		(property "Reference" "#PWR0245"
+			(at 27.94 285.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 26.162 278.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 27.94 279.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 279.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 27.94 279.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6809c7f4-7071-4bde-9ad6-1730b7f7636c")
+		)
+		(instances
+			(project "ALU_V1.0"
+				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
+					(reference "#PWR0245")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x05_Pin")
+		(at -80.01 462.28 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(uuid "ba103766-17a2-4a67-9753-902634f2abd7")
 		(property "Reference" "J5"
-			(at -79.375 452.12 0)
+			(at -79.375 472.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -114558,7 +114929,7 @@
 			)
 		)
 		(property "Value" "Conn_01x05_Pin"
-			(at -79.375 454.66 0)
+			(at -79.375 469.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -114608,7 +114979,7 @@
 			(uuid "8d302efe-d393-4bbc-9fe8-ea35409714bd")
 		)
 		(instances
-			(project ""
+			(project "ALU_V1.0"
 				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
 					(reference "J5")
 					(unit 1)
@@ -114644,7 +115015,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 715.772 424.18 90)
 			(effects
 				(font
@@ -115187,7 +115558,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--2N7002_C8545.pdf"
 			(at 429.26 142.24 0)
 			(effects
 				(font
@@ -115252,7 +115623,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 212.598 408.94 90)
 			(effects
 				(font
@@ -115496,7 +115867,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 329.438 379.73 90)
 			(effects
 				(font
@@ -115806,7 +116177,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 328.168 337.82 90)
 			(effects
 				(font
@@ -116050,7 +116421,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 387.858 396.24 90)
 			(effects
 				(font
@@ -116492,7 +116863,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 616.712 261.62 90)
 			(effects
 				(font
@@ -116736,7 +117107,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 196.342 139.7 90)
 			(effects
 				(font
@@ -117272,7 +117643,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 133.858 422.91 90)
 			(effects
 				(font
@@ -118184,7 +118555,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 681.482 294.64 90)
 			(effects
 				(font
@@ -118716,7 +119087,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 133.858 353.06 90)
 			(effects
 				(font
@@ -119247,7 +119618,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 715.772 241.3 90)
 			(effects
 				(font
@@ -119502,7 +119873,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--2N7002_C8545.pdf"
 			(at 279.4 571.5 0)
 			(effects
 				(font
@@ -119567,7 +119938,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 295.402 527.05 90)
 			(effects
 				(font
@@ -120033,7 +120404,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 152.908 337.82 90)
 			(effects
 				(font
@@ -120277,7 +120648,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 446.278 408.94 90)
 			(effects
 				(font
@@ -120587,7 +120958,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 670.052 434.34 90)
 			(effects
 				(font
@@ -120962,7 +121333,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 220.472 139.7 90)
 			(effects
 				(font
@@ -121271,7 +121642,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 388.112 554.99 90)
 			(effects
 				(font
@@ -121515,7 +121886,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 504.698 353.06 90)
 			(effects
 				(font
@@ -121759,7 +122130,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 433.832 554.99 90)
 			(effects
 				(font
@@ -122003,7 +122374,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 738.632 172.72 90)
 			(effects
 				(font
@@ -122247,7 +122618,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 704.342 162.56 90)
 			(effects
 				(font
@@ -122491,7 +122862,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 704.342 361.95 90)
 			(effects
 				(font
@@ -123777,7 +124148,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 738.632 294.64 90)
 			(effects
 				(font
@@ -124599,7 +124970,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 738.632 424.18 90)
 			(effects
 				(font
@@ -124843,7 +125214,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 422.402 554.99 90)
 			(effects
 				(font
@@ -125310,7 +125681,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 681.482 361.95 90)
 			(effects
 				(font
@@ -126131,7 +126502,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 44.958 434.34 90)
 			(effects
 				(font
@@ -126375,7 +126746,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 270.002 139.7 90)
 			(effects
 				(font
@@ -126779,7 +127150,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 192.278 379.73 90)
 			(effects
 				(font
@@ -127023,7 +127394,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 250.698 353.06 90)
 			(effects
 				(font
@@ -127464,7 +127835,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 425.958 379.73 90)
 			(effects
 				(font
@@ -127931,7 +128302,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 484.378 353.06 90)
 			(effects
 				(font
@@ -128175,7 +128546,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 294.132 139.7 90)
 			(effects
 				(font
@@ -128838,7 +129209,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 425.958 422.91 90)
 			(effects
 				(font
@@ -129159,7 +129530,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--2N7002_C8545.pdf"
 			(at 561.34 59.69 0)
 			(effects
 				(font
@@ -129224,7 +129595,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 692.912 372.11 90)
 			(effects
 				(font
@@ -129691,7 +130062,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 738.632 107.95 90)
 			(effects
 				(font
@@ -130897,7 +131268,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 212.598 353.06 90)
 			(effects
 				(font
@@ -131206,7 +131577,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 670.052 361.95 90)
 			(effects
 				(font
@@ -131450,7 +131821,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 611.632 383.54 90)
 			(effects
 				(font
@@ -131694,7 +132065,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 484.378 325.12 90)
 			(effects
 				(font
@@ -132296,7 +132667,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 250.698 393.7 90)
 			(effects
 				(font
@@ -132673,7 +133044,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 30.988 408.94 90)
 			(effects
 				(font
@@ -132917,7 +133288,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 387.858 379.73 90)
 			(effects
 				(font
@@ -133357,7 +133728,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 484.378 422.91 90)
 			(effects
 				(font
@@ -133965,7 +134336,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--2N7002_C8545.pdf"
 			(at 302.26 571.5 0)
 			(effects
 				(font
@@ -134319,7 +134690,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 192.278 393.7 90)
 			(effects
 				(font
@@ -134563,7 +134934,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 692.912 231.14 90)
 			(effects
 				(font
@@ -134938,7 +135309,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 387.858 353.06 90)
 			(effects
 				(font
@@ -135601,7 +135972,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 154.178 396.24 90)
 			(effects
 				(font
@@ -136512,7 +136883,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 715.772 97.79 90)
 			(effects
 				(font
@@ -136767,7 +137138,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--2N7002_C8545.pdf"
 			(at 486.41 142.24 0)
 			(effects
 				(font
@@ -136832,7 +137203,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 212.598 396.24 90)
 			(effects
 				(font
@@ -137076,7 +137447,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 211.328 325.12 90)
 			(effects
 				(font
@@ -137320,7 +137691,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 154.178 353.06 90)
 			(effects
 				(font
@@ -137852,7 +138223,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 90.17 478.282 90)
 			(effects
 				(font
@@ -138096,7 +138467,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 715.772 304.8 90)
 			(effects
 				(font
@@ -138340,7 +138711,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 681.482 231.14 90)
 			(effects
 				(font
@@ -138715,7 +139086,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 75.438 353.06 90)
 			(effects
 				(font
@@ -139182,7 +139553,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 250.698 422.91 90)
 			(effects
 				(font
@@ -139492,7 +139863,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 715.772 162.56 90)
 			(effects
 				(font
@@ -139736,7 +140107,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 658.622 304.8 90)
 			(effects
 				(font
@@ -140202,7 +140573,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 272.542 527.05 90)
 			(effects
 				(font
@@ -140895,7 +141266,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 484.378 410.21 90)
 			(effects
 				(font
@@ -141204,7 +141575,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 309.118 379.73 90)
 			(effects
 				(font
@@ -142173,8 +142544,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x08_Socket")
-		(at 48.26 157.48 0)
-		(mirror y)
+		(at 48.26 160.02 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -142182,7 +142552,7 @@
 		(dnp no)
 		(uuid "eea2d001-9e89-43d8-8679-00b7bbe4b00c")
 		(property "Reference" "J1"
-			(at 48.895 172.72 0)
+			(at 48.895 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -142190,7 +142560,7 @@
 			)
 		)
 		(property "Value" "Conn_01x08_Socket"
-			(at 48.895 170.18 0)
+			(at 48.895 147.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -142198,7 +142568,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Hirose:Hirose_DF13-08P-1.25DSA_1x08_P1.25mm_Vertical"
-			(at 48.26 157.48 0)
+			(at 48.26 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -142207,7 +142577,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 48.26 157.48 0)
+			(at 48.26 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -142216,7 +142586,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x08, script generated"
-			(at 48.26 157.48 0)
+			(at 48.26 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -142249,7 +142619,7 @@
 			(uuid "a28f3426-28d9-4bee-ae40-f05170391e9f")
 		)
 		(instances
-			(project "ALU"
+			(project "ALU_V1.0"
 				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
 					(reference "J1")
 					(unit 1)
@@ -142285,7 +142655,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 658.622 241.3 90)
 			(effects
 				(font
@@ -142689,7 +143059,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 670.052 231.14 90)
 			(effects
 				(font
@@ -143316,7 +143686,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 445.008 337.82 90)
 			(effects
 				(font
@@ -143848,7 +144218,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 75.438 367.03 90)
 			(effects
 				(font
@@ -144169,7 +144539,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--2N7002_C8545.pdf"
 			(at 474.98 142.24 0)
 			(effects
 				(font
@@ -144234,7 +144604,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 133.858 393.7 90)
 			(effects
 				(font
@@ -144609,7 +144979,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 704.342 424.18 90)
 			(effects
 				(font
@@ -145141,7 +145511,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 670.052 304.8 90)
 			(effects
 				(font
@@ -145451,7 +145821,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 343.662 139.7 90)
 			(effects
 				(font
@@ -145772,7 +146142,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--2N7002_C8545.pdf"
 			(at -8.89 496.57 0)
 			(effects
 				(font
@@ -145837,7 +146207,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 715.772 172.72 90)
 			(effects
 				(font
@@ -146081,7 +146451,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 484.378 379.73 90)
 			(effects
 				(font
@@ -146770,7 +147140,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 715.772 361.95 90)
 			(effects
 				(font
@@ -147025,7 +147395,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--2N7002_C8545.pdf"
 			(at 313.69 571.5 0)
 			(effects
 				(font
@@ -148428,7 +148798,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 616.712 251.46 90)
 			(effects
 				(font
@@ -148672,7 +149042,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 283.972 527.05 90)
 			(effects
 				(font
@@ -149246,8 +149616,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x08_Socket")
-		(at 48.26 182.88 0)
-		(mirror y)
+		(at 48.26 185.42 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -149255,7 +149624,7 @@
 		(dnp no)
 		(uuid "facb0014-6945-4708-8dfe-a2b86aaccceb")
 		(property "Reference" "J2"
-			(at 48.895 198.12 0)
+			(at 48.895 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -149263,7 +149632,7 @@
 			)
 		)
 		(property "Value" "Conn_01x08_Socket"
-			(at 48.895 195.58 0)
+			(at 48.895 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -149271,7 +149640,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Hirose:Hirose_DF13-08P-1.25DSA_1x08_P1.25mm_Vertical"
-			(at 48.26 182.88 0)
+			(at 48.26 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -149280,7 +149649,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 48.26 182.88 0)
+			(at 48.26 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -149289,7 +149658,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x08, script generated"
-			(at 48.26 182.88 0)
+			(at 48.26 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -149322,7 +149691,7 @@
 			(uuid "6eba6e33-10be-460c-b446-4e41bf486c69")
 		)
 		(instances
-			(project "ALU"
+			(project "ALU_V1.0"
 				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
 					(reference "J2")
 					(unit 1)
@@ -149358,7 +149727,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 425.958 393.7 90)
 			(effects
 				(font
@@ -149891,7 +150260,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 658.622 162.56 90)
 			(effects
 				(font
@@ -150135,7 +150504,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 579.882 480.06 90)
 			(effects
 				(font
@@ -150379,7 +150748,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 504.698 365.76 90)
 			(effects
 				(font
@@ -150623,7 +150992,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 704.342 172.72 90)
 			(effects
 				(font
@@ -151090,7 +151459,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 692.912 361.95 90)
 			(effects
 				(font
@@ -151335,7 +151704,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 104.14 489.712 90)
 			(effects
 				(font
@@ -151945,7 +152314,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--2N7002_C8545.pdf"
 			(at -54.61 496.57 0)
 			(effects
 				(font
@@ -152010,7 +152379,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 309.118 367.03 90)
 			(effects
 				(font
@@ -152254,7 +152623,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 445.262 565.15 90)
 			(effects
 				(font
@@ -152498,7 +152867,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 399.542 554.99 90)
 			(effects
 				(font
@@ -153031,7 +153400,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 681.482 97.79 90)
 			(effects
 				(font
@@ -153275,7 +153644,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "PCM_JLCPCB:Q_SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 122.682 139.7 90)
 			(effects
 				(font
