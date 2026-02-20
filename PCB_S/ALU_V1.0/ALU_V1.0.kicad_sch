@@ -2616,143 +2616,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:Earth"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "Earth"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"Earth\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global ground gnd"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Earth_0_1"
-				(polyline
-					(pts
-						(xy -0.635 -1.905) (xy 0.635 -1.905)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.127 -2.54) (xy 0.127 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.27) (xy 0 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.27) (xy -1.27 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Earth_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -3765,6 +3628,12 @@
 		(uuid "34e25205-d3a1-4544-92c1-31b04185f84a")
 	)
 	(junction
+		(at 593.09 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3549d0a4-335b-4229-a39f-4dff5984c889")
+	)
+	(junction
 		(at 731.52 377.19)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3823,6 +3692,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "396f432b-a9cf-4354-a6ff-5c204e698447")
+	)
+	(junction
+		(at 254 572.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3a050c61-2585-4ba2-afa3-b62069ec595f")
+	)
+	(junction
+		(at 311.15 572.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3a91a802-6478-4925-b431-87dfd8435538")
 	)
 	(junction
 		(at 802.64 337.82)
@@ -3901,6 +3782,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "419e7123-af34-4aa6-9cdc-d0549ef37c00")
+	)
+	(junction
+		(at 265.43 572.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "41ea3a29-3154-4064-b308-3758f44c87b4")
 	)
 	(junction
 		(at 689.61 241.3)
@@ -4323,6 +4210,12 @@
 		(uuid "62b2c750-c1a5-40c1-8574-2b3ebf2f45d3")
 	)
 	(junction
+		(at 604.52 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "62d626ae-0f69-4cd7-b83b-aaec6eacdf2b")
+	)
+	(junction
 		(at 384.81 134.62)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4407,6 +4300,12 @@
 		(uuid "6b52e1f9-31cb-4ad1-8de4-60a601eedf10")
 	)
 	(junction
+		(at 299.72 572.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6c0592d1-a161-440b-a0d5-4d6e933b4a6c")
+	)
+	(junction
 		(at 85.09 180.34)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4459,6 +4358,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7013abc3-bff8-44c6-b908-8e2a87c36f9f")
+	)
+	(junction
+		(at 615.95 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "70243d6a-d2ae-4219-a6c2-8b8e2929406c")
 	)
 	(junction
 		(at 383.54 402.59)
@@ -4773,6 +4678,12 @@
 		(uuid "8a9ceff4-b5ff-46b1-820c-3074ab0b2fe3")
 	)
 	(junction
+		(at 288.29 572.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8c2b7a70-a4fb-4045-8680-635c84fa1ce6")
+	)
+	(junction
 		(at 213.36 521.97)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4863,6 +4774,12 @@
 		(uuid "97c7e295-d7d8-4f25-bc5f-007d33d396b8")
 	)
 	(junction
+		(at 276.86 572.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "97d50aa0-91a8-4fd2-8f97-d706a7edb526")
+	)
+	(junction
 		(at 731.52 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4923,6 +4840,12 @@
 		(uuid "9d3402da-c58b-4d8e-a099-9e5be328fea5")
 	)
 	(junction
+		(at 581.66 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9d9936ff-1f99-4dbe-b3ae-8c324cc49690")
+	)
+	(junction
 		(at 311.15 532.13)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4933,6 +4856,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9df77a60-af9d-401d-9b01-e1f4782b409e")
+	)
+	(junction
+		(at 242.57 572.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9e2346c3-c7ba-41c6-83b6-28c9a99ef767")
 	)
 	(junction
 		(at 337.82 127)
@@ -6061,6 +5990,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fb8acfa6-2171-450e-870a-cff76387d793")
+	)
+	(junction
+		(at 570.23 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fc196ab6-080b-42b2-a5cd-e98a2ea607bf")
 	)
 	(junction
 		(at 434.34 320.04)
@@ -8056,6 +7991,16 @@
 	)
 	(wire
 		(pts
+			(xy 231.14 572.77) (xy 242.57 572.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e49c278-4bf3-4e9e-8a06-68b8fff86785")
+	)
+	(wire
+		(pts
 			(xy 90.17 331.47) (xy 83.82 331.47)
 		)
 		(stroke
@@ -8633,6 +8578,16 @@
 			(type default)
 		)
 		(uuid "2783026a-3e52-4f3b-98d3-a7172a0e9385")
+	)
+	(wire
+		(pts
+			(xy 299.72 572.77) (xy 311.15 572.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "27847032-6395-4911-969f-f69ea3f39e57")
 	)
 	(wire
 		(pts
@@ -9416,6 +9371,16 @@
 	)
 	(wire
 		(pts
+			(xy 604.52 60.96) (xy 615.95 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34b26aaf-afcb-469b-bab9-799e37c9ae13")
+	)
+	(wire
+		(pts
 			(xy 300.99 134.62) (xy 311.15 134.62)
 		)
 		(stroke
@@ -9973,6 +9938,16 @@
 			(type default)
 		)
 		(uuid "41c63d3d-0211-438a-ab6f-89b0a7a25363")
+	)
+	(wire
+		(pts
+			(xy 288.29 572.77) (xy 299.72 572.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41ca24ec-8c00-442d-836c-c2f4c810e83d")
 	)
 	(wire
 		(pts
@@ -11406,16 +11381,6 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 554.99) (xy 31.75 556.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5c7056fe-028d-410f-8ca1-f7a9999607b1")
-	)
-	(wire
-		(pts
 			(xy 217.17 228.6) (xy 217.17 325.12)
 		)
 		(stroke
@@ -11716,6 +11681,16 @@
 	)
 	(wire
 		(pts
+			(xy 242.57 572.77) (xy 254 572.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61a439b1-0818-457b-8878-d011223cbcf5")
+	)
+	(wire
+		(pts
 			(xy 200.66 320.04) (xy 200.66 331.47)
 		)
 		(stroke
@@ -11813,6 +11788,16 @@
 			(type default)
 		)
 		(uuid "639beaf3-e098-4484-96e3-f228f89fe598")
+	)
+	(wire
+		(pts
+			(xy 558.8 60.96) (xy 570.23 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63a60b27-f9f3-4032-b00e-1c70acf93673")
 	)
 	(wire
 		(pts
@@ -13586,6 +13571,16 @@
 	)
 	(wire
 		(pts
+			(xy 254 572.77) (xy 265.43 572.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "834f1173-d952-448c-84ea-945cb747f9bc")
+	)
+	(wire
+		(pts
 			(xy 200.66 265.43) (xy 200.66 320.04)
 		)
 		(stroke
@@ -13733,6 +13728,16 @@
 			(type default)
 		)
 		(uuid "85a2755e-e9fa-467e-95da-fcb644521f89")
+	)
+	(wire
+		(pts
+			(xy 570.23 60.96) (xy 581.66 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "86036630-a13e-4705-930c-1f4b32262d9c")
 	)
 	(wire
 		(pts
@@ -14236,6 +14241,16 @@
 	)
 	(wire
 		(pts
+			(xy 276.86 572.77) (xy 288.29 572.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8efaa936-d526-426f-9e9e-a13e4d817e49")
+	)
+	(wire
+		(pts
 			(xy 187.96 427.99) (xy 187.96 440.69)
 		)
 		(stroke
@@ -14613,6 +14628,16 @@
 			(type default)
 		)
 		(uuid "957e5148-e1a9-404b-9f2c-ffa434d8852c")
+	)
+	(wire
+		(pts
+			(xy 311.15 574.04) (xy 311.15 572.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95815a99-9f69-4e99-b804-5a578b3f0752")
 	)
 	(wire
 		(pts
@@ -15836,6 +15861,16 @@
 	)
 	(wire
 		(pts
+			(xy 593.09 60.96) (xy 604.52 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab9775f7-1747-4b72-acfa-83793bfcd1a6")
+	)
+	(wire
+		(pts
 			(xy 215.9 345.44) (xy 215.9 353.06)
 		)
 		(stroke
@@ -16043,6 +16078,16 @@
 			(type default)
 		)
 		(uuid "ae9cc84a-8f14-4268-9406-c5e129b04643")
+	)
+	(wire
+		(pts
+			(xy 615.95 60.96) (xy 615.95 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aeebd931-b5b1-429c-a2b6-956c4d3d909e")
 	)
 	(wire
 		(pts
@@ -16623,6 +16668,16 @@
 			(type default)
 		)
 		(uuid "b7fc4cbb-20ae-432f-8a8e-485db27a10e2")
+	)
+	(wire
+		(pts
+			(xy 581.66 60.96) (xy 593.09 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8053658-cdb8-4c73-bf71-49199a2facd7")
 	)
 	(wire
 		(pts
@@ -20296,6 +20351,16 @@
 	)
 	(wire
 		(pts
+			(xy 265.43 572.77) (xy 276.86 572.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fada4d3e-20d5-489b-9895-d89732e15746")
+	)
+	(wire
+		(pts
 			(xy 127 134.62) (xy 129.54 134.62)
 		)
 		(stroke
@@ -20543,138 +20608,6 @@
 			(justify left bottom)
 		)
 		(uuid "a932baa4-2da2-4557-b38e-2051fec258f4")
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at -45.72 497.84 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "00aad674-27df-4df9-a85d-506ee939ac79")
-		(property "Reference" "#PWR0222"
-			(at -45.72 504.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at -45.72 502.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at -45.72 497.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at -45.72 497.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at -45.72 497.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bab2d368-cdc6-4a00-bace-489c8b6cf330")
-		)
-		(instances
-			(project "ALU"
-				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
-					(reference "#PWR0222")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 593.09 60.96 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "012341c4-8a71-4ffc-9332-7a2e8f5e256c")
-		(property "Reference" "#PWR0230"
-			(at 593.09 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 593.09 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 593.09 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 593.09 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 593.09 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0f6105e9-e497-4baa-b520-cdb90d855bf1")
-		)
-		(instances
-			(project "ALU"
-				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
-					(reference "#PWR0230")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -22972,6 +22905,72 @@
 			(project "ALU"
 				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
 					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 153.67 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "066b3012-548f-4283-86b6-bc3e9c35908b")
+		(property "Reference" "#PWR0186"
+			(at 153.67 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 151.892 50.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 153.67 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 153.67 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 153.67 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c446562a-0356-46d0-89b5-734cb1bd162d")
+		)
+		(instances
+			(project "ALU_V1.0"
+				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
+					(reference "#PWR0186")
 					(unit 1)
 				)
 			)
@@ -28846,72 +28845,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:Earth")
-		(at 187.96 52.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0f440c69-efd8-4ebe-a07b-1e46229780ad")
-		(property "Reference" "#PWR0218"
-			(at 187.96 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 187.96 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 187.96 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 187.96 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 187.96 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7b80411a-7340-4697-8800-a2ce2af8a1ad")
-		)
-		(instances
-			(project "ALU"
-				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
-					(reference "#PWR0218")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "PCM_JLCPCB-Transistors:NMOS,2N7002")
 		(at 248.92 410.21 180)
 		(unit 1)
@@ -30325,6 +30258,72 @@
 			(project "ALU"
 				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
 					(reference "#PWR041")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 661.67 -71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1214d197-70b9-4ed8-950b-f91225386a8e")
+		(property "Reference" "#PWR0202"
+			(at 661.67 -64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 659.892 -72.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 661.67 -71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 661.67 -71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 661.67 -71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "41b03931-d444-4b17-aa2b-61d7affe5aee")
+		)
+		(instances
+			(project "ALU_V1.0"
+				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
+					(reference "#PWR0202")
 					(unit 1)
 				)
 			)
@@ -34562,72 +34561,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:Earth")
-		(at 107.95 52.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1de5446b-ab40-4ee4-95b8-7dbfd8e3a358")
-		(property "Reference" "#PWR0204"
-			(at 107.95 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 107.95 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 107.95 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 107.95 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 107.95 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e3dcbfc6-0121-4c6e-aa67-354e18db39b9")
-		)
-		(instances
-			(project "ALU"
-				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
-					(reference "#PWR0204")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "PCM_JLCPCB-Transistors:NMOS,2N7002")
 		(at 502.92 408.94 180)
 		(unit 1)
@@ -35371,72 +35304,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:Earth")
-		(at 31.75 556.26 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1e0c57eb-7d70-469e-8277-b40074d110f0")
-		(property "Reference" "#PWR0242"
-			(at 31.75 562.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 31.75 561.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 31.75 556.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 31.75 556.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 31.75 556.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "dcc91263-2696-4604-a46a-efb81c414b42")
-		)
-		(instances
-			(project "ALU"
-				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
-					(reference "#PWR0242")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "PCM_JLCPCB-Transistors:NMOS,2N7002")
 		(at 717.55 372.11 0)
 		(unit 1)
@@ -36000,6 +35867,72 @@
 			(project "ALU"
 				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
 					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 142.24 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1f0b55b8-6690-4239-8dc6-a3d5f22d06b3")
+		(property "Reference" "#PWR0204"
+			(at 142.24 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 140.462 50.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 142.24 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 142.24 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 142.24 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0d929728-3546-492a-9ca5-ba85c9269770")
+		)
+		(instances
+			(project "ALU_V1.0"
+				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
+					(reference "#PWR0204")
 					(unit 1)
 				)
 			)
@@ -38328,6 +38261,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 506.73 143.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "235b5537-dfa0-4c11-bdbf-87f269a8d27b")
+		(property "Reference" "#PWR0245"
+			(at 506.73 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 504.952 142.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 506.73 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 506.73 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 506.73 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1ffd4003-ae12-4324-8576-6a6ce80be7b7")
+		)
+		(instances
+			(project "ALU_V1.0"
+				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
+					(reference "#PWR0245")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_JLCPCB-Resistors:0603,470Ω")
 		(at 506.73 121.92 0)
 		(unit 1)
@@ -38869,72 +38868,6 @@
 			(project "ALU"
 				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
 					(reference "R31")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 288.29 572.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "25f86f73-bacc-45c5-9f10-1c6f4174eaf5")
-		(property "Reference" "#PWR0182"
-			(at 288.29 579.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 288.29 577.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 288.29 572.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 288.29 572.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 288.29 572.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "59c7a20c-efde-4647-9c39-57f6f2bb2a8f")
-		)
-		(instances
-			(project "ALU"
-				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
-					(reference "#PWR0182")
 					(unit 1)
 				)
 			)
@@ -42325,72 +42258,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:Earth")
-		(at -34.29 497.84 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2a210c21-2f53-4d1b-a5e7-1b0bed6f7e1b")
-		(property "Reference" "#PWR0236"
-			(at -34.29 504.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at -34.29 502.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at -34.29 497.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at -34.29 497.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at -34.29 497.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ac0e1923-68ad-4bb9-b70f-754a45ee3b89")
-		)
-		(instances
-			(project "ALU"
-				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
-					(reference "#PWR0236")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "PCM_JLCPCB-Resistors:0402,10kΩ")
 		(at 445.77 358.14 270)
 		(unit 1)
@@ -42893,6 +42760,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at -45.72 497.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2a533022-10ba-44e8-a890-b0549a3bb8a9")
+		(property "Reference" "#PWR0238"
+			(at -45.72 504.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at -47.498 496.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at -45.72 497.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at -45.72 497.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at -45.72 497.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3d7bb8f9-b330-464b-ad8c-f8cbfedbb9cf")
+		)
+		(instances
+			(project "ALU_V1.0"
+				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
+					(reference "#PWR0238")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VCC")
 		(at 448.31 342.9 270)
 		(unit 1)
@@ -43199,6 +43132,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 130.81 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2bee3ad7-25c2-46e9-9735-9d19b209bf0b")
+		(property "Reference" "#PWR0206"
+			(at 130.81 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 129.032 50.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 130.81 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f98bc177-7030-4553-857b-10424baac787")
+		)
+		(instances
+			(project "ALU_V1.0"
+				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
+					(reference "#PWR0206")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VCC")
 		(at -45.72 472.44 0)
 		(unit 1)
@@ -43331,6 +43330,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 187.96 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2d3faae4-f2bc-43f7-a160-ebeef2df5385")
+		(property "Reference" "#PWR0180"
+			(at 187.96 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 186.182 50.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 187.96 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 187.96 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 187.96 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e971d8aa-b16c-4901-ba31-9f31d2aace99")
+		)
+		(instances
+			(project "ALU_V1.0"
+				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
+					(reference "#PWR0180")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VCC")
 		(at 391.16 370.84 270)
 		(unit 1)
@@ -43390,72 +43455,6 @@
 			(project "ALU"
 				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
 					(reference "#PWR0102")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 483.87 143.51 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2e6682d0-cb63-40d4-8e0e-bb8e56db566a")
-		(property "Reference" "#PWR0198"
-			(at 483.87 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 483.87 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 483.87 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 483.87 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 483.87 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c5c8faaf-773f-45f6-98f3-d236738e7e72")
-		)
-		(instances
-			(project "ALU"
-				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
-					(reference "#PWR0198")
 					(unit 1)
 				)
 			)
@@ -52900,72 +52899,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:Earth")
-		(at 176.53 52.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "421fb8c2-cea5-4d30-898c-14c4371b1f0f")
-		(property "Reference" "#PWR0216"
-			(at 176.53 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 176.53 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 176.53 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 176.53 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 176.53 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f70978bc-2067-4b7c-b6e5-be6b15879c9c")
-		)
-		(instances
-			(project "ALU"
-				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
-					(reference "#PWR0216")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VCC")
 		(at 563.88 459.74 0)
 		(unit 1)
@@ -54933,72 +54866,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:Earth")
-		(at 615.95 60.96 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "451ed9b0-c9a7-4c24-9e5d-7219bc1f7887")
-		(property "Reference" "#PWR0234"
-			(at 615.95 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 615.95 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 615.95 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 615.95 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 615.95 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "924f858a-50f2-4870-a614-976a828f1b5c")
-		)
-		(instances
-			(project "ALU"
-				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
-					(reference "#PWR0234")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "PCM_JLCPCB-Transistors:NMOS,2N7002")
 		(at 307.34 340.36 180)
 		(unit 1)
@@ -55523,6 +55390,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at -57.15 497.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4662d363-d885-4656-86cb-7b587377d037")
+		(property "Reference" "#PWR0240"
+			(at -57.15 504.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at -58.928 496.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at -57.15 497.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at -57.15 497.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at -57.15 497.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9007c5b0-abad-44dc-bcf7-7a77727d7003")
+		)
+		(instances
+			(project "ALU_V1.0"
+				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
+					(reference "#PWR0240")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_JLCPCB-Transistors:NMOS,2N7002")
 		(at 728.98 372.11 0)
 		(unit 1)
@@ -55939,6 +55872,72 @@
 			(project "ALU"
 				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
 					(reference "Q304")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 615.95 63.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4714f3df-8cfa-4a23-b095-27551effc9f3")
+		(property "Reference" "#PWR0174"
+			(at 615.95 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 614.172 62.23 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 615.95 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 615.95 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 615.95 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "00fef27b-979a-4a85-9e8e-1460d25682a2")
+		)
+		(instances
+			(project "ALU_V1.0"
+				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
+					(reference "#PWR0174")
 					(unit 1)
 				)
 			)
@@ -56551,72 +56550,6 @@
 			(project "ALU"
 				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
 					(reference "#PWR0225")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 581.66 60.96 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "48ada661-d032-4ad9-832f-139142fcc624")
-		(property "Reference" "#PWR0228"
-			(at 581.66 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 581.66 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 581.66 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 581.66 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 581.66 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d2d8f256-78cf-474b-a67e-eae34bf21e96")
-		)
-		(instances
-			(project "ALU"
-				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
-					(reference "#PWR0228")
 					(unit 1)
 				)
 			)
@@ -60390,72 +60323,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:Earth")
-		(at 311.15 572.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "50320ed8-cd5c-4cfa-afe2-55781ae9f0e7")
-		(property "Reference" "#PWR0186"
-			(at 311.15 579.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 311.15 577.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 311.15 572.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 311.15 572.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 311.15 572.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1017530a-3088-482c-9fba-841d268f629d")
-		)
-		(instances
-			(project "ALU"
-				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
-					(reference "#PWR0186")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "PCM_JLCPCB-Transistors:NMOS,2N7002")
 		(at 190.5 422.91 180)
 		(unit 1)
@@ -62329,6 +62196,72 @@
 			(project "ALU"
 				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
 					(reference "#PWR097")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 176.53 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5363d278-8353-4d23-8307-14830ae0dd86")
+		(property "Reference" "#PWR0182"
+			(at 176.53 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 174.752 50.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 176.53 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 176.53 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 176.53 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e99caccc-f4e7-490f-a19c-1076d84bdb82")
+		)
+		(instances
+			(project "ALU_V1.0"
+				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
+					(reference "#PWR0182")
 					(unit 1)
 				)
 			)
@@ -70771,72 +70704,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:Earth")
-		(at 231.14 572.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6330dab5-ca38-4919-a4e8-15c7b605aecf")
-		(property "Reference" "#PWR0174"
-			(at 231.14 579.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 231.14 577.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 231.14 572.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 231.14 572.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 231.14 572.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3e7892f0-a18c-4bb9-9cae-6265908e82ee")
-		)
-		(instances
-			(project "ALU"
-				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
-					(reference "#PWR0174")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VCC")
 		(at 299.72 547.37 0)
 		(unit 1)
@@ -74464,6 +74331,72 @@
 			(project "ALU"
 				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
 					(reference "#PWR0199")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 119.38 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6c9844c9-dc76-44e2-bbcd-e4266c128877")
+		(property "Reference" "#PWR0178"
+			(at 119.38 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 117.602 50.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 119.38 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 119.38 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "55bb26fa-0d18-44ed-89ca-c5f6540178c1")
+		)
+		(instances
+			(project "ALU_V1.0"
+				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
+					(reference "#PWR0178")
 					(unit 1)
 				)
 			)
@@ -78949,72 +78882,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:Earth")
-		(at 299.72 572.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "73900903-c4e4-4cea-8b39-3d31033236ea")
-		(property "Reference" "#PWR0184"
-			(at 299.72 579.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 299.72 577.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 299.72 572.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 299.72 572.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 299.72 572.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2ae43a4d-03b0-4149-925c-bb5c30ef0cf1")
-		)
-		(instances
-			(project "ALU"
-				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
-					(reference "#PWR0184")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "PCM_JLCPCB-Resistors:0402,10kΩ")
 		(at 67.31 330.2 90)
 		(unit 1)
@@ -81797,72 +81664,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:Earth")
-		(at 495.3 143.51 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "78d926bd-25c0-4576-96f7-11e1a237718f")
-		(property "Reference" "#PWR0200"
-			(at 495.3 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 495.3 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 495.3 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 495.3 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 495.3 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2160aad3-83bd-49bd-b695-b374571c3384")
-		)
-		(instances
-			(project "ALU"
-				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
-					(reference "#PWR0200")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "PCM_JLCPCB-Transistors:NMOS,2N7002")
 		(at 327.66 365.76 180)
 		(unit 1)
@@ -82556,72 +82357,6 @@
 			(project "ALU"
 				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
 					(reference "#PWR067")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at -11.43 497.84 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7b377ae5-4679-4103-b292-6fcb600537b2")
-		(property "Reference" "#PWR0240"
-			(at -11.43 504.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at -11.43 502.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at -11.43 497.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at -11.43 497.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at -11.43 497.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cad79bcd-8766-4a84-8cf5-9ebeb4cdb00b")
-		)
-		(instances
-			(project "ALU"
-				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
-					(reference "#PWR0240")
 					(unit 1)
 				)
 			)
@@ -85336,72 +85071,6 @@
 			(project "ALU"
 				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
 					(reference "#PWR026")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 604.52 60.96 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "806da453-46e7-4840-95d8-a793efb5e15a")
-		(property "Reference" "#PWR0232"
-			(at 604.52 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 604.52 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 604.52 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 604.52 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 604.52 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ce93f22a-a081-4568-90a5-1ed9c2c71ed4")
-		)
-		(instances
-			(project "ALU"
-				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
-					(reference "#PWR0232")
 					(unit 1)
 				)
 			)
@@ -88847,6 +88516,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 107.95 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "857f790c-cab2-47c4-adec-945bc16c457c")
+		(property "Reference" "#PWR0176"
+			(at 107.95 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 106.172 50.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 107.95 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 107.95 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 107.95 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9705e18e-674c-4521-b0cf-48a03ead198a")
+		)
+		(instances
+			(project "ALU_V1.0"
+				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
+					(reference "#PWR0176")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 381 570.23 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -90494,72 +90229,6 @@
 			(project "ALU"
 				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
 					(reference "Q193")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at -22.86 497.84 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "88893cf6-e923-475f-9c35-685fb3238365")
-		(property "Reference" "#PWR0238"
-			(at -22.86 504.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at -22.86 502.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at -22.86 497.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at -22.86 497.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at -22.86 497.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0660fe23-4809-4984-a9e0-8a47d61c88de")
-		)
-		(instances
-			(project "ALU"
-				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
-					(reference "#PWR0238")
 					(unit 1)
 				)
 			)
@@ -95882,17 +95551,16 @@
 		)
 	)
 	(symbol
-		(lib_id "power:Earth")
-		(at 570.23 60.96 0)
+		(lib_id "power:GND")
+		(at 426.72 143.51 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "91bc1734-3b54-42b8-be32-3c0030afbe8c")
-		(property "Reference" "#PWR0226"
-			(at 570.23 67.31 0)
+		(uuid "91ce0efc-d61f-453c-a693-f614edb578da")
+		(property "Reference" "#PWR0200"
+			(at 426.72 149.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -95900,16 +95568,17 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "Earth"
-			(at 570.23 66.04 0)
+		(property "Value" "GND"
+			(at 424.942 142.24 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 570.23 60.96 0)
+			(at 426.72 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -95917,8 +95586,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 570.23 60.96 0)
+		(property "Datasheet" ""
+			(at 426.72 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -95926,8 +95595,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 570.23 60.96 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 426.72 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -95936,12 +95605,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "c4e83463-d9bd-439f-bc80-bd81534864ac")
+			(uuid "625cc63e-36e1-4039-92d0-b293223f5607")
 		)
 		(instances
-			(project "ALU"
+			(project "ALU_V1.0"
 				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
-					(reference "#PWR0226")
+					(reference "#PWR0200")
 					(unit 1)
 				)
 			)
@@ -97902,72 +97571,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:Earth")
-		(at 130.81 52.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9656d70f-6461-4532-9a00-42ddd1f7107b")
-		(property "Reference" "#PWR0208"
-			(at 130.81 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 130.81 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 130.81 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 130.81 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 130.81 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ab58c62e-dad3-4d8a-a297-28195b38ce29")
-		)
-		(instances
-			(project "ALU"
-				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
-					(reference "#PWR0208")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "PCM_JLCPCB-Diodes:LED,0603,Red")
 		(at 558.8 46.99 0)
 		(unit 1)
@@ -98384,72 +97987,6 @@
 			(project "ALU"
 				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
 					(reference "D32")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 142.24 52.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "97da1eea-0dd9-458c-b91c-0f0febca9f22")
-		(property "Reference" "#PWR0210"
-			(at 142.24 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 142.24 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 142.24 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 142.24 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 142.24 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "70153d85-09f4-4d20-affa-257875fadb1c")
-		)
-		(instances
-			(project "ALU"
-				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
-					(reference "#PWR0210")
 					(unit 1)
 				)
 			)
@@ -99970,72 +99507,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:Earth")
-		(at 153.67 52.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9baedc99-f207-4df2-aaae-d20dda5f3c53")
-		(property "Reference" "#PWR0212"
-			(at 153.67 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 153.67 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 153.67 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 153.67 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 153.67 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6c68347d-8f9e-4ccb-80f3-5c2141ecc014")
-		)
-		(instances
-			(project "ALU"
-				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
-					(reference "#PWR0212")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "PCM_JLCPCB-Transistors:NMOS,2N7002")
 		(at 269.24 379.73 180)
 		(unit 1)
@@ -101124,72 +100595,6 @@
 			(project "ALU"
 				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
 					(reference "Q64")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 265.43 572.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9cb38efb-096e-4ceb-9961-070af03585c7")
-		(property "Reference" "#PWR0178"
-			(at 265.43 579.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 265.43 577.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 265.43 572.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 265.43 572.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 265.43 572.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "482324df-aa5c-4bf4-be2b-042f51cf831a")
-		)
-		(instances
-			(project "ALU"
-				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
-					(reference "#PWR0178")
 					(unit 1)
 				)
 			)
@@ -106151,6 +105556,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 483.87 143.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a4d9f9b6-4fb3-4b24-b173-529031fb8f9d")
+		(property "Reference" "#PWR0190"
+			(at 483.87 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 482.092 142.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 483.87 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 483.87 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 483.87 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ec5523ec-cc79-4a68-a57d-bf40641e0754")
+		)
+		(instances
+			(project "ALU_V1.0"
+				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
+					(reference "#PWR0190")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_JLCPCB-Resistors:0402,10kΩ")
 		(at 242.57 398.78 90)
 		(unit 1)
@@ -109073,6 +108544,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 472.44 143.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a941d07b-6229-42c0-a14f-2c5239a9e91e")
+		(property "Reference" "#PWR0192"
+			(at 472.44 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 470.662 142.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 472.44 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 472.44 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 472.44 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b0da16d0-d65b-4938-ae77-5bfb9ee9d8ab")
+		)
+		(instances
+			(project "ALU_V1.0"
+				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
+					(reference "#PWR0192")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_JLCPCB-Transistors:NMOS,2N7002")
 		(at 151.13 325.12 180)
 		(unit 1)
@@ -109987,72 +109524,6 @@
 			(project "ALU"
 				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
 					(reference "R70")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 506.73 143.51 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "aa10d849-c29f-4a05-a0fa-2d65fd3c4ad6")
-		(property "Reference" "#PWR0202"
-			(at 506.73 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 506.73 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 506.73 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 506.73 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 506.73 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "dd0a6ded-6e57-407a-b170-a3b74de06838")
-		)
-		(instances
-			(project "ALU"
-				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
-					(reference "#PWR0202")
 					(unit 1)
 				)
 			)
@@ -113549,6 +113020,72 @@
 			(project "ALU"
 				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
 					(reference "R58")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 449.58 143.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ad32ae83-4145-444e-a1d4-43edf3ed0592")
+		(property "Reference" "#PWR0196"
+			(at 449.58 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 447.802 142.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 449.58 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 449.58 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 449.58 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b304fde7-9900-44e8-b2ea-380f52fb5cf0")
+		)
+		(instances
+			(project "ALU_V1.0"
+				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
+					(reference "#PWR0196")
 					(unit 1)
 				)
 			)
@@ -118324,6 +117861,72 @@
 			(project "ALU"
 				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at -11.43 497.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b6c55324-e28c-4d8b-94bd-bff7a23eb2e9")
+		(property "Reference" "#PWR0220"
+			(at -11.43 504.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at -13.208 496.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at -11.43 497.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at -11.43 497.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at -11.43 497.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "50b0bd83-245e-4bd1-894f-52a5dace97b0")
+		)
+		(instances
+			(project "ALU_V1.0"
+				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
+					(reference "#PWR0220")
 					(unit 1)
 				)
 			)
@@ -126617,72 +126220,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:Earth")
-		(at 119.38 52.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c36ed514-ca9e-4640-9b16-c020845df99c")
-		(property "Reference" "#PWR0206"
-			(at 119.38 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 119.38 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 119.38 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 119.38 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 119.38 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "10e6abf4-602b-4f58-b4c5-f7113edb8131")
-		)
-		(instances
-			(project "ALU"
-				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
-					(reference "#PWR0206")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "PCM_JLCPCB-Transistors:NMOS,2N7002")
 		(at 671.83 434.34 0)
 		(unit 1)
@@ -127004,72 +126541,6 @@
 			(project "ALU"
 				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
 					(reference "#PWR086")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 472.44 143.51 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c43ef28d-ebc0-4354-a1d1-57beb28ccdae")
-		(property "Reference" "#PWR0196"
-			(at 472.44 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 472.44 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 472.44 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 472.44 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 472.44 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0fa065cc-319a-4982-a675-b0444866470b")
-		)
-		(instances
-			(project "ALU"
-				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
-					(reference "#PWR0196")
 					(unit 1)
 				)
 			)
@@ -128451,6 +127922,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 311.15 574.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c6560ab1-af97-44bb-981e-20f14be400ef")
+		(property "Reference" "#PWR0160"
+			(at 311.15 580.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 309.372 572.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 311.15 574.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 311.15 574.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 311.15 574.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "68ae2992-5f8d-4f45-b856-fcc091c62e66")
+		)
+		(instances
+			(project "ALU_V1.0"
+				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
+					(reference "#PWR0160")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_JLCPCB-Transistors:NMOS,2N7002")
 		(at 706.12 162.56 0)
 		(unit 1)
@@ -129331,6 +128868,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 438.15 143.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c77cb4fb-df99-49f7-807c-ccb77d952d29")
+		(property "Reference" "#PWR0198"
+			(at 438.15 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 436.372 142.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 438.15 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 438.15 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 438.15 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1d6d0015-2600-440f-b383-3287fe432c9b")
+		)
+		(instances
+			(project "ALU_V1.0"
+				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
+					(reference "#PWR0198")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VCC")
 		(at 472.44 398.78 90)
 		(unit 1)
@@ -129631,72 +129234,6 @@
 			(project "ALU"
 				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
 					(reference "R120")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 276.86 572.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c841f0a7-f29a-423a-b3e0-16e4258dac75")
-		(property "Reference" "#PWR0180"
-			(at 276.86 579.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 276.86 577.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 276.86 572.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 276.86 572.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 276.86 572.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d6112caa-ccb8-4177-9432-d9ab7dcdaec6")
-		)
-		(instances
-			(project "ALU"
-				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
-					(reference "#PWR0180")
 					(unit 1)
 				)
 			)
@@ -131650,6 +131187,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 495.3 143.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "caa3d3cd-36b9-4b72-ba15-0b868a98a482")
+		(property "Reference" "#PWR0188"
+			(at 495.3 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 493.522 142.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 495.3 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 495.3 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 495.3 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bdf003a0-252f-4c7b-bc69-52020d4eb086")
+		)
+		(instances
+			(project "ALU_V1.0"
+				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
+					(reference "#PWR0188")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_JLCPCB-Transistors:NMOS,2N7002")
 		(at 683.26 361.95 0)
 		(unit 1)
@@ -132452,6 +132055,72 @@
 			(project "ALU"
 				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
 					(reference "#PWR036")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 31.75 554.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cc3c2679-481a-44da-b1bd-8d5b7124ede3")
+		(property "Reference" "#PWR0246"
+			(at 31.75 561.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 29.972 553.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 31.75 554.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 554.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 31.75 554.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "24447315-6a24-4870-927b-614783062f64")
+		)
+		(instances
+			(project "ALU_V1.0"
+				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
+					(reference "#PWR0246")
 					(unit 1)
 				)
 			)
@@ -133882,72 +133551,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:Earth")
-		(at 449.58 143.51 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cfc59e1a-9506-4011-a4b1-5197eeb968d1")
-		(property "Reference" "#PWR0192"
-			(at 449.58 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 449.58 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 449.58 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 449.58 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 449.58 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "13026f92-788d-488b-a8e9-14bd181586d3")
-		)
-		(instances
-			(project "ALU"
-				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
-					(reference "#PWR0192")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "PCM_JLCPCB-Transistors:NMOS,2N7002")
 		(at 424.18 379.73 180)
 		(unit 1)
@@ -134713,6 +134316,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 461.01 143.51 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d0c2ac26-b135-4d6c-9c40-017797949382")
+		(property "Reference" "#PWR0194"
+			(at 461.01 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 459.232 142.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 461.01 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 461.01 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 461.01 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "37b60282-8244-41a3-b35a-8924cbae0374")
+		)
+		(instances
+			(project "ALU_V1.0"
+				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
+					(reference "#PWR0194")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_JLCPCB-Transistors:NMOS,2N7002")
 		(at 295.91 139.7 0)
 		(unit 1)
@@ -135034,72 +134703,6 @@
 			(project "ALU"
 				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
 					(reference "#PWR066")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 661.67 -71.12 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d10effff-2eba-49bd-abb7-ccfdf27dade0")
-		(property "Reference" "#PWR0244"
-			(at 661.67 -64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 661.67 -66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 661.67 -71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 661.67 -71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 661.67 -71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0daa49c4-347e-42e0-8915-6bb8ec5841fe")
-		)
-		(instances
-			(project "ALU"
-				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
-					(reference "#PWR0244")
 					(unit 1)
 				)
 			)
@@ -137017,72 +136620,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:Earth")
-		(at -57.15 497.84 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d5d95dcc-f407-4d58-9c07-c131d5dd84a6")
-		(property "Reference" "#PWR0220"
-			(at -57.15 504.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at -57.15 502.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at -57.15 497.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at -57.15 497.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at -57.15 497.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b65e2ffb-02bc-4b31-aca4-8e6390690b4c")
-		)
-		(instances
-			(project "ALU"
-				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
-					(reference "#PWR0220")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VCC")
 		(at 332.74 358.14 270)
 		(unit 1)
@@ -137954,6 +137491,72 @@
 			(project "ALU"
 				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
 					(reference "#PWR053")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 165.1 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "d6f2e7b5-9667-4b81-af0a-a837794a901c")
+		(property "Reference" "#PWR0184"
+			(at 165.1 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 163.322 50.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 165.1 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3b8fc36b-724e-48ce-8d10-30e97b18de9b")
+		)
+		(instances
+			(project "ALU_V1.0"
+				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
+					(reference "#PWR0184")
 					(unit 1)
 				)
 			)
@@ -139050,72 +138653,6 @@
 			(project "ALU"
 				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
 					(reference "#PWR0169")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 438.15 143.51 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d93dd520-3e6e-499d-a4c0-b789aededf50")
-		(property "Reference" "#PWR0190"
-			(at 438.15 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 438.15 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 438.15 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 438.15 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 438.15 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "b2ba8748-d4be-4507-92fb-7fe136c57df1")
-		)
-		(instances
-			(project "ALU"
-				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
-					(reference "#PWR0190")
 					(unit 1)
 				)
 			)
@@ -141024,6 +140561,72 @@
 			(project "ALU"
 				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
 					(reference "#PWR028")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at -34.29 497.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "deb7b404-d3e4-478e-83c3-15ea0a53878b")
+		(property "Reference" "#PWR0236"
+			(at -34.29 504.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at -36.068 496.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at -34.29 497.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at -34.29 497.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at -34.29 497.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bb5b9364-4150-447c-a05a-f8e0a63babd3")
+		)
+		(instances
+			(project "ALU_V1.0"
+				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
+					(reference "#PWR0236")
 					(unit 1)
 				)
 			)
@@ -148184,72 +147787,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:Earth")
-		(at 242.57 572.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "eab1d5e9-1105-4b61-b171-4566ddfbcbaf")
-		(property "Reference" "#PWR0160"
-			(at 242.57 579.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 242.57 577.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 242.57 572.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 242.57 572.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 242.57 572.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "826de4ba-331d-4b67-98a3-6761d60070bf")
-		)
-		(instances
-			(project "ALU"
-				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
-					(reference "#PWR0160")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "PCM_JLCPCB-Transistors:NMOS,2N7002")
 		(at 482.6 410.21 180)
 		(unit 1)
@@ -148905,72 +148442,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:Earth")
-		(at 558.8 60.96 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ec439322-bb65-45bc-9256-be51b6c3b6a8")
-		(property "Reference" "#PWR0224"
-			(at 558.8 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 558.8 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 558.8 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 558.8 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 558.8 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5e25765a-9321-403d-8238-c58be72ed5e6")
-		)
-		(instances
-			(project "ALU"
-				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
-					(reference "#PWR0224")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VCC")
 		(at 449.58 118.11 0)
 		(unit 1)
@@ -149163,72 +148634,6 @@
 			(project "ALU"
 				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
 					(reference "#PWR0168")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 461.01 143.51 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ed902523-f98b-4f7e-be51-feed8f5a4a42")
-		(property "Reference" "#PWR0194"
-			(at 461.01 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 461.01 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 461.01 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 461.01 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 461.01 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "26b84f97-c59f-4837-acae-7c9fb1dd3cb1")
-		)
-		(instances
-			(project "ALU"
-				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
-					(reference "#PWR0194")
 					(unit 1)
 				)
 			)
@@ -151334,72 +150739,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:Earth")
-		(at 426.72 143.51 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f023440e-bcae-4425-9bd4-a808bff65907")
-		(property "Reference" "#PWR0188"
-			(at 426.72 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 426.72 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 426.72 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 426.72 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 426.72 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9287cf32-55dc-4721-a1c1-9c420e745301")
-		)
-		(instances
-			(project "ALU"
-				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
-					(reference "#PWR0188")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "PCM_JLCPCB-Transistors:NMOS,2N7002")
 		(at 73.66 367.03 180)
 		(unit 1)
@@ -153039,72 +152378,6 @@
 			(project "ALU"
 				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
 					(reference "Q182")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 165.1 52.07 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f371caac-d274-44a1-b79f-de1094ced2d3")
-		(property "Reference" "#PWR0214"
-			(at 165.1 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 165.1 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 165.1 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 165.1 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 165.1 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2d18a7ce-4989-458a-98fc-88e47828234c")
-		)
-		(instances
-			(project "ALU"
-				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
-					(reference "#PWR0214")
 					(unit 1)
 				)
 			)
@@ -157043,6 +156316,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at -22.86 497.84 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f83b9655-4069-46e3-b6da-b3941af34769")
+		(property "Reference" "#PWR0222"
+			(at -22.86 504.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at -24.638 496.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at -22.86 497.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at -22.86 497.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at -22.86 497.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f1f043d0-c4c2-46e4-b31e-25f6eb6b8cbc")
+		)
+		(instances
+			(project "ALU_V1.0"
+				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
+					(reference "#PWR0222")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 149.86 347.98 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -160025,72 +159364,6 @@
 			(project "ALU"
 				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
 					(reference "R18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:Earth")
-		(at 254 572.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fdf4e997-c127-4bc6-8098-d7e90e3f1a7a")
-		(property "Reference" "#PWR0176"
-			(at 254 579.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "Earth"
-			(at 254 577.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 254 572.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 254 572.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"Earth\""
-			(at 254 572.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "79724fd4-29a0-4557-ba67-91b458a9ff5f")
-		)
-		(instances
-			(project "ALU"
-				(path "/b9ab020e-39ea-4ed7-9ee7-c59647ec4948"
-					(reference "#PWR0176")
 					(unit 1)
 				)
 			)
