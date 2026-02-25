@@ -1,0 +1,65 @@
+Den = [1 2 7]; 
+GP  = tf(7,Den)
+A   = [0 1; -7 -2]; 
+B   = [0; 1]; 
+C   = [7 0]; 
+D   = 0;
+CM  = [B A*B]
+det(CM)
+step(GP)
+stepinfo(GP)
+PO  = 27.7; 
+Tp  = 1.29; 
+POd = PO/4
+Tpd = Tp;
+zd  = -log(POd/100) / (sqrt(pi^2 + (log(POd/100))^2))
+wnd=pi/Tpd/sqrt(1-zd^2)
+j   = sqrt(-1); 
+p1d = -zd*wnd + j*wnd*sqrt(1-zd^2)
+p2d = -zd*wnd - j*wnd*sqrt(1-zd^2)
+pd  = [p1d p2d]'
+K   = place(A,B,pd)
+GPssm = ss(A-B*K,B,C,D)
+figure
+step(GPssm)
+
+
+-------------------------------------------
+
+
+
+
+
+Den = [1 2 7]; 
+GP  = tf(7,Den)
+A   = [0 1; -7 -2]; 
+B   = [0; 1]; 
+C   = [7 0]; 
+D   = 0;
+CM  = [B A*B]
+det(CM)
+step(GP)
+stepinfo(GP)
+PO  = 27.7; 
+Tp  = 1.29; 
+POd = PO/4
+Tpd = Tp;
+zd  = -log(POd/100) / (sqrt(pi^2 + (log(POd/100))^2))
+wnd = 4/zd/Tpd
+j   = sqrt(-1); 
+p1d = -zd*wnd + j*wnd*sqrt(1-zd^2)
+p2d = -zd*wnd - j*wnd*sqrt(1-zd^2)
+pd  = [p1d p2d]'
+K   = place(A,B,pd)
+GPssm = ss(A-B*K,B,C,D)
+figure
+step(GPssm)
+
+wnd=pi/Tpd/sqrt(1-zd^2)
+j=sqrt(-1); p1d=-zd*wnd + j*wnd*sqrt(1-zd^2)
+p2d=-zd*wnd - j*wnd*sqrt(1-zd^2)
+pd=[p1d p2d]'
+K = place(A,B,pd)
+GPssm = ss(A-B*K,B,C,D)
+figure
+step(GPssm)

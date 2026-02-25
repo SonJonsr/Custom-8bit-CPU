@@ -1,0 +1,21 @@
+G =zpk([-1],[0 0 -9],1);
+rlocus(G)
+OS = 16.3;
+z = (-log(OS/100))/sqrt(pi^2 + log(OS/100)^2);
+Theta = 180*acos(z)/pi;
+
+k1 =1;    T1 = feedback(k1*G,1);
+k2 =10.3; T2 = feedback(k2*G,1);
+k3 =70.5; T3 = feedback(k3*G,1);
+
+step(T1); hold on;
+step(T2); hold on;
+step(T3); hold on;
+
+T1
+T2
+T3
+
+s = tf('s');
+T3a = tf(k3 * (1/1.146) * 1/(s^2 + 7.854*s + 61.5))
+step(T3a)
