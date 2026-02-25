@@ -1,0 +1,13 @@
+Tel = [1 4]; Nev = poly([-1 -2 -5]);
+G = tf(Tel,Nev)
+[r, p, k] = residue(Tel, Nev)
+Az = [-5 0 0 ; 0 -2 0; 0 0 -1]
+Bz = r
+Cz = [1 1 1]
+Dz = 0
+PO = 20.8
+Ts = 4
+z = -log(PO/100)/sqrt(pi^2+(log(PO/100))^2)
+wn = 4/z/Ts
+pd1 = -z*wn+j*wn*sqrt(1 - z^2)
+pd2 = -z*wn-j*wn*sqrt(1 - z^2)

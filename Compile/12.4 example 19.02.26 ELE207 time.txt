@@ -1,0 +1,19 @@
+G=zpk([-4],[-1 -2 -5],1)
+G=tf(G)
+Tel=[1 4]; Nev=[1 8 17 10];
+[r,p,k]=residue(Tel,Nev)
+Az=[-5 0 0; 0 -2 0; 0 0 -1]
+Bz=r
+Cz=[1 1 1]; Dz=0;
+[Dssm,Block,TL,TR]=modalreal(G)
+CMz=ctrb(Az,Bz)
+det(CMz)
+PO = 20.8; 
+Ts=4; 
+z = -log(PO/100)/sqrt(pi^2 + (log(PO/100))^2)
+wn=4/z/Ts
+j=sqrt(-1);
+p1=-z*wn+j*wn*sqrt(1-z^2)
+p2=-z*wn-j*wn*sqrt(1-z^2)
+p3=-4; 
+p=[p1 p2 p3]'

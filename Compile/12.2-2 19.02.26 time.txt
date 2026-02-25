@@ -1,0 +1,110 @@
+>> Num=[20 100]; Den=[1 5 4 0]; Ts = 0.74;
+>> G = tf(Num,Den)
+
+G =
+ 
+     20 s + 100
+  -----------------
+  s^3 + 5 s^2 + 4 s
+ 
+Continuous-time transfer function.
+Model Properties
+>> A=[0 1 0; 0 0 1; 0 -4 -5]; B = [0 0 1]';
+>> C=[100 20 0]; D=0;
+
+>> PO = 9.5;
+>> zeta =-log(PO/100)/sqrt(pi^2 + (log(PO/100))^2)
+
+zeta =
+
+    0.5996
+
+>> wn = 4/zeta/Ts
+
+wn =
+
+    9.0147
+
+
+>> j=sqrt(-1); p1=-zeta*wn + j*wn*sqrt(1-zeta^2)
+
+p1 =
+
+  -5.4054 + 7.2143i
+
+>> p2=-zeta*wn - j*wn*sqrt(1-zeta^2)
+
+p2 =
+
+  -5.4054 - 7.2143i
+
+>> p3=-5; p=[p1 p2 p3];
+>> CE = poly(p)
+
+CE =
+
+    1.0000   15.8108  135.3186  406.3226
+
+>> Den
+
+Den =
+
+     1     5     4     0
+
+>> k1=CE(4)-Den(4); k2=CE(3)-Den(3); k3 =CE(2)-Den(2); k4=CE(1)-Den(1);
+>> K=[k1, k2, k3]
+
+K =
+
+  406.3226  131.3186   10.8108
+
+>> DESssm=ss(A-B*K,B,C,D)
+
+DESssm =
+ 
+  A = 
+           x1      x2      x3
+   x1       0       1       0
+   x2       0       0       1
+   x3  -406.3  -135.3  -15.81
+ 
+  B = 
+       u1
+   x1   0
+   x2   0
+   x3   1
+ 
+  C = 
+        x1   x2   x3
+   y1  100   20    0
+ 
+  D = 
+       u1
+   y1   0
+ 
+Continuous-time state-space model.
+Model Properties
+
+>> step(DESssm)
+>> K
+
+K =
+
+  406.3226  131.3186   10.8108
+
+>> Kp=place(A,B,p)
+
+Kp =
+
+  406.3226  131.3186   10.8108
+
+>> [Kpp,prec]=place(A,B,p)
+
+Kpp =
+
+  406.3226  131.3186   10.8108
+
+
+prec =
+
+    14
