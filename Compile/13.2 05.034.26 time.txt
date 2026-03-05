@@ -1,0 +1,19 @@
+Tel = 0.5; Nev = [1 -1.2 0.35];
+[rs,ps,ks] = residue(Tel,Nev)
+Telz=[0 0.5]; Nevz=[1 -1.2 0.35];
+[rz,pz,kz]=residuez(Telz,Nevz)
+
+T=1;
+syms z f(n);
+F=0.5*z/(z-0.5)/(z-0.7);
+f(n)=iztrans(F)
+pretty(f(n))
+T=1; n=(0:15); nT=n*T;
+
+f(n);
+stem(nT,f(n))
+axis([0 15 0 0.7])
+
+hold on
+bar(nT,f(n),'g')
+bar(nT,f(n),0.25,'m')
