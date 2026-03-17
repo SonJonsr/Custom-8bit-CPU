@@ -2192,7 +2192,7 @@
 		(uuid "2386de88-ce03-410e-8b96-d3a39ca6ea35")
 	)
 	(junction
-		(at 701.04 274.32)
+		(at 605.79 756.92)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "23effc9a-ccf2-49ef-a655-50301607c2e3")
@@ -2426,6 +2426,12 @@
 		(uuid "60cc292b-8aa2-4d04-a3ff-b752cb9fd986")
 	)
 	(junction
+		(at 605.79 807.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "614ba9e0-562d-4624-8aed-cf3a42045e3b")
+	)
+	(junction
 		(at 266.7 495.3)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2478,12 +2484,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "713c1e84-ac6d-4577-b0c5-3f820c0d971e")
-	)
-	(junction
-		(at 701.04 255.27)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "71cc6fef-edda-4f68-9aca-f1a22f842178")
 	)
 	(junction
 		(at 339.09 594.36)
@@ -2648,7 +2648,7 @@
 		(uuid "9cc3c5a3-fa66-484f-bfa7-37625ef31a06")
 	)
 	(junction
-		(at 701.04 293.37)
+		(at 605.79 782.32)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a1b71dc7-8116-476d-a96d-b78f852e9d47")
@@ -2658,12 +2658,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a6ca11bb-fde5-48ce-9b11-ebf2d150bfd3")
-	)
-	(junction
-		(at 701.04 312.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a7310723-3090-43b8-a8e0-aee4e8e595f4")
 	)
 	(junction
 		(at 369.57 643.89)
@@ -2886,6 +2880,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ddb98eba-09c4-40ad-b5cc-1bec074c2d5c")
+	)
+	(junction
+		(at 605.79 731.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e085577f-b911-4a60-a821-7d78511ea3c5")
 	)
 	(junction
 		(at 254 351.79)
@@ -3523,7 +3523,7 @@
 	)
 	(wire
 		(pts
-			(xy 627.38 293.37) (xy 701.04 293.37)
+			(xy 532.13 782.32) (xy 605.79 782.32)
 		)
 		(stroke
 			(width 0)
@@ -4073,16 +4073,6 @@
 	)
 	(wire
 		(pts
-			(xy 678.18 274.32) (xy 701.04 274.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "47a6d6fe-23fc-47c4-b797-e566ea102d4b")
-	)
-	(wire
-		(pts
 			(xy 284.48 367.03) (xy 374.65 367.03)
 		)
 		(stroke
@@ -4303,7 +4293,7 @@
 	)
 	(wire
 		(pts
-			(xy 701.04 292.1) (xy 701.04 293.37)
+			(xy 605.79 781.05) (xy 605.79 782.32)
 		)
 		(stroke
 			(width 0)
@@ -4383,7 +4373,7 @@
 	)
 	(wire
 		(pts
-			(xy 701.04 255.27) (xy 698.5 255.27)
+			(xy 593.09 731.52) (xy 605.79 731.52)
 		)
 		(stroke
 			(width 0)
@@ -4753,6 +4743,16 @@
 	)
 	(wire
 		(pts
+			(xy 572.77 807.72) (xy 605.79 807.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72ec71c4-35bf-4c7a-a596-19a8c1e27744")
+	)
+	(wire
+		(pts
 			(xy 256.54 130.81) (xy 256.54 195.58)
 		)
 		(stroke
@@ -4780,16 +4780,6 @@
 			(type default)
 		)
 		(uuid "76c182ac-1de8-444a-90f5-ab3ce6dc2121")
-	)
-	(wire
-		(pts
-			(xy 701.04 311.15) (xy 701.04 312.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "777f4a82-59e6-49c2-81d3-6776c7a674f9")
 	)
 	(wire
 		(pts
@@ -5053,7 +5043,7 @@
 	)
 	(wire
 		(pts
-			(xy 704.85 255.27) (xy 701.04 255.27)
+			(xy 609.6 731.52) (xy 605.79 731.52)
 		)
 		(stroke
 			(width 0)
@@ -5250,16 +5240,6 @@
 			(type default)
 		)
 		(uuid "890be3c1-599b-40fb-acd1-ed2398fdb6e4")
-	)
-	(wire
-		(pts
-			(xy 678.18 312.42) (xy 701.04 312.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "891ba58e-92ee-478e-b137-28de91c21099")
 	)
 	(wire
 		(pts
@@ -5733,6 +5713,16 @@
 	)
 	(wire
 		(pts
+			(xy 605.79 806.45) (xy 605.79 807.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7f68859-4779-4f3d-b7fc-ff1ffec93137")
+	)
+	(wire
+		(pts
 			(xy 384.81 749.3) (xy 254 749.3)
 		)
 		(stroke
@@ -5983,16 +5973,6 @@
 	)
 	(wire
 		(pts
-			(xy 701.04 254) (xy 701.04 255.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b7ce058f-1455-4920-b341-b75b41d15b5d")
-	)
-	(wire
-		(pts
 			(xy 271.78 123.19) (xy 271.78 618.49)
 		)
 		(stroke
@@ -6000,6 +5980,16 @@
 			(type default)
 		)
 		(uuid "b858ae62-afb2-41f2-984a-02ff0cdb7989")
+	)
+	(wire
+		(pts
+			(xy 609.6 807.72) (xy 605.79 807.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8dbd0bc-23bd-4c6a-8cdf-9b52e9758fec")
 	)
 	(wire
 		(pts
@@ -6053,7 +6043,7 @@
 	)
 	(wire
 		(pts
-			(xy 701.04 273.05) (xy 701.04 274.32)
+			(xy 605.79 755.65) (xy 605.79 756.92)
 		)
 		(stroke
 			(width 0)
@@ -6503,7 +6493,7 @@
 	)
 	(wire
 		(pts
-			(xy 704.85 274.32) (xy 701.04 274.32)
+			(xy 609.6 756.92) (xy 605.79 756.92)
 		)
 		(stroke
 			(width 0)
@@ -6570,16 +6560,6 @@
 			(type default)
 		)
 		(uuid "d056d1f7-ed13-4ef7-806f-70dcd8371326")
-	)
-	(wire
-		(pts
-			(xy 704.85 312.42) (xy 701.04 312.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d0d7646b-adc9-4b54-a0be-c48ae34d8f16")
 	)
 	(wire
 		(pts
@@ -6740,6 +6720,16 @@
 			(type default)
 		)
 		(uuid "d8ad95db-c725-466d-9d29-6a69ad70bec9")
+	)
+	(wire
+		(pts
+			(xy 605.79 723.9) (xy 605.79 722.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9557f87-1252-4f4f-8082-5c525a5907a7")
 	)
 	(wire
 		(pts
@@ -6910,6 +6900,16 @@
 			(type default)
 		)
 		(uuid "e61681b0-8628-4902-9b69-d9f73453f9cf")
+	)
+	(wire
+		(pts
+			(xy 572.77 756.92) (xy 605.79 756.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6564f03-46e2-44c5-a41b-8d735cc06054")
 	)
 	(wire
 		(pts
@@ -7233,7 +7233,7 @@
 	)
 	(wire
 		(pts
-			(xy 704.85 293.37) (xy 701.04 293.37)
+			(xy 609.6 782.32) (xy 605.79 782.32)
 		)
 		(stroke
 			(width 0)
@@ -7341,8 +7341,30 @@
 		)
 		(uuid "ffb5bf85-208c-4a63-90e8-886ba6b833d2")
 	)
-	(global_label "ADC"
+	(global_label "!XOR"
 		(shape input)
+		(at 537.21 800.1 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "081304db-ffd2-458f-9eb1-1b7c256c0748")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 537.21 792.7 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "!ADC"
+		(shape output)
 		(at 396.24 609.6 0)
 		(fields_autoplaced yes)
 		(effects
@@ -7353,7 +7375,7 @@
 		)
 		(uuid "09576071-baa4-4db9-af63-a741a8fa594f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 402.8538 609.6 0)
+			(at 403.4586 609.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7363,8 +7385,30 @@
 			)
 		)
 	)
-	(global_label "Store"
+	(global_label "!XOR"
 		(shape input)
+		(at 496.57 774.7 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0c49216e-4921-4861-8250-27b5a5285c4d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 496.57 767.3 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "!Store"
+		(shape output)
 		(at 396.24 473.71 0)
 		(fields_autoplaced yes)
 		(effects
@@ -7375,7 +7419,7 @@
 		)
 		(uuid "1e6f1779-b031-404e-92f2-62764391a74b")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 404.1842 473.71 0)
+			(at 404.789 473.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7385,7 +7429,7 @@
 			)
 		)
 	)
-	(global_label "BA"
+	(global_label "A ->ALU B"
 		(shape input)
 		(at 396.24 773.43 0)
 		(fields_autoplaced yes)
@@ -7397,7 +7441,7 @@
 		)
 		(uuid "1eae4e34-7b48-44e5-896e-62976afd9eea")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 401.5838 773.43 0)
+			(at 410.111 773.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7407,8 +7451,30 @@
 			)
 		)
 	)
-	(global_label "MOV"
+	(global_label "!Store"
 		(shape input)
+		(at 476.25 749.3 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "223aeee7-cdee-47c6-be05-3575310ec35a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 476.25 740.751 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "!MOV"
+		(shape output)
 		(at 396.24 626.11 0)
 		(fields_autoplaced yes)
 		(effects
@@ -7419,7 +7485,7 @@
 		)
 		(uuid "246b88e3-e9d8-4838-9ab4-e834cc84e912")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 403.0957 626.11 0)
+			(at 403.7005 626.11 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7429,8 +7495,8 @@
 			)
 		)
 	)
-	(global_label "BON"
-		(shape input)
+	(global_label "!BON"
+		(shape output)
 		(at 396.24 243.84 0)
 		(fields_autoplaced yes)
 		(effects
@@ -7441,7 +7507,7 @@
 		)
 		(uuid "2480256d-1ff4-4ad1-94bd-a0e38a5f72a0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 403.1562 243.84 0)
+			(at 403.761 243.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7451,7 +7517,29 @@
 			)
 		)
 	)
-	(global_label "BD"
+	(global_label "!NOT"
+		(shape input)
+		(at 506.73 800.1 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "25c3efa4-e3c6-4692-a9c1-b8ec8f0a506b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 506.73 792.8814 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "D ->ALU B"
 		(shape input)
 		(at 396.24 821.69 0)
 		(fields_autoplaced yes)
@@ -7463,7 +7551,7 @@
 		)
 		(uuid "2a260dce-a18e-446e-8970-ffee34eb6889")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 401.7652 821.69 0)
+			(at 410.2924 821.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7473,8 +7561,8 @@
 			)
 		)
 	)
-	(global_label "BOC"
-		(shape input)
+	(global_label "!BOC"
+		(shape output)
 		(at 396.24 359.41 0)
 		(fields_autoplaced yes)
 		(effects
@@ -7485,7 +7573,7 @@
 		)
 		(uuid "2db826e3-8cf1-4597-aa4c-be84dc73c5ec")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 403.0957 359.41 0)
+			(at 403.7005 359.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7495,8 +7583,8 @@
 			)
 		)
 	)
-	(global_label "CLF"
-		(shape input)
+	(global_label "!CLF"
+		(shape output)
 		(at 396.24 407.67 0)
 		(fields_autoplaced yes)
 		(effects
@@ -7507,7 +7595,7 @@
 		)
 		(uuid "2dbb494c-eae2-4901-815e-64c430a5c9e5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 402.6119 407.67 0)
+			(at 403.2167 407.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7517,8 +7605,30 @@
 			)
 		)
 	)
-	(global_label "AB"
+	(global_label "!AND"
 		(shape input)
+		(at 537.21 723.9 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "2e15c9c6-a02e-45ff-929c-08a4ef906354")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 537.21 716.6209 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "B ->ALU A"
+		(shape output)
 		(at 396.24 725.17 0)
 		(fields_autoplaced yes)
 		(effects
@@ -7529,7 +7639,7 @@
 		)
 		(uuid "30a886de-d771-4e22-bd4e-2a250c8770e9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 401.5838 725.17 0)
+			(at 410.111 725.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7539,8 +7649,52 @@
 			)
 		)
 	)
-	(global_label "BNZ"
+	(global_label "!XOR"
 		(shape input)
+		(at 557.53 723.9 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "331de90c-bb30-4c5a-9f29-cdfcde9372d4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 557.53 716.5 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "!ADC"
+		(shape input)
+		(at 577.85 723.9 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "33dae239-d3b4-4277-be74-82d46687cb90")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 577.85 716.6814 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "!BNZ"
+		(shape output)
 		(at 396.24 276.86 0)
 		(fields_autoplaced yes)
 		(effects
@@ -7551,7 +7705,7 @@
 		)
 		(uuid "3ad3aab6-80b6-4607-8646-b1572541df33")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 403.0352 276.86 0)
+			(at 403.64 276.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7561,7 +7715,73 @@
 			)
 		)
 	)
-	(global_label "AC"
+	(global_label "!CLF"
+		(shape input)
+		(at 567.69 800.1 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3b26fa6d-b0d9-4129-83da-5cfc741d6455")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 567.69 793.1233 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "!Clear"
+		(shape input)
+		(at 476.25 723.9 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3cdf99eb-269e-4fc1-8192-49fd1c6318e1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 476.25 715.351 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "!NOT"
+		(shape input)
+		(at 516.89 749.3 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "435b6b90-2371-4e53-811b-b2c03d2dc04a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 516.89 742.0814 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "C ->ALU A"
 		(shape input)
 		(at 396.24 741.68 0)
 		(fields_autoplaced yes)
@@ -7573,7 +7793,7 @@
 		)
 		(uuid "454f9626-54e7-4578-943b-51a50bdd3ea3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 401.5838 741.68 0)
+			(at 410.111 741.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7583,7 +7803,29 @@
 			)
 		)
 	)
-	(global_label "BC"
+	(global_label "!ADC"
+		(shape input)
+		(at 557.53 800.1 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4649c611-1518-4ce5-94a6-0f575f847653")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 557.53 792.8814 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "C ->ALU B"
 		(shape input)
 		(at 396.24 806.45 0)
 		(fields_autoplaced yes)
@@ -7595,7 +7837,7 @@
 		)
 		(uuid "465fe44f-143d-44e5-a42f-9166136a18de")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 401.7652 806.45 0)
+			(at 410.2924 806.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7605,30 +7847,8 @@
 			)
 		)
 	)
-	(global_label "READ FALG"
-		(shape input)
-		(at 704.85 312.42 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "46bf3578-ccea-46e0-903e-7edc50f80b9f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 718.0557 312.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "RC"
-		(shape input)
+	(global_label "READ C"
+		(shape output)
 		(at 396.24 676.91 0)
 		(fields_autoplaced yes)
 		(effects
@@ -7639,7 +7859,7 @@
 		)
 		(uuid "47abf466-4ed9-4491-8447-adc2f5ee8565")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 401.7652 676.91 0)
+			(at 406.2404 676.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7649,8 +7869,52 @@
 			)
 		)
 	)
-	(global_label "AA"
+	(global_label "!INC"
 		(shape input)
+		(at 476.25 800.1 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4d4db8bc-fe37-41ea-a23a-f52b4477b660")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 476.25 793.3047 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "!RS"
+		(shape input)
+		(at 506.73 749.3 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4fd0460f-c43a-4c8b-9ccf-bb473da78a9e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 506.73 743.2305 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "A ->ALU A"
+		(shape output)
 		(at 396.24 708.66 0)
 		(fields_autoplaced yes)
 		(effects
@@ -7661,7 +7925,7 @@
 		)
 		(uuid "50b50cb1-653a-4b13-91f5-b89b45a93c54")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 401.4024 708.66 0)
+			(at 409.9296 708.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7671,8 +7935,8 @@
 			)
 		)
 	)
-	(global_label "XOR"
-		(shape input)
+	(global_label "!XOR"
+		(shape output)
 		(at 396.24 579.12 0)
 		(fields_autoplaced yes)
 		(effects
@@ -7683,7 +7947,7 @@
 		)
 		(uuid "54463bbb-b2c4-4ea1-98a1-45294dc14d6d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 403.0352 579.12 0)
+			(at 403.64 579.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7693,8 +7957,30 @@
 			)
 		)
 	)
-	(global_label "AND"
+	(global_label "!MOV"
 		(shape input)
+		(at 588.01 723.9 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "56a821fd-a1b8-4fbb-aea3-8f6108c5092d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 588.01 716.4395 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "!AND"
+		(shape output)
 		(at 396.24 547.37 0)
 		(fields_autoplaced yes)
 		(effects
@@ -7705,7 +7991,29 @@
 		)
 		(uuid "588f9f3f-4569-43f6-b3bc-1e7a4efd7831")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 402.9143 547.37 0)
+			(at 403.5191 547.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "!ADD"
+		(shape input)
+		(at 547.37 800.1 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5ac88bc3-e896-4cfa-8e1a-5e00527ae0ff")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 547.37 792.8814 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7737,8 +8045,8 @@
 			)
 		)
 	)
-	(global_label "RD"
-		(shape input)
+	(global_label "READ D"
+		(shape output)
 		(at 396.24 692.15 0)
 		(fields_autoplaced yes)
 		(effects
@@ -7749,7 +8057,7 @@
 		)
 		(uuid "61561ebf-aace-4b3a-917e-52bdcd30d232")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 401.7652 692.15 0)
+			(at 406.2404 692.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7759,8 +8067,8 @@
 			)
 		)
 	)
-	(global_label "DEC"
-		(shape input)
+	(global_label "!DEC"
+		(shape output)
 		(at 396.24 502.92 0)
 		(fields_autoplaced yes)
 		(effects
@@ -7771,7 +8079,7 @@
 		)
 		(uuid "6426f829-3c6e-4057-a777-7ef731525065")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 402.9142 502.92 0)
+			(at 403.519 502.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7781,7 +8089,7 @@
 			)
 		)
 	)
-	(global_label "AD"
+	(global_label "D ->ALU A"
 		(shape input)
 		(at 396.24 756.92 0)
 		(fields_autoplaced yes)
@@ -7793,7 +8101,7 @@
 		)
 		(uuid "65aa4756-7455-476b-b31b-16c4263f920f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 401.5838 756.92 0)
+			(at 410.111 756.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7804,8 +8112,8 @@
 		)
 	)
 	(global_label "REG -> ALU B"
-		(shape input)
-		(at 704.85 293.37 0)
+		(shape output)
+		(at 609.6 782.32 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7815,7 +8123,7 @@
 		)
 		(uuid "673c17e7-c293-44c4-917f-4fb098caf846")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 722.289 293.37 0)
+			(at 627.039 782.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7825,8 +8133,8 @@
 			)
 		)
 	)
-	(global_label "Load"
-		(shape input)
+	(global_label "!Load"
+		(shape output)
 		(at 396.24 458.47 0)
 		(fields_autoplaced yes)
 		(effects
@@ -7837,7 +8145,7 @@
 		)
 		(uuid "67de1499-de95-46bb-8754-ece1fb9df904")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 403.7003 458.47 0)
+			(at 404.3051 458.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7847,8 +8155,8 @@
 			)
 		)
 	)
-	(global_label "BOU"
-		(shape input)
+	(global_label "!BOU"
+		(shape output)
 		(at 396.24 325.12 0)
 		(fields_autoplaced yes)
 		(effects
@@ -7859,7 +8167,117 @@
 		)
 		(uuid "6a30fefc-391e-4383-be41-c92cc472d806")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 403.1562 325.12 0)
+			(at 403.761 325.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "!NOT"
+		(shape input)
+		(at 527.05 723.9 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6d0f6ba0-8a10-4f86-976f-34f0c8b207c6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 527.05 716.6814 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "!XOR"
+		(shape input)
+		(at 547.37 749.3 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6d8fe79e-637f-4cd7-8c53-e0f8ea3c10f2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 547.37 741.9 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "!OR"
+		(shape input)
+		(at 537.21 749.3 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6e4e8621-5ba8-4e02-83c8-2d41f6d5ac04")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 537.21 743.1095 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "!AND"
+		(shape input)
+		(at 527.05 749.3 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "70849096-6ff1-4da0-92f7-dd7a53efdf45")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 527.05 742.0209 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "!RS"
+		(shape input)
+		(at 516.89 723.9 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "716d0acb-79ce-4399-96e0-95751f9e6d69")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 516.89 717.8305 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7891,8 +8309,8 @@
 			)
 		)
 	)
-	(global_label "Clear"
-		(shape input)
+	(global_label "!Clear"
+		(shape output)
 		(at 396.24 444.5 0)
 		(fields_autoplaced yes)
 		(effects
@@ -7903,7 +8321,7 @@
 		)
 		(uuid "755d767a-11df-45f8-a76a-4fb9c3f249a7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 404.1842 444.5 0)
+			(at 404.789 444.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7913,8 +8331,52 @@
 			)
 		)
 	)
-	(global_label "BOP"
+	(global_label "!Load"
 		(shape input)
+		(at 486.41 723.9 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7acd2855-4d4f-450f-b233-dbdbc808aa18")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 486.41 715.8349 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "!RS"
+		(shape input)
+		(at 496.57 800.1 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "8224f57d-74dc-47e1-b375-13f91349edd0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 496.57 794.0305 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "!BOP"
+		(shape output)
 		(at 396.24 226.06 0)
 		(fields_autoplaced yes)
 		(effects
@@ -7925,7 +8387,7 @@
 		)
 		(uuid "857e8520-ed42-401d-8dc7-005c937eb44a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 403.0957 226.06 0)
+			(at 403.7005 226.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7936,8 +8398,8 @@
 		)
 	)
 	(global_label "REG Read"
-		(shape input)
-		(at 704.85 255.27 0)
+		(shape output)
+		(at 609.6 731.52 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7947,7 +8409,7 @@
 		)
 		(uuid "8b21f898-2e78-4860-ab36-d9e066877a5d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 717.1484 255.27 0)
+			(at 621.8984 731.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7957,8 +8419,8 @@
 			)
 		)
 	)
-	(global_label "RB"
-		(shape input)
+	(global_label "READ B"
+		(shape output)
 		(at 396.24 660.4 0)
 		(fields_autoplaced yes)
 		(effects
@@ -7969,7 +8431,7 @@
 		)
 		(uuid "8c1f1378-3e96-4421-8a0a-075b8a01755c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 401.7652 660.4 0)
+			(at 406.2404 660.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7979,8 +8441,8 @@
 			)
 		)
 	)
-	(global_label "RS"
-		(shape input)
+	(global_label "!RS"
+		(shape output)
 		(at 396.24 516.89 0)
 		(fields_autoplaced yes)
 		(effects
@@ -7991,7 +8453,7 @@
 		)
 		(uuid "8e8b1486-f6cb-4119-a3c0-6497cf734ad4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 401.7047 516.89 0)
+			(at 402.3095 516.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8001,8 +8463,8 @@
 			)
 		)
 	)
-	(global_label "CLR"
-		(shape input)
+	(global_label "!CLR"
+		(shape output)
 		(at 396.24 424.18 0)
 		(fields_autoplaced yes)
 		(effects
@@ -8013,7 +8475,7 @@
 		)
 		(uuid "90579603-2133-47b4-9e7f-0dcb5df0f3d3")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 402.7933 424.18 0)
+			(at 403.3981 424.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8023,8 +8485,74 @@
 			)
 		)
 	)
-	(global_label "RST"
+	(global_label "!DEC"
 		(shape input)
+		(at 486.41 800.1 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "91312fb8-55d5-4074-a4ae-71e786f03215")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 486.41 792.821 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "REG -> ALU B"
+		(shape input)
+		(at 406.4 762 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a0156d48-5f28-4707-a3af-28b94c38e2db")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 423.839 762 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "!ADD"
+		(shape input)
+		(at 557.53 749.3 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a06b1dff-dd13-4e87-86d9-c91f645610b9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 557.53 742.0814 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "!RST"
+		(shape output)
 		(at 396.24 391.16 0)
 		(fields_autoplaced yes)
 		(effects
@@ -8035,7 +8563,7 @@
 		)
 		(uuid "a1a0f443-078d-4f23-8e48-a740a129fdbf")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 402.6723 391.16 0)
+			(at 403.2771 391.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8045,8 +8573,8 @@
 			)
 		)
 	)
-	(global_label "INC"
-		(shape input)
+	(global_label "!INC"
+		(shape output)
 		(at 396.24 487.68 0)
 		(fields_autoplaced yes)
 		(effects
@@ -8057,7 +8585,7 @@
 		)
 		(uuid "a7196dba-cc8c-4c4e-9f37-9d12cfd27c4a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 402.4305 487.68 0)
+			(at 403.0353 487.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8067,8 +8595,8 @@
 			)
 		)
 	)
-	(global_label "BNO"
-		(shape input)
+	(global_label "!BNO"
+		(shape output)
 		(at 396.24 309.88 0)
 		(fields_autoplaced yes)
 		(effects
@@ -8079,7 +8607,7 @@
 		)
 		(uuid "a87a6e36-caf5-4152-81ef-636aa1911873")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 403.1562 309.88 0)
+			(at 403.761 309.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8089,8 +8617,30 @@
 			)
 		)
 	)
-	(global_label "NOT"
+	(global_label "!AND"
 		(shape input)
+		(at 476.25 774.7 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "aa6b862c-8d46-475e-a1be-996a35e550ad")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 476.25 767.4209 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "!NOT"
+		(shape output)
 		(at 396.24 532.13 0)
 		(fields_autoplaced yes)
 		(effects
@@ -8101,7 +8651,7 @@
 		)
 		(uuid "ab507436-04ae-46fb-b911-c7b2fbe839ba")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 402.8538 532.13 0)
+			(at 403.4586 532.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8111,8 +8661,8 @@
 			)
 		)
 	)
-	(global_label "BOZ"
-		(shape input)
+	(global_label "!BOZ"
+		(shape output)
 		(at 396.24 260.35 0)
 		(fields_autoplaced yes)
 		(effects
@@ -8123,7 +8673,7 @@
 		)
 		(uuid "af27094d-3e22-4360-a173-d340b43f84a4")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 403.0352 260.35 0)
+			(at 403.64 260.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8133,8 +8683,8 @@
 			)
 		)
 	)
-	(global_label "JMP"
-		(shape input)
+	(global_label "!JMP"
+		(shape output)
 		(at 396.24 210.82 0)
 		(fields_autoplaced yes)
 		(effects
@@ -8145,7 +8695,205 @@
 		)
 		(uuid "b0485fbd-4d27-4836-82f5-eac9faccdb73")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 402.9142 210.82 0)
+			(at 403.519 210.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "!ADD"
+		(shape input)
+		(at 567.69 723.9 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b78dcb79-7fe1-4bc0-bb59-fdd53a4a8c7e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 567.69 716.6814 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "!DEC"
+		(shape input)
+		(at 496.57 749.3 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b8127bae-1696-4636-b182-7e8075b3feea")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 496.57 742.021 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "REG -> ALU A"
+		(shape output)
+		(at 609.6 756.92 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "bf55be67-ac59-4c60-a1f6-558a38e5ec5b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 626.8576 756.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "!ADD"
+		(shape input)
+		(at 506.73 774.7 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c0cd4f1f-9ddc-4e75-ad17-8e438a77d373")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 506.73 767.4814 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "!INC"
+		(shape input)
+		(at 486.41 749.3 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c50b9ba3-29dc-4194-aeaf-aed2ad35c436")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 486.41 742.5047 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "!BOO"
+		(shape output)
+		(at 396.24 292.1 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c5642ddf-6427-4161-aab2-d7fd853450b1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 403.761 292.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "!OR"
+		(shape input)
+		(at 547.37 723.9 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c6514fb9-f7c4-473f-9a5a-2490daa0868b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 547.37 717.7095 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "!INC"
+		(shape input)
+		(at 496.57 723.9 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c8693afe-ee17-4517-8caa-298d7b30b844")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 496.57 717.1047 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "!OR"
+		(shape input)
+		(at 486.41 774.7 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ce2a7fe4-4beb-4290-b0a8-3acfae05f49f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 486.41 768.5095 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8157,7 +8905,7 @@
 	)
 	(global_label "REG -> ALU A"
 		(shape input)
-		(at 704.85 274.32 0)
+		(at 406.4 697.23 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8165,9 +8913,9 @@
 			)
 			(justify left)
 		)
-		(uuid "bf55be67-ac59-4c60-a1f6-558a38e5ec5b")
+		(uuid "ceccf420-6c55-443e-898e-7b3382e07e17")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 722.1076 274.32 0)
+			(at 423.6576 697.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8177,30 +8925,8 @@
 			)
 		)
 	)
-	(global_label "BOO"
-		(shape input)
-		(at 396.24 292.1 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "c5642ddf-6427-4161-aab2-d7fd853450b1")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 403.1562 292.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "BNU"
-		(shape input)
+	(global_label "!BNU"
+		(shape output)
 		(at 396.24 342.9 0)
 		(fields_autoplaced yes)
 		(effects
@@ -8211,7 +8937,7 @@
 		)
 		(uuid "cf2f390a-1570-464a-9aec-fcf05e5ca1c7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 403.1562 342.9 0)
+			(at 403.761 342.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8221,7 +8947,95 @@
 			)
 		)
 	)
-	(global_label "BB"
+	(global_label "!AND"
+		(shape input)
+		(at 516.89 800.1 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d1706e75-bf47-418f-bb78-230513d391da")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 516.89 792.8209 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "!ADC"
+		(shape input)
+		(at 567.69 749.3 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d289a75d-50a9-4eb4-a106-8ef96603e030")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 567.69 742.0814 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "!ADC"
+		(shape input)
+		(at 516.89 774.7 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d7b18f93-2c82-4aff-8592-2500c41c5fad")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 516.89 767.4814 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "!MOV"
+		(shape input)
+		(at 527.05 774.7 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d86bdccc-63a6-4053-9d78-96a5887dc4ea")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 527.05 767.2395 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "B ->ALU B"
 		(shape input)
 		(at 396.24 789.94 0)
 		(fields_autoplaced yes)
@@ -8233,7 +9047,7 @@
 		)
 		(uuid "dc65b570-9915-4649-ba97-a2f1549045aa")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 401.7652 789.94 0)
+			(at 410.2924 789.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8243,8 +9057,30 @@
 			)
 		)
 	)
-	(global_label "RA"
+	(global_label "!DEC"
 		(shape input)
+		(at 506.73 723.9 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e02941ce-5be9-41dd-969d-7656bb0185c6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 506.73 716.621 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "READ A"
+		(shape output)
 		(at 396.24 643.89 0)
 		(fields_autoplaced yes)
 		(effects
@@ -8255,7 +9091,7 @@
 		)
 		(uuid "e1a6e690-7b1e-441c-a707-0da3c0609d5a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 401.5838 643.89 0)
+			(at 406.059 643.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8265,8 +9101,52 @@
 			)
 		)
 	)
-	(global_label "BNC"
+	(global_label "READ FALG"
+		(shape output)
+		(at 609.6 807.72 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e1dc3e53-166c-4b55-a55a-bd8ee5927dba")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 622.8057 807.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "REG Read"
 		(shape input)
+		(at 406.4 632.46 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e99c092f-9014-4156-a516-1d0cd13d5704")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 418.6984 632.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "!BNC"
+		(shape output)
 		(at 396.24 375.92 0)
 		(fields_autoplaced yes)
 		(effects
@@ -8277,7 +9157,7 @@
 		)
 		(uuid "f15d623d-546c-4645-8a99-c77cfbcb0234")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 403.0957 375.92 0)
+			(at 403.7005 375.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8287,8 +9167,8 @@
 			)
 		)
 	)
-	(global_label "OR"
-		(shape input)
+	(global_label "!OR"
+		(shape output)
 		(at 396.24 563.88 0)
 		(fields_autoplaced yes)
 		(effects
@@ -8299,7 +9179,7 @@
 		)
 		(uuid "f4c2c7b2-ec78-450b-8d49-f3cf89e41faf")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 401.8257 563.88 0)
+			(at 402.4305 563.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8309,8 +9189,30 @@
 			)
 		)
 	)
-	(global_label "ADD"
+	(global_label "!OR"
 		(shape input)
+		(at 527.05 800.1 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fa7efa64-f70b-49b8-9177-a06289e466c1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 527.05 793.9095 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "!ADD"
+		(shape output)
 		(at 396.24 594.36 0)
 		(fields_autoplaced yes)
 		(effects
@@ -8321,7 +9223,7 @@
 		)
 		(uuid "fc6b4454-cfe9-43b2-a06d-a4d7488a15aa")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 402.8538 594.36 0)
+			(at 403.4586 594.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8333,7 +9235,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:2N7002")
-		(at 622.3 290.83 270)
+		(at 527.05 779.78 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8342,7 +9244,7 @@
 		(fields_autoplaced yes)
 		(uuid "001379e0-e597-4004-8f35-c138e76e3025")
 		(property "Reference" "Q116"
-			(at 623.5701 297.18 0)
+			(at 528.3201 786.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8352,7 +9254,7 @@
 			)
 		)
 		(property "Value" "2N7002"
-			(at 621.0301 297.18 0)
+			(at 525.7801 786.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8362,7 +9264,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 620.395 295.91 0)
+			(at 525.145 784.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8373,7 +9275,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 618.49 295.91 0)
+			(at 523.24 784.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8383,7 +9285,7 @@
 			)
 		)
 		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 622.3 290.83 0)
+			(at 527.05 779.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8567,7 +9469,7 @@
 	)
 	(symbol
 		(lib_id "PCM_JLCPCB-Resistors:0402,20kΩ")
-		(at 701.04 269.24 0)
+		(at 605.79 751.84 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8576,7 +9478,7 @@
 		(fields_autoplaced yes)
 		(uuid "009a55a4-623f-4548-9066-733dc1bd053e")
 		(property "Reference" "R49"
-			(at 703.58 269.2399 0)
+			(at 608.33 751.8399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8586,7 +9488,7 @@
 			)
 		)
 		(property "Value" "10kΩ"
-			(at 701.04 269.24 90)
+			(at 605.79 751.84 90)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -8595,7 +9497,7 @@
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:R_0402"
-			(at 699.262 269.24 90)
+			(at 604.012 751.84 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8604,7 +9506,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010100_UNI-ROYAL-Uniroyal-Elec-0402WGF2002TCE_C25765.pdf"
-			(at 701.04 269.24 0)
+			(at 605.79 751.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8613,7 +9515,7 @@
 			)
 		)
 		(property "Description" "62.5mW Thick Film Resistors 50V ±100ppm/°C ±1% 20kΩ 0402 Chip Resistor - Surface Mount ROHS"
-			(at 701.04 269.24 0)
+			(at 605.79 751.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8622,7 +9524,7 @@
 			)
 		)
 		(property "LCSC" "C25765"
-			(at 701.04 269.24 0)
+			(at 605.79 751.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8631,7 +9533,7 @@
 			)
 		)
 		(property "Stock" "3268540"
-			(at 701.04 269.24 0)
+			(at 605.79 751.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8640,7 +9542,7 @@
 			)
 		)
 		(property "Price" "0.004USD"
-			(at 701.04 269.24 0)
+			(at 605.79 751.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8649,7 +9551,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 701.04 269.24 0)
+			(at 605.79 751.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8658,7 +9560,7 @@
 			)
 		)
 		(property "Minimum Qty" "20"
-			(at 701.04 269.24 0)
+			(at 605.79 751.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8667,7 +9569,7 @@
 			)
 		)
 		(property "Attrition Qty" "10"
-			(at 701.04 269.24 0)
+			(at 605.79 751.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8676,7 +9578,7 @@
 			)
 		)
 		(property "Class" "Basic Component"
-			(at 701.04 269.24 0)
+			(at 605.79 751.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8685,7 +9587,7 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 701.04 269.24 0)
+			(at 605.79 751.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8694,7 +9596,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 701.04 269.24 0)
+			(at 605.79 751.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8703,7 +9605,7 @@
 			)
 		)
 		(property "Part" "0402WGF2002TCE"
-			(at 701.04 269.24 0)
+			(at 605.79 751.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8712,7 +9614,7 @@
 			)
 		)
 		(property "Resistance" "20kΩ"
-			(at 701.04 269.24 0)
+			(at 605.79 751.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8721,7 +9623,7 @@
 			)
 		)
 		(property "Power(Watts)" "62.5mW"
-			(at 701.04 269.24 0)
+			(at 605.79 751.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8730,7 +9632,7 @@
 			)
 		)
 		(property "Type" "Thick Film Resistors"
-			(at 701.04 269.24 0)
+			(at 605.79 751.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8739,7 +9641,7 @@
 			)
 		)
 		(property "Overload Voltage (Max)" "50V"
-			(at 701.04 269.24 0)
+			(at 605.79 751.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8748,7 +9650,7 @@
 			)
 		)
 		(property "Operating Temperature Range" "-55°C~+155°C"
-			(at 701.04 269.24 0)
+			(at 605.79 751.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8757,7 +9659,7 @@
 			)
 		)
 		(property "Tolerance" "±1%"
-			(at 701.04 269.24 0)
+			(at 605.79 751.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8766,7 +9668,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "±100ppm/°C"
-			(at 701.04 269.24 0)
+			(at 605.79 751.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8791,7 +9693,7 @@
 	)
 	(symbol
 		(lib_id "PCM_JLCPCB-Resistors:0402,20kΩ")
-		(at 701.04 288.29 0)
+		(at 605.79 777.24 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8800,7 +9702,7 @@
 		(fields_autoplaced yes)
 		(uuid "013ea8d1-fc2b-470e-a701-dcee2b7ecff8")
 		(property "Reference" "R50"
-			(at 703.58 288.2899 0)
+			(at 608.33 777.2399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8810,7 +9712,7 @@
 			)
 		)
 		(property "Value" "10kΩ"
-			(at 701.04 288.29 90)
+			(at 605.79 777.24 90)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -8819,7 +9721,7 @@
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:R_0402"
-			(at 699.262 288.29 90)
+			(at 604.012 777.24 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8828,7 +9730,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010100_UNI-ROYAL-Uniroyal-Elec-0402WGF2002TCE_C25765.pdf"
-			(at 701.04 288.29 0)
+			(at 605.79 777.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8837,7 +9739,7 @@
 			)
 		)
 		(property "Description" "62.5mW Thick Film Resistors 50V ±100ppm/°C ±1% 20kΩ 0402 Chip Resistor - Surface Mount ROHS"
-			(at 701.04 288.29 0)
+			(at 605.79 777.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8846,7 +9748,7 @@
 			)
 		)
 		(property "LCSC" "C25765"
-			(at 701.04 288.29 0)
+			(at 605.79 777.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8855,7 +9757,7 @@
 			)
 		)
 		(property "Stock" "3268540"
-			(at 701.04 288.29 0)
+			(at 605.79 777.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8864,7 +9766,7 @@
 			)
 		)
 		(property "Price" "0.004USD"
-			(at 701.04 288.29 0)
+			(at 605.79 777.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8873,7 +9775,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 701.04 288.29 0)
+			(at 605.79 777.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8882,7 +9784,7 @@
 			)
 		)
 		(property "Minimum Qty" "20"
-			(at 701.04 288.29 0)
+			(at 605.79 777.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8891,7 +9793,7 @@
 			)
 		)
 		(property "Attrition Qty" "10"
-			(at 701.04 288.29 0)
+			(at 605.79 777.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8900,7 +9802,7 @@
 			)
 		)
 		(property "Class" "Basic Component"
-			(at 701.04 288.29 0)
+			(at 605.79 777.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8909,7 +9811,7 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 701.04 288.29 0)
+			(at 605.79 777.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8918,7 +9820,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 701.04 288.29 0)
+			(at 605.79 777.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8927,7 +9829,7 @@
 			)
 		)
 		(property "Part" "0402WGF2002TCE"
-			(at 701.04 288.29 0)
+			(at 605.79 777.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8936,7 +9838,7 @@
 			)
 		)
 		(property "Resistance" "20kΩ"
-			(at 701.04 288.29 0)
+			(at 605.79 777.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8945,7 +9847,7 @@
 			)
 		)
 		(property "Power(Watts)" "62.5mW"
-			(at 701.04 288.29 0)
+			(at 605.79 777.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8954,7 +9856,7 @@
 			)
 		)
 		(property "Type" "Thick Film Resistors"
-			(at 701.04 288.29 0)
+			(at 605.79 777.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8963,7 +9865,7 @@
 			)
 		)
 		(property "Overload Voltage (Max)" "50V"
-			(at 701.04 288.29 0)
+			(at 605.79 777.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8972,7 +9874,7 @@
 			)
 		)
 		(property "Operating Temperature Range" "-55°C~+155°C"
-			(at 701.04 288.29 0)
+			(at 605.79 777.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8981,7 +9883,7 @@
 			)
 		)
 		(property "Tolerance" "±1%"
-			(at 701.04 288.29 0)
+			(at 605.79 777.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8990,7 +9892,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "±100ppm/°C"
-			(at 701.04 288.29 0)
+			(at 605.79 777.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9015,7 +9917,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:2N7002")
-		(at 581.66 290.83 270)
+		(at 486.41 779.78 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9024,7 +9926,7 @@
 		(fields_autoplaced yes)
 		(uuid "020bcd5a-d0d6-4e4d-add5-baa71a9aba4f")
 		(property "Reference" "Q112"
-			(at 582.9301 297.18 0)
+			(at 487.6801 786.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9034,7 +9936,7 @@
 			)
 		)
 		(property "Value" "2N7002"
-			(at 580.3901 297.18 0)
+			(at 485.1401 786.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9044,7 +9946,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 579.755 295.91 0)
+			(at 484.505 784.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9055,7 +9957,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 577.85 295.91 0)
+			(at 482.6 784.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9065,7 +9967,7 @@
 			)
 		)
 		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 581.66 290.83 0)
+			(at 486.41 779.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9685,7 +10587,7 @@
 	)
 	(symbol
 		(lib_id "PCM_JLCPCB-Resistors:0402,20kΩ")
-		(at 701.04 250.19 0)
+		(at 605.79 727.71 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9694,7 +10596,7 @@
 		(fields_autoplaced yes)
 		(uuid "07c0ecda-f08b-4bf5-8816-4470b3a162f8")
 		(property "Reference" "R48"
-			(at 703.58 250.1899 0)
+			(at 608.33 727.7099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9704,7 +10606,7 @@
 			)
 		)
 		(property "Value" "10kΩ"
-			(at 701.04 250.19 90)
+			(at 605.79 727.71 90)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -9713,7 +10615,7 @@
 			)
 		)
 		(property "Footprint" "PCM_JLCPCB:R_0402"
-			(at 699.262 250.19 90)
+			(at 604.012 727.71 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9722,7 +10624,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010100_UNI-ROYAL-Uniroyal-Elec-0402WGF2002TCE_C25765.pdf"
-			(at 701.04 250.19 0)
+			(at 605.79 727.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9731,7 +10633,7 @@
 			)
 		)
 		(property "Description" "62.5mW Thick Film Resistors 50V ±100ppm/°C ±1% 20kΩ 0402 Chip Resistor - Surface Mount ROHS"
-			(at 701.04 250.19 0)
+			(at 605.79 727.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9740,7 +10642,7 @@
 			)
 		)
 		(property "LCSC" "C25765"
-			(at 701.04 250.19 0)
+			(at 605.79 727.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9749,7 +10651,7 @@
 			)
 		)
 		(property "Stock" "3268540"
-			(at 701.04 250.19 0)
+			(at 605.79 727.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9758,7 +10660,7 @@
 			)
 		)
 		(property "Price" "0.004USD"
-			(at 701.04 250.19 0)
+			(at 605.79 727.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9767,7 +10669,7 @@
 			)
 		)
 		(property "Process" "SMT"
-			(at 701.04 250.19 0)
+			(at 605.79 727.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9776,7 +10678,7 @@
 			)
 		)
 		(property "Minimum Qty" "20"
-			(at 701.04 250.19 0)
+			(at 605.79 727.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9785,7 +10687,7 @@
 			)
 		)
 		(property "Attrition Qty" "10"
-			(at 701.04 250.19 0)
+			(at 605.79 727.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9794,7 +10696,7 @@
 			)
 		)
 		(property "Class" "Basic Component"
-			(at 701.04 250.19 0)
+			(at 605.79 727.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9803,7 +10705,7 @@
 			)
 		)
 		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 701.04 250.19 0)
+			(at 605.79 727.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9812,7 +10714,7 @@
 			)
 		)
 		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 701.04 250.19 0)
+			(at 605.79 727.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9821,7 +10723,7 @@
 			)
 		)
 		(property "Part" "0402WGF2002TCE"
-			(at 701.04 250.19 0)
+			(at 605.79 727.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9830,7 +10732,7 @@
 			)
 		)
 		(property "Resistance" "20kΩ"
-			(at 701.04 250.19 0)
+			(at 605.79 727.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9839,7 +10741,7 @@
 			)
 		)
 		(property "Power(Watts)" "62.5mW"
-			(at 701.04 250.19 0)
+			(at 605.79 727.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9848,7 +10750,7 @@
 			)
 		)
 		(property "Type" "Thick Film Resistors"
-			(at 701.04 250.19 0)
+			(at 605.79 727.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9857,7 +10759,7 @@
 			)
 		)
 		(property "Overload Voltage (Max)" "50V"
-			(at 701.04 250.19 0)
+			(at 605.79 727.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9866,7 +10768,7 @@
 			)
 		)
 		(property "Operating Temperature Range" "-55°C~+155°C"
-			(at 701.04 250.19 0)
+			(at 605.79 727.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9875,7 +10777,7 @@
 			)
 		)
 		(property "Tolerance" "±1%"
-			(at 701.04 250.19 0)
+			(at 605.79 727.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9884,7 +10786,7 @@
 			)
 		)
 		(property "Temperature Coefficient" "±100ppm/°C"
-			(at 701.04 250.19 0)
+			(at 605.79 727.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9909,7 +10811,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:2N7002")
-		(at 581.66 252.73 270)
+		(at 486.41 728.98 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9918,7 +10820,7 @@
 		(fields_autoplaced yes)
 		(uuid "07c43fda-9578-48a9-afcf-a294846d04e0")
 		(property "Reference" "Q88"
-			(at 582.9301 259.08 0)
+			(at 487.6801 735.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9928,7 +10830,7 @@
 			)
 		)
 		(property "Value" "2N7002"
-			(at 580.3901 259.08 0)
+			(at 485.1401 735.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9938,7 +10840,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 579.755 257.81 0)
+			(at 484.505 734.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9949,7 +10851,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 577.85 257.81 0)
+			(at 482.6 734.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9959,7 +10861,7 @@
 			)
 		)
 		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 581.66 252.73 0)
+			(at 486.41 728.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10299,7 +11201,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:2N7002")
-		(at 581.66 271.78 270)
+		(at 486.41 754.38 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10308,7 +11210,7 @@
 		(fields_autoplaced yes)
 		(uuid "0e3f23a1-40ea-4db9-9877-9b8d7e71359e")
 		(property "Reference" "Q101"
-			(at 582.9301 278.13 0)
+			(at 487.6801 760.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10318,7 +11220,7 @@
 			)
 		)
 		(property "Value" "2N7002"
-			(at 580.3901 278.13 0)
+			(at 485.1401 760.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10328,7 +11230,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 579.755 276.86 0)
+			(at 484.505 759.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10339,7 +11241,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 577.85 276.86 0)
+			(at 482.6 759.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10349,7 +11251,7 @@
 			)
 		)
 		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 581.66 271.78 0)
+			(at 486.41 754.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11036,6 +11938,151 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VCC")
+		(at 605.79 798.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "140e0bd9-ac8f-4ca3-bef3-0e1319e8cba1")
+		(property "Reference" "#PWR073"
+			(at 605.79 802.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 605.79 793.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 605.79 798.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 605.79 798.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 605.79 798.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "33369395-6103-4c5f-9bdf-c8bbb188a9de")
+		)
+		(instances
+			(project "Controller_Unit_V1.0"
+				(path "/288e19fe-913b-4fdb-a48b-19dc8e8a67e1"
+					(reference "#PWR073")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:2N7002")
+		(at 506.73 805.18 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1475881f-1226-455a-a026-fd96f6b9a76c")
+		(property "Reference" "Q129"
+			(at 508.0001 811.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "2N7002"
+			(at 505.4601 811.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 504.825 810.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+			(at 502.92 810.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
+			(at 506.73 805.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bde755b8-47ca-4214-8be4-422133452803")
+		)
+		(pin "3"
+			(uuid "ff5b1745-5155-4101-9cba-0a110be12182")
+		)
+		(pin "2"
+			(uuid "8807367f-b5ea-4472-88c0-8e5b7b679d91")
+		)
+		(instances
+			(project "Controller_Unit_V1.0"
+				(path "/288e19fe-913b-4fdb-a48b-19dc8e8a67e1"
+					(reference "Q129")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_JLCPCB-Resistors:0402,20kΩ")
 		(at 392.43 511.81 0)
 		(unit 1)
@@ -11630,7 +12677,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:2N7002")
-		(at 652.78 252.73 270)
+		(at 557.53 728.98 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11639,7 +12686,7 @@
 		(fields_autoplaced yes)
 		(uuid "183d4a37-ff4e-4bbe-b97f-5305c4f73133")
 		(property "Reference" "Q95"
-			(at 654.0501 259.08 0)
+			(at 558.8001 735.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11649,7 +12696,7 @@
 			)
 		)
 		(property "Value" "2N7002"
-			(at 651.5101 259.08 0)
+			(at 556.2601 735.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11659,7 +12706,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 650.875 257.81 0)
+			(at 555.625 734.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11670,7 +12717,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 648.97 257.81 0)
+			(at 553.72 734.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11680,7 +12727,7 @@
 			)
 		)
 		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 652.78 252.73 0)
+			(at 557.53 728.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12389,84 +13436,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:2N7002")
-		(at 662.94 309.88 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1e4d505c-8e84-4400-9b14-a77e0c2c500e")
-		(property "Reference" "Q126"
-			(at 664.2101 316.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Value" "2N7002"
-			(at 661.6701 316.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 661.035 314.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 659.13 314.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 662.94 309.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3686ea51-8fee-452c-a3d6-4799a406c4b4")
-		)
-		(pin "3"
-			(uuid "764290dc-b44a-490f-a552-f9a59032bdbf")
-		)
-		(pin "2"
-			(uuid "3b59d2dc-b4e6-4588-ada4-d21a4d9fa001")
-		)
-		(instances
-			(project "Controller_Unit_V1.0"
-				(path "/288e19fe-913b-4fdb-a48b-19dc8e8a67e1"
-					(reference "Q126")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VCC")
 		(at 392.43 283.21 0)
 		(unit 1)
@@ -12746,84 +13715,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:2N7002")
-		(at 642.62 309.88 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "22b0ba67-4349-4ea5-88ef-58d498eff6ba")
-		(property "Reference" "Q124"
-			(at 643.8901 316.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Value" "2N7002"
-			(at 641.3501 316.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 640.715 314.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 638.81 314.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 642.62 309.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0321f193-ff25-463d-860a-32945f4f4e37")
-		)
-		(pin "3"
-			(uuid "0f6b00db-5830-4c4e-9ddc-9f7cbcdf40ba")
-		)
-		(pin "2"
-			(uuid "c74e9b62-fffa-4f3c-b0ae-085f8235eed6")
-		)
-		(instances
-			(project "Controller_Unit_V1.0"
-				(path "/288e19fe-913b-4fdb-a48b-19dc8e8a67e1"
-					(reference "Q124")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 359.41 643.89 0)
 		(unit 1)
@@ -12885,230 +13776,6 @@
 			(project "Controller_Unit_V1.0"
 				(path "/288e19fe-913b-4fdb-a48b-19dc8e8a67e1"
 					(reference "#PWR051")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "PCM_JLCPCB-Resistors:0402,20kΩ")
-		(at 701.04 307.34 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "273ca997-f856-4cb0-a854-165fd2b958f5")
-		(property "Reference" "R51"
-			(at 703.58 307.3399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Value" "10kΩ"
-			(at 701.04 307.34 90)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 0.8 0.8)
-				)
-			)
-		)
-		(property "Footprint" "PCM_JLCPCB:R_0402"
-			(at 699.262 307.34 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010100_UNI-ROYAL-Uniroyal-Elec-0402WGF2002TCE_C25765.pdf"
-			(at 701.04 307.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "62.5mW Thick Film Resistors 50V ±100ppm/°C ±1% 20kΩ 0402 Chip Resistor - Surface Mount ROHS"
-			(at 701.04 307.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C25765"
-			(at 701.04 307.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Stock" "3268540"
-			(at 701.04 307.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Price" "0.004USD"
-			(at 701.04 307.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Process" "SMT"
-			(at 701.04 307.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Minimum Qty" "20"
-			(at 701.04 307.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Attrition Qty" "10"
-			(at 701.04 307.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Class" "Basic Component"
-			(at 701.04 307.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Category" "Resistors,Chip Resistor - Surface Mount"
-			(at 701.04 307.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
-			(at 701.04 307.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part" "0402WGF2002TCE"
-			(at 701.04 307.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Resistance" "20kΩ"
-			(at 701.04 307.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Power(Watts)" "62.5mW"
-			(at 701.04 307.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Type" "Thick Film Resistors"
-			(at 701.04 307.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Overload Voltage (Max)" "50V"
-			(at 701.04 307.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Operating Temperature Range" "-55°C~+155°C"
-			(at 701.04 307.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Tolerance" "±1%"
-			(at 701.04 307.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temperature Coefficient" "±100ppm/°C"
-			(at 701.04 307.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "979db98d-2a55-417e-b356-eaa1d6495a20")
-		)
-		(pin "2"
-			(uuid "e8953740-07a8-410b-9783-aa31c529a09d")
-		)
-		(instances
-			(project "Controller_Unit_V1.0"
-				(path "/288e19fe-913b-4fdb-a48b-19dc8e8a67e1"
-					(reference "R51")
 					(unit 1)
 				)
 			)
@@ -13622,84 +14289,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:2N7002")
-		(at 632.46 309.88 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2dc9f1d7-eca0-4bf8-902d-b74b6c2d1b81")
-		(property "Reference" "Q123"
-			(at 633.7301 316.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Value" "2N7002"
-			(at 631.1901 316.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 630.555 314.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 628.65 314.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 632.46 309.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "2644ba13-3991-4807-b443-12190a1728da")
-		)
-		(pin "3"
-			(uuid "9e80e528-9d95-410a-93d2-0c910be71609")
-		)
-		(pin "2"
-			(uuid "6da630aa-0201-4669-b27f-2fe6418d84df")
-		)
-		(instances
-			(project "Controller_Unit_V1.0"
-				(path "/288e19fe-913b-4fdb-a48b-19dc8e8a67e1"
-					(reference "Q123")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VCC")
 		(at 392.43 538.48 0)
 		(unit 1)
@@ -13924,16 +14513,16 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:2N7002")
-		(at 571.5 271.78 270)
+		(at 537.21 805.18 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "34da4176-2261-4711-b75b-e095f7d965b2")
-		(property "Reference" "Q100"
-			(at 572.7701 278.13 0)
+		(uuid "30f1ae00-0f2c-4b72-bb0b-e37ecef7be14")
+		(property "Reference" "Q132"
+			(at 538.4801 811.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13943,7 +14532,7 @@
 			)
 		)
 		(property "Value" "2N7002"
-			(at 570.2301 278.13 0)
+			(at 535.9401 811.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13953,7 +14542,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 569.595 276.86 0)
+			(at 535.305 810.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13964,7 +14553,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 567.69 276.86 0)
+			(at 533.4 810.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13974,7 +14563,85 @@
 			)
 		)
 		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 571.5 271.78 0)
+			(at 537.21 805.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "83242085-9034-404b-99fd-820073c6bbbc")
+		)
+		(pin "3"
+			(uuid "268d9a51-6a34-4720-b57e-b2203a5f7d8a")
+		)
+		(pin "2"
+			(uuid "6d5c46be-a2a7-45da-9bdc-3698bcc032c4")
+		)
+		(instances
+			(project "Controller_Unit_V1.0"
+				(path "/288e19fe-913b-4fdb-a48b-19dc8e8a67e1"
+					(reference "Q132")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:2N7002")
+		(at 476.25 754.38 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "34da4176-2261-4711-b75b-e095f7d965b2")
+		(property "Reference" "Q100"
+			(at 477.5201 760.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "2N7002"
+			(at 474.9801 760.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 474.345 759.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+			(at 472.44 759.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
+			(at 476.25 754.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14583,7 +15250,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:2N7002")
-		(at 571.5 252.73 270)
+		(at 476.25 728.98 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14592,7 +15259,7 @@
 		(fields_autoplaced yes)
 		(uuid "3be0af9d-8453-49ed-bc35-1b873bad5dbe")
 		(property "Reference" "Q87"
-			(at 572.7701 259.08 0)
+			(at 477.5201 735.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14602,7 +15269,7 @@
 			)
 		)
 		(property "Value" "2N7002"
-			(at 570.2301 259.08 0)
+			(at 474.9801 735.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14612,7 +15279,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 569.595 257.81 0)
+			(at 474.345 734.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14623,7 +15290,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 567.69 257.81 0)
+			(at 472.44 734.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14633,7 +15300,7 @@
 			)
 		)
 		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 571.5 252.73 0)
+			(at 476.25 728.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14739,6 +15406,84 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:2N7002")
+		(at 567.69 805.18 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4007d486-4b7c-43c6-a137-00e2eeca71db")
+		(property "Reference" "Q135"
+			(at 568.9601 811.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "2N7002"
+			(at 566.4201 811.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 565.785 810.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+			(at 563.88 810.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
+			(at 567.69 805.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "361e393e-6d2b-4fdb-a6d1-b1f3881c6a80")
+		)
+		(pin "3"
+			(uuid "43bb932d-4477-4c47-bbe2-e1ebaf91af0c")
+		)
+		(pin "2"
+			(uuid "dee94c5a-921b-4d4a-89d7-75bcee421555")
+		)
+		(instances
+			(project "Controller_Unit_V1.0"
+				(path "/288e19fe-913b-4fdb-a48b-19dc8e8a67e1"
+					(reference "Q135")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:2N7002")
 		(at 344.17 561.34 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14817,16 +15562,16 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:2N7002")
-		(at 673.1 252.73 270)
+		(at 547.37 805.18 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "431b797e-5ddf-43ce-a3cc-9df44adf15fe")
-		(property "Reference" "Q97"
-			(at 674.3701 259.08 0)
+		(uuid "429fb446-5a44-404c-9d22-182b75f04bfb")
+		(property "Reference" "Q133"
+			(at 548.6401 811.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14836,7 +15581,7 @@
 			)
 		)
 		(property "Value" "2N7002"
-			(at 671.8301 259.08 0)
+			(at 546.1001 811.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14846,7 +15591,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 671.195 257.81 0)
+			(at 545.465 810.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14857,7 +15602,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 669.29 257.81 0)
+			(at 543.56 810.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14867,7 +15612,85 @@
 			)
 		)
 		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 673.1 252.73 0)
+			(at 547.37 805.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "01008617-acbd-49b1-bd40-383ea4f4af0e")
+		)
+		(pin "3"
+			(uuid "88026fb7-4be6-44e3-ad6f-5de000d382e9")
+		)
+		(pin "2"
+			(uuid "297de1c7-7f97-42ba-8ad1-728f85973b16")
+		)
+		(instances
+			(project "Controller_Unit_V1.0"
+				(path "/288e19fe-913b-4fdb-a48b-19dc8e8a67e1"
+					(reference "Q133")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:2N7002")
+		(at 577.85 728.98 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "431b797e-5ddf-43ce-a3cc-9df44adf15fe")
+		(property "Reference" "Q97"
+			(at 579.1201 735.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "2N7002"
+			(at 576.5801 735.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 575.945 734.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+			(at 574.04 734.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
+			(at 577.85 728.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15256,84 +16079,6 @@
 			(project "Controller_Unit_V1.0"
 				(path "/288e19fe-913b-4fdb-a48b-19dc8e8a67e1"
 					(reference "Q65")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET:2N7002")
-		(at 652.78 309.88 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "48e5ae76-70aa-4250-a82a-3ccfd2617e17")
-		(property "Reference" "Q125"
-			(at 654.0501 316.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Value" "2N7002"
-			(at 651.5101 316.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 650.875 314.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 648.97 314.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 652.78 309.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cc1de7fd-11e6-4116-a42c-82b94a8909a5")
-		)
-		(pin "3"
-			(uuid "1ef39410-8d5d-4682-9991-6579e3211949")
-		)
-		(pin "2"
-			(uuid "10c5a2cc-4202-4a14-b0a7-8c6b005a71ff")
-		)
-		(instances
-			(project "Controller_Unit_V1.0"
-				(path "/288e19fe-913b-4fdb-a48b-19dc8e8a67e1"
-					(reference "Q125")
 					(unit 1)
 				)
 			)
@@ -15844,7 +16589,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:2N7002")
-		(at 612.14 252.73 270)
+		(at 516.89 728.98 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -15853,7 +16598,7 @@
 		(fields_autoplaced yes)
 		(uuid "4dc216fc-ef8e-4ed1-960c-3c8547300fc2")
 		(property "Reference" "Q91"
-			(at 613.4101 259.08 0)
+			(at 518.1601 735.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15863,7 +16608,7 @@
 			)
 		)
 		(property "Value" "2N7002"
-			(at 610.8701 259.08 0)
+			(at 515.6201 735.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15873,7 +16618,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 610.235 257.81 0)
+			(at 514.985 734.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15884,7 +16629,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 608.33 257.81 0)
+			(at 513.08 734.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15894,7 +16639,7 @@
 			)
 		)
 		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 612.14 252.73 0)
+			(at 516.89 728.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16301,6 +17046,84 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:2N7002")
+		(at 557.53 805.18 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5a11c8e6-717d-46f8-a3b2-39f99b827b0d")
+		(property "Reference" "Q134"
+			(at 558.8001 811.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "2N7002"
+			(at 556.2601 811.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 555.625 810.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+			(at 553.72 810.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
+			(at 557.53 805.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ce14b431-48ad-4ef5-be17-53f92a9f713b")
+		)
+		(pin "3"
+			(uuid "fb02e87e-e0b3-4311-95b5-380f91825b3d")
+		)
+		(pin "2"
+			(uuid "19d24231-1d8c-45f2-aca9-5b2881ee20a6")
+		)
+		(instances
+			(project "Controller_Unit_V1.0"
+				(path "/288e19fe-913b-4fdb-a48b-19dc8e8a67e1"
+					(reference "Q134")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:2N7002")
 		(at 344.17 544.83 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16603,7 +17426,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:2N7002")
-		(at 601.98 271.78 270)
+		(at 506.73 754.38 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16612,7 +17435,7 @@
 		(fields_autoplaced yes)
 		(uuid "5c2fd84b-1313-4a68-a4e7-f3019310edbe")
 		(property "Reference" "Q103"
-			(at 603.2501 278.13 0)
+			(at 508.0001 760.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16622,7 +17445,7 @@
 			)
 		)
 		(property "Value" "2N7002"
-			(at 600.7101 278.13 0)
+			(at 505.4601 760.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16632,7 +17455,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 600.075 276.86 0)
+			(at 504.825 759.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16643,7 +17466,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 598.17 276.86 0)
+			(at 502.92 759.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16653,7 +17476,7 @@
 			)
 		)
 		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 601.98 271.78 0)
+			(at 506.73 754.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16970,7 +17793,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:2N7002")
-		(at 662.94 252.73 270)
+		(at 567.69 728.98 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -16979,7 +17802,7 @@
 		(fields_autoplaced yes)
 		(uuid "5fcdac1f-2f6e-4eb9-a0d5-98e000f73911")
 		(property "Reference" "Q96"
-			(at 664.2101 259.08 0)
+			(at 568.9601 735.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16989,7 +17812,7 @@
 			)
 		)
 		(property "Value" "2N7002"
-			(at 661.6701 259.08 0)
+			(at 566.4201 735.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16999,7 +17822,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 661.035 257.81 0)
+			(at 565.785 734.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17010,7 +17833,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 659.13 257.81 0)
+			(at 563.88 734.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17020,7 +17843,7 @@
 			)
 		)
 		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 662.94 252.73 0)
+			(at 567.69 728.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17272,16 +18095,16 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:2N7002")
-		(at 622.3 309.88 270)
+		(at 476.25 805.18 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "611ae9d2-92e4-4a7c-920e-49a7355e6fef")
-		(property "Reference" "Q122"
-			(at 623.5701 316.23 0)
+		(uuid "60a207bf-b291-4013-abe6-6ec489418d96")
+		(property "Reference" "Q99"
+			(at 477.5201 811.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17291,7 +18114,7 @@
 			)
 		)
 		(property "Value" "2N7002"
-			(at 621.0301 316.23 0)
+			(at 474.9801 811.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17301,7 +18124,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 620.395 314.96 0)
+			(at 474.345 810.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17312,7 +18135,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 618.49 314.96 0)
+			(at 472.44 810.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17322,7 +18145,7 @@
 			)
 		)
 		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 622.3 309.88 0)
+			(at 476.25 805.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -17331,18 +18154,18 @@
 			)
 		)
 		(pin "1"
-			(uuid "b3d380ed-4a73-4753-818e-a9acae66015d")
+			(uuid "6ceacff5-a416-452a-8533-2b75490977d4")
 		)
 		(pin "3"
-			(uuid "c446332c-2b3b-4b21-9b0c-68ccfe11e852")
+			(uuid "84afd5e5-038e-465c-a6ce-bb37bd223698")
 		)
 		(pin "2"
-			(uuid "ecdde069-0f32-4e6c-b2c7-05436a1d8d51")
+			(uuid "f1922358-d010-4511-8411-88941a6d9ac7")
 		)
 		(instances
 			(project "Controller_Unit_V1.0"
 				(path "/288e19fe-913b-4fdb-a48b-19dc8e8a67e1"
-					(reference "Q122")
+					(reference "Q99")
 					(unit 1)
 				)
 			)
@@ -17567,84 +18390,6 @@
 			(project "Controller_Unit_V1.0"
 				(path "/288e19fe-913b-4fdb-a48b-19dc8e8a67e1"
 					(reference "R46")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET:2N7002")
-		(at 673.1 271.78 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "61b5fbe1-e2fd-463b-a25e-1b29caa9001b")
-		(property "Reference" "Q110"
-			(at 674.3701 278.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Value" "2N7002"
-			(at 671.8301 278.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 671.195 276.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 669.29 276.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 673.1 271.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "17925dd4-2444-4238-8e38-861e9428a3e9")
-		)
-		(pin "3"
-			(uuid "d7afc7ad-f80a-45d2-948f-6d52a5ab1c80")
-		)
-		(pin "2"
-			(uuid "051daadb-1fe3-4586-84c9-1ca4a9b8962a")
-		)
-		(instances
-			(project "Controller_Unit_V1.0"
-				(path "/288e19fe-913b-4fdb-a48b-19dc8e8a67e1"
-					(reference "Q110")
 					(unit 1)
 				)
 			)
@@ -18467,6 +19212,84 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:2N7002")
+		(at 516.89 805.18 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "68c59814-2527-4c0a-8c2d-9c7a5a3f2db3")
+		(property "Reference" "Q130"
+			(at 518.1601 811.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "2N7002"
+			(at 515.6201 811.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 514.985 810.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+			(at 513.08 810.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
+			(at 516.89 805.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "86babe55-67d0-4836-a295-240afd3c8172")
+		)
+		(pin "3"
+			(uuid "6139ae5b-38bf-478d-b4a9-e7d8926f27a6")
+		)
+		(pin "2"
+			(uuid "8ac83d93-e631-4705-a377-ebe3c61c5d0d")
+		)
+		(instances
+			(project "Controller_Unit_V1.0"
+				(path "/288e19fe-913b-4fdb-a48b-19dc8e8a67e1"
+					(reference "Q130")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:2N7002")
 		(at 364.49 441.96 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -18768,7 +19591,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 566.42 255.27 0)
+		(at 471.17 731.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18777,7 +19600,7 @@
 		(fields_autoplaced yes)
 		(uuid "6f14ab09-2b6c-41fd-a866-b8f107974d38")
 		(property "Reference" "#PWR065"
-			(at 566.42 261.62 0)
+			(at 471.17 737.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18786,7 +19609,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 566.42 260.35 0)
+			(at 471.17 736.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18795,7 +19618,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 566.42 255.27 0)
+			(at 471.17 731.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18804,7 +19627,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 566.42 255.27 0)
+			(at 471.17 731.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18813,7 +19636,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 566.42 255.27 0)
+			(at 471.17 731.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19136,58 +19959,53 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:2N7002")
-		(at 601.98 309.88 270)
+		(lib_id "power:GND")
+		(at 471.17 807.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "747a92a6-472e-4dda-9081-170ad6d50ea7")
-		(property "Reference" "Q120"
-			(at 603.2501 316.23 0)
+		(uuid "74b7005e-27af-40e4-8a0a-8115f63e66d9")
+		(property "Reference" "#PWR072"
+			(at 471.17 814.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Value" "2N7002"
-			(at 600.7101 316.23 0)
+		(property "Value" "GND"
+			(at 471.17 812.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 600.075 314.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 598.17 314.96 0)
+		(property "Footprint" ""
+			(at 471.17 807.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 601.98 309.88 0)
+		(property "Datasheet" ""
+			(at 471.17 807.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 471.17 807.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19196,18 +20014,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "7afaf205-7625-4e51-94db-c3cab541abf9")
-		)
-		(pin "3"
-			(uuid "6edccb1c-2dab-46bf-a403-5606f2c89183")
-		)
-		(pin "2"
-			(uuid "a8dd277e-e49f-4297-b29a-5d3400753630")
+			(uuid "bd6fa5d8-6b6d-4113-98cb-f6cdb993e9fa")
 		)
 		(instances
 			(project "Controller_Unit_V1.0"
 				(path "/288e19fe-913b-4fdb-a48b-19dc8e8a67e1"
-					(reference "Q120")
+					(reference "#PWR072")
 					(unit 1)
 				)
 			)
@@ -20265,7 +21077,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 701.04 284.48 0)
+		(at 605.79 773.43 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -20274,7 +21086,7 @@
 		(fields_autoplaced yes)
 		(uuid "82e27963-f9e0-4884-bd99-472636385485")
 		(property "Reference" "#PWR069"
-			(at 701.04 288.29 0)
+			(at 605.79 777.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20283,7 +21095,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 701.04 279.4 0)
+			(at 605.79 768.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20292,7 +21104,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 701.04 284.48 0)
+			(at 605.79 773.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20301,7 +21113,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 701.04 284.48 0)
+			(at 605.79 773.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20310,7 +21122,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 701.04 284.48 0)
+			(at 605.79 773.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20331,75 +21143,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 566.42 312.42 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "82e6e1ea-c83b-421e-b721-5cc505e0bc8a")
-		(property "Reference" "#PWR070"
-			(at 566.42 318.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 566.42 317.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 566.42 312.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 566.42 312.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 566.42 312.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "52871bb2-9d5e-4e1b-b5c8-a37b4fd714dd")
-		)
-		(instances
-			(project "Controller_Unit_V1.0"
-				(path "/288e19fe-913b-4fdb-a48b-19dc8e8a67e1"
-					(reference "#PWR070")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Transistor_FET:2N7002")
-		(at 642.62 271.78 270)
+		(at 547.37 754.38 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -20408,7 +21153,7 @@
 		(fields_autoplaced yes)
 		(uuid "8421bfc7-9fe5-450e-881e-a2903f7a47fe")
 		(property "Reference" "Q107"
-			(at 643.8901 278.13 0)
+			(at 548.6401 760.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20418,7 +21163,7 @@
 			)
 		)
 		(property "Value" "2N7002"
-			(at 641.3501 278.13 0)
+			(at 546.1001 760.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20428,7 +21173,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 640.715 276.86 0)
+			(at 545.465 759.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20439,7 +21184,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 638.81 276.86 0)
+			(at 543.56 759.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20449,7 +21194,7 @@
 			)
 		)
 		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 642.62 271.78 0)
+			(at 547.37 754.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21572,7 +22317,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:2N7002")
-		(at 601.98 252.73 270)
+		(at 506.73 728.98 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21581,7 +22326,7 @@
 		(fields_autoplaced yes)
 		(uuid "96103c9f-928e-4bac-b083-67fc4c183fd3")
 		(property "Reference" "Q90"
-			(at 603.2501 259.08 0)
+			(at 508.0001 735.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21591,7 +22336,7 @@
 			)
 		)
 		(property "Value" "2N7002"
-			(at 600.7101 259.08 0)
+			(at 505.4601 735.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21601,7 +22346,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 600.075 257.81 0)
+			(at 504.825 734.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21612,7 +22357,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 598.17 257.81 0)
+			(at 502.92 734.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21622,7 +22367,7 @@
 			)
 		)
 		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 601.98 252.73 0)
+			(at 506.73 728.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21855,73 +22600,6 @@
 			(project "Controller_Unit_V1.0"
 				(path "/288e19fe-913b-4fdb-a48b-19dc8e8a67e1"
 					(reference "Q83")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VCC")
-		(at 701.04 303.53 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "98091745-0c67-4efd-80f2-450602ab5019")
-		(property "Reference" "#PWR071"
-			(at 701.04 307.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VCC"
-			(at 701.04 298.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 701.04 303.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 701.04 303.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 701.04 303.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "3d4edd99-56a9-4829-a26f-9a324c25405e")
-		)
-		(instances
-			(project "Controller_Unit_V1.0"
-				(path "/288e19fe-913b-4fdb-a48b-19dc8e8a67e1"
-					(reference "#PWR071")
 					(unit 1)
 				)
 			)
@@ -22891,7 +23569,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:2N7002")
-		(at 571.5 290.83 270)
+		(at 476.25 779.78 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22900,7 +23578,7 @@
 		(fields_autoplaced yes)
 		(uuid "9fc14928-6fd8-455d-9388-4a1d68947549")
 		(property "Reference" "Q111"
-			(at 572.7701 297.18 0)
+			(at 477.5201 786.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22910,7 +23588,7 @@
 			)
 		)
 		(property "Value" "2N7002"
-			(at 570.2301 297.18 0)
+			(at 474.9801 786.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22920,7 +23598,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 569.595 295.91 0)
+			(at 474.345 784.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22931,7 +23609,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 567.69 295.91 0)
+			(at 472.44 784.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22941,7 +23619,7 @@
 			)
 		)
 		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 571.5 290.83 0)
+			(at 476.25 779.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23192,16 +23870,16 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:2N7002")
-		(at 591.82 271.78 270)
+		(at 496.57 805.18 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a228b0b3-d07b-4e8a-aca1-2f7570ea4285")
-		(property "Reference" "Q102"
-			(at 593.0901 278.13 0)
+		(uuid "a1b3c420-d5a3-44d7-9987-9aa4b304e0c0")
+		(property "Reference" "Q128"
+			(at 497.8401 811.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23211,7 +23889,7 @@
 			)
 		)
 		(property "Value" "2N7002"
-			(at 590.5501 278.13 0)
+			(at 495.3001 811.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23221,7 +23899,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 589.915 276.86 0)
+			(at 494.665 810.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23232,7 +23910,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 588.01 276.86 0)
+			(at 492.76 810.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23242,7 +23920,85 @@
 			)
 		)
 		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 591.82 271.78 0)
+			(at 496.57 805.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "29a387a2-4961-4fa7-b8e4-bb60ef18e527")
+		)
+		(pin "3"
+			(uuid "9ddbde80-f18f-4ceb-bd56-a20c7246c295")
+		)
+		(pin "2"
+			(uuid "75952ee6-5900-418f-bb2c-ecd1f0e1c4cc")
+		)
+		(instances
+			(project "Controller_Unit_V1.0"
+				(path "/288e19fe-913b-4fdb-a48b-19dc8e8a67e1"
+					(reference "Q128")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:2N7002")
+		(at 496.57 754.38 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a228b0b3-d07b-4e8a-aca1-2f7570ea4285")
+		(property "Reference" "Q102"
+			(at 497.8401 760.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "2N7002"
+			(at 495.3001 760.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 494.665 759.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+			(at 492.76 759.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
+			(at 496.57 754.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23493,7 +24249,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:2N7002")
-		(at 612.14 290.83 270)
+		(at 516.89 779.78 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -23502,7 +24258,7 @@
 		(fields_autoplaced yes)
 		(uuid "a5d0ac26-8de7-4be3-a8a4-3787ea717ac5")
 		(property "Reference" "Q115"
-			(at 613.4101 297.18 0)
+			(at 518.1601 786.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23512,7 +24268,7 @@
 			)
 		)
 		(property "Value" "2N7002"
-			(at 610.8701 297.18 0)
+			(at 515.6201 786.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23522,7 +24278,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 610.235 295.91 0)
+			(at 514.985 784.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23533,7 +24289,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 608.33 295.91 0)
+			(at 513.08 784.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23543,7 +24299,7 @@
 			)
 		)
 		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 612.14 290.83 0)
+			(at 516.89 779.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23649,7 +24405,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:2N7002")
-		(at 591.82 252.73 270)
+		(at 496.57 728.98 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -23658,7 +24414,7 @@
 		(fields_autoplaced yes)
 		(uuid "aaea8c38-a714-45b7-a628-a826cfd52d72")
 		(property "Reference" "Q89"
-			(at 593.0901 259.08 0)
+			(at 497.8401 735.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23668,7 +24424,7 @@
 			)
 		)
 		(property "Value" "2N7002"
-			(at 590.5501 259.08 0)
+			(at 495.3001 735.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23678,7 +24434,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 589.915 257.81 0)
+			(at 494.665 734.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23689,7 +24445,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 588.01 257.81 0)
+			(at 492.76 734.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -23699,7 +24455,7 @@
 			)
 		)
 		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 591.82 252.73 0)
+			(at 496.57 728.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24251,7 +25007,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:2N7002")
-		(at 601.98 290.83 270)
+		(at 506.73 779.78 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -24260,7 +25016,7 @@
 		(fields_autoplaced yes)
 		(uuid "b4a3dcc7-c57f-40e5-af33-34e1b7b0bd08")
 		(property "Reference" "Q114"
-			(at 603.2501 297.18 0)
+			(at 508.0001 786.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24270,7 +25026,7 @@
 			)
 		)
 		(property "Value" "2N7002"
-			(at 600.7101 297.18 0)
+			(at 505.4601 786.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24280,7 +25036,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 600.075 295.91 0)
+			(at 504.825 784.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24291,7 +25047,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 598.17 295.91 0)
+			(at 502.92 784.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24301,7 +25057,7 @@
 			)
 		)
 		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 601.98 290.83 0)
+			(at 506.73 779.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24467,6 +25223,84 @@
 			(project "Controller_Unit_V1.0"
 				(path "/288e19fe-913b-4fdb-a48b-19dc8e8a67e1"
 					(reference "Q23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:2N7002")
+		(at 527.05 805.18 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b5bea762-d232-4c20-a09c-4a4a0397f16c")
+		(property "Reference" "Q131"
+			(at 528.3201 811.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "2N7002"
+			(at 525.7801 811.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 525.145 810.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+			(at 523.24 810.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
+			(at 527.05 805.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "838cf5df-4b65-4083-9091-35424ed7a05b")
+		)
+		(pin "3"
+			(uuid "9d06c117-634b-49c3-81c4-d8ba83213c69")
+		)
+		(pin "2"
+			(uuid "324e99e0-6282-4ece-bf83-d6fc44f43faa")
+		)
+		(instances
+			(project "Controller_Unit_V1.0"
+				(path "/288e19fe-913b-4fdb-a48b-19dc8e8a67e1"
+					(reference "Q131")
 					(unit 1)
 				)
 			)
@@ -24975,7 +25809,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:2N7002")
-		(at 662.94 271.78 270)
+		(at 567.69 754.38 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -24984,7 +25818,7 @@
 		(fields_autoplaced yes)
 		(uuid "bacaca29-2d87-4c8b-bb43-3744d646ccdc")
 		(property "Reference" "Q109"
-			(at 664.2101 278.13 0)
+			(at 568.9601 760.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24994,7 +25828,7 @@
 			)
 		)
 		(property "Value" "2N7002"
-			(at 661.6701 278.13 0)
+			(at 566.4201 760.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25004,7 +25838,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 661.035 276.86 0)
+			(at 565.785 759.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25015,7 +25849,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 659.13 276.86 0)
+			(at 563.88 759.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25025,7 +25859,7 @@
 			)
 		)
 		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 662.94 271.78 0)
+			(at 567.69 754.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25053,7 +25887,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:2N7002")
-		(at 622.3 252.73 270)
+		(at 527.05 728.98 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -25062,7 +25896,7 @@
 		(fields_autoplaced yes)
 		(uuid "bc4f351d-a642-4224-ba87-1bc88882c2a7")
 		(property "Reference" "Q92"
-			(at 623.5701 259.08 0)
+			(at 528.3201 735.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25072,7 +25906,7 @@
 			)
 		)
 		(property "Value" "2N7002"
-			(at 621.0301 259.08 0)
+			(at 525.7801 735.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25082,7 +25916,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 620.395 257.81 0)
+			(at 525.145 734.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25093,7 +25927,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 618.49 257.81 0)
+			(at 523.24 734.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25103,7 +25937,7 @@
 			)
 		)
 		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 622.3 252.73 0)
+			(at 527.05 728.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25790,7 +26624,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 701.04 246.38 0)
+		(at 605.79 722.63 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -25799,7 +26633,7 @@
 		(fields_autoplaced yes)
 		(uuid "c00e9689-76f9-40d1-b049-13d61c789aec")
 		(property "Reference" "#PWR064"
-			(at 701.04 250.19 0)
+			(at 605.79 726.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25808,7 +26642,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 701.04 241.3 0)
+			(at 605.79 717.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25817,7 +26651,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 701.04 246.38 0)
+			(at 605.79 722.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25826,7 +26660,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 701.04 246.38 0)
+			(at 605.79 722.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25835,7 +26669,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 701.04 246.38 0)
+			(at 605.79 722.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25857,85 +26691,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:2N7002")
-		(at 591.82 309.88 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c2abb1b3-9c5b-42ca-ae65-e9227b0f68bf")
-		(property "Reference" "Q119"
-			(at 593.0901 316.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Value" "2N7002"
-			(at 590.5501 316.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 589.915 314.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 588.01 314.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 591.82 309.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "064a1aff-d62d-48dc-a5e5-fa1333d55b65")
-		)
-		(pin "3"
-			(uuid "2591b8d1-8462-4eef-a766-f74494f96cd2")
-		)
-		(pin "2"
-			(uuid "1bb5e98b-44c2-4afb-8edd-22293c024e89")
-		)
-		(instances
-			(project "Controller_Unit_V1.0"
-				(path "/288e19fe-913b-4fdb-a48b-19dc8e8a67e1"
-					(reference "Q119")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET:2N7002")
-		(at 683.26 252.73 270)
+		(at 588.01 728.98 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -25944,7 +26700,7 @@
 		(fields_autoplaced yes)
 		(uuid "c315d56b-cf4f-4de5-95ed-986690c868e4")
 		(property "Reference" "Q98"
-			(at 684.5301 259.08 0)
+			(at 589.2801 735.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25954,7 +26710,7 @@
 			)
 		)
 		(property "Value" "2N7002"
-			(at 681.9901 259.08 0)
+			(at 586.7401 735.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25964,7 +26720,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 681.355 257.81 0)
+			(at 586.105 734.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25975,7 +26731,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 679.45 257.81 0)
+			(at 584.2 734.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -25985,7 +26741,7 @@
 			)
 		)
 		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 683.26 252.73 0)
+			(at 588.01 728.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26448,17 +27204,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:2N7002")
-		(at 581.66 309.88 270)
+		(lib_id "PCM_JLCPCB-Resistors:0402,20kΩ")
+		(at 605.79 802.64 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c47915c2-a196-4b13-9b18-94405a2389c0")
-		(property "Reference" "Q118"
-			(at 582.9301 316.23 0)
+		(uuid "c4e8b3d7-5c68-4ac1-b42b-c28909fc833c")
+		(property "Reference" "R52"
+			(at 608.33 802.6399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26467,39 +27223,188 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "2N7002"
-			(at 580.3901 316.23 0)
+		(property "Value" "10kΩ"
+			(at 605.79 802.64 90)
+			(do_not_autoplace yes)
+			(effects
+				(font
+					(size 0.8 0.8)
+				)
+			)
+		)
+		(property "Footprint" "PCM_JLCPCB:R_0402"
+			(at 604.012 802.64 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 579.755 314.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 577.85 314.96 0)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010100_UNI-ROYAL-Uniroyal-Elec-0402WGF2002TCE_C25765.pdf"
+			(at 605.79 802.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 581.66 309.88 0)
+		(property "Description" "62.5mW Thick Film Resistors 50V ±100ppm/°C ±1% 20kΩ 0402 Chip Resistor - Surface Mount ROHS"
+			(at 605.79 802.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C25765"
+			(at 605.79 802.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Stock" "3268540"
+			(at 605.79 802.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Price" "0.004USD"
+			(at 605.79 802.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Process" "SMT"
+			(at 605.79 802.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Minimum Qty" "20"
+			(at 605.79 802.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Attrition Qty" "10"
+			(at 605.79 802.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Class" "Basic Component"
+			(at 605.79 802.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" "Resistors,Chip Resistor - Surface Mount"
+			(at 605.79 802.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "UNI-ROYAL(Uniroyal Elec)"
+			(at 605.79 802.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part" "0402WGF2002TCE"
+			(at 605.79 802.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Resistance" "20kΩ"
+			(at 605.79 802.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Power(Watts)" "62.5mW"
+			(at 605.79 802.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Type" "Thick Film Resistors"
+			(at 605.79 802.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Overload Voltage (Max)" "50V"
+			(at 605.79 802.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Operating Temperature Range" "-55°C~+155°C"
+			(at 605.79 802.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Tolerance" "±1%"
+			(at 605.79 802.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Temperature Coefficient" "±100ppm/°C"
+			(at 605.79 802.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -26508,18 +27413,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "10246f7c-b95f-43d4-9593-766a4e4bae04")
-		)
-		(pin "3"
-			(uuid "80f8fe0f-9c54-41c4-90d0-015b8097bc6d")
+			(uuid "f21bab8e-e1b7-4d8e-94c9-9bee57644218")
 		)
 		(pin "2"
-			(uuid "38f49b73-b3d9-4ac0-97b7-6c5b1b1f708f")
+			(uuid "2eecb594-7197-4a66-8c9d-0ad9a9dd8423")
 		)
 		(instances
 			(project "Controller_Unit_V1.0"
 				(path "/288e19fe-913b-4fdb-a48b-19dc8e8a67e1"
-					(reference "Q118")
+					(reference "R52")
 					(unit 1)
 				)
 			)
@@ -26827,84 +27729,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Transistor_FET:2N7002")
-		(at 571.5 309.88 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ca5ad13e-3c36-4bd7-8a43-b8aecb958e4a")
-		(property "Reference" "Q117"
-			(at 572.7701 316.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Value" "2N7002"
-			(at 570.2301 316.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 569.595 314.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 567.69 314.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 571.5 309.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e0d33acb-c2b9-4317-bde9-194cc575b6db")
-		)
-		(pin "3"
-			(uuid "bc56ab6a-fac3-4894-9011-348073e07c95")
-		)
-		(pin "2"
-			(uuid "618144eb-496e-425f-831c-cc3d51ed7b92")
-		)
-		(instances
-			(project "Controller_Unit_V1.0"
-				(path "/288e19fe-913b-4fdb-a48b-19dc8e8a67e1"
-					(reference "Q117")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "PCM_JLCPCB-Resistors:0402,20kΩ")
 		(at 392.43 386.08 0)
 		(unit 1)
@@ -27130,7 +27954,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 701.04 265.43 0)
+		(at 605.79 748.03 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -27139,7 +27963,7 @@
 		(fields_autoplaced yes)
 		(uuid "cb00fb88-0e3f-49c4-8359-c1834f21edb2")
 		(property "Reference" "#PWR067"
-			(at 701.04 269.24 0)
+			(at 605.79 751.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27148,7 +27972,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 701.04 260.35 0)
+			(at 605.79 742.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27157,7 +27981,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 701.04 265.43 0)
+			(at 605.79 748.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27166,7 +27990,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 701.04 265.43 0)
+			(at 605.79 748.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27175,7 +27999,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 701.04 265.43 0)
+			(at 605.79 748.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27922,7 +28746,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:2N7002")
-		(at 622.3 271.78 270)
+		(at 527.05 754.38 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -27931,7 +28755,7 @@
 		(fields_autoplaced yes)
 		(uuid "d1f92dc1-8fb9-4c4d-b2a3-dc6c89b7ea85")
 		(property "Reference" "Q105"
-			(at 623.5701 278.13 0)
+			(at 528.3201 760.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27941,7 +28765,7 @@
 			)
 		)
 		(property "Value" "2N7002"
-			(at 621.0301 278.13 0)
+			(at 525.7801 760.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27951,7 +28775,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 620.395 276.86 0)
+			(at 525.145 759.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27962,7 +28786,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 618.49 276.86 0)
+			(at 523.24 759.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -27972,7 +28796,7 @@
 			)
 		)
 		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 622.3 271.78 0)
+			(at 527.05 754.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28000,7 +28824,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:2N7002")
-		(at 632.46 271.78 270)
+		(at 537.21 754.38 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -28009,7 +28833,7 @@
 		(fields_autoplaced yes)
 		(uuid "d231073c-0566-4236-8a10-4f4aa2d5ff01")
 		(property "Reference" "Q106"
-			(at 633.7301 278.13 0)
+			(at 538.4801 760.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28019,7 +28843,7 @@
 			)
 		)
 		(property "Value" "2N7002"
-			(at 631.1901 278.13 0)
+			(at 535.9401 760.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28029,7 +28853,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 630.555 276.86 0)
+			(at 535.305 759.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28040,7 +28864,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 628.65 276.86 0)
+			(at 533.4 759.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28050,7 +28874,7 @@
 			)
 		)
 		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 632.46 271.78 0)
+			(at 537.21 754.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28078,7 +28902,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:2N7002")
-		(at 591.82 290.83 270)
+		(at 496.57 779.78 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -28087,7 +28911,7 @@
 		(fields_autoplaced yes)
 		(uuid "d359044d-7228-4e25-b1e0-65f99a1a190a")
 		(property "Reference" "Q113"
-			(at 593.0901 297.18 0)
+			(at 497.8401 786.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28097,7 +28921,7 @@
 			)
 		)
 		(property "Value" "2N7002"
-			(at 590.5501 297.18 0)
+			(at 495.3001 786.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28107,7 +28931,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 589.915 295.91 0)
+			(at 494.665 784.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28118,7 +28942,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 588.01 295.91 0)
+			(at 492.76 784.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28128,7 +28952,7 @@
 			)
 		)
 		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 591.82 290.83 0)
+			(at 496.57 779.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28301,7 +29125,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 566.42 293.37 0)
+		(at 471.17 782.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -28310,7 +29134,7 @@
 		(fields_autoplaced yes)
 		(uuid "d4acb350-56ba-446c-91a6-8cc21ebac9f6")
 		(property "Reference" "#PWR068"
-			(at 566.42 299.72 0)
+			(at 471.17 788.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28319,7 +29143,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 566.42 298.45 0)
+			(at 471.17 787.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28328,7 +29152,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 566.42 293.37 0)
+			(at 471.17 782.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28337,7 +29161,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 566.42 293.37 0)
+			(at 471.17 782.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28346,7 +29170,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 566.42 293.37 0)
+			(at 471.17 782.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28580,7 +29404,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 566.42 274.32 0)
+		(at 471.17 756.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -28589,7 +29413,7 @@
 		(fields_autoplaced yes)
 		(uuid "d7f90a4c-43c6-45a3-90a9-1d42fd4718b8")
 		(property "Reference" "#PWR066"
-			(at 566.42 280.67 0)
+			(at 471.17 763.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28598,7 +29422,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 566.42 279.4 0)
+			(at 471.17 762 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28607,7 +29431,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 566.42 274.32 0)
+			(at 471.17 756.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28616,7 +29440,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 566.42 274.32 0)
+			(at 471.17 756.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -28625,7 +29449,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 566.42 274.32 0)
+			(at 471.17 756.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30113,7 +30937,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:2N7002")
-		(at 642.62 252.73 270)
+		(at 547.37 728.98 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -30122,7 +30946,7 @@
 		(fields_autoplaced yes)
 		(uuid "e1842f6a-6cea-412f-b9f8-2446b7fde5d1")
 		(property "Reference" "Q94"
-			(at 643.8901 259.08 0)
+			(at 548.6401 735.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30132,7 +30956,7 @@
 			)
 		)
 		(property "Value" "2N7002"
-			(at 641.3501 259.08 0)
+			(at 546.1001 735.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30142,7 +30966,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 640.715 257.81 0)
+			(at 545.465 734.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30153,7 +30977,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 638.81 257.81 0)
+			(at 543.56 734.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30163,7 +30987,7 @@
 			)
 		)
 		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 642.62 252.73 0)
+			(at 547.37 728.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -30262,84 +31086,6 @@
 			(project "Controller_Unit_V1.0"
 				(path "/288e19fe-913b-4fdb-a48b-19dc8e8a67e1"
 					(reference "Q36")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET:2N7002")
-		(at 612.14 309.88 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e2a17c50-8430-4fce-a5be-fefffc569cff")
-		(property "Reference" "Q121"
-			(at 613.4101 316.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Value" "2N7002"
-			(at 610.8701 316.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 610.235 314.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 608.33 314.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 612.14 309.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "20ab1478-2905-4f3f-849e-432d872df7d1")
-		)
-		(pin "3"
-			(uuid "fde9fe2c-bd89-4af9-8b20-c30c8b8ede66")
-		)
-		(pin "2"
-			(uuid "db7032c8-da26-4260-82aa-6ce8d2b6852f")
-		)
-		(instances
-			(project "Controller_Unit_V1.0"
-				(path "/288e19fe-913b-4fdb-a48b-19dc8e8a67e1"
-					(reference "Q121")
 					(unit 1)
 				)
 			)
@@ -31168,84 +31914,6 @@
 			(project "Controller_Unit_V1.0"
 				(path "/288e19fe-913b-4fdb-a48b-19dc8e8a67e1"
 					(reference "Q76")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET:2N7002")
-		(at 673.1 309.88 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e83b153a-132c-47cd-97b0-4fe6838e30b1")
-		(property "Reference" "Q127"
-			(at 674.3701 316.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Value" "2N7002"
-			(at 671.8301 316.23 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 671.195 314.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 669.29 314.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 673.1 309.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "42fb0200-f674-4e4e-b341-cb0729bc35b0")
-		)
-		(pin "3"
-			(uuid "475d7b0b-423b-42e3-ba74-c2218c6a2bc3")
-		)
-		(pin "2"
-			(uuid "dea564e6-6566-4684-ab88-fd7ebcab9b77")
-		)
-		(instances
-			(project "Controller_Unit_V1.0"
-				(path "/288e19fe-913b-4fdb-a48b-19dc8e8a67e1"
-					(reference "Q127")
 					(unit 1)
 				)
 			)
@@ -32741,6 +33409,84 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:2N7002")
+		(at 486.41 805.18 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f0c2616c-dd4c-4eac-94db-4b3e4d4d57a5")
+		(property "Reference" "Q110"
+			(at 487.6801 811.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "2N7002"
+			(at 485.1401 811.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 484.505 810.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
+			(at 482.6 810.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
+			(at 486.41 805.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1afca140-7c74-4f09-8aa9-cfb0e248c845")
+		)
+		(pin "3"
+			(uuid "160ccec6-927d-42c5-89d7-fa5763746b82")
+		)
+		(pin "2"
+			(uuid "3076a3df-1812-4b15-a42d-378e35fa93a7")
+		)
+		(instances
+			(project "Controller_Unit_V1.0"
+				(path "/288e19fe-913b-4fdb-a48b-19dc8e8a67e1"
+					(reference "Q110")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:2N7002")
 		(at 313.69 208.28 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -32819,7 +33565,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:2N7002")
-		(at 652.78 271.78 270)
+		(at 557.53 754.38 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -32828,7 +33574,7 @@
 		(fields_autoplaced yes)
 		(uuid "f0e59708-3f19-4ea7-afae-bbe9ad6246df")
 		(property "Reference" "Q108"
-			(at 654.0501 278.13 0)
+			(at 558.8001 760.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32838,7 +33584,7 @@
 			)
 		)
 		(property "Value" "2N7002"
-			(at 651.5101 278.13 0)
+			(at 556.2601 760.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32848,7 +33594,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 650.875 276.86 0)
+			(at 555.625 759.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32859,7 +33605,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 648.97 276.86 0)
+			(at 553.72 759.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32869,7 +33615,7 @@
 			)
 		)
 		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 652.78 271.78 0)
+			(at 557.53 754.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32964,7 +33710,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:2N7002")
-		(at 612.14 271.78 270)
+		(at 516.89 754.38 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -32973,7 +33719,7 @@
 		(fields_autoplaced yes)
 		(uuid "f1dadbb7-3914-44a8-abee-30620ab15e3f")
 		(property "Reference" "Q104"
-			(at 613.4101 278.13 0)
+			(at 518.1601 760.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32983,7 +33729,7 @@
 			)
 		)
 		(property "Value" "2N7002"
-			(at 610.8701 278.13 0)
+			(at 515.6201 760.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -32993,7 +33739,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 610.235 276.86 0)
+			(at 514.985 759.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33004,7 +33750,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 608.33 276.86 0)
+			(at 513.08 759.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33014,7 +33760,7 @@
 			)
 		)
 		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 612.14 271.78 0)
+			(at 516.89 754.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -33191,84 +33937,6 @@
 			(project "Controller_Unit_V1.0"
 				(path "/288e19fe-913b-4fdb-a48b-19dc8e8a67e1"
 					(reference "Q60")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET:2N7002")
-		(at 693.42 252.73 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f54cad22-a390-4a44-9153-a13ca08f4751")
-		(property "Reference" "Q99"
-			(at 694.6901 259.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Value" "2N7002"
-			(at 692.1501 259.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 691.515 257.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 689.61 257.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 693.42 252.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9d93c569-c6c5-4e6c-8c28-dd2f8ffda328")
-		)
-		(pin "3"
-			(uuid "cafaab3c-aa29-4c7f-8513-d448987f63cd")
-		)
-		(pin "2"
-			(uuid "0e8b727e-6413-48ca-a66a-7ac3bd30ef35")
-		)
-		(instances
-			(project "Controller_Unit_V1.0"
-				(path "/288e19fe-913b-4fdb-a48b-19dc8e8a67e1"
-					(reference "Q99")
 					(unit 1)
 				)
 			)
@@ -34171,7 +34839,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:2N7002")
-		(at 632.46 252.73 270)
+		(at 537.21 728.98 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -34180,7 +34848,7 @@
 		(fields_autoplaced yes)
 		(uuid "fb01cad0-d197-4ee0-84d7-43e6aa4e70a4")
 		(property "Reference" "Q93"
-			(at 633.7301 259.08 0)
+			(at 538.4801 735.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34190,7 +34858,7 @@
 			)
 		)
 		(property "Value" "2N7002"
-			(at 631.1901 259.08 0)
+			(at 535.9401 735.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34200,7 +34868,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 630.555 257.81 0)
+			(at 535.305 734.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34211,7 +34879,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF"
-			(at 628.65 257.81 0)
+			(at 533.4 734.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -34221,7 +34889,7 @@
 			)
 		)
 		(property "Description" "0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"
-			(at 632.46 252.73 0)
+			(at 537.21 728.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
