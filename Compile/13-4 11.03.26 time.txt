@@ -1,0 +1,8 @@
+G=tf([1 2],[1 1])
+T=0.5; Gd=c2d(G,T,'zoh')
+step(G)
+axis([0 5 0 2])
+hold on
+step(Gd)
+T=0.25; Gd2=c2d(G,T,'zoh')
+step(Gd2, 'g')
