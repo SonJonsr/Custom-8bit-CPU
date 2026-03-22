@@ -10,7 +10,7 @@ import os
 
 filename = "TestingBranching"
 
-startkode  = 0x0001
+startkode  = 0x0002
 Write_binary_to = 0x0100
 
 def intTo4hex(t):
