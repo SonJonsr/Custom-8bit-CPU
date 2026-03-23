@@ -1,0 +1,42 @@
+def	0x0030	5
+def	0x0031	10
+
+load	a	0x0030
+load	b	0x0031
+Clear	c
+
+rs	a
+
+bou	hit
+boz	ferdig
+jump	igjen
+
+@hit
+add	b	c
+
+
+
+@igjen
+add	b	b
+rs	a
+bnu	ferdig_test
+add	b	c
+jump	igjen
+
+
+
+@ferdig_test
+boz	ferdig
+jump	igjen
+
+@ferdig
+#nop
+store	c	0x0032	
+
+
+@ferdig1
+jump ferdig1
+
+
+
+

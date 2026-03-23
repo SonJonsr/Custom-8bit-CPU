@@ -8,7 +8,7 @@ Created on Sun Dec 21 16:26:39 2025
 # -*- coding: utf-8 -*-
 import os
 
-filename = "TestingBranching"
+filename = "Mult_Test"
 
 startkode  = 0x0002
 Write_binary_to = 0x0100
