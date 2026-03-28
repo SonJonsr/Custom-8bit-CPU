@@ -1,0 +1,1022 @@
+!SESSION 2026-03-24 13:41:58.518 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=21.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=nb_NO
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-03-24 13:44:08.284
+!MESSAGE Indexed 'hal_bsp' (85 sources, 83 headers) in 1 sec: 1 902 declarations; 3 800 references; 144 unresolved inclusions; 6 syntax errors; 462 unresolved names (7,5 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2026-03-24 13:44:51.954
+!MESSAGE Indexed 'app' (0 sources, 0 headers) in 0,002 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0 %)
+
+!ENTRY org.eclipse.cdt.core 4 0 2026-03-24 13:46:11.753
+!MESSAGE Error: org/slf4j/LoggerFactory
+!STACK 0
+java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.eclipse.jetty.util.log.Log.getLogger(Log.java:31)
+	at org.eclipse.jetty.util.ajax.JSON.<clinit>(JSON.java:90)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.shutdown(CompileCommandsJsonParser.java:612)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.closeConsoleOutputStream(ConsoleOutputSniffer.java:162)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.close(ConsoleOutputSniffer.java:70)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.close(ProcessClosure.java:101)
+	at org.eclipse.cdt.internal.core.ProcessClosure.isAlive(ProcessClosure.java:194)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:248)
+	at org.eclipse.cdt.core.CommandLauncherManager$CommandLauncherWrapper.waitAndRead(CommandLauncherManager.java:161)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:284)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeExternalBuild(ExternalBuildRunner.java:140)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeBuild(ExternalBuildRunner.java:73)
+	at de.marw.cdt.cmake.core.internal.CMakeBuildRunner.invokeBuild(CMakeBuildRunner.java:129)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:783)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:533)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:471)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:483)
+	at org.eclipse.ui.actions.GlobalBuildAction$1.run(GlobalBuildAction.java:180)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ClassNotFoundException: org.slf4j.LoggerFactory cannot be found by de.marw.cmake.cdt_1.2.1.202501301848
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:562)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:557)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 31 more
+
+!ENTRY org.eclipse.cdt.core 4 0 2026-03-24 13:46:12.427
+!MESSAGE Error: Could not initialize class org.eclipse.jetty.util.ajax.JSON
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.jetty.util.ajax.JSON
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.shutdown(CompileCommandsJsonParser.java:612)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.closeConsoleOutputStream(ConsoleOutputSniffer.java:162)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.close(ConsoleOutputSniffer.java:70)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.close(ProcessClosure.java:101)
+	at org.eclipse.cdt.internal.core.ProcessClosure.isAlive(ProcessClosure.java:194)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:248)
+	at org.eclipse.cdt.core.CommandLauncherManager$CommandLauncherWrapper.waitAndRead(CommandLauncherManager.java:161)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:284)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeExternalBuild(ExternalBuildRunner.java:140)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeBuild(ExternalBuildRunner.java:73)
+	at de.marw.cdt.cmake.core.internal.CMakeBuildRunner.invokeBuild(CMakeBuildRunner.java:129)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:783)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:533)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:471)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:483)
+	at org.eclipse.ui.actions.GlobalBuildAction$1.run(GlobalBuildAction.java:180)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory [in thread "Worker-11: Building Workspace"]
+	at org.eclipse.jetty.util.log.Log.getLogger(Log.java:31)
+	at org.eclipse.jetty.util.ajax.JSON.<clinit>(JSON.java:90)
+	... 29 more
+
+!ENTRY org.eclipse.cdt.core 4 0 2026-03-24 14:46:26.411
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.cdt.core.CCorePlugin.stop() of bundle org.eclipse.cdt.core.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:923)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1071)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:392)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:2116)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1986)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:281)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:222)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:240)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.core.runtime.content.IContentTypeManager.removeContentTypeChangeListener(org.eclipse.core.runtime.content.IContentTypeManager$IContentTypeChangeListener)" because the return value of "org.eclipse.core.runtime.Platform.getContentTypeManager()" is null
+	at org.eclipse.cdt.internal.core.model.CModelManager.shutdown(CModelManager.java:1378)
+	at org.eclipse.cdt.core.model.CoreModel.shutdown(CoreModel.java:1156)
+	at org.eclipse.cdt.core.CCorePlugin.stop(CCorePlugin.java:375)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:903)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:895)
+	... 13 more
+Root exception:
+java.lang.NullPointerException: Cannot invoke "org.eclipse.core.runtime.content.IContentTypeManager.removeContentTypeChangeListener(org.eclipse.core.runtime.content.IContentTypeManager$IContentTypeChangeListener)" because the return value of "org.eclipse.core.runtime.Platform.getContentTypeManager()" is null
+	at org.eclipse.cdt.internal.core.model.CModelManager.shutdown(CModelManager.java:1378)
+	at org.eclipse.cdt.core.model.CoreModel.shutdown(CoreModel.java:1156)
+	at org.eclipse.cdt.core.CCorePlugin.stop(CCorePlugin.java:375)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:903)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:895)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1071)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:392)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:2116)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1986)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:281)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:222)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:240)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+!SESSION 2026-03-24 14:50:29.197 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=21.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=nb_NO
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.ui 4 0 2026-03-24 14:50:36.611
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at org.eclipse.jetty.util.log.Log.getLogger(Log.java:31)
+	at org.eclipse.jetty.util.ajax.JSON.<clinit>(JSON.java:90)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.lambda$2(CompileCommandsJsonParser.java:671)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:5105)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4585)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
+Caused by: java.lang.ClassNotFoundException: org.slf4j.LoggerFactory cannot be found by de.marw.cmake.cdt_1.2.1.202501301848
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:562)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:557)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:434)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:174)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 28 more
+
+!ENTRY org.eclipse.ui 4 0 2026-03-24 14:50:36.624
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.jetty.util.ajax.JSON
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.determineBuiltinDetectors(CompileCommandsJsonParser.java:417)
+	at de.marw.cmake.cdt.language.settings.providers.BuiltinsCompileCommandsJsonParser.detectBuiltins(BuiltinsCompileCommandsJsonParser.java:107)
+	at de.marw.cmake.cdt.language.settings.providers.BuiltinsCompileCommandsJsonParser.lambda$1(BuiltinsCompileCommandsJsonParser.java:219)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:5105)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4585)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory [in thread "main"]
+	at org.eclipse.jetty.util.log.Log.getLogger(Log.java:31)
+	at org.eclipse.jetty.util.ajax.JSON.<clinit>(JSON.java:90)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.lambda$2(CompileCommandsJsonParser.java:671)
+	... 24 more
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 15:13:47.112
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 15:13:47.452
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 15:14:34.822
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 15:14:34.929
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 15:17:04.352
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 15:17:04.695
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 15:17:21.029
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 15:17:21.136
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 15:17:56.501
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 15:17:56.609
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 15:18:06.843
+!MESSAGE Detecting scan chain for serial number=1 jtagFreq=16000KHz tapReset=1
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 15:18:07.076
+!MESSAGE TapDetails [tapNumber=1, irLength=10, idCode=34566365, name=10CL120(Y|Z)/EP3C120/.., numberOfCores=1, decimalNumberSystem=false]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 15:18:07.076
+!MESSAGE CoreDetails [coreId=144207360, name=Nios V, coreIndex=0]
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 15:18:15.303
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 15:18:15.409
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 15:18:15.591
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 34001 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 15:18:16.655
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 15:21:32.743
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 15:21:33.091
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 15:21:33.153
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 37711 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 15:21:34.228
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 15:49:06.065
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 15:49:06.399
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 15:49:06.444
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 46839 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 15:49:07.484
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 15:51:22.477
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 15:51:22.813
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 15:51:22.860
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 36313 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 15:51:23.924
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 15:54:38.583
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 15:54:38.920
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 15:54:38.966
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 44139 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 15:54:40.006
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 15:55:32.785
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 15:55:32.891
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 15:55:32.938
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 43713 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 15:55:34.001
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 15:57:53.591
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 15:57:53.929
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 15:57:53.976
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 41737 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 15:57:55.044
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 15:59:46.807
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 15:59:47.148
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 15:59:47.201
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 37349 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 15:59:48.265
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 16:03:31.953
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 16:03:32.293
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 16:03:32.342
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 35203 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 16:03:33.408
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 16:04:55.317
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 16:04:55.423
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 16:04:55.471
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 42115 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 16:04:56.534
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 16:07:57.335
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 16:07:57.678
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 16:07:57.726
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 37309 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 16:07:58.769
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 16:11:39.506
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 16:11:39.847
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 16:11:39.894
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 43727 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 16:11:40.960
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY org.eclipse.cdt.core 4 0 2026-03-24 16:12:29.722
+!MESSAGE Error: Could not initialize class org.eclipse.jetty.util.ajax.JSON
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.jetty.util.ajax.JSON
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.shutdown(CompileCommandsJsonParser.java:612)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.closeConsoleOutputStream(ConsoleOutputSniffer.java:162)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.close(ConsoleOutputSniffer.java:70)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.close(ProcessClosure.java:101)
+	at org.eclipse.cdt.internal.core.ProcessClosure.isAlive(ProcessClosure.java:194)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:248)
+	at org.eclipse.cdt.core.CommandLauncherManager$CommandLauncherWrapper.waitAndRead(CommandLauncherManager.java:161)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:284)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeExternalBuild(ExternalBuildRunner.java:140)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeBuild(ExternalBuildRunner.java:73)
+	at de.marw.cdt.cmake.core.internal.CMakeBuildRunner.invokeBuild(CMakeBuildRunner.java:129)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:783)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:530)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:471)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:483)
+	at org.eclipse.ui.actions.GlobalBuildAction$1.run(GlobalBuildAction.java:180)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory [in thread "main"]
+	at org.eclipse.jetty.util.log.Log.getLogger(Log.java:31)
+	at org.eclipse.jetty.util.ajax.JSON.<clinit>(JSON.java:90)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.lambda$2(CompileCommandsJsonParser.java:671)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:5105)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4585)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
+
+!ENTRY org.eclipse.cdt.core 4 0 2026-03-24 16:12:29.797
+!MESSAGE Error: Could not initialize class org.eclipse.jetty.util.ajax.JSON
+!STACK 0
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.jetty.util.ajax.JSON
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.shutdown(CompileCommandsJsonParser.java:612)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer.closeConsoleOutputStream(ConsoleOutputSniffer.java:162)
+	at org.eclipse.cdt.internal.core.ConsoleOutputSniffer$ConsoleOutputStream.close(ConsoleOutputSniffer.java:70)
+	at org.eclipse.cdt.internal.core.ProcessClosure$ReaderThread.close(ProcessClosure.java:101)
+	at org.eclipse.cdt.internal.core.ProcessClosure.isAlive(ProcessClosure.java:194)
+	at org.eclipse.cdt.core.CommandLauncher.waitAndRead(CommandLauncher.java:248)
+	at org.eclipse.cdt.core.CommandLauncherManager$CommandLauncherWrapper.waitAndRead(CommandLauncherManager.java:161)
+	at org.eclipse.cdt.internal.core.BuildRunnerHelper.build(BuildRunnerHelper.java:284)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeExternalBuild(ExternalBuildRunner.java:140)
+	at org.eclipse.cdt.managedbuilder.core.ExternalBuildRunner.invokeBuild(ExternalBuildRunner.java:73)
+	at de.marw.cdt.cmake.core.internal.CMakeBuildRunner.invokeBuild(CMakeBuildRunner.java:129)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:783)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:530)
+	at org.eclipse.cdt.managedbuilder.internal.core.CommonBuilder.build(CommonBuilder.java:471)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1077)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:296)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:352)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:441)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:444)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:555)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:503)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:585)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:594)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:483)
+	at org.eclipse.ui.actions.GlobalBuildAction$1.run(GlobalBuildAction.java:180)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory [in thread "main"]
+	at org.eclipse.jetty.util.log.Log.getLogger(Log.java:31)
+	at org.eclipse.jetty.util.ajax.JSON.<clinit>(JSON.java:90)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.tryParseJson(CompileCommandsJsonParser.java:258)
+	at de.marw.cmake.cdt.language.settings.providers.CompileCommandsJsonParser.lambda$2(CompileCommandsJsonParser.java:671)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:5105)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4585)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+	at org.eclipse.equinox.launcher.Main.main(Main.java:1454)
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 16:12:43.100
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 16:12:43.206
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 16:12:43.254
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 38223 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 16:12:44.297
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 16:14:56.310
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 16:14:56.651
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 16:14:56.698
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 46133 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 16:14:57.765
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 16:16:51.599
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 16:16:51.943
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 16:16:51.990
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 38347 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 16:16:53.057
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 16:25:54.786
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 16:25:55.129
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 16:25:55.178
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 43183 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 16:25:56.246
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 16:30:38.212
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 16:30:38.556
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 16:30:38.607
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 33993 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 16:30:39.660
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 16:58:41.482
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 16:58:41.827
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 16:58:41.874
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 43001 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 16:58:42.941
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 16:59:21.622
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 16:59:21.729
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 16:59:21.778
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 39821 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 16:59:22.823
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 17:00:01.563
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 17:00:01.669
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 17:00:01.718
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 34675 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 17:00:02.762
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 17:00:59.149
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 17:00:59.493
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 17:00:59.543
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 38595 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 17:01:00.609
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 17:01:18.945
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 17:01:19.051
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 17:01:19.101
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 36961 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 17:01:20.172
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 17:07:03.559
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 17:07:03.905
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 17:07:03.954
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 43915 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 17:07:05.020
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 17:08:51.355
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 17:08:51.698
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 17:08:51.745
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 35437 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 17:08:52.808
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 17:23:16.866
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 17:23:17.198
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 17:23:17.243
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 38007 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 17:23:18.283
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 17:25:06.702
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 17:25:07.037
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 17:25:07.081
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 40641 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 17:25:08.142
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 17:26:47.100
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 17:26:47.437
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 17:26:47.481
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 39149 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 17:26:48.543
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 17:28:48.560
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 17:28:48.898
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 17:28:48.942
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 45921 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 17:28:50.006
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 17:32:19.455
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 17:32:19.792
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 17:32:19.838
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 34309 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 17:32:20.900
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 17:49:03.328
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 17:49:03.668
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 17:49:03.713
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 37095 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 17:49:04.777
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.opxd 4 0 2026-03-24 17:49:15.156
+!MESSAGE Debug session 'plsworkplsworkplswork' is already running or not terminated completely.
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 17:49:51.984
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 17:49:52.090
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 17:49:52.134
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 35679 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 17:49:53.197
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 17:51:10.187
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 17:51:10.528
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 17:51:10.574
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 34841 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 17:51:11.639
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 18:00:43.598
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 18:00:43.938
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 18:00:43.984
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 42729 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 18:00:45.032
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 18:21:37.143
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 18:21:37.483
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 18:21:37.528
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 38427 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 18:21:38.570
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 18:27:52.529
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 18:27:52.869
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 18:27:52.915
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 35985 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 18:27:53.978
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 18:30:34.542
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 18:30:34.883
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 18:30:34.930
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 39907 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 18:30:35.993
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 18:31:51.478
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 18:31:51.584
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 18:31:51.630
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 34833 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 18:31:52.695
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 19:05:37.181
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 19:05:37.515
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 19:05:37.557
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 34681 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 19:05:38.618
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 19:29:45.316
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 19:29:45.654
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 19:29:45.698
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 45397 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 19:29:46.759
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 19:30:03.226
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 19:30:03.332
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 19:30:03.377
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 36157 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 19:30:04.436
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 19:31:44.700
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 19:31:45.039
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 19:31:45.085
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 39935 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 19:31:46.161
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 21:28:34.149
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 21:28:34.534
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 21:28:34.639
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 43095 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 21:28:35.688
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 21:30:29.571
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 21:30:29.933
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 21:30:29.991
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 46629 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 21:30:31.059
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 21:32:39.389
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 21:32:39.750
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 21:32:39.809
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 42307 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 21:32:40.859
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 21:36:50.033
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 21:36:50.394
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 21:36:50.454
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 38489 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 21:36:51.527
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 21:48:46.633
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 21:48:46.997
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 21:48:47.057
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 44951 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 21:48:48.125
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 21:50:58.080
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 21:50:58.442
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 21:50:58.502
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 35641 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 21:50:59.573
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 21:52:34.928
+!MESSAGE Scanning debug probes
+
+!ENTRY com.ashling.riscfree.debug.utils 1 0 2026-03-24 21:52:35.034
+!MESSAGE DebugProbe [deviceName=USB-Blaster-2, serialNumber=1, displayName=USB-Blaster [3-1], probeType=null]
+
+!ENTRY com.ashling.riscfree.debug.opxd 1 0 2026-03-24 21:52:35.095
+!MESSAGE GDB SERVER COMMAND :/opt/intelFPGA/24.1/riscfree/debugger/gdbserver-riscv/ash-riscv-gdb-server --probe-type usb-blaster-2 --transport-type jtag --device 0x020F70DD --auto-detect true --gdb-port 35769 --jtag-frequency 16000KHz --tap-number 1 --core-number 0 --instance 1 --attach-mode OFF
+
+!ENTRY org.eclipse.embedcdt.debug.gdbjtag.core 4 1 2026-03-24 21:52:36.145
+!MESSAGE /opt/intelFPGA/24.1/riscfree/RiscFree//../toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gdb --interpreter=mi2 --nx /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/main.elf
+
+!ENTRY org.eclipse.cdt.core 4 0 2026-03-25 01:34:56.852
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.eclipse.cdt.core.CCorePlugin.stop() of bundle org.eclipse.cdt.core.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:923)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1071)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:392)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:2116)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1986)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:281)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:222)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:240)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.core.runtime.content.IContentTypeManager.removeContentTypeChangeListener(org.eclipse.core.runtime.content.IContentTypeManager$IContentTypeChangeListener)" because the return value of "org.eclipse.core.runtime.Platform.getContentTypeManager()" is null
+	at org.eclipse.cdt.internal.core.model.CModelManager.shutdown(CModelManager.java:1378)
+	at org.eclipse.cdt.core.model.CoreModel.shutdown(CoreModel.java:1156)
+	at org.eclipse.cdt.core.CCorePlugin.stop(CCorePlugin.java:375)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:903)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:895)
+	... 13 more
+Root exception:
+java.lang.NullPointerException: Cannot invoke "org.eclipse.core.runtime.content.IContentTypeManager.removeContentTypeChangeListener(org.eclipse.core.runtime.content.IContentTypeManager$IContentTypeChangeListener)" because the return value of "org.eclipse.core.runtime.Platform.getContentTypeManager()" is null
+	at org.eclipse.cdt.internal.core.model.CModelManager.shutdown(CModelManager.java:1378)
+	at org.eclipse.cdt.core.model.CoreModel.shutdown(CoreModel.java:1156)
+	at org.eclipse.cdt.core.CCorePlugin.stop(CCorePlugin.java:375)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:903)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:571)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:895)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:1071)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:392)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:2116)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1986)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:281)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:222)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:695)
+	at org.eclipse.osgi.container.Module.stop(Module.java:554)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:212)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:240)
+	at java.base/java.lang.Thread.run(Thread.java:1583)

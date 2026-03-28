@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <io.h>
+#include <system.h>
+
+//REG_TEST_COMP_BASE
+#define ADR_0 0*2
+#define ADR_1 1*2
+
+int main()
+{
+	unsigned int temp = 0;
+	unsigned char data = 0xf;
+	while (1)
+	{
+		//IOWR_32DIRECT(REG_TEST_COMP_BASE,ADR_0,temp);
+		//temp = temp + 1;
+		//IOWR_32DIRECT(REG_TEST_COMP_BASE,ADR_1,temp);
+		//data = IORD_32DIRECT(REG_TEST_COMP_BASE,0);
+		printf("%02x\n", temp);
+		printf("\n");
+		printf("w21Y NO WORK\n");
+	}
+	return 0;
+}

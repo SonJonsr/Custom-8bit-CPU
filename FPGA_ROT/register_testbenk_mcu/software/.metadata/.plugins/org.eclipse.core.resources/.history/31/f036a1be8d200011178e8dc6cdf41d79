@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <io.h>
+#include <system.h>
+
+//REG_TEST_COMP_BASE
+#define ADR_0 0*2
+#define ADR_1 1*2
+
+int main()
+{
+	int temp = 5;
+	char c = temp + '0'; // Convert 5 to ASCII '5'
+
+	while (1)
+	{
+		//IOWR_32DIRECT(REG_TEST_COMP_BASE,ADR_0,temp);
+		//temp = temp + 1;
+		//IOWR_32DIRECT(REG_TEST_COMP_BASE,ADR_1,temp);
+		//data = IORD_32DIRECT(REG_TEST_COMP_BASE,0);
+		printf("Value is: ");
+		putchar(c);
+		putchar('\n');
+		//printf("%02x\n", temp);
+		for(volatile int i = 0; i < 1000000; i++);
+		printf("\n");
+		printf("w21Y NO WORK\n");
+	}
+	return 0;
+}

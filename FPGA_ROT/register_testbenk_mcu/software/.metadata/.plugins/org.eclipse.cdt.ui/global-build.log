@@ -1,0 +1,2936 @@
+17:21:53 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[ 97%] Built target create-objdump
+[ 98%] Creating ram.hex.
+[100%] Reporting memory available for stack + heap in hallo.elf.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 95.78 KB - Program size (code + initialized data).
+ * 154.01 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+17:26:11 **** Clean-only build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j clean 
+17:26:11 **** Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[  1%] Building ASM object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_ecc_exception_entry.S.obj
+[  2%] Building ASM object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_log_macro.S.obj
+[  3%] Building ASM object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_mcount.S.obj
+[  4%] Building ASM object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_vic_vector_table.S.obj
+[  5%] Building ASM object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/crt0.S.obj
+[  7%] Building ASM object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/machine_trap.S.obj
+[  7%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_busy_sleep.c.obj
+[  8%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_alarm_start.c.obj
+[  9%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_close.c.obj
+[ 11%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush_all.c.obj
+[ 11%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush.c.obj
+[ 12%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush_no_writeback.c.obj
+[ 13%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dev.c.obj
+[ 14%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dev_llist_insert.c.obj
+[ 15%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dma_rxchan_open.c.obj
+[ 16%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dma_txchan_open.c.obj
+[ 19%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_ecc_exception.c.obj
+[ 19%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_do_ctors.c.obj
+[ 19%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_do_dtors.c.obj
+[ 20%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_ecc_error_inject.c.obj
+[ 22%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_errno.c.obj
+[ 22%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_environ.c.obj
+[ 23%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_env_lock.c.obj
+[ 24%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_execve.c.obj
+[ 25%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_exit.c.obj
+[ 27%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fd_lock.c.obj
+[ 27%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fcntl.c.obj
+[ 29%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_find_dev.c.obj
+[ 29%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_find_file.c.obj
+[ 30%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fd_unlock.c.obj
+[ 32%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_flash_dev.c.obj
+[ 32%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fork.c.obj
+[ 35%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fs_reg.c.obj
+[ 35%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fstat.c.obj
+[ 36%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_get_fd.c.obj
+[ 37%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_getchar.c.obj
+[ 40%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_gmon.c.obj
+[ 40%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_gettod.c.obj
+[ 40%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_getpid.c.obj
+[ 41%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_icache_flush.c.obj
+[ 42%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_icache_flush_all.c.obj
+[ 43%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_iic.c.obj
+[ 44%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_iic_isr_register.c.obj
+[ 45%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_instruction_exception_register.c.obj
+[ 48%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_irq_handler.c.obj
+[ 48%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_io_redirect.c.obj
+[ 48%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_ioctl.c.obj
+[ 51%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_kill.c.obj
+[ 51%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_isatty.c.obj
+[ 51%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_link.c.obj
+[ 52%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_load.c.obj
+[ 53%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_log_printf.c.obj
+[ 54%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_lseek.c.obj
+[ 56%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_malloc_lock.c.obj
+[ 56%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_main.c.obj
+[ 57%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_open.c.obj
+[ 58%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_printf.c.obj
+[ 59%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_putchar.c.obj
+[ 60%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_putcharbuf.c.obj
+[ 61%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_putstr.c.obj
+[ 62%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_read.c.obj
+[ 65%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_remap_uncached.c.obj
+[ 65%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_remap_cached.c.obj
+[ 65%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_rename.c.obj
+[ 67%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_sbrk.c.obj
+[ 69%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_release_fd.c.obj
+[ 69%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_settod.c.obj
+[ 71%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_times.c.obj
+[ 71%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_tick.c.obj
+[ 72%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_stat.c.obj
+[ 73%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_tls.c.obj
+[ 74%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_uncached_malloc.c.obj
+[ 75%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_unlink.c.obj
+[ 76%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_uncached_free.c.obj
+[ 77%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_usleep.c.obj
+[ 79%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_vic_isr_wrapper.c.obj
+[ 79%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_wait.c.obj
+[ 80%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_write.c.obj
+[ 82%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_dfl.c.obj
+[ 82%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_inf.c.obj
+[ 83%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_msg.c.obj
+[ 84%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_niosv.c.obj
+[ 85%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_platform_api_niosv.c.obj
+[ 86%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_niosv_irq.c.obj
+[ 87%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/mtimer.c.obj
+[ 88%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/alt_sys_init.c.obj
+[ 89%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_fd.c.obj
+[ 90%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_init.c.obj
+[ 91%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_ioctl.c.obj
+[ 93%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_write.c.obj
+[ 93%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_read.c.obj
+[ 94%] Linking C static library libhal2_bsp.a
+[ 94%] Built target hal2_bsp
+[ 95%] Building C object CMakeFiles/hallo.elf.dir/hallo.c.obj
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c: In function 'main':
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c:12:23: warning: unused variable 'data' [-Wunused-variable]
+   12 |         unsigned char data = 0xf;
+      |                       ^~~~
+[ 96%] Linking C executable hallo.elf
+[ 96%] Built target hallo.elf
+[100%] Creating ram.hex.
+[100%] Creating hallo.elf.objdump.
+[100%] Reporting memory available for stack + heap in hallo.elf.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+[100%] Built target create-objdump
+hallo.elf
+ * 95.78 KB - Program size (code + initialized data).
+ * 154.01 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+17:26:12 **** Clean-only build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j clean 
+17:26:12 **** Build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[  6%] Building ASM object CMakeFiles/hal2_bsp.dir/HAL/src/machine_trap.S.obj
+[  6%] Building ASM object CMakeFiles/hal2_bsp.dir/HAL/src/alt_vic_vector_table.S.obj
+[  6%] Building ASM object CMakeFiles/hal2_bsp.dir/HAL/src/crt0.S.obj
+[  6%] Building ASM object CMakeFiles/hal2_bsp.dir/HAL/src/alt_mcount.S.obj
+[  6%] Building ASM object CMakeFiles/hal2_bsp.dir/HAL/src/alt_ecc_exception_entry.S.obj
+[  6%] Building ASM object CMakeFiles/hal2_bsp.dir/HAL/src/alt_log_macro.S.obj
+[  7%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_alarm_start.c.obj
+[  8%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_busy_sleep.c.obj
+[  9%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_close.c.obj
+[ 10%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush.c.obj
+[ 11%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush_all.c.obj
+[ 13%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush_no_writeback.c.obj
+[ 14%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_dev.c.obj
+[ 15%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_dma_rxchan_open.c.obj
+[ 16%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_dev_llist_insert.c.obj
+[ 17%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_dma_txchan_open.c.obj
+[ 18%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_do_ctors.c.obj
+[ 20%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_ecc_exception.c.obj
+[ 20%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_do_dtors.c.obj
+[ 21%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_ecc_error_inject.c.obj
+[ 22%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_env_lock.c.obj
+[ 23%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_environ.c.obj
+[ 25%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_errno.c.obj
+[ 26%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_execve.c.obj
+[ 29%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_find_dev.c.obj
+[ 29%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_fd_lock.c.obj
+[ 30%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_find_file.c.obj
+[ 29%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_exit.c.obj
+[ 31%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_fd_unlock.c.obj
+[ 32%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_fork.c.obj
+[ 33%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_fcntl.c.obj
+[ 34%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_flash_dev.c.obj
+[ 35%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_fs_reg.c.obj
+[ 36%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_getchar.c.obj
+[ 38%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_getpid.c.obj
+[ 40%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_get_fd.c.obj
+[ 41%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_fstat.c.obj
+[ 40%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_gettod.c.obj
+[ 43%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_icache_flush.c.obj
+[ 43%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_gmon.c.obj
+[ 44%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_icache_flush_all.c.obj
+[ 45%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_iic.c.obj
+[ 47%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_instruction_exception_register.c.obj
+[ 47%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_iic_isr_register.c.obj
+[ 50%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_irq_handler.c.obj
+[ 50%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_ioctl.c.obj
+[ 51%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_io_redirect.c.obj
+[ 53%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_link.c.obj
+[ 54%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_kill.c.obj
+[ 52%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_isatty.c.obj
+[ 56%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_lseek.c.obj
+[ 55%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_load.c.obj
+[ 58%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_malloc_lock.c.obj
+[ 58%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_log_printf.c.obj
+[ 61%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_open.c.obj
+[ 61%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_main.c.obj
+[ 61%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_printf.c.obj
+[ 65%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_putcharbuf.c.obj
+[ 65%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_putstr.c.obj
+[ 65%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_putchar.c.obj
+[ 66%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_read.c.obj
+[ 68%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_remap_cached.c.obj
+[ 67%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_release_fd.c.obj
+[ 69%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_sbrk.c.obj
+[ 71%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_remap_uncached.c.obj
+[ 71%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_rename.c.obj
+[ 72%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_settod.c.obj
+[ 73%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_stat.c.obj
+[ 75%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_tick.c.obj
+[ 77%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_tls.c.obj
+[ 77%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_times.c.obj
+[ 78%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_uncached_free.c.obj
+[ 81%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_vic_isr_wrapper.c.obj
+[ 81%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_uncached_malloc.c.obj
+[ 81%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_unlink.c.obj
+[ 82%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_usleep.c.obj
+[ 83%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_wait.c.obj
+[ 85%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_dfl.c.obj
+[ 85%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_write.c.obj
+[ 86%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_inf.c.obj
+[ 88%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_msg.c.obj
+[ 91%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_niosv.c.obj
+[ 91%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/intel_niosv_irq.c.obj
+[ 91%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_platform_api_niosv.c.obj
+[ 94%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/mtimer.c.obj
+[ 94%] Building C object CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_fd.c.obj
+[ 94%] Building C object CMakeFiles/hal2_bsp.dir/alt_sys_init.c.obj
+[ 95%] Building C object CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_init.c.obj
+[ 97%] Building C object CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_read.c.obj
+[ 97%] Building C object CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_ioctl.c.obj
+[ 98%] Building C object CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_write.c.obj
+[100%] Linking C static library libhal2_bsp.a
+[100%] Built target hal2_bsp
+17:26:15 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[ 98%] Built target create-objdump
+[ 98%] Reporting memory available for stack + heap in hallo.elf.
+[100%] Creating ram.hex.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 95.78 KB - Program size (code + initialized data).
+ * 154.01 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+17:26:15 **** Incremental Build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[100%] Built target hal2_bsp
+17:26:16 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[ 97%] Creating ram.hex.
+[ 98%] Built target create-objdump
+[100%] Reporting memory available for stack + heap in hallo.elf.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 95.78 KB - Program size (code + initialized data).
+ * 154.01 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+17:26:16 **** Incremental Build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[100%] Built target hal2_bsp
+17:26:20 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[ 97%] Built target create-objdump
+[ 98%] Reporting memory available for stack + heap in hallo.elf.
+[100%] Creating ram.hex.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 95.78 KB - Program size (code + initialized data).
+ * 154.01 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+17:26:20 **** Incremental Build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[100%] Built target hal2_bsp
+17:26:45 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[ 98%] Reporting memory available for stack + heap in hallo.elf.
+[ 98%] Creating ram.hex.
+[100%] Built target create-objdump
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 95.78 KB - Program size (code + initialized data).
+ * 154.01 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+17:27:07 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 95%] Building C object CMakeFiles/hallo.elf.dir/hallo.c.obj
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c: In function 'main':
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c:12:23: warning: unused variable 'data' [-Wunused-variable]
+   12 |         unsigned char data = 0xf;
+      |                       ^~~~
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c:11:22: warning: unused variable 'temp' [-Wunused-variable]
+   11 |         unsigned int temp = 0;
+      |                      ^~~~
+[ 96%] Linking C executable hallo.elf
+[ 96%] Built target hallo.elf
+[ 97%] Creating hallo.elf.objdump.
+[ 98%] Creating ram.hex.
+[100%] Reporting memory available for stack + heap in hallo.elf.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+[100%] Built target create-objdump
+hallo.elf
+ * 34.61 KB - Program size (code + initialized data).
+ * 215.53 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+17:27:33 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 95%] Building C object CMakeFiles/hallo.elf.dir/hallo.c.obj
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c: In function 'main':
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c:12:23: warning: variable 'data' set but not used [-Wunused-but-set-variable]
+   12 |         unsigned char data = 0xf;
+      |                       ^~~~
+[ 96%] Linking C executable hallo.elf
+[ 96%] Built target hallo.elf
+[100%] Creating ram.hex.
+[100%] Reporting memory available for stack + heap in hallo.elf.
+[100%] Creating hallo.elf.objdump.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+[100%] Built target create-objdump
+hallo.elf
+ * 34.67 KB - Program size (code + initialized data).
+ * 215.47 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+17:27:34 **** Incremental Build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[100%] Built target hal2_bsp
+17:27:41 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[ 98%] Reporting memory available for stack + heap in hallo.elf.
+[ 98%] Built target create-objdump
+[100%] Creating ram.hex.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 34.67 KB - Program size (code + initialized data).
+ * 215.47 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+17:27:48 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[ 98%] Built target create-objdump
+[ 98%] Reporting memory available for stack + heap in hallo.elf.
+[100%] Creating ram.hex.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 34.67 KB - Program size (code + initialized data).
+ * 215.47 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+17:27:48 **** Incremental Build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[100%] Built target hal2_bsp
+17:27:50 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[100%] Built target create-objdump
+[100%] Reporting memory available for stack + heap in hallo.elf.
+[100%] Creating ram.hex.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 34.67 KB - Program size (code + initialized data).
+ * 215.47 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+17:27:50 **** Incremental Build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[100%] Built target hal2_bsp
+17:27:52 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[100%] Reporting memory available for stack + heap in hallo.elf.
+[100%] Built target create-objdump
+[100%] Creating ram.hex.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 34.67 KB - Program size (code + initialized data).
+ * 215.47 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+17:29:28 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 95%] Building C object CMakeFiles/hallo.elf.dir/hallo.c.obj
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c: In function 'main':
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c:12:23: warning: variable 'data' set but not used [-Wunused-but-set-variable]
+   12 |         unsigned char data = 0xf;
+      |                       ^~~~
+[ 96%] Linking C executable hallo.elf
+[ 96%] Built target hallo.elf
+[ 98%] Reporting memory available for stack + heap in hallo.elf.
+[ 98%] Creating hallo.elf.objdump.
+[100%] Creating ram.hex.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+[100%] Built target create-objdump
+hallo.elf
+ * 95.85 KB - Program size (code + initialized data).
+ * 153.93 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+17:29:28 **** Incremental Build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[100%] Built target hal2_bsp
+17:29:31 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[ 98%] Creating ram.hex.
+[ 98%] Reporting memory available for stack + heap in hallo.elf.
+[100%] Built target create-objdump
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 95.85 KB - Program size (code + initialized data).
+ * 153.93 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+17:29:31 **** Incremental Build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[100%] Built target hal2_bsp
+17:29:40 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[ 98%] Built target create-objdump
+[ 98%] Reporting memory available for stack + heap in hallo.elf.
+[100%] Creating ram.hex.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 95.85 KB - Program size (code + initialized data).
+ * 153.93 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+17:30:52 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 95%] Building C object CMakeFiles/hallo.elf.dir/hallo.c.obj
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c: In function 'main':
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c:12:23: warning: variable 'data' set but not used [-Wunused-but-set-variable]
+   12 |         unsigned char data = 0xf;
+      |                       ^~~~
+[ 96%] Linking C executable hallo.elf
+[ 96%] Built target hallo.elf
+[100%] Reporting memory available for stack + heap in hallo.elf.
+[100%] Creating ram.hex.
+[100%] Creating hallo.elf.objdump.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+[100%] Built target create-objdump
+hallo.elf
+ * 95.84 KB - Program size (code + initialized data).
+ * 153.95 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+17:30:52 **** Incremental Build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[100%] Built target hal2_bsp
+17:30:59 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[ 98%] Creating ram.hex.
+[ 98%] Built target create-objdump
+[100%] Reporting memory available for stack + heap in hallo.elf.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 95.84 KB - Program size (code + initialized data).
+ * 153.95 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+17:30:59 **** Incremental Build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[100%] Built target hal2_bsp
+17:31:01 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[100%] Creating ram.hex.
+[100%] Built target create-objdump
+[100%] Reporting memory available for stack + heap in hallo.elf.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 95.84 KB - Program size (code + initialized data).
+ * 153.95 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+17:31:11 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[ 98%] Creating ram.hex.
+[ 98%] Reporting memory available for stack + heap in hallo.elf.
+[100%] Built target create-objdump
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 95.84 KB - Program size (code + initialized data).
+ * 153.95 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+17:34:13 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 95%] Building C object CMakeFiles/hallo.elf.dir/hallo.c.obj
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c: In function 'main':
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c:12:23: warning: variable 'data' set but not used [-Wunused-but-set-variable]
+   12 |         unsigned char data = 0xf;
+      |                       ^~~~
+[ 96%] Linking C executable hallo.elf
+[ 96%] Built target hallo.elf
+[ 98%] Reporting memory available for stack + heap in hallo.elf.
+[100%] Creating ram.hex.
+[100%] Creating hallo.elf.objdump.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+[100%] Built target create-objdump
+hallo.elf
+ * 95.87 KB - Program size (code + initialized data).
+ * 153.91 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+17:34:13 **** Incremental Build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[100%] Built target hal2_bsp
+17:34:14 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[ 97%] Reporting memory available for stack + heap in hallo.elf.
+[ 98%] Built target create-objdump
+[100%] Creating ram.hex.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 95.87 KB - Program size (code + initialized data).
+ * 153.91 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+17:34:14 **** Incremental Build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[100%] Built target hal2_bsp
+17:34:18 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[ 97%] Built target create-objdump
+[ 98%] Reporting memory available for stack + heap in hallo.elf.
+[100%] Creating ram.hex.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 95.87 KB - Program size (code + initialized data).
+ * 153.91 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+17:34:42 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 95%] Building C object CMakeFiles/hallo.elf.dir/hallo.c.obj
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c: In function 'main':
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c:12:23: warning: variable 'data' set but not used [-Wunused-but-set-variable]
+   12 |         unsigned char data = 0xf;
+      |                       ^~~~
+[ 96%] Linking C executable hallo.elf
+[ 96%] Built target hallo.elf
+[100%] Reporting memory available for stack + heap in hallo.elf.
+[100%] Creating ram.hex.
+[100%] Creating hallo.elf.objdump.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+[100%] Built target create-objdump
+hallo.elf
+ * 95.87 KB - Program size (code + initialized data).
+ * 153.91 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+17:34:43 **** Incremental Build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[100%] Built target hal2_bsp
+17:34:46 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[100%] Built target create-objdump
+[100%] Reporting memory available for stack + heap in hallo.elf.
+[100%] Creating ram.hex.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 95.87 KB - Program size (code + initialized data).
+ * 153.91 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+17:36:01 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 95%] Building C object CMakeFiles/hallo.elf.dir/hallo.c.obj
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c: In function 'main':
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c:13:9: error: unknown type name 'String'
+   13 |         String test = "Test\n";
+      |         ^~~~~~
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c:13:23: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   13 |         String test = "Test\n";
+      |                       ^~~~~~~~
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c:13:16: warning: unused variable 'test' [-Wunused-variable]
+   13 |         String test = "Test\n";
+      |                ^~~~
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c:12:23: warning: variable 'data' set but not used [-Wunused-but-set-variable]
+   12 |         unsigned char data = 0xf;
+      |                       ^~~~
+make[2]: *** [CMakeFiles/hallo.elf.dir/build.make:79: CMakeFiles/hallo.elf.dir/hallo.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:118: CMakeFiles/hallo.elf.dir/all] Error 2
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+17:36:02 **** Incremental Build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[100%] Built target hal2_bsp
+17:37:02 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 95%] Building C object CMakeFiles/hallo.elf.dir/hallo.c.obj
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c: In function 'main':
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c:12:23: warning: variable 'data' set but not used [-Wunused-but-set-variable]
+   12 |         unsigned char data = 0xf;
+      |                       ^~~~
+[ 96%] Linking C executable hallo.elf
+[ 96%] Built target hallo.elf
+[ 97%] Creating ram.hex.
+[100%] Creating hallo.elf.objdump.
+[100%] Reporting memory available for stack + heap in hallo.elf.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+[100%] Built target create-objdump
+hallo.elf
+ * 95.91 KB - Program size (code + initialized data).
+ * 153.87 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+17:37:02 **** Incremental Build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[100%] Built target hal2_bsp
+17:37:10 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 95%] Building C object CMakeFiles/hallo.elf.dir/hallo.c.obj
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c: In function 'main':
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c:12:23: warning: variable 'data' set but not used [-Wunused-but-set-variable]
+   12 |         unsigned char data = 0xf;
+      |                       ^~~~
+[ 96%] Linking C executable hallo.elf
+[ 96%] Built target hallo.elf
+[ 97%] Creating ram.hex.
+[ 98%] Creating hallo.elf.objdump.
+[100%] Reporting memory available for stack + heap in hallo.elf.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+[100%] Built target create-objdump
+hallo.elf
+ * 95.88 KB - Program size (code + initialized data).
+ * 153.90 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+17:37:10 **** Incremental Build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[100%] Built target hal2_bsp
+17:37:12 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[ 98%] Creating ram.hex.
+[ 98%] Reporting memory available for stack + heap in hallo.elf.
+[100%] Built target create-objdump
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 95.88 KB - Program size (code + initialized data).
+ * 153.90 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+17:37:12 **** Incremental Build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[100%] Built target hal2_bsp
+17:37:17 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[ 97%] Built target create-objdump
+[ 98%] Reporting memory available for stack + heap in hallo.elf.
+[100%] Creating ram.hex.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 95.88 KB - Program size (code + initialized data).
+ * 153.90 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+17:37:36 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 95%] Building C object CMakeFiles/hallo.elf.dir/hallo.c.obj
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c: In function 'main':
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c:20:24: warning: passing argument 1 of 'printf' makes pointer from integer without a cast [-Wint-conversion]
+   20 |                 printf(a);
+      |                        ^
+      |                        |
+      |                        char
+In file included from /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c:1:
+/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/riscv32-unknown-elf/include/stdio.h:206:17: note: expected 'const char * restrict' but argument is of type 'char'
+  206 | int     printf (const char *__restrict, ...)
+      |                 ^
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c:20:17: warning: format not a string literal and no format arguments [-Wformat-security]
+   20 |                 printf(a);
+      |                 ^~~~~~
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c:12:23: warning: variable 'data' set but not used [-Wunused-but-set-variable]
+   12 |         unsigned char data = 0xf;
+      |                       ^~~~
+[ 96%] Linking C executable hallo.elf
+[ 96%] Built target hallo.elf
+[100%] Creating hallo.elf.objdump.
+[100%] Reporting memory available for stack + heap in hallo.elf.
+[100%] Creating ram.hex.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+[100%] Built target create-objdump
+hallo.elf
+ * 95.87 KB - Program size (code + initialized data).
+ * 153.91 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+17:37:36 **** Incremental Build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[100%] Built target hal2_bsp
+17:37:41 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[ 97%] Reporting memory available for stack + heap in hallo.elf.
+[ 98%] Built target create-objdump
+[100%] Creating ram.hex.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 95.87 KB - Program size (code + initialized data).
+ * 153.91 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+17:40:10 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 95%] Building C object CMakeFiles/hallo.elf.dir/hallo.c.obj
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c: In function 'main':
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c:19:17: error: 'data' undeclared (first use in this function)
+   19 |                 data = IORD_32DIRECT(REG_TEST_COMP_BASE,0);
+      |                 ^~~~
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c:19:17: note: each undeclared identifier is reported only once for each function it appears in
+make[2]: *** [CMakeFiles/hallo.elf.dir/build.make:79: CMakeFiles/hallo.elf.dir/hallo.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:118: CMakeFiles/hallo.elf.dir/all] Error 2
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+17:40:10 **** Incremental Build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[100%] Built target hal2_bsp
+17:40:23 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 95%] Building C object CMakeFiles/hallo.elf.dir/hallo.c.obj
+[ 96%] Linking C executable hallo.elf
+[ 96%] Built target hallo.elf
+[ 97%] Creating hallo.elf.objdump.
+[ 98%] Reporting memory available for stack + heap in hallo.elf.
+[100%] Creating ram.hex.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+[100%] Built target create-objdump
+hallo.elf
+ * 95.85 KB - Program size (code + initialized data).
+ * 153.93 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+17:40:24 **** Incremental Build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[100%] Built target hal2_bsp
+17:40:28 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[ 97%] Built target create-objdump
+[ 98%] Reporting memory available for stack + heap in hallo.elf.
+[100%] Creating ram.hex.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 95.85 KB - Program size (code + initialized data).
+ * 153.93 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+17:41:04 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 95%] Building C object CMakeFiles/hallo.elf.dir/hallo.c.obj
+[ 96%] Linking C executable hallo.elf
+[ 96%] Built target hallo.elf
+[ 98%] Creating hallo.elf.objdump.
+[ 98%] Creating ram.hex.
+[100%] Reporting memory available for stack + heap in hallo.elf.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+[100%] Built target create-objdump
+hallo.elf
+ * 95.46 KB - Program size (code + initialized data).
+ * 154.32 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+17:41:04 **** Incremental Build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[100%] Built target hal2_bsp
+17:41:07 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[100%] Creating ram.hex.
+[100%] Built target create-objdump
+[100%] Reporting memory available for stack + heap in hallo.elf.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 95.46 KB - Program size (code + initialized data).
+ * 154.32 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+17:50:12 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[100%] Built target create-objdump
+[100%] Creating ram.hex.
+[100%] Reporting memory available for stack + heap in hallo.elf.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 95.46 KB - Program size (code + initialized data).
+ * 154.32 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+12:25:57 **** Clean-only build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j clean 
+12:25:57 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[  4%] Building ASM object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_ecc_exception_entry.S.obj
+[  4%] Building ASM object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_log_macro.S.obj
+[  4%] Building ASM object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/machine_trap.S.obj
+[  4%] Building ASM object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_mcount.S.obj
+[  5%] Building ASM object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_vic_vector_table.S.obj
+[  6%] Building ASM object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/crt0.S.obj
+[  8%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_busy_sleep.c.obj
+[  8%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_alarm_start.c.obj
+[  9%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_close.c.obj
+[ 10%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush.c.obj
+[ 11%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dev.c.obj
+[ 12%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush_all.c.obj
+[ 13%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush_no_writeback.c.obj
+[ 14%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dev_llist_insert.c.obj
+[ 15%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dma_rxchan_open.c.obj
+[ 16%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dma_txchan_open.c.obj
+[ 17%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_do_dtors.c.obj
+[ 18%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_do_ctors.c.obj
+[ 19%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_ecc_exception.c.obj
+[ 20%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_ecc_error_inject.c.obj
+[ 21%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_env_lock.c.obj
+[ 22%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_environ.c.obj
+[ 23%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_errno.c.obj
+[ 25%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_exit.c.obj
+[ 25%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_execve.c.obj
+[ 26%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fcntl.c.obj
+[ 27%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fd_lock.c.obj
+[ 28%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fd_unlock.c.obj
+[ 29%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_flash_dev.c.obj
+[ 31%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fork.c.obj
+[ 31%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_find_file.c.obj
+[ 32%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fs_reg.c.obj
+[ 34%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_find_dev.c.obj
+[ 35%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_get_fd.c.obj
+[ 36%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fstat.c.obj
+[ 38%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_gettod.c.obj
+[ 38%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_getchar.c.obj
+[ 39%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_getpid.c.obj
+[ 40%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_gmon.c.obj
+[ 41%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_icache_flush.c.obj
+[ 42%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_icache_flush_all.c.obj
+[ 43%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_iic.c.obj
+[ 44%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_iic_isr_register.c.obj
+[ 46%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_io_redirect.c.obj
+[ 46%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_instruction_exception_register.c.obj
+[ 47%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_ioctl.c.obj
+[ 49%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_isatty.c.obj
+[ 49%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_irq_handler.c.obj
+[ 50%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_kill.c.obj
+[ 51%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_link.c.obj
+[ 52%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_load.c.obj
+[ 53%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_log_printf.c.obj
+[ 54%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_main.c.obj
+[ 55%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_lseek.c.obj
+[ 58%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_release_fd.c.obj
+[ 58%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_read.c.obj
+[ 58%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_remap_cached.c.obj
+[ 59%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_remap_uncached.c.obj
+[ 60%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_sbrk.c.obj
+[ 62%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_times.c.obj
+[ 63%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_rename.c.obj
+[ 62%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_settod.c.obj
+[ 67%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_open.c.obj
+[ 67%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_malloc_lock.c.obj
+[ 67%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_printf.c.obj
+[ 68%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_tick.c.obj
+[ 69%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_putchar.c.obj
+[ 70%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_tls.c.obj
+[ 71%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_stat.c.obj
+[ 72%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_putcharbuf.c.obj
+[ 73%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_putstr.c.obj
+[ 74%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_uncached_free.c.obj
+[ 75%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_unlink.c.obj
+[ 76%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_uncached_malloc.c.obj
+[ 77%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_usleep.c.obj
+[ 79%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_vic_isr_wrapper.c.obj
+[ 79%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_wait.c.obj
+[ 80%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_inf.c.obj
+[ 81%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_msg.c.obj
+[ 82%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_dfl.c.obj
+[ 83%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_write.c.obj
+[ 84%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_niosv.c.obj
+[ 85%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_platform_api_niosv.c.obj
+[ 86%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/mtimer.c.obj
+[ 87%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_niosv_irq.c.obj
+[ 88%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/alt_sys_init.c.obj
+[ 89%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_fd.c.obj
+[ 90%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_init.c.obj
+[ 91%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_read.c.obj
+[ 93%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_write.c.obj
+[ 93%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_ioctl.c.obj
+[ 94%] Linking C static library libhal2_bsp.a
+[ 94%] Built target hal2_bsp
+[ 95%] Building C object CMakeFiles/hallo.elf.dir/hallo.c.obj
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c: In function 'main':
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c:24:18: warning: unused variable 'mask' [-Wunused-variable]
+   24 |   unsigned short mask;
+      |                  ^~~~
+[ 96%] Linking C executable hallo.elf
+[ 96%] Built target hallo.elf
+[ 98%] Creating hallo.elf.objdump.
+[ 98%] Reporting memory available for stack + heap in hallo.elf.
+[100%] Creating ram.hex.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+[100%] Built target create-objdump
+hallo.elf
+ * 96.06 KB - Program size (code + initialized data).
+ * 153.71 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+12:25:57 **** Clean-only build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j clean 
+12:25:57 **** Incremental Build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[  6%] Building ASM object CMakeFiles/hal2_bsp.dir/HAL/src/machine_trap.S.obj
+[  6%] Building ASM object CMakeFiles/hal2_bsp.dir/HAL/src/alt_mcount.S.obj
+[  6%] Building ASM object CMakeFiles/hal2_bsp.dir/HAL/src/alt_log_macro.S.obj
+[  6%] Building ASM object CMakeFiles/hal2_bsp.dir/HAL/src/crt0.S.obj
+[  6%] Building ASM object CMakeFiles/hal2_bsp.dir/HAL/src/alt_vic_vector_table.S.obj
+[  6%] Building ASM object CMakeFiles/hal2_bsp.dir/HAL/src/alt_ecc_exception_entry.S.obj
+[  8%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_alarm_start.c.obj
+[  8%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_busy_sleep.c.obj
+[  9%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_close.c.obj
+[ 10%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush.c.obj
+[ 11%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush_all.c.obj
+[ 13%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush_no_writeback.c.obj
+[ 14%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_dev_llist_insert.c.obj
+[ 15%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_dev.c.obj
+[ 16%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_dma_rxchan_open.c.obj
+[ 17%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_dma_txchan_open.c.obj
+[ 18%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_do_ctors.c.obj
+[ 21%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_ecc_error_inject.c.obj
+[ 21%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_ecc_exception.c.obj
+[ 21%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_do_dtors.c.obj
+[ 22%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_env_lock.c.obj
+[ 26%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_errno.c.obj
+[ 26%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_exit.c.obj
+[ 26%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_environ.c.obj
+[ 27%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_fcntl.c.obj
+[ 28%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_execve.c.obj
+[ 30%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_fd_unlock.c.obj
+[ 30%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_fd_lock.c.obj
+[ 31%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_find_dev.c.obj
+[ 32%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_find_file.c.obj
+[ 33%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_fork.c.obj
+[ 34%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_flash_dev.c.obj
+[ 35%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_fs_reg.c.obj
+[ 36%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_fstat.c.obj
+[ 38%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_getchar.c.obj
+[ 39%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_get_fd.c.obj
+[ 40%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_gmon.c.obj
+[ 42%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_getpid.c.obj
+[ 42%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_gettod.c.obj
+[ 43%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_icache_flush.c.obj
+[ 44%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_icache_flush_all.c.obj
+[ 45%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_iic.c.obj
+[ 47%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_io_redirect.c.obj
+[ 47%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_instruction_exception_register.c.obj
+[ 48%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_iic_isr_register.c.obj
+[ 50%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_ioctl.c.obj
+[ 52%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_kill.c.obj
+[ 52%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_isatty.c.obj
+[ 53%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_irq_handler.c.obj
+[ 54%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_link.c.obj
+[ 55%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_load.c.obj
+[ 56%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_log_printf.c.obj
+[ 57%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_main.c.obj
+[ 58%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_lseek.c.obj
+[ 59%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_malloc_lock.c.obj
+[ 60%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_open.c.obj
+[ 61%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_printf.c.obj
+[ 63%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_putchar.c.obj
+[ 66%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_read.c.obj
+[ 66%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_putcharbuf.c.obj
+[ 66%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_putstr.c.obj
+[ 67%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_remap_cached.c.obj
+[ 69%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_remap_uncached.c.obj
+[ 69%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_release_fd.c.obj
+[ 70%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_sbrk.c.obj
+[ 71%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_rename.c.obj
+[ 72%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_settod.c.obj
+[ 73%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_stat.c.obj
+[ 76%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_uncached_free.c.obj
+[ 76%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_tick.c.obj
+[ 77%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_tls.c.obj
+[ 78%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_times.c.obj
+[ 79%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_uncached_malloc.c.obj
+[ 82%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_msg.c.obj
+[ 82%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_niosv.c.obj
+[ 82%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_platform_api_niosv.c.obj
+[ 84%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/intel_niosv_irq.c.obj
+[ 84%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_unlink.c.obj
+[ 86%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/mtimer.c.obj
+[ 86%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_usleep.c.obj
+[ 88%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_inf.c.obj
+[ 91%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_wait.c.obj
+[ 91%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_vic_isr_wrapper.c.obj
+[ 91%] Building C object CMakeFiles/hal2_bsp.dir/alt_sys_init.c.obj
+[ 92%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_write.c.obj
+[ 93%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_dfl.c.obj
+[ 94%] Building C object CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_init.c.obj
+[ 95%] Building C object CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_fd.c.obj
+[ 96%] Building C object CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_ioctl.c.obj
+[ 97%] Building C object CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_write.c.obj
+[ 98%] Building C object CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_read.c.obj
+[100%] Linking C static library libhal2_bsp.a
+[100%] Built target hal2_bsp
+12:26:18 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[ 97%] Reporting memory available for stack + heap in hallo.elf.
+[ 98%] Creating ram.hex.
+[100%] Built target create-objdump
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 96.06 KB - Program size (code + initialized data).
+ * 153.71 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+14:29:53 **** Clean-only build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j clean 
+14:29:53 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[  4%] Building ASM object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_mcount.S.obj
+[  4%] Building ASM object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_log_macro.S.obj
+[  4%] Building ASM object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_ecc_exception_entry.S.obj
+[  5%] Building ASM object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_vic_vector_table.S.obj
+[  5%] Building ASM object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/crt0.S.obj
+[  6%] Building ASM object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/machine_trap.S.obj
+[  7%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_alarm_start.c.obj
+[  8%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_busy_sleep.c.obj
+[  9%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush.c.obj
+[ 10%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_close.c.obj
+[ 11%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush_all.c.obj
+[ 12%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush_no_writeback.c.obj
+[ 13%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dev.c.obj
+[ 14%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dev_llist_insert.c.obj
+[ 16%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dma_rxchan_open.c.obj
+[ 16%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dma_txchan_open.c.obj
+[ 17%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_do_ctors.c.obj
+[ 18%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_do_dtors.c.obj
+[ 19%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_env_lock.c.obj
+[ 21%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_ecc_exception.c.obj
+[ 21%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_ecc_error_inject.c.obj
+[ 23%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_execve.c.obj
+[ 23%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_environ.c.obj
+[ 25%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fd_lock.c.obj
+[ 25%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_exit.c.obj
+[ 26%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_find_dev.c.obj
+[ 27%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fd_unlock.c.obj
+[ 28%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_errno.c.obj
+[ 29%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_find_file.c.obj
+[ 30%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fcntl.c.obj
+[ 31%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_flash_dev.c.obj
+[ 32%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fork.c.obj
+[ 34%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fs_reg.c.obj
+[ 36%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_get_fd.c.obj
+[ 35%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fstat.c.obj
+[ 37%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_getchar.c.obj
+[ 38%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_getpid.c.obj
+[ 39%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_gettod.c.obj
+[ 40%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_gmon.c.obj
+[ 41%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_icache_flush.c.obj
+[ 42%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_iic.c.obj
+[ 43%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_icache_flush_all.c.obj
+[ 44%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_io_redirect.c.obj
+[ 45%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_ioctl.c.obj
+[ 47%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_instruction_exception_register.c.obj
+[ 47%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_iic_isr_register.c.obj
+[ 48%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_irq_handler.c.obj
+[ 49%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_isatty.c.obj
+[ 51%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_link.c.obj
+[ 51%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_kill.c.obj
+[ 52%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_load.c.obj
+[ 53%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_log_printf.c.obj
+[ 54%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_printf.c.obj
+[ 55%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_malloc_lock.c.obj
+[ 56%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_open.c.obj
+[ 57%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_main.c.obj
+[ 60%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_read.c.obj
+[ 60%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_lseek.c.obj
+[ 58%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_putcharbuf.c.obj
+[ 61%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_putchar.c.obj
+[ 62%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_release_fd.c.obj
+[ 63%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_putstr.c.obj
+[ 64%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_remap_cached.c.obj
+[ 65%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_remap_uncached.c.obj
+[ 67%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_rename.c.obj
+[ 68%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_sbrk.c.obj
+[ 69%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_settod.c.obj
+[ 70%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_stat.c.obj
+[ 71%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_tick.c.obj
+[ 73%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_uncached_free.c.obj
+[ 73%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_tls.c.obj
+[ 74%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_uncached_malloc.c.obj
+[ 75%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_vic_isr_wrapper.c.obj
+[ 76%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_usleep.c.obj
+[ 78%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_wait.c.obj
+[ 78%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_write.c.obj
+[ 80%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_unlink.c.obj
+[ 80%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_times.c.obj
+[ 81%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_inf.c.obj
+[ 82%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_msg.c.obj
+[ 83%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_niosv.c.obj
+[ 84%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_dfl.c.obj
+[ 85%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_platform_api_niosv.c.obj
+[ 86%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/alt_sys_init.c.obj
+[ 87%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/mtimer.c.obj
+[ 88%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_niosv_irq.c.obj
+[ 89%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_init.c.obj
+[ 90%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_fd.c.obj
+[ 91%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_read.c.obj
+[ 93%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_write.c.obj
+[ 93%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_ioctl.c.obj
+[ 94%] Linking C static library libhal2_bsp.a
+[ 94%] Built target hal2_bsp
+[ 95%] Building C object CMakeFiles/hallo.elf.dir/hallo.c.obj
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c: In function 'main':
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c:25:18: warning: unused variable 'last_seen' [-Wunused-variable]
+   25 |   unsigned short last_seen = 0x0008;
+      |                  ^~~~~~~~~
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c:24:18: warning: unused variable 'mask' [-Wunused-variable]
+   24 |   unsigned short mask;
+      |                  ^~~~
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c:23:18: warning: variable 'mcu_settings' set but not used [-Wunused-but-set-variable]
+   23 |   unsigned short mcu_settings;
+      |                  ^~~~~~~~~~~~
+[ 96%] Linking C executable hallo.elf
+[ 96%] Built target hallo.elf
+[ 98%] Reporting memory available for stack + heap in hallo.elf.
+[ 98%] Creating hallo.elf.objdump.
+[100%] Creating ram.hex.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+[100%] Built target create-objdump
+hallo.elf
+ * 96.32 KB - Program size (code + initialized data).
+ * 153.45 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+14:31:04 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 95%] Building C object CMakeFiles/hallo.elf.dir/hallo.c.obj
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c: In function 'main':
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c:24:18: warning: unused variable 'mask' [-Wunused-variable]
+   24 |   unsigned short mask;
+      |                  ^~~~
+[ 96%] Linking C executable hallo.elf
+[ 96%] Built target hallo.elf
+[100%] Reporting memory available for stack + heap in hallo.elf.
+[100%] Creating ram.hex.
+[100%] Creating hallo.elf.objdump.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+[100%] Built target create-objdump
+hallo.elf
+ * 96.39 KB - Program size (code + initialized data).
+ * 153.38 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+14:31:04 **** Clean-only build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j clean 
+14:31:04 **** Incremental Build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[  6%] Building ASM object CMakeFiles/hal2_bsp.dir/HAL/src/crt0.S.obj
+[  5%] Building ASM object CMakeFiles/hal2_bsp.dir/HAL/src/alt_mcount.S.obj
+[  5%] Building ASM object CMakeFiles/hal2_bsp.dir/HAL/src/alt_ecc_exception_entry.S.obj
+[  5%] Building ASM object CMakeFiles/hal2_bsp.dir/HAL/src/alt_log_macro.S.obj
+[  5%] Building ASM object CMakeFiles/hal2_bsp.dir/HAL/src/alt_vic_vector_table.S.obj
+[  6%] Building ASM object CMakeFiles/hal2_bsp.dir/HAL/src/machine_trap.S.obj
+[  7%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_alarm_start.c.obj
+[  8%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_busy_sleep.c.obj
+[  9%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_close.c.obj
+[ 10%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush.c.obj
+[ 11%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush_all.c.obj
+[ 13%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush_no_writeback.c.obj
+[ 14%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_dev.c.obj
+[ 15%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_dev_llist_insert.c.obj
+[ 16%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_do_ctors.c.obj
+[ 19%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_do_dtors.c.obj
+[ 19%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_dma_txchan_open.c.obj
+[ 19%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_dma_rxchan_open.c.obj
+[ 21%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_ecc_exception.c.obj
+[ 21%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_ecc_error_inject.c.obj
+[ 22%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_environ.c.obj
+[ 23%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_env_lock.c.obj
+[ 25%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_errno.c.obj
+[ 26%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_exit.c.obj
+[ 27%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_execve.c.obj
+[ 28%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_fd_lock.c.obj
+[ 29%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_fcntl.c.obj
+[ 30%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_fd_unlock.c.obj
+[ 31%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_find_dev.c.obj
+[ 32%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_flash_dev.c.obj
+[ 34%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_find_file.c.obj
+[ 34%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_fork.c.obj
+[ 35%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_fs_reg.c.obj
+[ 36%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_fstat.c.obj
+[ 39%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_getchar.c.obj
+[ 39%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_get_fd.c.obj
+[ 41%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_getpid.c.obj
+[ 41%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_gettod.c.obj
+[ 44%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_io_redirect.c.obj
+[ 44%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_icache_flush_all.c.obj
+[ 44%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_iic.c.obj
+[ 45%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_instruction_exception_register.c.obj
+[ 47%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_irq_handler.c.obj
+[ 48%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_link.c.obj
+[ 50%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_iic_isr_register.c.obj
+[ 52%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_icache_flush.c.obj
+[ 52%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_gmon.c.obj
+[ 52%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_ioctl.c.obj
+[ 54%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_load.c.obj
+[ 55%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_isatty.c.obj
+[ 55%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_kill.c.obj
+[ 56%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_lseek.c.obj
+[ 57%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_main.c.obj
+[ 58%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_open.c.obj
+[ 61%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_printf.c.obj
+[ 61%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_putchar.c.obj
+[ 63%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_malloc_lock.c.obj
+[ 59%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_log_printf.c.obj
+[ 65%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_putcharbuf.c.obj
+[ 65%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_putstr.c.obj
+[ 66%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_read.c.obj
+[ 67%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_release_fd.c.obj
+[ 68%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_remap_cached.c.obj
+[ 69%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_rename.c.obj
+[ 70%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_remap_uncached.c.obj
+[ 71%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_sbrk.c.obj
+[ 75%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_times.c.obj
+[ 75%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_tick.c.obj
+[ 75%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_settod.c.obj
+[ 77%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_stat.c.obj
+[ 77%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_uncached_free.c.obj
+[ 78%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_tls.c.obj
+[ 79%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_uncached_malloc.c.obj
+[ 80%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_unlink.c.obj
+[ 82%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_vic_isr_wrapper.c.obj
+[ 83%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_wait.c.obj
+[ 82%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_usleep.c.obj
+[ 84%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_write.c.obj
+[ 85%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_dfl.c.obj
+[ 86%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_inf.c.obj
+[ 88%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_msg.c.obj
+[ 89%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_platform_api_niosv.c.obj
+[ 90%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/intel_niosv_irq.c.obj
+[ 91%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_niosv.c.obj
+[ 94%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/mtimer.c.obj
+[ 94%] Building C object CMakeFiles/hal2_bsp.dir/alt_sys_init.c.obj
+[ 94%] Building C object CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_fd.c.obj
+[ 95%] Building C object CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_init.c.obj
+[ 96%] Building C object CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_ioctl.c.obj
+[ 97%] Building C object CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_read.c.obj
+[ 98%] Building C object CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_write.c.obj
+[100%] Linking C static library libhal2_bsp.a
+[100%] Built target hal2_bsp
+14:31:34 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[100%] Built target create-objdump
+[100%] Reporting memory available for stack + heap in hallo.elf.
+[100%] Creating ram.hex.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 96.39 KB - Program size (code + initialized data).
+ * 153.38 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+14:33:19 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 95%] Building C object CMakeFiles/hallo.elf.dir/hallo.c.obj
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c: In function 'main':
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c:24:18: warning: unused variable 'mask' [-Wunused-variable]
+   24 |   unsigned short mask;
+      |                  ^~~~
+[ 96%] Linking C executable hallo.elf
+[ 96%] Built target hallo.elf
+[100%] Reporting memory available for stack + heap in hallo.elf.
+[100%] Creating ram.hex.
+[100%] Creating hallo.elf.objdump.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+[100%] Built target create-objdump
+hallo.elf
+ * 96.08 KB - Program size (code + initialized data).
+ * 153.70 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+14:33:19 **** Incremental Build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[100%] Built target hal2_bsp
+14:33:36 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[100%] Creating ram.hex.
+[100%] Built target create-objdump
+[100%] Reporting memory available for stack + heap in hallo.elf.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 96.08 KB - Program size (code + initialized data).
+ * 153.70 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+14:34:43 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 95%] Building C object CMakeFiles/hallo.elf.dir/hallo.c.obj
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c: In function 'main':
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c:24:18: warning: unused variable 'mask' [-Wunused-variable]
+   24 |   unsigned short mask;
+      |                  ^~~~
+[ 96%] Linking C executable hallo.elf
+[ 96%] Built target hallo.elf
+[ 98%] Creating hallo.elf.objdump.
+[ 98%] Creating ram.hex.
+[100%] Reporting memory available for stack + heap in hallo.elf.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+[100%] Built target create-objdump
+hallo.elf
+ * 96.08 KB - Program size (code + initialized data).
+ * 153.70 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+14:34:43 **** Incremental Build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[100%] Built target hal2_bsp
+14:34:57 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[100%] Built target create-objdump
+[100%] Reporting memory available for stack + heap in hallo.elf.
+[100%] Creating ram.hex.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 96.08 KB - Program size (code + initialized data).
+ * 153.70 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+10:17:42 **** Clean-only build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j clean 
+10:17:42 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[  6%] Building ASM object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_log_macro.S.obj
+[  6%] Building ASM object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_vic_vector_table.S.obj
+[  6%] Building ASM object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_mcount.S.obj
+[  6%] Building ASM object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_ecc_exception_entry.S.obj
+[  6%] Building ASM object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/machine_trap.S.obj
+[  6%] Building ASM object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/crt0.S.obj
+[  7%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_alarm_start.c.obj
+[  8%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_busy_sleep.c.obj
+[ 10%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush_all.c.obj
+[ 10%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_close.c.obj
+[ 11%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush.c.obj
+[ 12%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dev.c.obj
+[ 13%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dma_rxchan_open.c.obj
+[ 14%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush_no_writeback.c.obj
+[ 15%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dev_llist_insert.c.obj
+[ 16%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_do_ctors.c.obj
+[ 18%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_do_dtors.c.obj
+[ 18%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dma_txchan_open.c.obj
+[ 19%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_ecc_error_inject.c.obj
+[ 20%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_ecc_exception.c.obj
+[ 21%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_env_lock.c.obj
+[ 22%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_environ.c.obj
+[ 24%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_errno.c.obj
+[ 24%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fcntl.c.obj
+[ 25%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_execve.c.obj
+[ 26%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_exit.c.obj
+[ 27%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fd_lock.c.obj
+[ 28%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fd_unlock.c.obj
+[ 32%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fs_reg.c.obj
+[ 32%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fork.c.obj
+[ 32%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_find_file.c.obj
+[ 32%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_find_dev.c.obj
+[ 34%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fstat.c.obj
+[ 35%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_flash_dev.c.obj
+[ 36%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_getchar.c.obj
+[ 38%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_getpid.c.obj
+[ 38%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_get_fd.c.obj
+[ 40%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_gettod.c.obj
+[ 40%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_gmon.c.obj
+[ 41%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_icache_flush.c.obj
+[ 42%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_icache_flush_all.c.obj
+[ 43%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_iic_isr_register.c.obj
+[ 44%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_instruction_exception_register.c.obj
+[ 45%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_iic.c.obj
+[ 46%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_io_redirect.c.obj
+[ 47%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_ioctl.c.obj
+[ 49%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_isatty.c.obj
+[ 48%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_irq_handler.c.obj
+[ 50%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_log_printf.c.obj
+[ 53%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_kill.c.obj
+[ 51%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_load.c.obj
+[ 53%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_link.c.obj
+[ 54%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_main.c.obj
+[ 56%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_malloc_lock.c.obj
+[ 56%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_lseek.c.obj
+[ 57%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_printf.c.obj
+[ 58%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_open.c.obj
+[ 59%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_putchar.c.obj
+[ 61%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_release_fd.c.obj
+[ 61%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_putcharbuf.c.obj
+[ 62%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_rename.c.obj
+[ 63%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_uncached_malloc.c.obj
+[ 65%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_uncached_free.c.obj
+[ 65%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_unlink.c.obj
+[ 67%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_tick.c.obj
+[ 68%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_settod.c.obj
+[ 69%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_read.c.obj
+[ 70%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_sbrk.c.obj
+[ 71%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_usleep.c.obj
+[ 72%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_vic_isr_wrapper.c.obj
+[ 73%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_write.c.obj
+[ 74%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_remap_uncached.c.obj
+[ 75%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_dfl.c.obj
+[ 76%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_wait.c.obj
+[ 77%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_inf.c.obj
+[ 78%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_stat.c.obj
+[ 79%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_msg.c.obj
+[ 80%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_putstr.c.obj
+[ 81%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_tls.c.obj
+[ 83%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_niosv.c.obj
+[ 85%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_platform_api_niosv.c.obj
+[ 83%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_remap_cached.c.obj
+[ 85%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_times.c.obj
+[ 86%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_niosv_irq.c.obj
+[ 87%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/mtimer.c.obj
+[ 89%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_read.c.obj
+[ 89%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/alt_sys_init.c.obj
+[ 90%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_write.c.obj
+[ 91%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_init.c.obj
+[ 93%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_ioctl.c.obj
+[ 93%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_fd.c.obj
+[ 94%] Linking C static library libhal2_bsp.a
+[ 94%] Built target hal2_bsp
+[ 95%] Building C object CMakeFiles/hallo.elf.dir/hallo.c.obj
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c: In function 'main':
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c:24:18: warning: unused variable 'mask' [-Wunused-variable]
+   24 |   unsigned short mask;
+      |                  ^~~~
+[ 96%] Linking C executable hallo.elf
+[ 96%] Built target hallo.elf
+[ 98%] Creating hallo.elf.objdump.
+[ 98%] Creating ram.hex.
+[100%] Reporting memory available for stack + heap in hallo.elf.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+[100%] Built target create-objdump
+hallo.elf
+ * 96.08 KB - Program size (code + initialized data).
+ * 153.70 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+10:25:52 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[100%] Built target create-objdump
+[100%] Reporting memory available for stack + heap in hallo.elf.
+[100%] Creating ram.hex.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 96.08 KB - Program size (code + initialized data).
+ * 153.70 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+10:25:52 **** Clean-only build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j clean 
+10:25:52 **** Incremental Build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[  5%] Building ASM object CMakeFiles/hal2_bsp.dir/HAL/src/alt_ecc_exception_entry.S.obj
+[  5%] Building ASM object CMakeFiles/hal2_bsp.dir/HAL/src/alt_mcount.S.obj
+[  5%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_alarm_start.c.obj
+[  5%] Building ASM object CMakeFiles/hal2_bsp.dir/HAL/src/alt_log_macro.S.obj
+[  5%] Building ASM object CMakeFiles/hal2_bsp.dir/HAL/src/alt_vic_vector_table.S.obj
+[  7%] Building ASM object CMakeFiles/hal2_bsp.dir/HAL/src/crt0.S.obj
+[  7%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_busy_sleep.c.obj
+[  8%] Building ASM object CMakeFiles/hal2_bsp.dir/HAL/src/machine_trap.S.obj
+[  9%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_close.c.obj
+[ 10%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush.c.obj
+[ 11%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush_all.c.obj
+[ 13%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush_no_writeback.c.obj
+[ 14%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_dev.c.obj
+[ 15%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_dev_llist_insert.c.obj
+[ 16%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_dma_rxchan_open.c.obj
+[ 17%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_dma_txchan_open.c.obj
+[ 19%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_do_ctors.c.obj
+[ 19%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_ecc_error_inject.c.obj
+[ 20%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_ecc_exception.c.obj
+[ 22%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_environ.c.obj
+[ 22%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_do_dtors.c.obj
+[ 23%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_env_lock.c.obj
+[ 25%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_errno.c.obj
+[ 27%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_execve.c.obj
+[ 27%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_exit.c.obj
+[ 28%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_fcntl.c.obj
+[ 29%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_fd_lock.c.obj
+[ 31%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_fd_unlock.c.obj
+[ 31%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_find_dev.c.obj
+[ 32%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_find_file.c.obj
+[ 33%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_flash_dev.c.obj
+[ 34%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_fork.c.obj
+[ 35%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_fs_reg.c.obj
+[ 36%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_fstat.c.obj
+[ 38%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_get_fd.c.obj
+[ 40%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_getpid.c.obj
+[ 40%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_getchar.c.obj
+[ 41%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_gettod.c.obj
+[ 42%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_gmon.c.obj
+[ 43%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_icache_flush.c.obj
+[ 44%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_icache_flush_all.c.obj
+[ 46%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_iic_isr_register.c.obj
+[ 46%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_iic.c.obj
+[ 47%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_instruction_exception_register.c.obj
+[ 50%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_ioctl.c.obj
+[ 50%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_io_redirect.c.obj
+[ 51%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_irq_handler.c.obj
+[ 52%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_isatty.c.obj
+[ 53%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_link.c.obj
+[ 57%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_load.c.obj
+[ 57%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_log_printf.c.obj
+[ 57%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_lseek.c.obj
+[ 57%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_kill.c.obj
+[ 58%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_main.c.obj
+[ 59%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_malloc_lock.c.obj
+[ 60%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_open.c.obj
+[ 61%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_printf.c.obj
+[ 63%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_putcharbuf.c.obj
+[ 64%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_putchar.c.obj
+[ 65%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_putstr.c.obj
+[ 66%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_read.c.obj
+[ 67%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_release_fd.c.obj
+[ 68%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_remap_cached.c.obj
+[ 70%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_rename.c.obj
+[ 70%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_remap_uncached.c.obj
+[ 71%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_sbrk.c.obj
+[ 72%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_settod.c.obj
+[ 73%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_stat.c.obj
+[ 78%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_tls.c.obj
+[ 78%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_uncached_free.c.obj
+[ 78%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_times.c.obj
+[ 78%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_tick.c.obj
+[ 79%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_uncached_malloc.c.obj
+[ 80%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_unlink.c.obj
+[ 81%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_usleep.c.obj
+[ 82%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_vic_isr_wrapper.c.obj
+[ 83%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_wait.c.obj
+[ 84%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/alt_write.c.obj
+[ 85%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_dfl.c.obj
+[ 86%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_inf.c.obj
+[ 88%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_msg.c.obj
+[ 90%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_platform_api_niosv.c.obj
+[ 90%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_niosv.c.obj
+[ 91%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/intel_niosv_irq.c.obj
+[ 92%] Building C object CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_fd.c.obj
+[ 94%] Building C object CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_init.c.obj
+[ 94%] Building C object CMakeFiles/hal2_bsp.dir/alt_sys_init.c.obj
+[ 96%] Building C object CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_ioctl.c.obj
+[ 96%] Building C object CMakeFiles/hal2_bsp.dir/HAL/src/mtimer.c.obj
+[ 98%] Building C object CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_read.c.obj
+[ 98%] Building C object CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_write.c.obj
+[100%] Linking C static library libhal2_bsp.a
+[100%] Built target hal2_bsp
+10:25:58 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[ 98%] Creating ram.hex.
+[ 98%] Built target create-objdump
+[100%] Reporting memory available for stack + heap in hallo.elf.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 96.08 KB - Program size (code + initialized data).
+ * 153.70 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+10:28:18 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 95%] Building C object CMakeFiles/hallo.elf.dir/hallo.c.obj
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c: In function 'main':
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c:23:18: warning: unused variable 'mask' [-Wunused-variable]
+   23 |   unsigned short mask;
+      |                  ^~~~
+[ 96%] Linking C executable hallo.elf
+[ 96%] Built target hallo.elf
+[100%] Reporting memory available for stack + heap in hallo.elf.
+[100%] Creating ram.hex.
+[100%] Creating hallo.elf.objdump.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+[100%] Built target create-objdump
+hallo.elf
+ * 96.07 KB - Program size (code + initialized data).
+ * 153.70 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+10:28:19 **** Incremental Build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[100%] Built target hal2_bsp
+10:28:29 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[ 98%] Built target create-objdump
+[ 98%] Creating ram.hex.
+[100%] Reporting memory available for stack + heap in hallo.elf.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 96.07 KB - Program size (code + initialized data).
+ * 153.70 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+10:29:17 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 95%] Building C object CMakeFiles/hallo.elf.dir/hallo.c.obj
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c: In function 'main':
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c:23:18: warning: unused variable 'mask' [-Wunused-variable]
+   23 |   unsigned short mask;
+      |                  ^~~~
+[ 96%] Linking C executable hallo.elf
+[ 96%] Built target hallo.elf
+[ 98%] Creating hallo.elf.objdump.
+[ 98%] Creating ram.hex.
+[100%] Reporting memory available for stack + heap in hallo.elf.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+[100%] Built target create-objdump
+hallo.elf
+ * 96.07 KB - Program size (code + initialized data).
+ * 153.70 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+10:29:17 **** Incremental Build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[100%] Built target hal2_bsp
+10:29:25 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[100%] Creating ram.hex.
+[100%] Built target create-objdump
+[100%] Reporting memory available for stack + heap in hallo.elf.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 96.07 KB - Program size (code + initialized data).
+ * 153.70 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+10:30:52 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 95%] Building C object CMakeFiles/hallo.elf.dir/hallo.c.obj
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c: In function 'main':
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c:23:18: warning: unused variable 'mask' [-Wunused-variable]
+   23 |   unsigned short mask;
+      |                  ^~~~
+[ 96%] Linking C executable hallo.elf
+[ 96%] Built target hallo.elf
+[100%] Reporting memory available for stack + heap in hallo.elf.
+[100%] Creating hallo.elf.objdump.
+[100%] Creating ram.hex.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+[100%] Built target create-objdump
+hallo.elf
+ * 96.08 KB - Program size (code + initialized data).
+ * 153.70 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+10:30:52 **** Incremental Build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[100%] Built target hal2_bsp
+10:30:55 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[100%] Creating ram.hex.
+[100%] Reporting memory available for stack + heap in hallo.elf.
+[100%] Built target create-objdump
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 96.08 KB - Program size (code + initialized data).
+ * 153.70 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+10:34:18 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 95%] Building C object CMakeFiles/hallo.elf.dir/hallo.c.obj
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c: In function 'main':
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c:23:18: warning: unused variable 'mask' [-Wunused-variable]
+   23 |   unsigned short mask;
+      |                  ^~~~
+[ 96%] Linking C executable hallo.elf
+[ 96%] Built target hallo.elf
+[100%] Creating hallo.elf.objdump.
+[100%] Creating ram.hex.
+[100%] Reporting memory available for stack + heap in hallo.elf.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+[100%] Built target create-objdump
+hallo.elf
+ * 96.08 KB - Program size (code + initialized data).
+ * 153.70 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+10:34:18 **** Incremental Build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[100%] Built target hal2_bsp
+10:34:24 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[ 97%] Creating ram.hex.
+[ 98%] Reporting memory available for stack + heap in hallo.elf.
+[100%] Built target create-objdump
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 96.08 KB - Program size (code + initialized data).
+ * 153.70 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+10:35:21 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 95%] Building C object CMakeFiles/hallo.elf.dir/hallo.c.obj
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c: In function 'main':
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c:23:18: warning: unused variable 'mask' [-Wunused-variable]
+   23 |   unsigned short mask;
+      |                  ^~~~
+[ 96%] Linking C executable hallo.elf
+[ 96%] Built target hallo.elf
+[100%] Creating ram.hex.
+[100%] Creating hallo.elf.objdump.
+[100%] Reporting memory available for stack + heap in hallo.elf.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+[100%] Built target create-objdump
+hallo.elf
+ * 96.08 KB - Program size (code + initialized data).
+ * 153.70 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+10:35:21 **** Incremental Build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[100%] Built target hal2_bsp
+10:35:26 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[ 97%] Reporting memory available for stack + heap in hallo.elf.
+[100%] Built target create-objdump
+[100%] Creating ram.hex.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 96.08 KB - Program size (code + initialized data).
+ * 153.70 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+10:38:27 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 95%] Building C object CMakeFiles/hallo.elf.dir/hallo.c.obj
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c: In function 'main':
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c:23:18: warning: unused variable 'mask' [-Wunused-variable]
+   23 |   unsigned short mask;
+      |                  ^~~~
+[ 96%] Linking C executable hallo.elf
+[ 96%] Built target hallo.elf
+[ 98%] Reporting memory available for stack + heap in hallo.elf.
+[ 98%] Creating hallo.elf.objdump.
+[100%] Creating ram.hex.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+[100%] Built target create-objdump
+hallo.elf
+ * 96.07 KB - Program size (code + initialized data).
+ * 153.70 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+10:38:28 **** Incremental Build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[100%] Built target hal2_bsp
+10:38:30 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[100%] Reporting memory available for stack + heap in hallo.elf.
+[100%] Built target create-objdump
+[100%] Creating ram.hex.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 96.07 KB - Program size (code + initialized data).
+ * 153.70 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+10:39:14 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[ 97%] Reporting memory available for stack + heap in hallo.elf.
+[ 98%] Built target create-objdump
+[100%] Creating ram.hex.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 96.07 KB - Program size (code + initialized data).
+ * 153.70 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+10:51:56 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 95%] Building C object CMakeFiles/hallo.elf.dir/hallo.c.obj
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c: In function 'main':
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c:23:18: warning: unused variable 'mask' [-Wunused-variable]
+   23 |   unsigned short mask;
+      |                  ^~~~
+[ 96%] Linking C executable hallo.elf
+[ 96%] Built target hallo.elf
+[ 98%] Reporting memory available for stack + heap in hallo.elf.
+[ 98%] Creating ram.hex.
+[100%] Creating hallo.elf.objdump.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+[100%] Built target create-objdump
+hallo.elf
+ * 96.11 KB - Program size (code + initialized data).
+ * 153.66 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+10:51:57 **** Incremental Build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[100%] Built target hal2_bsp
+10:51:59 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[ 98%] Creating ram.hex.
+[ 98%] Built target create-objdump
+[100%] Reporting memory available for stack + heap in hallo.elf.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 96.11 KB - Program size (code + initialized data).
+ * 153.66 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+11:01:20 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 95%] Building C object CMakeFiles/hallo.elf.dir/hallo.c.obj
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c: In function 'main':
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c:23:18: warning: unused variable 'mask' [-Wunused-variable]
+   23 |   unsigned short mask;
+      |                  ^~~~
+[ 96%] Linking C executable hallo.elf
+[ 96%] Built target hallo.elf
+[ 97%] Creating ram.hex.
+[ 98%] Creating hallo.elf.objdump.
+[100%] Reporting memory available for stack + heap in hallo.elf.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+[100%] Built target create-objdump
+hallo.elf
+ * 96.46 KB - Program size (code + initialized data).
+ * 153.30 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+11:01:30 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[100%] Creating ram.hex.
+[100%] Built target create-objdump
+[100%] Reporting memory available for stack + heap in hallo.elf.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 96.46 KB - Program size (code + initialized data).
+ * 153.30 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+11:01:30 **** Incremental Build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[100%] Built target hal2_bsp
+11:01:32 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[ 97%] Reporting memory available for stack + heap in hallo.elf.
+[ 98%] Built target create-objdump
+[100%] Creating ram.hex.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 96.46 KB - Program size (code + initialized data).
+ * 153.30 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+11:02:13 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[ 97%] Built target create-objdump
+[ 98%] Reporting memory available for stack + heap in hallo.elf.
+[100%] Creating ram.hex.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 96.46 KB - Program size (code + initialized data).
+ * 153.30 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+11:13:26 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 95%] Building C object CMakeFiles/hallo.elf.dir/hallo.c.obj
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c: In function 'main':
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c:23:18: warning: unused variable 'mask' [-Wunused-variable]
+   23 |   unsigned short mask;
+      |                  ^~~~
+[ 96%] Linking C executable hallo.elf
+[ 96%] Built target hallo.elf
+[ 97%] Creating ram.hex.
+[ 98%] Creating hallo.elf.objdump.
+[100%] Reporting memory available for stack + heap in hallo.elf.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+[100%] Built target create-objdump
+hallo.elf
+ * 96.46 KB - Program size (code + initialized data).
+ * 153.30 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+11:27:26 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[ 97%] Reporting memory available for stack + heap in hallo.elf.
+[100%] Built target create-objdump
+[100%] Creating ram.hex.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 96.46 KB - Program size (code + initialized data).
+ * 153.30 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+11:38:27 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[ 97%] Built target create-objdump
+[ 98%] Reporting memory available for stack + heap in hallo.elf.
+[100%] Creating ram.hex.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 96.46 KB - Program size (code + initialized data).
+ * 153.30 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+11:44:07 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 95%] Building C object CMakeFiles/hallo.elf.dir/hallo.c.obj
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c: In function 'main':
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c:23:18: warning: unused variable 'mask' [-Wunused-variable]
+   23 |   unsigned short mask;
+      |                  ^~~~
+[ 96%] Linking C executable hallo.elf
+[ 96%] Built target hallo.elf
+[ 98%] Creating ram.hex.
+[ 98%] Reporting memory available for stack + heap in hallo.elf.
+[100%] Creating hallo.elf.objdump.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+[100%] Built target create-objdump
+hallo.elf
+ * 96.48 KB - Program size (code + initialized data).
+ * 153.29 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+11:44:07 **** Incremental Build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[100%] Built target hal2_bsp
+11:44:09 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[ 97%] Reporting memory available for stack + heap in hallo.elf.
+[ 98%] Creating ram.hex.
+[100%] Built target create-objdump
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 96.48 KB - Program size (code + initialized data).
+ * 153.29 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+11:45:04 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 95%] Building C object CMakeFiles/hallo.elf.dir/hallo.c.obj
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c: In function 'main':
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c:23:18: warning: unused variable 'mask' [-Wunused-variable]
+   23 |   unsigned short mask;
+      |                  ^~~~
+[ 96%] Linking C executable hallo.elf
+[ 96%] Built target hallo.elf
+[ 98%] Creating hallo.elf.objdump.
+[ 98%] Reporting memory available for stack + heap in hallo.elf.
+[100%] Creating ram.hex.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+[100%] Built target create-objdump
+hallo.elf
+ * 96.48 KB - Program size (code + initialized data).
+ * 153.29 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+11:45:04 **** Incremental Build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[100%] Built target hal2_bsp
+11:45:07 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[ 97%] Built target create-objdump
+[ 98%] Creating ram.hex.
+[100%] Reporting memory available for stack + heap in hallo.elf.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 96.48 KB - Program size (code + initialized data).
+ * 153.29 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+11:55:01 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 95%] Building C object CMakeFiles/hallo.elf.dir/hallo.c.obj
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c: In function 'main':
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c:23:18: warning: unused variable 'mask' [-Wunused-variable]
+   23 |   unsigned short mask;
+      |                  ^~~~
+[ 96%] Linking C executable hallo.elf
+[ 96%] Built target hallo.elf
+[ 97%] Creating hallo.elf.objdump.
+[ 98%] Reporting memory available for stack + heap in hallo.elf.
+[100%] Creating ram.hex.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+[100%] Built target create-objdump
+hallo.elf
+ * 96.48 KB - Program size (code + initialized data).
+ * 153.29 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+11:55:01 **** Incremental Build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[100%] Built target hal2_bsp
+11:55:02 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[ 97%] Reporting memory available for stack + heap in hallo.elf.
+[ 98%] Built target create-objdump
+[100%] Creating ram.hex.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 96.48 KB - Program size (code + initialized data).
+ * 153.29 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+11:55:02 **** Incremental Build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[100%] Built target hal2_bsp
+11:55:07 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[ 98%] Reporting memory available for stack + heap in hallo.elf.
+[ 98%] Creating ram.hex.
+[100%] Built target create-objdump
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 96.48 KB - Program size (code + initialized data).
+ * 153.29 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+12:04:54 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[ 97%] Built target create-objdump
+[ 98%] Reporting memory available for stack + heap in hallo.elf.
+[100%] Creating ram.hex.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 96.48 KB - Program size (code + initialized data).
+ * 153.29 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+12:04:55 **** Incremental Build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[100%] Built target hal2_bsp
+12:05:01 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[ 97%] Reporting memory available for stack + heap in hallo.elf.
+[ 98%] Built target create-objdump
+[100%] Creating ram.hex.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 96.48 KB - Program size (code + initialized data).
+ * 153.29 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+12:13:17 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[100%] Reporting memory available for stack + heap in hallo.elf.
+[100%] Creating ram.hex.
+[100%] Built target create-objdump
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 96.48 KB - Program size (code + initialized data).
+ * 153.29 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+12:23:36 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[ 97%] Built target create-objdump
+[100%] Creating ram.hex.
+[100%] Reporting memory available for stack + heap in hallo.elf.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 96.48 KB - Program size (code + initialized data).
+ * 153.29 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+12:26:42 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[ 97%] Built target create-objdump
+[ 98%] Creating ram.hex.
+[100%] Reporting memory available for stack + heap in hallo.elf.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 96.48 KB - Program size (code + initialized data).
+ * 153.29 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+12:26:42 **** Incremental Build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[100%] Built target hal2_bsp
+12:26:44 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[ 97%] Reporting memory available for stack + heap in hallo.elf.
+[ 98%] Built target create-objdump
+[100%] Creating ram.hex.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 96.48 KB - Program size (code + initialized data).
+ * 153.29 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+12:33:07 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[ 98%] Reporting memory available for stack + heap in hallo.elf.
+[ 98%] Built target create-objdump
+[100%] Creating ram.hex.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 96.48 KB - Program size (code + initialized data).
+ * 153.29 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+12:40:50 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[ 98%] Reporting memory available for stack + heap in hallo.elf.
+[ 98%] Creating ram.hex.
+[100%] Built target create-objdump
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 96.48 KB - Program size (code + initialized data).
+ * 153.29 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+12:42:31 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[ 98%] Reporting memory available for stack + heap in hallo.elf.
+[ 98%] Built target create-objdump
+[100%] Creating ram.hex.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 96.48 KB - Program size (code + initialized data).
+ * 153.29 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+12:55:30 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[ 98%] Creating ram.hex.
+[ 98%] Built target create-objdump
+[100%] Reporting memory available for stack + heap in hallo.elf.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 96.48 KB - Program size (code + initialized data).
+ * 153.29 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+13:06:43 **** Clean-only build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j clean 
+13:06:43 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[  6%] Building ASM object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_mcount.S.obj
+[  6%] Building ASM object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_log_macro.S.obj
+[  6%] Building ASM object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/crt0.S.obj
+[  6%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_alarm_start.c.obj
+[  6%] Building ASM object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_ecc_exception_entry.S.obj
+[  6%] Building ASM object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/machine_trap.S.obj
+[  7%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_busy_sleep.c.obj
+[  8%] Building ASM object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_vic_vector_table.S.obj
+[  9%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush_all.c.obj
+[ 11%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_close.c.obj
+[ 11%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush.c.obj
+[ 13%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dev.c.obj
+[ 13%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush_no_writeback.c.obj
+[ 14%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dev_llist_insert.c.obj
+[ 16%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dma_txchan_open.c.obj
+[ 16%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dma_rxchan_open.c.obj
+[ 17%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_do_ctors.c.obj
+[ 18%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_do_dtors.c.obj
+[ 20%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_ecc_error_inject.c.obj
+[ 20%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_ecc_exception.c.obj
+[ 22%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_environ.c.obj
+[ 22%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_env_lock.c.obj
+[ 24%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fcntl.c.obj
+[ 24%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_exit.c.obj
+[ 26%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_errno.c.obj
+[ 26%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fd_lock.c.obj
+[ 27%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fd_unlock.c.obj
+[ 28%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_execve.c.obj
+[ 29%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_find_dev.c.obj
+[ 30%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_find_file.c.obj
+[ 35%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_get_fd.c.obj
+[ 35%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_flash_dev.c.obj
+[ 35%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fork.c.obj
+[ 35%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fs_reg.c.obj
+[ 36%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fstat.c.obj
+[ 37%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_getchar.c.obj
+[ 38%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_getpid.c.obj
+[ 39%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_gettod.c.obj
+[ 40%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_icache_flush.c.obj
+[ 41%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_gmon.c.obj
+[ 42%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_icache_flush_all.c.obj
+[ 44%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_iic.c.obj
+[ 44%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_iic_isr_register.c.obj
+[ 45%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_instruction_exception_register.c.obj
+[ 47%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_io_redirect.c.obj
+[ 47%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_ioctl.c.obj
+[ 48%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_irq_handler.c.obj
+[ 49%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_isatty.c.obj
+[ 51%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_kill.c.obj
+[ 51%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_link.c.obj
+[ 52%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_load.c.obj
+[ 53%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_lseek.c.obj
+[ 55%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_log_printf.c.obj
+[ 55%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_main.c.obj
+[ 56%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_open.c.obj
+[ 57%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_malloc_lock.c.obj
+[ 58%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_printf.c.obj
+[ 59%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_putchar.c.obj
+[ 60%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_putcharbuf.c.obj
+[ 61%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_putstr.c.obj
+[ 63%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_read.c.obj
+[ 63%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_release_fd.c.obj
+[ 64%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_remap_uncached.c.obj
+[ 65%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_remap_cached.c.obj
+[ 67%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_rename.c.obj
+[ 68%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_sbrk.c.obj
+[ 70%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_settod.c.obj
+[ 70%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_stat.c.obj
+[ 71%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_tick.c.obj
+[ 72%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_times.c.obj
+[ 74%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_uncached_free.c.obj
+[ 74%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_tls.c.obj
+[ 75%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_uncached_malloc.c.obj
+[ 76%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_unlink.c.obj
+[ 77%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_usleep.c.obj
+[ 79%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_wait.c.obj
+[ 79%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_vic_isr_wrapper.c.obj
+[ 80%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_write.c.obj
+[ 81%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_dfl.c.obj
+[ 83%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_inf.c.obj
+[ 83%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_msg.c.obj
+[ 85%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_platform_api_niosv.c.obj
+[ 85%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_niosv.c.obj
+[ 86%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_niosv_irq.c.obj
+[ 87%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/mtimer.c.obj
+[ 89%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/alt_sys_init.c.obj
+[ 89%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_fd.c.obj
+[ 90%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_init.c.obj
+[ 91%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_ioctl.c.obj
+[ 93%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_write.c.obj
+[ 93%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_read.c.obj
+[ 94%] Linking C static library libhal2_bsp.a
+[ 94%] Built target hal2_bsp
+[ 95%] Building C object CMakeFiles/hallo.elf.dir/hallo.c.obj
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c: In function 'main':
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c:23:18: warning: unused variable 'mask' [-Wunused-variable]
+   23 |   unsigned short mask;
+      |                  ^~~~
+[ 96%] Linking C executable hallo.elf
+[ 96%] Built target hallo.elf
+[ 97%] Creating hallo.elf.objdump.
+[100%] Reporting memory available for stack + heap in hallo.elf.
+[100%] Creating ram.hex.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+[100%] Built target create-objdump
+hallo.elf
+ * 96.48 KB - Program size (code + initialized data).
+ * 153.29 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+13:15:42 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target hallo.elf
+[ 98%] Creating ram.hex.
+[ 98%] Reporting memory available for stack + heap in hallo.elf.
+[100%] Built target create-objdump
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+hallo.elf
+ * 96.48 KB - Program size (code + initialized data).
+ * 153.29 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+18:54:20 **** Clean-only build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j clean 
+18:54:20 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[  5%] Building ASM object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_vic_vector_table.S.obj
+[  5%] Building ASM object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_log_macro.S.obj
+[  5%] Building ASM object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_mcount.S.obj
+[  5%] Building ASM object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/crt0.S.obj
+[  5%] Building ASM object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/machine_trap.S.obj
+[  6%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_alarm_start.c.obj
+[  8%] Building ASM object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_ecc_exception_entry.S.obj
+[  8%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_busy_sleep.c.obj
+[  9%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush.c.obj
+[ 10%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_close.c.obj
+[ 11%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush_all.c.obj
+[ 12%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush_no_writeback.c.obj
+[ 13%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dev.c.obj
+[ 14%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dev_llist_insert.c.obj
+[ 15%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dma_rxchan_open.c.obj
+[ 17%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dma_txchan_open.c.obj
+[ 17%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_do_ctors.c.obj
+[ 18%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_do_dtors.c.obj
+[ 19%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_ecc_error_inject.c.obj
+[ 21%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_environ.c.obj
+[ 21%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_ecc_exception.c.obj
+[ 22%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_env_lock.c.obj
+[ 23%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_errno.c.obj
+[ 24%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_exit.c.obj
+[ 25%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_execve.c.obj
+[ 26%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fd_lock.c.obj
+[ 27%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fcntl.c.obj
+[ 28%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fd_unlock.c.obj
+[ 29%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_find_dev.c.obj
+[ 30%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_find_file.c.obj
+[ 31%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_flash_dev.c.obj
+[ 32%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fork.c.obj
+[ 34%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fs_reg.c.obj
+[ 35%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fstat.c.obj
+[ 37%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_get_fd.c.obj
+[ 37%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_getchar.c.obj
+[ 38%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_getpid.c.obj
+[ 39%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_gettod.c.obj
+[ 42%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_icache_flush.c.obj
+[ 42%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_gmon.c.obj
+[ 42%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_icache_flush_all.c.obj
+[ 43%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_iic.c.obj
+[ 45%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_ioctl.c.obj
+[ 44%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_instruction_exception_register.c.obj
+[ 47%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_isatty.c.obj
+[ 47%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_io_redirect.c.obj
+[ 48%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_log_printf.c.obj
+[ 49%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_irq_handler.c.obj
+[ 51%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_iic_isr_register.c.obj
+[ 51%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_kill.c.obj
+[ 52%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_load.c.obj
+[ 54%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_lseek.c.obj
+[ 54%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_link.c.obj
+[ 55%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_main.c.obj
+[ 56%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_malloc_lock.c.obj
+[ 57%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_printf.c.obj
+[ 59%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_putstr.c.obj
+[ 59%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_open.c.obj
+[ 60%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_putchar.c.obj
+[ 61%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_read.c.obj
+[ 62%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_release_fd.c.obj
+[ 63%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_putcharbuf.c.obj
+[ 64%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_remap_cached.c.obj
+[ 65%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_remap_uncached.c.obj
+[ 67%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_rename.c.obj
+[ 69%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_tick.c.obj
+[ 69%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_sbrk.c.obj
+[ 70%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_stat.c.obj
+[ 71%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_settod.c.obj
+[ 72%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_times.c.obj
+[ 73%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_tls.c.obj
+[ 74%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_uncached_malloc.c.obj
+[ 75%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_uncached_free.c.obj
+[ 76%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_unlink.c.obj
+[ 77%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_usleep.c.obj
+[ 78%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_vic_isr_wrapper.c.obj
+[ 79%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_wait.c.obj
+[ 80%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_write.c.obj
+[ 81%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_dfl.c.obj
+[ 82%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_inf.c.obj
+[ 83%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_msg.c.obj
+[ 84%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_niosv.c.obj
+[ 85%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/mtimer.c.obj
+[ 86%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_platform_api_niosv.c.obj
+[ 87%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_niosv_irq.c.obj
+[ 88%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/alt_sys_init.c.obj
+[ 90%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_fd.c.obj
+[ 90%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_init.c.obj
+[ 91%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_ioctl.c.obj
+[ 92%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_read.c.obj
+[ 93%] Building C object hal_bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_write.c.obj
+[ 94%] Linking C static library libhal2_bsp.a
+[ 94%] Built target hal2_bsp
+[ 95%] Building C object CMakeFiles/hallo.elf.dir/hallo.c.obj
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c: In function 'main':
+/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_testbenk_mcu/software/app/hallo.c:23:18: warning: unused variable 'mask' [-Wunused-variable]
+   23 |   unsigned short mask;
+      |                  ^~~~
+[ 96%] Linking C executable hallo.elf
+[ 96%] Built target hallo.elf
+[ 98%] Reporting memory available for stack + heap in hallo.elf.
+[ 98%] Creating hallo.elf.objdump.
+[100%] Creating ram.hex.
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: ram.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+[100%] Built target create-objdump
+hallo.elf
+ * 96.48 KB - Program size (code + initialized data).
+ * 153.29 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.

@@ -1,0 +1,6 @@
+21:52:30 **** Incremental Build of configuration Default for project hal_bsp ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[100%] Built target hal2_bsp
+
+21:52:30 Build Finished. 0 errors, 0 warnings. (took 68ms)
+

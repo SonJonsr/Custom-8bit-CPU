@@ -1,0 +1,11 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=linux
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:JUART terminal,org.eclipse.launchbar.core.descriptorType.default\:sar_adc_mcu ver 0.3
+eclipse.preferences.version=1
+org.eclipse.launchbar.core.descriptorType.default\:JUART\ terminal/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:JUART\ terminal/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:app\ Default/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:app\ Default/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
+org.eclipse.launchbar.core.descriptorType.default\:sar_adc_mcu\ ver\ 0.1/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:sar_adc_mcu\ ver\ 0.1/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local

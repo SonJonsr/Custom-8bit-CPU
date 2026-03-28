@@ -1,0 +1,21 @@
+21:52:30 **** Incremental Build of configuration Default for project app ****
+/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all 
+[ 94%] Built target hal2_bsp
+[ 96%] Built target main.elf
+[ 97%] Reporting memory available for stack + heap in main.elf.
+[ 98%] Creating onchip_memory2_0.hex.
+[100%] Built target create-objdump
+ERROR: QUARTUS_ROOTDIR - Undefined variable
+make[2]: *** [CMakeFiles/create-hex.dir/build.make:73: onchip_memory2_0.hex] Error 255
+make[1]: *** [CMakeFiles/Makefile2:211: CMakeFiles/create-hex.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+/opt/intelFPGA/24.1/niosv/bin/../../quartus/adm/qenv.sh: line 83: warning: setlocale: LC_CTYPE: cannot change locale (en_US.UTF-8): No such file or directory
+main.elf
+ * 96.70 KB - Program size (code + initialized data).
+ * 153.07 KB - Free for stack + heap.
+[100%] Built target niosv-stack-report
+make: *** [Makefile:91: all] Error 2
+"/opt/intelFPGA/24.1/riscfree/build_tools/bin/make -j all" terminated with exit code 2. Build might be incomplete.
+
+21:52:30 Build Failed. 4 errors, 0 warnings. (took 169ms)
+
