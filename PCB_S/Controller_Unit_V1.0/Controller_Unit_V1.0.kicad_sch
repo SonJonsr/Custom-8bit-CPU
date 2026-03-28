@@ -59131,6 +59131,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VCC")
+		(at 678.18 45.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "13009ed3-6d50-4200-a687-3e064185e23e")
+		(property "Reference" "#PWR0742"
+			(at 678.18 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 678.18 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 678.18 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 678.18 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 678.18 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c3a58ce7-3362-4b49-a64c-a6fc024e4cc6")
+		)
+		(instances
+			(project "Controller_Unit_V1.0"
+				(path "/288e19fe-913b-4fdb-a48b-19dc8e8a67e1"
+					(reference "#PWR0742")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Transistor_FET:2N7002")
 		(at 1116.33 173.99 0)
 		(unit 1)
@@ -62378,6 +62445,73 @@
 			(project "Controller_Unit_V1.0"
 				(path "/288e19fe-913b-4fdb-a48b-19dc8e8a67e1"
 					(reference "#PWR0285")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 673.1 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "16b741d2-0995-4009-9429-1d1ae7d62964")
+		(property "Reference" "#PWR0740"
+			(at 673.1 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 673.1 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 673.1 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 673.1 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 673.1 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "894bf666-4c5b-4c64-a16c-dcaa84c373a6")
+		)
+		(instances
+			(project "Controller_Unit_V1.0"
+				(path "/288e19fe-913b-4fdb-a48b-19dc8e8a67e1"
+					(reference "#PWR0740")
 					(unit 1)
 				)
 			)
@@ -96247,6 +96381,78 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 678.18 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3804b9de-d90e-4418-b381-aef8e8c9ada9")
+		(property "Reference" "C20"
+			(at 681.99 48.2599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "C"
+			(at 681.99 50.7999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Radial_D16.0mm_H25.0mm_P7.50mm"
+			(at 679.1452 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 678.18 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 678.18 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ef881b2e-8514-4a63-adb6-ac56b5e5774c")
+		)
+		(pin "1"
+			(uuid "ad5225b2-5b1d-4255-9dcf-31925f4089a4")
+		)
+		(instances
+			(project "Controller_Unit_V1.0"
+				(path "/288e19fe-913b-4fdb-a48b-19dc8e8a67e1"
+					(reference "C20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "PCM_JLCPCB-Resistors:0402,20kΩ")
 		(at 1104.9 200.66 0)
 		(unit 1)
@@ -98877,6 +99083,78 @@
 			(project "Controller_Unit_V1.0"
 				(path "/288e19fe-913b-4fdb-a48b-19dc8e8a67e1"
 					(reference "R320")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 673.1 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3c164006-c0a5-4614-b73e-a96641b7c236")
+		(property "Reference" "C19"
+			(at 676.91 48.2599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Value" "C"
+			(at 676.91 50.7999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:C_Radial_D16.0mm_H25.0mm_P7.50mm"
+			(at 674.0652 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 673.1 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 673.1 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8437dff9-2fea-4491-a9ff-dbd3c982d0dd")
+		)
+		(pin "1"
+			(uuid "f98e029a-6528-4032-baba-984551fce52c")
+		)
+		(instances
+			(project ""
+				(path "/288e19fe-913b-4fdb-a48b-19dc8e8a67e1"
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -153932,6 +154210,73 @@
 			(project "Controller_Unit_V1.0"
 				(path "/288e19fe-913b-4fdb-a48b-19dc8e8a67e1"
 					(reference "#PWR0769")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 678.18 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7a6fdfd6-065b-49c8-aad2-13d3628a7873")
+		(property "Reference" "#PWR0743"
+			(at 678.18 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 678.18 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 678.18 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 678.18 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 678.18 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "101691cf-9477-4480-b837-35eb7e8c5d6c")
+		)
+		(instances
+			(project "Controller_Unit_V1.0"
+				(path "/288e19fe-913b-4fdb-a48b-19dc8e8a67e1"
+					(reference "#PWR0743")
 					(unit 1)
 				)
 			)
@@ -219489,6 +219834,73 @@
 			(project "Controller_Unit_V1.0"
 				(path "/288e19fe-913b-4fdb-a48b-19dc8e8a67e1"
 					(reference "#PWR0297")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VCC")
+		(at 673.1 45.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c42df71b-a8e8-40ff-9d44-1c3024c2355c")
+		(property "Reference" "#PWR0741"
+			(at 673.1 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 673.1 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 673.1 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 673.1 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 673.1 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c6523ff0-fb82-4bf4-a6c0-a6f94105aa13")
+		)
+		(instances
+			(project "Controller_Unit_V1.0"
+				(path "/288e19fe-913b-4fdb-a48b-19dc8e8a67e1"
+					(reference "#PWR0741")
 					(unit 1)
 				)
 			)
