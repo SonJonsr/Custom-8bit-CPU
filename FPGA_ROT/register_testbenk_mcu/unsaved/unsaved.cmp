@@ -1,0 +1,12 @@
+	component unsaved is
+		port (
+			clk_clk       : in    std_logic                     := 'X';             -- clk
+			reg_key_sig   : in    std_logic_vector(3 downto 0)  := (others => 'X'); -- key_sig
+			reg_ledg_sig  : out   std_logic_vector(7 downto 0);                     -- ledg_sig
+			reg_sw_sig    : in    std_logic_vector(17 downto 0) := (others => 'X'); -- sw_sig
+			reg_ledr_sig  : out   std_logic_vector(17 downto 0);                    -- ledr_sig
+			reg_gpio_sig  : inout std_logic_vector(35 downto 0) := (others => 'X'); -- gpio_sig
+			reset_reset_n : in    std_logic                     := 'X'              -- reset_n
+		);
+	end component unsaved;
+

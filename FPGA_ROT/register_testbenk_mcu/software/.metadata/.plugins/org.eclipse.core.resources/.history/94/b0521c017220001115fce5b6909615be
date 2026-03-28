@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <io.h>
+#include <system.h>
+
+#define SAR_ADC_ADR 0x10008
+#define ADR_0 0*2
+#define ADR_1 1*2
+
+int main()
+{
+	unsigned int temp;
+	while (1)
+	{
+		temp = IORD_32DIRECT(PIO_IN_BASE,0);
+		IOWR_32DIRECT(PIO_OUT_BASE,0,temp);
+		printf("copy loop running\n");
+	}
+	return 0;
+}

@@ -1,0 +1,22 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst unsaved.thinker.dbg_mod -pg 1
+preplace inst unsaved.thinker.timer_module -pg 1
+preplace inst unsaved.thinker.clock_bridge -pg 1
+preplace inst unsaved.register_testbenk_component_0 -pg 1 -lvl 3 -y 210
+preplace inst unsaved.thinker.hart -pg 1
+preplace inst unsaved.jtag -pg 1 -lvl 3 -y 110
+preplace inst unsaved.ram -pg 1 -lvl 3 -y 30
+preplace inst unsaved.clk_0 -pg 1 -lvl 1 -y 30
+preplace inst unsaved -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst unsaved.thinker.reset_bridge -pg 1
+preplace inst unsaved.thinker -pg 1 -lvl 2 -y 110
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)unsaved.clk,(SLAVE)clk_0.clk_in) 1 0 1 NJ
+preplace netloc INTERCONNECT<net_container>unsaved</net_container>(MASTER)thinker.data_manager,(SLAVE)thinker.dm_agent,(SLAVE)register_testbenk_component_0.avalon_slave_0,(MASTER)thinker.instruction_manager,(SLAVE)thinker.timer_sw_agent,(SLAVE)ram.s1,(SLAVE)jtag.avalon_jtag_slave) 1 1 2 280 230 650
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)unsaved.reset,(SLAVE)clk_0.clk_in_reset) 1 0 1 NJ
+preplace netloc POINT_TO_POINT<net_container>unsaved</net_container>(SLAVE)jtag.irq,(MASTER)thinker.platform_irq_rx) 1 2 1 N
+preplace netloc FAN_OUT<net_container>unsaved</net_container>(SLAVE)thinker.clk,(SLAVE)ram.clk1,(MASTER)clk_0.clk,(SLAVE)register_testbenk_component_0.clock,(SLAVE)jtag.clk) 1 1 2 280 50 610
+preplace netloc EXPORT<net_container>unsaved</net_container>(SLAVE)register_testbenk_component_0.conduit_end,(SLAVE)unsaved.reg) 1 0 3 NJ 260 NJ 260 NJ
+preplace netloc FAN_OUT<net_container>unsaved</net_container>(SLAVE)register_testbenk_component_0.reset_n,(SLAVE)ram.reset1,(SLAVE)jtag.reset,(SLAVE)thinker.reset,(MASTER)clk_0.clk_reset) 1 1 2 260 70 630
+levelinfo -pg 1 0 50 880
+levelinfo -hier unsaved 60 90 410 700 850

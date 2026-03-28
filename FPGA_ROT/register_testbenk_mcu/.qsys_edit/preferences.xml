@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+ <debug showDebugMenu="0" />
+ <systemtable filter="All Interfaces">
+  <columns>
+   <connections preferredWidth="111" />
+   <irq preferredWidth="34" />
+   <description preferredWidth="229" />
+  </columns>
+ </systemtable>
+ <library expandedCategories="Project,Library" />
+ <window width="941" height="1146" x="12" y="42" />
+ <generation synthesis="VHDL" path="_PROJECT_NAME_" />
+</preferences>

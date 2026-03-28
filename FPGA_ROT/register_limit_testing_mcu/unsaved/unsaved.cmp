@@ -1,0 +1,23 @@
+	component unsaved is
+		port (
+			clk_clk          : in    std_logic                     := 'X';             -- clk
+			reset_reset_n    : in    std_logic                     := 'X';             -- reset_n
+			sig_hex0_sig     : out   std_logic_vector(6 downto 0);                     -- hex0_sig
+			sig_hex1_sig     : out   std_logic_vector(6 downto 0);                     -- hex1_sig
+			sig_hex2_sig     : out   std_logic_vector(6 downto 0);                     -- hex2_sig
+			sig_hex3_sig     : out   std_logic_vector(6 downto 0);                     -- hex3_sig
+			sig_hex4_sig     : out   std_logic_vector(6 downto 0);                     -- hex4_sig
+			sig_hex5_sig     : out   std_logic_vector(6 downto 0);                     -- hex5_sig
+			sig_hex6_sig     : out   std_logic_vector(6 downto 0);                     -- hex6_sig
+			sig_hex7_sig     : out   std_logic_vector(6 downto 0);                     -- hex7_sig
+			sig_lcd_data_sig : inout std_logic_vector(7 downto 0)  := (others => 'X'); -- lcd_data_sig
+			sig_lcd_en_sig   : out   std_logic;                                        -- lcd_en_sig
+			sig_lcd_rs_sig   : out   std_logic;                                        -- lcd_rs_sig
+			sig_lcd_rw_sig   : out   std_logic;                                        -- lcd_rw_sig
+			sig_gpio_sig     : inout std_logic_vector(35 downto 0) := (others => 'X'); -- gpio_sig
+			sig_key_sig      : in    std_logic_vector(2 downto 0)  := (others => 'X'); -- key_sig
+			sig_ledg_sig     : out   std_logic_vector(7 downto 0);                     -- ledg_sig
+			sig_sw_sig       : in    std_logic_vector(17 downto 0) := (others => 'X')  -- sw_sig
+		);
+	end component unsaved;
+

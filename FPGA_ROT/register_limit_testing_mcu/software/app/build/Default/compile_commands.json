@@ -1,0 +1,554 @@
+[
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/main.elf.dir/main.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/main.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/main.c",
+  "output": "CMakeFiles/main.elf.dir/main.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -Wa,-gdwarf2 -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_ecc_exception_entry.S.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_ecc_exception_entry.S",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_ecc_exception_entry.S",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_ecc_exception_entry.S.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -Wa,-gdwarf2 -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_log_macro.S.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_log_macro.S",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_log_macro.S",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_log_macro.S.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -Wa,-gdwarf2 -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_mcount.S.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_mcount.S",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_mcount.S",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_mcount.S.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -Wa,-gdwarf2 -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_vic_vector_table.S.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_vic_vector_table.S",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_vic_vector_table.S",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_vic_vector_table.S.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -Wa,-gdwarf2 -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/crt0.S.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/crt0.S",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/crt0.S",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/crt0.S.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -Wa,-gdwarf2 -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/machine_trap.S.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/machine_trap.S",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/machine_trap.S",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/machine_trap.S.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_alarm_start.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_alarm_start.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_alarm_start.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_alarm_start.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_busy_sleep.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_busy_sleep.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_busy_sleep.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_busy_sleep.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_close.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_close.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_close.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_close.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_dcache_flush.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_dcache_flush.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush_all.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_dcache_flush_all.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_dcache_flush_all.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush_all.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush_no_writeback.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_dcache_flush_no_writeback.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_dcache_flush_no_writeback.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dcache_flush_no_writeback.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_dev.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_dev.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_dev.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dev.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_dev_llist_insert.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_dev_llist_insert.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_dev_llist_insert.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dev_llist_insert.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_dma_rxchan_open.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_dma_rxchan_open.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_dma_rxchan_open.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dma_rxchan_open.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_dma_txchan_open.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_dma_txchan_open.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_dma_txchan_open.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_dma_txchan_open.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_do_ctors.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_do_ctors.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_do_ctors.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_do_ctors.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_do_dtors.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_do_dtors.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_do_dtors.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_do_dtors.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_ecc_error_inject.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_ecc_error_inject.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_ecc_error_inject.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_ecc_error_inject.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_ecc_exception.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_ecc_exception.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_ecc_exception.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_ecc_exception.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_env_lock.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_env_lock.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_env_lock.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_env_lock.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_environ.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_environ.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_environ.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_environ.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_errno.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_errno.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_errno.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_errno.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_execve.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_execve.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_execve.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_execve.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_exit.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_exit.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_exit.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_exit.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_fcntl.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_fcntl.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_fcntl.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fcntl.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_fd_lock.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_fd_lock.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_fd_lock.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fd_lock.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_fd_unlock.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_fd_unlock.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_fd_unlock.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fd_unlock.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_find_dev.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_find_dev.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_find_dev.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_find_dev.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_find_file.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_find_file.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_find_file.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_find_file.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_flash_dev.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_flash_dev.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_flash_dev.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_flash_dev.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_fork.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_fork.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_fork.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fork.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_fs_reg.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_fs_reg.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_fs_reg.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fs_reg.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_fstat.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_fstat.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_fstat.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_fstat.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_get_fd.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_get_fd.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_get_fd.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_get_fd.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_getchar.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_getchar.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_getchar.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_getchar.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_getpid.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_getpid.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_getpid.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_getpid.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_gettod.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_gettod.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_gettod.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_gettod.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_gmon.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_gmon.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_gmon.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_gmon.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_icache_flush.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_icache_flush.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_icache_flush.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_icache_flush.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_icache_flush_all.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_icache_flush_all.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_icache_flush_all.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_icache_flush_all.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_iic.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_iic.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_iic.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_iic.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_iic_isr_register.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_iic_isr_register.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_iic_isr_register.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_iic_isr_register.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_instruction_exception_register.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_instruction_exception_register.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_instruction_exception_register.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_instruction_exception_register.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_io_redirect.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_io_redirect.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_io_redirect.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_io_redirect.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_ioctl.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_ioctl.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_ioctl.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_ioctl.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_irq_handler.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_irq_handler.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_irq_handler.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_irq_handler.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_isatty.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_isatty.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_isatty.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_isatty.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_kill.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_kill.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_kill.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_kill.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_link.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_link.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_link.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_link.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_load.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_load.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_load.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_load.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_log_printf.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_log_printf.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_log_printf.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_log_printf.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_lseek.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_lseek.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_lseek.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_lseek.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_main.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_main.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_main.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_main.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_malloc_lock.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_malloc_lock.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_malloc_lock.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_malloc_lock.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_open.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_open.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_open.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_open.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_printf.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_printf.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_printf.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_printf.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_putchar.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_putchar.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_putchar.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_putchar.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_putcharbuf.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_putcharbuf.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_putcharbuf.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_putcharbuf.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_putstr.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_putstr.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_putstr.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_putstr.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_read.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_read.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_read.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_read.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_release_fd.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_release_fd.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_release_fd.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_release_fd.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_remap_cached.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_remap_cached.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_remap_cached.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_remap_cached.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_remap_uncached.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_remap_uncached.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_remap_uncached.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_remap_uncached.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_rename.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_rename.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_rename.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_rename.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_sbrk.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_sbrk.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_sbrk.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_sbrk.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_settod.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_settod.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_settod.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_settod.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_stat.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_stat.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_stat.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_stat.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_tick.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_tick.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_tick.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_tick.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_times.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_times.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_times.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_times.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_tls.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_tls.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_tls.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_tls.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_uncached_free.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_uncached_free.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_uncached_free.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_uncached_free.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_uncached_malloc.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_uncached_malloc.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_uncached_malloc.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_uncached_malloc.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_unlink.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_unlink.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_unlink.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_unlink.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_usleep.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_usleep.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_usleep.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_usleep.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_vic_isr_wrapper.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_vic_isr_wrapper.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_vic_isr_wrapper.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_vic_isr_wrapper.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_wait.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_wait.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_wait.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_wait.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/alt_write.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_write.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/alt_write.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/alt_write.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_dfl.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/intel_fpga_api_cmn_dfl.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/intel_fpga_api_cmn_dfl.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_dfl.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_inf.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/intel_fpga_api_cmn_inf.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/intel_fpga_api_cmn_inf.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_inf.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_msg.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/intel_fpga_api_cmn_msg.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/intel_fpga_api_cmn_msg.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_cmn_msg.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_niosv.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/intel_fpga_api_niosv.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/intel_fpga_api_niosv.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_api_niosv.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_platform_api_niosv.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/intel_fpga_platform_api_niosv.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/intel_fpga_platform_api_niosv.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_fpga_platform_api_niosv.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/intel_niosv_irq.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/intel_niosv_irq.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/intel_niosv_irq.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/intel_niosv_irq.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/HAL/src/mtimer.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/mtimer.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/src/mtimer.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/HAL/src/mtimer.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/alt_sys_init.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/alt_sys_init.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/alt_sys_init.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/alt_sys_init.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_fd.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/src/altera_avalon_jtag_uart_fd.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/src/altera_avalon_jtag_uart_fd.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_fd.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_init.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/src/altera_avalon_jtag_uart_init.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/src/altera_avalon_jtag_uart_init.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_init.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_ioctl.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/src/altera_avalon_jtag_uart_ioctl.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/src/altera_avalon_jtag_uart_ioctl.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_ioctl.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_read.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/src/altera_avalon_jtag_uart_read.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/src/altera_avalon_jtag_uart_read.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_read.c.obj"
+},
+{
+  "directory": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/app/build/Default/hal_bsp",
+  "command": "/opt/intelFPGA/24.1/riscfree/toolchain/riscv32-unknown-elf/bin/riscv32-unknown-elf-gcc -DALT_LOG_FLAGS=0 -DALT_NO_C_PLUS_PLUS -D__hal__ -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/. -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/HAL/inc -I/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/inc -g -DALT_SINGLE_THREADED -Wall -Wformat-security -Wformat -fstack-protector-strong -march=rv32i -mabi=ilp32 -o CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_write.c.obj -c /home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/src/altera_avalon_jtag_uart_write.c",
+  "file": "/home/kaladin/Custom-8bit-CPU/FPGA_ROT/register_limit_testing_mcu/software/hal_bsp/drivers/src/altera_avalon_jtag_uart_write.c",
+  "output": "hal_bsp/CMakeFiles/hal2_bsp.dir/drivers/src/altera_avalon_jtag_uart_write.c.obj"
+}
+]
