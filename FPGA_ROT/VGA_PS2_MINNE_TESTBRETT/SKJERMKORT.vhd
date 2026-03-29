@@ -58,32 +58,32 @@ ARCHITECTURE RTL OF SKJERMKORT IS
   TYPE a_8 is array (0 to 7) of STD_LOGIC_VECTOR(0 to 23);
 
   SIGNAL foreground_color_array : a_16 := (
-    (x"FFFFFF"),  -- WHITE
-    (x"C0C0C0"),  -- SILVER
-    (x"808080"),  -- GRAY
-    (x"000000"),  -- BLACK
-    (x"FF0000"),  -- RED
-    (x"800000"),  -- MAROON
-    (x"FFFF00"),  -- YELLOW
-    (x"808000"),  -- OLIVE
-    (x"00FF00"),  -- LIME
-    (x"008000"),  -- GREEN
-    (x"00FFFF"),  -- AQUA
-    (x"008080"),  -- TEAL
-    (x"0000FF"),  -- BLUE
-    (x"000080"),  -- NAVY
-    (x"FF00FF"),  -- FUCHSIA
-    (x"800080")); -- PURPLE
+    (x"FFFFFF"),  -- WHITE    0
+    (x"C0C0C0"),  -- SILVER   1
+    (x"808080"),  -- GRAY     2
+    (x"000000"),  -- BLACK    3
+    (x"FF0000"),  -- RED      4
+    (x"800000"),  -- MAROON   5
+    (x"FFFF00"),  -- YELLOW   6
+    (x"808000"),  -- OLIVE    7
+    (x"00FF00"),  -- LIME     8
+    (x"008000"),  -- GREEN    9
+    (x"00FFFF"),  -- AQUA     A
+    (x"008080"),  -- TEAL     B
+    (x"0000FF"),  -- BLUE     C
+    (x"000080"),  -- NAVY     D
+    (x"FF00FF"),  -- FUCHSIA  E
+    (x"800080")); -- PURPLE   F
 
   SIGNAL background_color_array : a_8 := (
-    (x"FFFFFF"),  -- WHITE
-    (x"808080"),  -- GRAY
-    (x"000000"),  -- BLACK
-    (x"FF0000"),  -- RED
-    (x"00FF00"),  -- LIME
-    (x"0000FF"),  -- BLUE
-    (x"FFFF00"),  -- YELLOW
-    (x"FF00FF")); -- FUCHSIA
+    (x"FFFFFF"),  -- WHITE    0
+    (x"808080"),  -- GRAY     1
+    (x"000000"),  -- BLACK    2
+    (x"FF0000"),  -- RED      3
+    (x"00FF00"),  -- LIME     4
+    (x"0000FF"),  -- BLUE     5
+    (x"FFFF00"),  -- YELLOW   6
+    (x"FF00FF")); -- FUCHSIA  7
   
 
   -- COMPONENT DECLARATIONS --
