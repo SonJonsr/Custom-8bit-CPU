@@ -170,7 +170,7 @@ snake_game:
   // Draws the snake
   // Finds the right address
   cursor_x = snake_start & zerof;
-  cursor_x *= four;
+  cursor_x <<= two;
   cursor_y = snake_start & fzero;
   cursor_y >>= four;
   cursor = cursor_y * screen_width;
@@ -317,7 +317,7 @@ game_loop:
 game_over:
   cursor_x = six;
   cursor_x++;
-  cursor_x <<= 2;
+  cursor_x <<= two;
   cursor_y = six;
   cursor_y++;
   cursor_y *= screen_width;
@@ -343,19 +343,19 @@ game_over:
   cursor += screen_width;
   Screen[cursor] = color_red;
   cursor--;
-  Screen[cursor] = G;
-  cursor--;
-  Screen[cursor] = color_red;
-  cursor--;
-  Screen[cursor] = A;
-  cursor--;
-  Screen[cursor] = color_red;
-  cursor--;
-  Screen[cursor] = M;
+  Screen[cursor] = R;
   cursor--;
   Screen[cursor] = color_red;
   cursor--;
   Screen[cursor] = E;
+  cursor--;
+  Screen[cursor] = color_red;
+  cursor--;
+  Screen[cursor] = V;
+  cursor--;
+  Screen[cursor] = color_red;
+  cursor--;
+  Screen[cursor] = O;
 
 wait_for_key:
   keyboard_input = Keyboard[kb_ascii];

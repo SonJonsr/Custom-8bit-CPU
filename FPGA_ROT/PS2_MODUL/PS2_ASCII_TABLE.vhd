@@ -28,7 +28,7 @@ END PS2_ASCII_TABLE;
 
 
 ARCHITECTURE RTL OF PS2_ASCII_TABLE IS 
-  TYPE ADD_REMOVE_MACHINE IS (IDLE, START_ARRAY, COUNT_ARRAY, AD_ARRAY, RM_ARRAY, START_CPU, READ_CPU, ROTATE_CPU, RM_ASCII_CPU,RM_FROM_REMOVE_TABLE_CPU, WRITE_CPU);
+  TYPE ADD_REMOVE_MACHINE IS (IDLE, START_ARRAY, COUNT_ARRAY, AD_ARRAY, RM_ARRAY, READ_CPU, ROTATE_CPU, RM_ASCII_CPU,RM_FROM_REMOVE_TABLE_CPU, WRITE_CPU);
   SIGNAL state : ADD_REMOVE_MACHINE := IDLE;
 
   TYPE BYTE_ARRAY IS ARRAY (15 DOWNTO 0) OF STD_LOGIC_VECTOR(7 DOWNTO 0);
@@ -96,23 +96,31 @@ BEGIN
   --   end case;
   -- end process;
 
-  ascii_out <=  STD_LOGIC_VECTOR(to_unsigned(ascii_table_size, ascii_out'length))
-                  when array_select = '1' 
-                  else ascii_table(0);
-
   main : process(clk)
   begin
     if (rising_edge(clk)) then
       if rst_n = '0' then
+        ascii_out <= (others => '0');
+        ascii_table <= (others => (others => '0'));
       else
+        if array_select = '1' then
+          ascii_out <=  STD_LOGIC_VECTOR(to_unsigned(ascii_table_size, ascii_out'length));
+        else
+          ascii_out <= ascii_table(0);
+        end if;
+
         case state is
           when IDLE =>
             rdy <= '1';
             new_ascii_ascii_count <= 0;
             new_ascii_remove_count <= 0;
             array_iterator <= 0;
-            if (en_rising_edge = '1' and array_select = '0') then
-              state <= START_CPU;
+            if en_rising_edge = '1' then
+              if rw = '0' and array_select = '0' then
+                state <= READ_CPU;
+              elsif rw = '1' then
+                state <= WRITE_CPU;
+              end if;
             elsif (new_ascii_rising_edge = '1') then
               state <= START_ARRAY;
             end if;
@@ -153,15 +161,8 @@ BEGIN
             end if;
             state <= IDLE;
 
-          when START_CPU =>
-            rdy <= '0';
-            if (rw = '0') then
-              state <= READ_CPU;
-            else
-              state <= WRITE_CPU;
-            end if;
-
           when READ_CPU =>
+            rdy <= '0';
             ascii_temp <= ascii_table(0);
             
             -- Check if table is empty
