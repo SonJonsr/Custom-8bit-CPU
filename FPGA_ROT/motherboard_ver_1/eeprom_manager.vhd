@@ -9,8 +9,9 @@ entity eeprom_manager is
 
     -- from cpu
     rw        : in  std_logic;
-    adr_cpu   : in  std_logic_vector(7 downto 0);
-    data_cpu  : inout std_logic_vector(7 downto 0);
+    adr       : in  std_logic_vector(7 downto 0);
+    data_in   : in  std_logic_vector(7 downto 0);
+    data_out  : out std_logic_vector(7 downto 0);
 
     -- EEPROM I2C ports
     EEP_I2C_SCLK  : out std_logic;
@@ -29,8 +30,9 @@ architecture RTL of eeprom_manager is
 
       -- from cpu
       rw        : in  std_logic;
-      adr_cpu   : in  std_logic_vector(7 downto 0);
-      data_cpu  : inout std_logic_vector(7 downto 0);
+      adr       : in  std_logic_vector(7 downto 0);
+      data_in   : in  std_logic_vector(7 downto 0);
+      data_out  : out std_logic_vector(7 downto 0);
 
       -- From I2C_MASTER
       IDLE : in std_logic;
@@ -95,8 +97,9 @@ begin
       clk => clk,
       rst_n => rst_n,
       rw => rw,
-      adr_cpu => adr_cpu,
-      data_cpu => data_cpu,
+      adr=> adr,
+      data_in => data_in,
+      data_out => data_out,
       IDLE => IDLE,
       DONE => DONE,
       NO_ACK => NO_ACK,

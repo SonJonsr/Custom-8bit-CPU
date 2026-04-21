@@ -12,8 +12,9 @@ entity eeprom_i2c_controller is
 
     -- from cpu
     rw        : in  std_logic;
-    adr_cpu   : in  std_logic_vector(7 downto 0);
-    data_cpu  : inout std_logic_vector(7 downto 0);
+    adr       : in  std_logic_vector(7 downto 0);
+    data_in   : in  std_logic_vector(7 downto 0);
+    data_out  : out std_logic_vector(7 downto 0);
 
     -- From I2C_MASTER
     IDLE : in std_logic;
@@ -44,8 +45,8 @@ architecture RTL of eeprom_i2c_controller is
   signal adr_hh : std_logic_vector(7 downto 0) := "00001000";
   signal adr_ll : std_logic_vector(7 downto 0) := "00000000";
 
-  signal data_cpu_sig : std_logic_vector(7 downto 0);
-  signal adr_cpu_sig : std_logic_vector(7 downto 0);
+  signal data_in_sig : std_logic_vector(7 downto 0);
+  signal adr_sig : std_logic_vector(7 downto 0);
 
   signal en_sig   : std_logic;
   signal wr_n_sig : std_logic;
@@ -60,9 +61,7 @@ architecture RTL of eeprom_i2c_controller is
 
 
 begin
-  data_cpu <= ram(to_integer(unsigned(adr_cpu))) 
-                when rw = '0' else 
-              (others => 'Z');
+  data_out <= ram(to_integer(unsigned(adr))); 
   
 
   p_en : process(clk) is
@@ -117,8 +116,8 @@ begin
             STOPP <= '0';
             GO_IDLE <= '0';
             if rw = '1' then
-              adr_ll <= adr_cpu;
-              data_cpu_sig <= data_cpu;
+              adr_ll <= adr;
+              data_in_sig <= data_in;
               MODE <= m_WRITE;
               STATE <= s_START;
             elsif setup_wait <= setup_counter and setup_done = '0' then
@@ -166,7 +165,7 @@ begin
 
           when s_WRITE =>
             MODE <= m_READ_RAND;
-            WR_BYTE <= data_cpu_sig;
+            WR_BYTE <= data_in_sig;
             if IDLE = '1' then
               STATE <= s_START;
               STOPP <= '0';

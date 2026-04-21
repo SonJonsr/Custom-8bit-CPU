@@ -25,34 +25,39 @@ entity memory_support is
     keyboard_rw     : out std_logic := '0';
     keyboard_as     : out std_logic := '0';
 
-    cpu_rw        : in    std_logic;
-    cpu_address   : in    std_logic_vector(15 downto 0);
-    cpu_data      : inout std_logic_vector(7 downto 0);
+    cpu_rw        : in  std_logic;
+    cpu_address   : in  std_logic_vector(15 downto 0);
+    cpu_data_out  : in  std_logic_vector(7 downto 0);
+    cpu_data_in   : out std_logic_vector(7 downto 0);
 
     mem_wren      : out std_logic := '0';
     mem_data_out  : in  std_logic_vector(7 downto 0);
     mem_data_in   : out std_logic_vector(7 downto 0) := x"00";
     mem_address   : out std_logic_vector(15 downto 0) := x"0000";
 
-    eeprom_rw     : out std_logic := '0';
-    eeprom_adr    : out std_logic_vector(7 downto 0);
-    eeprom_dat    : inout std_logic_vector(7 downto 0)
+    eeprom_rw       : out std_logic := '0';
+    eeprom_adr      : out std_logic_vector(7 downto 0);
+    eeprom_data_in  : out std_logic_vector(7 downto 0);
+    eeprom_data_out : in  std_logic_vector(7 downto 0)
   );
 end entity;
 
 architecture RTL of memory_support is
+  -- Pre-calculate integer values for the case statement
+  constant C_ADR_KEYBOARD_ASCII   : integer := to_integer(unsigned(adr_keyboard_ascii));
+  constant C_ADR_KEYBOARD_INFO    : integer := to_integer(unsigned(adr_keyboard_info));
+  constant C_ADR_RANDOM           : integer := to_integer(unsigned(adr_random));
+  constant C_ADR_TIMER_MILLIS_LL  : integer := to_integer(unsigned(adr_timer_millis_ll));
+  constant C_ADR_TIMER_MILLIS_HH  : integer := to_integer(unsigned(adr_timer_millis_hh));
+  constant C_ADR_ROM_START        : integer := to_integer(unsigned(adr_eeprom_start));
+  constant C_ADR_ROM_END          : integer := to_integer(unsigned(adr_eeprom_end));
+
   signal clk_slow_dff : std_logic := '0';
-  signal cpu_data_in  : std_logic_vector(7 downto 0) := x"00";
 
   signal millis_temp  : std_logic_vector(15 downto 0) := x"0000";
   signal random_temp  : std_logic_vector(7 downto 0) := x"00";
   signal cpu_address_dff : std_logic_vector(15 downto 0) := x"0000";
 begin
-
-
-  cpu_data <= cpu_data_in 
-                when cpu_rw = '0' else
-              (others => 'Z');
 
   process(clk)
   begin
@@ -79,8 +84,8 @@ begin
 
         clk_slow_dff <= clk_slow;
         cpu_address_dff <= cpu_address;
-        case cpu_address is
-          when adr_keyboard_ascii|adr_keyboard_info =>
+        case to_integer(unsigned(cpu_address)) is
+          when C_ADR_KEYBOARD_ASCII|C_ADR_KEYBOARD_INFO =>
             keyboard_as <= not cpu_address(0);
             cpu_data_in <= keyboard_data;
             keyboard_rw <= cpu_rw;
@@ -91,7 +96,7 @@ begin
               keyboard_en <= '0';
             end if;
 
-          when adr_random =>
+          when C_ADR_RANDOM =>
             if cpu_address_dff /= adr_random then
               -- Since the random-module is continuesly updating the random_byte
               -- we save the value into a temp var the moment we first get to
@@ -101,7 +106,7 @@ begin
             cpu_data_in <= random_temp;
 
 
-          when adr_timer_millis_ll =>
+          when C_ADR_TIMER_MILLIS_LL =>
             -- if cpu_address_dff /= adr_timer_millis_ll then
             --   -- Saves the millis signal in a temp var so the $HH-byte and $LL-byte 
             --   -- are refering to the same time
@@ -109,7 +114,7 @@ begin
             -- end if;
             cpu_data_in <= millis_temp(7 downto 0);
 
-          when adr_timer_millis_hh =>
+          when C_ADR_TIMER_MILLIS_HH =>
             if cpu_address_dff /= adr_timer_millis_hh then
               -- Saves the millis signal in a temp var so the $HH-byte and $LL-byte 
               -- are refering to the same time
@@ -117,18 +122,21 @@ begin
             end if;
             cpu_data_in <= millis_temp(15 downto 8);
 
-          when adr_eeprom_start to adr_eeprom_end =>
+          when C_ADR_ROM_START to C_ADR_ROM_END =>
+            if cpu_rw = '1' then
+              eeprom_data_in <= cpu_data_out;
+            else
+              cpu_data_in <= eeprom_data_out;
+            end if;
             if clk_slow = '1' and clk_slow_dff = '0' then
               eeprom_rw <= cpu_rw;
-              eeprom_dat <= cpu_data_in;
             else
               eeprom_rw <= '0';
-              cpu_data_in <= eeprom_dat;
             end if;
 
 
           when others =>
-            mem_data_in <= cpu_data;
+            mem_data_in <= cpu_data_out;
             cpu_data_in <= mem_data_out;
 
             if cpu_rw = '1' and (clk_slow = '1' and clk_slow_dff = '0') then
