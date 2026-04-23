@@ -1,0 +1,8 @@
+seriel				X
+vga				X	
+press knapp			X
+lys				X
+potensiometer med Encoder 	X
+
+navn
+logo
