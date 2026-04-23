@@ -6,9 +6,30 @@ ih= IntelHex()
 for i in range(65536):
     ih[i] = 0x00
 
-# Sett dine spesifikke verdier her
-# ih_odd[0x0000] = 0xAF  # Eksempel: Instruksjon 1
-# ih_even[0x0001] = 0x01  # Eksempel: Data 1
-# ... osv
+
+kode = [
+    0x00,
+    0x14,
+    0x00,
+    0x10,
+    0x15,
+    0x00,
+    0x11,
+    0x64,
+    0x18,
+    0x00,
+    0x12,
+    0x00,
+    0x02,
+    0x00,
+    0x0b,
+    0x00,
+    0x4f,
+    0x12,
+    0x00
+]
+
+for i in range(len(kode)):
+    ih[i] = kode[i]
 
 ih.write_hex_file("memory.hex")

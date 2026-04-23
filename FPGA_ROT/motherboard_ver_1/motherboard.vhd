@@ -127,6 +127,7 @@ end component;
       rst_n : in std_logic;
 
       btn : in std_logic;
+      mode : in std_logic;
       
       clock_speed_select  : in std_logic_vector(3 downto 0);
       duty_cycle_select   : in std_logic_vector(3 downto 0);
@@ -205,6 +206,15 @@ end component;
       millis : out std_logic_vector(15 downto 0) := (others => '0')
     );
   end component;
+  component antibounce_key is
+    port(
+      clk             : in std_logic;
+      rst_n           : in std_logic;
+      key             : in std_logic;
+      key_antibounced : out std_logic := '1'
+    );
+  end component;
+
 
 
   signal cpu_rw       : std_logic;
@@ -244,16 +254,17 @@ begin
   GPIO(8) <= 'Z';
   GPIO(10 to 25) <= (others => 'Z');
   GPIO(9) <= not clk_slow;
-  GPIO(26 to 33) <= (others => 'Z') when gpio_dff(8) = '1' else cpu_data_in;
+  GPIO(26 to 33) <= (others => 'Z') when gpio_dff(8) = '0' else cpu_data_in;
 
   process(CLOCK_50) is
   begin
-    gpio_dff <= not GPIO;
+    gpio_dff <= GPIO;
+    GPIO(6) <= not KEY(3);
 
-    cpu_rw      <= gpio_dff(8);
+    cpu_rw      <= not gpio_dff(8);
     cpu_address <= gpio_dff(10 to 25);
 
-    if gpio_dff(8) = '1' then 
+    if gpio_dff(8) = '0' then 
       cpu_data_out  <= gpio_dff(26 to 33);
     end if;
   end process;
@@ -271,7 +282,7 @@ begin
    port map(
       clk => CLOCK_50,
       rst_n => KEY(3),
-      clk_slow => clk_slow,
+      clk_slow => not clk_slow,
       timer_millis => millis,
       random_byte => random_byte,
       keyboard_data => keyboard_data,
@@ -319,6 +330,7 @@ begin
       clk => CLOCK_50,
       rst_n => KEY(3),
       btn => KEY(0),
+      mode => SW(8),
       clock_speed_select => SW(3 downto 0),
       duty_cycle_select => SW(7 downto 4),
       clk_slow => clk_slow

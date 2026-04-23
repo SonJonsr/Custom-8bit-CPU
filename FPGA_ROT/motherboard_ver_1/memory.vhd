@@ -29,9 +29,12 @@ architecture RTL of memory is
   signal read_a : std_logic_vector(7 downto 0);
   signal read_b : std_logic_vector(7 downto 0);
 
-  -- lpm_hint lets us debug the code easier. We can use Quartus to upload code as .hex files live.
+  attribute syn_ramstyle : string;
+  attribute syn_ramstyle of mem : signal is "no_rw_check, M9K";
+
+  -- Forces M9K block usage -- lpm_hint lets us debug the code easier. We can use Quartus to upload code as .hex files live.
   attribute lpm_hint : string;
-  attribute lpm_hint of mem : signal is "ENABLE_RUNTIME_MOD=YES, INSTANCE_NAME=MEM1";
+  attribute lpm_hint of mem : signal is "ENABLE_RUNTIME_MOD=YES, INSTANCE_NAME=MEM1, ALLOW_RWSYNC_ONLY=YES";
 
   -- Initialization of the memory with the memory.hex file
   attribute ram_init_file : string;

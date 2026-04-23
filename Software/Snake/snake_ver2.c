@@ -485,9 +485,8 @@ byte_coord_to_screen_coord:
   cursor_x <<= two;
   cursor_y = cursor;
   cursor_y &= ooFo;
-  cursor_y >>= three;
   cursor = cursor_y;
-  cursor *= screen_width;
+  cursor <<= three;
   cursor += board_top_l;
   cursor += cursor_x;
   if (go_to_snake_start) {

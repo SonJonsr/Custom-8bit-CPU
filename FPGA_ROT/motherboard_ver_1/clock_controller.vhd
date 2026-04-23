@@ -9,6 +9,7 @@ entity clock_controller is
 
     btn : in std_logic;
     
+    mode : in std_logic;
     clock_speed_select  : in std_logic_vector(3 downto 0);
     duty_cycle_select   : in std_logic_vector(3 downto 0);
 
@@ -75,15 +76,19 @@ begin
       if rst_n = '0' then
         counter <= 0;
       else
-        if duty_cycle_select = x"F" then
+        if mode = '1' then
           clk_slow <= btn_antibounced;
         else
-          duty_cycle := duty_cycle_array(to_integer(unsigned(duty_cycle_select)));
-          clock_speed := clock_speed_array(to_integer(unsigned(duty_cycle_select)))/100;
-          counter_goal <= duty_cycle * clock_speed;
-          if counter >= counter_goal then
+          duty_cycle  := duty_cycle_array(to_integer(unsigned(duty_cycle_select)));
+          clock_speed := clock_speed_array(to_integer(unsigned(clock_speed_select)));
+          counter_goal <= duty_cycle * (clock_speed/100);
+          if counter >= clock_speed then
             counter <= 0;
+          elsif counter >= counter_goal then
+            clk_slow <= '0';
+            counter <= counter + 1;
           else
+            clk_slow <= '1';
             counter <= counter + 1;
           end if;
 
