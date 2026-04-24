@@ -1,0 +1,5 @@
+v1
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,clock_controller:clock_controller_inst|lpm_mult:Mult0|mult_obt:auto_generated|mac_out2,
+DSP_BALANCING_IMPLEMENTATION,DSP_BLOCKS,clock_controller:clock_controller_inst|lpm_mult:Mult0|mult_obt:auto_generated|mac_out4,
+PORT_SWAPPING,PORT_SWAP_TYPE_DSPMULT,clock_controller:clock_controller_inst|lpm_mult:Mult0|mult_obt:auto_generated|mac_mult3,
+PORT_SWAPPING,PORT_SWAP_TYPE_DSPMULT,clock_controller:clock_controller_inst|lpm_mult:Mult0|mult_obt:auto_generated|mac_mult1,

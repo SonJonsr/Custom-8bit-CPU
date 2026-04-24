@@ -1,0 +1,301 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "EEP_I2C_SCLK",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_CLK",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_HS",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_VS",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_R[0]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_R[1]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_R[2]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_R[3]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_R[4]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_R[5]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_R[6]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_R[7]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_G[0]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_G[1]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_G[2]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_G[3]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_G[4]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_G[5]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_G[6]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_G[7]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_B[1]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_B[2]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_B[3]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_B[4]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_B[5]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_B[6]",
+					"strict" : false
+				},
+				{
+					"name" : "VGA_B[7]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[33]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[32]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[31]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[30]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[29]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[28]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[27]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[26]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[25]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[24]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[23]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[22]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[21]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[20]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[19]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[18]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[17]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[16]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[15]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[14]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[13]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[12]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[11]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[10]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[9]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[8]",
+					"strict" : false
+				},
+				{
+					"name" : "GPIO[6]",
+					"strict" : false
+				},
+				{
+					"name" : "EEP_I2C_SDAT",
+					"strict" : false
+				},
+				{
+					"name" : "CLOCK_25",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[3]",
+					"strict" : false
+				},
+				{
+					"name" : "CLOCK_50",
+					"strict" : false
+				},
+				{
+					"name" : "SW[8]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[1]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[2]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[3]",
+					"strict" : false
+				},
+				{
+					"name" : "KEY[0]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[4]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[5]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[6]",
+					"strict" : false
+				},
+				{
+					"name" : "SW[7]",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tms",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tck",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdi",
+					"strict" : false
+				},
+				{
+					"name" : "altera_reserved_tdo",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

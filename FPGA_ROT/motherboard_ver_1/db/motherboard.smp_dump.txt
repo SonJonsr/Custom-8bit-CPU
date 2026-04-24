@@ -1,0 +1,84 @@
+
+State Machine - |motherboard|screencard:screencard_inst|vga_adapter:vga_adpater_1|v_state
+Name v_state.BACK_PORCH v_state.SYNC_PULSE v_state.FRONT_PORCH v_state.DISPLAY 
+v_state.DISPLAY 0 0 0 0 
+v_state.FRONT_PORCH 0 0 1 1 
+v_state.SYNC_PULSE 0 1 0 1 
+v_state.BACK_PORCH 1 0 0 1 
+
+State Machine - |motherboard|screencard:screencard_inst|vga_adapter:vga_adpater_1|h_state
+Name h_state.BACK_PORCH h_state.SYNC_PULSE h_state.FRONT_PORCH h_state.DISPLAY 
+h_state.DISPLAY 0 0 0 0 
+h_state.FRONT_PORCH 0 0 1 1 
+h_state.SYNC_PULSE 0 1 0 1 
+h_state.BACK_PORCH 1 0 0 1 
+
+State Machine - |motherboard|PS2_MODUL:PS2_MODUL_inst|PS2_ASCII_TABLE:PS2_ASCII_TABLE_inst|state
+Name state.WRITE_CPU state.RM_FROM_REMOVE_TABLE_CPU state.RM_ASCII_CPU state.ROTATE_CPU state.READ_CPU state.START_CPU state.RM_ARRAY state.AD_ARRAY state.COUNT_ARRAY state.START_ARRAY state.IDLE 
+state.IDLE 0 0 0 0 0 0 0 0 0 0 0 
+state.START_ARRAY 0 0 0 0 0 0 0 0 0 1 1 
+state.COUNT_ARRAY 0 0 0 0 0 0 0 0 1 0 1 
+state.AD_ARRAY 0 0 0 0 0 0 0 1 0 0 1 
+state.RM_ARRAY 0 0 0 0 0 0 1 0 0 0 1 
+state.START_CPU 0 0 0 0 0 1 0 0 0 0 1 
+state.READ_CPU 0 0 0 0 1 0 0 0 0 0 1 
+state.ROTATE_CPU 0 0 0 1 0 0 0 0 0 0 1 
+state.RM_ASCII_CPU 0 0 1 0 0 0 0 0 0 0 1 
+state.RM_FROM_REMOVE_TABLE_CPU 0 1 0 0 0 0 0 0 0 0 1 
+state.WRITE_CPU 1 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |motherboard|PS2_MODUL:PS2_MODUL_inst|PS2_MERGE:PS2_MERGE_inst|state
+Name state.DONE state.SEND state.START state.IDLE 
+state.IDLE 0 0 0 0 
+state.START 0 0 1 1 
+state.SEND 0 1 0 1 
+state.DONE 1 0 0 1 
+
+State Machine - |motherboard|PS2_MODUL:PS2_MODUL_inst|PS2_RAW_DATA:PS2_RAW_DATA_inst|ps2_state
+Name ps2_state.ERROR ps2_state.STOP ps2_state.PARITY ps2_state.DATA_IN ps2_state.START ps2_state.IDLE 
+ps2_state.IDLE 0 0 0 0 0 0 
+ps2_state.START 0 0 0 0 1 1 
+ps2_state.DATA_IN 0 0 0 1 0 1 
+ps2_state.PARITY 0 0 1 0 0 1 
+ps2_state.STOP 0 1 0 0 0 1 
+ps2_state.ERROR 1 0 0 0 0 1 
+
+State Machine - |motherboard|eeprom_manager:eeprom_manager_inst|I2C_MASTER:i2c_master_inst|PHASE
+Name PHASE.pEND PHASE.pMID PHASE.pFIRST PHASE.pIDLE 
+PHASE.pIDLE 0 0 0 0 
+PHASE.pFIRST 0 0 1 1 
+PHASE.pMID 0 1 0 1 
+PHASE.pEND 1 0 0 1 
+
+State Machine - |motherboard|eeprom_manager:eeprom_manager_inst|I2C_MASTER:i2c_master_inst|STATE
+Name STATE.sSTOPP STATE.sHOLD STATE.sACK STATE.sTRANSFER STATE.sSTART STATE.sIDLE 
+STATE.sIDLE 0 0 0 0 0 0 
+STATE.sSTART 0 0 0 0 1 1 
+STATE.sTRANSFER 0 0 0 1 0 1 
+STATE.sACK 0 0 1 0 0 1 
+STATE.sHOLD 0 1 0 0 0 1 
+STATE.sSTOPP 1 0 0 0 0 1 
+
+State Machine - |motherboard|eeprom_manager:eeprom_manager_inst|eeprom_i2c_controller:eeprom_i2c_controller_inst|MODE
+Name MODE.m_READ_SEQ MODE.m_READ_RAND MODE.m_WRITE 
+MODE.m_WRITE 0 0 0 
+MODE.m_READ_RAND 0 1 1 
+MODE.m_READ_SEQ 1 0 1 
+
+State Machine - |motherboard|eeprom_manager:eeprom_manager_inst|eeprom_i2c_controller:eeprom_i2c_controller_inst|state_dff
+Name state_dff.s_READ state_dff.s_WRITE state_dff.s_ADDRESS_LL state_dff.s_ADDRESS_HH state_dff.s_START state_dff.s_IDLE 
+state_dff.s_IDLE 0 0 0 0 0 0 
+state_dff.s_START 0 0 0 0 1 1 
+state_dff.s_ADDRESS_HH 0 0 0 1 0 1 
+state_dff.s_ADDRESS_LL 0 0 1 0 0 1 
+state_dff.s_WRITE 0 1 0 0 0 1 
+state_dff.s_READ 1 0 0 0 0 1 
+
+State Machine - |motherboard|eeprom_manager:eeprom_manager_inst|eeprom_i2c_controller:eeprom_i2c_controller_inst|STATE
+Name STATE.s_READ STATE.s_WRITE STATE.s_ADDRESS_LL STATE.s_ADDRESS_HH STATE.s_START STATE.s_IDLE 
+STATE.s_IDLE 0 0 0 0 0 0 
+STATE.s_START 0 0 0 0 1 1 
+STATE.s_ADDRESS_HH 0 0 0 1 0 1 
+STATE.s_ADDRESS_LL 0 0 1 0 0 1 
+STATE.s_WRITE 0 1 0 0 0 1 
+STATE.s_READ 1 0 0 0 0 1 
