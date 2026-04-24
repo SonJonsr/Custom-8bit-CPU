@@ -76,6 +76,9 @@ BEGIN
 		indata_reg_b => "CLOCK1",
 		intended_device_family => "Cyclone IV E",
 		lpm_type => "altsyncram",
+    lpm_hint => "ENABLE_RUNTIME_MOD=YES, INSTANCE_NAME=MEM1",
+    ltag_id_arg => "MEM1", -- Must match INSTANCE_NAME
+    implement_in_les => "OFF",
 		numwords_a => 65536,
 		numwords_b => 32768,
 		operation_mode => "BIDIR_DUAL_PORT",
@@ -141,8 +144,8 @@ END SYN;
 -- Retrieval info: PRIVATE: INIT_FILE_LAYOUT STRING "PORT_A"
 -- Retrieval info: PRIVATE: INIT_TO_SIM_X NUMERIC "0"
 -- Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Cyclone IV E"
--- Retrieval info: PRIVATE: JTAG_ENABLED NUMERIC "0"
--- Retrieval info: PRIVATE: JTAG_ID STRING "NONE"
+-- Retrieval info: PRIVATE: JTAG_ENABLED NUMERIC "1"
+-- Retrieval info: PRIVATE: JTAG_ID STRING "MEM1"
 -- Retrieval info: PRIVATE: MAXIMUM_DEPTH NUMERIC "0"
 -- Retrieval info: PRIVATE: MEMSIZE NUMERIC "524288"
 -- Retrieval info: PRIVATE: MEM_IN_BITS NUMERIC "0"
