@@ -5,6 +5,7 @@ use ieee.numeric_std.all;
 entity rotary_encoder is
   port ( 
     clk   : in  std_logic; 
+    rst_n : in  std_logic; 
     rotary_sig  : in  std_logic_vector(1 downto 0);
     value : out std_logic_vector(7 downto 0)
   );
@@ -29,13 +30,17 @@ begin
   process(clk) is
   begin
     if rising_edge(clk) then
-      sig_a_dff <= sig_a;
-      sig_b_dff <= sig_b;
-      if ((sig_a XOR sig_b) = '1') then
-        if (sig_a /= sig_a_dff and value_sig /= x"FF") then
-          value_sig <= value_sig + 1;
-        elsif (sig_b /= sig_b_dff and value_sig /= x"00") then
-          value_sig <= value_sig - 1;
+      if rst_n = '0' then
+        value_sig <= (others => '0');
+      else
+        sig_a_dff <= sig_a;
+        sig_b_dff <= sig_b;
+        if ((sig_a XOR sig_b) = '1') then
+          if (sig_a /= sig_a_dff and value_sig /= x"FF") then
+            value_sig <= value_sig + 1;
+          elsif (sig_b /= sig_b_dff and value_sig /= x"00") then
+            value_sig <= value_sig - 1;
+          end if;
         end if;
       end if;
     end if;

@@ -150,13 +150,17 @@ int16_t odd_check;
 int main(void) {
 snake_game:
   // clears screen
-  for (i = zero; i < screen_size; i++) {
-    odd_check = i & one;
-    if (odd_check) {
-      Screen[i] = color_black;
-    } else {
-      Screen[i] = ascii_block;
-    }
+  i = zero;
+clears_screen:
+  odd_check = i & one;
+  if (odd_check) {
+    Screen[i] = color_black;
+  } else {
+    Screen[i] = ascii_block;
+  }
+  i++;
+  if (i < screen_size) {
+    goto clears_screen;
   }
 
   // SETS BOARD LIMITS
@@ -188,36 +192,44 @@ snake_game:
   border_paralell_v--;
   border_paralell_v <<= two; // same as border_paralell_v * 4
 
-  for (i = zero; i < border_width; i++) {
-    cursor = i;
-    cursor <<= two;
-    cursor += border_top_l;
-    cursor++;
-    Screen[cursor] = color_silver;
-    cursor++;
-    cursor++;
-    Screen[cursor] = color_silver;
-    cursor += border_paralell_h;
-    Screen[cursor] = color_silver;
-    cursor--;
-    cursor--;
-    Screen[cursor] = color_silver;
+  i = zero;
+border_horizontal:
+  cursor = i;
+  cursor <<= two;
+  cursor += border_top_l;
+  cursor++;
+  Screen[cursor] = color_silver;
+  cursor++;
+  cursor++;
+  Screen[cursor] = color_silver;
+  cursor += border_paralell_h;
+  Screen[cursor] = color_silver;
+  cursor--;
+  cursor--;
+  Screen[cursor] = color_silver;
+  i++;
+  if (i < border_width) {
+    goto border_horizontal;
   }
 
-  for (i = zero; i < border_height; i++) {
-    cursor = i;
-    cursor <<= seven;
-    cursor += border_top_l;
-    cursor++;
-    Screen[cursor] = color_silver;
-    cursor++;
-    cursor++;
-    Screen[cursor] = color_silver;
-    cursor += border_paralell_v;
-    Screen[cursor] = color_silver;
-    cursor--;
-    cursor--;
-    Screen[cursor] = color_silver;
+  i = zero;
+border_vertical:
+  cursor = i;
+  cursor <<= seven;
+  cursor += border_top_l;
+  cursor++;
+  Screen[cursor] = color_silver;
+  cursor++;
+  cursor++;
+  Screen[cursor] = color_silver;
+  cursor += border_paralell_v;
+  Screen[cursor] = color_silver;
+  cursor--;
+  cursor--;
+  Screen[cursor] = color_silver;
+  i++;
+  if (i < border_height) {
+    goto border_vertical;
   }
 
   // Draws the Highscore
@@ -238,18 +250,24 @@ bcd_high_score:
   goto byte_coord_to_screen_coord;
 cursor_snake_start:
   cursor++;
+
   // Draws the body
-  for (i = zero; i < two; i++) {
-    snake[i] = cursor;
-    Screen[cursor] = color_lime;
-    cursor++;
-    cursor++;
-    Screen[cursor] = color_lime;
-    cursor++;
-    cursor++;
+  i = zero;
+draw_start_body:
+  snake[i] = cursor;
+  Screen[cursor] = color_lime;
+  cursor++;
+  cursor++;
+  Screen[cursor] = color_lime;
+  cursor++;
+  cursor++;
+  i++;
+  if (i < two) {
+    goto draw_start_body;
   }
+
   // Draws the head
-  snake[two] = cursor;
+  snake[i] = cursor;
   Screen[cursor] = color_green;
   cursor++;
   cursor++;
@@ -523,26 +541,50 @@ div_ten_func:
 bcd_byte:
   num_temp = num;
   bcd = zero;
-  for (i = two; i > zero; i++) {
-    for (j = i; j > zero; j++) {
-      go_to_bcd_byte_div_ten = one;
-      goto div_ten_func;
-    bcd_byte_div_ten:
-      num = div_ten;
-    }
-    // Reusing som variables to get 100x and 10x depending on i
-    for (j = zero; j < i; j++) {
-      temp = div_ten << three;
-      div_ten <<= one;
-      div_ten += temp;
-    }
-    temp = i << two;
-    num <<= temp;
-    bcd += num;
-    // Subtract from num_temp the BCD value that was found.
-    num_temp -= div_ten;
-    num = num_temp;
+
+  //--------------------FOR I LOOP START--------------------//
+  i = two;
+bcd_byte_i:
+
+  //-----------FOR J LOOP START-----------//
+  j = i;
+bcd_byte_j_one:
+  go_to_bcd_byte_div_ten = one;
+  goto div_ten_func;
+bcd_byte_div_ten:
+  num = div_ten;
+  j--;
+  if (j > zero) {
+    goto bcd_byte_j_one;
   }
+  //------------FOR J LOOP END------------//
+
+  //-----------FOR J LOOP START-----------//
+  // Reusing som variables to get 100x and 10x depending on i
+  j = zero;
+bcd_byte_j_two:
+  temp = div_ten << three;
+  div_ten <<= one;
+  div_ten += temp;
+  j++;
+  if (j < i) {
+    goto bcd_byte_j_two;
+  }
+  //------------FOR J LOOP END------------//
+
+  temp = i << two;
+  num <<= temp;
+  bcd += num;
+  // Subtract from num_temp the BCD value that was found.
+  num_temp -= div_ten;
+  num = num_temp;
+
+  i--;
+  if (i > zero) {
+    goto bcd_byte_i;
+  }
+  //---------------------FOR I LOOP END---------------------//
+
   bcd += num;
 
   if (go_to_bcd_byte_done) {
@@ -554,16 +596,22 @@ bcd_byte_draw:
   go_to_bcd_byte_done = one;
   goto bcd_byte;
 bcd_byte_done:
-  for (i = two; i <= one; i++) {
-    temp = bcd;
-    num_temp = i << two;
-    temp >> num_temp;
-    temp &= oooF;
-    temp += ascii_num;
-    Screen[cursor] = temp;
-    cursor++;
-    Screen[cursor] = color_silver;
-    cursor++;
+  //--------------------FOR I LOOP START--------------------//
+  i = two;
+bcd_byte_draw_i:
+  temp = bcd;
+  num_temp = i;
+  num_temp <<= two;
+  temp >>= num_temp;
+  temp &= oooF;
+  temp += ascii_num;
+  Screen[cursor] = temp;
+  cursor++;
+  Screen[cursor] = color_silver;
+  cursor++;
+  i--;
+  if (i >= zero) {
+    goto bcd_byte_draw_i;
   }
   if (go_to_high_score) {
     go_to_high_score = zero;
