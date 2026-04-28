@@ -37,7 +37,7 @@ void main() {
   y = y >> m;
   z=g;
 
-  //if (z > x) {
+  if (z == x) {
   z += x;
-  //}
+  }
 }

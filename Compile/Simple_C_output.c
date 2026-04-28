@@ -29,25 +29,31 @@
    y ++  ;    
    x --  ;    
    z --  ;    
-   y  =  y  <<  l ;    
-   y  =  y  >>  r ;    
+    
    y  =  y  <<  r ;    
    y  =  y  >>  m ;    
    z = g ;    
-   MEM [ m ]   =  g ;    
+    // MEM [ m ]   =  g ;    
     
    l  =  m ;    
-   l  =  m  ^  n ;    
-    // if  ( z  >  x )   {    
-   z  +=  x ;    
-    //  }    
-   l  =  m  ||  n ;    
+     
    l  =   ! m ;    
-   l  =  m  &&  n ;    
-   l  =  m  ^  n ;    
+   y  =  y  <<  l ;    
+   y  =  y  >>  r ;    
    y  =  l ;    
    y  =   ! l ;    
    l  =   ! y ;    
-    
-    
+   if  ( l  ==  m )   {    
+     z  +=  x ;    
+ 	if  ( l  !=  n )   {    
+ 	    if  ( n  >  m )   {    
+ 	 }    
+ 	if  ( m  <  l )   {    
+ 	    l ++  ;    
+ 	 }    
+      }    
+     l  =  m  &&  n ;    
+     l  =  m  ^  n ;    
+     l  =  m  ||  n ;    
+    }    
   }    

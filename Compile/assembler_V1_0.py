@@ -50,6 +50,13 @@ LowByte_Sufix = "_LL"
 errors = []
 Warnings = []
 
+
+
+End_List = [[["jump","0x0000","#Jump to main again"]]] #adding the main() loopback when it sees the last '}'
+End_Index= 0
+
+
+
 def intTo4hex(t):
     ttemp = hex(t)
     
@@ -249,7 +256,7 @@ Assembely_code = []
 
 
 
-RunProgramLength = 1
+RunProgramLength = 4
 
 for line in List_8_bit:
     temp =  intTo2hex(int(line[1]))
@@ -511,7 +518,7 @@ for line in Program_Code:
             temp.append(line[0])                #finds the variables used
             temp.append(line[2])
             temp.append(line[4])
-            print(str(line) + "<<")
+            
 
             if IsDefined(temp[2]):
                 #print("shift amount is a define")
@@ -587,7 +594,7 @@ for line in Program_Code:
             temp.append(line[0])                #finds the variables used
             temp.append(line[2])
             temp.append(line[4])
-            print(str(line) + ">>")
+            
             
             if IsDefined(temp[2]):
                 #print("shift amount is a define")
@@ -657,12 +664,12 @@ for line in Program_Code:
             elif Is8Bit(temp[2]) or Is16Bit(temp[2]):
                 Line_Found = True
                 errors.append("Error (3): Shift amount variable (" + temp[2] + ") not defined as constant: " + str(line))
-                #print("8bit shift left found !!!-------------------------------------------------")
+                
         elif line[1] == "=" and line[3] == "^": #finds x = y xor z
             temp.append(line[0])                #finds the variables used
             temp.append(line[2])
             temp.append(line[4])
-            print(str(line) + "<<")
+            
 
     if len(line) == 4 and Line_Found == False:           
         if line[1] == "+=":             #finds x += y
@@ -850,7 +857,7 @@ for line in Program_Code:
                 RunProgramLength += + 15
                 Line_Found = True
     if (len(line) == 5) and (Line_Found == False) and (line[1] == "=") and(line[2] == "!"):   #finds x = ! y        
-        print("fant ! ----------------------------" + str(line))
+        
         temp.append(line[0]) 
         temp.append(line[3])
         
@@ -880,7 +887,91 @@ for line in Program_Code:
             errors.append("Error (4): Cant convert 8bit(" + temp[1] + ") to 16bit(" + temp[0] + ") in not opperation: " + str(line))
             Line_Found = True
             
+    if (len(line) == 7) and (Line_Found == False) and (line[0] == "if"):
+        print("fant if" + str(line)+"------------------------------------------------")
+        temp.append(line[2]) 
+        temp.append(line[4])
+        
+        Branch_Name1 = "branch" + str(Branch_Count)
+        Branch_Count += 1
+        
+        if line[3] == "==":
+            print("==")
+            if Is8Bit(temp[0]) and Is8Bit(temp[1]):
+                Assembely_code.append(["load","a","0x0000","#" , temp[0]])
+                Assembely_code.append(["load","b","0x0000","#" , temp[1]])
+                Assembely_code.append(["not","a"])
+                Assembely_code.append(["inc","b"])
+                Assembely_code.append(["add","b","a"])
+                Assembely_code.append(["bnz",Branch_Name1])
+                Assembely_code.append(["nop"]) #13
+                
+                End_List.append([["@"+Branch_Name1],[ "nop" ]])
+                RunProgramLength += + 14
+                Line_Found = True
+        if line[3] == "!=":
+            print("!=")
+            if Is8Bit(temp[0]) and Is8Bit(temp[1]):
+                Assembely_code.append(["load","a","0x0000","#" , temp[0]])
+                Assembely_code.append(["load","b","0x0000","#" , temp[1]])
+                Assembely_code.append(["not","a"])
+                Assembely_code.append(["inc","b"])
+                Assembely_code.append(["add","b","a"])
+                Assembely_code.append(["boz",Branch_Name1])
+                Assembely_code.append(["nop"]) #13
+
+                End_List.append([["@"+Branch_Name1],[ "nop" ]])
+                RunProgramLength += + 14
+                Line_Found = True
             
+        if line[3] == "<":
+            print("<")
+            if Is8Bit(temp[0]) and Is8Bit(temp[1]):
+                Assembely_code.append(["load","a","0x0000","#" , temp[0]])
+                Assembely_code.append(["load","b","0x0000","#" , temp[1]])
+                Assembely_code.append(["not","a"])
+                Assembely_code.append(["inc","b"])
+                Assembely_code.append(["add","b","a"])
+                Assembely_code.append(["bon",Branch_Name1])
+                Assembely_code.append(["nop"]) #13
+
+                End_List.append([["@"+Branch_Name1],[ "nop" ]])
+                RunProgramLength += + 14
+                Line_Found = True
+            
+            
+        if line[3] == ">":
+            print(">")
+            if Is8Bit(temp[0]) and Is8Bit(temp[1]):
+                Assembely_code.append(["load","a","0x0000","#" , temp[0]])
+                Assembely_code.append(["load","b","0x0000","#" , temp[1]])
+                Assembely_code.append(["not","a"])
+                Assembely_code.append(["inc","b"])
+                Assembely_code.append(["add","b","a"])
+                Assembely_code.append(["bop",Branch_Name1])
+                Assembely_code.append(["nop"]) #13
+
+                End_List.append([["@"+Branch_Name1],[ "nop" ]])
+                RunProgramLength += + 14
+                Line_Found = True
+
+    if (len(line) == 1) and (Line_Found == False) and (line[0] == "}"):
+        #print("fant enden")
+        ending = End_List[len(End_List)-1]
+        tempEnd = ""
+        
+        for i in range(len(ending)):
+            tempEnd = ""
+            for j in ending[i]:
+                #print(j)    
+                tempEnd += j + " "
+            print(tempEnd)
+            Assembely_code.append([tempEnd])
+            
+        #print(len(End_List))
+        End_List.pop(len(End_List)-1)
+        Line_Found = True
+        
     if Line_Found == False:
         Warnings.append("Warning (0): could not parse line : " + str(line))
     

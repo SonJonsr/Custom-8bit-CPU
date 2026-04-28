@@ -7,7 +7,6 @@
 #define h 30
 //#define s 2000
 
-
 //8bit values:
 int8_t l = 2; // some text
 int8_t m = 30;
@@ -24,30 +23,32 @@ void main() {
   z = x + y;
   z+=y;
   x = y - z;
-  
   x -= z;
   y++;
   x--;
   z--;
-  y = y << l;
-  y = y >> r;
   y = y << r;
   y = y >> m;
   z=g;
-  MEM[m] = g;
-
+  //MEM[m] = g;
   l = m;
-  l = m ^ n;
-  //if (z > x) {
-  z += x;
-  //}
-  l = m || n;
   l = !m;
-  l = m && n;
-  l = m ^ n;
+  y = y << l;
+  y = y >> r;
   y = l;
   y = !l;
   l = !y;
-
-
+  if (l == m) {
+    z += x;
+	if (l != n) {
+	    if (n > m) {
+	}
+	if (m < l) {
+	    l++;
+	}
+    }
+    //l = m && n;
+    //l = m ^ n;
+    //l = m || n;
+  }
 }

@@ -1,97 +1,97 @@
-def     0x00ed  0x02    #       l       
-def     0x00ee  0x1e    #       m       
-def     0x00ef  0x00    #       n       
-def     0x00f0  0xfc    #       g       
-def     0x00f1  0x02    #       r       
-def     0x00f2  0x1e    #       h       
-def     0x00f3  0x00    #       x_HH    
-def     0x00f4  0x64    #       x_LL    
-def     0x00f5  0x00    #       y_HH    
-def     0x00f6  0x19    #       y_LL    
-def     0x00f7  0xff    #       z_HH    
-def     0x00f8  0xf6    #       z_LL    
+def     0x012f  0x02    #       l       
+def     0x0130  0x1e    #       m       
+def     0x0131  0x00    #       n       
+def     0x0132  0xfc    #       g       
+def     0x0133  0x02    #       r       
+def     0x0134  0x1e    #       h       
+def     0x0135  0x00    #       x_HH    
+def     0x0136  0x64    #       x_LL    
+def     0x0137  0x00    #       y_HH    
+def     0x0138  0x19    #       y_LL    
+def     0x0139  0xff    #       z_HH    
+def     0x013a  0xf6    #       z_LL    
 nop #start buffer
 # z(16) = x(16) + y(16)
-load    a       0x00f3  #       x_HH    
-load    b       0x00f4  #       x_LL    
-load    c       0x00f5  #       y_HH    
-load    d       0x00f6  #       y_LL    
+load    a       0x0135  #       x_HH    
+load    b       0x0136  #       x_LL    
+load    c       0x0137  #       y_HH    
+load    d       0x0138  #       y_LL    
 add     d       b       
 addc    c       a       
-store   a       0x00f7  #       z_HH    
-store   b       0x00f8  #       z_LL    
+store   a       0x0139  #       z_HH    
+store   b       0x013a  #       z_LL    
 # z(16) += y(16)
-load    a       0x00f7  #       z_HH    
-load    b       0x00f8  #       z_LL    
-load    c       0x00f5  #       y_HH    
-load    d       0x00f6  #       y_LL    
+load    a       0x0139  #       z_HH    
+load    b       0x013a  #       z_LL    
+load    c       0x0137  #       y_HH    
+load    d       0x0138  #       y_LL    
 add     d       b       
 addc    c       a       
-store   a       0x00f7  #       z_HH    
-store   b       0x00f8  #       z_LL    
+store   a       0x0139  #       z_HH    
+store   b       0x013a  #       z_LL    
 # x(16) = y(16) - z(16)
-load    b       0x00f6  #       y_LL    
-load    c       0x00f7  #       z_HH    
-load    d       0x00f8  #       z_LL    
+load    b       0x0138  #       y_LL    
+load    c       0x0139  #       z_HH    
+load    d       0x013a  #       z_LL    
 clear   a       
 not     c       
 not     d       
 inc     d       
 addc    a       c       
-load    a       0x00f5  #       y_HH    
+load    a       0x0137  #       y_HH    
 add     d       b       
 addc    c       a       
-store   a       0x00f4  #       x_LL    
-store   c       0x00f3  #       x_HH    
+store   a       0x0136  #       x_LL    
+store   c       0x0135  #       x_HH    
 # x -= z
-load    c       0x00f7  #       z_HH    
-load    d       0x00f8  #       z_LL    
+load    c       0x0139  #       z_HH    
+load    d       0x013a  #       z_LL    
 clear   b       
 not     c       
 not     d       
 inc     d       
 addc    b       c       
-load    a       0x00f3  #       x_HH    
-load    b       0x00f4  #       x_LL    
+load    a       0x0135  #       x_HH    
+load    b       0x0136  #       x_LL    
 add     d       b       
 addc    c       a       
-store   a       0x00f3  #       x_HH    
-store   b       0x00f4  #       x_LL    
+store   a       0x0135  #       x_HH    
+store   b       0x0136  #       x_LL    
 # y ++  
-load    a       0x00f5  #       y_HH    
-load    b       0x00f6  #       y_LL    
+load    a       0x0137  #       y_HH    
+load    b       0x0138  #       y_LL    
 clear   c       
 inc     b       
 addc    c       a       
-store   a       0x00f5  #       y_HH    
-store   b       0x00f6  #       y_LL    
+store   a       0x0137  #       y_HH    
+store   b       0x0138  #       y_LL    
 # x --  
-load    a       0x00f3  #       x_HH    
-load    b       0x00f4  #       x_LL    
+load    a       0x0135  #       x_HH    
+load    b       0x0136  #       x_LL    
 clear   c       
 dec     b       
 addc    c       a       
-store   a       0x00f3  #       x_HH    
-store   b       0x00f4  #       x_LL    
+store   a       0x0135  #       x_HH    
+store   b       0x0136  #       x_LL    
 # z --  
-load    a       0x00f7  #       z_HH    
-load    b       0x00f8  #       z_LL    
+load    a       0x0139  #       z_HH    
+load    b       0x013a  #       z_LL    
 clear   c       
 dec     b       
 addc    c       a       
-store   a       0x00f7  #       z_HH    
-store   b       0x00f8  #       z_LL    
+store   a       0x0139  #       z_HH    
+store   b       0x013a  #       z_LL    
 # y(16) = y(16) << r(2)
-load    a       0x00f5  #       y_HH    
-load    b       0x00f6  #       y_LL    
+load    a       0x0137  #       y_HH    
+load    b       0x0138  #       y_LL    
 add     b       b        #shift left by 1
 addc    a       a        #      
 add     b       b        #shift left by 1
 addc    a       a        #      
-store   a       0x00f5  #       y_HH    
-store   b       0x00f6  #       y_LL    
+store   a       0x0137  #       y_HH    
+store   b       0x0138  #       y_LL    
 # z(16) = g(8)
-load    a       0x00f0  #       g       
+load    a       0x0132  #       g       
 clear   b       
 add     a       b       
 clear   a       
@@ -103,26 +103,17 @@ nop
 dec     a       
 @branch1
 nop     
-store   a       0x00f7  #       z_HH    
-store   b       0x00f8  #       z_LL    
+store   a       0x0139  #       z_HH    
+store   b       0x013a  #       z_LL    
 # l(8) = m(8)
-load    a       0x00ee  #       m       
-store   a       0x00ed  #       l       
-# z(16) += x(16)
-load    a       0x00f7  #       z_HH    
-load    b       0x00f8  #       z_LL    
-load    c       0x00f3  #       x_HH    
-load    d       0x00f4  #       x_LL    
-add     d       b       
-addc    c       a       
-store   a       0x00f7  #       z_HH    
-store   b       0x00f8  #       z_LL    
+load    a       0x0130  #       m       
+store   a       0x012f  #       l       
 # l(8) = ! m(8)
-load    a       0x00ee  #       m       
+load    a       0x0130  #       m       
 not     a       
-store   a       0x00ed  #       l       
+store   a       0x012f  #       l       
 # y(16) = l(8)
-load    a       0x00ed  #       l       
+load    a       0x012f  #       l       
 clear   b       
 add     a       b       
 clear   a       
@@ -134,8 +125,58 @@ nop
 dec     a       
 @branch3
 nop     
-store   a       0x00f5  #       y_HH    
-store   b       0x00f6  #       y_LL    
+store   a       0x0137  #       y_HH    
+store   b       0x0138  #       y_LL    
+load    a       0x012f  #       l       
+load    b       0x0130  #       m       
+not     a       
+inc     b       
+add     b       a       
+bnz     branch4 
+nop     
+# z(16) += x(16)
+load    a       0x0139  #       z_HH    
+load    b       0x013a  #       z_LL    
+load    c       0x0135  #       x_HH    
+load    d       0x0136  #       x_LL    
+add     d       b       
+addc    c       a       
+store   a       0x0139  #       z_HH    
+store   b       0x013a  #       z_LL    
+load    a       0x012f  #       l       
+load    b       0x0131  #       n       
+not     a       
+inc     b       
+add     b       a       
+boz     branch5 
+nop     
+load    a       0x0131  #       n       
+load    b       0x0130  #       m       
+not     a       
+inc     b       
+add     b       a       
+bop     branch6 
+nop     
+@branch6 
+nop     
+load    a       0x0130  #       m       
+load    b       0x012f  #       l       
+not     a       
+inc     b       
+add     b       a       
+bon     branch7 
+nop     
+# l ++  
+load    a       0x012f  #       l       
+inc     a       
+store   a       0x012f  #       l       
+@branch7 
+nop     
+@branch5 
+nop     
+@branch4 
+nop     
+jump 0x0000 #Jump to main again 
 @at_HALT_end
 nop     
 jump at_HALT_end
