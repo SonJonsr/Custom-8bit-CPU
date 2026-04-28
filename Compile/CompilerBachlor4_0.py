@@ -8,10 +8,10 @@ Created on Sun Dec 21 16:26:39 2025
 # -*- coding: utf-8 -*-
 import os
 
-filename = "Mult_Test"
+filename = "ASM_output"
 
-startkode  = 0x0002
-Write_binary_to = 0x0100
+startkode  = 0x0000
+Write_binary_to = 0x0060
 
 def intTo4hex(t):
     ttemp = hex(t)

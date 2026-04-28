@@ -1,0 +1,49 @@
+int8	m8a	=	5
+int8	m8b	=	3
+int8	m8svar	=	0
+
+int16	m8rrr	=	3
+
+@mult8
+
+Clear	c
+Clear	d
+
+load	a	m8a
+load	b	m8b
+
+@mult8topLoop
+
+rs	a
+boz	mult8Ferdig1
+
+bnu	mult8NoShift
+nop
+
+#hvis det er en underflow:
+add	b	c
+
+@mult8NoShift
+
+ls	b
+
+jump	mult8topLoop
+
+
+@mult8Ferdig1
+
+bnu	mult8Ferdig2
+add	b	c
+
+@mult8Ferdig2
+
+store	c	m8svar
+
+Clear	a
+Clear	b
+Clear	c
+
+@slutt
+jump 	slutt
+
+#neoda

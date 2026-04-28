@@ -1,7 +1,5 @@
 C_Filename = "test"
 Simple_C_Filename = "Simple_C_output" 
-Enable_Halt_At_End = True #if true adds a HALT at the end of the program
-SpaceCode_var = 2  #space between code and variables in memory
 #------------------------------------------------------------------------
 #pulls out text from file:
 
@@ -21,8 +19,9 @@ for line in file:
 file.close() 
 
 
-Double_Space_Operators = ["--","++","==","+=","-=","*=","/=","**", "//","&&","||","<<",">>"]
-Single_Space_Operators = ['-','+','*','/','=',';',',','{','}','(',')','<','>','[',']','#']
+Double_space_individual = ["&&","||"]
+Double_Space_Operators  = ["--","++","==","+=","-=","*=","/=","**", "//","&&","||","<<",">>",'!=']
+Single_Space_Operators  = ['-','+','*','/','=',';',',','{','}','(',')','<','>','[',']','#','!','^']
 
 New_Lines = []
 
@@ -40,11 +39,29 @@ S_C_Lines = []
 for line in New_Lines:
     newline = ""
     LineLength = len(line)
-    if LineLength > 0:
+    doube_single = False
+    if LineLength > 1:
+        for j in range(len(Double_space_individual)):
+            for i in range(LineLength-1):
+                before = ""
+                after = ""
+                if (line[i] + line[i+1]) == Double_space_individual[j]:
+                    if doube_single == False:
+                        for f in range(0,i):
+                            before += line[f]
+                        for f in range(i+2,LineLength):
+                            after += line[f]
+                        print(" ----------------------- " + line)        
+                        print(before)
+                        print(after)
+                        line = before + " " + Double_space_individual[j] + " " + after #+ "\n"
+                        print("newline = " + line)
+                        doube_single = True
+                        LineLength = len(line)
         for i in range(LineLength):
             isDouble = False
             found = False
-            #print("---- " + line[i] + " ----")
+            print("---- " + line[i] + " ----")
 
             for j in range(len(Single_Space_Operators)):
                 if line[i] == Single_Space_Operators[j]:

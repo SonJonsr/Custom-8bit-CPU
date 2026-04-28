@@ -6,9 +6,7 @@
   # define r 2   
   # define h 30   
   //  # define s 2000   
-  // int8_t l [ 5 ]  ;    
-  // int8_t l2 [ 10 ]   ;    
-  // int8_t listen [ l_l ]  ;    
+    
     
   // 8bit values:   
  int8_t l  =  2 ;   //  some text   
@@ -24,32 +22,32 @@
     
  void main (  )   {      
    z  =  x  +  y ;    
-   printf ( "%d  =  %x  ,  %d  =  %x  ,  %d  =  %x\n" ,  x ,  x ,  y ,  y ,  z ,  z )  ;    
    z += y ;    
-   printf ( "%d  =  %x  ,  %d  =  %x  ,  %d  =  %x\n" ,  x ,  x ,  y ,  y ,  z ,  z )  ;    
    x  =  y  -  z ;    
-   printf ( "%d  =  %x  ,  %d  =  %x  ,  %d  =  %x\n" ,  x ,  x ,  y ,  y ,  z ,  z )  ;    
-   x  -=  z ;    
-   printf ( "%d  =  %x  ,  %d  =  %x  ,  %d  =  %x\n" ,  x ,  x ,  y ,  y ,  z ,  z )  ;    
-   y ++  ;    
-   printf ( "%d  =  %x  ,  %d  =  %x  ,  %d  =  %x\n" ,  x ,  x ,  y ,  y ,  z ,  z )  ;    
-   x --  ;    
-   printf ( "%d  =  %x  ,  %d  =  %x  ,  %d  =  %x\n" ,  x ,  x ,  y ,  y ,  z ,  z )  ;    
-   z --  ;    
-   printf ( "%d  =  %x  ,  %d  =  %x  ,  %d  =  %x\n" ,  x ,  x ,  y ,  y ,  z ,  z )  ;    
-   y  =  y  <<  l ;    
-   printf ( "%d  =  %x  ,  %d  =  %x  ,  %d  =  %x\n" ,  x ,  x ,  y ,  y ,  z ,  z )  ;    
-   y  =  y  >>  r ;    
-   printf ( "%d  =  %x  ,  %d  =  %x  ,  %d  =  %x\n" ,  x ,  x ,  y ,  y ,  z ,  z )  ;    
-   y  =  y  <<  r ;    
-   printf ( "%d  =  %x  ,  %d  =  %x  ,  %d  =  %x\n" ,  x ,  x ,  y ,  y ,  z ,  z )  ;    
-   y  =  y  >>  m ;    
-   printf ( "%d  =  %x  ,  %d  =  %x  ,  %d  =  %x\n" ,  x ,  x ,  y ,  y ,  z ,  z )  ;    
-   z = g ;    
-   printf ( "%d  =  %x  ,  %d  =  %x  ,  %d  =  %x\n" ,  x ,  x ,  y ,  y ,  z ,  z )  ;    
-   z *= g ;    
-   printf ( "%d  =  %x  ,  %d  =  %x  ,  %d  =  %x\n" ,  x ,  x ,  y ,  y ,  z ,  z )  ;    
-   z  /=  g ;    
-   printf ( "%d  =  %x  ,  %d  =  %x  ,  %d  =  %x\n" ,  x ,  x ,  y ,  y ,  z ,  z )  ;    
       
+   x  -=  z ;    
+   y ++  ;    
+   x --  ;    
+   z --  ;    
+   y  =  y  <<  l ;    
+   y  =  y  >>  r ;    
+   y  =  y  <<  r ;    
+   y  =  y  >>  m ;    
+   z = g ;    
+   MEM [ m ]   =  g ;    
+    
+   l  =  m ;    
+   l  =  m  ^  n ;    
+    // if  ( z  >  x )   {    
+   z  +=  x ;    
+    //  }    
+   l  =  m  ||  n ;    
+   l  =   ! m ;    
+   l  =  m  &&  n ;    
+   l  =  m  ^  n ;    
+   y  =  l ;    
+   y  =   ! l ;    
+   l  =   ! y ;    
+    
+    
   }    
