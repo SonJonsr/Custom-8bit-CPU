@@ -740,7 +740,7 @@ for linje in kode:
         index += 1
         program.append(temp)
     elif linje[0] == "def":
-        print("defin " + linje[0] + " som " + linje[1])
+        print("define " + linje[0] + " as " + linje[1])
         temp.append(int(linje[1],16))
         temp.append(linje[2] + " #def")
     
@@ -785,17 +785,42 @@ for linje in kode:
             
     
     elif RW == True:
-        temp = []
-        temp.append(index)
-        temp.append("0x" + linje[2][2] + linje[2][3])
-        index += 1
-        program.append(temp)
-        
-        temp = []
-        temp.append(index)
-        temp.append("0x" + linje[2][4] + linje[2][5])
-        index += 1
-        program.append(temp)
+        print("RW en_--------------------------")
+        print(len(linje))
+        if len(linje) == 3:
+            temp = []
+            temp.append(index)
+            temp.append("0x" + linje[2][2] + linje[2][3])
+            index += 1
+            program.append(temp)
+            print(temp)
+            temp = []
+            temp.append(index)
+            temp.append("0x" + linje[2][4] + linje[2][5])
+            index += 1
+            program.append(temp)
+            print(temp)
+            
+        elif(len(linje) == 5):
+            if linje[3] == "+":
+                #print("add på ")
+                newAddress = intTo4hex(1 + index + int(linje[4], 16))
+                print(newAddress)
+                print(linje)
+                print(" ")
+                
+                temp = []
+                temp.append(index)      
+                temp.append("0x" + newAddress[2] + newAddress[3])
+                index += 1
+                program.append(temp)
+                
+                temp = []
+                temp.append(index)
+                temp.append("0x" + newAddress[4] + newAddress[5])
+                index += 1
+                program.append(temp)
+                
     
 
 
@@ -861,18 +886,18 @@ hexdump_compact("rom.bin")
 
 
 print(" ")
-for i in range(0,Write_binary_to):
-    temp = str(bin(rom[i]))
-    temp2 = ""
-    for j in range(2, len(str(bin(rom[i])))):
-        temp2 = temp2 + temp[j]
+# for i in range(0,Write_binary_to):
+#     temp = str(bin(rom[i]))
+#     temp2 = ""
+#     for j in range(2, len(str(bin(rom[i])))):
+#         temp2 = temp2 + temp[j]
     
     
-    while len(temp2) < 8:
-        temp2 = "0" + temp2
-    print('        "' + temp2 + '",')    
-    if i == Write_binary_to-1:
-        print("        others => (others => '0')")
+#     while len(temp2) < 8:
+#         temp2 = "0" + temp2
+#     print('        "' + temp2 + '",')    
+#     if i == Write_binary_to-1:
+#         print("        others => (others => '0')")
     
 
 

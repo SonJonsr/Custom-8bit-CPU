@@ -55,7 +55,8 @@ Warnings = []
 End_List = [[["jump","0x0000","#Jump to main again"]]] #adding the main() loopback when it sees the last '}'
 End_Index= 0
 
-
+mem_vars = []
+mem_index = 0
 
 def intTo4hex(t):
     ttemp = hex(t)
@@ -954,6 +955,22 @@ for line in Program_Code:
                 End_List.append([["@"+Branch_Name1],[ "nop" ]])
                 RunProgramLength += + 14
                 Line_Found = True
+                
+    if (len(line) == 7) and (Line_Found == False) and (line[0] == "MEM"):
+        print("------------------------------------")
+        print(line)
+        temp.append(line[2]) 
+        temp.append(line[5])
+        if Is16Bit(temp[0]) and Is8Bit(temp[1]):
+            print("goood MEM")
+            Assembely_code.append(["load","a","0x0000","#"  , temp[0]+HighByte_Sufix])  #3
+            Assembely_code.append(["load","b","0x0000","#"  , temp[0]+LowByte_Sufix])   #6
+            Assembely_code.append(["store","a","0x0000"," + 0x0008"])                    #9
+            Assembely_code.append(["store","b","0x0000"," + 0x0006"])                    #12
+            Assembely_code.append(["load","a","0x0000","#" , temp[1]])                  #15
+            Assembely_code.append(["store","a","0x0000"])                               #18
+            RunProgramLength += + 18
+            Line_Found = True
 
     if (len(line) == 1) and (Line_Found == False) and (line[0] == "}"):
         #print("fant enden")
@@ -1016,7 +1033,7 @@ for line in Assembely_code:
     if len(line) > 0:
         if line[0] == "store" or line[0] == "load" or line[0] == "def":
             if Is8Bit(line[len(line)-1]) == True:
-                #print("8bit ja")
+                print("8bit ja")
                 for variable in List_8_bit:
                     if variable[0] == line[len(line)-1]:
                         if line[1] == "0x0000":
