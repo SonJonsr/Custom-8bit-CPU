@@ -1,22 +1,190 @@
-def     0x001e  0x02    #       l       
-def     0x001f  0x1e    #       m       
-def     0x0020  0x00    #       n       
-def     0x0021  0xfc    #       g       
-def     0x0022  0x02    #       r       
-def     0x0023  0x1e    #       h       
-def     0x0024  0x00    #       x_HH    
-def     0x0025  0x64    #       x_LL    
-def     0x0026  0x00    #       y_HH    
-def     0x0027  0x19    #       y_LL    
-def     0x0028  0xff    #       z_HH    
-def     0x0029  0xf6    #       z_LL    
+def     0x01a4  0x48    #       H       
+def     0x01a5  0x45    #       E       
+def     0x01a6  0x4c    #       L       
+def     0x01a7  0x4f    #       O       
+def     0x01a8  0x20    #       space   
+def     0x01a9  0x57    #       W       
+def     0x01aa  0x52    #       R       
+def     0x01ab  0x44    #       D       
+def     0x01ac  0x21    #       exclamation
+def     0x01ad  0x80    #       AdrStart_HH
+def     0x01ae  0x00    #       AdrStart_LL
+def     0x01af  0x00    #       AdrIncrimented_HH
+def     0x01b0  0x00    #       AdrIncrimented_LL
 nop #start buffer
-load    a       0x0024  #       x_HH    
-load    b       0x0025  #       x_LL    
+# AdrIncrimented(16) = AdrStart(16)
+load    a       0x01ad  #       AdrStart_HH
+load    b       0x01ae  #       AdrStart_LL
+store   a       0x01af  #       AdrIncrimented_HH
+store   b       0x01b0  #       AdrIncrimented_LL
+load    a       0x01af  #       AdrIncrimented_HH
+load    b       0x01b0  #       AdrIncrimented_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x001f  #       m       
+load    a       0x01a4  #       H       
 store   a       0x0000  
+# AdrIncrimented ++
+load    a       0x01af  #       AdrIncrimented_HH
+load    b       0x01b0  #       AdrIncrimented_LL
+clear   c       
+inc     b       
+addc    c       a       
+store   a       0x01af  #       AdrIncrimented_HH
+store   b       0x01b0  #       AdrIncrimented_LL
+load    a       0x01af  #       AdrIncrimented_HH
+load    b       0x01b0  #       AdrIncrimented_LL
+store   a       0x0000   + 0x0008
+store   b       0x0000   + 0x0006
+load    a       0x01a5  #       E       
+store   a       0x0000  
+# AdrIncrimented ++
+load    a       0x01af  #       AdrIncrimented_HH
+load    b       0x01b0  #       AdrIncrimented_LL
+clear   c       
+inc     b       
+addc    c       a       
+store   a       0x01af  #       AdrIncrimented_HH
+store   b       0x01b0  #       AdrIncrimented_LL
+load    a       0x01af  #       AdrIncrimented_HH
+load    b       0x01b0  #       AdrIncrimented_LL
+store   a       0x0000   + 0x0008
+store   b       0x0000   + 0x0006
+load    a       0x01a6  #       L       
+store   a       0x0000  
+# AdrIncrimented ++
+load    a       0x01af  #       AdrIncrimented_HH
+load    b       0x01b0  #       AdrIncrimented_LL
+clear   c       
+inc     b       
+addc    c       a       
+store   a       0x01af  #       AdrIncrimented_HH
+store   b       0x01b0  #       AdrIncrimented_LL
+load    a       0x01af  #       AdrIncrimented_HH
+load    b       0x01b0  #       AdrIncrimented_LL
+store   a       0x0000   + 0x0008
+store   b       0x0000   + 0x0006
+load    a       0x01a6  #       L       
+store   a       0x0000  
+# AdrIncrimented ++
+load    a       0x01af  #       AdrIncrimented_HH
+load    b       0x01b0  #       AdrIncrimented_LL
+clear   c       
+inc     b       
+addc    c       a       
+store   a       0x01af  #       AdrIncrimented_HH
+store   b       0x01b0  #       AdrIncrimented_LL
+load    a       0x01af  #       AdrIncrimented_HH
+load    b       0x01b0  #       AdrIncrimented_LL
+store   a       0x0000   + 0x0008
+store   b       0x0000   + 0x0006
+load    a       0x01a7  #       O       
+store   a       0x0000  
+# AdrIncrimented ++
+load    a       0x01af  #       AdrIncrimented_HH
+load    b       0x01b0  #       AdrIncrimented_LL
+clear   c       
+inc     b       
+addc    c       a       
+store   a       0x01af  #       AdrIncrimented_HH
+store   b       0x01b0  #       AdrIncrimented_LL
+load    a       0x01af  #       AdrIncrimented_HH
+load    b       0x01b0  #       AdrIncrimented_LL
+store   a       0x0000   + 0x0008
+store   b       0x0000   + 0x0006
+load    a       0x01a8  #       space   
+store   a       0x0000  
+# AdrIncrimented ++
+load    a       0x01af  #       AdrIncrimented_HH
+load    b       0x01b0  #       AdrIncrimented_LL
+clear   c       
+inc     b       
+addc    c       a       
+store   a       0x01af  #       AdrIncrimented_HH
+store   b       0x01b0  #       AdrIncrimented_LL
+load    a       0x01af  #       AdrIncrimented_HH
+load    b       0x01b0  #       AdrIncrimented_LL
+store   a       0x0000   + 0x0008
+store   b       0x0000   + 0x0006
+load    a       0x01a9  #       W       
+store   a       0x0000  
+# AdrIncrimented ++
+load    a       0x01af  #       AdrIncrimented_HH
+load    b       0x01b0  #       AdrIncrimented_LL
+clear   c       
+inc     b       
+addc    c       a       
+store   a       0x01af  #       AdrIncrimented_HH
+store   b       0x01b0  #       AdrIncrimented_LL
+load    a       0x01af  #       AdrIncrimented_HH
+load    b       0x01b0  #       AdrIncrimented_LL
+store   a       0x0000   + 0x0008
+store   b       0x0000   + 0x0006
+load    a       0x01a7  #       O       
+store   a       0x0000  
+# AdrIncrimented ++
+load    a       0x01af  #       AdrIncrimented_HH
+load    b       0x01b0  #       AdrIncrimented_LL
+clear   c       
+inc     b       
+addc    c       a       
+store   a       0x01af  #       AdrIncrimented_HH
+store   b       0x01b0  #       AdrIncrimented_LL
+load    a       0x01af  #       AdrIncrimented_HH
+load    b       0x01b0  #       AdrIncrimented_LL
+store   a       0x0000   + 0x0008
+store   b       0x0000   + 0x0006
+load    a       0x01aa  #       R       
+store   a       0x0000  
+# AdrIncrimented ++
+load    a       0x01af  #       AdrIncrimented_HH
+load    b       0x01b0  #       AdrIncrimented_LL
+clear   c       
+inc     b       
+addc    c       a       
+store   a       0x01af  #       AdrIncrimented_HH
+store   b       0x01b0  #       AdrIncrimented_LL
+load    a       0x01af  #       AdrIncrimented_HH
+load    b       0x01b0  #       AdrIncrimented_LL
+store   a       0x0000   + 0x0008
+store   b       0x0000   + 0x0006
+load    a       0x01a6  #       L       
+store   a       0x0000  
+# AdrIncrimented ++
+load    a       0x01af  #       AdrIncrimented_HH
+load    b       0x01b0  #       AdrIncrimented_LL
+clear   c       
+inc     b       
+addc    c       a       
+store   a       0x01af  #       AdrIncrimented_HH
+store   b       0x01b0  #       AdrIncrimented_LL
+load    a       0x01af  #       AdrIncrimented_HH
+load    b       0x01b0  #       AdrIncrimented_LL
+store   a       0x0000   + 0x0008
+store   b       0x0000   + 0x0006
+load    a       0x01ab  #       D       
+store   a       0x0000  
+# AdrIncrimented ++
+load    a       0x01af  #       AdrIncrimented_HH
+load    b       0x01b0  #       AdrIncrimented_LL
+clear   c       
+inc     b       
+addc    c       a       
+store   a       0x01af  #       AdrIncrimented_HH
+store   b       0x01b0  #       AdrIncrimented_LL
+load    a       0x01af  #       AdrIncrimented_HH
+load    b       0x01b0  #       AdrIncrimented_LL
+store   a       0x0000   + 0x0008
+store   b       0x0000   + 0x0006
+load    a       0x01ac  #       exclamation
+store   a       0x0000  
+# AdrIncrimented ++
+load    a       0x01af  #       AdrIncrimented_HH
+load    b       0x01b0  #       AdrIncrimented_LL
+clear   c       
+inc     b       
+addc    c       a       
+store   a       0x01af  #       AdrIncrimented_HH
+store   b       0x01b0  #       AdrIncrimented_LL
 jump 0x0000 #Jump to main again 
 @at_HALT_end
 nop     

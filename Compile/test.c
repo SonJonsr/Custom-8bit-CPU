@@ -1,26 +1,46 @@
-#include <stdint.h>
-#include <stdio.h>
+  # include  < stdint.h >    
+  # include  < stdio.h >    
+    
+ char H = 72;
+ char E = 69;
+ char L = 76;
+ char O = 79;
+ char space = 32;
+ char W = 87;
+ char R = 82;
+ char D = 68;
+ char exclamation = 33;
 
-//#define l_l 5
-#define g -4
-#define r 2
-#define h 30
-//#define s 2000
-//MEM[65536];
-//8bit values:
-int8_t l = 2; // some text
-int8_t m = 30;
-int8_t n = 0;
+ int16_t AdrStart = 0x8000; // some text
+ int16_t AdrIncrimented = 0; // some text
+    
+ void main (  )   {       
+	AdrIncrimented = AdrStart;
+ 	
+	MEM[AdrIncrimented] = H;
+ 	AdrIncrimented++;
+	MEM[AdrIncrimented] = E;
+ 	AdrIncrimented++;
+	MEM[AdrIncrimented] = L;
+ 	AdrIncrimented++;
+	MEM[AdrIncrimented] = L;
+ 	AdrIncrimented++;
+	MEM[AdrIncrimented] = O;
+ 	AdrIncrimented++;
+	MEM[AdrIncrimented] = space;
+ 	AdrIncrimented++;
+	MEM[AdrIncrimented] = W;
+ 	AdrIncrimented++;
+	MEM[AdrIncrimented] = O;
+ 	AdrIncrimented++;
+	MEM[AdrIncrimented] = R;
+ 	AdrIncrimented++;
+	MEM[AdrIncrimented] = L;
+ 	AdrIncrimented++;
+	MEM[AdrIncrimented] = D;
+ 	AdrIncrimented++;
+	MEM[AdrIncrimented] = exclamation;
+ 	AdrIncrimented++;
 
-//16bit values:
-int16_t x=100; // some text
-int16_t y = 25;
-int16_t z = -10;
-
-//int16_t lang = 8000;
-
-void main() {    
-  //n = MEM[x];
-  MEM[x] = m;
-
-}
+  }    
+    

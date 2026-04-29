@@ -21,7 +21,7 @@ file.close()
 
 Double_space_individual = ["&&","||"]
 Double_Space_Operators  = ["--","++","==","+=","-=","*=","/=","**", "//","&&","||","<<",">>",'!=']
-Single_Space_Operators  = ['-','+','*','/','=',';',',','{','}','(',')','<','>','[',']','#','!','^']
+Single_Space_Operators  = ['-','+','*','/','=',';',',','{','}','(',')','<','>','[',']','#','!','^',':']
 
 New_Lines = []
 
@@ -94,6 +94,7 @@ for line in New_Lines:
     #print("'" + newline + "'")
     #print("___________________________")
     
+
 
 file = open(Simple_C_Filename,'w')
 for line in S_C_Lines:

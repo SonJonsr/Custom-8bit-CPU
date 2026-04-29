@@ -8,6 +8,9 @@ Created on Sun Dec 21 16:26:39 2025
 # -*- coding: utf-8 -*-
 import os
 
+from intelhex import IntelHex
+
+
 filename = "ASM_output"
 
 startkode  = 0x0000
@@ -903,3 +906,15 @@ print(" ")
 
 for error in errorList:
     print("error : " , error)
+
+ih= IntelHex()
+for i in range(65536):
+    ih[i] = 0x00
+
+
+for line in program:   
+    value = int(line[1][0] + line[1][1] +"00"+  line[1][2] + line[1][3] , 16 )
+    ih[line[0]] = value
+    
+ih.write_hex_file("memory.hex")
+# ih.write_hex_file("../memory.hex")

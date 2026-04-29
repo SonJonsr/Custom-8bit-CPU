@@ -16,7 +16,7 @@ int8_t m = 30;
 int8_t n = 0;
 char c = 'a';
 //16bit values:
-int16_t x=100; // some text
+int16_t x= 0x100; // some text
 int16_t y = 25;
 int16_t z = -10;
 
@@ -36,6 +36,10 @@ void main() {
   y = y << r;
   y = y >> m;
   z=g;
+  n =MEM[x];
+  MEM[x]= m;
+  MEM[adr] = m;
+  l = MEM[adr];  
 
   if (z == x) {
   z += x;
