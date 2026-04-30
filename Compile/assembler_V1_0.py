@@ -983,6 +983,7 @@ for line in Program_Code:
             temp.append(line[5])
             if Is16Bit(temp[0]) and Is8Bit(temp[1]):
                 #print("goood MEM")
+                Assembely_code.append(["# MEM[" + temp[0] + "(8)] = " + temp[1] + "(8)"])
                 Assembely_code.append(["load","a","0x0000","#"  , temp[0]+HighByte_Sufix])  #3
                 Assembely_code.append(["load","b","0x0000","#"  , temp[0]+LowByte_Sufix])   #6
                 Assembely_code.append(["store","a","0x0000"," + 0x0008"])                   #9

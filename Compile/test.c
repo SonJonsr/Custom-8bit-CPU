@@ -13,7 +13,7 @@
 
  
 
-
+int8_t temp = 0;
  int8_t length = 15;
  int8_t count = 0;
  int8_t zero = 0;
@@ -27,21 +27,19 @@
 	AdrIncrimented = AdrStart;
  	count = zero;
 	while (count < length) {
-		MEM[AdrIncrimented] = attribute;
-		AdrIncrimented ++;
 		MEM[AdrIncrimented] = zero;
+		AdrIncrimented ++;
+		MEM[AdrIncrimented] = attribute;
 		AdrIncrimented ++;
 		count++;
 	}
 	
 	AdrIncrimented = AdrStart;
-	AdrIncrimented ++;
+	//AdrIncrimented ++;
 
 	MEM[AdrIncrimented] = H;
  	AdrIncrimented += Two;
 	MEM[AdrIncrimented] = E;
- 	AdrIncrimented += Two;
-	MEM[AdrIncrimented] = L;
  	AdrIncrimented += Two;
 	MEM[AdrIncrimented] = L;
  	AdrIncrimented += Two;
@@ -63,7 +61,7 @@
 	
 	count = zero;
 	while (count < length) {
-        
+		count = count;
 	}
   }    
     
