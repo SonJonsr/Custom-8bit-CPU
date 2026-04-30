@@ -249,6 +249,9 @@ end component;
 
   signal clk_slow : std_logic := '0';
 
+  signal pixel_clk : std_logic := '0';
+  signal pixel_clk_dff : std_logic := '0';
+
 begin
 
   GPIO(8) <= 'Z';
@@ -258,14 +261,17 @@ begin
 
   process(CLOCK_50) is
   begin
-    gpio_dff <= GPIO;
-    GPIO(6) <= not KEY(3);
+    if rising_edge(CLOCK_50) then
+      pixel_clk <= not pixel_clk;
+      gpio_dff <= GPIO;
+      GPIO(6) <= not KEY(3);
 
-    cpu_rw      <= not gpio_dff(8);
-    cpu_address <= gpio_dff(10 to 25);
+      cpu_rw      <= not gpio_dff(8);
+      cpu_address <= gpio_dff(10 to 25);
 
-    if gpio_dff(8) = '0' then 
-      cpu_data_out  <= gpio_dff(26 to 33);
+      if gpio_dff(8) = '0' then 
+        cpu_data_out  <= gpio_dff(26 to 33);
+      end if;
     end if;
   end process;
 
@@ -306,7 +312,7 @@ begin
   memory_inst: memory
    port map(
       clk_a => CLOCK_50,
-      clk_b => CLOCK_25,
+      clk_b => pixel_clk,
       addr_a => mem_address,
       data_in_a => mem_data_in,
       we_a => mem_wren,
@@ -364,7 +370,7 @@ begin
   );
   screencard_inst: screencard
    port map(    
-      pixel_clk => CLOCK_25,
+      pixel_clk => pixel_clk,
       rst_n => KEY(3),
       dat => screencard_dat,
       adr => screencard_adr,
