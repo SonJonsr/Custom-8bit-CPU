@@ -11,36 +11,59 @@
   char D  =  68 ;    
   char exclamation  =  33 ;    
     
+     
+    
+    
+  int8_t length  =  15 ;    
+  int8_t count  =  0 ;    
+  int8_t zero  =  0 ;    
+  int8_t attribute  =  15 ;   //  should be white text    
+    
   int16_t AdrStart  =  0x8000 ;   //  some text   
   int16_t AdrIncrimented  =  0 ;   //  some text   
+  int16_t Two  =  2 ;   //  some text   
         
   void main  (    )     {           
  	AdrIncrimented  =  AdrStart ;    
-  	   
- 	MEM [ AdrIncrimented ]   =  H ;    
-  	AdrIncrimented ++  ;    
- 	MEM [ AdrIncrimented ]   =  E ;    
-  	AdrIncrimented ++  ;    
- 	MEM [ AdrIncrimented ]   =  L ;    
-  	AdrIncrimented ++  ;    
- 	MEM [ AdrIncrimented ]   =  L ;    
-  	AdrIncrimented ++  ;    
- 	MEM [ AdrIncrimented ]   =  O ;    
-  	AdrIncrimented ++  ;    
- 	MEM [ AdrIncrimented ]   =  space ;    
-  	AdrIncrimented ++  ;    
- 	MEM [ AdrIncrimented ]   =  W ;    
-  	AdrIncrimented ++  ;    
- 	MEM [ AdrIncrimented ]   =  O ;    
-  	AdrIncrimented ++  ;    
- 	MEM [ AdrIncrimented ]   =  R ;    
-  	AdrIncrimented ++  ;    
- 	MEM [ AdrIncrimented ]   =  L ;    
-  	AdrIncrimented ++  ;    
- 	MEM [ AdrIncrimented ]   =  D ;    
-  	AdrIncrimented ++  ;    
- 	MEM [ AdrIncrimented ]   =  exclamation ;    
-  	AdrIncrimented ++  ;    
+  	count  =  zero ;    
+ 	while  ( count  <  length )   {    
+ 		MEM [ AdrIncrimented ]   =  attribute ;    
+ 		AdrIncrimented  ++  ;    
+ 		MEM [ AdrIncrimented ]   =  zero ;    
+ 		AdrIncrimented  ++  ;    
+ 		count ++  ;    
+ 	 }    
+ 	   
+ 	AdrIncrimented  =  AdrStart ;    
+ 	AdrIncrimented  ++  ;    
     
+ 	MEM [ AdrIncrimented ]   =  H ;    
+  	AdrIncrimented  +=  Two ;    
+ 	MEM [ AdrIncrimented ]   =  E ;    
+  	AdrIncrimented  +=  Two ;    
+ 	MEM [ AdrIncrimented ]   =  L ;    
+  	AdrIncrimented  +=  Two ;    
+ 	MEM [ AdrIncrimented ]   =  L ;    
+  	AdrIncrimented  +=  Two ;    
+ 	MEM [ AdrIncrimented ]   =  O ;    
+  	AdrIncrimented  +=  Two ;    
+ 	MEM [ AdrIncrimented ]   =  space ;    
+  	AdrIncrimented  +=  Two ;    
+ 	MEM [ AdrIncrimented ]   =  W ;    
+  	AdrIncrimented  +=  Two ;    
+ 	MEM [ AdrIncrimented ]   =  O ;    
+  	AdrIncrimented  +=  Two ;    
+ 	MEM [ AdrIncrimented ]   =  R ;    
+  	AdrIncrimented  +=  Two ;    
+ 	MEM [ AdrIncrimented ]   =  L ;    
+  	AdrIncrimented  +=  Two ;    
+ 	MEM [ AdrIncrimented ]   =  D ;    
+  	AdrIncrimented  +=  Two ;    
+ 	MEM [ AdrIncrimented ]   =  exclamation ;    
+ 	   
+ 	count  =  zero ;    
+ 	while  ( count  <  length )   {    
+            
+ 	 }    
     }        
        
