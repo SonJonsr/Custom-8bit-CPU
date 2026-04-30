@@ -10,7 +10,7 @@ def     0x0266  0x21    #       exclamation
 def     0x0267  0x0f    #       length  
 def     0x0268  0x00    #       count   
 def     0x0269  0x00    #       zero    
-def     0x026a  0x0f    #       attribute
+def     0x026a  0x20    #       attribute
 def     0x026b  0x80    #       AdrStart_HH
 def     0x026c  0x00    #       AdrStart_LL
 def     0x026d  0x00    #       AdrIncrimented_HH

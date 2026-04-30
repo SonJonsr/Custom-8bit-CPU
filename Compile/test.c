@@ -17,7 +17,7 @@
  int8_t length = 15;
  int8_t count = 0;
  int8_t zero = 0;
- int8_t attribute = 15; // should be white text 
+ int8_t attribute = 32; // should be white text 
 
  int16_t AdrStart = 0x8000; // some text
  int16_t AdrIncrimented = 0; // some text
