@@ -1,4 +1,4 @@
-C_Filename = "test"
+C_Filename = "main"
 Simple_C_Filename = "Simple_C_output" 
 #------------------------------------------------------------------------
 #pulls out text from file:

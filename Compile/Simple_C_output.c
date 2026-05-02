@@ -1,67 +1,60 @@
-    #  include   <  stdint.h  >        
-    #  include   <  stdio.h  >        
-        
-  char H  =  72 ;    
-  char E  =  69 ;    
-  char L  =  76 ;    
-  char O  =  79 ;    
-  char space  =  32 ;    
-  char W  =  87 ;    
-  char R  =  82 ;    
-  char D  =  68 ;    
-  char exclamation  =  33 ;    
+  # include  < stdint.h >    
+  # include  < stdio.h >    
     
-     
+  //   //  ADDRESSES IN MEMORY   
+  //   # define adr_main_display 0xE000 ;    
+  //   # define adr_info_display 0xEF00 ;    
+  //   # define adr_keyboard_ascii 0xF2C1 ;    
+  //   # define adr_keyboard_info 0xF2C2 ;    
+  //   # define adr_random 0xF2C3 ;    
+  //   # define adr_timer_millis_ll 0xF2C4 ;    
+  //   # define adr_timer_millis_hh 0xF2C5 ;    
+  //   # define adr_eeprom_start 0xF2C6 ;    
+  //   # define adr_eeprom_end 0xF3C5 ;    
+  //    
+  //   //  SCREEN SIZE   
+  //   # define screen_size 0x0080 ;    
+  //    
+  //   //  COLORS   
+  //   # define white 32 ;    
     
- int8_t temp  =  0 ;    
-  int8_t length  =  15 ;    
-  int8_t count  =  0 ;    
-  int8_t zero  =  0 ;    
-  int8_t attribute  =  32 ;   //  should be white text    
+  //  ADDRESSES IN MEMORY   
+  # define adr_main_display 0xE000   
+  # define adr_info_display 0xEF00   
+  # define adr_keyboard_ascii 0xF2C1   
+  # define adr_keyboard_info 0xF2C2   
+  # define adr_random 0xF2C3   
+  # define adr_timer_millis_ll 0xF2C4   
+  # define adr_timer_millis_hh 0xF2C5   
+  # define adr_eeprom_start 0xF2C6   
+  # define adr_eeprom_end 0xF3C5   
     
-  int16_t AdrStart  =  0x8000 ;   //  some text   
-  int16_t AdrIncrimented  =  0 ;   //  some text   
-  int16_t Two  =  2 ;   //  some text   
-        
-  void main  (    )     {           
- 	AdrIncrimented  =  AdrStart ;    
-  	count  =  zero ;    
- 	while  ( count  <  length )   {    
- 		MEM [ AdrIncrimented ]   =  zero ;    
- 		AdrIncrimented  ++  ;    
- 		MEM [ AdrIncrimented ]   =  attribute ;    
- 		AdrIncrimented  ++  ;    
- 		count ++  ;    
- 	 }    
- 	   
- 	AdrIncrimented  =  AdrStart ;    
- 	 // AdrIncrimented  ++  ;    
+  //  SCREEN SIZE   
+  # define screen_size 0x0080   
     
- 	MEM [ AdrIncrimented ]   =  H ;    
-  	AdrIncrimented  +=  Two ;    
- 	MEM [ AdrIncrimented ]   =  E ;    
-  	AdrIncrimented  +=  Two ;    
- 	MEM [ AdrIncrimented ]   =  L ;    
-  	AdrIncrimented  +=  Two ;    
- 	MEM [ AdrIncrimented ]   =  O ;    
-  	AdrIncrimented  +=  Two ;    
- 	MEM [ AdrIncrimented ]   =  space ;    
-  	AdrIncrimented  +=  Two ;    
- 	MEM [ AdrIncrimented ]   =  W ;    
-  	AdrIncrimented  +=  Two ;    
- 	MEM [ AdrIncrimented ]   =  O ;    
-  	AdrIncrimented  +=  Two ;    
- 	MEM [ AdrIncrimented ]   =  R ;    
-  	AdrIncrimented  +=  Two ;    
- 	MEM [ AdrIncrimented ]   =  L ;    
-  	AdrIncrimented  +=  Two ;    
- 	MEM [ AdrIncrimented ]   =  D ;    
-  	AdrIncrimented  +=  Two ;    
- 	MEM [ AdrIncrimented ]   =  exclamation ;    
- 	   
- 	count  =  zero ;    
- 	while  ( count  <  length )   {    
- 		count  =  count ;    
- 	 }    
-    }        
-       
+  //  COLORS   
+  # define white 32   
+    
+  //  CURSOR VARIABLES   
+ int16_t cursor  =  0xE000 ;    
+ int16_t cursor_x  =  0 ;    
+ int16_t cursor_y  =  0 ;    
+ int8_t keyboard_info  =  0x00 ;    
+ int8_t keyboard_ascii  =  0x00 ;    
+    
+ int8_t zero  =  0 ;    
+ int8_t one  =  1 ;    
+    
+ void main (  )   {    
+   keyboard_info  =  zero ;    
+    
+   while  ( keyboard_info  <  one )   {    
+     keyboard_info  =  MEM [ adr_keyboard_info ]  ;    
+    }    
+    
+   keyboard_ascii  =  MEM [ adr_keyboard_ascii ]  ;    
+   MEM [ cursor ]   =  keyboard_ascii ;    
+   cursor ++  ;    
+   MEM [ cursor ]   =  white ;    
+   cursor ++  ;    
+  }    

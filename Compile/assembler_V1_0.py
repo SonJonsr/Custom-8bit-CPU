@@ -147,7 +147,8 @@ List_8_bit = []
 List_16_bit = []
 
 for line in comands:
-    
+    print(line)
+    print(" ------\\\\\\\---- ")
     if line[0] == "#" and line[1] == "define":   #defines
         Define = [line[2]]
         temp = ""
@@ -156,9 +157,17 @@ for line in comands:
         if line[3] == "-":
             valueElement = 4
             temp = "-"
-
-
+        
         temp += line[valueElement]
+        
+        if valueElement == 3:
+            if len(temp) > 2:
+                first = str(temp[0] + temp[1])
+                if first == "0x":
+                    print(" ----------------- ")
+                    temp = int(temp, 16)
+
+        
       
             #for i in range(0,len(line[2])-1):
             #    temp = temp + line[4][i]        
@@ -167,7 +176,7 @@ for line in comands:
         
     #8-bit ints
     elif line[0] == "int8_t" or line[0] == "char":
-        print(line[1][len(line[1])-2])
+        #print(line[1][len(line[1])-2])
         if line[1][len(line[1])-2] != "]":
             int8 = [line[1]]
             temp = ""
@@ -184,7 +193,7 @@ for line in comands:
                 if len(temp) > 2:
                     first = str(temp[0] + temp[1])
                     if first == "0x":
-                        print(" ----------------- ")
+                        #print(" ----------------- ")
                         temp = int(temp, 16)
                         
             int8.append(temp)
@@ -1098,14 +1107,27 @@ for line in Program_Code:
                 RunProgramLength += 18
                 Line_Found = True
         
-    # if (len(line) == 2) and (Line_Found == False):
-    #     if line[1] == ':':
-    #         print("@"+line[0])
-    #         Assembely_code.append(["@"+line[0]])
-    #         Assembely_code.append(["nop"])
-    #         RunProgramLength += 1
-    #         Line_Found = True
+    if (len(line) == 2) and (Line_Found == False):
+        if line[1] == ':':
+            #print("@"+line[0])
+            Assembely_code.append(["@"+line[0]])
+            Assembely_code.append(["nop"])
+            RunProgramLength += 1
+            Line_Found = True
             
+    if (len(line) == 3) and (Line_Found == False):
+        if line[0] == "goto":
+            #print("@"+line[0])
+            #Assembely_code.append(["@"+line[0]])
+            Assembely_code.append(["jump", line[1]])
+            RunProgramLength += 3
+            Line_Found = True
+            
+    if (len(line) == 3) and (Line_Found == False):
+        if (line[0] == "return") and (line[1] == '0'):
+            Assembely_code.append(["jump","0x0000","#Jump to main again"])
+            RunProgramLength += 3
+            Line_Found = True  
     if (len(line) == 1) and (Line_Found == False) and (line[0] == "}"):
         #print("fant enden")
         ending = End_List[len(End_List)-1]
@@ -1167,7 +1189,7 @@ for line in Assembely_code:
     if len(line) > 0:
         if line[0] == "store" or line[0] == "load" or line[0] == "def":
             if Is8Bit(line[len(line)-1]) == True:
-                print("8bit ja")
+                #print("8bit ja")
                 for variable in List_8_bit:
                     if variable[0] == line[len(line)-1]:
                         if line[1] == "0x0000":
