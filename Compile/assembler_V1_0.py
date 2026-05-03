@@ -52,7 +52,7 @@ Warnings = []
 
 
 
-End_List = [[["jump","0x0000","#Jump to main again"]],[["jump","0x0000","#Jump to main again"]]] #adding the main() loopback when it sees the last '}'
+End_List = [[["jump","0x0000","#Jump to main again"]]] #adding the main() loopback when it sees the last '}'
 End_Index= 0
 
 mem_vars = []
@@ -148,7 +148,7 @@ List_16_bit = []
 
 for line in comands:
     print(line)
-    print(" ------\\\\\\\---- ")
+    #print(" ------\\\\\\\---- ")
     if line[0] == "#" and line[1] == "define":   #defines
         Define = [line[2]]
         temp = ""
@@ -164,7 +164,7 @@ for line in comands:
             if len(temp) > 2:
                 first = str(temp[0] + temp[1])
                 if first == "0x":
-                    print(" ----------------- ")
+                    #print(" ----------------- ")
                     temp = int(temp, 16)
 
         
@@ -696,15 +696,274 @@ for line in Program_Code:
             elif Is8Bit(temp[2]) or Is16Bit(temp[2]):
                 Line_Found = True
                 errors.append("Error (3): Shift amount variable (" + temp[2] + ") not defined as constant: " + str(line))
-                
-        elif line[1] == "=" and line[3] == "^": #finds x = y xor z
+    
+    if len(line) == 6 and Line_Found == False:        
+        if line[1] == "=" and line[3] == "||": #finds x = y || z; //or
             temp.append(line[0])                #finds the variables used
             temp.append(line[2])
             temp.append(line[4])
             
+            if Is8Bit(temp[0]) and Is8Bit(temp[1]) and Is8Bit(temp[2]):
+                Assembely_code.append(["# " + temp[0] + "(8bit) = " + temp[1] + "(8bit) or " + temp[2] + "(8bit)"])
+                Assembely_code.append(["load","b","0x0000","#" , temp[1]])
+                Assembely_code.append(["load","d","0x0000","#" , temp[2]])
+                Assembely_code.append(["or","d","b"])
+                Assembely_code.append(["store","b","0x0000","#" , temp[0]])
+                RunProgramLength += 10
+                Line_Found = True
+                
+            if Is8Bit(temp[0]) and Is8Bit(temp[1]) and Is16Bit(temp[2]):
+                Assembely_code.append(["# " + temp[0] + "(8bit) = " + temp[1] + "(8bit) or " + temp[2] + "(16bit)"])
+                Assembely_code.append(["load","b","0x0000","#" , temp[1]])
+                Assembely_code.append(["load","d","0x0000","#" , temp[2]+LowByte_Sufix])
+                Assembely_code.append(["or","d","b"])
+                Assembely_code.append(["store","b","0x0000","#" , temp[0]])
+                RunProgramLength += 10
+                Line_Found = True
+                
+            if Is8Bit(temp[0]) and Is16Bit(temp[1]) and Is8Bit(temp[2]):
+                Assembely_code.append(["# " + temp[0] + "(8bit) = " + temp[1] + "(16bit) or " + temp[2] + "(8bit)"])
+                Assembely_code.append(["load","b","0x0000","#" , temp[1]+LowByte_Sufix])
+                Assembely_code.append(["load","d","0x0000","#" , temp[2]])
+                Assembely_code.append(["or","d","b"])
+                Assembely_code.append(["store","b","0x0000","#" , temp[0]])
+                RunProgramLength += 10
+                Line_Found = True 
+            
+            if Is8Bit(temp[0]) and Is16Bit(temp[1]) and Is16Bit(temp[2]):
+                Assembely_code.append(["# " + temp[0] + "(8bit) = " + temp[1] + "(16bit) or " + temp[2] + "(16bit)"])
+                Assembely_code.append(["load","b","0x0000","#" , temp[1]+LowByte_Sufix])
+                Assembely_code.append(["load","d","0x0000","#" , temp[2]+LowByte_Sufix])
+                Assembely_code.append(["or","d","b"])
+                Assembely_code.append(["store","b","0x0000","#" , temp[0]])
+                RunProgramLength += 10
+                Line_Found = True 
+                
+            if Is16Bit(temp[0]) and Is8Bit(temp[1]) and Is8Bit(temp[2]):
+                Assembely_code.append(["# " + temp[0] + "(16bit) = " + temp[1] + "(8bit) or " + temp[2] + "(8bit)"])
+                Assembely_code.append(["load","b","0x0000","#" , temp[1]])
+                Assembely_code.append(["load","d","0x0000","#" , temp[2]])
+                Assembely_code.append(["or","d","b"])
+                Assembely_code.append(["clear","a"])
+                Assembely_code.append(["store","a","0x0000","#" , temp[0]+HighByte_Sufix])
+                Assembely_code.append(["store","b","0x0000","#" , temp[0]+LowByte_Sufix])
+                RunProgramLength += 14
+                Line_Found = True
+                
+            if Is16Bit(temp[0]) and Is8Bit(temp[1]) and Is16Bit(temp[2]):
+                Assembely_code.append(["# " + temp[0] + "(16bit) = " + temp[1] + "(8bit) or " + temp[2] + "(16bit)"])
+                Assembely_code.append(["load","d","0x0000","#" , temp[1]])
+                Assembely_code.append(["load","a","0x0000","#" , temp[2]+HighByte_Sufix])
+                Assembely_code.append(["load","b","0x0000","#" , temp[2]+LowByte_Sufix])
+                Assembely_code.append(["or","d","b"])
+                Assembely_code.append(["store","a","0x0000","#" , temp[0]+HighByte_Sufix])
+                Assembely_code.append(["store","b","0x0000","#" , temp[0]+LowByte_Sufix])
+                RunProgramLength += 16
+                Line_Found = True
+            
+            if Is16Bit(temp[0]) and Is16Bit(temp[1]) and Is8Bit(temp[2]):
+                Assembely_code.append(["# " + temp[0] + "(16bit) = " + temp[1] + "(16bit) or " + temp[2] + "(8bit)"])
+                Assembely_code.append(["load","d","0x0000","#" , temp[2]])
+                Assembely_code.append(["load","a","0x0000","#" , temp[1]+HighByte_Sufix])
+                Assembely_code.append(["load","b","0x0000","#" , temp[1]+LowByte_Sufix])
+                Assembely_code.append(["or","d","b"])
+                Assembely_code.append(["store","a","0x0000","#" , temp[0]+HighByte_Sufix])
+                Assembely_code.append(["store","b","0x0000","#" , temp[0]+LowByte_Sufix])
+                RunProgramLength += 16
+                Line_Found = True
+            
+            if Is16Bit(temp[0]) and Is16Bit(temp[1]) and Is16Bit(temp[2]):
+                Assembely_code.append(["# " + temp[0] + "(16bit) = " + temp[1] + "(16bit) or " + temp[2] + "(16bit)"])
+                Assembely_code.append(["load","a","0x0000","#" , temp[1]+HighByte_Sufix])
+                Assembely_code.append(["load","b","0x0000","#" , temp[1]+LowByte_Sufix])
+                Assembely_code.append(["load","c","0x0000","#" , temp[2]+HighByte_Sufix])
+                Assembely_code.append(["load","d","0x0000","#" , temp[2]+LowByte_Sufix])
+                Assembely_code.append(["or","d","b"])
+                Assembely_code.append(["or","c","a"])
+                Assembely_code.append(["store","a","0x0000","#" , temp[0]+HighByte_Sufix])
+                Assembely_code.append(["store","b","0x0000","#" , temp[0]+LowByte_Sufix])
+                RunProgramLength += 20
+                Line_Found = True
+    
+    if len(line) == 6 and Line_Found == False:        
+        if line[1] == "=" and line[3] == "^": #finds x = y ^ z; //xor
+            temp.append(line[0])                #finds the variables used
+            temp.append(line[2])
+            temp.append(line[4])
+            
+            if Is8Bit(temp[0]) and Is8Bit(temp[1]) and Is8Bit(temp[2]):
+                Assembely_code.append(["# " + temp[0] + "(8bit) = " + temp[1] + "(8bit) xor " + temp[2] + "(8bit)"])
+                Assembely_code.append(["load","b","0x0000","#" , temp[1]])
+                Assembely_code.append(["load","d","0x0000","#" , temp[2]])
+                Assembely_code.append(["xor","d","b"])
+                Assembely_code.append(["store","b","0x0000","#" , temp[0]])
+                RunProgramLength += 10
+                Line_Found = True
+                
+            if Is8Bit(temp[0]) and Is8Bit(temp[1]) and Is16Bit(temp[2]):
+                Assembely_code.append(["# " + temp[0] + "(8bit) = " + temp[1] + "(8bit) xor " + temp[2] + "(16bit)"])
+                Assembely_code.append(["load","b","0x0000","#" , temp[1]])
+                Assembely_code.append(["load","d","0x0000","#" , temp[2]+LowByte_Sufix])
+                Assembely_code.append(["xor","d","b"])
+                Assembely_code.append(["store","b","0x0000","#" , temp[0]])
+                RunProgramLength += 10
+                Line_Found = True
+                
+            if Is8Bit(temp[0]) and Is16Bit(temp[1]) and Is8Bit(temp[2]):
+                Assembely_code.append(["# " + temp[0] + "(8bit) = " + temp[1] + "(16bit) xor " + temp[2] + "(8bit)"])
+                Assembely_code.append(["load","b","0x0000","#" , temp[1]+LowByte_Sufix])
+                Assembely_code.append(["load","d","0x0000","#" , temp[2]])
+                Assembely_code.append(["xor","d","b"])
+                Assembely_code.append(["store","b","0x0000","#" , temp[0]])
+                RunProgramLength += 10
+                Line_Found = True 
+            
+            if Is8Bit(temp[0]) and Is16Bit(temp[1]) and Is16Bit(temp[2]):
+                Assembely_code.append(["# " + temp[0] + "(8bit) = " + temp[1] + "(16bit) xor " + temp[2] + "(16bit)"])
+                Assembely_code.append(["load","b","0x0000","#" , temp[1]+LowByte_Sufix])
+                Assembely_code.append(["load","d","0x0000","#" , temp[2]+LowByte_Sufix])
+                Assembely_code.append(["xor","d","b"])
+                Assembely_code.append(["store","b","0x0000","#" , temp[0]])
+                RunProgramLength += 10
+                Line_Found = True 
+                
+            if Is16Bit(temp[0]) and Is8Bit(temp[1]) and Is8Bit(temp[2]):
+                Assembely_code.append(["# " + temp[0] + "(16bit) = " + temp[1] + "(8bit) xor " + temp[2] + "(8bit)"])
+                Assembely_code.append(["load","b","0x0000","#" , temp[1]])
+                Assembely_code.append(["load","d","0x0000","#" , temp[2]])
+                Assembely_code.append(["xor","d","b"])
+                Assembely_code.append(["clear","a"])
+                Assembely_code.append(["store","a","0x0000","#" , temp[0]+HighByte_Sufix])
+                Assembely_code.append(["store","b","0x0000","#" , temp[0]+LowByte_Sufix])
+                RunProgramLength += 14
+                Line_Found = True
+                
+            if Is16Bit(temp[0]) and Is8Bit(temp[1]) and Is16Bit(temp[2]):
+                Assembely_code.append(["# " + temp[0] + "(16bit) = " + temp[1] + "(8bit) xor " + temp[2] + "(16bit)"])
+                Assembely_code.append(["load","d","0x0000","#" , temp[1]])
+                Assembely_code.append(["load","b","0x0000","#" , temp[2]+LowByte_Sufix])
+                Assembely_code.append(["load","a","0x0000","#" , temp[2]+HighByte_Sufix])
+                Assembely_code.append(["xor","d","b"])
+                Assembely_code.append(["store","a","0x0000","#" , temp[0]+HighByte_Sufix])
+                Assembely_code.append(["store","b","0x0000","#" , temp[0]+LowByte_Sufix])
+                RunProgramLength += 16
+                Line_Found = True
+            
+            if Is16Bit(temp[0]) and Is16Bit(temp[1]) and Is8Bit(temp[2]):
+                Assembely_code.append(["# " + temp[0] + "(16bit) = " + temp[1] + "(16bit) xor " + temp[2] + "(8bit)"])
+                Assembely_code.append(["load","d","0x0000","#" , temp[2]])
+                Assembely_code.append(["load","b","0x0000","#" , temp[1]+LowByte_Sufix])
+                Assembely_code.append(["load","a","0x0000","#" , temp[1]+HighByte_Sufix])
+                Assembely_code.append(["xor","d","b"])
+                Assembely_code.append(["store","a","0x0000","#" , temp[0]+HighByte_Sufix])
+                Assembely_code.append(["store","b","0x0000","#" , temp[0]+LowByte_Sufix])
+                RunProgramLength += 16
+                Line_Found = True
+            
+            if Is16Bit(temp[0]) and Is16Bit(temp[1]) and Is16Bit(temp[2]):
+                Assembely_code.append(["# " + temp[0] + "(16bit) = " + temp[1] + "(16bit) xor " + temp[2] + "(16bit)"])
+                Assembely_code.append(["load","a","0x0000","#" , temp[1]+HighByte_Sufix])
+                Assembely_code.append(["load","b","0x0000","#" , temp[1]+LowByte_Sufix])
+                Assembely_code.append(["load","c","0x0000","#" , temp[2]+HighByte_Sufix])
+                Assembely_code.append(["load","d","0x0000","#" , temp[2]+LowByte_Sufix])
+                Assembely_code.append(["xor","d","b"])
+                Assembely_code.append(["xor","c","a"])
+                Assembely_code.append(["store","a","0x0000","#" , temp[0]+HighByte_Sufix])
+                Assembely_code.append(["store","b","0x0000","#" , temp[0]+LowByte_Sufix])
+                RunProgramLength += 20
+                Line_Found = True
+            
+    if len(line) == 6 and Line_Found == False:        
+        if line[1] == "=" and line[3] == "&&": #finds x = y && z; //and
+            temp.append(line[0])                #finds the variables used
+            temp.append(line[2])
+            temp.append(line[4])
+            
+            if Is8Bit(temp[0]) and Is8Bit(temp[1]) and Is8Bit(temp[2]):
+                Assembely_code.append(["# " + temp[0] + "(8bit) = " + temp[1] + "(8bit) and " + temp[2] + "(8bit)"])
+                Assembely_code.append(["load","b","0x0000","#" , temp[1]])
+                Assembely_code.append(["load","d","0x0000","#" , temp[2]])
+                Assembely_code.append(["and","d","b"])
+                Assembely_code.append(["store","b","0x0000","#" , temp[0]])
+                RunProgramLength += 10
+                Line_Found = True
+                
+            if Is8Bit(temp[0]) and Is8Bit(temp[1]) and Is16Bit(temp[2]):
+                Assembely_code.append(["# " + temp[0] + "(8bit) = " + temp[1] + "(8bit) and " + temp[2] + "(16bit)"])
+                Assembely_code.append(["load","b","0x0000","#" , temp[1]])
+                Assembely_code.append(["load","d","0x0000","#" , temp[2]+LowByte_Sufix])
+                Assembely_code.append(["and","d","b"])
+                Assembely_code.append(["store","b","0x0000","#" , temp[0]])
+                RunProgramLength += 10
+                Line_Found = True
+                
+            if Is8Bit(temp[0]) and Is16Bit(temp[1]) and Is8Bit(temp[2]):
+                Assembely_code.append(["# " + temp[0] + "(8bit) = " + temp[1] + "(16bit) and " + temp[2] + "(8bit)"])
+                Assembely_code.append(["load","b","0x0000","#" , temp[1]+LowByte_Sufix])
+                Assembely_code.append(["load","d","0x0000","#" , temp[2]])
+                Assembely_code.append(["and","d","b"])
+                Assembely_code.append(["store","b","0x0000","#" , temp[0]])
+                RunProgramLength += 10
+                Line_Found = True 
+            
+            if Is8Bit(temp[0]) and Is16Bit(temp[1]) and Is16Bit(temp[2]):
+                Assembely_code.append(["# " + temp[0] + "(8bit) = " + temp[1] + "(16bit) and " + temp[2] + "(16bit)"])
+                Assembely_code.append(["load","b","0x0000","#" , temp[1]+LowByte_Sufix])
+                Assembely_code.append(["load","d","0x0000","#" , temp[2]+LowByte_Sufix])
+                Assembely_code.append(["and","d","b"])
+                Assembely_code.append(["store","b","0x0000","#" , temp[0]])
+                RunProgramLength += 10
+                Line_Found = True 
+                
+            if Is16Bit(temp[0]) and Is8Bit(temp[1]) and Is8Bit(temp[2]):
+                Assembely_code.append(["# " + temp[0] + "(16bit) = " + temp[1] + "(8bit) and " + temp[2] + "(8bit)"])
+                Assembely_code.append(["load","b","0x0000","#" , temp[1]])
+                Assembely_code.append(["load","d","0x0000","#" , temp[2]])
+                Assembely_code.append(["and","d","b"])
+                Assembely_code.append(["clear","a"])
+                Assembely_code.append(["store","a","0x0000","#" , temp[0]+HighByte_Sufix])
+                Assembely_code.append(["store","b","0x0000","#" , temp[0]+LowByte_Sufix])
+                RunProgramLength += 14
+                Line_Found = True
+                
+            if Is16Bit(temp[0]) and Is8Bit(temp[1]) and Is16Bit(temp[2]):
+                Assembely_code.append(["# " + temp[0] + "(16bit) = " + temp[1] + "(8bit) and " + temp[2] + "(16bit)"])
+                Assembely_code.append(["load","d","0x0000","#" , temp[1]])
+                Assembely_code.append(["load","b","0x0000","#" , temp[2]+LowByte_Sufix])
+                Assembely_code.append(["xor","d","b"])
+                Assembely_code.append(["clear","a"])
+                Assembely_code.append(["store","a","0x0000","#" , temp[0]+HighByte_Sufix])
+                Assembely_code.append(["store","b","0x0000","#" , temp[0]+LowByte_Sufix])
+                RunProgramLength += 14
+                Line_Found = True
+            
+            if Is16Bit(temp[0]) and Is16Bit(temp[1]) and Is8Bit(temp[2]):
+                Assembely_code.append(["# " + temp[0] + "(16bit) = " + temp[1] + "(16bit) and " + temp[2] + "(8bit)"])
+                Assembely_code.append(["load","d","0x0000","#" , temp[2]])
+                Assembely_code.append(["load","b","0x0000","#" , temp[1]+LowByte_Sufix])
+                Assembely_code.append(["xor","d","b"])
+                Assembely_code.append(["clear","a"])
+                Assembely_code.append(["store","a","0x0000","#" , temp[0]+HighByte_Sufix])
+                Assembely_code.append(["store","b","0x0000","#" , temp[0]+LowByte_Sufix])
+                RunProgramLength += 14
+                Line_Found = True
+            
+            if Is16Bit(temp[0]) and Is16Bit(temp[1]) and Is16Bit(temp[2]):
+                Assembely_code.append(["# " + temp[0] + "(16bit) = " + temp[1] + "(16bit) and " + temp[2] + "(16bit)"])
+                Assembely_code.append(["load","a","0x0000","#" , temp[1]+HighByte_Sufix])
+                Assembely_code.append(["load","b","0x0000","#" , temp[1]+LowByte_Sufix])
+                Assembely_code.append(["load","c","0x0000","#" , temp[2]+HighByte_Sufix])
+                Assembely_code.append(["load","d","0x0000","#" , temp[2]+LowByte_Sufix])
+                Assembely_code.append(["and","d","b"])
+                Assembely_code.append(["and","c","a"])
+                Assembely_code.append(["store","a","0x0000","#" , temp[0]+HighByte_Sufix])
+                Assembely_code.append(["store","b","0x0000","#" , temp[0]+LowByte_Sufix])
+                RunProgramLength += 20
+                Line_Found = True
+                
 
     if len(line) == 4 and Line_Found == False:           
-        if line[1] == "+=":             #finds x += y
+        if line[1] == "+=":             #finds x += y ;
             temp.append(line[0]) 
             temp.append(line[2])
             
@@ -726,16 +985,46 @@ for line in Program_Code:
                 Line_Found = True
             elif Is16Bit(temp[0]) and Is8Bit(temp[1]):                                  #   Problem if 8-bit is negative---------------------
                 Assembely_code.append(["# " + temp[0] + "(16) += " + temp[1]+"(8)"])
-                Assembely_code.append(["load","a","0x0000","#" , temp[0]+HighByte_Sufix])
-                Assembely_code.append(["load","b","0x0000","#" , temp[0]+LowByte_Sufix])
-                Assembely_code.append(["load","d","0x0000","#" , temp[1]])
-                Assembely_code.append(["clear","c"])
-                Assembely_code.append(["add", "d","b "])
-                Assembely_code.append(["addc","c","a"])
-                Assembely_code.append(["store","a","0x0000","#" , temp[0]+HighByte_Sufix])
-                Assembely_code.append(["store","b","0x0000","#" , temp[0]+LowByte_Sufix])
-                RunProgramLength += 18
+                # Assembely_code.append(["load","a","0x0000","#" , temp[0]+HighByte_Sufix])
+                # Assembely_code.append(["load","b","0x0000","#" , temp[0]+LowByte_Sufix])
+                # Assembely_code.append(["load","d","0x0000","#" , temp[1]])
+                # Assembely_code.append(["clear","c"])
+                # Assembely_code.append(["add", "d","b "])
+                # Assembely_code.append(["addc","c","a"])
+                # Assembely_code.append(["store","a","0x0000","#" , temp[0]+HighByte_Sufix])
+                # Assembely_code.append(["store","b","0x0000","#" , temp[0]+LowByte_Sufix])
+                # RunProgramLength += 18
+                # Line_Found = True
+                
+                
+                Branch_Name1 = "branch" + str(Branch_Count)
+                Branch_Count += 1
+                Branch_Name2 = "branch" + str(Branch_Count)
+                Branch_Count += 1
+                
+                # Assembely_code.append(["# " + temp[0] + "(16) = " + temp[1]+ "(8)"])
+                Assembely_code.append(["load","a","0x0000","#" , temp[1]])              #3
+                Assembely_code.append(["clear","b"]) #4
+                Assembely_code.append(["add", "a","b"])#5
+                Assembely_code.append(["clear","a"]) #6
+                Assembely_code.append(["bon",Branch_Name1])#9
+                Assembely_code.append(["nop"])#10                                  #mby dont need this
+                Assembely_code.append(["jump",Branch_Name2])#13
+                Assembely_code.append(["nop"])#14
+                Assembely_code.append(["@"+Branch_Name1])
+                Assembely_code.append(["not", "a"])#15
+                Assembely_code.append(["@"+Branch_Name2])
+                Assembely_code.append(["nop"])#16
+                Assembely_code.append(["load","c","0x0000","#" , temp[0]+HighByte_Sufix]) #19
+                Assembely_code.append(["load","d","0x0000","#" , temp[0]+LowByte_Sufix])  #22
+                Assembely_code.append(["add", "d","b "]) #23
+                Assembely_code.append(["addc","c","a"]) #24
+                Assembely_code.append(["store","a","0x0000","#" , temp[0]+HighByte_Sufix])#27
+                Assembely_code.append(["store","b","0x0000","#" , temp[0]+LowByte_Sufix])#30
+                RunProgramLength += 30
                 Line_Found = True
+                
+                
             elif Is16Bit(temp[0]) and Is16Bit(temp[1]):  
                 Assembely_code.append(["# " + temp[0] + "(16) += " + temp[1]+"(16)"])
                 Assembely_code.append(["load","a","0x0000","#" , temp[0]+HighByte_Sufix])
@@ -882,11 +1171,12 @@ for line in Program_Code:
                 Assembely_code.append(["load","a","0x0000","#" , temp[0]+HighByte_Sufix])   #3
                 Assembely_code.append(["load","b","0x0000","#" , temp[0]+LowByte_Sufix])    #6
                 Assembely_code.append(["clear","c"])                                        #7
-                Assembely_code.append(["dec","b"])                                          #8
-                Assembely_code.append(["addc","c","a"])                                     #9
-                Assembely_code.append(["store","a","0x0000","#" , temp[0]+HighByte_Sufix])  #12
-                Assembely_code.append(["store","b","0x0000","#" , temp[0]+LowByte_Sufix])   #15
-                RunProgramLength += 15
+                Assembely_code.append(["not","c"])                                          #8
+                Assembely_code.append(["dec","b"])                                          #9
+                Assembely_code.append(["addc","c","a"])                                     #10
+                Assembely_code.append(["store","a","0x0000","#" , temp[0]+HighByte_Sufix])  #13
+                Assembely_code.append(["store","b","0x0000","#" , temp[0]+LowByte_Sufix])   #16
+                RunProgramLength += 16
                 Line_Found = True
     if (len(line) == 5) and (Line_Found == False) and (line[1] == "=") and(line[2] == "!"):   #finds x = ! y        
         
@@ -1440,3 +1730,9 @@ print("\nerrors: " + str(len(errors)))
 for error in errors:
     print(error)
 print("")
+print("programmet bruker ")
+print(RunProgramLength + len(List_8_bit) + 2* len(List_16_bit) + 3)
+print("bytes")
+# print(RunProgramLength)
+# print(len(List_8_bit))
+# print(2*len(List_16_bit))

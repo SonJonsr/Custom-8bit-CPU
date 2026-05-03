@@ -11,56 +11,51 @@
 #define D 0x44
 #define exclamation 0x21
 
-int8_t temp = 0;
-int8_t length = 11;
-int8_t count = 0;
 int8_t zero = 0;
 int8_t attribute = 32; // should be white text on black background
 
 int16_t Screen_Base = 0xE000;
-int16_t AdrIncrimented = 0; 
+int16_t Address = 0; 
+int16_t Screen_Max = 0xE018;
 int16_t Two = 2; 
 
 int8_t MEM[65536];
     
 void main (  )   {       
-	AdrIncrimented = Screen_Base;
- 	count = zero;
-	while (count < length) {        //setts the attribute of the text area to white on black background
-		MEM[AdrIncrimented] = zero;
-		AdrIncrimented ++;
-		MEM[AdrIncrimented] = attribute;
-		AdrIncrimented ++;
-		count++;
+	Address = Screen_Base;
+	while (Address < Screen_Max) {        //setts the attribute of the text area to white on black background
+		MEM[Address] = zero;
+		Address ++;
+		MEM[Address] = attribute;
+		Address ++;
 	}
 	
-	AdrIncrimented = Screen_Base; // setts the text to "HELLO WORLD!"
-	MEM[AdrIncrimented] = H;
- 	AdrIncrimented += Two;
-	MEM[AdrIncrimented] = E;
-    AdrIncrimented += Two;
-	MEM[AdrIncrimented] = L;
- 	AdrIncrimented += Two;
-	MEM[AdrIncrimented] = O;
- 	AdrIncrimented += Two;
-	MEM[AdrIncrimented] = space;
- 	AdrIncrimented += Two;
-	MEM[AdrIncrimented] = W;
- 	AdrIncrimented += Two;
-	MEM[AdrIncrimented] = O;
- 	AdrIncrimented += Two;
-	MEM[AdrIncrimented] = R;
- 	AdrIncrimented += Two;
-	MEM[AdrIncrimented] = L;
- 	AdrIncrimented += Two;
-	MEM[AdrIncrimented] = D;
- 	AdrIncrimented += Two;
-	MEM[AdrIncrimented] = exclamation;
+	Address = Screen_Base; // setts the text to "HELLO WORLD!"
+	MEM[Address] = H;
+ 	Address += Two;
+	MEM[Address] = E;
+    Address += Two;
+	MEM[Address] = L;
+ 	Address += Two;
+	MEM[Address] = L;
+ 	Address += Two;
+	MEM[Address] = O;
+ 	Address += Two;
+	MEM[Address] = space;
+ 	Address += Two;
+	MEM[Address] = W;
+ 	Address += Two;
+	MEM[Address] = O;
+ 	Address += Two;
+	MEM[Address] = R;
+ 	Address += Two;
+	MEM[Address] = L;
+ 	Address += Two;
+	MEM[Address] = D;
+ 	Address += Two;
+	MEM[Address] = exclamation;
 
-
-	count = zero;               // infinite loop to keep the program not running
-	while (count < length) {
-		count = count;
-	}
+halt:
+	goto halt;
 }    
     

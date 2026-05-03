@@ -1,37 +1,22 @@
-def     0x003e  0x04    #       length_HH
-def     0x003f  0x4c    #       length_LL
-def     0x0040  0x02    #       count_HH
-def     0x0041  0xbc    #       count_LL
+def     0x002e  0x00    #       x       
+def     0x002f  0x0a    #       y       
+def     0x0030  0x37    #       z       
 nop #start buffer
-@branch0
-nop     
-load    a       0x003f  #       length_LL
-load    b       0x0041  #       count_LL
-not     a       
-inc     a       
+# x(8bit) = y(8bit) and z(8bit)
+load    b       0x002f  #       y       
+load    d       0x0030  #       z       
+and     d       b       
+store   b       0x002e  #       x       
+# x(8bit) = y(8bit) and z(8bit)
+load    b       0x002f  #       y       
+load    d       0x0030  #       z       
+and     d       b       
+store   b       0x002e  #       x       
+# x(8) += y(8)
+load    a       0x002e  #       x       
+load    b       0x002f  #       y       
 add     b       a       
-bnz     branch1 
-nop     
-clear   a       
-load    b       0x0040  #       count_HH
-addc    a       b       
-load    a       0x003e  #       length_HH
-not     a       
-add     b       a       
-boz     branch2 
-@branch1
-nop     
-# count ++
-load    a       0x0040  #       count_HH
-load    b       0x0041  #       count_LL
-clear   c       
-inc     b       
-addc    c       a       
-store   a       0x0040  #       count_HH
-store   b       0x0041  #       count_LL
-jump branch0 
-@branch2 
-nop     
+store   a       0x002e  #       x       
 @halt   
 nop     
 jump    halt    

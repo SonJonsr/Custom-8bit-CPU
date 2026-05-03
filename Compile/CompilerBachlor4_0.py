@@ -859,7 +859,7 @@ with open(ROM_Filename, "wb") as out_file:
 
 
 
-def hexdump_compact(filename, bytes_per_line=128):
+def hexdump_compact(filename, bytes_per_line=16):
     with open(filename, "rb") as f:
         offset = 0
         last_chunk = None

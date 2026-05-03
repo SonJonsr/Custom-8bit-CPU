@@ -1,15 +1,15 @@
   # include  < stdint.h >        
   # include  < stdio.h >        
-    
- int16_t length  =  1100 ;    
- int16_t count   =   700 ;    
-     
  int8_t MEM [ 65536 ]  ;    
+    
+ int8_t x  =  0 ;    
+ int8_t y  =  10 ;    
+ int8_t z  =  55 ;    
         
  void main  (    )     {           
- 	while  (  length  !=  count  )   {    
- 		count ++  ;    
- 	 }    
+ 	x  =  y  &&  z ;    
+ 	x  =  y  &&  z ;    
+ 	x  +=  y ;    
  halt :    
  	goto halt ;    
   }        
