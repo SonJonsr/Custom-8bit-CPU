@@ -1,91 +1,40 @@
-def     0x0089  0x00    #       keyboard_info
-def     0x008a  0x00    #       keyboard_ascii
-def     0x008b  0x00    #       zero    
-def     0x008c  0x01    #       one     
-def     0x008d  0x20    #       white   
-def     0x008e  0xe0    #       cursor_HH
-def     0x008f  0x00    #       cursor_LL
-def     0x0090  0x00    #       cursor_x_HH
-def     0x0091  0x00    #       cursor_x_LL
-def     0x0092  0x00    #       cursor_y_HH
-def     0x0093  0x00    #       cursor_y_LL
-def     0x0094  0xe0    #       adr_main_display_HH
-def     0x0095  0x00    #       adr_main_display_LL
-def     0x0096  0xef    #       adr_info_display_HH
-def     0x0097  0x00    #       adr_info_display_LL
-def     0x0098  0xf2    #       adr_keyboard_ascii_HH
-def     0x0099  0xc1    #       adr_keyboard_ascii_LL
-def     0x009a  0xf2    #       adr_keyboard_info_HH
-def     0x009b  0xc2    #       adr_keyboard_info_LL
-def     0x009c  0xf2    #       adr_random_HH
-def     0x009d  0xc3    #       adr_random_LL
-def     0x009e  0xf2    #       adr_timer_millis_ll_HH
-def     0x009f  0xc4    #       adr_timer_millis_ll_LL
-def     0x00a0  0xf2    #       adr_timer_millis_hh_HH
-def     0x00a1  0xc5    #       adr_timer_millis_hh_LL
-def     0x00a2  0xf2    #       adr_eeprom_start_HH
-def     0x00a3  0xc6    #       adr_eeprom_start_LL
-def     0x00a4  0xf3    #       adr_eeprom_end_HH
-def     0x00a5  0xc5    #       adr_eeprom_end_LL
-def     0x00a6  0x00    #       screen_size_HH
-def     0x00a7  0x80    #       screen_size_LL
+def     0x003e  0x04    #       length_HH
+def     0x003f  0x4c    #       length_LL
+def     0x0040  0x02    #       count_HH
+def     0x0041  0xbc    #       count_LL
 nop #start buffer
-# keyboard_info(8) = zero(8)
-load    a       0x008b  #       zero    
-store   a       0x0089  #       keyboard_info
 @branch0
 nop     
-load    a       0x0089  #       keyboard_info
-load    b       0x008c  #       one     
+load    a       0x003f  #       length_LL
+load    b       0x0041  #       count_LL
+not     a       
+inc     a       
+add     b       a       
+bnz     branch1 
+nop     
+clear   a       
+load    b       0x0040  #       count_HH
+addc    a       b       
+load    a       0x003e  #       length_HH
 not     a       
 add     b       a       
-bon     branch1 
+boz     branch2 
+@branch1
 nop     
-load    a       0x009a  #       adr_keyboard_info_HH
-load    b       0x009b  #       adr_keyboard_info_LL
-store   a       0x0000   + 0x0005
-store   b       0x0000   + 0x0003
-load    a       0x0000  
-store   a       0x0089  #       keyboard_info
+# count ++
+load    a       0x0040  #       count_HH
+load    b       0x0041  #       count_LL
+clear   c       
+inc     b       
+addc    c       a       
+store   a       0x0040  #       count_HH
+store   b       0x0041  #       count_LL
 jump branch0 
-@branch1 
+@branch2 
 nop     
-load    a       0x0098  #       adr_keyboard_ascii_HH
-load    b       0x0099  #       adr_keyboard_ascii_LL
-store   a       0x0000   + 0x0005
-store   b       0x0000   + 0x0003
-load    a       0x0000  
-store   a       0x008a  #       keyboard_ascii
-# MEM[cursor(8)] = keyboard_ascii(8)
-load    a       0x008e  #       cursor_HH
-load    b       0x008f  #       cursor_LL
-store   a       0x0000   + 0x0008
-store   b       0x0000   + 0x0006
-load    a       0x008a  #       keyboard_ascii
-store   a       0x0000  
-# cursor ++
-load    a       0x008e  #       cursor_HH
-load    b       0x008f  #       cursor_LL
-clear   c       
-inc     b       
-addc    c       a       
-store   a       0x008e  #       cursor_HH
-store   b       0x008f  #       cursor_LL
-# MEM[cursor(8)] = white(8)
-load    a       0x008e  #       cursor_HH
-load    b       0x008f  #       cursor_LL
-store   a       0x0000   + 0x0008
-store   b       0x0000   + 0x0006
-load    a       0x008d  #       white   
-store   a       0x0000  
-# cursor ++
-load    a       0x008e  #       cursor_HH
-load    b       0x008f  #       cursor_LL
-clear   c       
-inc     b       
-addc    c       a       
-store   a       0x008e  #       cursor_HH
-store   b       0x008f  #       cursor_LL
+@halt   
+nop     
+jump    halt    
 jump 0x0000 #Jump to main again 
 @at_HALT_end
 nop     

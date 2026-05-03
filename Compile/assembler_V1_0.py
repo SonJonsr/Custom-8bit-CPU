@@ -176,34 +176,36 @@ for line in comands:
         
     #8-bit ints
     elif line[0] == "int8_t" or line[0] == "char":
-        #print(line[1][len(line[1])-2])
-        if line[1][len(line[1])-2] != "]":
-            int8 = [line[1]]
-            temp = ""
-
-            valueElement = 3
-            if line[valueElement] == "-":
-                valueElement = 4
-                temp = "-"
-
-            for i in range(0,len(line[valueElement])):
-                temp += line[valueElement][i]     
+        if line[2] == "=":
+            #print(line[1][len(line[1])-2])
+            if line[1][len(line[1])-2] != "]":
+                int8 = [line[1]]
+                temp = ""
+    
+                valueElement = 3
+                if line[valueElement] == "-":
+                    valueElement = 4
+                    temp = "-"
+    
+                for i in range(0,len(line[valueElement])):
+                    temp += line[valueElement][i]     
+                    
+                if valueElement == 3:
+                    if len(temp) > 2:
+                        first = str(temp[0] + temp[1])
+                        if first == "0x":
+                            #print(" ----------------- ")
+                            temp = int(temp, 16)
+                            
+                int8.append(temp)
                 
-            if valueElement == 3:
-                if len(temp) > 2:
-                    first = str(temp[0] + temp[1])
-                    if first == "0x":
-                        #print(" ----------------- ")
-                        temp = int(temp, 16)
-                        
-            int8.append(temp)
-            
-            List_8_bit.append(int8)
-        else:
-            print("8-bit list : " + str(line))
+                List_8_bit.append(int8)
+            else:
+                print("8-bit list : " + str(line))
 
     #16-bit ints
     elif line[0] == "int16_t":
+        
         varname = line[1]
         int16 = [line[1]]
         temp = ""
@@ -928,30 +930,82 @@ for line in Program_Code:
         if line[3] == "==":
             print("==")
             if Is8Bit(temp[0]) and Is8Bit(temp[1]):
-                Assembely_code.append(["load","a","0x0000","#" , temp[0]])
-                Assembely_code.append(["load","b","0x0000","#" , temp[1]])
-                Assembely_code.append(["not","a"])
-                Assembely_code.append(["dec","a"])
-                Assembely_code.append(["add","b","a"])
-                Assembely_code.append(["bnz",Branch_Name1])
+                Assembely_code.append(["load","a","0x0000","#" , temp[0]]) #3
+                Assembely_code.append(["load","b","0x0000","#" , temp[1]]) #6
+                Assembely_code.append(["not","a"]) #7
+                Assembely_code.append(["inc","a"]) #8
+                Assembely_code.append(["add","b","a"]) #9
+                Assembely_code.append(["bnz",Branch_Name1]) #12
                 Assembely_code.append(["nop"]) #13
                 
-                End_List.append([["@"+Branch_Name1],[ "nop" ]])
+                End_List.append([["@"+Branch_Name1],
+                                 [ "nop" ]]) #14
                 RunProgramLength += 14
                 Line_Found = True
+                
+            if Is16Bit(temp[0]) and Is16Bit(temp[1]):
+                Assembely_code.append(["load","a","0x0000","#" , temp[0]+LowByte_Sufix]) #3
+                Assembely_code.append(["load","b","0x0000","#" , temp[1]+LowByte_Sufix]) #6
+                Assembely_code.append(["not","a"]) #7
+                Assembely_code.append(["inc","a"]) #8
+                Assembely_code.append(["add","b","a"]) #9
+                Assembely_code.append(["bnz",Branch_Name1]) # 12
+                Assembely_code.append(["nop"]) #13
+                Assembely_code.append(["clear","a"]) #14
+                Assembely_code.append(["load","b","0x0000","#" , temp[1]+HighByte_Sufix]) #17
+                Assembely_code.append(["addc","a","b"]) # 18
+                Assembely_code.append(["load","a","0x0000","#" , temp[0]+HighByte_Sufix]) #21
+                Assembely_code.append(["not","a"])  #22
+                Assembely_code.append(["add","b","a"]) #23
+                Assembely_code.append(["bnz",Branch_Name1]) #26
+                Assembely_code.append(["nop"]) #27
+                
+                End_List.append([["@"+Branch_Name1], 
+                                 [ "nop" ] #28
+                                 ])
+                RunProgramLength += 28
+                Line_Found = True
+                
         if line[3] == "!=":
             print("!=")
             if Is8Bit(temp[0]) and Is8Bit(temp[1]):
                 Assembely_code.append(["load","a","0x0000","#" , temp[0]])
                 Assembely_code.append(["load","b","0x0000","#" , temp[1]])
                 Assembely_code.append(["not","a"])
-                Assembely_code.append(["dec","a"])
+                Assembely_code.append(["inc","a"])
                 Assembely_code.append(["add","b","a"])
                 Assembely_code.append(["boz",Branch_Name1])
                 Assembely_code.append(["nop"]) #13
 
                 End_List.append([["@"+Branch_Name1],[ "nop" ]])
                 RunProgramLength += 14
+                Line_Found = True
+            
+            if Is16Bit(temp[0]) and Is16Bit(temp[1]):
+                
+                Branch_Name2 = "branch" + str(Branch_Count)
+                Branch_Count += 1
+                Assembely_code.append(["load","a","0x0000","#" , temp[0]+LowByte_Sufix]) #3
+                Assembely_code.append(["load","b","0x0000","#" , temp[1]+LowByte_Sufix]) #6
+                Assembely_code.append(["not","a"]) #7
+                Assembely_code.append(["inc","a"]) #8
+                Assembely_code.append(["add","b","a"]) #9
+                Assembely_code.append(["bnz",Branch_Name1]) # 12
+                Assembely_code.append(["nop"]) #13
+                Assembely_code.append(["clear","a"]) #14
+                Assembely_code.append(["load","b","0x0000","#" , temp[1]+HighByte_Sufix]) #17
+                Assembely_code.append(["addc","a","b"]) # 18
+                Assembely_code.append(["load","a","0x0000","#" , temp[0]+HighByte_Sufix]) #21
+                Assembely_code.append(["not","a"])  #22
+                Assembely_code.append(["add","b","a"]) #23
+                Assembely_code.append(["boz",Branch_Name2]) #26
+                Assembely_code.append(["@"+Branch_Name1])
+                Assembely_code.append(["nop"]) #27
+                
+                End_List.append([["@"+Branch_Name2], 
+                                 [ "nop" ] #28
+                                 ])
+                RunProgramLength += 28
                 Line_Found = True
             
         if line[3] == "<":
@@ -967,6 +1021,26 @@ for line in Program_Code:
                 End_List.append([["@"+Branch_Name1],[ "nop" ]])
                 RunProgramLength += 13
                 Line_Found = True
+                
+            if Is16Bit(temp[0]) and Is16Bit(temp[1]):
+                
+                Assembely_code.append(["load","a","0x0000","#" , temp[0]+HighByte_Sufix]) #3
+                Assembely_code.append(["load","b","0x0000","#" , temp[0]+LowByte_Sufix]) #6
+                Assembely_code.append(["load","c","0x0000","#" , temp[1]+HighByte_Sufix]) #9
+                Assembely_code.append(["load","d","0x0000","#" , temp[1]+LowByte_Sufix]) #12
+                Assembely_code.append(["not","a"]) #13
+                Assembely_code.append(["not","b"]) #14
+                Assembely_code.append(["addc","d","b"]) #16
+                Assembely_code.append(["addc","c","a"]) #17
+                Assembely_code.append(["bon",Branch_Name1]) # 20
+                Assembely_code.append(["nop"]) #24
+                
+                End_List.append([["@"+Branch_Name1], 
+                                 [ "nop" ] #25
+                                 ])
+                RunProgramLength += 21
+                Line_Found = True
+            
             
             
         if line[3] == ">":
@@ -982,6 +1056,25 @@ for line in Program_Code:
 
                 End_List.append([["@"+Branch_Name1],[ "nop" ]])
                 RunProgramLength += 14
+                Line_Found = True
+                
+            if Is16Bit(temp[0]) and Is16Bit(temp[1]):
+                
+                Assembely_code.append(["load","a","0x0000","#" , temp[1]+HighByte_Sufix]) #3
+                Assembely_code.append(["load","b","0x0000","#" , temp[1]+LowByte_Sufix]) #6
+                Assembely_code.append(["load","c","0x0000","#" , temp[0]+HighByte_Sufix]) #9
+                Assembely_code.append(["load","d","0x0000","#" , temp[0]+LowByte_Sufix]) #12
+                Assembely_code.append(["not","a"]) #13
+                Assembely_code.append(["not","b"]) #14
+                Assembely_code.append(["addc","d","b"]) #16
+                Assembely_code.append(["addc","c","a"]) #17
+                Assembely_code.append(["bon",Branch_Name1]) # 20
+                Assembely_code.append(["nop"]) #24
+                
+                End_List.append([["@"+Branch_Name1], 
+                                 [ "nop" ] #25
+                                 ])
+                RunProgramLength += 21
                 Line_Found = True
                 
     if (len(line) == 7) and (Line_Found == False):
@@ -1036,7 +1129,7 @@ for line in Program_Code:
                 Assembely_code.append(["load","a","0x0000","#" , temp[0]]) #4
                 Assembely_code.append(["load","b","0x0000","#" , temp[1]]) #7
                 Assembely_code.append(["not","a"]) #8
-                Assembely_code.append(["dec","a"]) #9
+                Assembely_code.append(["inc","a"]) #9
                 Assembely_code.append(["add","b","a"]) #10
                 Assembely_code.append(["bnz",Branch_Name2]) # 13
                 Assembely_code.append(["nop"]) #14
@@ -1047,24 +1140,82 @@ for line in Program_Code:
                                  ])
                 RunProgramLength += 18
                 Line_Found = True
+                
+            if Is16Bit(temp[0]) and Is16Bit(temp[1]):
+                Assembely_code.append(["@"+Branch_Name1])
+                Assembely_code.append(["nop"]) #1
+                Assembely_code.append(["load","a","0x0000","#" , temp[0]+LowByte_Sufix]) #4
+                Assembely_code.append(["load","b","0x0000","#" , temp[1]+LowByte_Sufix]) #7
+                Assembely_code.append(["not","a"]) #8
+                Assembely_code.append(["inc","a"]) #9
+                Assembely_code.append(["add","b","a"]) #10
+                Assembely_code.append(["bnz",Branch_Name2]) # 13
+                Assembely_code.append(["nop"]) #14
+                Assembely_code.append(["clear","a"]) #15
+                Assembely_code.append(["load","b","0x0000","#" , temp[1]+HighByte_Sufix]) #18
+                Assembely_code.append(["addc","a","b"]) # 19
+                Assembely_code.append(["load","a","0x0000","#" , temp[0]+HighByte_Sufix]) #22
+                Assembely_code.append(["not","a"])  #23
+                Assembely_code.append(["add","b","a"]) #24
+                Assembely_code.append(["bnz",Branch_Name2]) #27
+                Assembely_code.append(["nop"]) #28
+                
+                End_List.append([["jump",Branch_Name1], #31
+                                 ["@"+Branch_Name2],
+                                 [ "nop" ] #32
+                                 ])
+                RunProgramLength += 32
+                Line_Found = True
+                
         if line[3] == "!=":
             print("!=")
             if Is8Bit(temp[0]) and Is8Bit(temp[1]):
                 Assembely_code.append(["@"+Branch_Name1])
                 Assembely_code.append(["nop"]) #1
-                Assembely_code.append(["load","a","0x0000","#" , temp[0]])
-                Assembely_code.append(["load","b","0x0000","#" , temp[1]])
-                Assembely_code.append(["not","a"])
-                Assembely_code.append(["dec","a"])
-                Assembely_code.append(["add","b","a"])
-                Assembely_code.append(["boz",Branch_Name2])
-                Assembely_code.append(["nop"]) #13
+                Assembely_code.append(["load","a","0x0000","#" , temp[0]]) #4
+                Assembely_code.append(["load","b","0x0000","#" , temp[1]]) #7
+                Assembely_code.append(["not","a"]) #8
+                Assembely_code.append(["inc","a"]) #9
+                Assembely_code.append(["add","b","a"]) #10
+                Assembely_code.append(["boz",Branch_Name2]) #13
+                Assembely_code.append(["nop"]) #14
 
                 End_List.append([["jump",Branch_Name1], #17
                                  ["@"+Branch_Name2],
                                  [ "nop" ] #18
                                  ])
                 RunProgramLength += 18
+                Line_Found = True
+            
+            if Is16Bit(temp[0]) and Is16Bit(temp[1]):
+                Branch_Name3 = "branch" + str(Branch_Count)
+                Branch_Count += 1
+                
+                Assembely_code.append(["@"+Branch_Name1])
+                Assembely_code.append(["nop"]) #1
+                Assembely_code.append(["load","a","0x0000","#" , temp[0]+LowByte_Sufix]) #3
+                Assembely_code.append(["load","b","0x0000","#" , temp[1]+LowByte_Sufix]) #6
+                Assembely_code.append(["not","a"]) #7
+                Assembely_code.append(["inc","a"]) #8
+                Assembely_code.append(["add","b","a"]) #9
+                Assembely_code.append(["bnz",Branch_Name2]) # 12
+                Assembely_code.append(["nop"]) #13
+                Assembely_code.append(["clear","a"]) #14
+                Assembely_code.append(["load","b","0x0000","#" , temp[1]+HighByte_Sufix]) #17
+                Assembely_code.append(["addc","a","b"]) # 18
+                Assembely_code.append(["load","a","0x0000","#" , temp[0]+HighByte_Sufix]) #21
+                Assembely_code.append(["not","a"])  #22
+                Assembely_code.append(["add","b","a"]) #23
+                Assembely_code.append(["boz",Branch_Name3]) #26
+                Assembely_code.append(["@"+Branch_Name2])
+                Assembely_code.append(["nop"]) #27
+                
+                
+                End_List.append([["jump",Branch_Name1], #30
+                                 ["@"+Branch_Name3],
+                                 [ "nop" ] #31
+                                 ])
+                RunProgramLength += 31
                 Line_Found = True
             
         if line[3] == "<":
@@ -1084,6 +1235,29 @@ for line in Program_Code:
                                  [ "nop" ] #18
                                  ])
                 RunProgramLength += 17
+                Line_Found = True
+                
+            
+            if Is16Bit(temp[0]) and Is16Bit(temp[1]):
+                Assembely_code.append(["@"+Branch_Name1])
+                Assembely_code.append(["nop"]) #1
+                Assembely_code.append(["load","a","0x0000","#" , temp[0]+HighByte_Sufix]) #4
+                Assembely_code.append(["load","b","0x0000","#" , temp[0]+LowByte_Sufix]) #7
+                Assembely_code.append(["load","c","0x0000","#" , temp[1]+HighByte_Sufix]) #10
+                Assembely_code.append(["load","d","0x0000","#" , temp[1]+LowByte_Sufix]) #13
+                Assembely_code.append(["not","a"]) #14
+                Assembely_code.append(["not","b"]) #15
+                Assembely_code.append(["addc","d","b"]) #17
+                Assembely_code.append(["addc","c","a"]) #18
+                Assembely_code.append(["bon",Branch_Name2]) # 21
+                Assembely_code.append(["nop"]) #25
+                
+                End_List.append([["jump",Branch_Name1], #28
+                                 ["@"+Branch_Name2],
+                                 [ "nop" ] #29
+                                 ])
+                
+                RunProgramLength += 29
                 Line_Found = True
             
             
@@ -1106,7 +1280,29 @@ for line in Program_Code:
                                  ])
                 RunProgramLength += 18
                 Line_Found = True
-        
+            
+            if Is16Bit(temp[0]) and Is16Bit(temp[1]):
+                Assembely_code.append(["@"+Branch_Name1])
+                Assembely_code.append(["nop"]) #1
+                Assembely_code.append(["load","a","0x0000","#" , temp[1]+HighByte_Sufix]) #4
+                Assembely_code.append(["load","b","0x0000","#" , temp[1]+LowByte_Sufix]) #7
+                Assembely_code.append(["load","c","0x0000","#" , temp[0]+HighByte_Sufix]) #10
+                Assembely_code.append(["load","d","0x0000","#" , temp[0]+LowByte_Sufix]) #13
+                Assembely_code.append(["not","a"]) #14
+                Assembely_code.append(["not","b"]) #15
+                Assembely_code.append(["addc","d","b"]) #17
+                Assembely_code.append(["addc","c","a"]) #18
+                Assembely_code.append(["bon",Branch_Name2]) # 21
+                Assembely_code.append(["nop"]) #25
+                
+                End_List.append([["jump",Branch_Name1], #28
+                                 ["@"+Branch_Name2],
+                                 [ "nop" ] #29
+                                 ])
+                
+                RunProgramLength += 29
+                Line_Found = True
+                
     if (len(line) == 2) and (Line_Found == False):
         if line[1] == ':':
             #print("@"+line[0])
