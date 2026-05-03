@@ -79,6 +79,10 @@ begin
     if rising_edge(clk) then
       if rst_n = '0' then
         counter <= 0;
+        counting <= '0';
+        clk_slow <= '0';
+        exp_sig <= (others => '0');
+        bin_sig <= (others => '0');
       else
         n_int := to_integer(unsigned(n));
         exponent := (n_int/10) - 1;

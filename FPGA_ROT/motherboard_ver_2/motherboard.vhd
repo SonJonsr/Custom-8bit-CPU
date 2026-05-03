@@ -17,8 +17,6 @@ entity motherboard is
   port (
     CLOCK_50 : in  std_logic;
     CLOCK_25 : in  std_logic;
-    KEY : in  std_logic_vector(3 downto 0);
-    SW  : in  std_logic_vector(17 downto 0);
 
     GPIO      : inout std_logic_vector(0 to 35); 
 
@@ -31,6 +29,8 @@ entity motherboard is
 
     HEX0, HEX1, HEX2, HEX3,
     HEX4, HEX5, HEX6, HEX7 : out std_logic_vector(6 downto 0) := (others => '0');
+
+    LEDG : OUT STD_LOGIC_VECTOR(7 downto 0);
 
     -- VGA
     VGA_CLK     : out std_logic;
@@ -123,18 +123,21 @@ end component;
       ascii : OUT STD_LOGIC_VECTOR(7 downto 0) := x"00"
     );
   END component;
-  component clock_controller is
+  component clock_controller_ver_2 is
     port (
       clk : in std_logic;
       rst_n : in std_logic;
 
-      btn : in std_logic;
-      mode : in std_logic;
-      
-      clock_speed_select  : in std_logic_vector(3 downto 0);
-      duty_cycle_select   : in std_logic_vector(3 downto 0);
+      clk_btn : in std_logic;
+      toggle_btn : in std_logic;
+      rotary_sig : in std_logic_vector(1 downto 0);
 
-      clk_slow : out std_logic := '0'
+      -- Hex display
+      hex0, hex1, hex2, hex3,
+      hex4, hex5, hex6, hex7	: out	std_logic_vector(6 downto 0);
+
+      automatic : out std_logic;
+      clk_slow : out std_logic
     );
   end component;
   component eeprom_manager is
@@ -208,15 +211,19 @@ end component;
       millis : out std_logic_vector(15 downto 0) := (others => '0')
     );
   end component;
-  component antibounce_key is
+  component antibounce is
+    GENERIC(
+      wait_clks : integer := 25
+    );
     port(
-      clk             : in std_logic;
-      rst_n           : in std_logic;
-      key             : in std_logic;
-      key_antibounced : out std_logic := '1'
+      clk       : in	std_logic;
+      data_in   : in	std_logic;
+      data_out  : out	std_logic := '0'
     );
   end component;
 
+  signal rst_n : std_logic := '0';
+  signal rst_n_antibounced : std_logic := '0';
 
 
   signal cpu_rw       : std_logic;
@@ -250,23 +257,41 @@ end component;
   signal gpio_dff : std_logic_vector(0 to 35);
 
   signal clk_slow : std_logic := '0';
+  signal clk_slow_antibounce : std_logic := '0';
 
   signal pixel_clk : std_logic := '0';
   signal pixel_clk_dff : std_logic := '0';
 
+  signal start_up : std_logic := '0';
+
 begin
 
+  LEDG(0) <= clk_slow_antibounce;
+  LEDG(7 downto 2) <= (others => '0');
+
+  GPIO(0 to 4) <= (others => 'Z');
+  -- RW
   GPIO(8) <= 'Z';
+  -- ADDRESSES
   GPIO(10 to 25) <= (others => 'Z');
-  GPIO(9) <= not clk_slow;
+  -- CPU CLOCK
+  GPIO(9) <= clk_slow_antibounce;
+  -- DATA BUs
   GPIO(26 to 33) <= (others => 'Z') when gpio_dff(8) = '0' else cpu_data_in;
 
   process(CLOCK_50) is
   begin
     if rising_edge(CLOCK_50) then
+      if rst_n_antibounced = '1' and start_up = '0' then
+        rst_n <= '0';
+      else
+        start_up <= '1';
+        rst_n <= rst_n_antibounced;
+      end if;
       pixel_clk <= not pixel_clk;
       gpio_dff <= GPIO;
-      GPIO(6) <= not KEY(3);
+      GPIO(6) <= not rst_n;
+
 
       cpu_rw      <= not gpio_dff(8);
       cpu_address <= gpio_dff(10 to 25);
@@ -289,8 +314,8 @@ begin
   )
    port map(
       clk => CLOCK_50,
-      rst_n => KEY(3),
-      clk_slow => not clk_slow,
+      rst_n => rst_n,
+      clk_slow => clk_slow_antibounce,
       timer_millis => millis,
       random_byte => random_byte,
       keyboard_data => keyboard_data,
@@ -325,7 +350,7 @@ begin
   eeprom_manager_inst: eeprom_manager
    port map(
       clk => CLOCK_50,
-      rst_n => KEY(3),
+      rst_n => rst_n,
       rw => eeprom_rw,
       adr => eeprom_adr,
       data_in => eeprom_data_in,
@@ -333,15 +358,23 @@ begin
       EEP_I2C_SCLK => EEP_I2C_SCLK,
       EEP_I2C_SDAT => EEP_I2C_SDAT
   );
-  clock_controller_inst: clock_controller
+  clock_controller_ver_2_inst: clock_controller_ver_2
    port map(
       clk => CLOCK_50,
-      rst_n => KEY(3),
-      btn => KEY(0),
-      mode => SW(8),
-      clock_speed_select => SW(3 downto 0),
-      duty_cycle_select => SW(7 downto 4),
-      clk_slow => clk_slow
+      rst_n => rst_n,
+      clk_btn => gpio_dff(3),
+      toggle_btn => gpio_dff(2),
+      rotary_sig => gpio_dff(0 to 1),
+      hex0 => HEX0,
+      hex1 => HEX1,
+      hex2 => HEX2,
+      hex3 => HEX3,
+      hex4 => HEX4,
+      hex5 => HEX5,
+      hex6 => HEX6,
+      hex7 => HEX7,
+      clk_slow => clk_slow,
+      automatic => LEDG(1)
   );
   timer_millis_inst: timer_millis
    generic map(
@@ -349,19 +382,19 @@ begin
   )
    port map(
       clk => CLOCK_50,
-      rst_n => KEY(3),
+      rst_n => rst_n,
       millis => millis
   );
   random_inst: random
    port map(
       clk => CLOCK_50,
-      rst_n => KEY(3),
+      rst_n => rst_n,
       random_byte => random_byte
   );
   PS2_MODUL_inst: PS2_MODUL
    port map(
       clk => CLOCK_50,
-      rst_n => KEY(3),
+      rst_n => rst_n,
       ps2_clk => PS2_CLK,
       ps2_dat => PS2_DAT,
       en => keyboard_en,
@@ -377,7 +410,7 @@ begin
   )
    port map(    
       pixel_clk => pixel_clk,
-      rst_n => KEY(3),
+      rst_n => rst_n,
       dat => screencard_dat,
       adr => screencard_adr,
       VGA_CLK => VGA_CLK,
@@ -388,6 +421,25 @@ begin
       VGA_R => VGA_R,
       VGA_G => VGA_G,
       VGA_B => VGA_B
+  );
+
+  rst_antibounce_inst: antibounce
+   generic map(
+      wait_clks => 1000
+  )
+   port map(
+      clk => CLOCK_50,
+      data_in => gpio_dff(4),
+      data_out => rst_n_antibounced 
+  );
+  clk_slow_antibounce_inst : antibounce
+   generic map(
+      wait_clks => 500
+  )
+   port map(
+      clk => CLOCK_50,
+      data_in => clk_slow,
+      data_out => clk_slow_antibounce
   );
 
 

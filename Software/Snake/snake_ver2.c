@@ -2,114 +2,128 @@
 #include <stdint.h>
 #include <stdio.h>
 
-#define zero 0x0000
-#define one 0x0001
-#define two 0x0002
-#define three 0x0003
-#define four 0x0004
-#define six 0x0006
-#define seven 0x0007
-#define eight 0x0008
-#define hex_ten 0x0010
-#define oofe 0x00FE
-#define ooff 0x00FF
-#define hex_hundred 0x0100
-#define oooF 0x000F
-#define ooFo 0x00F0
-#define hex_eight_thousand 0x8000
+int8_t MEM[65536];
+int16_t adr_main_display = 0xE000;
+int16_t adr_info_display = 0xEF00;
+int16_t adr_keyboard_ascii = 0xF2C1;
+int16_t adr_keyboard_info = 0xF2C2;
+int16_t adr_random = 0xF2C3;
+int16_t adr_timer_millis_ll = 0xF2C4;
+int16_t adr_timer_millis_hh = 0xF2C5;
+int16_t adr_eeprom_start = 0xF2C6;
+int16_t adr_eeprom_end = 0xF3C5;
 
-#define game_increment 0x00C8
+int16_t one = 0x0001;
+int16_t two = 0x0002;
+int16_t three = 0x0003;
+int16_t four = 0x0004;
+int16_t six = 0x0006;
+int16_t seven = 0x0007;
+int16_t eight = 0x0008;
+int16_t hex_ten = 0x0010;
+int16_t oofe = 0x00FE;
+int16_t ooff = 0x00FF;
+int16_t hex_hundred = 0x0100;
+int16_t oooF = 0x000F;
+int16_t ooFo = 0x00F0;
+int16_t hex_eight_thousand = 0x8000;
 
-#define A 0x41
-#define C 0x43
-#define E 0x45
-#define G 0x47
-#define H 0x48
-#define I 0x49
-#define M 0x4D
-#define O 0x4F
-#define R 0x52
-#define S 0x53
-#define V 0x56
+int16_t game_increment = 0x00C8;
 
-#define space 0x20
-#define escape 0x1B
+int8_t A = 0x41;
+int8_t C = 0x43;
+int8_t E = 0x45;
+int8_t G = 0x47;
+int8_t H = 0x48;
+int8_t I = 0x49;
+int8_t M = 0x4D;
+int8_t O = 0x4F;
+int8_t R = 0x52;
+int8_t S = 0x53;
+int8_t V = 0x56;
 
-#define ascii_num 0x30
+int8_t kb_right = 0x01;
+int8_t kb_left = 0xFF;
+int8_t kb_down = 0x10;
+int8_t kb_up = 0xF0;
 
-#define game_on 1
-#define game_off 0
+int8_t space = 0x20;
+int8_t escape = 0x1B;
 
-#define color_silver 0x01
-#define color_black 0x03
-#define color_red 0x04
-#define color_lime 0x08
-#define color_green 0x09
+int8_t ascii_num = 0x30;
 
-#define ascii_block 0xFF
+int8_t game_on = 1;
+int8_t game_off = 0;
 
-#define right 0x0004
-#define left 0xFFFC
-#define down 0x0080
-#define up 0xFF80
-#define kb_right 0x01
-#define kb_left 0xFF
-#define kb_down 0x10
-#define kb_up 0xF0
+int8_t color_silver = 0x01;
+int8_t color_black = 0x03;
+int8_t color_red = 0x04;
+int8_t color_lime = 0x08;
+int8_t color_green = 0x09;
 
-#define kb_ascii 0x0000
-#define kb_info 0x0001
+int8_t ascii_block = 0xFF;
 
-#define screen_size 0x0F00
-#define screen_width 0x0080
-#define screen_height 0x001E
+int16_t right = 0x0004;
+int16_t left = 0xFFFC;
+int16_t down = 0x0080;
+int16_t up = 0xFF80;
 
-#define board_size 0x0100
-#define board_height 0x0010
-#define board_width 0x0010
-#define board_location 0x0490
+int16_t kb_ascii = 0x0000;
+int16_t kb_info = 0x0001;
 
-#define snake_start 0x0073
+int16_t screen_size = 0x0F00;
+int16_t screen_width = 0x0080;
+int16_t screen_height = 0x001E;
 
-#define apple_start 0x007A
+int16_t board_size = 0x0100;
+int16_t board_height = 0x0010;
+int16_t board_width = 0x0010;
+int16_t board_location = 0x0490;
+
+int16_t snake_start = 0x0073;
+
+int16_t apple_start = 0x007A;
 
 // Functions
-int8_t go_to_snake_start;
-int8_t go_to_apple;
-int8_t go_to_high_score;
-int8_t go_to_score_apple;
-int8_t go_to_bcd_byte_div_ten;
-int8_t go_to_bcd_byte_draw;
-int8_t go_to_bcd_byte_done;
+int8_t go_to_snake_start = 0x00;
+int8_t go_to_apple = 0x00;
+int8_t go_to_high_score = 0x00;
+int8_t go_to_score_apple = 0x00;
+int8_t go_to_bcd_byte_div_ten = 0x00;
+int8_t go_to_bcd_byte_draw = 0x00;
+int8_t go_to_bcd_byte_done = 0x00;
 
-int8_t Screen[screen_size];
-int8_t Keyboard[two];
-int8_t Eeprom[hex_hundred];
-int8_t Random;
-int16_t Millis;
+// int8_t Screen[screen_size];
+// int8_t Keyboard[two];
+// int8_t Eeprom[hex_hundred];
+// int8_t Random;
+// int16_t Millis;
 
-int16_t i;
-int16_t j;
+int16_t i = 0x00;
+int16_t j = 0x00;
 
 // Div by ten variables
-int16_t num;
-int16_t num_temp;
-int16_t temp;
-int16_t qou;
-int16_t div_ten;
-int16_t bcd;
+int16_t num = 0x00;
+int16_t num_temp = 0x00;
+int16_t temp = 0x00;
+int16_t qou = 0x00;
+int16_t div_ten = 0x00;
+int16_t bcd = 0x00;
 
 // GAME STATUS
-int8_t game_running;
-int16_t millis_new;
-int16_t millis_old;
-int16_t millis_goal;
+int8_t game_running = 0x00;
+int16_t millis_new = 0x00;
+int16_t millis_old = 0x00;
+int16_t millis_goal = 0x00;
 
 // SNAKE
-int16_t snake[board_size];
-int16_t snake_tail;
-int16_t snake_head;
-int16_t snake_head_next;
+// int16_t snake[board_size];
+int16_t snake_array_y = 0xF400;
+int16_t snake_array_x = 0xF500;
+int8_t snake_ptr = 0x00;
+int8_t snake_ptr_tail = 0xFF;
+int8_t snake_ptr_head = 0x02;
+int16_t snake_head_next = 0x0000;
 int16_t snake_counter;
 int8_t snake_head_next_color;
 
@@ -152,7 +166,7 @@ snake_game:
   // clears screen
   i = zero;
 clears_screen:
-  odd_check = i & one;
+  cursor = odd_check = i & one;
   if (odd_check) {
     Screen[i] = color_black;
   } else {
@@ -173,6 +187,16 @@ clears_screen:
   border_height = board_height;
   border_height++;
   border_height++;
+
+  border_top_l = board_location - screen_width;
+  border_top_l -= four;
+
+  border_top_r = border_width;
+  border_top_r <<= two;
+
+  border_bot_l = border_height;
+  border_bot_l <<= seven;
+  border_bot_l += border_top_l;
 
   border_top_l = board_location - screen_width;
   border_top_l -= four;
@@ -237,7 +261,7 @@ border_vertical:
   cursor--;
   cursor -= screen_width;
   cursor -= screen_width;
-  num = Eeprom[zero];
+  num = MEM[eeprom];
   go_to_high_score = one;
   goto bcd_byte_draw;
 bcd_high_score:
@@ -480,16 +504,6 @@ game_over:
   cursor--;
   Screen[cursor] = color_red;
   cursor--;
-  Screen[cursor] = E;
-  cursor--;
-  Screen[cursor] = color_red;
-  cursor--;
-  Screen[cursor] = V;
-  cursor--;
-  Screen[cursor] = color_red;
-  cursor--;
-  Screen[cursor] = O;
-
 wait_for_key:
   keyboard_input = Keyboard[kb_ascii];
   if (keyboard_input == A) {
