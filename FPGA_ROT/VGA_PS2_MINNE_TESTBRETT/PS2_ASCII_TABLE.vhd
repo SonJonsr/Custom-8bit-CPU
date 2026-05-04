@@ -96,6 +96,10 @@ BEGIN
   --   end case;
   -- end process;
 
+            ascii_out <= STD_LOGIC_VECTOR(to_unsigned(ascii_table_size, ascii_out'length))
+                         when array_select = '1' else
+                         ascii_table(0);
+
   main : process(clk)
   begin
     if (rising_edge(clk)) then
@@ -158,10 +162,8 @@ BEGIN
 
         when READ_CPU =>
           if (array_select_sig = '1') then
-            ascii_out <= STD_LOGIC_VECTOR(to_unsigned(ascii_table_size, ascii_out'length));
             state <= IDLE;
           else
-            ascii_out <= ascii_table(0);
             ascii_temp <= ascii_table(0);
             
             -- Check if table is empty
@@ -223,7 +225,6 @@ BEGIN
           ascii_table_size <= 0;
           remove_table <= (others => (others => '0'));
           remove_table_size <= 0;
-          ascii_out <= x"00";
           state <= IDLE;
       end case;
 

@@ -1,8 +1,11 @@
+
 // Header file for input output functions
 #include <stdint.h>
 #include <stdio.h>
 
+int16_t clear = 0x0000;
 int8_t MEM[65536];
+
 int16_t adr_main_display = 0xE000;
 int16_t adr_info_display = 0xEF00;
 int16_t adr_keyboard_ascii = 0xF2C1;
@@ -13,10 +16,15 @@ int16_t adr_timer_millis_hh = 0xF2C5;
 int16_t adr_eeprom_start = 0xF2C6;
 int16_t adr_eeprom_end = 0xF3C5;
 
-#define shft_one 0x01;
-#define shft_two 0x02;
-#define shft_three 0x03;
-#define shft_seven 0x07;
+#define def_zero 0x00;
+#define def_one 0x01;
+#define def_two 0x02;
+#define def_three 0x03;
+#define def_seven 0x07;
+#define def_eight 0x08;
+
+int8_t temp_eight_bit = 0x00;
+int16_t temp = 0x0000;
 
 int16_t zero = 0x0000;
 int16_t one = 0x0001;
@@ -48,10 +56,15 @@ int8_t R = 0x52;
 int8_t S = 0x53;
 int8_t V = 0x56;
 
-int8_t kb_right = 0x01;
-int8_t kb_left = 0xFF;
-int8_t kb_down = 0x10;
-int8_t kb_up = 0xF0;
+int8_t kb_right = 0x64; // D
+int8_t kb_left = 0x61;  // A
+int8_t kb_down = 0x73;  // S
+int8_t kb_up = 0x77;    // W
+
+// int8_t kb_right = 0x01;
+// int8_t kb_left = 0xFF;
+// int8_t kb_down = 0x10;
+// int8_t kb_up = 0xF0;
 
 int8_t space = 0x20;
 int8_t escape = 0x1B;
@@ -69,10 +82,10 @@ int8_t color_green = 0x09;
 
 int8_t ascii_block = 0xFF;
 
-int16_t right = 0x0004;
-int16_t left = 0xFFFC;
-int16_t down = 0x0080;
-int16_t up = 0xFF80;
+int8_t right = 0x01;
+int8_t left = 0xFF;
+int8_t down = 0x10;
+int8_t up = 0xF0;
 
 int16_t kb_ascii = 0x0000;
 int16_t kb_info = 0x0001;
@@ -86,18 +99,19 @@ int16_t board_height = 0x0010;
 int16_t board_width = 0x0010;
 int16_t board_location = 0x03A0;
 
-int16_t snake_start = 0x0073;
+int8_t snake_start = 0x73;
 
 int16_t apple_start = 0x007A;
 
 // Functions
 int8_t go_to_snake_start = 0x00;
 int8_t go_to_apple = 0x00;
+int8_t go_to_apple_failed_gen = 0x00;
 int8_t go_to_high_score = 0x00;
 int8_t go_to_score_apple = 0x00;
-int8_t go_to_bcd_byte_div_ten = 0x00;
-int8_t go_to_bcd_byte_draw = 0x00;
-int8_t go_to_bcd_byte_done = 0x00;
+int8_t go_to_next_head_coord = 0x00;
+int8_t go_to_delete_snake_tail = 0x00;
+int8_t go_to_delete_snake_head = 0x00;
 
 // int8_t Screen[screen_size];
 // int8_t Keyboard[two];
@@ -108,15 +122,6 @@ int8_t go_to_bcd_byte_done = 0x00;
 int16_t i = 0x00;
 int16_t j = 0x00;
 
-// Div by ten variables
-int8_t num_8bit = 0x00;
-int16_t num = 0x0000;
-int16_t num_temp = 0x0000;
-int16_t temp = 0x0000;
-int16_t qou = 0x0000;
-int16_t div_ten = 0x0000;
-int16_t bcd = 0x0000;
-
 // GAME STATUS
 int8_t game_running = 0x00;
 int16_t millis_new = 0x00;
@@ -126,10 +131,13 @@ int16_t millis_goal = 0x00;
 // SNAKE
 // int16_t snake[board_size];
 int16_t snake_array = 0xF400;
-int8_t snake_ptr = 0x00;
-int8_t snake_ptr_tail = 0xFF;
-int8_t snake_ptr_head = 0x02;
-int16_t snake_head_next = 0x0000;
+int16_t snake_array_max = 0xF500;
+int16_t snake_ptr_tail = 0xF4FF;
+int16_t snake_ptr_head = 0x0000;
+int16_t snake_screen_head = 0x0000;
+int16_t snake_screen_head_next = 0x0000;
+int8_t snake_board_head = 0x00;
+int8_t snake_board_head_next = 0x00;
 int16_t snake_counter = 0x0003;
 int8_t snake_head_next_color = 0x03;
 
@@ -137,12 +145,12 @@ int8_t snake_head_next_color = 0x03;
 int8_t apple_next_color = 0x03;
 
 // DIRECTION
-int16_t direction = 0x0004;
+int8_t direction = 0x04;
 
 // KEYBOARD VARIABLES
-int8_t keyboard_input = 0x0000;
-int8_t keyboard_input_last = 0x0000;
-int8_t keyboard_mask = 0x0000;
+int8_t keyboard_input = 0x00;
+int8_t keyboard_input_last = 0x00;
+int8_t keyboard_mask = 0x00;
 
 // BOARD VARIABLES
 int16_t board_top_l = 0x0000;
@@ -166,22 +174,21 @@ int16_t cursor_x = 0x0000;
 int16_t cursor_y = 0x0000;
 int16_t odd_check = 0x0000;
 
-int main(void) {
+void main() {
 snake_game:
   // clears screen
-  i = zero;
   cursor = adr_main_display;
 clears_screen:
-  cursor += i;
-  odd_check = i;
-  odd_check &= one;
+  odd_check = cursor;
+  odd_check = odd_check && one;
   if (odd_check != one) {
     MEM[cursor] = ascii_block;
-  } else {
-    MEM[cursor] = color_black;
+    goto else_attr;
   }
-  i++;
-  if (i < screen_size) {
+  MEM[cursor] = color_black;
+else_attr:
+  cursor++;
+  if (cursor < adr_info_display) {
     goto clears_screen;
   }
 
@@ -197,7 +204,7 @@ clears_screen:
   border_top_l = board_location - screen_width;
   border_top_l -= four;
 
-  border_top_r = border_width << shft_two;
+  border_top_r = border_width << def_two;
 
   border_bot_l = border_height << seven;
   border_bot_l += border_top_l;
@@ -205,22 +212,22 @@ clears_screen:
   border_top_l = board_location - screen_width;
   border_top_l -= four;
 
-  border_top_r = border_width << shft_two;
+  border_top_r = border_width << def_two;
 
-  border_bot_l = border_height << shft_seven;
+  border_bot_l = border_height << def_seven;
   border_bot_l += border_top_l;
 
   border_paralell_h = border_height;
   border_paralell_h--;
-  border_paralell_h = border_paralell_h << shft_seven;
+  border_paralell_h = border_paralell_h << def_seven;
 
   border_paralell_v = border_width;
   border_paralell_v--;
-  border_paralell_v = border_paralell_v << shft_two;
+  border_paralell_v = border_paralell_v << def_two;
 
   i = zero;
 border_horizontal:
-  cursor = i << shft_two;
+  cursor = i << def_two;
   cursor += border_top_l;
   cursor++;
   cursor += adr_main_display;
@@ -239,7 +246,7 @@ border_horizontal:
   i = zero;
 border_vertical:
   cursor = i;
-  cursor <<= seven;
+  cursor = cursor << def_seven;
   cursor += border_top_l;
   cursor++;
   cursor += adr_main_display;
@@ -254,71 +261,66 @@ border_vertical:
   if (i < border_height) {
     goto border_vertical;
   }
-
-  // Draws the Highscore
-  cursor = border_top_r;
-  cursor--;
-  cursor -= screen_width;
-  cursor -= screen_width;
-  num_8bit = MEM[adr_eeprom_start];
-  go_to_high_score = one;
-  goto bcd_byte_draw;
-bcd_high_score:
+  //
+  // // Draws the Highscore
+  // cursor = border_top_r;
+  // cursor--;
+  // cursor -= screen_width;
+  // cursor -= screen_width;
+  // temp = MEM[adr_eeprom_start];
+  // go_to_high_score = one;
+  //
+  // /|\                          /|\
+  //  |   FIX FIX FIX FIX FIX FIX  |
+  //  |                            |
+  //
 
   // Draws the snake
+  snake_ptr_head = snake_array;
+  snake_board_head = snake_start;
+  i = zero;
+draw_start_body:
   // Finds the right address
-  MEM[snake_array] = snake_start;
-  go_to_snake_start = one;
-  cursor_x = snake_start;
+  MEM[snake_ptr_head] = snake_board_head;
+  snake_ptr_head++;
+  snake_board_head++;
+  cursor = snake_start;
+  go_to_snake_start = def_one;
   goto byte_coord_to_screen_coord;
 cursor_snake_start:
   cursor++;
 
-  // Draws the body
-  i = zero;
-draw_start_body:
-  MEM[snake_array_x] = ;
-  snake[i] = cursor;
-  Screen[cursor] = color_lime;
-  cursor++;
-  cursor++;
-  Screen[cursor] = color_lime;
-  cursor++;
-  cursor++;
+  MEM[cursor] = color_lime;
+  cursor += two;
+  MEM[cursor] = color_lime;
   i++;
   if (i < two) {
     goto draw_start_body;
   }
 
+  MEM[snake_ptr_head] = snake_board_head;
   // Draws the head
-  snake[i] = cursor;
-  Screen[cursor] = color_green;
-  cursor++;
-  cursor++;
-  Screen[cursor] = color_green;
+  snake_screen_head = cursor;
+  MEM[cursor] = color_green;
+  cursor += two;
+  MEM[cursor] = color_green;
 
   // Draws the apple
   cursor += hex_ten;
-  Screen[cursor] = color_red;
-  cursor++;
-  cursor++;
-  Screen[cursor] = color_red;
+  MEM[cursor] = color_red;
+  cursor += two;
+  MEM[cursor] = color_red;
 
   // Start direction
   direction = right;
 
-  // Start snake values
-  snake_counter = three;
-  snake_head = two;
-  snake_tail = ooff;
-
   game_running = game_on;
 
-  Keyboard[kb_info] = one; // Deletes ASCII fifo
+  MEM[adr_keyboard_info] = def_one; // Deletes ASCII fifo
 
 start_game:
-  keyboard_input = Keyboard[kb_ascii];
-  if (keyboard_input == kb_right) {
+  keyboard_input = MEM[adr_keyboard_ascii];
+  if (keyboard_input == space) {
     keyboard_input_last = keyboard_input;
     goto game_loop;
   }
@@ -329,16 +331,22 @@ game_loop:
   //  TIMER IMPLEMENTATION
   //    START THE TIMER
   //
-  millis_old = Millis;
+  temp_eight_bit = MEM[adr_timer_millis_hh];
+  millis_old = temp_eight_bit;
+  millis_old = millis_old << def_eight;
+  temp_eight_bit = MEM[adr_timer_millis_ll];
+  temp = temp_eight_bit;
+  temp = temp && ooff;
+  millis_old += temp;
   millis_goal = millis_old + game_increment;
 
-  keyboard_input = Keyboard[kb_ascii]; // Reads from ASCII fifo
+  keyboard_input = MEM[adr_keyboard_ascii]; // Reads from ASCII fifo
 
   // This mask is mask checks whether or not the input is opposite of
   // the current direction. The values of the ASCII characters assigned
   // to the arrow keys have been picked out for this purpose.
   keyboard_mask = keyboard_input + keyboard_input_last;
-  if (keyboard_mask != zero) {
+  if (keyboard_mask != def_zero) {
     if (keyboard_input == kb_right) {
       keyboard_input_last = keyboard_input;
       direction = right;
@@ -361,29 +369,40 @@ game_loop:
     }
   }
   // Find coords of next snake head
-  snake_head_next = snake[snake_head];
-  snake_head_next += direction;
+  snake_board_head_next = MEM[snake_ptr_head];
+  snake_board_head_next += direction;
+
+  cursor = snake_board_head_next;
+  cursor = cursor && ooff;
+  go_to_next_head_coord = def_one;
+  goto byte_coord_to_screen_coord;
+next_head_coord:
+
+  snake_screen_head_next = cursor;
+
   // Find colors of where new head will be drawn
-  snake_head_next_color = Screen[snake_head_next];
+  snake_head_next_color = MEM[snake_screen_head_next];
 
   // Makes old head part of body
-  cursor = snake[snake_head];
-  Screen[cursor] = color_lime;
-  cursor++;
-  cursor++;
-  Screen[cursor] = color_lime;
+  temp_eight_bit = MEM[snake_ptr_head];
+  cursor = temp_eight_bit;
+  go_to_delete_snake_head = def_one;
+  goto byte_coord_to_screen_coord;
+delete_snake_head:
+  MEM[cursor] = color_lime;
+  cursor += two;
+  MEM[cursor] = color_lime;
   // itterates head counter
-  snake_head++;
-  if (snake_head == hex_hundred) {
-    snake_head = zero;
+  snake_ptr_head++;
+  if (snake_ptr_head == snake_array_max) {
+    snake_ptr_head = snake_array;
   }
   // saves next head coords
-  snake[snake_head] = snake_head_next;
+  MEM[snake_ptr_head] = snake_board_head_next;
   // Draws head
-  Screen[snake_head_next] = color_green;
-  snake_head_next++;
-  snake_head_next++;
-  Screen[snake_head_next] = color_green;
+  MEM[snake_screen_head_next] = color_green;
+  snake_screen_head_next += two;
+  MEM[snake_screen_head_next] = color_green;
 
   // Checks what kind of tile the head drew over.
   // color_silver means wall
@@ -396,28 +415,32 @@ game_loop:
   }
   // color_black means empty coord
   if (snake_head_next_color == color_black) {
-    snake_tail++;
-    if (snake_tail == hex_hundred) {
-      snake_tail = zero;
+    snake_ptr_tail++;
+    if (snake_ptr_tail == snake_array_max) {
+      snake_ptr_tail = snake_array;
     }
     // Deletes the snake behind.
-    cursor = snake[snake_tail];
-    Screen[cursor] = color_black;
-    cursor++;
-    cursor++;
-    Screen[cursor] = color_black;
+    temp_eight_bit = MEM[snake_ptr_tail];
+    cursor = temp_eight_bit;
+    go_to_delete_snake_tail = def_one;
+    goto byte_coord_to_screen_coord;
+  delete_snake_tail:
+
+    MEM[cursor] = color_black;
+    cursor += two;
+    MEM[cursor] = color_black;
   }
   // color_red means apple coord
   if (snake_head_next_color == color_red) {
     // Scores goes up by one
     snake_counter++;
-    cursor = border_top_r;
-    cursor--;
-    cursor -= screen_width;
-    num = snake_counter;
-    go_to_score_apple = one;
-    goto bcd_byte_draw;
-  bcd_score_apple:
+    //   cursor = border_top_r;
+    //   cursor--;
+    //   cursor -= screen_width;
+    //   num = snake_counter;
+    //   go_to_score_apple = one;
+    //   goto bcd_byte_draw;
+    // bcd_score_apple:
     if (snake_counter == hex_hundred) {
       goto game_over;
     }
@@ -427,28 +450,41 @@ game_loop:
     while (apple_next_color != color_black) {
       if (i < three) {
         i++;
-        cursor = MEM[adr_random];
-        go_to_apple = one;
+        temp_eight_bit = MEM[adr_random];
+        cursor = temp_eight_bit;
+        go_to_apple = def_one;
         goto byte_coord_to_screen_coord;
       cursor_apple:
         cursor++;
-      } else {
-        cursor = snake[snake_tail];
+        goto else_i_three;
       }
-      apple_next_color = Screen[cursor];
+
+      temp_eight_bit = MEM[snake_ptr_tail];
+      cursor = temp_eight_bit;
+      go_to_apple_failed_gen = def_one;
+      goto byte_coord_to_screen_coord;
+    apple_failed_gen:
+    else_i_three:
+      apple_next_color = MEM[cursor];
     }
     // Draws apple
-    Screen[cursor] = color_red;
-    cursor++;
-    cursor++;
-    Screen[cursor] = color_red;
+    MEM[cursor] = color_red;
+    cursor += two;
+    MEM[cursor] = color_red;
   }
 
-  Keyboard[kb_info] = one; // Deletes ASCII fifo
+  MEM[adr_keyboard_info] = def_one; // Deletes ASCII fifo
 
   // timer implementation
 snake_game_timer:
-  millis_new = Millis;
+  temp_eight_bit = MEM[adr_timer_millis_hh];
+  millis_new = temp_eight_bit;
+  millis_new = millis_new << def_eight;
+  temp_eight_bit = MEM[adr_timer_millis_ll];
+  temp = temp_eight_bit;
+  temp = temp && ooff;
+  millis_new += temp;
+
   // checks for overflow
   if (millis_goal < millis_old) {
     // if overflow the two if statement are or-ed
@@ -458,55 +494,57 @@ snake_game_timer:
     if (millis_new < millis_goal) {
       goto snake_game_timer;
     }
-  } else {
-    // if not overflow the two if statement are and-ed
-    if (millis_new > millis_old) {
-      if (millis_new < millis_goal) {
-        goto snake_game_timer;
-      }
+    goto snake_game_timer_else;
+  }
+  // if not overflow the two if statement are and-ed
+  if (millis_new > millis_old) {
+    if (millis_new < millis_goal) {
+      goto snake_game_timer;
     }
   }
+snake_game_timer_else:
 
   goto game_loop;
 
   // GAME OVER
 game_over:
-  if (MEM[adr_eeprom_start] < snake_counter) {
-    MEM[adr_eeprom_start] = snake_counter;
-  }
+  // if (MEM[adr_eeprom_start] < snake_counter) {
+  //   MEM[adr_eeprom_start] = snake_counter;
+  // }
   cursor_x = six;
-  cursor_x = cursor_x << shft_two;
+  cursor_x = cursor_x << def_two;
   cursor_y = seven;
-  cursor_y = cursor_y << shft_seven;
+  cursor_y = cursor_y << def_seven;
   cursor = board_top_l;
   cursor += cursor_y;
   cursor += cursor_x;
+  cursor += adr_main_display;
 
-  Screen[cursor] = G;
+  MEM[cursor] = G;
   cursor++;
-  Screen[cursor] = color_red;
+  MEM[cursor] = color_red;
   cursor++;
-  Screen[cursor] = A;
+  MEM[cursor] = A;
   cursor++;
-  Screen[cursor] = color_red;
+  MEM[cursor] = color_red;
   cursor++;
-  Screen[cursor] = M;
+  MEM[cursor] = M;
   cursor++;
-  Screen[cursor] = color_red;
+  MEM[cursor] = color_red;
   cursor++;
-  Screen[cursor] = E;
+  MEM[cursor] = E;
   cursor++;
-  Screen[cursor] = color_red;
+  MEM[cursor] = color_red;
   cursor += screen_width;
-  Screen[cursor] = color_red;
+  MEM[cursor] = color_red;
   cursor--;
-  Screen[cursor] = R;
+  MEM[cursor] = R;
   cursor--;
-  Screen[cursor] = color_red;
+  MEM[cursor] = color_red;
   cursor--;
 wait_for_key:
-  keyboard_input = Keyboard[kb_ascii];
-  if (keyboard_input == A) {
+  keyboard_input = MEM[adr_keyboard_ascii];
+  if (keyboard_input == space) {
     goto snake_game;
   }
   goto wait_for_key;
@@ -514,136 +552,36 @@ wait_for_key:
 byte_coord_to_screen_coord:
   cursor_x = cursor;
   cursor_x = cursor_x && oooF;
-  cursor_x = cursor_x << shft_two;
+  cursor_x = cursor_x << def_two;
   cursor_y = cursor;
   cursor_y = cursor_y && ooFo;
   cursor = cursor_y;
-  cursor = cursor << shft_three;
+  cursor = cursor << def_three;
   cursor += board_top_l;
   cursor += cursor_x;
-  if (go_to_snake_start) {
-    go_to_snake_start = zero;
+  cursor += adr_main_display;
+  if (go_to_snake_start != def_zero) {
+    go_to_snake_start = clear;
     goto cursor_snake_start;
   }
-  if (go_to_apple) {
-    go_to_apple = zero;
+  if (go_to_delete_snake_tail != def_zero) {
+    go_to_delete_snake_tail = clear;
+    goto delete_snake_tail;
+  }
+  if (go_to_apple != def_zero) {
+    go_to_apple = clear;
     goto cursor_apple;
   }
-
-div_ten_func:
-  qou = num >> shft_one;
-  temp = num >> shft_two;
-  qou += temp;
-  temp = qou >> shft_four;
-  qou += temp;
-  temp = qou >> shft_eight;
-  qou += temp;
-  qou = qou >> shft_three;
-  temp = qou << shft_three;
-  div_ten = qou << shft_one;
-  temp += div_ten;
-  div_ten = num - temp;
-  div_ten += six;
-  div_ten = div_ten >> shft_four;
-  div_ten += qou;
-
-  if (go_to_bcd_byte_div_ten != zero) {
-    go_to_bcd_byte_div_ten = zero;
-    goto bcd_byte_div_ten;
+  if (go_to_apple_failed_gen != def_zero) {
+    go_to_apple_failed_gen = clear;
+    goto apple_failed_gen;
   }
-
-bcd_byte:
-  num = num_8bit & ooff;
-  num_temp = num;
-  bcd = zero;
-
-  //--------------------FOR I LOOP START--------------------//
-  i = two;
-bcd_byte_i:
-
-  //-----------FOR J LOOP START-----------//
-  j = i;
-bcd_byte_j_one:
-  go_to_bcd_byte_div_ten = one;
-  goto div_ten_func;
-bcd_byte_div_ten:
-  num = div_ten;
-  j--;
-  if (j > zero) {
-    goto bcd_byte_j_one;
+  if (go_to_next_head_coord != def_zero) {
+    go_to_next_head_coord = clear;
+    goto next_head_coord;
   }
-  //------------FOR J LOOP END------------//
-
-  //-----------FOR J LOOP START-----------//
-  // Reusing som variables to get 100x and 10x depending on i
-  j = zero;
-bcd_byte_j_two:
-  temp = div_ten << shft_three;
-  div_ten = div_ten << shft_one;
-  div_ten += temp;
-  j++;
-  if (j < i) {
-    goto bcd_byte_j_two;
+  if (go_to_delete_snake_head != def_zero) {
+    go_to_delete_snake_head = clear;
+    goto delete_snake_head;
   }
-  //------------FOR J LOOP END------------//
-
-  // since shifting is done with defines this is not possible:
-  // temp = i << two;
-  // num = num << temp;
-  if (i == one) {
-    num = num << shft_four;
-  }
-  if (i == two) {
-    num = num << shft_eight;
-  }
-  bcd += num;
-  // Subtract from num_temp the BCD value that was found.
-  num_temp -= div_ten;
-  num = num_temp;
-
-  i--;
-  if (i > zero) {
-    goto bcd_byte_i;
-  }
-  //---------------------FOR I LOOP END---------------------//
-
-  bcd += num;
-
-  if (go_to_bcd_byte_done) {
-    go_to_bcd_byte_done = zero;
-    goto bcd_byte_done;
-  }
-
-bcd_byte_draw:
-  go_to_bcd_byte_done = one;
-  goto bcd_byte;
-bcd_byte_done:
-  //--------------------FOR I LOOP START--------------------//
-  i = two;
-bcd_byte_draw_i:
-  temp = bcd;
-  num_temp = i;
-  num_temp <<= two;
-  temp >>= num_temp;
-  temp &= oooF;
-  temp += ascii_num;
-  Screen[cursor] = temp;
-  cursor++;
-  Screen[cursor] = color_silver;
-  cursor++;
-  i--;
-  if (i >= zero) {
-    goto bcd_byte_draw_i;
-  }
-  if (go_to_high_score) {
-    go_to_high_score = zero;
-    goto bcd_high_score;
-  }
-
-  if (go_to_score_apple) {
-    go_to_score_apple = zero;
-    goto bcd_score_apple;
-  }
-
-  return zero;
 }

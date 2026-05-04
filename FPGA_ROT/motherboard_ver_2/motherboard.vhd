@@ -159,7 +159,6 @@ end component;
   component random is
     port(
       clk   : in  std_logic;
-      rst_n : in  std_logic;
       random_byte : out std_logic_vector(7 downto 0) := x"FF"
     );
   end component;
@@ -388,7 +387,6 @@ begin
   random_inst: random
    port map(
       clk => CLOCK_50,
-      rst_n => rst_n,
       random_byte => random_byte
   );
   PS2_MODUL_inst: PS2_MODUL

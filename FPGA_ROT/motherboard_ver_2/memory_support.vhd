@@ -57,6 +57,8 @@ architecture RTL of memory_support is
   signal millis_temp  : std_logic_vector(15 downto 0) := x"0000";
   signal random_temp  : std_logic_vector(7 downto 0) := x"00";
   signal cpu_address_dff : std_logic_vector(15 downto 0) := x"0000";
+
+  signal keyboard_wait_en, keyboard_start_en : std_logic := '0';
 begin
 
   process(clk)
@@ -84,6 +86,18 @@ begin
 
         clk_slow_dff <= clk_slow;
         cpu_address_dff <= cpu_address;
+        if keyboard_start_en = '1' or keyboard_wait_en = '1' then
+          if clk_slow = '1' and clk_slow_dff = '0' then
+            keyboard_wait_en <= '0';
+            keyboard_en <= '1';
+          else
+            keyboard_wait_en <= '1';
+          end if;
+        else
+          keyboard_en <= '0';
+        end if;
+
+
         case to_integer(unsigned(cpu_address)) is
           when C_ADR_KEYBOARD_ASCII|C_ADR_KEYBOARD_INFO =>
             keyboard_as <= not cpu_address(0);
@@ -91,9 +105,9 @@ begin
             keyboard_rw <= cpu_rw;
 
             if clk_slow = '1' and clk_slow_dff = '0' then
-              keyboard_en <= '1';
+              keyboard_start_en <= '1';
             else
-              keyboard_en <= '0';
+              keyboard_start_en <= '0';
             end if;
 
           when C_ADR_RANDOM =>

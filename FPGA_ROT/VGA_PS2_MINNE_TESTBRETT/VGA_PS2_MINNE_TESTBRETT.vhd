@@ -156,24 +156,20 @@ BEGIN
       case state is
         -- Venter på at key(3) trykkes
         when IDLE =>
-          if (rdy_rising = '1') then
+          if (ascii /= x"00") then
+            dat1_in <= ascii;
+            send_counter <= 0;
             en <= '1';
             state <= START;
             -- Setter adr1 for ascii
             adr1 <= STD_LOGIC_VECTOR(to_unsigned(adr1_int, adr1'LENGTH));
+          else
+            en <= '0';
           end if;
 
         when START =>
           en <= '0';
-          if (rdy_rising = '1') then
-            if (ascii = x"00") then
-              state <= IDLE;
-            else 
-              dat1_in <= ascii;
-              state <= SEND_ASCII;
-              send_counter <= 0;
-            end if;
-          end if;
+          state <= SEND_ASCII;
           
         when SEND_ASCII =>
           send_counter <= send_counter + 1;

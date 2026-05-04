@@ -76,9 +76,6 @@ BEGIN
 		indata_reg_b => "CLOCK1",
 		intended_device_family => "Cyclone IV E",
 		lpm_type => "altsyncram",
-    lpm_hint => "ENABLE_RUNTIME_MOD=YES, INSTANCE_NAME=MEM1",
-    ltag_id_arg => "MEM1", -- Must match INSTANCE_NAME
-    implement_in_les => "OFF",
 		numwords_a => 65536,
 		numwords_b => 32768,
 		operation_mode => "BIDIR_DUAL_PORT",
@@ -144,8 +141,8 @@ END SYN;
 -- Retrieval info: PRIVATE: INIT_FILE_LAYOUT STRING "PORT_A"
 -- Retrieval info: PRIVATE: INIT_TO_SIM_X NUMERIC "0"
 -- Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Cyclone IV E"
--- Retrieval info: PRIVATE: JTAG_ENABLED NUMERIC "1"
--- Retrieval info: PRIVATE: JTAG_ID STRING "MEM1"
+-- Retrieval info: PRIVATE: JTAG_ENABLED NUMERIC "0"
+-- Retrieval info: PRIVATE: JTAG_ID STRING "NONE"
 -- Retrieval info: PRIVATE: MAXIMUM_DEPTH NUMERIC "0"
 -- Retrieval info: PRIVATE: MEMSIZE NUMERIC "524288"
 -- Retrieval info: PRIVATE: MEM_IN_BITS NUMERIC "0"
@@ -163,7 +160,7 @@ END SYN;
 -- Retrieval info: PRIVATE: REGrren NUMERIC "0"
 -- Retrieval info: PRIVATE: REGwraddress NUMERIC "1"
 -- Retrieval info: PRIVATE: REGwren NUMERIC "1"
--- Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "1"
+-- Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
 -- Retrieval info: PRIVATE: USE_DIFF_CLKEN NUMERIC "0"
 -- Retrieval info: PRIVATE: UseDPRAM NUMERIC "1"
 -- Retrieval info: PRIVATE: VarWidth NUMERIC "1"
@@ -227,5 +224,4 @@ END SYN;
 -- Retrieval info: GEN_FILE: TYPE_NORMAL MINNEMODUL.cmp TRUE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL MINNEMODUL.bsf FALSE
 -- Retrieval info: GEN_FILE: TYPE_NORMAL MINNEMODUL_inst.vhd FALSE
--- Retrieval info: GEN_FILE: TYPE_NORMAL MINNEMODUL_syn.v TRUE
 -- Retrieval info: LIB_FILE: altera_mf

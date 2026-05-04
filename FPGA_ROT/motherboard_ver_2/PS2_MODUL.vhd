@@ -55,6 +55,7 @@ ARCHITECTURE RTL OF PS2_MODUL IS
       clk,
       rst_n, new_code,
       layer, break      : IN  STD_LOGIC;
+      rdy               : IN STD_LOGIC;
       code              : IN  STD_LOGIC_VECTOR(7 downto 0);
       new_ascii, remove : OUT STD_LOGIC;
       ascii             : OUT STD_LOGIC_VECTOR(7 downto 0)
@@ -85,10 +86,12 @@ ARCHITECTURE RTL OF PS2_MODUL IS
   SIGNAL dat_sig                            : STD_LOGIC_VECTOR(7 downto 0);
   SIGNAL new_code_sig, layer_sig, break_sig : STD_LOGIC;
   SIGNAL code_sig                           : STD_LOGIC_VECTOR(7 downto 0);
-  SIGNAL new_ascii_sig, remove_sig          : STD_LOGIC;
+  SIGNAL new_ascii_sig, remove_sig, rdy_sig : STD_LOGIC := '0';
   SIGNAL ascii_sig                          : STD_LOGIC_VECTOR(7 downto 0);
 
 BEGIN
+
+  rdy <= rdy_sig;
 
 
   ps2_clk_antibounce: antibounce
@@ -136,6 +139,7 @@ BEGIN
         layer => layer_sig,
         break => break_sig,
         code => code_sig,
+        rdy => rdy_sig,
         new_ascii => new_ascii_sig,
         remove => remove_sig,
         ascii => ascii_sig
@@ -151,7 +155,7 @@ BEGIN
         new_ascii => new_ascii_sig,
         remove => remove_sig,
         ascii_in => ascii_sig,
-        rdy => rdy,
+        rdy => rdy_sig,
         ascii_out => ascii
     );
 
