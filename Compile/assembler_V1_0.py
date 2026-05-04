@@ -681,15 +681,15 @@ for line in Program_Code:
                                 Line_Found = True
                             
                             elif Is16Bit(temp[0]) and Is16Bit(temp[1]):
-                                # Assembely_code.append(["# "+temp[0]+"(16) = "+ temp[1]+"(16) >> "+ temp[2]+"(" + str(shift_amount) +")"])
-                                # Assembely_code.append(["load","a","0x0000","#", temp[1]+HighByte_Sufix])
-                                # Assembely_code.append(["load","b","0x0000","#", temp[1]+LowByte_Sufix])
-                                # for j in range(0,shift_amount):
-                                #     Assembely_code.append(["rs","b"," #right shift by 1"])
-                                #     Assembely_code.append(["rs","a"," #right shift by 1"])
-                                # Assembely_code.append(["store","a","0x0000","#", temp[0]+HighByte_Sufix])
-                                # Assembely_code.append(["store","b","0x0000","#", temp[0]+LowByte_Sufix])
-                                # RunProgramLength += 12 + (2 * shift_amount)
+                                Assembely_code.append(["# "+temp[0]+"(16) = "+ temp[1]+"(16) >> "+ temp[2]+"(" + str(shift_amount) +")"])
+                                Assembely_code.append(["load","a","0x0000","#", temp[1]+HighByte_Sufix])
+                                Assembely_code.append(["load","b","0x0000","#", temp[1]+LowByte_Sufix])
+                                for j in range(0,shift_amount):
+                                    Assembely_code.append(["rs","b"," #right shift by 1"])
+                                    Assembely_code.append(["rs","a"," #right shift by 1"])
+                                Assembely_code.append(["store","a","0x0000","#", temp[0]+HighByte_Sufix])
+                                Assembely_code.append(["store","b","0x0000","#", temp[0]+LowByte_Sufix])
+                                RunProgramLength += 12 + (2 * shift_amount)
                                 errors.append("this right shift is not in (16bit) = (16bit) >> " + str(line))
                                 Line_Found = True
 
