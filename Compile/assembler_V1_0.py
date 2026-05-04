@@ -1615,7 +1615,7 @@ for line in Program_Code:
             RunProgramLength += 3
             Line_Found = True  
     if (len(line) == 1) and (Line_Found == False) and (line[0] == "}"):
-        #print("fant enden")
+        print(len(End_List)-1)
         ending = End_List[len(End_List)-1]
         tempEnd = ""
         
