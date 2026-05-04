@@ -1,259 +1,259 @@
-def     0x0f63  0x00    #       temp_eight_bit
-def     0x0f64  0x41    #       A       
-def     0x0f65  0x43    #       C       
-def     0x0f66  0x45    #       E       
-def     0x0f67  0x47    #       G       
-def     0x0f68  0x48    #       H       
-def     0x0f69  0x49    #       I       
-def     0x0f6a  0x4d    #       M       
-def     0x0f6b  0x4f    #       O       
-def     0x0f6c  0x52    #       R       
-def     0x0f6d  0x53    #       S       
-def     0x0f6e  0x56    #       V       
-def     0x0f6f  0x64    #       kb_right
-def     0x0f70  0x61    #       kb_left 
-def     0x0f71  0x73    #       kb_down 
-def     0x0f72  0x77    #       kb_up   
-def     0x0f73  0x20    #       space   
-def     0x0f74  0x1b    #       escape  
-def     0x0f75  0x30    #       ascii_num
-def     0x0f76  0x01    #       game_on 
-def     0x0f77  0x00    #       game_off
-def     0x0f78  0x01    #       color_silver
-def     0x0f79  0x03    #       color_black
-def     0x0f7a  0x04    #       color_red
-def     0x0f7b  0x08    #       color_lime
-def     0x0f7c  0x09    #       color_green
-def     0x0f7d  0xff    #       ascii_block
-def     0x0f7e  0x01    #       right   
-def     0x0f7f  0xff    #       left    
-def     0x0f80  0x10    #       down    
-def     0x0f81  0xf0    #       up      
-def     0x0f82  0x73    #       snake_start
-def     0x0f83  0x00    #       go_to_snake_start
-def     0x0f84  0x00    #       go_to_apple
-def     0x0f85  0x00    #       go_to_apple_failed_gen
-def     0x0f86  0x00    #       go_to_high_score
-def     0x0f87  0x00    #       go_to_score_apple
-def     0x0f88  0x00    #       go_to_next_head_coord
-def     0x0f89  0x00    #       go_to_delete_snake_tail
-def     0x0f8a  0x00    #       go_to_delete_snake_head
-def     0x0f8b  0x00    #       game_running
-def     0x0f8c  0x00    #       snake_board_head
-def     0x0f8d  0x00    #       snake_board_head_next
-def     0x0f8e  0x03    #       snake_head_next_color
-def     0x0f8f  0x03    #       apple_next_color
-def     0x0f90  0x04    #       direction
-def     0x0f91  0x00    #       keyboard_input
-def     0x0f92  0x00    #       keyboard_input_last
-def     0x0f93  0x00    #       keyboard_mask
-def     0x0f94  0x00    #       def_zero
-def     0x0f95  0x01    #       def_one 
-def     0x0f96  0x02    #       def_two 
-def     0x0f97  0x03    #       def_three
-def     0x0f98  0x07    #       def_seven
-def     0x0f99  0x08    #       def_eight
-def     0x0f9a  0x00    #       clear_HH
-def     0x0f9b  0x00    #       clear_LL
-def     0x0f9c  0xe0    #       adr_main_display_HH
-def     0x0f9d  0x00    #       adr_main_display_LL
-def     0x0f9e  0xef    #       adr_info_display_HH
-def     0x0f9f  0x00    #       adr_info_display_LL
-def     0x0fa0  0xf2    #       adr_keyboard_ascii_HH
-def     0x0fa1  0xc1    #       adr_keyboard_ascii_LL
-def     0x0fa2  0xf2    #       adr_keyboard_info_HH
-def     0x0fa3  0xc2    #       adr_keyboard_info_LL
-def     0x0fa4  0xf2    #       adr_random_HH
-def     0x0fa5  0xc3    #       adr_random_LL
-def     0x0fa6  0xf2    #       adr_timer_millis_ll_HH
-def     0x0fa7  0xc4    #       adr_timer_millis_ll_LL
-def     0x0fa8  0xf2    #       adr_timer_millis_hh_HH
-def     0x0fa9  0xc5    #       adr_timer_millis_hh_LL
-def     0x0faa  0xf2    #       adr_eeprom_start_HH
-def     0x0fab  0xc6    #       adr_eeprom_start_LL
-def     0x0fac  0xf3    #       adr_eeprom_end_HH
-def     0x0fad  0xc5    #       adr_eeprom_end_LL
-def     0x0fae  0x00    #       temp_HH 
-def     0x0faf  0x00    #       temp_LL 
-def     0x0fb0  0x00    #       zero_HH 
-def     0x0fb1  0x00    #       zero_LL 
-def     0x0fb2  0x00    #       one_HH  
-def     0x0fb3  0x01    #       one_LL  
-def     0x0fb4  0x00    #       two_HH  
-def     0x0fb5  0x02    #       two_LL  
-def     0x0fb6  0x00    #       three_HH
-def     0x0fb7  0x03    #       three_LL
-def     0x0fb8  0x00    #       four_HH 
-def     0x0fb9  0x04    #       four_LL 
-def     0x0fba  0x00    #       six_HH  
-def     0x0fbb  0x06    #       six_LL  
-def     0x0fbc  0x00    #       seven_HH
-def     0x0fbd  0x07    #       seven_LL
-def     0x0fbe  0x00    #       eight_HH
-def     0x0fbf  0x08    #       eight_LL
-def     0x0fc0  0x00    #       hex_ten_HH
-def     0x0fc1  0x10    #       hex_ten_LL
-def     0x0fc2  0x00    #       oofe_HH 
-def     0x0fc3  0xfe    #       oofe_LL 
-def     0x0fc4  0x00    #       ooff_HH 
-def     0x0fc5  0xff    #       ooff_LL 
-def     0x0fc6  0x01    #       hex_hundred_HH
-def     0x0fc7  0x00    #       hex_hundred_LL
-def     0x0fc8  0x00    #       oooF_HH 
-def     0x0fc9  0x0f    #       oooF_LL 
-def     0x0fca  0x00    #       ooFo_HH 
-def     0x0fcb  0xf0    #       ooFo_LL 
-def     0x0fcc  0x80    #       hex_eight_thousand_HH
-def     0x0fcd  0x00    #       hex_eight_thousand_LL
-def     0x0fce  0x02    #       game_increment_HH
-def     0x0fcf  0x00    #       game_increment_LL
-def     0x0fd0  0x00    #       kb_ascii_HH
-def     0x0fd1  0x00    #       kb_ascii_LL
-def     0x0fd2  0x00    #       kb_info_HH
-def     0x0fd3  0x01    #       kb_info_LL
-def     0x0fd4  0x0f    #       screen_size_HH
-def     0x0fd5  0x00    #       screen_size_LL
-def     0x0fd6  0x00    #       screen_width_HH
-def     0x0fd7  0x80    #       screen_width_LL
-def     0x0fd8  0x00    #       screen_height_HH
-def     0x0fd9  0x1e    #       screen_height_LL
-def     0x0fda  0x01    #       board_size_HH
-def     0x0fdb  0x00    #       board_size_LL
-def     0x0fdc  0x00    #       board_height_HH
-def     0x0fdd  0x10    #       board_height_LL
-def     0x0fde  0x00    #       board_width_HH
-def     0x0fdf  0x10    #       board_width_LL
-def     0x0fe0  0x03    #       board_location_HH
-def     0x0fe1  0xa0    #       board_location_LL
-def     0x0fe2  0x00    #       apple_start_HH
-def     0x0fe3  0x7a    #       apple_start_LL
-def     0x0fe4  0x00    #       i_HH    
-def     0x0fe5  0x00    #       i_LL    
-def     0x0fe6  0x00    #       j_HH    
-def     0x0fe7  0x00    #       j_LL    
-def     0x0fe8  0x00    #       millis_new_HH
-def     0x0fe9  0x00    #       millis_new_LL
-def     0x0fea  0x00    #       millis_old_HH
-def     0x0feb  0x00    #       millis_old_LL
-def     0x0fec  0x00    #       millis_goal_HH
-def     0x0fed  0x00    #       millis_goal_LL
-def     0x0fee  0xf4    #       snake_array_HH
-def     0x0fef  0x00    #       snake_array_LL
-def     0x0ff0  0xf5    #       snake_array_max_HH
-def     0x0ff1  0x00    #       snake_array_max_LL
-def     0x0ff2  0xf4    #       snake_ptr_tail_HH
-def     0x0ff3  0xff    #       snake_ptr_tail_LL
-def     0x0ff4  0x00    #       snake_ptr_head_HH
-def     0x0ff5  0x00    #       snake_ptr_head_LL
-def     0x0ff6  0x00    #       snake_screen_head_HH
-def     0x0ff7  0x00    #       snake_screen_head_LL
-def     0x0ff8  0x00    #       snake_screen_head_next_HH
-def     0x0ff9  0x00    #       snake_screen_head_next_LL
-def     0x0ffa  0x00    #       snake_counter_HH
-def     0x0ffb  0x03    #       snake_counter_LL
-def     0x0ffc  0x00    #       board_top_l_HH
-def     0x0ffd  0x00    #       board_top_l_LL
-def     0x0ffe  0x00    #       board_top_r_HH
-def     0x0fff  0x00    #       board_top_r_LL
-def     0x1000  0x00    #       board_bot_l_HH
-def     0x1001  0x00    #       board_bot_l_LL
-def     0x1002  0x00    #       board_bot_r_HH
-def     0x1003  0x00    #       board_bot_r_LL
-def     0x1004  0x00    #       border_top_l_HH
-def     0x1005  0x00    #       border_top_l_LL
-def     0x1006  0x00    #       border_top_r_HH
-def     0x1007  0x00    #       border_top_r_LL
-def     0x1008  0x00    #       border_bot_l_HH
-def     0x1009  0x00    #       border_bot_l_LL
-def     0x100a  0x00    #       border_bot_r_HH
-def     0x100b  0x00    #       border_bot_r_LL
-def     0x100c  0x00    #       border_width_HH
-def     0x100d  0x00    #       border_width_LL
-def     0x100e  0x00    #       border_height_HH
-def     0x100f  0x00    #       border_height_LL
-def     0x1010  0x00    #       border_paralell_h_HH
-def     0x1011  0x00    #       border_paralell_h_LL
-def     0x1012  0x00    #       border_paralell_v_HH
-def     0x1013  0x00    #       border_paralell_v_LL
-def     0x1014  0x00    #       cursor_HH
-def     0x1015  0x00    #       cursor_LL
-def     0x1016  0x00    #       cursor_x_HH
-def     0x1017  0x00    #       cursor_x_LL
-def     0x1018  0x00    #       cursor_y_HH
-def     0x1019  0x00    #       cursor_y_LL
-def     0x101a  0x00    #       odd_check_HH
-def     0x101b  0x00    #       odd_check_LL
+def     0x0f57  0x00    #       temp_eight_bit
+def     0x0f58  0x41    #       A       
+def     0x0f59  0x43    #       C       
+def     0x0f5a  0x45    #       E       
+def     0x0f5b  0x47    #       G       
+def     0x0f5c  0x48    #       H       
+def     0x0f5d  0x49    #       I       
+def     0x0f5e  0x4d    #       M       
+def     0x0f5f  0x4f    #       O       
+def     0x0f60  0x52    #       R       
+def     0x0f61  0x53    #       S       
+def     0x0f62  0x56    #       V       
+def     0x0f63  0x64    #       kb_right
+def     0x0f64  0x61    #       kb_left 
+def     0x0f65  0x73    #       kb_down 
+def     0x0f66  0x77    #       kb_up   
+def     0x0f67  0x20    #       space   
+def     0x0f68  0x1b    #       escape  
+def     0x0f69  0x30    #       ascii_num
+def     0x0f6a  0x01    #       game_on 
+def     0x0f6b  0x00    #       game_off
+def     0x0f6c  0x01    #       color_silver
+def     0x0f6d  0x03    #       color_black
+def     0x0f6e  0x04    #       color_red
+def     0x0f6f  0x08    #       color_lime
+def     0x0f70  0x09    #       color_green
+def     0x0f71  0xff    #       ascii_block
+def     0x0f72  0x01    #       right   
+def     0x0f73  0xff    #       left    
+def     0x0f74  0x10    #       down    
+def     0x0f75  0xf0    #       up      
+def     0x0f76  0x73    #       snake_start
+def     0x0f77  0x00    #       go_to_snake_start
+def     0x0f78  0x00    #       go_to_apple
+def     0x0f79  0x00    #       go_to_apple_failed_gen
+def     0x0f7a  0x00    #       go_to_high_score
+def     0x0f7b  0x00    #       go_to_score_apple
+def     0x0f7c  0x00    #       go_to_next_head_coord
+def     0x0f7d  0x00    #       go_to_delete_snake_tail
+def     0x0f7e  0x00    #       go_to_delete_snake_head
+def     0x0f7f  0x00    #       game_running
+def     0x0f80  0x00    #       snake_board_head
+def     0x0f81  0x00    #       snake_board_head_next
+def     0x0f82  0x03    #       snake_head_next_color
+def     0x0f83  0x03    #       apple_next_color
+def     0x0f84  0x04    #       direction
+def     0x0f85  0x00    #       keyboard_input
+def     0x0f86  0x00    #       keyboard_input_last
+def     0x0f87  0x00    #       keyboard_mask
+def     0x0f88  0x00    #       def_zero
+def     0x0f89  0x01    #       def_one 
+def     0x0f8a  0x02    #       def_two 
+def     0x0f8b  0x03    #       def_three
+def     0x0f8c  0x07    #       def_seven
+def     0x0f8d  0x08    #       def_eight
+def     0x0f8e  0x00    #       clear_HH
+def     0x0f8f  0x00    #       clear_LL
+def     0x0f90  0xe0    #       adr_main_display_HH
+def     0x0f91  0x00    #       adr_main_display_LL
+def     0x0f92  0xef    #       adr_info_display_HH
+def     0x0f93  0x00    #       adr_info_display_LL
+def     0x0f94  0xf2    #       adr_keyboard_ascii_HH
+def     0x0f95  0xc1    #       adr_keyboard_ascii_LL
+def     0x0f96  0xf2    #       adr_keyboard_info_HH
+def     0x0f97  0xc2    #       adr_keyboard_info_LL
+def     0x0f98  0xf2    #       adr_random_HH
+def     0x0f99  0xc3    #       adr_random_LL
+def     0x0f9a  0xf2    #       adr_timer_millis_ll_HH
+def     0x0f9b  0xc4    #       adr_timer_millis_ll_LL
+def     0x0f9c  0xf2    #       adr_timer_millis_hh_HH
+def     0x0f9d  0xc5    #       adr_timer_millis_hh_LL
+def     0x0f9e  0xf2    #       adr_eeprom_start_HH
+def     0x0f9f  0xc6    #       adr_eeprom_start_LL
+def     0x0fa0  0xf3    #       adr_eeprom_end_HH
+def     0x0fa1  0xc5    #       adr_eeprom_end_LL
+def     0x0fa2  0x00    #       temp_HH 
+def     0x0fa3  0x00    #       temp_LL 
+def     0x0fa4  0x00    #       zero_HH 
+def     0x0fa5  0x00    #       zero_LL 
+def     0x0fa6  0x00    #       one_HH  
+def     0x0fa7  0x01    #       one_LL  
+def     0x0fa8  0x00    #       two_HH  
+def     0x0fa9  0x02    #       two_LL  
+def     0x0faa  0x00    #       three_HH
+def     0x0fab  0x03    #       three_LL
+def     0x0fac  0x00    #       four_HH 
+def     0x0fad  0x04    #       four_LL 
+def     0x0fae  0x00    #       six_HH  
+def     0x0faf  0x06    #       six_LL  
+def     0x0fb0  0x00    #       seven_HH
+def     0x0fb1  0x07    #       seven_LL
+def     0x0fb2  0x00    #       eight_HH
+def     0x0fb3  0x08    #       eight_LL
+def     0x0fb4  0x00    #       hex_ten_HH
+def     0x0fb5  0x10    #       hex_ten_LL
+def     0x0fb6  0x00    #       oofe_HH 
+def     0x0fb7  0xfe    #       oofe_LL 
+def     0x0fb8  0x00    #       ooff_HH 
+def     0x0fb9  0xff    #       ooff_LL 
+def     0x0fba  0x01    #       hex_hundred_HH
+def     0x0fbb  0x00    #       hex_hundred_LL
+def     0x0fbc  0x00    #       oooF_HH 
+def     0x0fbd  0x0f    #       oooF_LL 
+def     0x0fbe  0x00    #       ooFo_HH 
+def     0x0fbf  0xf0    #       ooFo_LL 
+def     0x0fc0  0x80    #       hex_eight_thousand_HH
+def     0x0fc1  0x00    #       hex_eight_thousand_LL
+def     0x0fc2  0x02    #       game_increment_HH
+def     0x0fc3  0x00    #       game_increment_LL
+def     0x0fc4  0x00    #       kb_ascii_HH
+def     0x0fc5  0x00    #       kb_ascii_LL
+def     0x0fc6  0x00    #       kb_info_HH
+def     0x0fc7  0x01    #       kb_info_LL
+def     0x0fc8  0x0f    #       screen_size_HH
+def     0x0fc9  0x00    #       screen_size_LL
+def     0x0fca  0x00    #       screen_width_HH
+def     0x0fcb  0x80    #       screen_width_LL
+def     0x0fcc  0x00    #       screen_height_HH
+def     0x0fcd  0x1e    #       screen_height_LL
+def     0x0fce  0x01    #       board_size_HH
+def     0x0fcf  0x00    #       board_size_LL
+def     0x0fd0  0x00    #       board_height_HH
+def     0x0fd1  0x10    #       board_height_LL
+def     0x0fd2  0x00    #       board_width_HH
+def     0x0fd3  0x10    #       board_width_LL
+def     0x0fd4  0x03    #       board_location_HH
+def     0x0fd5  0xa0    #       board_location_LL
+def     0x0fd6  0x00    #       apple_start_HH
+def     0x0fd7  0x7a    #       apple_start_LL
+def     0x0fd8  0x00    #       i_HH    
+def     0x0fd9  0x00    #       i_LL    
+def     0x0fda  0x00    #       j_HH    
+def     0x0fdb  0x00    #       j_LL    
+def     0x0fdc  0x00    #       millis_new_HH
+def     0x0fdd  0x00    #       millis_new_LL
+def     0x0fde  0x00    #       millis_old_HH
+def     0x0fdf  0x00    #       millis_old_LL
+def     0x0fe0  0x00    #       millis_goal_HH
+def     0x0fe1  0x00    #       millis_goal_LL
+def     0x0fe2  0xf4    #       snake_array_HH
+def     0x0fe3  0x00    #       snake_array_LL
+def     0x0fe4  0xf5    #       snake_array_max_HH
+def     0x0fe5  0x00    #       snake_array_max_LL
+def     0x0fe6  0xf4    #       snake_ptr_tail_HH
+def     0x0fe7  0xff    #       snake_ptr_tail_LL
+def     0x0fe8  0x00    #       snake_ptr_head_HH
+def     0x0fe9  0x00    #       snake_ptr_head_LL
+def     0x0fea  0x00    #       snake_screen_head_HH
+def     0x0feb  0x00    #       snake_screen_head_LL
+def     0x0fec  0x00    #       snake_screen_head_next_HH
+def     0x0fed  0x00    #       snake_screen_head_next_LL
+def     0x0fee  0x00    #       snake_counter_HH
+def     0x0fef  0x03    #       snake_counter_LL
+def     0x0ff0  0x00    #       board_top_l_HH
+def     0x0ff1  0x00    #       board_top_l_LL
+def     0x0ff2  0x00    #       board_top_r_HH
+def     0x0ff3  0x00    #       board_top_r_LL
+def     0x0ff4  0x00    #       board_bot_l_HH
+def     0x0ff5  0x00    #       board_bot_l_LL
+def     0x0ff6  0x00    #       board_bot_r_HH
+def     0x0ff7  0x00    #       board_bot_r_LL
+def     0x0ff8  0x00    #       border_top_l_HH
+def     0x0ff9  0x00    #       border_top_l_LL
+def     0x0ffa  0x00    #       border_top_r_HH
+def     0x0ffb  0x00    #       border_top_r_LL
+def     0x0ffc  0x00    #       border_bot_l_HH
+def     0x0ffd  0x00    #       border_bot_l_LL
+def     0x0ffe  0x00    #       border_bot_r_HH
+def     0x0fff  0x00    #       border_bot_r_LL
+def     0x1000  0x00    #       border_width_HH
+def     0x1001  0x00    #       border_width_LL
+def     0x1002  0x00    #       border_height_HH
+def     0x1003  0x00    #       border_height_LL
+def     0x1004  0x00    #       border_paralell_h_HH
+def     0x1005  0x00    #       border_paralell_h_LL
+def     0x1006  0x00    #       border_paralell_v_HH
+def     0x1007  0x00    #       border_paralell_v_LL
+def     0x1008  0x00    #       cursor_HH
+def     0x1009  0x00    #       cursor_LL
+def     0x100a  0x00    #       cursor_x_HH
+def     0x100b  0x00    #       cursor_x_LL
+def     0x100c  0x00    #       cursor_y_HH
+def     0x100d  0x00    #       cursor_y_LL
+def     0x100e  0x00    #       odd_check_HH
+def     0x100f  0x00    #       odd_check_LL
 nop #start buffer
 @snake_game
 nop     
 # cursor(16) = adr_main_display(16)
-load    a       0x0f9c  #       adr_main_display_HH
-load    b       0x0f9d  #       adr_main_display_LL
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+load    a       0x0f90  #       adr_main_display_HH
+load    b       0x0f91  #       adr_main_display_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 @clears_screen
 nop     
 # odd_check(16) = cursor(16)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
-store   a       0x101a  #       odd_check_HH
-store   b       0x101b  #       odd_check_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
+store   a       0x100e  #       odd_check_HH
+store   b       0x100f  #       odd_check_LL
 # odd_check(16bit) = odd_check(16bit) and one(16bit)
-load    a       0x101a  #       odd_check_HH
-load    b       0x101b  #       odd_check_LL
-load    c       0x0fb2  #       one_HH  
-load    d       0x0fb3  #       one_LL  
+load    a       0x100e  #       odd_check_HH
+load    b       0x100f  #       odd_check_LL
+load    c       0x0fa6  #       one_HH  
+load    d       0x0fa7  #       one_LL  
 and     d       b       
 and     c       a       
-store   a       0x101a  #       odd_check_HH
-store   b       0x101b  #       odd_check_LL
-load    a       0x101b  #       odd_check_LL
-load    b       0x0fb3  #       one_LL  
+store   a       0x100e  #       odd_check_HH
+store   b       0x100f  #       odd_check_LL
+load    a       0x100f  #       odd_check_LL
+load    b       0x0fa7  #       one_LL  
 not     a       
 inc     a       
 add     b       a       
 bnz     branch0 
 nop     
 clear   a       
-load    b       0x0fb2  #       one_HH  
+load    b       0x0fa6  #       one_HH  
 addc    a       b       
-load    a       0x101a  #       odd_check_HH
+load    a       0x100e  #       odd_check_HH
 not     a       
 add     b       a       
 boz     branch1 
 @branch0
 nop     
 # MEM[cursor(8)] = ascii_block(8)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f7d  #       ascii_block
+load    a       0x0f71  #       ascii_block
 store   a       0x0000  
 jump    else_attr
 @branch1 
 nop     
 # MEM[cursor(8)] = color_black(8)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f79  #       color_black
+load    a       0x0f6d  #       color_black
 store   a       0x0000  
 @else_attr
 nop     
 # cursor ++
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 clear   c       
 inc     b       
 addc    c       a       
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
-load    c       0x0f9e  #       adr_info_display_HH
-load    d       0x0f9f  #       adr_info_display_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
+load    c       0x0f92  #       adr_info_display_HH
+load    d       0x0f93  #       adr_info_display_LL
 not     a       
 not     b       
 addc    d       b       
@@ -264,78 +264,78 @@ jump    clears_screen
 @branch2 
 nop     
 # board_top_l(16) = board_location(16)
-load    a       0x0fe0  #       board_location_HH
-load    b       0x0fe1  #       board_location_LL
-store   a       0x0ffc  #       board_top_l_HH
-store   b       0x0ffd  #       board_top_l_LL
+load    a       0x0fd4  #       board_location_HH
+load    b       0x0fd5  #       board_location_LL
+store   a       0x0ff0  #       board_top_l_HH
+store   b       0x0ff1  #       board_top_l_LL
 # border_width(16) = board_width(16)
-load    a       0x0fde  #       board_width_HH
-load    b       0x0fdf  #       board_width_LL
-store   a       0x100c  #       border_width_HH
-store   b       0x100d  #       border_width_LL
+load    a       0x0fd2  #       board_width_HH
+load    b       0x0fd3  #       board_width_LL
+store   a       0x1000  #       border_width_HH
+store   b       0x1001  #       border_width_LL
 # border_width(16) += two(16)
-load    a       0x100c  #       border_width_HH
-load    b       0x100d  #       border_width_LL
-load    c       0x0fb4  #       two_HH  
-load    d       0x0fb5  #       two_LL  
+load    a       0x1000  #       border_width_HH
+load    b       0x1001  #       border_width_LL
+load    c       0x0fa8  #       two_HH  
+load    d       0x0fa9  #       two_LL  
 add     d       b       
 addc    c       a       
-store   a       0x100c  #       border_width_HH
-store   b       0x100d  #       border_width_LL
+store   a       0x1000  #       border_width_HH
+store   b       0x1001  #       border_width_LL
 # border_height(16) = board_height(16)
-load    a       0x0fdc  #       board_height_HH
-load    b       0x0fdd  #       board_height_LL
-store   a       0x100e  #       border_height_HH
-store   b       0x100f  #       border_height_LL
+load    a       0x0fd0  #       board_height_HH
+load    b       0x0fd1  #       board_height_LL
+store   a       0x1002  #       border_height_HH
+store   b       0x1003  #       border_height_LL
 # border_height(16) += two(16)
-load    a       0x100e  #       border_height_HH
-load    b       0x100f  #       border_height_LL
-load    c       0x0fb4  #       two_HH  
-load    d       0x0fb5  #       two_LL  
+load    a       0x1002  #       border_height_HH
+load    b       0x1003  #       border_height_LL
+load    c       0x0fa8  #       two_HH  
+load    d       0x0fa9  #       two_LL  
 add     d       b       
 addc    c       a       
-store   a       0x100e  #       border_height_HH
-store   b       0x100f  #       border_height_LL
+store   a       0x1002  #       border_height_HH
+store   b       0x1003  #       border_height_LL
 # border_top_l(16) = board_location(16) - screen_width(16)
-load    b       0x0fe1  #       board_location_LL
-load    c       0x0fd6  #       screen_width_HH
-load    d       0x0fd7  #       screen_width_LL
+load    b       0x0fd5  #       board_location_LL
+load    c       0x0fca  #       screen_width_HH
+load    d       0x0fcb  #       screen_width_LL
 clear   a       
 not     c       
 not     d       
 inc     d       
 addc    a       c       
-load    a       0x0fe0  #       board_location_HH
+load    a       0x0fd4  #       board_location_HH
 add     d       b       
 addc    c       a       
-store   a       0x1005  #       border_top_l_LL
-store   c       0x1004  #       border_top_l_HH
+store   a       0x0ff8  #       border_top_l_HH
+store   b       0x0ff9  #       border_top_l_LL
 # border_top_l -= four
-load    c       0x0fb8  #       four_HH 
-load    d       0x0fb9  #       four_LL 
+load    c       0x0fac  #       four_HH 
+load    d       0x0fad  #       four_LL 
 clear   b       
 not     c       
 not     d       
 inc     d       
 addc    b       c       
-load    a       0x1004  #       border_top_l_HH
-load    b       0x1005  #       border_top_l_LL
+load    a       0x0ff8  #       border_top_l_HH
+load    b       0x0ff9  #       border_top_l_LL
 add     d       b       
 addc    c       a       
-store   a       0x1004  #       border_top_l_HH
-store   b       0x1005  #       border_top_l_LL
+store   a       0x0ff8  #       border_top_l_HH
+store   b       0x0ff9  #       border_top_l_LL
 # border_top_r(16) = border_width(16) << def_two(2)
-load    a       0x100c  #       border_width_HH
-load    b       0x100d  #       border_width_LL
+load    a       0x1000  #       border_width_HH
+load    b       0x1001  #       border_width_LL
 add     b       b        #shift left by 1
 addc    a       a        #      
 add     b       b        #shift left by 1
 addc    a       a        #      
-store   a       0x1006  #       border_top_r_HH
-store   b       0x1007  #       border_top_r_LL
+store   a       0x0ffa  #       border_top_r_HH
+store   b       0x0ffb  #       border_top_r_LL
 # border_bot_l(16) = border_height(16) << def_seven(7)
-load    a       0x100e  #       border_height_HH
-load    b       0x100f  #       border_height_LL
+load    a       0x1002  #       border_height_HH
+load    b       0x1003  #       border_height_LL
 add     b       b        #shift left by 1
 addc    a       a        #      
 add     b       b        #shift left by 1
@@ -350,34 +350,34 @@ add     b       b        #shift left by 1
 addc    a       a        #      
 add     b       b        #shift left by 1
 addc    a       a        #      
-store   a       0x1008  #       border_bot_l_HH
-store   b       0x1009  #       border_bot_l_LL
+store   a       0x0ffc  #       border_bot_l_HH
+store   b       0x0ffd  #       border_bot_l_LL
 # border_bot_l(16) += border_top_l(16)
-load    a       0x1008  #       border_bot_l_HH
-load    b       0x1009  #       border_bot_l_LL
-load    c       0x1004  #       border_top_l_HH
-load    d       0x1005  #       border_top_l_LL
+load    a       0x0ffc  #       border_bot_l_HH
+load    b       0x0ffd  #       border_bot_l_LL
+load    c       0x0ff8  #       border_top_l_HH
+load    d       0x0ff9  #       border_top_l_LL
 add     d       b       
 addc    c       a       
-store   a       0x1008  #       border_bot_l_HH
-store   b       0x1009  #       border_bot_l_LL
+store   a       0x0ffc  #       border_bot_l_HH
+store   b       0x0ffd  #       border_bot_l_LL
 # border_paralell_h(16) = border_height(16)
-load    a       0x100e  #       border_height_HH
-load    b       0x100f  #       border_height_LL
-store   a       0x1010  #       border_paralell_h_HH
-store   b       0x1011  #       border_paralell_h_LL
+load    a       0x1002  #       border_height_HH
+load    b       0x1003  #       border_height_LL
+store   a       0x1004  #       border_paralell_h_HH
+store   b       0x1005  #       border_paralell_h_LL
 # border_paralell_h --
-load    a       0x1010  #       border_paralell_h_HH
-load    b       0x1011  #       border_paralell_h_LL
+load    a       0x1004  #       border_paralell_h_HH
+load    b       0x1005  #       border_paralell_h_LL
 clear   c       
 not     c       
 dec     b       
 addc    c       a       
-store   a       0x1010  #       border_paralell_h_HH
-store   b       0x1011  #       border_paralell_h_LL
+store   a       0x1004  #       border_paralell_h_HH
+store   b       0x1005  #       border_paralell_h_LL
 # border_paralell_h(16) = border_paralell_h(16) << def_seven(7)
-load    a       0x1010  #       border_paralell_h_HH
-load    b       0x1011  #       border_paralell_h_LL
+load    a       0x1004  #       border_paralell_h_HH
+load    b       0x1005  #       border_paralell_h_LL
 add     b       b        #shift left by 1
 addc    a       a        #      
 add     b       b        #shift left by 1
@@ -392,145 +392,145 @@ add     b       b        #shift left by 1
 addc    a       a        #      
 add     b       b        #shift left by 1
 addc    a       a        #      
-store   a       0x1010  #       border_paralell_h_HH
-store   b       0x1011  #       border_paralell_h_LL
+store   a       0x1004  #       border_paralell_h_HH
+store   b       0x1005  #       border_paralell_h_LL
 # border_paralell_v(16) = border_width(16)
-load    a       0x100c  #       border_width_HH
-load    b       0x100d  #       border_width_LL
-store   a       0x1012  #       border_paralell_v_HH
-store   b       0x1013  #       border_paralell_v_LL
+load    a       0x1000  #       border_width_HH
+load    b       0x1001  #       border_width_LL
+store   a       0x1006  #       border_paralell_v_HH
+store   b       0x1007  #       border_paralell_v_LL
 # border_paralell_v --
-load    a       0x1012  #       border_paralell_v_HH
-load    b       0x1013  #       border_paralell_v_LL
+load    a       0x1006  #       border_paralell_v_HH
+load    b       0x1007  #       border_paralell_v_LL
 clear   c       
 not     c       
 dec     b       
 addc    c       a       
-store   a       0x1012  #       border_paralell_v_HH
-store   b       0x1013  #       border_paralell_v_LL
+store   a       0x1006  #       border_paralell_v_HH
+store   b       0x1007  #       border_paralell_v_LL
 # border_paralell_v(16) = border_paralell_v(16) << def_two(2)
-load    a       0x1012  #       border_paralell_v_HH
-load    b       0x1013  #       border_paralell_v_LL
+load    a       0x1006  #       border_paralell_v_HH
+load    b       0x1007  #       border_paralell_v_LL
 add     b       b        #shift left by 1
 addc    a       a        #      
 add     b       b        #shift left by 1
 addc    a       a        #      
-store   a       0x1012  #       border_paralell_v_HH
-store   b       0x1013  #       border_paralell_v_LL
+store   a       0x1006  #       border_paralell_v_HH
+store   b       0x1007  #       border_paralell_v_LL
 # i(16) = zero(16)
-load    a       0x0fb0  #       zero_HH 
-load    b       0x0fb1  #       zero_LL 
-store   a       0x0fe4  #       i_HH    
-store   b       0x0fe5  #       i_LL    
+load    a       0x0fa4  #       zero_HH 
+load    b       0x0fa5  #       zero_LL 
+store   a       0x0fd8  #       i_HH    
+store   b       0x0fd9  #       i_LL    
 @border_horizontal
 nop     
 # cursor(16) = i(16) << def_two(2)
-load    a       0x0fe4  #       i_HH    
-load    b       0x0fe5  #       i_LL    
+load    a       0x0fd8  #       i_HH    
+load    b       0x0fd9  #       i_LL    
 add     b       b        #shift left by 1
 addc    a       a        #      
 add     b       b        #shift left by 1
 addc    a       a        #      
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # cursor(16) += border_top_l(16)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
-load    c       0x1004  #       border_top_l_HH
-load    d       0x1005  #       border_top_l_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
+load    c       0x0ff8  #       border_top_l_HH
+load    d       0x0ff9  #       border_top_l_LL
 add     d       b       
 addc    c       a       
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # cursor ++
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 clear   c       
 inc     b       
 addc    c       a       
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # cursor(16) += adr_main_display(16)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
-load    c       0x0f9c  #       adr_main_display_HH
-load    d       0x0f9d  #       adr_main_display_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
+load    c       0x0f90  #       adr_main_display_HH
+load    d       0x0f91  #       adr_main_display_LL
 add     d       b       
 addc    c       a       
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # MEM[cursor(8)] = color_silver(8)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f78  #       color_silver
+load    a       0x0f6c  #       color_silver
 store   a       0x0000  
 # cursor(16) += two(16)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
-load    c       0x0fb4  #       two_HH  
-load    d       0x0fb5  #       two_LL  
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
+load    c       0x0fa8  #       two_HH  
+load    d       0x0fa9  #       two_LL  
 add     d       b       
 addc    c       a       
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # MEM[cursor(8)] = color_silver(8)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f78  #       color_silver
+load    a       0x0f6c  #       color_silver
 store   a       0x0000  
 # cursor(16) += border_paralell_h(16)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
-load    c       0x1010  #       border_paralell_h_HH
-load    d       0x1011  #       border_paralell_h_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
+load    c       0x1004  #       border_paralell_h_HH
+load    d       0x1005  #       border_paralell_h_LL
 add     d       b       
 addc    c       a       
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # MEM[cursor(8)] = color_silver(8)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f78  #       color_silver
+load    a       0x0f6c  #       color_silver
 store   a       0x0000  
 # cursor -= two
-load    c       0x0fb4  #       two_HH  
-load    d       0x0fb5  #       two_LL  
+load    c       0x0fa8  #       two_HH  
+load    d       0x0fa9  #       two_LL  
 clear   b       
 not     c       
 not     d       
 inc     d       
 addc    b       c       
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 add     d       b       
 addc    c       a       
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # MEM[cursor(8)] = color_silver(8)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f78  #       color_silver
+load    a       0x0f6c  #       color_silver
 store   a       0x0000  
 # i ++  
-load    a       0x0fe4  #       i_HH    
-load    b       0x0fe5  #       i_LL    
+load    a       0x0fd8  #       i_HH    
+load    b       0x0fd9  #       i_LL    
 clear   c       
 inc     b       
 addc    c       a       
-store   a       0x0fe4  #       i_HH    
-store   b       0x0fe5  #       i_LL    
-load    a       0x0fe4  #       i_HH    
-load    b       0x0fe5  #       i_LL    
-load    c       0x100c  #       border_width_HH
-load    d       0x100d  #       border_width_LL
+store   a       0x0fd8  #       i_HH    
+store   b       0x0fd9  #       i_LL    
+load    a       0x0fd8  #       i_HH    
+load    b       0x0fd9  #       i_LL    
+load    c       0x1000  #       border_width_HH
+load    d       0x1001  #       border_width_LL
 not     a       
 not     b       
 addc    d       b       
@@ -541,20 +541,20 @@ jump    border_horizontal
 @branch3 
 nop     
 # i(16) = zero(16)
-load    a       0x0fb0  #       zero_HH 
-load    b       0x0fb1  #       zero_LL 
-store   a       0x0fe4  #       i_HH    
-store   b       0x0fe5  #       i_LL    
+load    a       0x0fa4  #       zero_HH 
+load    b       0x0fa5  #       zero_LL 
+store   a       0x0fd8  #       i_HH    
+store   b       0x0fd9  #       i_LL    
 @border_vertical
 nop     
 # cursor(16) = i(16)
-load    a       0x0fe4  #       i_HH    
-load    b       0x0fe5  #       i_LL    
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+load    a       0x0fd8  #       i_HH    
+load    b       0x0fd9  #       i_LL    
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # cursor(16) = cursor(16) << def_seven(7)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 add     b       b        #shift left by 1
 addc    a       a        #      
 add     b       b        #shift left by 1
@@ -569,106 +569,106 @@ add     b       b        #shift left by 1
 addc    a       a        #      
 add     b       b        #shift left by 1
 addc    a       a        #      
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # cursor(16) += border_top_l(16)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
-load    c       0x1004  #       border_top_l_HH
-load    d       0x1005  #       border_top_l_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
+load    c       0x0ff8  #       border_top_l_HH
+load    d       0x0ff9  #       border_top_l_LL
 add     d       b       
 addc    c       a       
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # cursor ++
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 clear   c       
 inc     b       
 addc    c       a       
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # cursor(16) += adr_main_display(16)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
-load    c       0x0f9c  #       adr_main_display_HH
-load    d       0x0f9d  #       adr_main_display_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
+load    c       0x0f90  #       adr_main_display_HH
+load    d       0x0f91  #       adr_main_display_LL
 add     d       b       
 addc    c       a       
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # MEM[cursor(8)] = color_silver(8)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f78  #       color_silver
+load    a       0x0f6c  #       color_silver
 store   a       0x0000  
 # cursor(16) += two(16)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
-load    c       0x0fb4  #       two_HH  
-load    d       0x0fb5  #       two_LL  
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
+load    c       0x0fa8  #       two_HH  
+load    d       0x0fa9  #       two_LL  
 add     d       b       
 addc    c       a       
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # MEM[cursor(8)] = color_silver(8)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f78  #       color_silver
+load    a       0x0f6c  #       color_silver
 store   a       0x0000  
 # cursor(16) += border_paralell_v(16)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
-load    c       0x1012  #       border_paralell_v_HH
-load    d       0x1013  #       border_paralell_v_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
+load    c       0x1006  #       border_paralell_v_HH
+load    d       0x1007  #       border_paralell_v_LL
 add     d       b       
 addc    c       a       
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # MEM[cursor(8)] = color_silver(8)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f78  #       color_silver
+load    a       0x0f6c  #       color_silver
 store   a       0x0000  
 # cursor -= two
-load    c       0x0fb4  #       two_HH  
-load    d       0x0fb5  #       two_LL  
+load    c       0x0fa8  #       two_HH  
+load    d       0x0fa9  #       two_LL  
 clear   b       
 not     c       
 not     d       
 inc     d       
 addc    b       c       
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 add     d       b       
 addc    c       a       
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # MEM[cursor(8)] = color_silver(8)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f78  #       color_silver
+load    a       0x0f6c  #       color_silver
 store   a       0x0000  
 # i ++  
-load    a       0x0fe4  #       i_HH    
-load    b       0x0fe5  #       i_LL    
+load    a       0x0fd8  #       i_HH    
+load    b       0x0fd9  #       i_LL    
 clear   c       
 inc     b       
 addc    c       a       
-store   a       0x0fe4  #       i_HH    
-store   b       0x0fe5  #       i_LL    
-load    a       0x0fe4  #       i_HH    
-load    b       0x0fe5  #       i_LL    
-load    c       0x100e  #       border_height_HH
-load    d       0x100f  #       border_height_LL
+store   a       0x0fd8  #       i_HH    
+store   b       0x0fd9  #       i_LL    
+load    a       0x0fd8  #       i_HH    
+load    b       0x0fd9  #       i_LL    
+load    c       0x1002  #       border_height_HH
+load    d       0x1003  #       border_height_LL
 not     a       
 not     b       
 addc    d       b       
@@ -679,41 +679,41 @@ jump    border_vertical
 @branch4 
 nop     
 # snake_ptr_head(16) = snake_array(16)
-load    a       0x0fee  #       snake_array_HH
-load    b       0x0fef  #       snake_array_LL
-store   a       0x0ff4  #       snake_ptr_head_HH
-store   b       0x0ff5  #       snake_ptr_head_LL
+load    a       0x0fe2  #       snake_array_HH
+load    b       0x0fe3  #       snake_array_LL
+store   a       0x0fe8  #       snake_ptr_head_HH
+store   b       0x0fe9  #       snake_ptr_head_LL
 # snake_board_head(8) = snake_start(8)
-load    a       0x0f82  #       snake_start
-store   a       0x0f8c  #       snake_board_head
+load    a       0x0f76  #       snake_start
+store   a       0x0f80  #       snake_board_head
 # i(16) = zero(16)
-load    a       0x0fb0  #       zero_HH 
-load    b       0x0fb1  #       zero_LL 
-store   a       0x0fe4  #       i_HH    
-store   b       0x0fe5  #       i_LL    
+load    a       0x0fa4  #       zero_HH 
+load    b       0x0fa5  #       zero_LL 
+store   a       0x0fd8  #       i_HH    
+store   b       0x0fd9  #       i_LL    
 @draw_start_body
 nop     
 # MEM[snake_ptr_head(8)] = snake_board_head(8)
-load    a       0x0ff4  #       snake_ptr_head_HH
-load    b       0x0ff5  #       snake_ptr_head_LL
+load    a       0x0fe8  #       snake_ptr_head_HH
+load    b       0x0fe9  #       snake_ptr_head_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f8c  #       snake_board_head
+load    a       0x0f80  #       snake_board_head
 store   a       0x0000  
 # snake_ptr_head ++
-load    a       0x0ff4  #       snake_ptr_head_HH
-load    b       0x0ff5  #       snake_ptr_head_LL
+load    a       0x0fe8  #       snake_ptr_head_HH
+load    b       0x0fe9  #       snake_ptr_head_LL
 clear   c       
 inc     b       
 addc    c       a       
-store   a       0x0ff4  #       snake_ptr_head_HH
-store   b       0x0ff5  #       snake_ptr_head_LL
+store   a       0x0fe8  #       snake_ptr_head_HH
+store   b       0x0fe9  #       snake_ptr_head_LL
 # snake_board_head ++
-load    a       0x0f8c  #       snake_board_head
+load    a       0x0f80  #       snake_board_head
 inc     a       
-store   a       0x0f8c  #       snake_board_head
+store   a       0x0f80  #       snake_board_head
 # cursor(16) = snake_start(8)
-load    a       0x0f82  #       snake_start
+load    a       0x0f76  #       snake_start
 clear   b       
 add     a       b       
 clear   a       
@@ -725,49 +725,49 @@ nop
 dec     a       
 @branch6
 nop     
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # go_to_snake_start(8) = def_one(8)
-load    a       0x0f95  #       def_one 
-store   a       0x0f83  #       go_to_snake_start
+load    a       0x0f89  #       def_one 
+store   a       0x0f77  #       go_to_snake_start
 jump    byte_coord_to_screen_coord
 @cursor_snake_start
 nop     
 # MEM[cursor(8)] = color_lime(8)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f7b  #       color_lime
+load    a       0x0f6f  #       color_lime
 store   a       0x0000  
 # cursor(16) += two(16)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
-load    c       0x0fb4  #       two_HH  
-load    d       0x0fb5  #       two_LL  
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
+load    c       0x0fa8  #       two_HH  
+load    d       0x0fa9  #       two_LL  
 add     d       b       
 addc    c       a       
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # MEM[cursor(8)] = color_lime(8)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f7b  #       color_lime
+load    a       0x0f6f  #       color_lime
 store   a       0x0000  
 # i ++  
-load    a       0x0fe4  #       i_HH    
-load    b       0x0fe5  #       i_LL    
+load    a       0x0fd8  #       i_HH    
+load    b       0x0fd9  #       i_LL    
 clear   c       
 inc     b       
 addc    c       a       
-store   a       0x0fe4  #       i_HH    
-store   b       0x0fe5  #       i_LL    
-load    a       0x0fe4  #       i_HH    
-load    b       0x0fe5  #       i_LL    
-load    c       0x0fb4  #       two_HH  
-load    d       0x0fb5  #       two_LL  
+store   a       0x0fd8  #       i_HH    
+store   b       0x0fd9  #       i_LL    
+load    a       0x0fd8  #       i_HH    
+load    b       0x0fd9  #       i_LL    
+load    c       0x0fa8  #       two_HH  
+load    d       0x0fa9  #       two_LL  
 not     a       
 not     b       
 addc    d       b       
@@ -778,117 +778,117 @@ jump    draw_start_body
 @branch7 
 nop     
 # MEM[snake_ptr_head(8)] = snake_board_head(8)
-load    a       0x0ff4  #       snake_ptr_head_HH
-load    b       0x0ff5  #       snake_ptr_head_LL
+load    a       0x0fe8  #       snake_ptr_head_HH
+load    b       0x0fe9  #       snake_ptr_head_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f8c  #       snake_board_head
+load    a       0x0f80  #       snake_board_head
 store   a       0x0000  
 # snake_screen_head(16) = cursor(16)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
-store   a       0x0ff6  #       snake_screen_head_HH
-store   b       0x0ff7  #       snake_screen_head_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
+store   a       0x0fea  #       snake_screen_head_HH
+store   b       0x0feb  #       snake_screen_head_LL
 # MEM[cursor(8)] = color_green(8)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f7c  #       color_green
+load    a       0x0f70  #       color_green
 store   a       0x0000  
 # cursor(16) += two(16)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
-load    c       0x0fb4  #       two_HH  
-load    d       0x0fb5  #       two_LL  
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
+load    c       0x0fa8  #       two_HH  
+load    d       0x0fa9  #       two_LL  
 add     d       b       
 addc    c       a       
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # MEM[cursor(8)] = color_green(8)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f7c  #       color_green
+load    a       0x0f70  #       color_green
 store   a       0x0000  
 # cursor(16) += hex_ten(16)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
-load    c       0x0fc0  #       hex_ten_HH
-load    d       0x0fc1  #       hex_ten_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
+load    c       0x0fb4  #       hex_ten_HH
+load    d       0x0fb5  #       hex_ten_LL
 add     d       b       
 addc    c       a       
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # MEM[cursor(8)] = color_red(8)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f7a  #       color_red
+load    a       0x0f6e  #       color_red
 store   a       0x0000  
 # cursor(16) += two(16)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
-load    c       0x0fb4  #       two_HH  
-load    d       0x0fb5  #       two_LL  
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
+load    c       0x0fa8  #       two_HH  
+load    d       0x0fa9  #       two_LL  
 add     d       b       
 addc    c       a       
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # MEM[cursor(8)] = color_red(8)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f7a  #       color_red
+load    a       0x0f6e  #       color_red
 store   a       0x0000  
 # direction(8) = right(8)
-load    a       0x0f7e  #       right   
-store   a       0x0f90  #       direction
+load    a       0x0f72  #       right   
+store   a       0x0f84  #       direction
 # game_running(8) = game_on(8)
-load    a       0x0f76  #       game_on 
-store   a       0x0f8b  #       game_running
+load    a       0x0f6a  #       game_on 
+store   a       0x0f7f  #       game_running
 # MEM[adr_keyboard_info(8)] = def_one(8)
-load    a       0x0fa2  #       adr_keyboard_info_HH
-load    b       0x0fa3  #       adr_keyboard_info_LL
+load    a       0x0f96  #       adr_keyboard_info_HH
+load    b       0x0f97  #       adr_keyboard_info_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f95  #       def_one 
+load    a       0x0f89  #       def_one 
 store   a       0x0000  
 @start_game
 nop     
-load    a       0x0fa0  #       adr_keyboard_ascii_HH
-load    b       0x0fa1  #       adr_keyboard_ascii_LL
+load    a       0x0f94  #       adr_keyboard_ascii_HH
+load    b       0x0f95  #       adr_keyboard_ascii_LL
 store   a       0x0000   + 0x0005
 store   b       0x0000   + 0x0003
 load    a       0x0000  
-store   a       0x0f91  #       keyboard_input
-load    a       0x0f91  #       keyboard_input
-load    b       0x0f73  #       space   
+store   a       0x0f85  #       keyboard_input
+load    a       0x0f85  #       keyboard_input
+load    b       0x0f67  #       space   
 not     a       
 inc     a       
 add     b       a       
 bnz     branch8 
 nop     
 # keyboard_input_last(8) = keyboard_input(8)
-load    a       0x0f91  #       keyboard_input
-store   a       0x0f92  #       keyboard_input_last
+load    a       0x0f85  #       keyboard_input
+store   a       0x0f86  #       keyboard_input_last
 jump    game_loop
 @branch8 
 nop     
 jump    start_game
 @game_loop
 nop     
-load    a       0x0fa8  #       adr_timer_millis_hh_HH
-load    b       0x0fa9  #       adr_timer_millis_hh_LL
+load    a       0x0f9c  #       adr_timer_millis_hh_HH
+load    b       0x0f9d  #       adr_timer_millis_hh_LL
 store   a       0x0000   + 0x0005
 store   b       0x0000   + 0x0003
 load    a       0x0000  
-store   a       0x0f63  #       temp_eight_bit
+store   a       0x0f57  #       temp_eight_bit
 # millis_old(16) = temp_eight_bit(8)
-load    a       0x0f63  #       temp_eight_bit
+load    a       0x0f57  #       temp_eight_bit
 clear   b       
 add     a       b       
 clear   a       
@@ -900,11 +900,11 @@ nop
 dec     a       
 @branch10
 nop     
-store   a       0x0fea  #       millis_old_HH
-store   b       0x0feb  #       millis_old_LL
+store   a       0x0fde  #       millis_old_HH
+store   b       0x0fdf  #       millis_old_LL
 # millis_old(16) = millis_old(16) << def_eight(8)
-load    a       0x0fea  #       millis_old_HH
-load    b       0x0feb  #       millis_old_LL
+load    a       0x0fde  #       millis_old_HH
+load    b       0x0fdf  #       millis_old_LL
 add     b       b        #shift left by 1
 addc    a       a        #      
 add     b       b        #shift left by 1
@@ -921,16 +921,16 @@ add     b       b        #shift left by 1
 addc    a       a        #      
 add     b       b        #shift left by 1
 addc    a       a        #      
-store   a       0x0fea  #       millis_old_HH
-store   b       0x0feb  #       millis_old_LL
-load    a       0x0fa6  #       adr_timer_millis_ll_HH
-load    b       0x0fa7  #       adr_timer_millis_ll_LL
+store   a       0x0fde  #       millis_old_HH
+store   b       0x0fdf  #       millis_old_LL
+load    a       0x0f9a  #       adr_timer_millis_ll_HH
+load    b       0x0f9b  #       adr_timer_millis_ll_LL
 store   a       0x0000   + 0x0005
 store   b       0x0000   + 0x0003
 load    a       0x0000  
-store   a       0x0f63  #       temp_eight_bit
+store   a       0x0f57  #       temp_eight_bit
 # temp(16) = temp_eight_bit(8)
-load    a       0x0f63  #       temp_eight_bit
+load    a       0x0f57  #       temp_eight_bit
 clear   b       
 add     a       b       
 clear   a       
@@ -942,115 +942,115 @@ nop
 dec     a       
 @branch12
 nop     
-store   a       0x0fae  #       temp_HH 
-store   b       0x0faf  #       temp_LL 
+store   a       0x0fa2  #       temp_HH 
+store   b       0x0fa3  #       temp_LL 
 # temp(16bit) = temp(16bit) and ooff(16bit)
-load    a       0x0fae  #       temp_HH 
-load    b       0x0faf  #       temp_LL 
-load    c       0x0fc4  #       ooff_HH 
-load    d       0x0fc5  #       ooff_LL 
+load    a       0x0fa2  #       temp_HH 
+load    b       0x0fa3  #       temp_LL 
+load    c       0x0fb8  #       ooff_HH 
+load    d       0x0fb9  #       ooff_LL 
 and     d       b       
 and     c       a       
-store   a       0x0fae  #       temp_HH 
-store   b       0x0faf  #       temp_LL 
+store   a       0x0fa2  #       temp_HH 
+store   b       0x0fa3  #       temp_LL 
 # millis_old(16) += temp(16)
-load    a       0x0fea  #       millis_old_HH
-load    b       0x0feb  #       millis_old_LL
-load    c       0x0fae  #       temp_HH 
-load    d       0x0faf  #       temp_LL 
+load    a       0x0fde  #       millis_old_HH
+load    b       0x0fdf  #       millis_old_LL
+load    c       0x0fa2  #       temp_HH 
+load    d       0x0fa3  #       temp_LL 
 add     d       b       
 addc    c       a       
-store   a       0x0fea  #       millis_old_HH
-store   b       0x0feb  #       millis_old_LL
+store   a       0x0fde  #       millis_old_HH
+store   b       0x0fdf  #       millis_old_LL
 # millis_goal(16) = millis_old(16) + game_increment(16)
-load    a       0x0fea  #       millis_old_HH
-load    b       0x0feb  #       millis_old_LL
-load    c       0x0fce  #       game_increment_HH
-load    d       0x0fcf  #       game_increment_LL
+load    a       0x0fde  #       millis_old_HH
+load    b       0x0fdf  #       millis_old_LL
+load    c       0x0fc2  #       game_increment_HH
+load    d       0x0fc3  #       game_increment_LL
 add     d       b       
 addc    c       a       
-store   a       0x0fec  #       millis_goal_HH
-store   b       0x0fed  #       millis_goal_LL
-load    a       0x0fa0  #       adr_keyboard_ascii_HH
-load    b       0x0fa1  #       adr_keyboard_ascii_LL
+store   a       0x0fe0  #       millis_goal_HH
+store   b       0x0fe1  #       millis_goal_LL
+load    a       0x0f94  #       adr_keyboard_ascii_HH
+load    b       0x0f95  #       adr_keyboard_ascii_LL
 store   a       0x0000   + 0x0005
 store   b       0x0000   + 0x0003
 load    a       0x0000  
-store   a       0x0f91  #       keyboard_input
+store   a       0x0f85  #       keyboard_input
 # keyboard_mask(8) = keyboard_input(8) + keyboard_input_last(8)
-load    a       0x0f91  #       keyboard_input
-load    b       0x0f92  #       keyboard_input_last
+load    a       0x0f85  #       keyboard_input
+load    b       0x0f86  #       keyboard_input_last
 add     b       a       
-store   a       0x0f93  #       keyboard_mask
-load    a       0x0f93  #       keyboard_mask
-load    b       0x0f94  #       def_zero
+store   a       0x0f87  #       keyboard_mask
+load    a       0x0f87  #       keyboard_mask
+load    b       0x0f88  #       def_zero
 not     a       
 inc     a       
 add     b       a       
 boz     branch13
 nop     
-load    a       0x0f91  #       keyboard_input
-load    b       0x0f6f  #       kb_right
+load    a       0x0f85  #       keyboard_input
+load    b       0x0f63  #       kb_right
 not     a       
 inc     a       
 add     b       a       
 bnz     branch14
 nop     
 # keyboard_input_last(8) = keyboard_input(8)
-load    a       0x0f91  #       keyboard_input
-store   a       0x0f92  #       keyboard_input_last
+load    a       0x0f85  #       keyboard_input
+store   a       0x0f86  #       keyboard_input_last
 # direction(8) = right(8)
-load    a       0x0f7e  #       right   
-store   a       0x0f90  #       direction
+load    a       0x0f72  #       right   
+store   a       0x0f84  #       direction
 @branch14 
 nop     
-load    a       0x0f91  #       keyboard_input
-load    b       0x0f70  #       kb_left 
+load    a       0x0f85  #       keyboard_input
+load    b       0x0f64  #       kb_left 
 not     a       
 inc     a       
 add     b       a       
 bnz     branch15
 nop     
 # keyboard_input_last(8) = keyboard_input(8)
-load    a       0x0f91  #       keyboard_input
-store   a       0x0f92  #       keyboard_input_last
+load    a       0x0f85  #       keyboard_input
+store   a       0x0f86  #       keyboard_input_last
 # direction(8) = left(8)
-load    a       0x0f7f  #       left    
-store   a       0x0f90  #       direction
+load    a       0x0f73  #       left    
+store   a       0x0f84  #       direction
 @branch15 
 nop     
-load    a       0x0f91  #       keyboard_input
-load    b       0x0f71  #       kb_down 
+load    a       0x0f85  #       keyboard_input
+load    b       0x0f65  #       kb_down 
 not     a       
 inc     a       
 add     b       a       
 bnz     branch16
 nop     
 # keyboard_input_last(8) = keyboard_input(8)
-load    a       0x0f91  #       keyboard_input
-store   a       0x0f92  #       keyboard_input_last
+load    a       0x0f85  #       keyboard_input
+store   a       0x0f86  #       keyboard_input_last
 # direction(8) = down(8)
-load    a       0x0f80  #       down    
-store   a       0x0f90  #       direction
+load    a       0x0f74  #       down    
+store   a       0x0f84  #       direction
 @branch16 
 nop     
-load    a       0x0f91  #       keyboard_input
-load    b       0x0f72  #       kb_up   
+load    a       0x0f85  #       keyboard_input
+load    b       0x0f66  #       kb_up   
 not     a       
 inc     a       
 add     b       a       
 bnz     branch17
 nop     
 # keyboard_input_last(8) = keyboard_input(8)
-load    a       0x0f91  #       keyboard_input
-store   a       0x0f92  #       keyboard_input_last
+load    a       0x0f85  #       keyboard_input
+store   a       0x0f86  #       keyboard_input_last
 # direction(8) = up(8)
-load    a       0x0f81  #       up      
-store   a       0x0f90  #       direction
+load    a       0x0f75  #       up      
+store   a       0x0f84  #       direction
 @branch17 
 nop     
-load    a       0x0f91  #       keyboard_input
-load    b       0x0f74  #       escape  
+load    a       0x0f85  #       keyboard_input
+load    b       0x0f68  #       escape  
 not     a       
 inc     a       
 add     b       a       
@@ -1061,19 +1061,19 @@ jump    game_over
 nop     
 @branch13 
 nop     
-load    a       0x0ff4  #       snake_ptr_head_HH
-load    b       0x0ff5  #       snake_ptr_head_LL
+load    a       0x0fe8  #       snake_ptr_head_HH
+load    b       0x0fe9  #       snake_ptr_head_LL
 store   a       0x0000   + 0x0005
 store   b       0x0000   + 0x0003
 load    a       0x0000  
-store   a       0x0f8d  #       snake_board_head_next
+store   a       0x0f81  #       snake_board_head_next
 # snake_board_head_next(8) += direction(8)
-load    a       0x0f8d  #       snake_board_head_next
-load    b       0x0f90  #       direction
+load    a       0x0f81  #       snake_board_head_next
+load    b       0x0f84  #       direction
 add     b       a       
-store   a       0x0f8d  #       snake_board_head_next
+store   a       0x0f81  #       snake_board_head_next
 # cursor(16) = snake_board_head_next(8)
-load    a       0x0f8d  #       snake_board_head_next
+load    a       0x0f81  #       snake_board_head_next
 clear   b       
 add     a       b       
 clear   a       
@@ -1085,42 +1085,42 @@ nop
 dec     a       
 @branch20
 nop     
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # cursor(16bit) = cursor(16bit) and ooff(16bit)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
-load    c       0x0fc4  #       ooff_HH 
-load    d       0x0fc5  #       ooff_LL 
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
+load    c       0x0fb8  #       ooff_HH 
+load    d       0x0fb9  #       ooff_LL 
 and     d       b       
 and     c       a       
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # go_to_next_head_coord(8) = def_one(8)
-load    a       0x0f95  #       def_one 
-store   a       0x0f88  #       go_to_next_head_coord
+load    a       0x0f89  #       def_one 
+store   a       0x0f7c  #       go_to_next_head_coord
 jump    byte_coord_to_screen_coord
 @next_head_coord
 nop     
 # snake_screen_head_next(16) = cursor(16)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
-store   a       0x0ff8  #       snake_screen_head_next_HH
-store   b       0x0ff9  #       snake_screen_head_next_LL
-load    a       0x0ff8  #       snake_screen_head_next_HH
-load    b       0x0ff9  #       snake_screen_head_next_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
+store   a       0x0fec  #       snake_screen_head_next_HH
+store   b       0x0fed  #       snake_screen_head_next_LL
+load    a       0x0fec  #       snake_screen_head_next_HH
+load    b       0x0fed  #       snake_screen_head_next_LL
 store   a       0x0000   + 0x0005
 store   b       0x0000   + 0x0003
 load    a       0x0000  
-store   a       0x0f8e  #       snake_head_next_color
-load    a       0x0ff4  #       snake_ptr_head_HH
-load    b       0x0ff5  #       snake_ptr_head_LL
+store   a       0x0f82  #       snake_head_next_color
+load    a       0x0fe8  #       snake_ptr_head_HH
+load    b       0x0fe9  #       snake_ptr_head_LL
 store   a       0x0000   + 0x0005
 store   b       0x0000   + 0x0003
 load    a       0x0000  
-store   a       0x0f63  #       temp_eight_bit
+store   a       0x0f57  #       temp_eight_bit
 # cursor(16) = temp_eight_bit(8)
-load    a       0x0f63  #       temp_eight_bit
+load    a       0x0f57  #       temp_eight_bit
 clear   b       
 add     a       b       
 clear   a       
@@ -1132,99 +1132,99 @@ nop
 dec     a       
 @branch22
 nop     
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # go_to_delete_snake_head(8) = def_one(8)
-load    a       0x0f95  #       def_one 
-store   a       0x0f8a  #       go_to_delete_snake_head
+load    a       0x0f89  #       def_one 
+store   a       0x0f7e  #       go_to_delete_snake_head
 jump    byte_coord_to_screen_coord
 @delete_snake_head
 nop     
 # MEM[cursor(8)] = color_lime(8)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f7b  #       color_lime
+load    a       0x0f6f  #       color_lime
 store   a       0x0000  
 # cursor(16) += two(16)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
-load    c       0x0fb4  #       two_HH  
-load    d       0x0fb5  #       two_LL  
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
+load    c       0x0fa8  #       two_HH  
+load    d       0x0fa9  #       two_LL  
 add     d       b       
 addc    c       a       
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # MEM[cursor(8)] = color_lime(8)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f7b  #       color_lime
+load    a       0x0f6f  #       color_lime
 store   a       0x0000  
 # snake_ptr_head ++
-load    a       0x0ff4  #       snake_ptr_head_HH
-load    b       0x0ff5  #       snake_ptr_head_LL
+load    a       0x0fe8  #       snake_ptr_head_HH
+load    b       0x0fe9  #       snake_ptr_head_LL
 clear   c       
 inc     b       
 addc    c       a       
-store   a       0x0ff4  #       snake_ptr_head_HH
-store   b       0x0ff5  #       snake_ptr_head_LL
-load    a       0x0ff5  #       snake_ptr_head_LL
-load    b       0x0ff1  #       snake_array_max_LL
+store   a       0x0fe8  #       snake_ptr_head_HH
+store   b       0x0fe9  #       snake_ptr_head_LL
+load    a       0x0fe9  #       snake_ptr_head_LL
+load    b       0x0fe5  #       snake_array_max_LL
 not     a       
 inc     a       
 add     b       a       
 bnz     branch23
 nop     
 clear   a       
-load    b       0x0ff0  #       snake_array_max_HH
+load    b       0x0fe4  #       snake_array_max_HH
 addc    a       b       
-load    a       0x0ff4  #       snake_ptr_head_HH
+load    a       0x0fe8  #       snake_ptr_head_HH
 not     a       
 add     b       a       
 bnz     branch23
 nop     
 # snake_ptr_head(16) = snake_array(16)
-load    a       0x0fee  #       snake_array_HH
-load    b       0x0fef  #       snake_array_LL
-store   a       0x0ff4  #       snake_ptr_head_HH
-store   b       0x0ff5  #       snake_ptr_head_LL
+load    a       0x0fe2  #       snake_array_HH
+load    b       0x0fe3  #       snake_array_LL
+store   a       0x0fe8  #       snake_ptr_head_HH
+store   b       0x0fe9  #       snake_ptr_head_LL
 @branch23 
 nop     
 # MEM[snake_ptr_head(8)] = snake_board_head_next(8)
-load    a       0x0ff4  #       snake_ptr_head_HH
-load    b       0x0ff5  #       snake_ptr_head_LL
+load    a       0x0fe8  #       snake_ptr_head_HH
+load    b       0x0fe9  #       snake_ptr_head_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f8d  #       snake_board_head_next
+load    a       0x0f81  #       snake_board_head_next
 store   a       0x0000  
 # MEM[snake_screen_head_next(8)] = color_green(8)
-load    a       0x0ff8  #       snake_screen_head_next_HH
-load    b       0x0ff9  #       snake_screen_head_next_LL
+load    a       0x0fec  #       snake_screen_head_next_HH
+load    b       0x0fed  #       snake_screen_head_next_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f7c  #       color_green
+load    a       0x0f70  #       color_green
 store   a       0x0000  
 # snake_screen_head_next(16) += two(16)
-load    a       0x0ff8  #       snake_screen_head_next_HH
-load    b       0x0ff9  #       snake_screen_head_next_LL
-load    c       0x0fb4  #       two_HH  
-load    d       0x0fb5  #       two_LL  
+load    a       0x0fec  #       snake_screen_head_next_HH
+load    b       0x0fed  #       snake_screen_head_next_LL
+load    c       0x0fa8  #       two_HH  
+load    d       0x0fa9  #       two_LL  
 add     d       b       
 addc    c       a       
-store   a       0x0ff8  #       snake_screen_head_next_HH
-store   b       0x0ff9  #       snake_screen_head_next_LL
+store   a       0x0fec  #       snake_screen_head_next_HH
+store   b       0x0fed  #       snake_screen_head_next_LL
 # MEM[snake_screen_head_next(8)] = color_green(8)
-load    a       0x0ff8  #       snake_screen_head_next_HH
-load    b       0x0ff9  #       snake_screen_head_next_LL
+load    a       0x0fec  #       snake_screen_head_next_HH
+load    b       0x0fed  #       snake_screen_head_next_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f7c  #       color_green
+load    a       0x0f70  #       color_green
 store   a       0x0000  
-load    a       0x0f8e  #       snake_head_next_color
-load    b       0x0f78  #       color_silver
+load    a       0x0f82  #       snake_head_next_color
+load    b       0x0f6c  #       color_silver
 not     a       
 inc     a       
 add     b       a       
@@ -1233,8 +1233,8 @@ nop
 jump    game_over
 @branch24 
 nop     
-load    a       0x0f8e  #       snake_head_next_color
-load    b       0x0f7b  #       color_lime
+load    a       0x0f82  #       snake_head_next_color
+load    b       0x0f6f  #       color_lime
 not     a       
 inc     a       
 add     b       a       
@@ -1243,51 +1243,51 @@ nop
 jump    game_over
 @branch25 
 nop     
-load    a       0x0f8e  #       snake_head_next_color
-load    b       0x0f79  #       color_black
+load    a       0x0f82  #       snake_head_next_color
+load    b       0x0f6d  #       color_black
 not     a       
 inc     a       
 add     b       a       
 bnz     branch26
 nop     
 # snake_ptr_tail ++
-load    a       0x0ff2  #       snake_ptr_tail_HH
-load    b       0x0ff3  #       snake_ptr_tail_LL
+load    a       0x0fe6  #       snake_ptr_tail_HH
+load    b       0x0fe7  #       snake_ptr_tail_LL
 clear   c       
 inc     b       
 addc    c       a       
-store   a       0x0ff2  #       snake_ptr_tail_HH
-store   b       0x0ff3  #       snake_ptr_tail_LL
-load    a       0x0ff3  #       snake_ptr_tail_LL
-load    b       0x0ff1  #       snake_array_max_LL
+store   a       0x0fe6  #       snake_ptr_tail_HH
+store   b       0x0fe7  #       snake_ptr_tail_LL
+load    a       0x0fe7  #       snake_ptr_tail_LL
+load    b       0x0fe5  #       snake_array_max_LL
 not     a       
 inc     a       
 add     b       a       
 bnz     branch27
 nop     
 clear   a       
-load    b       0x0ff0  #       snake_array_max_HH
+load    b       0x0fe4  #       snake_array_max_HH
 addc    a       b       
-load    a       0x0ff2  #       snake_ptr_tail_HH
+load    a       0x0fe6  #       snake_ptr_tail_HH
 not     a       
 add     b       a       
 bnz     branch27
 nop     
 # snake_ptr_tail(16) = snake_array(16)
-load    a       0x0fee  #       snake_array_HH
-load    b       0x0fef  #       snake_array_LL
-store   a       0x0ff2  #       snake_ptr_tail_HH
-store   b       0x0ff3  #       snake_ptr_tail_LL
+load    a       0x0fe2  #       snake_array_HH
+load    b       0x0fe3  #       snake_array_LL
+store   a       0x0fe6  #       snake_ptr_tail_HH
+store   b       0x0fe7  #       snake_ptr_tail_LL
 @branch27 
 nop     
-load    a       0x0ff2  #       snake_ptr_tail_HH
-load    b       0x0ff3  #       snake_ptr_tail_LL
+load    a       0x0fe6  #       snake_ptr_tail_HH
+load    b       0x0fe7  #       snake_ptr_tail_LL
 store   a       0x0000   + 0x0005
 store   b       0x0000   + 0x0003
 load    a       0x0000  
-store   a       0x0f63  #       temp_eight_bit
+store   a       0x0f57  #       temp_eight_bit
 # cursor(16) = temp_eight_bit(8)
-load    a       0x0f63  #       temp_eight_bit
+load    a       0x0f57  #       temp_eight_bit
 clear   b       
 add     a       b       
 clear   a       
@@ -1299,65 +1299,65 @@ nop
 dec     a       
 @branch29
 nop     
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # go_to_delete_snake_tail(8) = def_one(8)
-load    a       0x0f95  #       def_one 
-store   a       0x0f89  #       go_to_delete_snake_tail
+load    a       0x0f89  #       def_one 
+store   a       0x0f7d  #       go_to_delete_snake_tail
 jump    byte_coord_to_screen_coord
 @delete_snake_tail
 nop     
 # MEM[cursor(8)] = color_black(8)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f79  #       color_black
+load    a       0x0f6d  #       color_black
 store   a       0x0000  
 # cursor(16) += two(16)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
-load    c       0x0fb4  #       two_HH  
-load    d       0x0fb5  #       two_LL  
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
+load    c       0x0fa8  #       two_HH  
+load    d       0x0fa9  #       two_LL  
 add     d       b       
 addc    c       a       
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # MEM[cursor(8)] = color_black(8)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f79  #       color_black
+load    a       0x0f6d  #       color_black
 store   a       0x0000  
 @branch26 
 nop     
-load    a       0x0f8e  #       snake_head_next_color
-load    b       0x0f7a  #       color_red
+load    a       0x0f82  #       snake_head_next_color
+load    b       0x0f6e  #       color_red
 not     a       
 inc     a       
 add     b       a       
 bnz     branch30
 nop     
 # snake_counter ++
-load    a       0x0ffa  #       snake_counter_HH
-load    b       0x0ffb  #       snake_counter_LL
+load    a       0x0fee  #       snake_counter_HH
+load    b       0x0fef  #       snake_counter_LL
 clear   c       
 inc     b       
 addc    c       a       
-store   a       0x0ffa  #       snake_counter_HH
-store   b       0x0ffb  #       snake_counter_LL
-load    a       0x0ffb  #       snake_counter_LL
-load    b       0x0fc7  #       hex_hundred_LL
+store   a       0x0fee  #       snake_counter_HH
+store   b       0x0fef  #       snake_counter_LL
+load    a       0x0fef  #       snake_counter_LL
+load    b       0x0fbb  #       hex_hundred_LL
 not     a       
 inc     a       
 add     b       a       
 bnz     branch31
 nop     
 clear   a       
-load    b       0x0fc6  #       hex_hundred_HH
+load    b       0x0fba  #       hex_hundred_HH
 addc    a       b       
-load    a       0x0ffa  #       snake_counter_HH
+load    a       0x0fee  #       snake_counter_HH
 not     a       
 add     b       a       
 bnz     branch31
@@ -1366,26 +1366,26 @@ jump    game_over
 @branch31 
 nop     
 # apple_next_color(8) = color_green(8)
-load    a       0x0f7c  #       color_green
-store   a       0x0f8f  #       apple_next_color
+load    a       0x0f70  #       color_green
+store   a       0x0f83  #       apple_next_color
 # i(16) = zero(16)
-load    a       0x0fb0  #       zero_HH 
-load    b       0x0fb1  #       zero_LL 
-store   a       0x0fe4  #       i_HH    
-store   b       0x0fe5  #       i_LL    
+load    a       0x0fa4  #       zero_HH 
+load    b       0x0fa5  #       zero_LL 
+store   a       0x0fd8  #       i_HH    
+store   b       0x0fd9  #       i_LL    
 @branch32
 nop     
-load    a       0x0f8f  #       apple_next_color
-load    b       0x0f79  #       color_black
+load    a       0x0f83  #       apple_next_color
+load    b       0x0f6d  #       color_black
 not     a       
 inc     a       
 add     b       a       
 boz     branch33
 nop     
-load    a       0x0fe4  #       i_HH    
-load    b       0x0fe5  #       i_LL    
-load    c       0x0fb6  #       three_HH
-load    d       0x0fb7  #       three_LL
+load    a       0x0fd8  #       i_HH    
+load    b       0x0fd9  #       i_LL    
+load    c       0x0faa  #       three_HH
+load    d       0x0fab  #       three_LL
 not     a       
 not     b       
 addc    d       b       
@@ -1393,21 +1393,21 @@ addc    c       a
 bon     branch34
 nop     
 # i ++  
-load    a       0x0fe4  #       i_HH    
-load    b       0x0fe5  #       i_LL    
+load    a       0x0fd8  #       i_HH    
+load    b       0x0fd9  #       i_LL    
 clear   c       
 inc     b       
 addc    c       a       
-store   a       0x0fe4  #       i_HH    
-store   b       0x0fe5  #       i_LL    
-load    a       0x0fa4  #       adr_random_HH
-load    b       0x0fa5  #       adr_random_LL
+store   a       0x0fd8  #       i_HH    
+store   b       0x0fd9  #       i_LL    
+load    a       0x0f98  #       adr_random_HH
+load    b       0x0f99  #       adr_random_LL
 store   a       0x0000   + 0x0005
 store   b       0x0000   + 0x0003
 load    a       0x0000  
-store   a       0x0f63  #       temp_eight_bit
+store   a       0x0f57  #       temp_eight_bit
 # cursor(16) = temp_eight_bit(8)
-load    a       0x0f63  #       temp_eight_bit
+load    a       0x0f57  #       temp_eight_bit
 clear   b       
 add     a       b       
 clear   a       
@@ -1419,25 +1419,25 @@ nop
 dec     a       
 @branch36
 nop     
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # go_to_apple(8) = def_one(8)
-load    a       0x0f95  #       def_one 
-store   a       0x0f84  #       go_to_apple
+load    a       0x0f89  #       def_one 
+store   a       0x0f78  #       go_to_apple
 jump    byte_coord_to_screen_coord
 @cursor_apple
 nop     
 jump    else_i_three
 @branch34 
 nop     
-load    a       0x0ff2  #       snake_ptr_tail_HH
-load    b       0x0ff3  #       snake_ptr_tail_LL
+load    a       0x0fe6  #       snake_ptr_tail_HH
+load    b       0x0fe7  #       snake_ptr_tail_LL
 store   a       0x0000   + 0x0005
 store   b       0x0000   + 0x0003
 load    a       0x0000  
-store   a       0x0f63  #       temp_eight_bit
+store   a       0x0f57  #       temp_eight_bit
 # cursor(16) = temp_eight_bit(8)
-load    a       0x0f63  #       temp_eight_bit
+load    a       0x0f57  #       temp_eight_bit
 clear   b       
 add     a       b       
 clear   a       
@@ -1449,67 +1449,67 @@ nop
 dec     a       
 @branch38
 nop     
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # go_to_apple_failed_gen(8) = def_one(8)
-load    a       0x0f95  #       def_one 
-store   a       0x0f85  #       go_to_apple_failed_gen
+load    a       0x0f89  #       def_one 
+store   a       0x0f79  #       go_to_apple_failed_gen
 jump    byte_coord_to_screen_coord
 @apple_failed_gen
 nop     
 @else_i_three
 nop     
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 store   a       0x0000   + 0x0005
 store   b       0x0000   + 0x0003
 load    a       0x0000  
-store   a       0x0f8f  #       apple_next_color
+store   a       0x0f83  #       apple_next_color
 jump branch32 
 @branch33 
 nop     
 # MEM[cursor(8)] = color_red(8)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f7a  #       color_red
+load    a       0x0f6e  #       color_red
 store   a       0x0000  
 # cursor(16) += two(16)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
-load    c       0x0fb4  #       two_HH  
-load    d       0x0fb5  #       two_LL  
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
+load    c       0x0fa8  #       two_HH  
+load    d       0x0fa9  #       two_LL  
 add     d       b       
 addc    c       a       
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # MEM[cursor(8)] = color_red(8)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f7a  #       color_red
+load    a       0x0f6e  #       color_red
 store   a       0x0000  
 @branch30 
 nop     
 # MEM[adr_keyboard_info(8)] = def_one(8)
-load    a       0x0fa2  #       adr_keyboard_info_HH
-load    b       0x0fa3  #       adr_keyboard_info_LL
+load    a       0x0f96  #       adr_keyboard_info_HH
+load    b       0x0f97  #       adr_keyboard_info_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f95  #       def_one 
+load    a       0x0f89  #       def_one 
 store   a       0x0000  
 @snake_game_timer
 nop     
-load    a       0x0fa8  #       adr_timer_millis_hh_HH
-load    b       0x0fa9  #       adr_timer_millis_hh_LL
+load    a       0x0f9c  #       adr_timer_millis_hh_HH
+load    b       0x0f9d  #       adr_timer_millis_hh_LL
 store   a       0x0000   + 0x0005
 store   b       0x0000   + 0x0003
 load    a       0x0000  
-store   a       0x0f63  #       temp_eight_bit
+store   a       0x0f57  #       temp_eight_bit
 # millis_new(16) = temp_eight_bit(8)
-load    a       0x0f63  #       temp_eight_bit
+load    a       0x0f57  #       temp_eight_bit
 clear   b       
 add     a       b       
 clear   a       
@@ -1521,11 +1521,11 @@ nop
 dec     a       
 @branch40
 nop     
-store   a       0x0fe8  #       millis_new_HH
-store   b       0x0fe9  #       millis_new_LL
+store   a       0x0fdc  #       millis_new_HH
+store   b       0x0fdd  #       millis_new_LL
 # millis_new(16) = millis_new(16) << def_eight(8)
-load    a       0x0fe8  #       millis_new_HH
-load    b       0x0fe9  #       millis_new_LL
+load    a       0x0fdc  #       millis_new_HH
+load    b       0x0fdd  #       millis_new_LL
 add     b       b        #shift left by 1
 addc    a       a        #      
 add     b       b        #shift left by 1
@@ -1542,16 +1542,16 @@ add     b       b        #shift left by 1
 addc    a       a        #      
 add     b       b        #shift left by 1
 addc    a       a        #      
-store   a       0x0fe8  #       millis_new_HH
-store   b       0x0fe9  #       millis_new_LL
-load    a       0x0fa6  #       adr_timer_millis_ll_HH
-load    b       0x0fa7  #       adr_timer_millis_ll_LL
+store   a       0x0fdc  #       millis_new_HH
+store   b       0x0fdd  #       millis_new_LL
+load    a       0x0f9a  #       adr_timer_millis_ll_HH
+load    b       0x0f9b  #       adr_timer_millis_ll_LL
 store   a       0x0000   + 0x0005
 store   b       0x0000   + 0x0003
 load    a       0x0000  
-store   a       0x0f63  #       temp_eight_bit
+store   a       0x0f57  #       temp_eight_bit
 # temp(16) = temp_eight_bit(8)
-load    a       0x0f63  #       temp_eight_bit
+load    a       0x0f57  #       temp_eight_bit
 clear   b       
 add     a       b       
 clear   a       
@@ -1563,40 +1563,40 @@ nop
 dec     a       
 @branch42
 nop     
-store   a       0x0fae  #       temp_HH 
-store   b       0x0faf  #       temp_LL 
+store   a       0x0fa2  #       temp_HH 
+store   b       0x0fa3  #       temp_LL 
 # temp(16bit) = temp(16bit) and ooff(16bit)
-load    a       0x0fae  #       temp_HH 
-load    b       0x0faf  #       temp_LL 
-load    c       0x0fc4  #       ooff_HH 
-load    d       0x0fc5  #       ooff_LL 
+load    a       0x0fa2  #       temp_HH 
+load    b       0x0fa3  #       temp_LL 
+load    c       0x0fb8  #       ooff_HH 
+load    d       0x0fb9  #       ooff_LL 
 and     d       b       
 and     c       a       
-store   a       0x0fae  #       temp_HH 
-store   b       0x0faf  #       temp_LL 
+store   a       0x0fa2  #       temp_HH 
+store   b       0x0fa3  #       temp_LL 
 # millis_new(16) += temp(16)
-load    a       0x0fe8  #       millis_new_HH
-load    b       0x0fe9  #       millis_new_LL
-load    c       0x0fae  #       temp_HH 
-load    d       0x0faf  #       temp_LL 
+load    a       0x0fdc  #       millis_new_HH
+load    b       0x0fdd  #       millis_new_LL
+load    c       0x0fa2  #       temp_HH 
+load    d       0x0fa3  #       temp_LL 
 add     d       b       
 addc    c       a       
-store   a       0x0fe8  #       millis_new_HH
-store   b       0x0fe9  #       millis_new_LL
-load    a       0x0fec  #       millis_goal_HH
-load    b       0x0fed  #       millis_goal_LL
-load    c       0x0fea  #       millis_old_HH
-load    d       0x0feb  #       millis_old_LL
+store   a       0x0fdc  #       millis_new_HH
+store   b       0x0fdd  #       millis_new_LL
+load    a       0x0fe0  #       millis_goal_HH
+load    b       0x0fe1  #       millis_goal_LL
+load    c       0x0fde  #       millis_old_HH
+load    d       0x0fdf  #       millis_old_LL
 not     a       
 not     b       
 addc    d       b       
 addc    c       a       
 bon     branch43
 nop     
-load    a       0x0fea  #       millis_old_HH
-load    b       0x0feb  #       millis_old_LL
-load    c       0x0fe8  #       millis_new_HH
-load    d       0x0fe9  #       millis_new_LL
+load    a       0x0fde  #       millis_old_HH
+load    b       0x0fdf  #       millis_old_LL
+load    c       0x0fdc  #       millis_new_HH
+load    d       0x0fdd  #       millis_new_LL
 not     a       
 not     b       
 addc    d       b       
@@ -1606,10 +1606,10 @@ nop
 jump    snake_game_timer
 @branch44 
 nop     
-load    a       0x0fe8  #       millis_new_HH
-load    b       0x0fe9  #       millis_new_LL
-load    c       0x0fec  #       millis_goal_HH
-load    d       0x0fed  #       millis_goal_LL
+load    a       0x0fdc  #       millis_new_HH
+load    b       0x0fdd  #       millis_new_LL
+load    c       0x0fe0  #       millis_goal_HH
+load    d       0x0fe1  #       millis_goal_LL
 not     a       
 not     b       
 addc    d       b       
@@ -1622,20 +1622,20 @@ nop
 jump    snake_game_timer_else
 @branch43 
 nop     
-load    a       0x0fea  #       millis_old_HH
-load    b       0x0feb  #       millis_old_LL
-load    c       0x0fe8  #       millis_new_HH
-load    d       0x0fe9  #       millis_new_LL
+load    a       0x0fde  #       millis_old_HH
+load    b       0x0fdf  #       millis_old_LL
+load    c       0x0fdc  #       millis_new_HH
+load    d       0x0fdd  #       millis_new_LL
 not     a       
 not     b       
 addc    d       b       
 addc    c       a       
 bon     branch46
 nop     
-load    a       0x0fe8  #       millis_new_HH
-load    b       0x0fe9  #       millis_new_LL
-load    c       0x0fec  #       millis_goal_HH
-load    d       0x0fed  #       millis_goal_LL
+load    a       0x0fdc  #       millis_new_HH
+load    b       0x0fdd  #       millis_new_LL
+load    c       0x0fe0  #       millis_goal_HH
+load    d       0x0fe1  #       millis_goal_LL
 not     a       
 not     b       
 addc    d       b       
@@ -1653,27 +1653,27 @@ jump    game_loop
 @game_over
 nop     
 # cursor_x(16) = six(16)
-load    a       0x0fba  #       six_HH  
-load    b       0x0fbb  #       six_LL  
-store   a       0x1016  #       cursor_x_HH
-store   b       0x1017  #       cursor_x_LL
+load    a       0x0fae  #       six_HH  
+load    b       0x0faf  #       six_LL  
+store   a       0x100a  #       cursor_x_HH
+store   b       0x100b  #       cursor_x_LL
 # cursor_x(16) = cursor_x(16) << def_two(2)
-load    a       0x1016  #       cursor_x_HH
-load    b       0x1017  #       cursor_x_LL
+load    a       0x100a  #       cursor_x_HH
+load    b       0x100b  #       cursor_x_LL
 add     b       b        #shift left by 1
 addc    a       a        #      
 add     b       b        #shift left by 1
 addc    a       a        #      
-store   a       0x1016  #       cursor_x_HH
-store   b       0x1017  #       cursor_x_LL
+store   a       0x100a  #       cursor_x_HH
+store   b       0x100b  #       cursor_x_LL
 # cursor_y(16) = seven(16)
-load    a       0x0fbc  #       seven_HH
-load    b       0x0fbd  #       seven_LL
-store   a       0x1018  #       cursor_y_HH
-store   b       0x1019  #       cursor_y_LL
+load    a       0x0fb0  #       seven_HH
+load    b       0x0fb1  #       seven_LL
+store   a       0x100c  #       cursor_y_HH
+store   b       0x100d  #       cursor_y_LL
 # cursor_y(16) = cursor_y(16) << def_seven(7)
-load    a       0x1018  #       cursor_y_HH
-load    b       0x1019  #       cursor_y_LL
+load    a       0x100c  #       cursor_y_HH
+load    b       0x100d  #       cursor_y_LL
 add     b       b        #shift left by 1
 addc    a       a        #      
 add     b       b        #shift left by 1
@@ -1688,290 +1688,290 @@ add     b       b        #shift left by 1
 addc    a       a        #      
 add     b       b        #shift left by 1
 addc    a       a        #      
-store   a       0x1018  #       cursor_y_HH
-store   b       0x1019  #       cursor_y_LL
+store   a       0x100c  #       cursor_y_HH
+store   b       0x100d  #       cursor_y_LL
 # cursor(16) = board_top_l(16)
-load    a       0x0ffc  #       board_top_l_HH
-load    b       0x0ffd  #       board_top_l_LL
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+load    a       0x0ff0  #       board_top_l_HH
+load    b       0x0ff1  #       board_top_l_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # cursor(16) += cursor_y(16)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
-load    c       0x1018  #       cursor_y_HH
-load    d       0x1019  #       cursor_y_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
+load    c       0x100c  #       cursor_y_HH
+load    d       0x100d  #       cursor_y_LL
 add     d       b       
 addc    c       a       
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # cursor(16) += cursor_x(16)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
-load    c       0x1016  #       cursor_x_HH
-load    d       0x1017  #       cursor_x_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
+load    c       0x100a  #       cursor_x_HH
+load    d       0x100b  #       cursor_x_LL
 add     d       b       
 addc    c       a       
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # cursor(16) += adr_main_display(16)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
-load    c       0x0f9c  #       adr_main_display_HH
-load    d       0x0f9d  #       adr_main_display_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
+load    c       0x0f90  #       adr_main_display_HH
+load    d       0x0f91  #       adr_main_display_LL
 add     d       b       
 addc    c       a       
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # MEM[cursor(8)] = G(8)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f67  #       G       
+load    a       0x0f5b  #       G       
 store   a       0x0000  
 # cursor ++
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 clear   c       
 inc     b       
 addc    c       a       
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # MEM[cursor(8)] = color_red(8)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f7a  #       color_red
+load    a       0x0f6e  #       color_red
 store   a       0x0000  
 # cursor ++
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 clear   c       
 inc     b       
 addc    c       a       
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # MEM[cursor(8)] = A(8)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f64  #       A       
+load    a       0x0f58  #       A       
 store   a       0x0000  
 # cursor ++
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 clear   c       
 inc     b       
 addc    c       a       
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # MEM[cursor(8)] = color_red(8)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f7a  #       color_red
+load    a       0x0f6e  #       color_red
 store   a       0x0000  
 # cursor ++
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 clear   c       
 inc     b       
 addc    c       a       
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # MEM[cursor(8)] = M(8)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f6a  #       M       
+load    a       0x0f5e  #       M       
 store   a       0x0000  
 # cursor ++
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 clear   c       
 inc     b       
 addc    c       a       
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # MEM[cursor(8)] = color_red(8)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f7a  #       color_red
+load    a       0x0f6e  #       color_red
 store   a       0x0000  
 # cursor ++
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 clear   c       
 inc     b       
 addc    c       a       
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # MEM[cursor(8)] = E(8)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f66  #       E       
+load    a       0x0f5a  #       E       
 store   a       0x0000  
 # cursor ++
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 clear   c       
 inc     b       
 addc    c       a       
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # MEM[cursor(8)] = color_red(8)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f7a  #       color_red
+load    a       0x0f6e  #       color_red
 store   a       0x0000  
 # cursor(16) += screen_width(16)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
-load    c       0x0fd6  #       screen_width_HH
-load    d       0x0fd7  #       screen_width_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
+load    c       0x0fca  #       screen_width_HH
+load    d       0x0fcb  #       screen_width_LL
 add     d       b       
 addc    c       a       
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # MEM[cursor(8)] = color_red(8)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f7a  #       color_red
+load    a       0x0f6e  #       color_red
 store   a       0x0000  
 # cursor --
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 clear   c       
 not     c       
 dec     b       
 addc    c       a       
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # MEM[cursor(8)] = R(8)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f6c  #       R       
+load    a       0x0f60  #       R       
 store   a       0x0000  
 # cursor --
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 clear   c       
 not     c       
 dec     b       
 addc    c       a       
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # MEM[cursor(8)] = color_red(8)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f7a  #       color_red
+load    a       0x0f6e  #       color_red
 store   a       0x0000  
 # cursor --
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 clear   c       
 not     c       
 dec     b       
 addc    c       a       
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # MEM[cursor(8)] = E(8)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f66  #       E       
+load    a       0x0f5a  #       E       
 store   a       0x0000  
 # cursor --
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 clear   c       
 not     c       
 dec     b       
 addc    c       a       
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # MEM[cursor(8)] = color_red(8)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f7a  #       color_red
+load    a       0x0f6e  #       color_red
 store   a       0x0000  
 # cursor --
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 clear   c       
 not     c       
 dec     b       
 addc    c       a       
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # MEM[cursor(8)] = V(8)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f6e  #       V       
+load    a       0x0f62  #       V       
 store   a       0x0000  
 # cursor --
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 clear   c       
 not     c       
 dec     b       
 addc    c       a       
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # MEM[cursor(8)] = color_red(8)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f7a  #       color_red
+load    a       0x0f6e  #       color_red
 store   a       0x0000  
 # cursor --
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 clear   c       
 not     c       
 dec     b       
 addc    c       a       
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # MEM[cursor(8)] = O(8)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 store   a       0x0000   + 0x0008
 store   b       0x0000   + 0x0006
-load    a       0x0f6b  #       O       
+load    a       0x0f5f  #       O       
 store   a       0x0000  
 @wait_for_key
 nop     
-load    a       0x0fa0  #       adr_keyboard_ascii_HH
-load    b       0x0fa1  #       adr_keyboard_ascii_LL
+load    a       0x0f94  #       adr_keyboard_ascii_HH
+load    b       0x0f95  #       adr_keyboard_ascii_LL
 store   a       0x0000   + 0x0005
 store   b       0x0000   + 0x0003
 load    a       0x0000  
-store   a       0x0f91  #       keyboard_input
-load    a       0x0f91  #       keyboard_input
-load    b       0x0f73  #       space   
+store   a       0x0f85  #       keyboard_input
+load    a       0x0f85  #       keyboard_input
+load    b       0x0f67  #       space   
 not     a       
 inc     a       
 add     b       a       
@@ -1984,168 +1984,168 @@ jump    wait_for_key
 @byte_coord_to_screen_coord
 nop     
 # cursor_x(16) = cursor(16)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
-store   a       0x1016  #       cursor_x_HH
-store   b       0x1017  #       cursor_x_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
+store   a       0x100a  #       cursor_x_HH
+store   b       0x100b  #       cursor_x_LL
 # cursor_x(16bit) = cursor_x(16bit) and oooF(16bit)
-load    a       0x1016  #       cursor_x_HH
-load    b       0x1017  #       cursor_x_LL
-load    c       0x0fc8  #       oooF_HH 
-load    d       0x0fc9  #       oooF_LL 
+load    a       0x100a  #       cursor_x_HH
+load    b       0x100b  #       cursor_x_LL
+load    c       0x0fbc  #       oooF_HH 
+load    d       0x0fbd  #       oooF_LL 
 and     d       b       
 and     c       a       
-store   a       0x1016  #       cursor_x_HH
-store   b       0x1017  #       cursor_x_LL
+store   a       0x100a  #       cursor_x_HH
+store   b       0x100b  #       cursor_x_LL
 # cursor_x(16) = cursor_x(16) << def_two(2)
-load    a       0x1016  #       cursor_x_HH
-load    b       0x1017  #       cursor_x_LL
+load    a       0x100a  #       cursor_x_HH
+load    b       0x100b  #       cursor_x_LL
 add     b       b        #shift left by 1
 addc    a       a        #      
 add     b       b        #shift left by 1
 addc    a       a        #      
-store   a       0x1016  #       cursor_x_HH
-store   b       0x1017  #       cursor_x_LL
+store   a       0x100a  #       cursor_x_HH
+store   b       0x100b  #       cursor_x_LL
 # cursor_y(16) = cursor(16)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
-store   a       0x1018  #       cursor_y_HH
-store   b       0x1019  #       cursor_y_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
+store   a       0x100c  #       cursor_y_HH
+store   b       0x100d  #       cursor_y_LL
 # cursor_y(16bit) = cursor_y(16bit) and ooFo(16bit)
-load    a       0x1018  #       cursor_y_HH
-load    b       0x1019  #       cursor_y_LL
-load    c       0x0fca  #       ooFo_HH 
-load    d       0x0fcb  #       ooFo_LL 
+load    a       0x100c  #       cursor_y_HH
+load    b       0x100d  #       cursor_y_LL
+load    c       0x0fbe  #       ooFo_HH 
+load    d       0x0fbf  #       ooFo_LL 
 and     d       b       
 and     c       a       
-store   a       0x1018  #       cursor_y_HH
-store   b       0x1019  #       cursor_y_LL
+store   a       0x100c  #       cursor_y_HH
+store   b       0x100d  #       cursor_y_LL
 # cursor(16) = cursor_y(16)
-load    a       0x1018  #       cursor_y_HH
-load    b       0x1019  #       cursor_y_LL
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+load    a       0x100c  #       cursor_y_HH
+load    b       0x100d  #       cursor_y_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # cursor(16) = cursor(16) << def_three(3)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 add     b       b        #shift left by 1
 addc    a       a        #      
 add     b       b        #shift left by 1
 addc    a       a        #      
 add     b       b        #shift left by 1
 addc    a       a        #      
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # cursor(16) += board_top_l(16)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
-load    c       0x0ffc  #       board_top_l_HH
-load    d       0x0ffd  #       board_top_l_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
+load    c       0x0ff0  #       board_top_l_HH
+load    d       0x0ff1  #       board_top_l_LL
 add     d       b       
 addc    c       a       
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # cursor(16) += cursor_x(16)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
-load    c       0x1016  #       cursor_x_HH
-load    d       0x1017  #       cursor_x_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
+load    c       0x100a  #       cursor_x_HH
+load    d       0x100b  #       cursor_x_LL
 add     d       b       
 addc    c       a       
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # cursor(16) += adr_main_display(16)
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
-load    c       0x0f9c  #       adr_main_display_HH
-load    d       0x0f9d  #       adr_main_display_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
+load    c       0x0f90  #       adr_main_display_HH
+load    d       0x0f91  #       adr_main_display_LL
 add     d       b       
 addc    c       a       
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
 # cursor ++
-load    a       0x1014  #       cursor_HH
-load    b       0x1015  #       cursor_LL
+load    a       0x1008  #       cursor_HH
+load    b       0x1009  #       cursor_LL
 clear   c       
 inc     b       
 addc    c       a       
-store   a       0x1014  #       cursor_HH
-store   b       0x1015  #       cursor_LL
-load    a       0x0f83  #       go_to_snake_start
-load    b       0x0f94  #       def_zero
+store   a       0x1008  #       cursor_HH
+store   b       0x1009  #       cursor_LL
+load    a       0x0f77  #       go_to_snake_start
+load    b       0x0f88  #       def_zero
 not     a       
 inc     a       
 add     b       a       
 boz     branch49
 nop     
-# go_to_snake_start(8) = clear(16)
-load    b       0x0f9b  #       clear_LL
-store   b       0x0f83  #       go_to_snake_start
+# go_to_snake_start(8) = 0x00
+clear   a       
+store   a       0x0f77  #       go_to_snake_start
 jump    cursor_snake_start
 @branch49 
 nop     
-load    a       0x0f89  #       go_to_delete_snake_tail
-load    b       0x0f94  #       def_zero
+load    a       0x0f7d  #       go_to_delete_snake_tail
+load    b       0x0f88  #       def_zero
 not     a       
 inc     a       
 add     b       a       
 boz     branch50
 nop     
-# go_to_delete_snake_tail(8) = clear(16)
-load    b       0x0f9b  #       clear_LL
-store   b       0x0f89  #       go_to_delete_snake_tail
+# go_to_delete_snake_tail(8) = 0x00
+clear   a       
+store   a       0x0f7d  #       go_to_delete_snake_tail
 jump    delete_snake_tail
 @branch50 
 nop     
-load    a       0x0f84  #       go_to_apple
-load    b       0x0f94  #       def_zero
+load    a       0x0f78  #       go_to_apple
+load    b       0x0f88  #       def_zero
 not     a       
 inc     a       
 add     b       a       
 boz     branch51
 nop     
-# go_to_apple(8) = clear(16)
-load    b       0x0f9b  #       clear_LL
-store   b       0x0f84  #       go_to_apple
+# go_to_apple(8) = 0x00
+clear   a       
+store   a       0x0f78  #       go_to_apple
 jump    cursor_apple
 @branch51 
 nop     
-load    a       0x0f85  #       go_to_apple_failed_gen
-load    b       0x0f94  #       def_zero
+load    a       0x0f79  #       go_to_apple_failed_gen
+load    b       0x0f88  #       def_zero
 not     a       
 inc     a       
 add     b       a       
 boz     branch52
 nop     
-# go_to_apple_failed_gen(8) = clear(16)
-load    b       0x0f9b  #       clear_LL
-store   b       0x0f85  #       go_to_apple_failed_gen
+# go_to_apple_failed_gen(8) = 0x00
+clear   a       
+store   a       0x0f79  #       go_to_apple_failed_gen
 jump    apple_failed_gen
 @branch52 
 nop     
-load    a       0x0f88  #       go_to_next_head_coord
-load    b       0x0f94  #       def_zero
+load    a       0x0f7c  #       go_to_next_head_coord
+load    b       0x0f88  #       def_zero
 not     a       
 inc     a       
 add     b       a       
 boz     branch53
 nop     
-# go_to_next_head_coord(8) = clear(16)
-load    b       0x0f9b  #       clear_LL
-store   b       0x0f88  #       go_to_next_head_coord
+# go_to_next_head_coord(8) = 0x00
+clear   a       
+store   a       0x0f7c  #       go_to_next_head_coord
 jump    next_head_coord
 @branch53 
 nop     
-load    a       0x0f8a  #       go_to_delete_snake_head
-load    b       0x0f94  #       def_zero
+load    a       0x0f7e  #       go_to_delete_snake_head
+load    b       0x0f88  #       def_zero
 not     a       
 inc     a       
 add     b       a       
 boz     branch54
 nop     
-# go_to_delete_snake_head(8) = clear(16)
-load    b       0x0f9b  #       clear_LL
-store   b       0x0f8a  #       go_to_delete_snake_head
+# go_to_delete_snake_head(8) = 0x00
+clear   a       
+store   a       0x0f7e  #       go_to_delete_snake_head
 jump    delete_snake_head
 @branch54 
 nop     

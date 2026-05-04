@@ -1074,7 +1074,10 @@ for line in Program_Code:
         elif line[1] == "=" and line[3] == ";":           #finds x = y                                 MUST BE AFTER X = Y + Z and X = Y - Z!!!!!!
             temp.append(line[0]) 
             temp.append(RemSemCol(line[2]))
-            if (temp[1] != "clear") or (temp[1] != "Clear") or (temp[1] != "CLEAR"):
+            print(" --- ")
+            print(temp[1])
+            print(" --- ")
+            if (temp[1] != "clear") and (temp[1] != "Clear") and (temp[1] != "CLEAR"):
                 if Is8Bit(temp[0]) and Is8Bit(temp[1]):
                     Assembely_code.append(["# " + temp[0] + "(8) = " + temp[1] + "(8)"])
                     Assembely_code.append(["load","a","0x0000","#" , temp[1]])
@@ -1120,12 +1123,18 @@ for line in Program_Code:
                     Line_Found = True
                     
             elif Is8Bit(temp[0]):
+                print(" --- ")
+                print("clear   --- ")
+                print(" --- ")
                 Assembely_code.append(["# " + temp[0] + "(8) = 0x00"])
                 Assembely_code.append(["clear","a"])                            #1
                 Assembely_code.append(["store","a","0x0000","#" , temp[0]])     #4
                 RunProgramLength += 4
                 Line_Found = True
             elif Is16Bit(temp[0]):
+                print(" --- ")
+                print("clear   --- ")
+                print(" --- ")
                 Assembely_code.append(["# " + temp[0] + "(16) = 0x0000"])
                 Assembely_code.append(["clear","a"])                            #1
                 Assembely_code.append(["store","a","0x0000","#" , temp[0]+HighByte_Sufix])  #4
@@ -1731,7 +1740,7 @@ for error in errors:
     print(error)
 print("")
 print("programmet bruker ")
-print(RunProgramLength + len(List_8_bit) + 2* len(List_16_bit) + 3)
+print(List_8_bit[len(List_8_bit)-1][2])
 print("bytes")
 # print(RunProgramLength)
 # print(len(List_8_bit))

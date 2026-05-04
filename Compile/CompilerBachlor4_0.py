@@ -844,6 +844,10 @@ print(" ")
 print(" ")
 
 
+
+program_length = program[len(program)-1][0]
+
+
 rom = bytearray([0x00] * 65536)                                         # Makes a .bin file
 for line in program:
     byte = line[1][0] + line[1][1] + line[1][2] + line[1][3]  
@@ -918,3 +922,5 @@ for line in program:
     
 ih.write_hex_file("memory.hex")
 # ih.write_hex_file("../memory.hex")
+print("")
+print("program uses ", program_length, " bytes")
