@@ -541,8 +541,8 @@ for line in Program_Code:
                 Assembely_code.append(["load","a","0x0000","#", temp[1]+HighByte_Sufix])
                 Assembely_code.append(["add","d","b"])
                 Assembely_code.append(["addc","c","a"])
-                Assembely_code.append(["store","a","0x0000","#", temp[0]+LowByte_Sufix])
-                Assembely_code.append(["store","c","0x0000","#", temp[0]+HighByte_Sufix])
+                Assembely_code.append(["store","a","0x0000","#", temp[0]+HighByte_Sufix])
+                Assembely_code.append(["store","b","0x0000","#", temp[0]+LowByte_Sufix])
                 RunProgramLength += 25
                 Line_Found = True 
         

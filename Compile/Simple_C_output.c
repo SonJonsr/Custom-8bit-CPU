@@ -5,6 +5,7 @@
     
  int16_t clear  =  0x0000 ;    
  int8_t MEM [ 65536 ]  ;    
+    
  int16_t adr_main_display  =  0xE000 ;    
  int16_t adr_info_display  =  0xEF00 ;    
  int16_t adr_keyboard_ascii  =  0xF2C1 ;    
@@ -41,7 +42,7 @@
  int16_t ooFo  =  0x00F0 ;    
  int16_t hex_eight_thousand  =  0x8000 ;    
     
- int16_t game_increment  =  0x00C8 ;    
+ int16_t game_increment  =  0x0200 ;    
     
  int8_t A  =  0x41 ;    
  int8_t C  =  0x43 ;    
@@ -176,11 +177,9 @@
  void main (  )   {    
  snake_game :    
     //  clears screen   
-   i  =  zero ;    
    cursor  =  adr_main_display ;    
  clears_screen :    
-   cursor  +=  i ;    
-   odd_check  =  i ;    
+   odd_check  =  cursor ;    
    odd_check  =  odd_check  &&  one ;    
    if  ( odd_check  !=  one )   {    
      MEM [ cursor ]   =  ascii_block ;    
@@ -188,8 +187,8 @@
     }    
    MEM [ cursor ]   =  color_black ;    
  else_attr :    
-   i ++  ;    
-   if  ( i  <  screen_size )   {    
+   cursor ++  ;    
+   if  ( cursor  <  adr_info_display )   {    
      goto clears_screen ;    
     }    
     
@@ -201,14 +200,6 @@
    border_width  +=  two ;    
    border_height  =  board_height ;    
    border_height  +=  two ;    
-    
-   border_top_l  =  board_location  -  screen_width ;    
-   border_top_l  -=  four ;    
-    
-   border_top_r  =  border_width  <<  def_two ;    
-    
-   border_bot_l  =  border_height  <<  seven ;    
-   border_bot_l  +=  border_top_l ;    
     
    border_top_l  =  board_location  -  screen_width ;    
    border_top_l  -=  four ;    
@@ -289,7 +280,6 @@
    go_to_snake_start  =  def_one ;    
    goto byte_coord_to_screen_coord ;    
  cursor_snake_start :    
-   cursor ++  ;    
     
    MEM [ cursor ]   =  color_lime ;    
    cursor  +=  two ;    
@@ -456,7 +446,6 @@
          go_to_apple  =  def_one ;    
          goto byte_coord_to_screen_coord ;    
        cursor_apple :    
-         cursor ++  ;    
          goto else_i_three ;    
         }    
     
@@ -543,6 +532,16 @@
    cursor --  ;    
    MEM [ cursor ]   =  color_red ;    
    cursor --  ;    
+   MEM [ cursor ]   =  E ;    
+   cursor --  ;    
+   MEM [ cursor ]   =  color_red ;    
+   cursor --  ;    
+   MEM [ cursor ]   =  V ;    
+   cursor --  ;    
+   MEM [ cursor ]   =  color_red ;    
+   cursor --  ;    
+   MEM [ cursor ]   =  O ;    
+    
  wait_for_key :    
    keyboard_input  =  MEM [ adr_keyboard_ascii ]  ;    
    if  ( keyboard_input  ==  space )   {    
@@ -561,6 +560,7 @@
    cursor  +=  board_top_l ;    
    cursor  +=  cursor_x ;    
    cursor  +=  adr_main_display ;    
+   cursor ++  ;    
    if  ( go_to_snake_start  !=  def_zero )   {    
      go_to_snake_start  =  clear ;    
      goto cursor_snake_start ;    
