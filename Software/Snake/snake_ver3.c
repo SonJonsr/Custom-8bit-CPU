@@ -35,6 +35,7 @@ int16_t six = 0x0006;
 int16_t seven = 0x0007;
 int16_t eight = 0x0008;
 int16_t hex_ten = 0x0010;
+int16_t hex_twelve = 0x0012;
 int16_t oofe = 0x00FE;
 int16_t ooff = 0x00FF;
 int16_t hex_hundred = 0x0100;
@@ -42,7 +43,7 @@ int16_t oooF = 0x000F;
 int16_t ooFo = 0x00F0;
 int16_t hex_eight_thousand = 0x8000;
 
-int16_t game_increment = 0x00C8;
+int16_t game_increment = 0x0200;
 
 int8_t A = 0x41;
 int8_t C = 0x43;
@@ -98,6 +99,7 @@ int16_t board_size = 0x0100;
 int16_t board_height = 0x0010;
 int16_t board_width = 0x0010;
 int16_t board_location = 0x03A0;
+int16_t board_location_stop = 0x0B60;
 
 int8_t snake_start = 0x73;
 
@@ -176,38 +178,16 @@ int16_t odd_check = 0x0000;
 
 void main() {
 snake_game:
-  // clears screen
-  cursor = adr_main_display;
-clears_screen:
-  odd_check = cursor;
-  odd_check = odd_check && one;
-  if (odd_check != one) {
-    MEM[cursor] = ascii_block;
-    goto else_attr;
-  }
-  MEM[cursor] = color_black;
-else_attr:
-  cursor++;
-  if (cursor < adr_info_display) {
-    goto clears_screen;
-  }
 
   // SETS BOARD LIMITS
   board_top_l = board_location;
+  board_bot_r = board_location_stop + adr_main_display;
 
   // SETS BORDER LIMITS
   border_width = board_width;
   border_width += two;
   border_height = board_height;
   border_height += two;
-
-  border_top_l = board_location - screen_width;
-  border_top_l -= four;
-
-  border_top_r = border_width << def_two;
-
-  border_bot_l = border_height << seven;
-  border_bot_l += border_top_l;
 
   border_top_l = board_location - screen_width;
   border_top_l -= four;
@@ -224,6 +204,22 @@ else_attr:
   border_paralell_v = border_width;
   border_paralell_v--;
   border_paralell_v = border_paralell_v << def_two;
+
+  // clears screen
+  cursor = board_top_l + adr_main_display;
+clears_screen:
+  odd_check = cursor;
+  odd_check = odd_check && one;
+  if (odd_check != one) {
+    MEM[cursor] = ascii_block;
+    goto else_attr;
+  }
+  MEM[cursor] = color_black;
+else_attr:
+  cursor++;
+  if (cursor < board_bot_r) {
+    goto clears_screen;
+  }
 
   i = zero;
 border_horizontal:
@@ -282,31 +278,36 @@ border_vertical:
 draw_start_body:
   // Finds the right address
   MEM[snake_ptr_head] = snake_board_head;
-  snake_ptr_head++;
-  snake_board_head++;
-  cursor = snake_start;
+  cursor = snake_board_head;
   go_to_snake_start = def_one;
   goto byte_coord_to_screen_coord;
 cursor_snake_start:
-  cursor++;
 
   MEM[cursor] = color_lime;
   cursor += two;
   MEM[cursor] = color_lime;
+
+  snake_ptr_head++;
+  snake_board_head++;
   i++;
   if (i < two) {
     goto draw_start_body;
   }
 
   MEM[snake_ptr_head] = snake_board_head;
+
   // Draws the head
+  cursor += two;
   snake_screen_head = cursor;
   MEM[cursor] = color_green;
   cursor += two;
   MEM[cursor] = color_green;
 
+  // Set tail
+  snake_ptr_tail = snake_array_max;
+  snake_ptr_tail--;
   // Draws the apple
-  cursor += hex_ten;
+  cursor += hex_twelve;
   MEM[cursor] = color_red;
   cursor += two;
   MEM[cursor] = color_red;
@@ -373,7 +374,6 @@ game_loop:
   snake_board_head_next += direction;
 
   cursor = snake_board_head_next;
-  cursor = cursor && ooff;
   go_to_next_head_coord = def_one;
   goto byte_coord_to_screen_coord;
 next_head_coord:
@@ -425,7 +425,6 @@ delete_snake_head:
     go_to_delete_snake_tail = def_one;
     goto byte_coord_to_screen_coord;
   delete_snake_tail:
-
     MEM[cursor] = color_black;
     cursor += two;
     MEM[cursor] = color_black;
@@ -455,7 +454,6 @@ delete_snake_head:
         go_to_apple = def_one;
         goto byte_coord_to_screen_coord;
       cursor_apple:
-        cursor++;
         goto else_i_three;
       }
 
@@ -542,6 +540,16 @@ game_over:
   cursor--;
   MEM[cursor] = color_red;
   cursor--;
+  MEM[cursor] = E;
+  cursor--;
+  MEM[cursor] = color_red;
+  cursor--;
+  MEM[cursor] = V;
+  cursor--;
+  MEM[cursor] = color_red;
+  cursor--;
+  MEM[cursor] = O;
+
 wait_for_key:
   keyboard_input = MEM[adr_keyboard_ascii];
   if (keyboard_input == space) {
@@ -560,6 +568,7 @@ byte_coord_to_screen_coord:
   cursor += board_top_l;
   cursor += cursor_x;
   cursor += adr_main_display;
+  cursor++;
   if (go_to_snake_start != def_zero) {
     go_to_snake_start = clear;
     goto cursor_snake_start;
