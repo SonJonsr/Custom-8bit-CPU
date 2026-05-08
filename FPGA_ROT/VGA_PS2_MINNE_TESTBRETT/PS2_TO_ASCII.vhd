@@ -191,6 +191,11 @@ BEGIN
             case code is
               when x"11" => alt_r <= not break;  -- ALT
               when x"14" => ctrl_r <= not break; -- CTRL
+              -- ARROWS --
+              when x"6B" => ascii_sig <= x"FF"; -- Left
+              when x"74" => ascii_sig <= x"01"; -- Right
+              when x"75" => ascii_sig <= x"F0"; -- Up
+              when x"72" => ascii_sig <= x"10"; -- Down
               when others => null;
             end case;
           end if;

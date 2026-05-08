@@ -48,17 +48,15 @@ int8_t zero = 0;
 int8_t one = 1;
 
 void main() {
-  while (one > zero) {
+  keyboard_info = MEM[adr_keyboard_info];
+
+  while (keyboard_info == zero) {
     keyboard_info = MEM[adr_keyboard_info];
-
-    while (keyboard_info == zero) {
-      keyboard_info = MEM[adr_keyboard_info];
-    }
-
-    keyboard_ascii = MEM[adr_keyboard_ascii];
-    MEM[cursor] = keyboard_ascii;
-    cursor++;
-    MEM[cursor] = white;
-    cursor++;
   }
+
+  keyboard_ascii = MEM[adr_keyboard_ascii];
+  MEM[cursor] = keyboard_ascii;
+  cursor++;
+  MEM[cursor] = white;
+  cursor++;
 }

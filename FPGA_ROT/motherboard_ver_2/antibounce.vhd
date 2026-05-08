@@ -15,7 +15,7 @@ END ENTITY;
 
 ARCHITECTURE RTL OF antibounce IS
 	SIGNAL dff : STD_LOGIC := '1';
-  SIGNAL counter : INTEGER := 0;
+  SIGNAL counter : INTEGER range 0 to 50_000 := 0;
 BEGIN
 	p_dff_synk : process(clk)
 	begin

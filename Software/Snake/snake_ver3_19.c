@@ -22,6 +22,8 @@ int16_t adr_eeprom_end = 0xF3C5;
 #define def_three 0x03;
 #define def_seven 0x07;
 #define def_eight 0x08;
+#define def_1o 0x10;
+#define def_of 0x0f;
 
 int8_t temp_eight_bit = 0x00;
 int16_t temp = 0x0000;
@@ -43,7 +45,7 @@ int16_t oooF = 0x000F;
 int16_t ooFo = 0x00F0;
 int16_t hex_eight_thousand = 0x8000;
 
-int16_t game_increment = 0x0200;
+int16_t game_increment = 0x0100;
 
 int8_t A = 0x41;
 int8_t C = 0x43;
@@ -152,6 +154,7 @@ int8_t direction = 0x04;
 // KEYBOARD VARIABLES
 int8_t keyboard_input = 0x00;
 int8_t keyboard_input_last = 0x00;
+int8_t keyboard_input_illegal = 0x00;
 int8_t keyboard_mask = 0x00;
 
 // BOARD VARIABLES
@@ -166,6 +169,7 @@ int16_t border_top_r = 0x0000;
 int16_t border_bot_l = 0x0000;
 int16_t border_bot_r = 0x0000;
 int16_t border_width = 0x0000;
+int16_t border_width_ascii = 0x0000;
 int16_t border_height = 0x0000;
 int16_t border_paralell_h = 0x0000;
 int16_t border_paralell_v = 0x0000;
@@ -185,12 +189,12 @@ snake_game:
 
   // SETS BORDER LIMITS
   border_width = board_width;
-  border_width += two;
+  border_width_ascii = border_width << def_two;
   border_height = board_height;
-  border_height += two;
 
-  border_top_l = board_location - screen_width;
-  border_top_l -= four;
+  border_top_l = board_location;
+  // border_top_l = board_location - screen_width;
+  // border_top_l -= four;
 
   border_top_r = border_width << def_two;
 
@@ -206,8 +210,15 @@ snake_game:
   border_paralell_v = border_paralell_v << def_two;
 
   // clears screen
-  cursor = board_top_l + adr_main_display;
-clears_screen:
+  i = clear;
+clears_screen_i:
+  temp = i << def_seven;
+  temp += border_top_l;
+  temp += adr_main_display;
+
+  j = clear;
+clears_screen_j:
+  cursor = j + temp;
   odd_check = cursor;
   odd_check = odd_check && one;
   if (odd_check != one) {
@@ -216,12 +227,17 @@ clears_screen:
   }
   MEM[cursor] = color_black;
 else_attr:
-  cursor++;
-  if (cursor < board_bot_r) {
-    goto clears_screen;
+
+  j++;
+  if (j < border_width_ascii) {
+    goto clears_screen_j;
+  }
+  i++;
+  if (i < border_height) {
+    goto clears_screen_i;
   }
 
-  i = zero;
+  i = clear;
 border_horizontal:
   cursor = i << def_two;
   cursor += border_top_l;
@@ -239,7 +255,7 @@ border_horizontal:
     goto border_horizontal;
   }
 
-  i = zero;
+  i = clear;
 border_vertical:
   cursor = i;
   cursor = cursor << def_seven;
@@ -274,7 +290,7 @@ border_vertical:
   // Draws the snake
   snake_ptr_head = snake_array;
   snake_board_head = snake_start;
-  i = zero;
+  i = clear;
 draw_start_body:
   // Finds the right address
   MEM[snake_ptr_head] = snake_board_head;
@@ -304,8 +320,7 @@ cursor_snake_start:
   MEM[cursor] = color_green;
 
   // Set tail
-  snake_ptr_tail = snake_array_max;
-  snake_ptr_tail--;
+  snake_ptr_tail = snake_array - one;
   // Draws the apple
   cursor += hex_twelve;
   MEM[cursor] = color_red;
@@ -322,7 +337,7 @@ cursor_snake_start:
 start_game:
   keyboard_input = MEM[adr_keyboard_ascii];
   if (keyboard_input == space) {
-    keyboard_input_last = keyboard_input;
+    keyboard_input_illegal = kb_left;
     goto game_loop;
   }
   goto start_game;
@@ -341,27 +356,64 @@ game_loop:
   millis_old += temp;
   millis_goal = millis_old + game_increment;
 
-  keyboard_input = MEM[adr_keyboard_ascii]; // Reads from ASCII fifo
+// timer implementation
+snake_game_timer:
+
+  temp_eight_bit = MEM[adr_keyboard_info];
+  if (temp_eight_bit != def_zero) {
+    keyboard_input = MEM[adr_keyboard_ascii];
+  }
+
+  temp_eight_bit = MEM[adr_timer_millis_hh];
+  millis_new = temp_eight_bit;
+  millis_new = millis_new << def_eight;
+  temp_eight_bit = MEM[adr_timer_millis_ll];
+  temp = temp_eight_bit;
+  temp = temp && ooff;
+  millis_new += temp;
+
+  // checks for overflow
+  if (millis_goal < millis_old) {
+    // if overflow the two if statement are or-ed
+    if (millis_new > millis_old) {
+      goto snake_game_timer;
+    }
+    if (millis_new < millis_goal) {
+      goto snake_game_timer;
+    }
+    goto timer_else;
+  }
+  // if not overflow the two if statement are and-ed
+  if (millis_new > millis_old) {
+    if (millis_new < millis_goal) {
+      goto snake_game_timer;
+    }
+  }
+timer_else:
 
   // This mask is mask checks whether or not the input is opposite of
   // the current direction. The values of the ASCII characters assigned
   // to the arrow keys have been picked out for this purpose.
-  keyboard_mask = keyboard_input + keyboard_input_last;
-  if (keyboard_mask != def_zero) {
+  // keyboard_mask = keyboard_input + keyboard_input_last;
+  if (keyboard_input != keyboard_input_illegal) {
     if (keyboard_input == kb_right) {
-      keyboard_input_last = keyboard_input;
+      keyboard_input_illegal = kb_left;
+      // keyboard_input_last = keyboard_input;
       direction = right;
     }
     if (keyboard_input == kb_left) {
-      keyboard_input_last = keyboard_input;
+      keyboard_input_illegal = kb_right;
+      // keyboard_input_last = keyboard_input;
       direction = left;
     }
     if (keyboard_input == kb_down) {
-      keyboard_input_last = keyboard_input;
+      keyboard_input_illegal = kb_up;
+      // keyboard_input_last = keyboard_input;
       direction = down;
     }
     if (keyboard_input == kb_up) {
-      keyboard_input_last = keyboard_input;
+      keyboard_input_illegal = kb_down;
+      // keyboard_input_last = keyboard_input;
       direction = up;
     }
     // quit game if escape is pressed
@@ -371,6 +423,17 @@ game_loop:
   }
   // Find coords of next snake head
   snake_board_head_next = MEM[snake_ptr_head];
+  temp_eight_bit = snake_board_head_next && def_of;
+  if (direction == right) {
+    if (temp_eight_bit == def_of) {
+      snake_board_head_next -= def_1o;
+    }
+  }
+  if (direction == left) {
+    if (temp_eight_bit == def_zero) {
+      snake_board_head_next += def_1o;
+    }
+  }
   snake_board_head_next += direction;
 
   cursor = snake_board_head_next;
@@ -471,45 +534,13 @@ delete_snake_head:
     MEM[cursor] = color_red;
   }
 
-  MEM[adr_keyboard_info] = def_one; // Deletes ASCII fifo
-
-  // timer implementation
-snake_game_timer:
-  temp_eight_bit = MEM[adr_timer_millis_hh];
-  millis_new = temp_eight_bit;
-  millis_new = millis_new << def_eight;
-  temp_eight_bit = MEM[adr_timer_millis_ll];
-  temp = temp_eight_bit;
-  temp = temp && ooff;
-  millis_new += temp;
-
-  // checks for overflow
-  if (millis_goal < millis_old) {
-    // if overflow the two if statement are or-ed
-    if (millis_new > millis_old) {
-      goto snake_game_timer;
-    }
-    if (millis_new < millis_goal) {
-      goto snake_game_timer;
-    }
-    goto snake_game_timer_else;
-  }
-  // if not overflow the two if statement are and-ed
-  if (millis_new > millis_old) {
-    if (millis_new < millis_goal) {
-      goto snake_game_timer;
-    }
-  }
-snake_game_timer_else:
+  // MEM[adr_keyboard_info] = def_one; // Deletes ASCII fifo
 
   goto game_loop;
 
   // GAME OVER
 game_over:
-  // if (MEM[adr_eeprom_start] < snake_counter) {
-  //   MEM[adr_eeprom_start] = snake_counter;
-  // }
-  cursor_x = six;
+  cursor_x = seven;
   cursor_x = cursor_x << def_two;
   cursor_y = seven;
   cursor_y = cursor_y << def_seven;
@@ -550,6 +581,8 @@ game_over:
   cursor--;
   MEM[cursor] = O;
 
+  MEM[adr_keyboard_info] = def_one;
+
 wait_for_key:
   keyboard_input = MEM[adr_keyboard_ascii];
   if (keyboard_input == space) {
@@ -558,11 +591,9 @@ wait_for_key:
   goto wait_for_key;
 
 byte_coord_to_screen_coord:
-  cursor_x = cursor;
-  cursor_x = cursor_x && oooF;
+  cursor_x = cursor && oooF;
   cursor_x = cursor_x << def_two;
-  cursor_y = cursor;
-  cursor_y = cursor_y && ooFo;
+  cursor_y = cursor && ooFo;
   cursor = cursor_y;
   cursor = cursor << def_three;
   cursor += board_top_l;

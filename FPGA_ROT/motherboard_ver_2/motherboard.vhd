@@ -99,8 +99,8 @@ end component;
 
       eeprom_rw       : out std_logic := '0';
       eeprom_adr      : out std_logic_vector(7 downto 0);
-      eeprom_data_in  : out std_logic_vector(7 downto 0);
-      eeprom_data_out : in  std_logic_vector(7 downto 0)
+      eeprom_data_out : in  std_logic_vector(7 downto 0);
+      eeprom_data_in  : out std_logic_vector(7 downto 0)
     );
   end component;
   component PS2_MODUL IS
@@ -147,9 +147,9 @@ end component;
 
       -- from cpu
       rw        : in  std_logic;
-      adr       : in  std_logic_vector(7 downto 0);
+      adr_cpu   : in  std_logic_vector(7 downto 0);
       data_in   : in  std_logic_vector(7 downto 0);
-      data_out  : out std_logic_vector(7 downto 0);
+      data_out  : out  std_logic_vector(7 downto 0);
 
       -- EEPROM I2C ports
       EEP_I2C_SCLK  : out std_logic;
@@ -242,9 +242,9 @@ end component;
   signal keyboard_as   : std_logic;
 
   signal eeprom_rw  : std_logic;
-  signal eeprom_data_in : std_logic_vector(7 downto 0);
-  signal eeprom_data_out : std_logic_vector(7 downto 0);
   signal eeprom_adr : std_logic_vector(7 downto 0);
+  signal eeprom_data_in : std_logic_vector(7 downto 0);
+  signal eeprom_data_out  : std_logic_vector(7 downto 0);
 
   signal screencard_dat : std_logic_vector(7 downto 0);
   signal screencard_adr : std_logic_vector(15 downto 0);
@@ -332,8 +332,8 @@ begin
       mem_address => mem_address,
       eeprom_rw => eeprom_rw,
       eeprom_adr => eeprom_adr,
-      eeprom_data_in => eeprom_data_in,
-      eeprom_data_out => eeprom_data_out
+      eeprom_data_out => eeprom_data_out,
+      eeprom_data_in => eeprom_data_in
   );  
   memory_inst: memory
    port map(
@@ -351,7 +351,7 @@ begin
       clk => CLOCK_50,
       rst_n => rst_n,
       rw => eeprom_rw,
-      adr => eeprom_adr,
+      adr_cpu => eeprom_adr,
       data_in => eeprom_data_in,
       data_out => eeprom_data_out,
       EEP_I2C_SCLK => EEP_I2C_SCLK,
@@ -361,9 +361,9 @@ begin
    port map(
       clk => CLOCK_50,
       rst_n => rst_n,
-      clk_btn => gpio_dff(3),
+      clk_btn => gpio_dff(7),
       toggle_btn => gpio_dff(2),
-      rotary_sig => gpio_dff(0 to 1),
+      rotary_sig => gpio_dff(4) & gpio_dff(34),
       hex0 => HEX0,
       hex1 => HEX1,
       hex2 => HEX2,
@@ -427,7 +427,7 @@ begin
   )
    port map(
       clk => CLOCK_50,
-      data_in => gpio_dff(4),
+      data_in => gpio_dff(35),
       data_out => rst_n_antibounced 
   );
   clk_slow_antibounce_inst : antibounce

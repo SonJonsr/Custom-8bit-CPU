@@ -12,7 +12,7 @@ entity eeprom_i2c_controller is
 
     -- from cpu
     rw        : in  std_logic;
-    adr       : in  std_logic_vector(7 downto 0);
+    adr_cpu   : in  std_logic_vector(7 downto 0);
     data_in   : in  std_logic_vector(7 downto 0);
     data_out  : out std_logic_vector(7 downto 0);
 
@@ -46,7 +46,7 @@ architecture RTL of eeprom_i2c_controller is
   signal adr_ll : std_logic_vector(7 downto 0) := "00000000";
 
   signal data_in_sig : std_logic_vector(7 downto 0);
-  signal adr_sig : std_logic_vector(7 downto 0);
+  signal adr_cpu_sig : std_logic_vector(7 downto 0);
 
   signal en_sig   : std_logic;
   signal wr_n_sig : std_logic;
@@ -59,9 +59,14 @@ architecture RTL of eeprom_i2c_controller is
   signal done_dff : std_logic;
   signal state_dff : state_machine := s_IDLE;
 
+  -- Baud-rate is set to 400kHz for I2C fast mode
+  signal baud_rate_sig : std_logic_vector(7 downto 0) := "00101010";
+
 
 begin
-  data_out <= ram(to_integer(unsigned(adr))); 
+
+  BAUD_RATE <= baud_rate_sig;
+  data_out <= ram(to_integer(unsigned(adr_cpu)));
   
 
   p_en : process(clk) is
@@ -116,7 +121,7 @@ begin
             STOPP <= '0';
             GO_IDLE <= '0';
             if rw = '1' then
-              adr_ll <= adr;
+              adr_ll <= adr_cpu;
               data_in_sig <= data_in;
               MODE <= m_WRITE;
               STATE <= s_START;

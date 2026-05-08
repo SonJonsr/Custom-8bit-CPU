@@ -9,7 +9,7 @@ entity eeprom_manager is
 
     -- from cpu
     rw        : in  std_logic;
-    adr       : in  std_logic_vector(7 downto 0);
+    adr_cpu   : in  std_logic_vector(7 downto 0);
     data_in   : in  std_logic_vector(7 downto 0);
     data_out  : out std_logic_vector(7 downto 0);
 
@@ -30,7 +30,7 @@ architecture RTL of eeprom_manager is
 
       -- from cpu
       rw        : in  std_logic;
-      adr       : in  std_logic_vector(7 downto 0);
+      adr_cpu   : in  std_logic_vector(7 downto 0);
       data_in   : in  std_logic_vector(7 downto 0);
       data_out  : out std_logic_vector(7 downto 0);
 
@@ -97,9 +97,9 @@ begin
       clk => clk,
       rst_n => rst_n,
       rw => rw,
-      adr=> adr,
+      adr_cpu => adr_cpu,
       data_in => data_in,
-      data_out => data_out,
+      data_out  => data_out,
       IDLE => IDLE,
       DONE => DONE,
       NO_ACK => NO_ACK,

@@ -34,7 +34,7 @@ begin
   begin
     if rising_edge(clk) then
       if rst_n = '0' then
-        value_sig <= (others => '0');
+        value_sig <= x"4A";
       else
         sig_a_dff <= sig_a;
         sig_b_dff <= sig_b;

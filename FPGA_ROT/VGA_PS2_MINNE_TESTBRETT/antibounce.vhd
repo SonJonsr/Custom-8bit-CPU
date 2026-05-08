@@ -6,13 +6,13 @@ ENTITY antibounce IS
 	PORT(
 		clk       : IN	STD_LOGIC;
 		data_in   : IN	STD_LOGIC;
-		data_out  : OUT	STD_LOGIC := '0'
+		data_out  : OUT	STD_LOGIC := '1'
 	);
 END ENTITY;
 
 ARCHITECTURE RTL OF antibounce IS
-	SIGNAL dff : STD_LOGIC := '0';
-  SIGNAL counter : INTEGER RANGE 0 TO 127 := 0;
+	SIGNAL dff : STD_LOGIC := '1';
+  SIGNAL counter : INTEGER range 0 to 50_000 := 0;
 BEGIN
 	p_dff_synk : process(clk)
 	begin

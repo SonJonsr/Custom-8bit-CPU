@@ -37,8 +37,8 @@ entity memory_support is
 
     eeprom_rw       : out std_logic := '0';
     eeprom_adr      : out std_logic_vector(7 downto 0);
-    eeprom_data_in  : out std_logic_vector(7 downto 0);
-    eeprom_data_out : in  std_logic_vector(7 downto 0)
+    eeprom_data_out : in  std_logic_vector(7 downto 0);
+    eeprom_data_in  : out std_logic_vector(7 downto 0)
   );
 end entity;
 
@@ -102,9 +102,9 @@ begin
           when C_ADR_KEYBOARD_ASCII|C_ADR_KEYBOARD_INFO =>
             keyboard_as <= not cpu_address(0);
             cpu_data_in <= keyboard_data;
-            keyboard_rw <= cpu_rw;
 
-            if clk_slow = '1' and clk_slow_dff = '0' then
+            if clk_slow = '1' and clk_slow_dff = '0' and not cpu_address(0) = '0' then
+              keyboard_rw <= cpu_rw;
               keyboard_start_en <= '1';
             else
               keyboard_start_en <= '0';
@@ -137,15 +137,13 @@ begin
             cpu_data_in <= millis_temp(15 downto 8);
 
           when C_ADR_ROM_START to C_ADR_ROM_END =>
-            if cpu_rw = '1' then
+            eeprom_adr <= cpu_address(7 downto 0);
+            if cpu_rw = '1' and clk_slow = '1' and clk_slow_dff = '0' then
+              eeprom_rw <= '1';
               eeprom_data_in <= cpu_data_out;
             else
-              cpu_data_in <= eeprom_data_out;
-            end if;
-            if clk_slow = '1' and clk_slow_dff = '0' then
-              eeprom_rw <= cpu_rw;
-            else
               eeprom_rw <= '0';
+              cpu_data_in <= eeprom_data_out;
             end if;
 
 
