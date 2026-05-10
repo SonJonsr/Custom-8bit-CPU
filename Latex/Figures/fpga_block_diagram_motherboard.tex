@@ -1,5 +1,5 @@
 %! TEX root = ../main.tex
-\begin{figure}[htbp]
+\begin{figure}[ht]
 
   \centering
   \begin{tikzpicture}[
@@ -28,7 +28,7 @@
   ]
 
       % Motherboard Outer Box
-      \draw[thick] (-5.5,-4.5) rectangle (10,3);
+      \draw[thick, draw=red] (-5.5,-4.5) rectangle (10,3);
       \node[anchor=north west, font=\huge\sffamily] at (-4.8,2.2) {MOTHERBOARD};
 
       % Outside/Top
@@ -69,6 +69,6 @@
 
   \end{tikzpicture}
   \caption{Block diagram for all FPGA-modules}
-  \label{fig:fpga_block_diagram}
+  \label{fig:fpga_block_diagram_motherboard}
 \end{figure}
 
