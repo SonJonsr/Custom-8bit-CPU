@@ -1,0 +1,32 @@
+%! TEX root = ../main.tex
+\begin{figure}[!ht]
+\centering
+\resizebox{1\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\fontsize{18.2pt}{23.7pt}\selectfont]
+\node [font=\fontsize{18.2pt}{23.7pt}\selectfont, inner xsep=0.080cm, inner ysep=0.085cm, rounded corners=0.020cm] at (-0.625,9.375) {Main};
+\node [font=\fontsize{18.2pt}{23.7pt}\selectfont, inner xsep=0.080cm, inner ysep=0.085cm, rounded corners=0.020cm] at (4.5,9.375) {Info};
+\draw  (3.5,13.125) rectangle (5.5,5.625);
+\draw  (-4.5,13.125) rectangle (3.5,5.625);
+\draw [{Stealth[scale=1.5]}-{Stealth[scale=1.5]}, ] (-8,15.25) -- (-6,15.25);
+\draw [{Stealth[scale=1.5]}-{Stealth[scale=1.5]}, ] (-8.375,14.875) -- (-8.375,10.875);
+\node [font=\fontsize{10.8pt}{14.1pt}\selectfont, rotate around={45:(0,0)}, fill={rgb,255:red,255; green,255; blue,255}, fill opacity=1, text opacity=1, inner xsep=0.080cm, inner ysep=0.085cm, rounded corners=0.020cm] at (-7,13) {ASCII-Pixel};
+\draw  (-8,10.875) rectangle (-6,14.875);
+\node [font=\fontsize{10.8pt}{14.1pt}\selectfont, rotate around={45:(0,0)}, inner xsep=0.080cm, inner ysep=0.085cm, rounded corners=0.020cm] at (-6.625,16) {8 pixels};
+\node [font=\fontsize{10.8pt}{14.1pt}\selectfont, rotate around={45:(0,0)}, inner xsep=0.080cm, inner ysep=0.085cm, rounded corners=0.020cm] at (-9.125,12.625) {16 pixels};
+\draw [{Stealth[scale=1.5]}-{Stealth[scale=1.5]}, ] (3.5,13.5) -- (-4.5,13.5);
+\draw [{Stealth[scale=1.5]}-{Stealth[scale=1.5]}, ] (3.5,13.5) -- (5.5,13.5);
+\node [font=\fontsize{10.8pt}{14.1pt}\selectfont, rotate around={45:(0,0)}, inner xsep=0.080cm, inner ysep=0.085cm, rounded corners=0.020cm] at (7,10.375) {30 ASCII-pixels};
+\draw [{Stealth[scale=1.5]}-{Stealth[scale=1.5]}, ] (5.875,13.125) -- (5.875,5.625);
+\node [font=\fontsize{10.8pt}{14.1pt}\selectfont, rotate around={45:(0,0)}, inner xsep=0.080cm, inner ysep=0.085cm, rounded corners=0.020cm] at (0.375,14.75) {64 ASCII-pixels};
+\node [font=\fontsize{10.8pt}{14.1pt}\selectfont, rotate around={45:(0,0)}, inner xsep=0.080cm, inner ysep=0.085cm, rounded corners=0.020cm] at (5.25,14.875) {16 ASCII-pixels};
+\draw  (-4.5,13.125) rectangle (-4.375,12.875);
+\draw [dashed] (-4.5,13.125) -- (-6,14);
+\draw [dashed] (-6,14.875) -- (-4.375,13.125);
+\draw [dashed] (-4.375,12.875) -- (-6,10.875);
+\draw [dashed] (-4.5,12.875) -- (-6,12);
+\end{circuitikz}
+}%
+\caption{How the screen is divided.}
+\label{fig:vga_main_info_screen}
+\end{figure}

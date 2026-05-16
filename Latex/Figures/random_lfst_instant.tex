@@ -1,0 +1,64 @@
+%! TEX root = ../main.tex
+\begin{figure}[htbp]
+\centering
+\resizebox{1\textwidth}{!}{%
+\begin{circuitikz}
+\tikzstyle{every node}=[font=\fontsize{18.2pt}{23.7pt}\selectfont]
+\draw  (3.75,18) rectangle (13.75,16.75);
+\node [font=\fontsize{18.2pt}{23.7pt}\selectfont, inner xsep=0.080cm, inner ysep=0.085cm, rounded corners=0.020cm] at (4.375,17.25) {h};
+\node [font=\fontsize{18.2pt}{23.7pt}\selectfont, inner xsep=0.080cm, inner ysep=0.085cm, rounded corners=0.020cm] at (5.625,17.25) {g};
+\node [font=\fontsize{18.2pt}{23.7pt}\selectfont, inner xsep=0.080cm, inner ysep=0.085cm, rounded corners=0.000cm] at (6.875,17.25) {f};
+\node [font=\fontsize{18.2pt}{23.7pt}\selectfont, inner xsep=0.080cm, inner ysep=0.085cm, rounded corners=0.020cm] at (8.125,17.25) {e};
+\node [font=\fontsize{18.2pt}{23.7pt}\selectfont, inner xsep=0.080cm, inner ysep=0.085cm, rounded corners=0.020cm] at (9.375,17.25) {d};
+\node [font=\fontsize{18.2pt}{23.7pt}\selectfont, inner xsep=0.080cm, inner ysep=0.085cm, rounded corners=0.020cm] at (10.625,17.25) {c};
+\node [font=\fontsize{18.2pt}{23.7pt}\selectfont, inner xsep=0.080cm, inner ysep=0.085cm, rounded corners=0.020cm] at (11.875,17.25) {b};
+\node [font=\fontsize{18.2pt}{23.7pt}\selectfont, inner xsep=0.080cm, inner ysep=0.085cm, rounded corners=0.020cm] at (13.125,17.25) {a};
+\draw (5,18) to[short] (5,16.75);
+\draw (6.25,18) to[short] (6.25,16.75);
+\draw (7.5,18) to[short] (7.5,16.75);
+\draw (10,18) to[short] (10,16.75);
+\draw (11.25,18) to[short] (11.25,16.75);
+\draw (8.75,18) to[short] (8.75,16.75);
+\draw (12.5,18) to[short] (12.5,16.75);
+\node [font=\fontsize{18.2pt}{23.7pt}\selectfont, inner xsep=0.080cm, inner ysep=0.085cm, rounded corners=0.020cm] at (4.375,18.375) {MSB};
+\node [font=\fontsize{18.2pt}{23.7pt}\selectfont, inner xsep=0.080cm, inner ysep=0.085cm, rounded corners=0.020cm] at (13.125,18.375) {LSB};
+\node [font=\fontsize{18.2pt}{23.7pt}\selectfont, inner xsep=0.080cm, inner ysep=0.085cm, rounded corners=0.020cm] at (5,14.875) {h XOR g};
+\draw [-{Stealth[scale=1.5]}, ] (4.25,16.625) -- (4.125,15.625);
+\draw [-{Stealth[scale=1.5]}, ] (5.75,16.625) -- (5.875,15.625);
+\draw  (7.5,15.5) rectangle (8.75,14.25);
+\node [font=\fontsize{18.2pt}{23.7pt}\selectfont, inner xsep=0.080cm, inner ysep=0.085cm, rounded corners=0.020cm] at (8.125,14.875) {q};
+\draw  (17.5,18) rectangle (27.5,16.75);
+\node [font=\fontsize{18.2pt}{23.7pt}\selectfont, inner xsep=0.080cm, inner ysep=0.085cm, rounded corners=0.020cm] at (18.125,17.25) {g};
+\node [font=\fontsize{18.2pt}{23.7pt}\selectfont, inner xsep=0.080cm, inner ysep=0.085cm, rounded corners=0.000cm] at (19.375,17.25) {f};
+\node [font=\fontsize{18.2pt}{23.7pt}\selectfont, inner xsep=0.080cm, inner ysep=0.085cm, rounded corners=0.020cm] at (20.625,17.25) {e};
+\node [font=\fontsize{18.2pt}{23.7pt}\selectfont, inner xsep=0.080cm, inner ysep=0.085cm, rounded corners=0.020cm] at (21.875,17.25) {d};
+\node [font=\fontsize{18.2pt}{23.7pt}\selectfont, inner xsep=0.080cm, inner ysep=0.085cm, rounded corners=0.020cm] at (23.125,17.25) {c};
+\node [font=\fontsize{18.2pt}{23.7pt}\selectfont, inner xsep=0.080cm, inner ysep=0.085cm, rounded corners=0.020cm] at (24.375,17.25) {b};
+\draw (18.75,18) to[short] (18.75,16.75);
+\draw (20,18) to[short] (20,16.75);
+\draw (21.25,18) to[short] (21.25,16.75);
+\draw (23.75,18) to[short] (23.75,16.75);
+\draw (25,18) to[short] (25,16.75);
+\draw (22.5,18) to[short] (22.5,16.75);
+\draw (26.25,18) to[short] (26.25,16.75);
+\node [font=\fontsize{18.2pt}{23.7pt}\selectfont, inner xsep=0.080cm, inner ysep=0.085cm, rounded corners=0.020cm] at (25.625,17.25) {a};
+\node [font=\fontsize{18.2pt}{23.7pt}\selectfont, inner xsep=0.080cm, inner ysep=0.085cm, rounded corners=0.020cm] at (26.875,17.25) {q};
+\node [font=\fontsize{18.2pt}{23.7pt}\selectfont, inner xsep=0.080cm, inner ysep=0.085cm, rounded corners=0.020cm, anchor=west] at (16.25,21) {Result:};
+\node [font=\fontsize{18.2pt}{23.7pt}\selectfont, inner xsep=0.080cm, inner ysep=0.085cm, rounded corners=0.020cm, anchor=west] at (2.5,21.125) {All steps together:};
+\draw [-{Stealth[scale=1.5]}, ] (6.375,14.875) -- (7.375,14.875);
+\draw [-{Stealth[scale=1.5]}, ] (8.75,14.875) .. controls (13.375,14.875) and (13.125,14.25) .. (13.125,17) ;
+\draw [-{Stealth[scale=1.5]}, ] (4,17.375) -- (3.375,17.375);
+\draw [-{Stealth[scale=1.5]}, ] (5.25,17.375) -- (4.625,17.375);
+\draw [-{Stealth[scale=1.5]}, ] (6.5,17.375) -- (5.875,17.375);
+\draw [-{Stealth[scale=1.5]}, ] (7.75,17.375) -- (7.125,17.375);
+\draw [-{Stealth[scale=1.5]}, ] (9,17.375) -- (8.375,17.375);
+\draw [-{Stealth[scale=1.5]}, ] (10.25,17.375) -- (9.625,17.375);
+\draw [-{Stealth[scale=1.5]}, ] (11.5,17.375) -- (10.875,17.375);
+\draw [-{Stealth[scale=1.5]}, ] (12.75,17.375) -- (12.125,17.375);
+\node [font=\fontsize{18.2pt}{23.7pt}\selectfont, inner xsep=0.080cm, inner ysep=0.085cm, rounded corners=0.020cm] at (18.125,18.375) {MSB};
+\node [font=\fontsize{18.2pt}{23.7pt}\selectfont, inner xsep=0.080cm, inner ysep=0.085cm, rounded corners=0.020cm] at (26.875,18.375) {LSB};
+\end{circuitikz}
+}%
+\caption{Random LFSR steps combined}
+\label{fig:random_lfsr_instant}
+\end{figure}

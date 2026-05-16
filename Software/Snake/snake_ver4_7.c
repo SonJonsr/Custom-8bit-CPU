@@ -1,21 +1,26 @@
-
-// Header file for input output functions
 #include <stdint.h>
 #include <stdio.h>
+
+// START OF DECLARING VARIABLES AND DEFINES
+// (*@\label{start:snake_declarations}@*)
 
 int16_t clear = 0x0000;
 int8_t MEM[65536];
 
+// (*@\label{start:snake_addresses}@*)
+// Declarations of addresses for different modules
 int16_t adr_main_display = 0xE000;
 int16_t adr_info_display = 0xEF00;
-int16_t adr_keyboard_ascii = 0xF2C1;
-int16_t adr_keyboard_info = 0xF2C2;
-int16_t adr_random = 0xF2C3;
-int16_t adr_timer_millis_ll = 0xF2C4;
-int16_t adr_timer_millis_hh = 0xF2C5;
-int16_t adr_eeprom_start = 0xF2C6;
-int16_t adr_eeprom_end = 0xF3C5;
+int16_t adr_keyboard_ascii = 0xF2C0;
+int16_t adr_keyboard_info = 0xF2C1;
+int16_t adr_random = 0xF2C2;
+int16_t adr_timer_millis_ll = 0xF2C3;
+int16_t adr_timer_millis_hh = 0xF2C4;
+int16_t adr_eeprom_start = 0xF2C5;
+int16_t adr_eeprom_end = 0xF3C4;
+// (*@\label{end:snake_addresses}@*)
 
+// Numbers for 8-bit operations (*@\label{start:snake_num8bit}@*)
 #define def_zero 0x00;
 #define def_one 0x01;
 #define def_two 0x02;
@@ -23,11 +28,13 @@ int16_t adr_eeprom_end = 0xF3C5;
 #define def_seven 0x07;
 #define def_eight 0x08;
 #define def_1o 0x10;
-#define def_of 0x0f;
+#define def_of 0x0f; // (*@\label{end:snake_num8bit}@*)
 
+// Temp variables (*@\label{start:snake_temps}@*)
 int8_t temp_eight_bit = 0x00;
-int16_t temp = 0x0000;
+int16_t temp = 0x0000; // (*@\label{end:snake_temps}@*)
 
+// Numbers for 16-bit operations (*@\label{start:snake_num16bit}@*)
 int16_t zero = 0x0000;
 int16_t one = 0x0001;
 int16_t two = 0x0002;
@@ -36,7 +43,6 @@ int16_t four = 0x0004;
 int16_t six = 0x0006;
 int16_t seven = 0x0007;
 int16_t eight = 0x0008;
-
 int16_t nine = 9;
 int16_t ten = 10;
 int16_t ninety_nine = 99;
@@ -48,7 +54,7 @@ int16_t ooff = 0x00FF;
 int16_t hex_hundred = 0x0100;
 int16_t oooF = 0x000F;
 int16_t ooFo = 0x00F0;
-int16_t hex_eight_thousand = 0x8000;
+int16_t hex_eight_thousand = 0x8000; // (*@\label{end:snake_num16bit}@*)
 
 int16_t game_increment = 0x0010;
 
@@ -64,24 +70,17 @@ int8_t R = 0x52;
 int8_t S = 0x53;
 int8_t V = 0x56;
 int8_t colon = 0x3A;
-
-int8_t kb_right = 0x01; // D
-int8_t kb_left = 0xFF;  // A
-int8_t kb_down = 0x10;  // S
-int8_t kb_up = 0xF0;    // W
+int8_t space = 0x20;
+int8_t escape = 0x1B;
+int8_t kb_right = 0x01;
+int8_t kb_left = 0xFF;
+int8_t kb_down = 0x10;
+int8_t kb_up = 0xF0;
 
 int8_t bcd_ones = 0x00;
 int8_t bcd_tens = 0x00;
 int8_t bcd_hundreds = 0x00;
 int8_t bcd_src = 0x00;
-
-// int8_t kb_right = 0x01;
-// int8_t kb_left = 0xFF;
-// int8_t kb_down = 0x10;
-// int8_t kb_up = 0xF0;
-
-int8_t space = 0x20;
-int8_t escape = 0x1B;
 
 int8_t ascii_num = 0x30;
 
@@ -139,12 +138,6 @@ int8_t go_to_next_head_coord = 0x00;
 int8_t go_to_delete_snake_tail = 0x00;
 int8_t go_to_delete_snake_head = 0x00;
 
-// int8_t Screen[screen_size];
-// int8_t Keyboard[two];
-// int8_t Eeprom[hex_hundred];
-// int8_t Random;
-// int16_t Millis;
-
 int16_t i = 0x00;
 int16_t j = 0x00;
 
@@ -155,8 +148,7 @@ int16_t millis_old = 0x00;
 int16_t millis_goal = 0x00;
 
 // SNAKE
-// int16_t snake[board_size];
-int16_t snake_array = 0xF400;
+int16_t snake_array = 0xF400; // (*@\label{line:snake_array}@*)
 int16_t snake_array_max = 0xF500;
 int16_t snake_ptr_tail = 0xF4FF;
 int16_t snake_ptr_head = 0x0000;
@@ -202,7 +194,9 @@ int16_t cursor_x = 0x0000;
 int16_t cursor_y = 0x0000;
 int16_t odd_check = 0x0000;
 
-void main() {
+// END OF DECLARING VARIABLES AND DEFINES (*@\label{end:snake_declarations}@*)
+
+void main() { // (*@\label{start:snake_main}@*)
 snake_game:
 
   // SETS BOARD LIMITS
@@ -215,6 +209,9 @@ snake_game:
   border_height = board_height;
 
   border_top_l = board_location;
+  // To make it so you dont die from the walls and rather
+  // teleport accross the map when you get to the border
+  // uncomment the two lines below.
   // border_top_l = board_location - screen_width;
   // border_top_l -= four;
 
@@ -231,13 +228,22 @@ snake_game:
   border_paralell_v--;
   border_paralell_v = border_paralell_v << def_two;
 
-  // clears screen
+  // START BOARD CLEAR(*@\label{start:double_nested_for_loop_board_clear}@*)
+  // We have to clear the board on start-up and on every restart of the game for
+  // two reasons:
+  //    1. On first bootup the screen is completely empty. Meaning there are no
+  //    ASCII and no foregroundcolor. We want a full ASCII-block and to color it
+  //    black.
+  //    2. Hit detection is based on the color of the screen. So if the screen
+  //    isn't cleared the snake might run into and old piece of itself and die.
+  // -------------------- FOR I LOOP START -------------------- //
   i = clear;
 clears_screen_i:
   temp = i << def_seven;
   temp += border_top_l;
   temp += adr_main_display;
 
+  // ----------- FOR J LOOP START ----------- //
   j = clear;
 clears_screen_j:
   cursor = j + temp;
@@ -245,7 +251,7 @@ clears_screen_j:
   odd_check = odd_check && one;
   if (odd_check != one) {
     MEM[cursor] = ascii_block;
-    goto else_attr;
+    goto else_attr; // utilizing the if- and goto-function as an if-else
   }
   MEM[cursor] = color_black;
 else_attr:
@@ -254,11 +260,16 @@ else_attr:
   if (j < border_width_ascii) {
     goto clears_screen_j;
   }
+  // ------------ FOR J LOOP END ------------ //
   i++;
   if (i < border_height) {
     goto clears_screen_i;
   }
+  // --------------------- FOR I LOOP END --------------------- //
+  // END BOARD CLEAR(*@\label{end:double_nested_for_loop_board_clear}@*)
 
+  // Then we draw the borders (*@\label{start:draw_borders}@*)
+  // -------------------- FOR I LOOP START -------------------- //
   i = clear;
 border_horizontal:
   cursor = i << def_two;
@@ -276,7 +287,9 @@ border_horizontal:
   if (i < border_width) {
     goto border_horizontal;
   }
+  // --------------------- FOR I LOOP END --------------------- //
 
+  // -------------------- FOR I LOOP START -------------------- //
   i = clear;
 border_vertical:
   cursor = i;
@@ -295,13 +308,27 @@ border_vertical:
   if (i < border_height) {
     goto border_vertical;
   }
+  // --------------------- FOR I LOOP END --------------------- //
+  //(*@\label{end:draw_borders}@*)
+
+  // (*@\label{start:snake_score_setup}@*)
+  // Draws up SCORE and HIGH SCORE, with their scores
+  // Fetching the current highscore from the EEPROM
   bcd_src = MEM[high_score_mem_loc];
+  // Then modifying the 8-bit highscore to fit in a 16-bit "function variable"
   high_score_16_bit = bcd_src;
   high_score_16_bit = high_score_16_bit && ooff;
   go_to_high_score_draw = def_one;
-  goto bcd_func;
-high_score_draw:
+  goto bcd_func; // Goes to the function named bcd_func
+high_score_draw: // Comes back from the bcd_func
+  // Now these 8-bit variables are updated:
+  //    bcd_hundreds
+  //    bcd_tens
+  //    bcd_ones
 
+  // First we draw "HIGH SCORE:SSS" where "SSS" is the current high score. This
+  // is drawn in order. Then to save on time we draw "SCORE:sss" backwards
+  // starting with the scores ones and ending with "S"
   cursor = score_text_location + adr_main_display;
   MEM[cursor] = H;
   cursor++;
@@ -348,6 +375,7 @@ high_score_draw:
   MEM[cursor] = color_red;
   cursor++;
 
+  // Have to add 0x30 to the bcd values to get their matching ASCII characters.
   temp_eight_bit = ascii_num + bcd_hundreds;
 
   MEM[cursor] = temp_eight_bit;
@@ -413,19 +441,7 @@ high_score_draw:
   MEM[cursor] = color_green;
   cursor--;
   MEM[cursor] = S;
-
-  //
-  // // Draws the Highscore
-  // cursor = border_top_r;
-  // cursor--;
-  // cursor -= screen_width;
-  // cursor -= screen_width;
-  // temp = MEM[adr_eeprom_start];
-  //
-  // /|\                          /|\
-  //  |   FIX FIX FIX FIX FIX FIX  |
-  //  |                            |
-  //
+  // (*@\label{end:snake_score_setup}@*)
 
   // Draws the snake
   snake_ptr_head = snake_array;
@@ -474,6 +490,8 @@ cursor_snake_start:
 
   MEM[adr_keyboard_info] = def_one; // Deletes ASCII fifo
 
+  // A little function that waits for the player to press space before starting
+  // the game
 start_game:
   keyboard_input = MEM[adr_keyboard_ascii];
   if (keyboard_input == space) {
@@ -499,11 +517,16 @@ game_loop:
 // timer implementation (*@\label{start:timer_millis_snake}@*)
 snake_game_timer:
 
+  // This is were we collect the player input for movement.
+  // First we check if there is a new ASCII character in the ASCII-FIFO and if
+  // there is we save it to a variable
   temp_eight_bit = MEM[adr_keyboard_info];
   if (temp_eight_bit != def_zero) {
     keyboard_input = MEM[adr_keyboard_ascii];
   }
 
+  // Combining high and low byte of the timer_millis into a single 16 bit
+  // variable
   temp_eight_bit = MEM[adr_timer_millis_hh];
   millis_new = temp_eight_bit;
   millis_new = millis_new << def_eight;
@@ -512,6 +535,7 @@ snake_game_timer:
   temp = temp && ooff;
   millis_new += temp;
 
+  // Under we check if we have waited long enough to go out of the game tick
   // checks for overflow
   if (millis_goal < millis_old) {
     // if overflow the two if statement are or-ed
@@ -531,10 +555,8 @@ snake_game_timer:
   }
 timer_else: // END OF TIMER (*@\label{end:timer_millis_snake}@*)
 
-  // This mask is mask checks whether or not the input is opposite of
-  // the current direction. The values of the ASCII characters assigned
-  // to the arrow keys have been picked out for this purpose.
-  // keyboard_mask = keyboard_input + keyboard_input_last;
+  // The if-statements below checks if the player has pressed a legal direction
+  // key and updates the direction accordingly
   if (keyboard_input != keyboard_input_illegal) {
     if (keyboard_input == kb_right) {
       keyboard_input_illegal = kb_left;
@@ -561,14 +583,22 @@ timer_else: // END OF TIMER (*@\label{end:timer_millis_snake}@*)
       goto game_over;
     }
   }
-  // Find coords of next snake head
+
+  // We are interested in the position of the current snake head and the next
+  // snake head, since we want to color the current snake head like the body,
+  // and we want to know where the next snake head is looking to go. Find coords
+  // of next snake head
   snake_board_head_next = MEM[snake_ptr_head];
   temp_eight_bit = snake_board_head_next && def_of;
+  // Makes sure if you pass through the board on the right side you teleport to
+  // the other side on the correct row
   if (direction == right) {
     if (temp_eight_bit == def_of) {
       snake_board_head_next -= def_1o;
     }
   }
+  // Makes sure if you pass through the board on the left side you teleport to
+  // the other side on the correct row
   if (direction == left) {
     if (temp_eight_bit == def_zero) {
       snake_board_head_next += def_1o;
@@ -576,6 +606,9 @@ timer_else: // END OF TIMER (*@\label{end:timer_millis_snake}@*)
   }
   snake_board_head_next += direction;
 
+  // Since the board is of the size 16x16, since its coordinates are stored in
+  // 8-bit bytes, we have to convert them into 16-bit addresses so we can audit
+  // the memory of the Screen.
   cursor = snake_board_head_next;
   go_to_next_head_coord = def_one;
   goto byte_coord_to_screen_coord;
@@ -636,14 +669,6 @@ delete_snake_head:
   if (snake_head_next_color == color_red) {
     // Scores goes up by one
     snake_counter++;
-    //   cursor = border_top_r;
-    //   cursor--;
-    //   cursor -= screen_width;
-    //   num = snake_counter;
-    //   go_to_score_apple = one;
-    //   goto bcd_byte_draw;
-    // bcd_score_apple:
-
     bcd_src = snake_counter;
     go_to_score_draw = def_one;
     goto bcd_func;
@@ -674,8 +699,11 @@ delete_snake_head:
     // Finds next apple coord
     apple_next_color = color_green;
     i = zero;
+    // Tries to place a new apple as long as the last place it tried placing
+    // isnt black
     while (apple_next_color != color_black) {
       if (i < three) {
+        // Tries to place apple at a random location
         i++;
         temp_eight_bit = MEM[adr_random];
         cursor = temp_eight_bit;
@@ -684,7 +712,8 @@ delete_snake_head:
       cursor_apple:
         goto else_i_three;
       }
-
+      // To save on resources we only try to find a random space 3 times before
+      // giving up and placing it on the tile the tail left last game tick
       temp_eight_bit = MEM[snake_ptr_tail];
       cursor = temp_eight_bit;
       go_to_apple_failed_gen = def_one;
@@ -693,7 +722,7 @@ delete_snake_head:
     else_i_three:
       apple_next_color = MEM[cursor];
     }
-    // Draws apple
+    // When a location that was black has been found draw the apple
     MEM[cursor] = color_red;
     cursor += two;
     MEM[cursor] = color_red;
@@ -719,6 +748,8 @@ game_over:
     MEM[high_score_mem_loc] = temp_eight_bit;
   }
 
+  // Same as with "HIGH SCORE" and "SCORE". Draw first "GAME" in the right
+  // order, then to save time write "OVER" the wrong way.
   MEM[cursor] = G;
   cursor++;
   MEM[cursor] = color_red;
@@ -751,8 +782,10 @@ game_over:
   cursor--;
   MEM[cursor] = O;
 
+  // Deletes all keys in the FIFO to not accidently restart the game
   MEM[adr_keyboard_info] = def_one;
 
+  // Restarts the game on pressing space
 wait_for_key:
   keyboard_input = MEM[adr_keyboard_ascii];
   if (keyboard_input == space) {
@@ -760,6 +793,8 @@ wait_for_key:
   }
   goto wait_for_key;
 
+// A function that lets one convert between the 8-bit-board-coordinate and the
+// 16-bit memory address for its corresponding location on Screen Main.
 byte_coord_to_screen_coord:
   cursor_x = cursor && oooF;
   cursor_x = cursor_x << def_two;
@@ -770,6 +805,8 @@ byte_coord_to_screen_coord:
   cursor += cursor_x;
   cursor += adr_main_display;
   cursor++;
+
+  // Return to the place that has its "go_to_*" variable not set to zero.
   if (go_to_snake_start != def_zero) {
     go_to_snake_start = clear;
     goto cursor_snake_start;
@@ -795,6 +832,7 @@ byte_coord_to_screen_coord:
     goto delete_snake_head;
   }
 
+  // A BCD function used to convert the scores from 8-bits to ASCII.
 bcd_func:
   temp = bcd_src;
   temp = temp && ooff;
@@ -813,6 +851,8 @@ bcd_func:
     temp--;
     bcd_ones++;
   }
+
+  // Return to the place that has its "go_to_*" variable not set to zero.
   if (go_to_high_score_draw != def_zero) {
     go_to_high_score_draw = clear;
     goto high_score_draw;
@@ -821,4 +861,4 @@ bcd_func:
     go_to_score_draw = clear;
     goto score_draw;
   }
-}
+} // (*@\label{end:snake_main}@*)
