@@ -224,7 +224,6 @@ end component;
   signal rst_n : std_logic := '0';
   signal rst_n_antibounced : std_logic := '0';
 
-
   signal cpu_rw       : std_logic;
   signal cpu_address  : std_logic_vector(15 downto 0);
   signal cpu_data_in  : std_logic_vector(7 downto 0);
@@ -257,6 +256,7 @@ end component;
 
   signal clk_slow : std_logic := '0';
   signal clk_slow_antibounce : std_logic := '0';
+  signal automatic : std_logic := '0';
 
   signal pixel_clk : std_logic := '0';
   signal pixel_clk_dff : std_logic := '0';
@@ -265,7 +265,10 @@ end component;
 
 begin
 
-  LEDG(0) <= clk_slow_antibounce;
+  -- Lights for CPU clock
+  LEDG(0) <= clk_slow_antibounce; -- CPU clock signal
+  LEDG(1) <= automatic;           -- shows if the clock is in automatic or manual mode
+
   LEDG(7 downto 2) <= (others => '0');
 
   GPIO(0 to 4) <= (others => 'Z');
@@ -373,7 +376,7 @@ begin
       hex6 => HEX6,
       hex7 => HEX7,
       clk_slow => clk_slow,
-      automatic => LEDG(1)
+      automatic => automatic
   );
   timer_millis_inst: timer_millis
    generic map(

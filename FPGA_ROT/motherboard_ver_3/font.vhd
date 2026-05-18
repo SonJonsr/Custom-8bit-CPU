@@ -6,7 +6,7 @@ ENTITY font IS -- (*@\label{start:font_declaration}@*)
   PORT ( 
     ascii_ucode : IN  STD_LOGIC_VECTOR(7 DOWNTO 0);
     row         : IN  INTEGER RANGE 15 DOWNTO 0;
-    char_line   : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
+    char_line   : OUT STD_LOGIC_VECTOR(0 to 7)
   );
 END ENTITY; -- (*@\label{end:font_declaration}@*)
 

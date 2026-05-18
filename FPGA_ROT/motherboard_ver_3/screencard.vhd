@@ -98,7 +98,7 @@ ARCHITECTURE RTL OF screencard IS
     PORT ( 
       ascii_ucode : IN  STD_LOGIC_VECTOR(7 DOWNTO 0); -- ASCII-hex for ønsket karakter
       row         : IN  INTEGER RANGE 15 DOWNTO 0;
-      char_line   : OUT STD_LOGIC_VECTOR(7 DOWNTO 0)
+      char_line   : OUT STD_LOGIC_VECTOR(0 to 7)
     );
   END COMPONENT;
 
@@ -121,7 +121,7 @@ ARCHITECTURE RTL OF screencard IS
   SIGNAL display_en : STD_LOGIC;
   SIGNAL column     : INTEGER range (h_pixels - 1) downto 0;
   SIGNAL row        : INTEGER range (v_pixels - 1) downto 0;
-  SIGNAL char_line  : STD_LOGIC_VECTOR(7 downto 0);
+  SIGNAL char_line  : STD_LOGIC_VECTOR(0 to 7);
   SIGNAL adr_int    : INTEGER range 5000 downto 0 := 0;
   
   -- SIGNAL FONT --
@@ -129,7 +129,7 @@ ARCHITECTURE RTL OF screencard IS
   SIGNAL font_row : INTEGER RANGE 15 downto 0;
 
   -- SIGNALS INTERNAL --
-  SIGNAL curr_char_line : STD_LOGIC_VECTOR(7 downto 0);
+  SIGNAL curr_char_line : STD_LOGIC_VECTOR(0 to 7);
 
   SIGNAL attributes : STD_LOGIC_VECTOR(7 downto 0);
   SIGNAL blink  : STD_LOGIC;
@@ -229,7 +229,7 @@ BEGIN
 
         -- START OF DRAWING ASCII PIXEL (*@\label{start:drawing_ascii}@*)
         -- this if-statement checks if the current pixel is part of the ASCII-character or not 
-        if  (curr_char_line(7 - (column mod 8)) = '0' or 
+        if  (curr_char_line(column mod 8) = '0' or 
             (blink = '1' and blink_counter > 31)) then
           -- If the current pixel isn't part of the character display the background color
           VGA_R <= background_color_array(to_integer(unsigned(background_color)))(23 downto 16);
