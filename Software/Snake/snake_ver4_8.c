@@ -56,7 +56,7 @@ int16_t oooF = 0x000F;
 int16_t ooFo = 0x00F0;
 int16_t hex_eight_thousand = 0x8000; // (*@\label{end:snake_num16bit}@*)
 
-int16_t game_increment = 0x0010;
+int16_t game_increment = 0x0064; // 100
 
 int8_t A = 0x41;
 int8_t C = 0x43;
@@ -519,47 +519,6 @@ game_loop:
   millis_old += temp;
   millis_goal = millis_old + game_increment;
 
-// timer implementation (*@\label{start:timer_millis_snake}@*)
-snake_game_timer:
-
-  // This is were we collect the player input for movement.
-  // First we check if there is a new ASCII character in the ASCII-FIFO and if
-  // there is we save it to a variable
-  temp_eight_bit = MEM[adr_keyboard_info];
-  if (temp_eight_bit != def_zero) {
-    keyboard_input = MEM[adr_keyboard_ascii];
-  }
-
-  // Combining high and low byte of the timer_millis into a single 16 bit
-  // variable
-  temp_eight_bit = MEM[adr_timer_millis_hh];
-  millis_new = temp_eight_bit;
-  millis_new = millis_new << def_eight;
-  temp_eight_bit = MEM[adr_timer_millis_ll];
-  temp = temp_eight_bit;
-  temp = temp && ooff;
-  millis_new += temp;
-
-  // Under we check if we have waited long enough to go out of the game tick
-  // checks for overflow
-  if (millis_goal < millis_old) {
-    // if overflow the two if statement are or-ed
-    if (millis_new > millis_old) {
-      goto snake_game_timer;
-    }
-    if (millis_new < millis_goal) {
-      goto snake_game_timer;
-    }
-    goto timer_else;
-  }
-  // if not overflow the two if statement are and-ed
-  if (millis_new > millis_old) {
-    if (millis_new < millis_goal) {
-      goto snake_game_timer;
-    }
-  }
-timer_else: // END OF TIMER (*@\label{end:timer_millis_snake}@*)
-
   // The if-statements below checks if the player has pressed a legal direction
   // key and updates the direction accordingly
   if (keyboard_input != keyboard_input_illegal) {
@@ -589,6 +548,7 @@ timer_else: // END OF TIMER (*@\label{end:timer_millis_snake}@*)
     }
   }
 
+  // Finding the next head (*@\label{start:snake_head_next_loc}@*)
   // We are interested in the position of the current snake head and the next
   // snake head, since we want to color the current snake head like the body,
   // and we want to know where the next snake head is looking to go. Find coords
@@ -618,11 +578,12 @@ timer_else: // END OF TIMER (*@\label{end:timer_millis_snake}@*)
   go_to_next_head_coord = def_one;
   goto byte_coord_to_screen_coord;
 next_head_coord:
-
   snake_screen_head_next = cursor;
+  // The snakes next head is found
 
   // Find colors of where new head will be drawn
   snake_head_next_color = MEM[snake_screen_head_next];
+  // (*@\label{end:snake_head_next_loc}@*)
 
   // Makes old head part of body
   temp_eight_bit = MEM[snake_ptr_head];
@@ -654,7 +615,7 @@ delete_snake_head:
   if (snake_head_next_color == color_lime) {
     goto game_over;
   }
-  // color_black means empty coord
+  // color_black means empty coord (*@\label{start:color_black}@*)
   if (snake_head_next_color == color_black) {
     snake_ptr_tail++;
     if (snake_ptr_tail == snake_array_max) {
@@ -670,14 +631,18 @@ delete_snake_head:
     cursor += two;
     MEM[cursor] = color_black;
   }
-  // color_red means apple coord
+  // (*@\label{end:color_black}@*)
+
+  // color_red means apple coord (*@\ref{start:snake_apple_eat}@*)
   if (snake_head_next_color == color_red) {
     // Scores goes up by one
     snake_counter++;
+    // Uses the BCD function to convert the score to readable format
     bcd_src = snake_counter;
     go_to_score_draw = def_one;
     goto bcd_func;
   score_draw:
+    // Draws the score
     cursor = score_num_location;
     temp_eight_bit = bcd_hundreds + ascii_num;
     MEM[cursor] = temp_eight_bit;
@@ -687,6 +652,7 @@ delete_snake_head:
     cursor = cursor + two;
     temp_eight_bit = bcd_ones + ascii_num;
     MEM[cursor] = temp_eight_bit;
+    // Udates the high score if the current score is bigger
     if (high_score_16_bit < snake_counter) {
       cursor = cursor + screen_width;
       MEM[cursor] = temp_eight_bit;
@@ -697,11 +663,10 @@ delete_snake_head:
       temp_eight_bit = bcd_hundreds + ascii_num;
       MEM[cursor] = temp_eight_bit;
     }
-
     if (snake_counter == hex_hundred) {
       goto game_over;
     }
-    // Finds next apple coord
+    // Finds next apple coord (*@\label{start:finding_next_apple}@*)
     apple_next_color = color_green;
     i = zero;
     // Tries to place a new apple as long as the last place it tried placing
@@ -717,6 +682,7 @@ delete_snake_head:
       cursor_apple:
         goto else_i_three;
       }
+      // (*@\label{line:random_failed}@*)
       // To save on resources we only try to find a random space 3 times before
       // giving up and placing it on the tile the tail left last game tick
       temp_eight_bit = MEM[snake_ptr_tail];
@@ -727,19 +693,72 @@ delete_snake_head:
     else_i_three:
       apple_next_color = MEM[cursor];
     }
+    // (*@\label{end:finding_next_apple}@*)
     // When a location that was black has been found draw the apple
     MEM[cursor] = color_red;
     cursor += two;
     MEM[cursor] = color_red;
   }
+  // (*@\ref{end:snake_apple_eat}@*)
 
   // MEM[adr_keyboard_info] = def_one; // Deletes ASCII fifo
+
+// timer implementation (*@\label{start:timer_millis_snake}@*)
+snake_game_timer:
+
+  // This is were we collect the player input for movement.
+  // (*@\label{start:snake_keyboard_query}@*) First we check if there is a new
+  // ASCII character in the ASCII-FIFO and if there is we save it to a variable
+  temp_eight_bit = MEM[adr_keyboard_info];
+  if (temp_eight_bit != def_zero) {
+    keyboard_input = MEM[adr_keyboard_ascii];
+  }
+  // (*@\label{end:snake_keyboard_query}@*)
+
+  // Combining high and low byte of the timer_millis into a single 16 bit
+  // variable
+  temp_eight_bit = MEM[adr_timer_millis_hh];
+  millis_new = temp_eight_bit;
+  millis_new = millis_new << def_eight;
+  temp_eight_bit = MEM[adr_timer_millis_ll];
+  temp = temp_eight_bit;
+  temp = temp && ooff;
+  millis_new += temp;
+
+  // Under we check if we have waited long enough to go out of the game tick
+  // checks for overflow
+  if (millis_goal < millis_old) {
+    // if overflow the two if statement are or-ed
+    if (millis_new > millis_old) {
+      goto snake_game_timer;
+    }
+    if (millis_new < millis_goal) {
+      goto snake_game_timer;
+    }
+    goto timer_else;
+  }
+  // if not overflow the two if statement are and-ed
+  if (millis_new > millis_old) {
+    if (millis_new < millis_goal) {
+      goto snake_game_timer;
+    }
+  }
+timer_else: // END OF TIMER (*@\label{end:timer_millis_snake}@*)
 
   goto game_loop;
   // End of the game loop  (*@\label{end:snake_game_loop}@*)
 
-  // GAME OVER
+  // GAME OVER (*@\label{start:game_over}@*)
 game_over:
+
+  // (*@\label{start:check_score}@*)
+  // Checks if new high score has been achieved
+  if (high_score_16_bit < snake_counter) {
+    temp_eight_bit = snake_counter;
+    MEM[high_score_mem_loc] = temp_eight_bit;
+  }
+  // (*@\label{end:check_score}@*)
+
   cursor_x = seven;
   cursor_x = cursor_x << def_two;
   cursor_y = seven;
@@ -748,11 +767,6 @@ game_over:
   cursor += cursor_y;
   cursor += cursor_x;
   cursor += adr_main_display;
-
-  if (high_score_16_bit < snake_counter) {
-    temp_eight_bit = snake_counter;
-    MEM[high_score_mem_loc] = temp_eight_bit;
-  }
 
   // Same as with "HIGH SCORE" and "SCORE". Draw first "GAME" in the right
   // order, then to save time write "OVER" the wrong way.
@@ -798,6 +812,7 @@ wait_for_key:
     goto snake_game;
   }
   goto wait_for_key;
+// (*@\label{end:game_over}@*)
 
 // (*@\label{start:byte_coord_to_screen_coord}@*)
 // A function that lets one convert between the 8-bit-board-coordinate and the
