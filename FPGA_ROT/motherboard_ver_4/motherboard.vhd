@@ -132,7 +132,11 @@ end component;
       hex4, hex5, hex6, hex7	: out	std_logic_vector(6 downto 0);
 
       automatic : out std_logic;
-      clk_slow : out std_logic
+      clk_slow : out std_logic;
+
+      exp_pol : out std_logic;
+      bcd_out : out std_logic_vector(7 downto 0);
+      exp_out : out std_logic_vector(3 downto 0)
     );
   end component;
   component eeprom_manager is
@@ -157,6 +161,14 @@ end component;
       random_byte : out std_logic_vector(7 downto 0) := x"FF"
     );
   end component;
+
+  component pixel_clk IS
+    PORT(
+      inclk0		: IN STD_LOGIC  := '0';
+      c0		: OUT STD_LOGIC 
+    );
+  END component;
+
   component screencard IS
     GENERIC(
     -- Display memory start
@@ -216,6 +228,29 @@ end component;
     );
   end component;
 
+  component info_screen_manager is
+    port (
+      clk : in std_logic;
+      rst_n : in std_logic;
+      
+      en : in std_logic;
+      done : out std_logic := '1';
+      
+
+      cpu_rw      : in std_logic;
+      cpu_address : in std_logic_vector(15 downto 0);
+      cpu_data    : in std_logic_vector(7 downto 0);
+
+      exp_pol : in std_logic;
+      bcd_out : in std_logic_vector(7 downto 0);
+      exp_out : in std_logic_vector(3 downto 0);
+
+      mem_wren    : out std_logic := '0';
+      mem_address : out std_logic_vector(15 downto 0) := (others => '0');
+      mem_data    : out std_logic_vector(7 downto 0) := (others => '0')
+    );
+  end component;
+
   signal rst_n : std_logic := '0';
   signal rst_n_antibounced : std_logic := '0';
 
@@ -251,14 +286,42 @@ end component;
 
   signal clk_slow : std_logic := '0';
   signal clk_slow_antibounce : std_logic := '0';
+  signal clk_slow_antibounce_dff : std_logic := '1';
   signal automatic : std_logic := '0';
 
-  signal pixel_clk : std_logic := '0';
-  signal pixel_clk_dff : std_logic := '0';
+  signal pixel_clk_sig : std_logic := '0';
 
   signal start_up : std_logic := '0';
 
+  signal exp_pol : std_logic := '0';
+  signal bcd_out : std_logic_vector(7 downto 0) := (others => '0');
+  signal exp_out : std_logic_vector(3 downto 0) := (others => '0');
+
+  signal info_wait_count  : integer range 0 to 128 := 0;
+  signal info_start       : std_logic := '0';
+  signal info_en          : std_logic := '0';
+  signal info_done        : std_logic := '0';
+  signal info_cpu_rw      : std_logic := '0';
+  signal info_cpu_address : std_logic_vector(15 downto 0) := (others => '0');
+  signal info_cpu_data    : std_logic_vector(7 downto 0) := (others => '0');
+  signal info_exp_pol     : std_logic := '0';
+  signal info_exp         : std_logic_vector(3 downto 0) := (others => '0');
+  signal info_bcd         : std_logic_vector(7 downto 0) := (others => '0');
+  signal info_mem_wren    : std_logic := '0';
+  signal info_mem_address : std_logic_vector(15 downto 0) := (others => '0');
+  signal info_mem_data    : std_logic_vector(7 downto 0) := (others => '0');
+
+  signal mux_mem_wren    : std_logic := '0';
+  signal mux_mem_address : std_logic_vector(15 downto 0) := (others => '0');
+  signal mux_mem_data_in    : std_logic_vector(7 downto 0) := (others => '0');
+  signal mux_mem_data_out   : std_logic_vector(7 downto 0) := (others => '0');
+  signal mem_data_out_backup: std_logic_vector(7 downto 0) := (others => '0');
+
 begin
+  mux_mem_wren <= mem_wren when info_done = '1' else info_mem_wren;
+  mux_mem_address <= mem_address when info_done = '1' else info_mem_address;
+  mux_mem_data_in <= mem_data_in when info_done = '1' else info_mem_data;
+  mux_mem_data_out <= mem_data_out when info_done = '1' else mem_data_out_backup;
 
   -- Lights for CPU clock
   LEDG(0) <= clk_slow_antibounce; -- CPU clock signal
@@ -276,7 +339,7 @@ begin
   -- DATA BUs
   GPIO(26 to 33) <= (others => 'Z') when gpio_dff(8) = '0' else cpu_data_in;
 
-  process(CLOCK_50) is
+  gpio_setup : process(CLOCK_50) is
   begin
     if rising_edge(CLOCK_50) then
       if rst_n_antibounced = '1' and start_up = '0' then
@@ -285,7 +348,6 @@ begin
         start_up <= '1';
         rst_n <= rst_n_antibounced;
       end if;
-      pixel_clk <= not pixel_clk;
       gpio_dff <= GPIO;
       GPIO(6) <= not rst_n;
 
@@ -295,6 +357,45 @@ begin
 
       if gpio_dff(8) = '0' then 
         cpu_data_out  <= gpio_dff(26 to 33);
+      end if;
+    end if;
+  end process;
+
+  info_screen : process(CLOCK_50) is
+  begin
+    if rising_edge(CLOCK_50) then
+      if rst_n = '0' then
+        clk_slow_antibounce_dff <= '1';
+      else
+        clk_slow_antibounce_dff <= clk_slow_antibounce;
+        if clk_slow_antibounce = '1' and clk_slow_antibounce_dff = '0' then
+          info_en <= '0';
+          info_start <= '1';
+          info_wait_count <= 0;
+
+          info_cpu_rw      <= cpu_rw;
+          info_cpu_address <= cpu_address;
+          if cpu_rw = '1' then
+            info_cpu_data    <= cpu_data_out;
+          else
+            info_cpu_data    <= cpu_data_in;
+          end if;
+          info_exp_pol     <= exp_pol;
+          info_exp         <= exp_out;
+          info_bcd         <= bcd_out;
+
+          mem_data_out_backup <= mem_data_out;
+        elsif info_start = '1' then
+          if info_wait_count < 100 then
+            info_wait_count <= info_wait_count + 1;
+          else
+            info_start <= '0';
+            info_en <= '1';
+          end if;
+        else
+          info_wait_count <= 0;
+          info_en <= '0';
+        end if;
       end if;
     end if;
   end process;
@@ -325,7 +426,7 @@ begin
       cpu_data_in => cpu_data_in,
       cpu_data_out => cpu_data_out,
       mem_wren => mem_wren,
-      mem_data_out => mem_data_out,
+      mem_data_out => mux_mem_data_out,
       mem_data_in => mem_data_in,
       mem_address => mem_address,
       eeprom_rw => eeprom_rw,
@@ -336,10 +437,10 @@ begin
   memory_inst: memory
    port map(
       clk_a => CLOCK_50,
-      clk_b => pixel_clk,
-      addr_a => mem_address,
-      data_in_a => mem_data_in,
-      we_a => mem_wren,
+      clk_b => pixel_clk_sig,
+      addr_a => mux_mem_address,
+      data_in_a => mux_mem_data_in,
+      we_a => mux_mem_wren,
       data_out_a => mem_data_out,
       addr_b => screencard_adr,
       data_out_b => screencard_dat
@@ -371,7 +472,10 @@ begin
       hex6 => HEX6,
       hex7 => HEX7,
       clk_slow => clk_slow,
-      automatic => automatic
+      automatic => automatic,
+      exp_pol => exp_pol,
+      bcd_out => bcd_out,
+      exp_out => exp_out 
   );
   timer_millis_inst: timer_millis
    generic map(
@@ -399,13 +503,18 @@ begin
       rdy => keyboard_rdy,
       ascii => keyboard_data
   );
+  pixel_clk_inst: pixel_clk
+   port map(
+      inclk0 => CLOCK_50,
+      c0 => pixel_clk_sig
+  );
   screencard_inst: screencard
    generic map(
       main_display_adr => adr_main_display,
       info_display_adr => adr_info_display
   )
    port map(    
-      pixel_clk => pixel_clk,
+      pixel_clk => pixel_clk_sig,
       rst_n => rst_n,
       dat => screencard_dat,
       adr => screencard_adr,
@@ -418,6 +527,24 @@ begin
       VGA_G => VGA_G,
       VGA_B => VGA_B
   );
+  
+
+  info_screen_manager_inst : info_screen_manager
+    port map(
+      clk => CLOCK_50,
+      rst_n => rst_n,
+      en => info_en,
+      done => info_done,
+      cpu_rw => info_cpu_rw,     
+      cpu_address => info_cpu_address,
+      cpu_data => info_cpu_data,
+      exp_pol => info_exp_pol,
+      bcd_out => info_bcd,
+      exp_out =>info_exp,
+      mem_wren => info_mem_wren,
+      mem_address => info_mem_address,
+      mem_data => info_mem_data
+    );
 
   rst_antibounce_inst: antibounce
    generic map(
