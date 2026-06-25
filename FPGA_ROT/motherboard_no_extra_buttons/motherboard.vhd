@@ -21,6 +21,7 @@ entity motherboard is
     KEY : in std_logic_vector(3 downto 0); 
 
     SW : in std_logic_vector(17 downto 0);
+    LEDR : out std_logic_vector(17 downto 0);
 
     -- EEPROM I2C ports
     EEP_I2C_SCLK  : out std_logic;
@@ -323,6 +324,7 @@ end component;
   signal mem_data_out_backup: std_logic_vector(7 downto 0) := (others => '0');
 
 begin
+  LEDR <= SW;
   mux_mem_wren <= mem_wren when info_done = '1' else info_mem_wren;
   mux_mem_address <= mem_address when info_done = '1' else info_mem_address;
   mux_mem_data_in <= mem_data_in when info_done = '1' else info_mem_data;
@@ -562,7 +564,7 @@ begin
   );
   clk_slow_antibounce_inst : antibounce
    generic map(
-      wait_clks => 450
+      wait_clks => 100
   )
    port map(
       clk => CLOCK_50,
